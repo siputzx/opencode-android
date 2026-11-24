@@ -222,7 +222,7 @@
     <string name="settings_notifications_mode_none">通知しない</string>
     <string name="settings_notifications_status_checking">サーバーを確認中…</string>
     <string name="settings_notifications_status_no_permission">先に上で通知を許可してください。</string>
-    <string name="settings_notifications_status_outdated">通知を使うには、このサーバーのOpenCodeを更新する必要があります。</string>
+    <string name="settings_notifications_status_outdated">このサーバーは通知に対応していません。OpenCodeの更新が必要な場合があります。</string>
     <string name="settings_notifications_status_relay">このサーバーはこのアプリの通知リレーを受け付けていません。</string>
     <string name="settings_notifications_status_failed">このサーバーで通知を設定できませんでした。再接続時にOpenCodeが再試行します。</string>
     <string name="settings_notifications_pause">すべての通知を一時停止</string>
@@ -231,7 +231,6 @@
     <string name="settings_notifications_resume">再開</string>
     <string name="settings_notifications_pause_hour">1時間</string>
     <string name="settings_notifications_pause_tomorrow">明日の朝まで</string>
-    <string name="settings_notifications_pause_forever">再開するまで</string>
     <string name="settings_notifications_pause_footer">一時停止すると、このサーバーからの通知がすべてのデバイスで停止されます。</string>
     <string name="settings_notifications_devices_header">デバイス</string>
     <string name="settings_notifications_device_this">%1$s（このデバイス）</string>
@@ -241,5 +240,6 @@
     <string name="settings_notifications_pause_failed_title">一時停止の設定を変更できませんでした</string>
     <string name="settings_notifications_device_failed_title">デバイスの設定を変更できませんでした</string>
     <string name="settings_notifications_device_remove_failed_title">デバイスを削除できませんでした</string>
+    <string name="settings_notifications_change_failed_title">通知の設定を変更できませんでした</string>
     <string name="settings_notifications_change_failed_message">サーバーが変更を受け付けませんでした。</string>
 </resources>

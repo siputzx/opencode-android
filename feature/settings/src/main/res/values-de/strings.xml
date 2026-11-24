@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Nichts</string>
     <string name="settings_notifications_status_checking">Server wird geprüft…</string>
     <string name="settings_notifications_status_no_permission">Erlaube oben zuerst Benachrichtigungen.</string>
-    <string name="settings_notifications_status_outdated">Dieser Server braucht für Benachrichtigungen ein OpenCode-Update.</string>
+    <string name="settings_notifications_status_outdated">Dieser Server unterstützt keine Benachrichtigungen. Möglicherweise ist ein OpenCode-Update nötig.</string>
     <string name="settings_notifications_status_relay">Dieser Server akzeptiert das Benachrichtigungs-Relay dieser App nicht.</string>
     <string name="settings_notifications_status_failed">Benachrichtigungen konnten auf diesem Server nicht eingerichtet werden. OpenCode versucht es bei der nächsten Verbindung erneut.</string>
     <string name="settings_notifications_pause">Alle Benachrichtigungen pausieren</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Fortsetzen</string>
     <string name="settings_notifications_pause_hour">Für eine Stunde</string>
     <string name="settings_notifications_pause_tomorrow">Bis morgen früh</string>
-    <string name="settings_notifications_pause_forever">Bis ich fortsetze</string>
     <string name="settings_notifications_pause_footer">Pausieren stoppt Benachrichtigungen dieses Servers auf allen Geräten.</string>
     <string name="settings_notifications_devices_header">Geräte</string>
     <string name="settings_notifications_device_this">%1$s (Dieses Gerät)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Pause konnte nicht geändert werden</string>
     <string name="settings_notifications_device_failed_title">Gerät konnte nicht geändert werden</string>
     <string name="settings_notifications_device_remove_failed_title">Gerät konnte nicht entfernt werden</string>
+    <string name="settings_notifications_change_failed_title">Benachrichtigungen konnten nicht geändert werden</string>
     <string name="settings_notifications_change_failed_message">Der Server hat die Änderung nicht übernommen.</string>
 </resources>

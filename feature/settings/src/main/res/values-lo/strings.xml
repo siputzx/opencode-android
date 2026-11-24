@@ -222,7 +222,7 @@
     <string name="settings_notifications_mode_none">ບໍ່ແຈ້ງເຕືອນ</string>
     <string name="settings_notifications_status_checking">ກຳລັງກວດສອບເຊີບເວີ…</string>
     <string name="settings_notifications_status_no_permission">ອະນຸຍາດການແຈ້ງເຕືອນຂ້າງເທິງກ່ອນ.</string>
-    <string name="settings_notifications_status_outdated">ເຊີບເວີນີ້ຕ້ອງອັບເດດ OpenCode ເພື່ອໃຊ້ການແຈ້ງເຕືອນ.</string>
+    <string name="settings_notifications_status_outdated">ເຊີບເວີນີ້ບໍ່ຮອງຮັບການແຈ້ງເຕືອນ. ອາດຈະຕ້ອງອັບເດດ OpenCode.</string>
     <string name="settings_notifications_status_relay">ເຊີບເວີນີ້ບໍ່ຮັບຕົວສົ່ງຕໍ່ການແຈ້ງເຕືອນຂອງແອັບນີ້.</string>
     <string name="settings_notifications_status_failed">ຕັ້ງຄ່າການແຈ້ງເຕືອນໃນເຊີບເວີນີ້ບໍ່ໄດ້. OpenCode ຈະລອງໃໝ່ເມື່ອເຊື່ອມຕໍ່ອີກຄັ້ງ.</string>
     <string name="settings_notifications_pause">ຢຸດການແຈ້ງເຕືອນທັງໝົດຊົ່ວຄາວ</string>
@@ -231,7 +231,6 @@
     <string name="settings_notifications_resume">ເປີດຄືນ</string>
     <string name="settings_notifications_pause_hour">ເປັນເວລາ 1 ຊົ່ວໂມງ</string>
     <string name="settings_notifications_pause_tomorrow">ຈົນຮອດມື້ອື່ນເຊົ້າ</string>
-    <string name="settings_notifications_pause_forever">ຈົນກວ່າຂ້ອຍຈະເປີດຄືນ</string>
     <string name="settings_notifications_pause_footer">ການຢຸດຊົ່ວຄາວຈະຢຸດການແຈ້ງເຕືອນຈາກເຊີບເວີນີ້ໃນທຸກອຸປະກອນ.</string>
     <string name="settings_notifications_devices_header">ອຸປະກອນ</string>
     <string name="settings_notifications_device_this">%1$s (ອຸປະກອນນີ້)</string>
@@ -241,5 +240,6 @@
     <string name="settings_notifications_pause_failed_title">ປ່ຽນການຢຸດຊົ່ວຄາວບໍ່ໄດ້</string>
     <string name="settings_notifications_device_failed_title">ປ່ຽນແປງອຸປະກອນບໍ່ໄດ້</string>
     <string name="settings_notifications_device_remove_failed_title">ເອົາອຸປະກອນອອກບໍ່ໄດ້</string>
+    <string name="settings_notifications_change_failed_title">ປ່ຽນການແຈ້ງເຕືອນບໍ່ໄດ້</string>
     <string name="settings_notifications_change_failed_message">ເຊີບເວີບໍ່ຮັບການປ່ຽນແປງນີ້.</string>
 </resources>

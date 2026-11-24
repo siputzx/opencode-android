@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Inget</string>
     <string name="settings_notifications_status_checking">Kontrollerar servern…</string>
     <string name="settings_notifications_status_no_permission">Tillåt aviseringar ovan först.</string>
-    <string name="settings_notifications_status_outdated">Den här servern behöver en uppdatering av OpenCode för aviseringar.</string>
+    <string name="settings_notifications_status_outdated">Den här servern stöder inte aviseringar. Den kan behöva en OpenCode-uppdatering.</string>
     <string name="settings_notifications_status_relay">Den här servern accepterar inte appens aviseringsrelä.</string>
     <string name="settings_notifications_status_failed">Kunde inte konfigurera aviseringar på den här servern. OpenCode försöker igen vid återanslutning.</string>
     <string name="settings_notifications_pause">Pausa alla aviseringar</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Återuppta</string>
     <string name="settings_notifications_pause_hour">I en timme</string>
     <string name="settings_notifications_pause_tomorrow">Till i morgon bitti</string>
-    <string name="settings_notifications_pause_forever">Tills jag återupptar</string>
     <string name="settings_notifications_pause_footer">När du pausar stoppas aviseringar från den här servern på alla enheter.</string>
     <string name="settings_notifications_devices_header">Enheter</string>
     <string name="settings_notifications_device_this">%1$s (den här enheten)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Kunde inte ändra pausen</string>
     <string name="settings_notifications_device_failed_title">Kunde inte ändra enheten</string>
     <string name="settings_notifications_device_remove_failed_title">Kunde inte ta bort enheten</string>
+    <string name="settings_notifications_change_failed_title">Kunde inte ändra aviseringar</string>
     <string name="settings_notifications_change_failed_message">Servern tog inte emot ändringen.</string>
 </resources>

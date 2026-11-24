@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Ништо</string>
     <string name="settings_notifications_status_checking">Се проверува серверот…</string>
     <string name="settings_notifications_status_no_permission">Прво дозволи известувања погоре.</string>
-    <string name="settings_notifications_status_outdated">На овој сервер му треба ажурирање на OpenCode за известувања.</string>
+    <string name="settings_notifications_status_outdated">Овој сервер не нуди известувања. Можеби е потребно ажурирање на OpenCode.</string>
     <string name="settings_notifications_status_relay">Овој сервер не го прифаќа посредникот за известувања на оваа апликација.</string>
     <string name="settings_notifications_status_failed">Не можеа да се постават известувања на овој сервер. OpenCode повторно ќе се обиде кога ќе се поврзе.</string>
     <string name="settings_notifications_pause">Паузирај ги сите известувања</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Продолжи</string>
     <string name="settings_notifications_pause_hour">За еден час</string>
     <string name="settings_notifications_pause_tomorrow">До утре наутро</string>
-    <string name="settings_notifications_pause_forever">Додека не продолжам</string>
     <string name="settings_notifications_pause_footer">Паузирањето ги запира известувањата од овој сервер на сите уреди.</string>
     <string name="settings_notifications_devices_header">Уреди</string>
     <string name="settings_notifications_device_this">%1$s (овој уред)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Не успеа промената на паузата</string>
     <string name="settings_notifications_device_failed_title">Не успеа промената на уредот</string>
     <string name="settings_notifications_device_remove_failed_title">Не успеа отстранувањето на уредот</string>
+    <string name="settings_notifications_change_failed_title">Не успеа промената на известувањата</string>
     <string name="settings_notifications_change_failed_message">Серверот не ја прифати промената.</string>
 </resources>

@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">Nichts</string>
     <string name="session_bell_mute_hour">Eine Stunde lang nichts</string>
     <string name="session_bell_mute_tomorrow">Bis morgen früh nichts</string>
-    <string name="session_bell_use_default">Auswahl dieses Handys verwenden</string>
-    <string name="session_bell_source_own">Nur für dieses Handy festgelegt.</string>
-    <string name="session_bell_source_own_until">Nur für dieses Handy festgelegt, bis %1$s.</string>
-    <string name="session_bell_source_default">Auswahl dieses Handys für den Server. Wähle eine Option, um sie für diese Sitzung zu ändern.</string>
-    <string name="session_bell_source_shared">Von einem anderen Gerät festgelegt. Wähle eine Option, um es für dieses Handy zu ändern.</string>
-    <string name="session_bell_source_shared_until">Von einem anderen Gerät bis %1$s festgelegt. Wähle eine Option, um es für dieses Handy zu ändern.</string>
-    <string name="session_bell_source_phone_paused">Dieses Handy ist in den Einstellungen pausiert.</string>
+    <string name="session_bell_use_default">Einstellung für dieses Gerät entfernen</string>
+    <string name="session_bell_source_own">Nur für dieses Gerät festgelegt.</string>
+    <string name="session_bell_source_own_until">Nur für dieses Gerät festgelegt, bis %1$s.</string>
+    <string name="session_bell_source_default">Auswahl dieses Geräts für den Server. Wähle eine Option, um sie für diese Sitzung zu ändern.</string>
+    <string name="session_bell_source_shared">Von einem anderen Gerät festgelegt. Wähle eine Option, um es für dieses Gerät zu ändern.</string>
+    <string name="session_bell_source_shared_until">Von einem anderen Gerät bis %1$s festgelegt. Wähle eine Option, um es für dieses Gerät zu ändern.</string>
+    <string name="session_bell_source_phone_paused">Dieses Gerät ist in den Einstellungen pausiert.</string>
     <string name="session_bell_source_server_paused">Alle Benachrichtigungen von diesem Server sind pausiert.</string>
     <string name="session_bell_source_server_paused_until">Alle Benachrichtigungen von diesem Server sind bis %1$s pausiert.</string>
     <string name="session_sheet_bell_failed_title">Benachrichtigungen konnten nicht geändert werden</string>
+    <string name="session_sheet_bell_failed_message">Der Server hat die Änderung nicht übernommen.</string>
 </resources>

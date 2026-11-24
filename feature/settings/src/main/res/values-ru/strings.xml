@@ -231,7 +231,7 @@
     <string name="settings_notifications_mode_none">Ничего</string>
     <string name="settings_notifications_status_checking">Проверка сервера…</string>
     <string name="settings_notifications_status_no_permission">Сначала разрешите уведомления выше.</string>
-    <string name="settings_notifications_status_outdated">Для уведомлений на этом сервере нужно обновить OpenCode.</string>
+    <string name="settings_notifications_status_outdated">Этот сервер не поддерживает уведомления. Возможно, нужно обновить OpenCode.</string>
     <string name="settings_notifications_status_relay">Этот сервер не принимает ретранслятор уведомлений этого приложения.</string>
     <string name="settings_notifications_status_failed">Не удалось настроить уведомления на этом сервере. OpenCode попробует снова при повторном подключении.</string>
     <string name="settings_notifications_pause">Приостановить все уведомления</string>
@@ -240,7 +240,6 @@
     <string name="settings_notifications_resume">Возобновить</string>
     <string name="settings_notifications_pause_hour">На час</string>
     <string name="settings_notifications_pause_tomorrow">До завтрашнего утра</string>
-    <string name="settings_notifications_pause_forever">Пока не возобновлю</string>
     <string name="settings_notifications_pause_footer">Пауза отключает уведомления от этого сервера на всех устройствах.</string>
     <string name="settings_notifications_devices_header">Устройства</string>
     <string name="settings_notifications_device_this">%1$s (это устройство)</string>
@@ -250,5 +249,6 @@
     <string name="settings_notifications_pause_failed_title">Не удалось изменить паузу</string>
     <string name="settings_notifications_device_failed_title">Не удалось изменить настройки устройства</string>
     <string name="settings_notifications_device_remove_failed_title">Не удалось удалить устройство</string>
+    <string name="settings_notifications_change_failed_title">Не удалось изменить настройки уведомлений</string>
     <string name="settings_notifications_change_failed_message">Сервер не принял изменения.</string>
 </resources>

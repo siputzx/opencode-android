@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">Mitte midagi</string>
     <string name="session_bell_mute_hour">Mitte midagi tund aega</string>
     <string name="session_bell_mute_tomorrow">Mitte midagi kuni homse hommikuni</string>
-    <string name="session_bell_use_default">Kasuta selle telefoni valikut</string>
-    <string name="session_bell_source_own">Määratud ainult sellele telefonile.</string>
-    <string name="session_bell_source_own_until">Määratud ainult sellele telefonile kuni %1$s.</string>
-    <string name="session_bell_source_default">Selle telefoni valik serveri jaoks. Vali sobiv, et seda selle seansi jaoks muuta.</string>
-    <string name="session_bell_source_shared">Määratud teisest seadmest. Vali sobiv, et seda selle telefoni jaoks muuta.</string>
-    <string name="session_bell_source_shared_until">Määratud teisest seadmest kuni %1$s. Vali sobiv, et seda selle telefoni jaoks muuta.</string>
-    <string name="session_bell_source_phone_paused">See telefon on seadetes peatatud.</string>
+    <string name="session_bell_use_default">Eemalda selle seadme seadistus</string>
+    <string name="session_bell_source_own">Määratud ainult sellele seadmele.</string>
+    <string name="session_bell_source_own_until">Määratud ainult sellele seadmele kuni %1$s.</string>
+    <string name="session_bell_source_default">Selle seadme valik serveri jaoks. Vali sobiv, et muuta seda selle seansi jaoks.</string>
+    <string name="session_bell_source_shared">Määratud teisest seadmest. Vali sobiv, et muuta seda selle seadme jaoks.</string>
+    <string name="session_bell_source_shared_until">Määratud teisest seadmest kuni %1$s. Vali sobiv, et muuta seda selle seadme jaoks.</string>
+    <string name="session_bell_source_phone_paused">See seade on seadetes peatatud.</string>
     <string name="session_bell_source_server_paused">Kõik selle serveri teavitused on peatatud.</string>
     <string name="session_bell_source_server_paused_until">Kõik selle serveri teavitused on peatatud kuni %1$s.</string>
     <string name="session_sheet_bell_failed_title">Teavituste muutmine ebaõnnestus</string>
+    <string name="session_sheet_bell_failed_message">Server ei võtnud muudatust vastu.</string>
 </resources>

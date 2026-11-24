@@ -341,14 +341,15 @@
     <string name="session_bell_level_none">Nada</string>
     <string name="session_bell_mute_hour">Nada por uma hora</string>
     <string name="session_bell_mute_tomorrow">Nada até amanhã de manhã</string>
-    <string name="session_bell_use_default">Usar opção deste celular</string>
-    <string name="session_bell_source_own">Definido só para este celular.</string>
-    <string name="session_bell_source_own_until">Definido só para este celular, até %1$s.</string>
-    <string name="session_bell_source_default">Opção deste celular para o servidor. Escolha uma para mudar nesta sessão.</string>
-    <string name="session_bell_source_shared">Definido em outro dispositivo. Escolha uma opção para mudar neste celular.</string>
-    <string name="session_bell_source_shared_until">Definido em outro dispositivo até %1$s. Escolha uma opção para mudar neste celular.</string>
-    <string name="session_bell_source_phone_paused">Este celular está pausado em Configurações.</string>
+    <string name="session_bell_use_default">Remover configuração deste dispositivo</string>
+    <string name="session_bell_source_own">Definido apenas para este dispositivo.</string>
+    <string name="session_bell_source_own_until">Definido apenas para este dispositivo, até %1$s.</string>
+    <string name="session_bell_source_default">Padrão deste dispositivo para o servidor. Escolha uma opção para mudar nesta sessão.</string>
+    <string name="session_bell_source_shared">Definido em outro dispositivo. Escolha uma opção para mudar neste dispositivo.</string>
+    <string name="session_bell_source_shared_until">Definido em outro dispositivo até %1$s. Escolha uma opção para mudar neste dispositivo.</string>
+    <string name="session_bell_source_phone_paused">Este dispositivo está pausado em Configurações.</string>
     <string name="session_bell_source_server_paused">Todas as notificações deste servidor estão pausadas.</string>
     <string name="session_bell_source_server_paused_until">Todas as notificações deste servidor estão pausadas até %1$s.</string>
     <string name="session_sheet_bell_failed_title">Não foi possível alterar as notificações</string>
+    <string name="session_sheet_bell_failed_message">O servidor não aceitou a alteração.</string>
 </resources>

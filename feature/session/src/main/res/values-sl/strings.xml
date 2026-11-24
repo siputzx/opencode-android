@@ -353,14 +353,15 @@
     <string name="session_bell_level_none">Nič</string>
     <string name="session_bell_mute_hour">Nič za eno uro</string>
     <string name="session_bell_mute_tomorrow">Nič do jutri zjutraj</string>
-    <string name="session_bell_use_default">Uporabi izbiro tega telefona</string>
-    <string name="session_bell_source_own">Nastavljeno samo za ta telefon.</string>
-    <string name="session_bell_source_own_until">Nastavljeno samo za ta telefon, do %1$s.</string>
-    <string name="session_bell_source_default">Izbira tega telefona za strežnik. Izberite možnost, da jo spremenite za to sejo.</string>
-    <string name="session_bell_source_shared">Nastavljeno z druge naprave. Izberite možnost, da to spremenite za ta telefon.</string>
-    <string name="session_bell_source_shared_until">Nastavljeno z druge naprave do %1$s. Izberite možnost, da to spremenite za ta telefon.</string>
-    <string name="session_bell_source_phone_paused">Obvestila na tem telefonu so v nastavitvah začasno ustavljena.</string>
+    <string name="session_bell_use_default">Odstrani nastavitev te naprave</string>
+    <string name="session_bell_source_own">Nastavljeno samo za to napravo.</string>
+    <string name="session_bell_source_own_until">Nastavljeno samo za to napravo do %1$s.</string>
+    <string name="session_bell_source_default">Izbira te naprave za strežnik. Izberite možnost, da jo spremenite za to sejo.</string>
+    <string name="session_bell_source_shared">Nastavljeno z druge naprave. Izberite možnost za spremembo na tej napravi.</string>
+    <string name="session_bell_source_shared_until">Nastavljeno z druge naprave do %1$s. Izberite možnost za spremembo na tej napravi.</string>
+    <string name="session_bell_source_phone_paused">Ta naprava je v nastavitvah začasno ustavljena.</string>
     <string name="session_bell_source_server_paused">Vsa obvestila s tega strežnika so začasno ustavljena.</string>
     <string name="session_bell_source_server_paused_until">Vsa obvestila s tega strežnika so začasno ustavljena do %1$s.</string>
     <string name="session_sheet_bell_failed_title">Obvestil ni bilo mogoče spremeniti</string>
+    <string name="session_sheet_bell_failed_message">Strežnik ni sprejel spremembe.</string>
 </resources>

@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Hiç zat</string>
     <string name="settings_notifications_status_checking">Serwer barlanýar…</string>
     <string name="settings_notifications_status_no_permission">Ilki ýokarda bildirişlere rugsat beriň.</string>
-    <string name="settings_notifications_status_outdated">Bildirişler üçin bu serwerde OpenCode täzelenmesi gerek.</string>
+    <string name="settings_notifications_status_outdated">Bu serwer bildirişleri goldamaýar. OpenCode-y täzelemek gerek bolup biler.</string>
     <string name="settings_notifications_status_relay">Bu serwer bu programmanyň bildiriş geçirijisini kabul etmeýär.</string>
     <string name="settings_notifications_status_failed">Bu serwerde bildirişleri sazlap bolmady. OpenCode gaýtadan birikende täzeden synanyşar.</string>
     <string name="settings_notifications_pause">Ähli bildirişleri sägindir</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Dowam etdir</string>
     <string name="settings_notifications_pause_hour">Bir sagatlyk</string>
     <string name="settings_notifications_pause_tomorrow">Ertir irdene çenli</string>
-    <string name="settings_notifications_pause_forever">Özüm dowam etdirýänçäm</string>
     <string name="settings_notifications_pause_footer">Sägindirmek bu serwerden gelýän bildirişleri ähli enjamlarda duruzýar.</string>
     <string name="settings_notifications_devices_header">Enjamlar</string>
     <string name="settings_notifications_device_this">%1$s (Bu enjam)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Sägindirmäni üýtgedip bolmady</string>
     <string name="settings_notifications_device_failed_title">Enjamy üýtgedip bolmady</string>
     <string name="settings_notifications_device_remove_failed_title">Enjamy aýryp bolmady</string>
+    <string name="settings_notifications_change_failed_title">Bildirişleri üýtgedip bolmady</string>
     <string name="settings_notifications_change_failed_message">Serwer üýtgeşmäni kabul etmedi.</string>
 </resources>

@@ -222,7 +222,7 @@
     <string name="settings_notifications_mode_none">알림 없음</string>
     <string name="settings_notifications_status_checking">서버 확인 중…</string>
     <string name="settings_notifications_status_no_permission">먼저 위에서 알림을 허용해 주세요.</string>
-    <string name="settings_notifications_status_outdated">알림을 사용하려면 이 서버의 OpenCode를 업데이트해야 해요.</string>
+    <string name="settings_notifications_status_outdated">이 서버는 알림을 지원하지 않아요. OpenCode 업데이트가 필요할 수 있어요.</string>
     <string name="settings_notifications_status_relay">이 서버는 이 앱의 알림 중계 서버를 허용하지 않아요.</string>
     <string name="settings_notifications_status_failed">이 서버에 알림을 설정할 수 없어요. 다시 연결되면 OpenCode가 다시 시도해요.</string>
     <string name="settings_notifications_pause">모든 알림 일시 정지</string>
@@ -231,7 +231,6 @@
     <string name="settings_notifications_resume">다시 켜기</string>
     <string name="settings_notifications_pause_hour">1시간 동안</string>
     <string name="settings_notifications_pause_tomorrow">내일 아침까지</string>
-    <string name="settings_notifications_pause_forever">직접 다시 켤 때까지</string>
     <string name="settings_notifications_pause_footer">일시 정지하면 모든 기기에서 이 서버의 알림이 중지돼요.</string>
     <string name="settings_notifications_devices_header">기기</string>
     <string name="settings_notifications_device_this">%1$s (이 기기)</string>
@@ -241,5 +240,6 @@
     <string name="settings_notifications_pause_failed_title">일시 정지 설정을 변경할 수 없어요</string>
     <string name="settings_notifications_device_failed_title">기기 설정을 변경할 수 없어요</string>
     <string name="settings_notifications_device_remove_failed_title">기기를 제거할 수 없어요</string>
+    <string name="settings_notifications_change_failed_title">알림 설정을 변경할 수 없어요</string>
     <string name="settings_notifications_change_failed_message">서버에서 변경 사항을 적용하지 못했어요.</string>
 </resources>

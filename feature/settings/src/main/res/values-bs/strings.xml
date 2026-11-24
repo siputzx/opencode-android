@@ -228,7 +228,7 @@
     <string name="settings_notifications_mode_none">Ništa</string>
     <string name="settings_notifications_status_checking">Provjera servera…</string>
     <string name="settings_notifications_status_no_permission">Prvo dozvoli obavještenja iznad.</string>
-    <string name="settings_notifications_status_outdated">Za obavještenja je potrebno ažurirati OpenCode na ovom serveru.</string>
+    <string name="settings_notifications_status_outdated">Ovaj server ne nudi obavještenja. Možda je potrebno ažurirati OpenCode.</string>
     <string name="settings_notifications_status_relay">Ovaj server ne prihvata posrednika za obavještenja ove aplikacije.</string>
     <string name="settings_notifications_status_failed">Nije moguće podesiti obavještenja na ovom serveru. OpenCode će pokušati ponovo kad se opet poveže.</string>
     <string name="settings_notifications_pause">Pauziraj sva obavještenja</string>
@@ -237,7 +237,6 @@
     <string name="settings_notifications_resume">Nastavi</string>
     <string name="settings_notifications_pause_hour">Na jedan sat</string>
     <string name="settings_notifications_pause_tomorrow">Do sutra ujutro</string>
-    <string name="settings_notifications_pause_forever">Dok ne nastavim</string>
     <string name="settings_notifications_pause_footer">Pauziranje zaustavlja obavještenja s ovog servera na svim uređajima.</string>
     <string name="settings_notifications_devices_header">Uređaji</string>
     <string name="settings_notifications_device_this">%1$s (ovaj uređaj)</string>
@@ -247,5 +246,6 @@
     <string name="settings_notifications_pause_failed_title">Nije moguće promijeniti pauzu</string>
     <string name="settings_notifications_device_failed_title">Nije moguće promijeniti uređaj</string>
     <string name="settings_notifications_device_remove_failed_title">Nije moguće ukloniti uređaj</string>
+    <string name="settings_notifications_change_failed_title">Nije moguće promijeniti obavještenja</string>
     <string name="settings_notifications_change_failed_message">Server nije prihvatio promjenu.</string>
 </resources>

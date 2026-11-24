@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">कुछ नहीं</string>
     <string name="session_bell_mute_hour">एक घंटे तक कुछ नहीं</string>
     <string name="session_bell_mute_tomorrow">कल सुबह तक कुछ नहीं</string>
-    <string name="session_bell_use_default">इस फ़ोन की पसंद का उपयोग करें</string>
-    <string name="session_bell_source_own">केवल इस फ़ोन के लिए सेट है।</string>
-    <string name="session_bell_source_own_until">केवल इस फ़ोन के लिए %1$s तक सेट है।</string>
-    <string name="session_bell_source_default">सर्वर के लिए इस फ़ोन की पसंद। इस सेशन के लिए कोई विकल्प चुनकर इसे बदलें।</string>
-    <string name="session_bell_source_shared">दूसरे डिवाइस से सेट है। इस फ़ोन के लिए कोई विकल्प चुनकर इसे बदलें।</string>
-    <string name="session_bell_source_shared_until">दूसरे डिवाइस से %1$s तक सेट है। इस फ़ोन के लिए कोई विकल्प चुनकर इसे बदलें।</string>
-    <string name="session_bell_source_phone_paused">यह फ़ोन सेटिंग्स में रुका हुआ है।</string>
+    <string name="session_bell_use_default">इस डिवाइस की सेटिंग हटाएँ</string>
+    <string name="session_bell_source_own">केवल इस डिवाइस के लिए सेट है।</string>
+    <string name="session_bell_source_own_until">केवल इस डिवाइस के लिए %1$s तक सेट है।</string>
+    <string name="session_bell_source_default">सर्वर के लिए इस डिवाइस की पसंद। इस सेशन में इसे बदलने के लिए कोई एक चुनें।</string>
+    <string name="session_bell_source_shared">दूसरे डिवाइस से सेट है। इस डिवाइस पर इसे बदलने के लिए कोई एक चुनें।</string>
+    <string name="session_bell_source_shared_until">दूसरे डिवाइस से %1$s तक सेट है। इस डिवाइस पर इसे बदलने के लिए कोई एक चुनें।</string>
+    <string name="session_bell_source_phone_paused">यह डिवाइस सेटिंग्स में रुका हुआ है।</string>
     <string name="session_bell_source_server_paused">इस सर्वर से आने वाली सभी सूचनाएँ रुकी हुई हैं।</string>
     <string name="session_bell_source_server_paused_until">इस सर्वर से आने वाली सभी सूचनाएँ %1$s तक रुकी हुई हैं।</string>
     <string name="session_sheet_bell_failed_title">सूचनाएँ नहीं बदली जा सकीं</string>
+    <string name="session_sheet_bell_failed_message">सर्वर ने यह बदलाव स्वीकार नहीं किया।</string>
 </resources>

@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">कुछ नहीं</string>
     <string name="settings_notifications_status_checking">सर्वर की जाँच हो रही है…</string>
     <string name="settings_notifications_status_no_permission">पहले ऊपर सूचनाओं की अनुमति दें।</string>
-    <string name="settings_notifications_status_outdated">सूचनाओं के लिए इस सर्वर पर OpenCode का अपडेट चाहिए।</string>
+    <string name="settings_notifications_status_outdated">यह सर्वर सूचनाएँ नहीं देता। इसमें OpenCode अपडेट की ज़रूरत हो सकती है।</string>
     <string name="settings_notifications_status_relay">यह सर्वर इस ऐप के सूचना रिले को स्वीकार नहीं करता।</string>
     <string name="settings_notifications_status_failed">इस सर्वर पर सूचनाएँ सेट अप नहीं हो सकीं। फिर से कनेक्ट होने पर OpenCode फिर से कोशिश करेगा।</string>
     <string name="settings_notifications_pause">सभी सूचनाएँ रोकें</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">फिर से चालू करें</string>
     <string name="settings_notifications_pause_hour">एक घंटे के लिए</string>
     <string name="settings_notifications_pause_tomorrow">कल सुबह तक</string>
-    <string name="settings_notifications_pause_forever">जब तक मैं फिर से चालू न करूँ</string>
     <string name="settings_notifications_pause_footer">रोकने पर हर डिवाइस पर इस सर्वर की सूचनाएँ बंद हो जाती हैं।</string>
     <string name="settings_notifications_devices_header">डिवाइस</string>
     <string name="settings_notifications_device_this">%1$s (यह डिवाइस)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">रोकने की सेटिंग नहीं बदल सकी</string>
     <string name="settings_notifications_device_failed_title">डिवाइस में बदलाव नहीं हो सका</string>
     <string name="settings_notifications_device_remove_failed_title">डिवाइस नहीं हटाया जा सका</string>
+    <string name="settings_notifications_change_failed_title">सूचना सेटिंग नहीं बदल सकी</string>
     <string name="settings_notifications_change_failed_message">सर्वर ने यह बदलाव स्वीकार नहीं किया।</string>
 </resources>

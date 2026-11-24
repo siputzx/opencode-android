@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Ekkert</string>
     <string name="settings_notifications_status_checking">Athugar netþjóninn…</string>
     <string name="settings_notifications_status_no_permission">Leyfðu tilkynningar hér að ofan fyrst.</string>
-    <string name="settings_notifications_status_outdated">Þessi netþjónn þarf uppfærslu á OpenCode fyrir tilkynningar.</string>
+    <string name="settings_notifications_status_outdated">Þessi netþjónn býður ekki upp á tilkynningar. Hann gæti þurft uppfærslu á OpenCode.</string>
     <string name="settings_notifications_status_relay">Þessi netþjónn samþykkir ekki miðlunarþjón þessa forrits fyrir tilkynningar.</string>
     <string name="settings_notifications_status_failed">Ekki tókst að setja upp tilkynningar á þessum netþjóni. OpenCode reynir aftur þegar það tengist aftur.</string>
     <string name="settings_notifications_pause">Gera hlé á öllum tilkynningum</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Halda áfram</string>
     <string name="settings_notifications_pause_hour">Í klukkustund</string>
     <string name="settings_notifications_pause_tomorrow">Til morguns</string>
-    <string name="settings_notifications_pause_forever">Þar til ég held áfram</string>
     <string name="settings_notifications_pause_footer">Hlé stöðvar tilkynningar frá þessum netþjóni á öllum tækjum.</string>
     <string name="settings_notifications_devices_header">Tæki</string>
     <string name="settings_notifications_device_this">%1$s (þetta tæki)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Ekki tókst að breyta hléi</string>
     <string name="settings_notifications_device_failed_title">Ekki tókst að breyta tækinu</string>
     <string name="settings_notifications_device_remove_failed_title">Ekki tókst að fjarlægja tækið</string>
+    <string name="settings_notifications_change_failed_title">Ekki tókst að breyta tilkynningum</string>
     <string name="settings_notifications_change_failed_message">Netþjónninn tók ekki við breytingunni.</string>
 </resources>

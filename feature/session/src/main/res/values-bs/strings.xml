@@ -341,14 +341,15 @@
     <string name="session_bell_level_none">Ništa</string>
     <string name="session_bell_mute_hour">Ništa sat vremena</string>
     <string name="session_bell_mute_tomorrow">Ništa do sutra ujutro</string>
-    <string name="session_bell_use_default">Koristi izbor ovog telefona</string>
-    <string name="session_bell_source_own">Postavljeno samo za ovaj telefon.</string>
-    <string name="session_bell_source_own_until">Postavljeno samo za ovaj telefon, do %1$s.</string>
-    <string name="session_bell_source_default">Izbor ovog telefona za server. Odaberi opciju da to promijeniš za ovu sesiju.</string>
-    <string name="session_bell_source_shared">Postavljeno s drugog uređaja. Odaberi opciju da to promijeniš za ovaj telefon.</string>
-    <string name="session_bell_source_shared_until">Postavljeno s drugog uređaja do %1$s. Odaberi opciju da to promijeniš za ovaj telefon.</string>
-    <string name="session_bell_source_phone_paused">Ovaj telefon je pauziran u Postavkama.</string>
+    <string name="session_bell_use_default">Ukloni postavku za ovaj uređaj</string>
+    <string name="session_bell_source_own">Postavljeno samo za ovaj uređaj.</string>
+    <string name="session_bell_source_own_until">Postavljeno samo za ovaj uređaj, do %1$s.</string>
+    <string name="session_bell_source_default">Izbor ovog uređaja za server. Odaberi opciju da to promijeniš za ovu sesiju.</string>
+    <string name="session_bell_source_shared">Postavljeno s drugog uređaja. Odaberi opciju da to promijeniš za ovaj uređaj.</string>
+    <string name="session_bell_source_shared_until">Postavljeno s drugog uređaja do %1$s. Odaberi opciju da to promijeniš za ovaj uređaj.</string>
+    <string name="session_bell_source_phone_paused">Ovaj uređaj je pauziran u postavkama.</string>
     <string name="session_bell_source_server_paused">Sva obavještenja s ovog servera su pauzirana.</string>
     <string name="session_bell_source_server_paused_until">Sva obavještenja s ovog servera su pauzirana do %1$s.</string>
     <string name="session_sheet_bell_failed_title">Nije moguće promijeniti obavještenja</string>
+    <string name="session_sheet_bell_failed_message">Server nije prihvatio promjenu.</string>
 </resources>

@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Semmit</string>
     <string name="settings_notifications_status_checking">Szerver ellenőrzése…</string>
     <string name="settings_notifications_status_no_permission">Először engedélyezze fent az értesítéseket.</string>
-    <string name="settings_notifications_status_outdated">Az értesítésekhez frissíteni kell az OpenCode-ot ezen a szerveren.</string>
+    <string name="settings_notifications_status_outdated">Ez a kiszolgáló nem támogatja az értesítéseket. Lehet, hogy frissíteni kell az OpenCode-ot.</string>
     <string name="settings_notifications_status_relay">Ez a szerver nem fogadja el az alkalmazás értesítéstovábbítóját.</string>
     <string name="settings_notifications_status_failed">Nem sikerült beállítani az értesítéseket ezen a szerveren. Az OpenCode újracsatlakozáskor újra megpróbálja.</string>
     <string name="settings_notifications_pause">Összes értesítés szüneteltetése</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Folytatás</string>
     <string name="settings_notifications_pause_hour">Egy órára</string>
     <string name="settings_notifications_pause_tomorrow">Holnap reggelig</string>
-    <string name="settings_notifications_pause_forever">Amíg nem folytatom</string>
     <string name="settings_notifications_pause_footer">A szüneteltetés minden eszközön leállítja az erről a szerverről érkező értesítéseket.</string>
     <string name="settings_notifications_devices_header">Eszközök</string>
     <string name="settings_notifications_device_this">%1$s (ez az eszköz)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Nem sikerült módosítani a szüneteltetést</string>
     <string name="settings_notifications_device_failed_title">Nem sikerült módosítani az eszközt</string>
     <string name="settings_notifications_device_remove_failed_title">Nem sikerült eltávolítani az eszközt</string>
+    <string name="settings_notifications_change_failed_title">Nem sikerült módosítani az értesítéseket</string>
     <string name="settings_notifications_change_failed_message">A szerver nem fogadta el a módosítást.</string>
 </resources>

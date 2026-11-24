@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">Intet</string>
     <string name="session_bell_mute_hour">Intet i en time</string>
     <string name="session_bell_mute_tomorrow">Intet indtil i morgen tidlig</string>
-    <string name="session_bell_use_default">Brug denne telefons valg</string>
-    <string name="session_bell_source_own">Kun indstillet for denne telefon.</string>
-    <string name="session_bell_source_own_until">Kun indstillet for denne telefon indtil %1$s.</string>
-    <string name="session_bell_source_default">Denne telefons valg for serveren. Vælg en mulighed for at ændre det for denne session.</string>
-    <string name="session_bell_source_shared">Indstillet fra en anden enhed. Vælg en mulighed for at ændre det for denne telefon.</string>
-    <string name="session_bell_source_shared_until">Indstillet fra en anden enhed indtil %1$s. Vælg en mulighed for at ændre det for denne telefon.</string>
-    <string name="session_bell_source_phone_paused">Denne telefon er sat på pause i Indstillinger.</string>
+    <string name="session_bell_use_default">Fjern denne enheds indstilling</string>
+    <string name="session_bell_source_own">Kun indstillet for denne enhed.</string>
+    <string name="session_bell_source_own_until">Kun indstillet for denne enhed indtil %1$s.</string>
+    <string name="session_bell_source_default">Denne enheds valg for serveren. Vælg en mulighed for at ændre det for denne session.</string>
+    <string name="session_bell_source_shared">Indstillet fra en anden enhed. Vælg en mulighed for at ændre det for denne enhed.</string>
+    <string name="session_bell_source_shared_until">Indstillet fra en anden enhed indtil %1$s. Vælg en mulighed for at ændre det for denne enhed.</string>
+    <string name="session_bell_source_phone_paused">Denne enhed er på pause i Indstillinger.</string>
     <string name="session_bell_source_server_paused">Alle meddelelser fra denne server er sat på pause.</string>
     <string name="session_bell_source_server_paused_until">Alle meddelelser fra denne server er sat på pause indtil %1$s.</string>
     <string name="session_sheet_bell_failed_title">Kunne ikke ændre meddelelser</string>
+    <string name="session_sheet_bell_failed_message">Serveren tog ikke imod ændringen.</string>
 </resources>

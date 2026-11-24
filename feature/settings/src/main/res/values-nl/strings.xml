@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Niets</string>
     <string name="settings_notifications_status_checking">Server controleren…</string>
     <string name="settings_notifications_status_no_permission">Sta eerst meldingen hierboven toe.</string>
-    <string name="settings_notifications_status_outdated">Deze server heeft een OpenCode-update nodig voor meldingen.</string>
+    <string name="settings_notifications_status_outdated">Deze server ondersteunt geen meldingen. Mogelijk is een OpenCode-update nodig.</string>
     <string name="settings_notifications_status_relay">Deze server accepteert de meldingsrelay van deze app niet.</string>
     <string name="settings_notifications_status_failed">Kan meldingen niet instellen op deze server. OpenCode probeert het opnieuw zodra er weer verbinding is.</string>
     <string name="settings_notifications_pause">Alle meldingen pauzeren</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Hervatten</string>
     <string name="settings_notifications_pause_hour">Een uur lang</string>
     <string name="settings_notifications_pause_tomorrow">Tot morgenochtend</string>
-    <string name="settings_notifications_pause_forever">Tot ik hervat</string>
     <string name="settings_notifications_pause_footer">Pauzeren stopt meldingen van deze server op elk apparaat.</string>
     <string name="settings_notifications_devices_header">Apparaten</string>
     <string name="settings_notifications_device_this">%1$s (dit apparaat)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Kan pauze niet wijzigen</string>
     <string name="settings_notifications_device_failed_title">Kan apparaat niet wijzigen</string>
     <string name="settings_notifications_device_remove_failed_title">Kan apparaat niet verwijderen</string>
+    <string name="settings_notifications_change_failed_title">Kan meldingen niet wijzigen</string>
     <string name="settings_notifications_change_failed_message">De server heeft de wijziging niet overgenomen.</string>
 </resources>

@@ -317,14 +317,15 @@
     <string name="session_bell_level_none">Tidak ada</string>
     <string name="session_bell_mute_hour">Tidak ada selama 1 jam</string>
     <string name="session_bell_mute_tomorrow">Tidak ada sampai besok pagi</string>
-    <string name="session_bell_use_default">Gunakan pilihan ponsel ini</string>
-    <string name="session_bell_source_own">Diatur hanya untuk ponsel ini.</string>
-    <string name="session_bell_source_own_until">Diatur hanya untuk ponsel ini, sampai %1$s.</string>
-    <string name="session_bell_source_default">Pilihan ponsel ini untuk server. Pilih salah satu untuk mengubahnya di sesi ini.</string>
-    <string name="session_bell_source_shared">Diatur dari perangkat lain. Pilih salah satu untuk mengubahnya di ponsel ini.</string>
-    <string name="session_bell_source_shared_until">Diatur dari perangkat lain sampai %1$s. Pilih salah satu untuk mengubahnya di ponsel ini.</string>
-    <string name="session_bell_source_phone_paused">Ponsel ini dijeda di Pengaturan.</string>
+    <string name="session_bell_use_default">Hapus pengaturan perangkat ini</string>
+    <string name="session_bell_source_own">Diatur hanya untuk perangkat ini.</string>
+    <string name="session_bell_source_own_until">Diatur hanya untuk perangkat ini, hingga %1$s.</string>
+    <string name="session_bell_source_default">Pilihan perangkat ini untuk server. Pilih satu untuk mengubahnya di sesi ini.</string>
+    <string name="session_bell_source_shared">Diatur dari perangkat lain. Pilih satu untuk mengubahnya di perangkat ini.</string>
+    <string name="session_bell_source_shared_until">Diatur dari perangkat lain hingga %1$s. Pilih satu untuk mengubahnya di perangkat ini.</string>
+    <string name="session_bell_source_phone_paused">Perangkat ini dijeda di Pengaturan.</string>
     <string name="session_bell_source_server_paused">Semua notifikasi dari server ini dijeda.</string>
     <string name="session_bell_source_server_paused_until">Semua notifikasi dari server ini dijeda sampai %1$s.</string>
     <string name="session_sheet_bell_failed_title">Gagal mengubah notifikasi</string>
+    <string name="session_sheet_bell_failed_message">Server tidak menerima perubahan ini.</string>
 </resources>

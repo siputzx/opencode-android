@@ -228,7 +228,7 @@
     <string name="settings_notifications_mode_none">Nada</string>
     <string name="settings_notifications_status_checking">Comprobando el servidor…</string>
     <string name="settings_notifications_status_no_permission">Primero permite las notificaciones arriba.</string>
-    <string name="settings_notifications_status_outdated">Este servidor necesita una actualización de OpenCode para las notificaciones.</string>
+    <string name="settings_notifications_status_outdated">Este servidor no ofrece notificaciones. Puede que necesite una actualización de OpenCode.</string>
     <string name="settings_notifications_status_relay">Este servidor no acepta el retransmisor de notificaciones de esta aplicación.</string>
     <string name="settings_notifications_status_failed">No se pudieron configurar las notificaciones en este servidor. OpenCode volverá a intentarlo al reconectarse.</string>
     <string name="settings_notifications_pause">Pausar todas las notificaciones</string>
@@ -237,7 +237,6 @@
     <string name="settings_notifications_resume">Reanudar</string>
     <string name="settings_notifications_pause_hour">Durante una hora</string>
     <string name="settings_notifications_pause_tomorrow">Hasta mañana por la mañana</string>
-    <string name="settings_notifications_pause_forever">Hasta que las reanude</string>
     <string name="settings_notifications_pause_footer">Al pausar, se detienen las notificaciones de este servidor en todos los dispositivos.</string>
     <string name="settings_notifications_devices_header">Dispositivos</string>
     <string name="settings_notifications_device_this">%1$s (este dispositivo)</string>
@@ -247,5 +246,6 @@
     <string name="settings_notifications_pause_failed_title">No se pudo cambiar la pausa</string>
     <string name="settings_notifications_device_failed_title">No se pudo cambiar el dispositivo</string>
     <string name="settings_notifications_device_remove_failed_title">No se pudo quitar el dispositivo</string>
+    <string name="settings_notifications_change_failed_title">No se pudieron cambiar las notificaciones</string>
     <string name="settings_notifications_change_failed_message">El servidor no aceptó el cambio.</string>
 </resources>

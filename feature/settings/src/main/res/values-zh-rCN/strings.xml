@@ -222,7 +222,7 @@
     <string name="settings_notifications_mode_none">不通知</string>
     <string name="settings_notifications_status_checking">正在检查服务器…</string>
     <string name="settings_notifications_status_no_permission">请先在上方允许通知。</string>
-    <string name="settings_notifications_status_outdated">此服务器需要更新 OpenCode 才能使用通知。</string>
+    <string name="settings_notifications_status_outdated">此服务器不支持通知。可能需要更新 OpenCode。</string>
     <string name="settings_notifications_status_relay">此服务器不接受此应用的通知中继。</string>
     <string name="settings_notifications_status_failed">无法在此服务器上设置通知。OpenCode 会在重新连接时重试。</string>
     <string name="settings_notifications_pause">暂停所有通知</string>
@@ -231,7 +231,6 @@
     <string name="settings_notifications_resume">恢复</string>
     <string name="settings_notifications_pause_hour">暂停 1 小时</string>
     <string name="settings_notifications_pause_tomorrow">直到明天早上</string>
-    <string name="settings_notifications_pause_forever">直到我恢复</string>
     <string name="settings_notifications_pause_footer">暂停后，所有设备都将停止接收来自此服务器的通知。</string>
     <string name="settings_notifications_devices_header">设备</string>
     <string name="settings_notifications_device_this">%1$s（此设备）</string>
@@ -241,5 +240,6 @@
     <string name="settings_notifications_pause_failed_title">无法更改暂停状态</string>
     <string name="settings_notifications_device_failed_title">无法更改设备设置</string>
     <string name="settings_notifications_device_remove_failed_title">无法移除设备</string>
+    <string name="settings_notifications_change_failed_title">无法更改通知设置</string>
     <string name="settings_notifications_change_failed_message">服务器未接受此更改。</string>
 </resources>

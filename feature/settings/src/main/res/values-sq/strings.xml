@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Asgjë</string>
     <string name="settings_notifications_status_checking">Po kontrollohet serveri…</string>
     <string name="settings_notifications_status_no_permission">Fillimisht lejo njoftimet më lart.</string>
-    <string name="settings_notifications_status_outdated">Ky server ka nevojë për një përditësim të OpenCode për njoftimet.</string>
+    <string name="settings_notifications_status_outdated">Ky server nuk ofron njoftime. Mund të ketë nevojë për një përditësim të OpenCode.</string>
     <string name="settings_notifications_status_relay">Ky server nuk e pranon ndërmjetësin e njoftimeve të këtij aplikacioni.</string>
     <string name="settings_notifications_status_failed">Nuk u konfiguruan dot njoftimet në këtë server. OpenCode provon sërish kur të rilidhet.</string>
     <string name="settings_notifications_pause">Ndalo përkohësisht të gjitha njoftimet</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Rifillo</string>
     <string name="settings_notifications_pause_hour">Për një orë</string>
     <string name="settings_notifications_pause_tomorrow">Deri nesër në mëngjes</string>
-    <string name="settings_notifications_pause_forever">Derisa t\'i rifilloj</string>
     <string name="settings_notifications_pause_footer">Vendosja në pauzë ndalon njoftimet nga ky server në çdo pajisje.</string>
     <string name="settings_notifications_devices_header">Pajisjet</string>
     <string name="settings_notifications_device_this">%1$s (kjo pajisje)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Nuk u ndryshua dot pauza</string>
     <string name="settings_notifications_device_failed_title">Nuk u ndryshua dot pajisja</string>
     <string name="settings_notifications_device_remove_failed_title">Nuk u hoq dot pajisja</string>
+    <string name="settings_notifications_change_failed_title">Nuk u ndryshuan dot njoftimet</string>
     <string name="settings_notifications_change_failed_message">Serveri nuk e pranoi ndryshimin.</string>
 </resources>

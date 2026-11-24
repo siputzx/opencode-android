@@ -353,14 +353,15 @@
     <string name="session_bell_level_none">Nic</string>
     <string name="session_bell_mute_hour">Nic na hodinu</string>
     <string name="session_bell_mute_tomorrow">Nic do zítřejšího rána</string>
-    <string name="session_bell_use_default">Použít volbu tohoto telefonu</string>
-    <string name="session_bell_source_own">Nastaveno jen pro tento telefon.</string>
-    <string name="session_bell_source_own_until">Nastaveno jen pro tento telefon do %1$s.</string>
-    <string name="session_bell_source_default">Volba tohoto telefonu pro server. Výběrem možnosti ji změníte pro tuto relaci.</string>
-    <string name="session_bell_source_shared">Nastaveno z jiného zařízení. Výběrem možnosti to změníte pro tento telefon.</string>
-    <string name="session_bell_source_shared_until">Nastaveno z jiného zařízení do %1$s. Výběrem možnosti to změníte pro tento telefon.</string>
-    <string name="session_bell_source_phone_paused">Oznámení na tomto telefonu jsou pozastavena v Nastavení.</string>
+    <string name="session_bell_use_default">Odebrat nastavení tohoto zařízení</string>
+    <string name="session_bell_source_own">Nastaveno jen pro toto zařízení.</string>
+    <string name="session_bell_source_own_until">Nastaveno jen pro toto zařízení do %1$s.</string>
+    <string name="session_bell_source_default">Volba tohoto zařízení pro server. Vyberte možnost pro změnu v této relaci.</string>
+    <string name="session_bell_source_shared">Nastaveno z jiného zařízení. Vyberte možnost pro změnu na tomto zařízení.</string>
+    <string name="session_bell_source_shared_until">Nastaveno z jiného zařízení do %1$s. Vyberte možnost pro změnu na tomto zařízení.</string>
+    <string name="session_bell_source_phone_paused">Toto zařízení je pozastaveno v Nastavení.</string>
     <string name="session_bell_source_server_paused">Všechna oznámení z tohoto serveru jsou pozastavena.</string>
     <string name="session_bell_source_server_paused_until">Všechna oznámení z tohoto serveru jsou pozastavena do %1$s.</string>
     <string name="session_sheet_bell_failed_title">Nepodařilo se změnit oznámení</string>
+    <string name="session_sheet_bell_failed_message">Server změnu nepřijal.</string>
 </resources>

@@ -228,7 +228,7 @@
     <string name="settings_notifications_mode_none">Nekas</string>
     <string name="settings_notifications_status_checking">Pārbauda serveri…</string>
     <string name="settings_notifications_status_no_permission">Vispirms atļauj paziņojumus augstāk.</string>
-    <string name="settings_notifications_status_outdated">Lai darbotos paziņojumi, šajā serverī jāatjaunina OpenCode.</string>
+    <string name="settings_notifications_status_outdated">Šis serveris nepiedāvā paziņojumus. Iespējams, tam nepieciešams OpenCode atjauninājums.</string>
     <string name="settings_notifications_status_relay">Šis serveris nepieņem šīs lietotnes paziņojumu starpniekserveri.</string>
     <string name="settings_notifications_status_failed">Neizdevās iestatīt paziņojumus šajā serverī. OpenCode mēģinās vēlreiz, kad atkal savienosies.</string>
     <string name="settings_notifications_pause">Pauzēt visus paziņojumus</string>
@@ -237,7 +237,6 @@
     <string name="settings_notifications_resume">Atsākt</string>
     <string name="settings_notifications_pause_hour">Uz stundu</string>
     <string name="settings_notifications_pause_tomorrow">Līdz rītdienas rītam</string>
-    <string name="settings_notifications_pause_forever">Līdz atsākšu</string>
     <string name="settings_notifications_pause_footer">Pauzēšana aptur paziņojumus no šī servera visās ierīcēs.</string>
     <string name="settings_notifications_devices_header">Ierīces</string>
     <string name="settings_notifications_device_this">%1$s (šī ierīce)</string>
@@ -247,5 +246,6 @@
     <string name="settings_notifications_pause_failed_title">Neizdevās mainīt pauzi</string>
     <string name="settings_notifications_device_failed_title">Neizdevās mainīt ierīci</string>
     <string name="settings_notifications_device_remove_failed_title">Neizdevās noņemt ierīci</string>
+    <string name="settings_notifications_change_failed_title">Neizdevās mainīt paziņojumus</string>
     <string name="settings_notifications_change_failed_message">Serveris nepieņēma izmaiņas.</string>
 </resources>

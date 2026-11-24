@@ -317,14 +317,15 @@
     <string name="session_bell_level_none">不通知</string>
     <string name="session_bell_mute_hour">1 小时内不通知</string>
     <string name="session_bell_mute_tomorrow">明早之前不通知</string>
-    <string name="session_bell_use_default">使用此手机的设置</string>
-    <string name="session_bell_source_own">仅为此手机设置。</string>
-    <string name="session_bell_source_own_until">仅为此手机设置，直到 %1$s。</string>
-    <string name="session_bell_source_default">此手机对该服务器的设置。选择一项即可为此会话更改。</string>
-    <string name="session_bell_source_shared">由其他设备设置。选择一项即可为此手机更改。</string>
-    <string name="session_bell_source_shared_until">由其他设备设置，直到 %1$s。选择一项即可为此手机更改。</string>
-    <string name="session_bell_source_phone_paused">此手机的通知已在设置中暂停。</string>
+    <string name="session_bell_use_default">移除此设备的设置</string>
+    <string name="session_bell_source_own">仅为此设备设置。</string>
+    <string name="session_bell_source_own_until">仅为此设备设置，直到 %1$s。</string>
+    <string name="session_bell_source_default">此设备对该服务器的设置。选择一项可为此会话更改。</string>
+    <string name="session_bell_source_shared">已在另一台设备上设置。选择一项可为此设备更改。</string>
+    <string name="session_bell_source_shared_until">已在另一台设备上设置，直到 %1$s。选择一项可为此设备更改。</string>
+    <string name="session_bell_source_phone_paused">此设备已在设置中暂停。</string>
     <string name="session_bell_source_server_paused">此服务器的所有通知已暂停。</string>
     <string name="session_bell_source_server_paused_until">此服务器的所有通知已暂停，直到 %1$s。</string>
     <string name="session_sheet_bell_failed_title">无法更改通知</string>
+    <string name="session_sheet_bell_failed_message">服务器未接受此更改。</string>
 </resources>

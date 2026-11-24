@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">ምንም</string>
     <string name="session_bell_mute_hour">ለአንድ ሰዓት ምንም</string>
     <string name="session_bell_mute_tomorrow">እስከ ነገ ጠዋት ምንም</string>
-    <string name="session_bell_use_default">የዚህን ስልክ ምርጫ ተጠቀም</string>
-    <string name="session_bell_source_own">ለዚህ ስልክ ብቻ ተቀናብሯል።</string>
-    <string name="session_bell_source_own_until">ለዚህ ስልክ ብቻ እስከ %1$s ተቀናብሯል።</string>
-    <string name="session_bell_source_default">ይህ ስልክ ለአገልጋዩ የመረጠው ነው። ለዚህ ክፍለ ጊዜ ለመቀየር አንዱን ምረጥ።</string>
-    <string name="session_bell_source_shared">ከሌላ መሣሪያ ተቀናብሯል። ለዚህ ስልክ ለመቀየር አንዱን ምረጥ።</string>
-    <string name="session_bell_source_shared_until">ከሌላ መሣሪያ እስከ %1$s ተቀናብሯል። ለዚህ ስልክ ለመቀየር አንዱን ምረጥ።</string>
-    <string name="session_bell_source_phone_paused">ይህ ስልክ በቅንብሮች ውስጥ ለአፍታ ቆሟል።</string>
+    <string name="session_bell_use_default">የዚህን መሣሪያ ቅንብር አስወግድ</string>
+    <string name="session_bell_source_own">ለዚህ መሣሪያ ብቻ ተቀናብሯል።</string>
+    <string name="session_bell_source_own_until">ለዚህ መሣሪያ ብቻ እስከ %1$s ድረስ ተቀናብሯል።</string>
+    <string name="session_bell_source_default">ለአገልጋዩ የዚህ መሣሪያ ምርጫ ነው። ለዚህ ክፍለ ጊዜ ለመቀየር አንዱን ምረጥ።</string>
+    <string name="session_bell_source_shared">ከሌላ መሣሪያ ተቀናብሯል። ለዚህ መሣሪያ ለመቀየር አንዱን ምረጥ።</string>
+    <string name="session_bell_source_shared_until">ከሌላ መሣሪያ እስከ %1$s ድረስ ተቀናብሯል። ለዚህ መሣሪያ ለመቀየር አንዱን ምረጥ።</string>
+    <string name="session_bell_source_phone_paused">ይህ መሣሪያ በቅንብሮች ውስጥ ለአፍታ ቆሟል።</string>
     <string name="session_bell_source_server_paused">ከዚህ አገልጋይ የሚመጡ ሁሉም ማሳወቂያዎች ለአፍታ ቆመዋል።</string>
     <string name="session_bell_source_server_paused_until">ከዚህ አገልጋይ የሚመጡ ሁሉም ማሳወቂያዎች እስከ %1$s ለአፍታ ቆመዋል።</string>
     <string name="session_sheet_bell_failed_title">ማሳወቂያዎችን መቀየር አልተቻለም</string>
+    <string name="session_sheet_bell_failed_message">አገልጋዩ ለውጡን አልተቀበለም።</string>
 </resources>

@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">Нищо</string>
     <string name="session_bell_mute_hour">Нищо за един час</string>
     <string name="session_bell_mute_tomorrow">Нищо до утре сутринта</string>
-    <string name="session_bell_use_default">Използване на избора за този телефон</string>
-    <string name="session_bell_source_own">Зададено само за този телефон.</string>
-    <string name="session_bell_source_own_until">Зададено само за този телефон до %1$s.</string>
-    <string name="session_bell_source_default">Изборът за сървъра на този телефон. Изберете опция, за да го промените за тази сесия.</string>
-    <string name="session_bell_source_shared">Зададено от друго устройство. Изберете опция, за да го промените за този телефон.</string>
-    <string name="session_bell_source_shared_until">Зададено от друго устройство до %1$s. Изберете опция, за да го промените за този телефон.</string>
-    <string name="session_bell_source_phone_paused">Този телефон е на пауза в Настройки.</string>
+    <string name="session_bell_use_default">Премахване на настройката за това устройство</string>
+    <string name="session_bell_source_own">Зададено само за това устройство.</string>
+    <string name="session_bell_source_own_until">Зададено само за това устройство до %1$s.</string>
+    <string name="session_bell_source_default">Изборът на това устройство за сървъра. Изберете опция, за да го промените за тази сесия.</string>
+    <string name="session_bell_source_shared">Зададено от друго устройство. Изберете опция, за да го промените за това устройство.</string>
+    <string name="session_bell_source_shared_until">Зададено от друго устройство до %1$s. Изберете опция, за да го промените за това устройство.</string>
+    <string name="session_bell_source_phone_paused">Това устройство е на пауза в Настройки.</string>
     <string name="session_bell_source_server_paused">Всички известия от този сървър са на пауза.</string>
     <string name="session_bell_source_server_paused_until">Всички известия от този сървър са на пауза до %1$s.</string>
     <string name="session_sheet_bell_failed_title">Неуспешна промяна на известията</string>
+    <string name="session_sheet_bell_failed_message">Сървърът не прие промяната.</string>
 </resources>

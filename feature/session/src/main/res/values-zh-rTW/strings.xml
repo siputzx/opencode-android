@@ -317,14 +317,15 @@
     <string name="session_bell_level_none">不通知</string>
     <string name="session_bell_mute_hour">一小時內不通知</string>
     <string name="session_bell_mute_tomorrow">明天早上前不通知</string>
-    <string name="session_bell_use_default">使用這台手機的設定</string>
-    <string name="session_bell_source_own">僅為這台手機設定。</string>
-    <string name="session_bell_source_own_until">僅為這台手機設定，直到 %1$s。</string>
-    <string name="session_bell_source_default">這台手機對此伺服器的設定。選擇一項即可為此工作階段變更。</string>
-    <string name="session_bell_source_shared">由其他裝置設定。選擇一項即可為這台手機變更。</string>
-    <string name="session_bell_source_shared_until">由其他裝置設定，直到 %1$s。選擇一項即可為這台手機變更。</string>
-    <string name="session_bell_source_phone_paused">這台手機已在「設定」中暫停。</string>
+    <string name="session_bell_use_default">移除這台裝置的設定</string>
+    <string name="session_bell_source_own">僅針對這台裝置設定。</string>
+    <string name="session_bell_source_own_until">僅針對這台裝置設定，直到 %1$s。</string>
+    <string name="session_bell_source_default">這台裝置對此伺服器的選項。選擇一項即可變更此工作階段的設定。</string>
+    <string name="session_bell_source_shared">由其他裝置設定。選擇一項即可變更這台裝置的設定。</string>
+    <string name="session_bell_source_shared_until">由其他裝置設定，直到 %1$s。選擇一項即可變更這台裝置的設定。</string>
+    <string name="session_bell_source_phone_paused">這台裝置已在設定中暫停。</string>
     <string name="session_bell_source_server_paused">此伺服器的所有通知都已暫停。</string>
     <string name="session_bell_source_server_paused_until">此伺服器的所有通知都已暫停，直到 %1$s。</string>
     <string name="session_sheet_bell_failed_title">無法變更通知設定</string>
+    <string name="session_sheet_bell_failed_message">伺服器未接受此變更。</string>
 </resources>

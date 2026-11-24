@@ -231,7 +231,7 @@
     <string name="settings_notifications_mode_none">Nič</string>
     <string name="settings_notifications_status_checking">Preverjanje strežnika …</string>
     <string name="settings_notifications_status_no_permission">Najprej dovolite obvestila zgoraj.</string>
-    <string name="settings_notifications_status_outdated">Ta strežnik za obvestila potrebuje posodobitev OpenCode.</string>
+    <string name="settings_notifications_status_outdated">Ta strežnik ne ponuja obvestil. Morda je treba posodobiti OpenCode.</string>
     <string name="settings_notifications_status_relay">Ta strežnik ne sprejema posrednika za obvestila te aplikacije.</string>
     <string name="settings_notifications_status_failed">Obvestil na tem strežniku ni bilo mogoče nastaviti. OpenCode bo poskusil znova, ko se ponovno poveže.</string>
     <string name="settings_notifications_pause">Začasno ustavi vsa obvestila</string>
@@ -240,7 +240,6 @@
     <string name="settings_notifications_resume">Nadaljuj</string>
     <string name="settings_notifications_pause_hour">Za eno uro</string>
     <string name="settings_notifications_pause_tomorrow">Do jutri zjutraj</string>
-    <string name="settings_notifications_pause_forever">Dokler ne nadaljujem</string>
     <string name="settings_notifications_pause_footer">Začasna ustavitev prekine obvestila s tega strežnika na vseh napravah.</string>
     <string name="settings_notifications_devices_header">Naprave</string>
     <string name="settings_notifications_device_this">%1$s (ta naprava)</string>
@@ -250,5 +249,6 @@
     <string name="settings_notifications_pause_failed_title">Premora ni bilo mogoče spremeniti</string>
     <string name="settings_notifications_device_failed_title">Naprave ni bilo mogoče spremeniti</string>
     <string name="settings_notifications_device_remove_failed_title">Naprave ni bilo mogoče odstraniti</string>
+    <string name="settings_notifications_change_failed_title">Obvestil ni bilo mogoče spremeniti</string>
     <string name="settings_notifications_change_failed_message">Strežnik ni sprejel spremembe.</string>
 </resources>

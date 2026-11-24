@@ -341,14 +341,15 @@
     <string name="session_bell_level_none">Nimic</string>
     <string name="session_bell_mute_hour">Nimic timp de o oră</string>
     <string name="session_bell_mute_tomorrow">Nimic până mâine dimineață</string>
-    <string name="session_bell_use_default">Folosește setarea acestui telefon</string>
-    <string name="session_bell_source_own">Setat doar pentru acest telefon.</string>
-    <string name="session_bell_source_own_until">Setat doar pentru acest telefon, până la %1$s.</string>
-    <string name="session_bell_source_default">Setarea acestui telefon pentru server. Alege o opțiune ca să o schimbi pentru această sesiune.</string>
-    <string name="session_bell_source_shared">Setat de pe alt dispozitiv. Alege o opțiune ca să schimbi pentru acest telefon.</string>
-    <string name="session_bell_source_shared_until">Setat de pe alt dispozitiv până la %1$s. Alege o opțiune ca să schimbi pentru acest telefon.</string>
-    <string name="session_bell_source_phone_paused">Acest telefon este în pauză în Setări.</string>
+    <string name="session_bell_use_default">Elimină setarea acestui dispozitiv</string>
+    <string name="session_bell_source_own">Setat doar pentru acest dispozitiv.</string>
+    <string name="session_bell_source_own_until">Setat doar pentru acest dispozitiv, până la %1$s.</string>
+    <string name="session_bell_source_default">Opțiunea acestui dispozitiv pentru server. Alege una pentru a schimba setarea acestei sesiuni.</string>
+    <string name="session_bell_source_shared">Setat de pe alt dispozitiv. Alege o opțiune pentru a schimba setarea acestui dispozitiv.</string>
+    <string name="session_bell_source_shared_until">Setat de pe alt dispozitiv până la %1$s. Alege o opțiune pentru a schimba setarea acestui dispozitiv.</string>
+    <string name="session_bell_source_phone_paused">Acest dispozitiv este în pauză în Setări.</string>
     <string name="session_bell_source_server_paused">Toate notificările de la acest server sunt în pauză.</string>
     <string name="session_bell_source_server_paused_until">Toate notificările de la acest server sunt în pauză până la %1$s.</string>
     <string name="session_sheet_bell_failed_title">Nu s-au putut schimba notificările</string>
+    <string name="session_sheet_bell_failed_message">Serverul nu a acceptat modificarea.</string>
 </resources>

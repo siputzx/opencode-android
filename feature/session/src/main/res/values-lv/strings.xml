@@ -341,14 +341,15 @@
     <string name="session_bell_level_none">Nekas</string>
     <string name="session_bell_mute_hour">Nekas uz stundu</string>
     <string name="session_bell_mute_tomorrow">Nekas līdz rītdienas rītam</string>
-    <string name="session_bell_use_default">Izmantot šī tālruņa izvēli</string>
-    <string name="session_bell_source_own">Iestatīts tikai šim tālrunim.</string>
-    <string name="session_bell_source_own_until">Iestatīts tikai šim tālrunim līdz %1$s.</string>
-    <string name="session_bell_source_default">Šī tālruņa izvēle serverim. Izvēlies variantu, lai to mainītu šai sesijai.</string>
-    <string name="session_bell_source_shared">Iestatīts no citas ierīces. Izvēlies variantu, lai to mainītu šim tālrunim.</string>
-    <string name="session_bell_source_shared_until">Iestatīts no citas ierīces līdz %1$s. Izvēlies variantu, lai to mainītu šim tālrunim.</string>
-    <string name="session_bell_source_phone_paused">Šis tālrunis ir pauzēts iestatījumos.</string>
+    <string name="session_bell_use_default">Noņemt šīs ierīces iestatījumu</string>
+    <string name="session_bell_source_own">Iestatīts tikai šai ierīcei.</string>
+    <string name="session_bell_source_own_until">Iestatīts tikai šai ierīcei līdz %1$s.</string>
+    <string name="session_bell_source_default">Šīs ierīces iestatījums serverim. Izvēlies opciju, lai to mainītu šai sesijai.</string>
+    <string name="session_bell_source_shared">Iestatīts no citas ierīces. Izvēlies opciju, lai to mainītu šai ierīcei.</string>
+    <string name="session_bell_source_shared_until">Iestatīts no citas ierīces līdz %1$s. Izvēlies opciju, lai to mainītu šai ierīcei.</string>
+    <string name="session_bell_source_phone_paused">Šī ierīce ir pauzēta iestatījumos.</string>
     <string name="session_bell_source_server_paused">Visi paziņojumi no šī servera ir pauzēti.</string>
     <string name="session_bell_source_server_paused_until">Visi paziņojumi no šī servera ir pauzēti līdz %1$s.</string>
     <string name="session_sheet_bell_failed_title">Neizdevās mainīt paziņojumus</string>
+    <string name="session_sheet_bell_failed_message">Serveris nepieņēma izmaiņas.</string>
 </resources>

@@ -353,14 +353,15 @@
     <string name="session_bell_level_none">Ничего</string>
     <string name="session_bell_mute_hour">Без уведомлений на час</string>
     <string name="session_bell_mute_tomorrow">Без уведомлений до завтрашнего утра</string>
-    <string name="session_bell_use_default">Использовать настройку этого телефона</string>
-    <string name="session_bell_source_own">Задано только для этого телефона.</string>
-    <string name="session_bell_source_own_until">Задано только для этого телефона до %1$s.</string>
-    <string name="session_bell_source_default">Настройка этого телефона для сервера. Выберите вариант, чтобы изменить её для этой сессии.</string>
-    <string name="session_bell_source_shared">Задано с другого устройства. Выберите вариант, чтобы изменить настройку для этого телефона.</string>
-    <string name="session_bell_source_shared_until">Задано с другого устройства до %1$s. Выберите вариант, чтобы изменить настройку для этого телефона.</string>
-    <string name="session_bell_source_phone_paused">Этот телефон на паузе в настройках.</string>
+    <string name="session_bell_use_default">Удалить настройку этого устройства</string>
+    <string name="session_bell_source_own">Задано только для этого устройства.</string>
+    <string name="session_bell_source_own_until">Задано только для этого устройства до %1$s.</string>
+    <string name="session_bell_source_default">Настройка этого устройства для сервера. Выберите вариант, чтобы изменить её для этой сессии.</string>
+    <string name="session_bell_source_shared">Задано с другого устройства. Выберите вариант, чтобы изменить настройку для этого устройства.</string>
+    <string name="session_bell_source_shared_until">Задано с другого устройства до %1$s. Выберите вариант, чтобы изменить настройку для этого устройства.</string>
+    <string name="session_bell_source_phone_paused">Это устройство на паузе в настройках.</string>
     <string name="session_bell_source_server_paused">Все уведомления от этого сервера на паузе.</string>
     <string name="session_bell_source_server_paused_until">Все уведомления от этого сервера на паузе до %1$s.</string>
     <string name="session_sheet_bell_failed_title">Не удалось изменить уведомления</string>
+    <string name="session_sheet_bell_failed_message">Сервер не принял изменение.</string>
 </resources>

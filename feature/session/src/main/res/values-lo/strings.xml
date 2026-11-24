@@ -317,14 +317,15 @@
     <string name="session_bell_level_none">ບໍ່ແຈ້ງເຕືອນ</string>
     <string name="session_bell_mute_hour">ບໍ່ແຈ້ງເຕືອນ 1 ຊົ່ວໂມງ</string>
     <string name="session_bell_mute_tomorrow">ບໍ່ແຈ້ງເຕືອນຈົນຮອດເຊົ້າມື້ອື່ນ</string>
-    <string name="session_bell_use_default">ໃຊ້ຕົວເລືອກຂອງໂທລະສັບນີ້</string>
-    <string name="session_bell_source_own">ຕັ້ງຄ່າສຳລັບໂທລະສັບນີ້ເທົ່ານັ້ນ.</string>
-    <string name="session_bell_source_own_until">ຕັ້ງຄ່າສຳລັບໂທລະສັບນີ້ເທົ່ານັ້ນ ຈົນຮອດ %1$s.</string>
-    <string name="session_bell_source_default">ຕົວເລືອກຂອງໂທລະສັບນີ້ສຳລັບເຊີບເວີ. ເລືອກອັນໜຶ່ງເພື່ອປ່ຽນສຳລັບເຊດຊັນນີ້.</string>
-    <string name="session_bell_source_shared">ຕັ້ງຄ່າຈາກອຸປະກອນອື່ນ. ເລືອກອັນໜຶ່ງເພື່ອປ່ຽນສຳລັບໂທລະສັບນີ້.</string>
-    <string name="session_bell_source_shared_until">ຕັ້ງຄ່າຈາກອຸປະກອນອື່ນຈົນຮອດ %1$s. ເລືອກອັນໜຶ່ງເພື່ອປ່ຽນສຳລັບໂທລະສັບນີ້.</string>
-    <string name="session_bell_source_phone_paused">ໂທລະສັບນີ້ຖືກຢຸດຊົ່ວຄາວໃນການຕັ້ງຄ່າ.</string>
+    <string name="session_bell_use_default">ເອົາການຕັ້ງຄ່າຂອງອຸປະກອນນີ້ອອກ</string>
+    <string name="session_bell_source_own">ຕັ້ງໄວ້ສຳລັບອຸປະກອນນີ້ເທົ່ານັ້ນ.</string>
+    <string name="session_bell_source_own_until">ຕັ້ງໄວ້ສຳລັບອຸປະກອນນີ້ເທົ່ານັ້ນ ຈົນຮອດ %1$s.</string>
+    <string name="session_bell_source_default">ຄ່າທີ່ອຸປະກອນນີ້ເລືອກໄວ້ສຳລັບເຊີບເວີ. ເລືອກໜຶ່ງຕົວເລືອກເພື່ອປ່ຽນສຳລັບເຊດຊັນນີ້.</string>
+    <string name="session_bell_source_shared">ຕັ້ງໄວ້ຈາກອຸປະກອນອື່ນ. ເລືອກໜຶ່ງຕົວເລືອກເພື່ອປ່ຽນສຳລັບອຸປະກອນນີ້.</string>
+    <string name="session_bell_source_shared_until">ຕັ້ງໄວ້ຈາກອຸປະກອນອື່ນ ຈົນຮອດ %1$s. ເລືອກໜຶ່ງຕົວເລືອກເພື່ອປ່ຽນສຳລັບອຸປະກອນນີ້.</string>
+    <string name="session_bell_source_phone_paused">ອຸປະກອນນີ້ຖືກຢຸດຊົ່ວຄາວໄວ້ໃນການຕັ້ງຄ່າ.</string>
     <string name="session_bell_source_server_paused">ການແຈ້ງເຕືອນທັງໝົດຈາກເຊີບເວີນີ້ຖືກຢຸດຊົ່ວຄາວແລ້ວ.</string>
     <string name="session_bell_source_server_paused_until">ການແຈ້ງເຕືອນທັງໝົດຈາກເຊີບເວີນີ້ຖືກຢຸດຊົ່ວຄາວຈົນຮອດ %1$s.</string>
     <string name="session_sheet_bell_failed_title">ປ່ຽນການແຈ້ງເຕືອນບໍ່ໄດ້</string>
+    <string name="session_sheet_bell_failed_message">ເຊີບເວີບໍ່ຍອມຮັບການປ່ຽນແປງນີ້.</string>
 </resources>

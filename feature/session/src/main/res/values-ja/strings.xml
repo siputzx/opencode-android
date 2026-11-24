@@ -317,14 +317,15 @@
     <string name="session_bell_level_none">通知しない</string>
     <string name="session_bell_mute_hour">1時間通知しない</string>
     <string name="session_bell_mute_tomorrow">明日の朝まで通知しない</string>
-    <string name="session_bell_use_default">このスマホの設定を使用</string>
-    <string name="session_bell_source_own">このスマホのみに設定されています。</string>
-    <string name="session_bell_source_own_until">%1$sまで、このスマホのみに設定されています。</string>
-    <string name="session_bell_source_default">このサーバーに対するこのスマホの設定です。このセッション用に変更するには選択してください。</string>
-    <string name="session_bell_source_shared">別のデバイスで設定されています。このスマホ用に変更するには選択してください。</string>
-    <string name="session_bell_source_shared_until">別のデバイスで%1$sまで設定されています。このスマホ用に変更するには選択してください。</string>
-    <string name="session_bell_source_phone_paused">このスマホの通知は設定で一時停止中です。</string>
+    <string name="session_bell_use_default">このデバイスの設定を削除</string>
+    <string name="session_bell_source_own">このデバイスのみに設定されています。</string>
+    <string name="session_bell_source_own_until">%1$sまで、このデバイスのみに設定されています。</string>
+    <string name="session_bell_source_default">サーバーに対するこのデバイスの設定です。選択するとこのセッション用に変更できます。</string>
+    <string name="session_bell_source_shared">別のデバイスから設定されています。選択するとこのデバイス用に変更できます。</string>
+    <string name="session_bell_source_shared_until">別のデバイスから%1$sまで設定されています。選択するとこのデバイス用に変更できます。</string>
+    <string name="session_bell_source_phone_paused">このデバイスは設定で一時停止中です。</string>
     <string name="session_bell_source_server_paused">このサーバーからの通知はすべて一時停止中です。</string>
     <string name="session_bell_source_server_paused_until">このサーバーからの通知は%1$sまですべて一時停止中です。</string>
     <string name="session_sheet_bell_failed_title">通知を変更できませんでした</string>
+    <string name="session_sheet_bell_failed_message">サーバーに変更を反映できませんでした。</string>
 </resources>

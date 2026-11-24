@@ -353,14 +353,15 @@
     <string name="session_bell_level_none">Nič</string>
     <string name="session_bell_mute_hour">Nič na hodinu</string>
     <string name="session_bell_mute_tomorrow">Nič do zajtra rána</string>
-    <string name="session_bell_use_default">Použiť voľbu tohto telefónu</string>
-    <string name="session_bell_source_own">Nastavené len pre tento telefón.</string>
-    <string name="session_bell_source_own_until">Nastavené len pre tento telefón do %1$s.</string>
-    <string name="session_bell_source_default">Voľba tohto telefónu pre server. Vyberte možnosť, ak ju chcete zmeniť pre túto reláciu.</string>
-    <string name="session_bell_source_shared">Nastavené z iného zariadenia. Vyberte možnosť, ak to chcete zmeniť pre tento telefón.</string>
-    <string name="session_bell_source_shared_until">Nastavené z iného zariadenia do %1$s. Vyberte možnosť, ak to chcete zmeniť pre tento telefón.</string>
-    <string name="session_bell_source_phone_paused">Upozornenia na tomto telefóne sú pozastavené v Nastaveniach.</string>
+    <string name="session_bell_use_default">Odstrániť nastavenie tohto zariadenia</string>
+    <string name="session_bell_source_own">Nastavené len pre toto zariadenie.</string>
+    <string name="session_bell_source_own_until">Nastavené len pre toto zariadenie do %1$s.</string>
+    <string name="session_bell_source_default">Voľba tohto zariadenia pre server. Vyberte možnosť, ak ju chcete zmeniť pre túto reláciu.</string>
+    <string name="session_bell_source_shared">Nastavené z iného zariadenia. Vyberte možnosť, ak to chcete zmeniť pre toto zariadenie.</string>
+    <string name="session_bell_source_shared_until">Nastavené z iného zariadenia do %1$s. Vyberte možnosť, ak to chcete zmeniť pre toto zariadenie.</string>
+    <string name="session_bell_source_phone_paused">Toto zariadenie je pozastavené v nastaveniach.</string>
     <string name="session_bell_source_server_paused">Všetky upozornenia z tohto servera sú pozastavené.</string>
     <string name="session_bell_source_server_paused_until">Všetky upozornenia z tohto servera sú pozastavené do %1$s.</string>
     <string name="session_sheet_bell_failed_title">Nepodarilo sa zmeniť upozornenia</string>
+    <string name="session_sheet_bell_failed_message">Server zmenu neprijal.</string>
 </resources>

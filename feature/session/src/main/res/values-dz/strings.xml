@@ -317,14 +317,15 @@
     <string name="session_bell_level_none">ག་ནི་ཡང་མེད།</string>
     <string name="session_bell_mute_hour">ཆུ་ཚོད་གཅིག་གི་རིང་ག་ནི་ཡང་མེད།</string>
     <string name="session_bell_mute_tomorrow">ནངས་པ་དྲོ་པ་ཚུན་ག་ནི་ཡང་མེད།</string>
-    <string name="session_bell_use_default">འགྲུལ་འཕྲིན་འདི་གི་གདམ་ཁ་ལག་ལེན་འཐབ།</string>
-    <string name="session_bell_source_own">འགྲུལ་འཕྲིན་འདི་གི་དོན་ལུ་རྐྱངམ་ཅིག་གཞི་སྒྲིག་འབད་ཡོད།</string>
-    <string name="session_bell_source_own_until">འགྲུལ་འཕྲིན་འདི་གི་དོན་ལུ་རྐྱངམ་ཅིག་ %1$s ཚུན་གཞི་སྒྲིག་འབད་ཡོད།</string>
-    <string name="session_bell_source_default">སར་བར་གྱི་དོན་ལུ་འགྲུལ་འཕྲིན་འདི་གི་གདམ་ཁ་ཨིན། ལཱ་ཡུན་འདི་ལུ་སོར་ནིའི་དོན་ལུ་གཅིག་གདམ་ཁ་རྐྱབས།</string>
-    <string name="session_bell_source_shared">ཐབས་འཕྲུལ་གཞན་ལས་གཞི་སྒྲིག་འབད་ཡོད། འགྲུལ་འཕྲིན་འདི་ལུ་སོར་ནིའི་དོན་ལུ་གཅིག་གདམ་ཁ་རྐྱབས།</string>
-    <string name="session_bell_source_shared_until">ཐབས་འཕྲུལ་གཞན་ལས་ %1$s ཚུན་གཞི་སྒྲིག་འབད་ཡོད། འགྲུལ་འཕྲིན་འདི་ལུ་སོར་ནིའི་དོན་ལུ་གཅིག་གདམ་ཁ་རྐྱབས།</string>
-    <string name="session_bell_source_phone_paused">འགྲུལ་འཕྲིན་འདི་སྒྲིག་སྟངས་ནང་ཐེངས་ཅིག་བཀག་ཡོད།</string>
+    <string name="session_bell_use_default">ཐབས་འཕྲུལ་འདིའི་སྒྲིག་སྟངས་རྩ་བསྐྲད་གཏང་།</string>
+    <string name="session_bell_source_own">ཐབས་འཕྲུལ་འདིའི་དོན་ལུ་རྐྱངམ་ཅིག་སྒྲིག་ཡོདཔ་ཨིན།</string>
+    <string name="session_bell_source_own_until">ཐབས་འཕྲུལ་འདིའི་དོན་ལུ་རྐྱངམ་ཅིག་ %1$s ཚུན་ཚོད་སྒྲིག་ཡོདཔ་ཨིན།</string>
+    <string name="session_bell_source_default">སར་བར་གྱི་དོན་ལུ་ ཐབས་འཕྲུལ་འདིའི་གདམ་ཁ་ཨིན། ལཱ་ཡུན་འདིའི་དོན་ལུ་བསྒྱུར་ནི་ལུ་ གཅིག་གདམ་ཁ་རྐྱབས།</string>
+    <string name="session_bell_source_shared">ཐབས་འཕྲུལ་གཞན་ལས་སྒྲིག་ཡོདཔ་ཨིན། ཐབས་འཕྲུལ་འདིའི་དོན་ལུ་བསྒྱུར་ནི་ལུ་ གཅིག་གདམ་ཁ་རྐྱབས།</string>
+    <string name="session_bell_source_shared_until">ཐབས་འཕྲུལ་གཞན་ལས་ %1$s ཚུན་ཚོད་སྒྲིག་ཡོདཔ་ཨིན། ཐབས་འཕྲུལ་འདིའི་དོན་ལུ་བསྒྱུར་ནི་ལུ་ གཅིག་གདམ་ཁ་རྐྱབས།</string>
+    <string name="session_bell_source_phone_paused">ཐབས་འཕྲུལ་འདི་ སྒྲིག་སྟངས་ནང་ཐེངས་ཅིག་བཀག་ཡོདཔ་ཨིན།</string>
     <string name="session_bell_source_server_paused">སར་བར་འདི་ལས་འོང་མི་བརྡ་བསྐུལ་ཆ་མཉམ་ཐེངས་ཅིག་བཀག་ཡོད།</string>
     <string name="session_bell_source_server_paused_until">སར་བར་འདི་ལས་འོང་མི་བརྡ་བསྐུལ་ཆ་མཉམ་ %1$s ཚུན་ཐེངས་ཅིག་བཀག་ཡོད།</string>
     <string name="session_sheet_bell_failed_title">བརྡ་བསྐུལ་ཚུ་བསྒྱུར་བཅོས་འབད་མ་ཚུགས།</string>
+    <string name="session_sheet_bell_failed_message">སར་བར་གྱིས་ བསྒྱུར་བཅོས་འདི་ངོས་ལེན་མ་འབད་བས།</string>
 </resources>

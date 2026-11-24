@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Ոչինչ</string>
     <string name="settings_notifications_status_checking">Սերվերը ստուգվում է…</string>
     <string name="settings_notifications_status_no_permission">Նախ թույլատրեք ծանուցումները վերևում։</string>
-    <string name="settings_notifications_status_outdated">Ծանուցումների համար այս սերվերում անհրաժեշտ է թարմացնել OpenCode-ը։</string>
+    <string name="settings_notifications_status_outdated">Այս սերվերը ծանուցումներ չի տրամադրում։ Հնարավոր է՝ OpenCode-ի թարմացում է պետք։</string>
     <string name="settings_notifications_status_relay">Այս սերվերը չի ընդունում այս հավելվածի ծանուցումների միջնորդ սերվերը։</string>
     <string name="settings_notifications_status_failed">Չհաջողվեց կարգավորել ծանուցումներն այս սերվերում։ OpenCode-ը կրկին կփորձի վերամիանալիս։</string>
     <string name="settings_notifications_pause">Դադարեցնել բոլոր ծանուցումները</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Վերսկսել</string>
     <string name="settings_notifications_pause_hour">Մեկ ժամով</string>
     <string name="settings_notifications_pause_tomorrow">Մինչև վաղն առավոտ</string>
-    <string name="settings_notifications_pause_forever">Մինչև ինքս վերսկսեմ</string>
     <string name="settings_notifications_pause_footer">Դադարեցումը կանգնեցնում է այս սերվերի ծանուցումները բոլոր սարքերում։</string>
     <string name="settings_notifications_devices_header">Սարքեր</string>
     <string name="settings_notifications_device_this">%1$s (այս սարքը)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Չհաջողվեց փոխել դադարեցումը</string>
     <string name="settings_notifications_device_failed_title">Չհաջողվեց փոխել սարքը</string>
     <string name="settings_notifications_device_remove_failed_title">Չհաջողվեց հեռացնել սարքը</string>
+    <string name="settings_notifications_change_failed_title">Չհաջողվեց փոխել ծանուցումները</string>
     <string name="settings_notifications_change_failed_message">Սերվերը չընդունեց փոփոխությունը։</string>
 </resources>

@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">කිසිවක් නැත</string>
     <string name="session_bell_mute_hour">පැයකට කිසිවක් නැත</string>
     <string name="session_bell_mute_tomorrow">හෙට උදෑසන තෙක් කිසිවක් නැත</string>
-    <string name="session_bell_use_default">මෙම දුරකථනයේ තේරීම භාවිත කරන්න</string>
-    <string name="session_bell_source_own">මෙම දුරකථනය සඳහා පමණක් සකසා ඇත.</string>
-    <string name="session_bell_source_own_until">%1$s තෙක් මෙම දුරකථනය සඳහා පමණක් සකසා ඇත.</string>
-    <string name="session_bell_source_default">සේවාදායකය සඳහා මෙම දුරකථනයේ තේරීමයි. මෙම සැසිය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
-    <string name="session_bell_source_shared">වෙනත් උපාංගයකින් සකසා ඇත. මෙම දුරකථනය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
-    <string name="session_bell_source_shared_until">%1$s තෙක් වෙනත් උපාංගයකින් සකසා ඇත. මෙම දුරකථනය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
-    <string name="session_bell_source_phone_paused">මෙම දුරකථනය සැකසීම් තුළ විරාම කර ඇත.</string>
+    <string name="session_bell_use_default">මෙම උපාංගයේ සැකසුම ඉවත් කරන්න</string>
+    <string name="session_bell_source_own">මෙම උපාංගය සඳහා පමණක් සකසා ඇත.</string>
+    <string name="session_bell_source_own_until">මෙම උපාංගය සඳහා පමණක්, %1$s තෙක් සකසා ඇත.</string>
+    <string name="session_bell_source_default">සේවාදායකය සඳහා මෙම උපාංගයේ තේරීමයි. මෙම සැසිය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
+    <string name="session_bell_source_shared">වෙනත් උපාංගයකින් සකසා ඇත. මෙම උපාංගය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
+    <string name="session_bell_source_shared_until">වෙනත් උපාංගයකින් %1$s තෙක් සකසා ඇත. මෙම උපාංගය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
+    <string name="session_bell_source_phone_paused">මෙම උපාංගය සැකසීම් තුළ විරාම කර ඇත.</string>
     <string name="session_bell_source_server_paused">මෙම සේවාදායකයෙන් එන සියලු දැනුම්දීම් විරාම කර ඇත.</string>
     <string name="session_bell_source_server_paused_until">මෙම සේවාදායකයෙන් එන සියලු දැනුම්දීම් %1$s තෙක් විරාම කර ඇත.</string>
     <string name="session_sheet_bell_failed_title">දැනුම්දීම් වෙනස් කිරීමට නොහැකි විය</string>
+    <string name="session_sheet_bell_failed_message">සේවාදායකය වෙනස පිළිගත්තේ නැත.</string>
 </resources>

@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">Einki</string>
     <string name="session_bell_mute_hour">Einki í ein tíma</string>
     <string name="session_bell_mute_tomorrow">Einki til í morgin á morgni</string>
-    <string name="session_bell_use_default">Brúka valið hjá hesi telefonini</string>
-    <string name="session_bell_source_own">Sett bert fyri hesa telefonina.</string>
-    <string name="session_bell_source_own_until">Sett bert fyri hesa telefonina, til %1$s.</string>
-    <string name="session_bell_source_default">Valið hjá hesi telefonini fyri ambætaran. Vel eitt fyri at broyta tað fyri hesa setuna.</string>
-    <string name="session_bell_source_shared">Sett frá einum øðrum tóli. Vel eitt fyri at broyta tað fyri hesa telefonina.</string>
-    <string name="session_bell_source_shared_until">Sett frá einum øðrum tóli til %1$s. Vel eitt fyri at broyta tað fyri hesa telefonina.</string>
-    <string name="session_bell_source_phone_paused">Henda telefonin er steðgað fyribils í innstillingum.</string>
+    <string name="session_bell_use_default">Tak innstillingina hjá hesum tólinum burtur</string>
+    <string name="session_bell_source_own">Sett bert fyri hetta tólið.</string>
+    <string name="session_bell_source_own_until">Sett bert fyri hetta tólið, til %1$s.</string>
+    <string name="session_bell_source_default">Valið hjá hesum tólinum fyri ambætaran. Vel eitt fyri at broyta tað fyri hesa setuna.</string>
+    <string name="session_bell_source_shared">Sett frá øðrum tóli. Vel eitt fyri at broyta tað fyri hetta tólið.</string>
+    <string name="session_bell_source_shared_until">Sett frá øðrum tóli til %1$s. Vel eitt fyri at broyta tað fyri hetta tólið.</string>
+    <string name="session_bell_source_phone_paused">Hetta tólið er steðgað fyribils í innstillingunum.</string>
     <string name="session_bell_source_server_paused">Allar fráboðanir frá hesum ambætaranum eru steðgaðar fyribils.</string>
     <string name="session_bell_source_server_paused_until">Allar fráboðanir frá hesum ambætaranum eru steðgaðar fyribils til %1$s.</string>
     <string name="session_sheet_bell_failed_title">Kundi ikki broyta fráboðanir</string>
+    <string name="session_sheet_bell_failed_message">Ambætarin tók ikki við broytingini.</string>
 </resources>

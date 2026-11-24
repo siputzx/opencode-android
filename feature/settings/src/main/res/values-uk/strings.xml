@@ -231,7 +231,7 @@
     <string name="settings_notifications_mode_none">Без сповіщень</string>
     <string name="settings_notifications_status_checking">Перевірка сервера…</string>
     <string name="settings_notifications_status_no_permission">Спочатку дозвольте сповіщення вище.</string>
-    <string name="settings_notifications_status_outdated">Для сповіщень потрібно оновити OpenCode на цьому сервері.</string>
+    <string name="settings_notifications_status_outdated">Цей сервер не підтримує сповіщення. Можливо, потрібно оновити OpenCode.</string>
     <string name="settings_notifications_status_relay">Цей сервер не приймає ретранслятор сповіщень цього застосунку.</string>
     <string name="settings_notifications_status_failed">Не вдалося налаштувати сповіщення на цьому сервері. OpenCode спробує ще раз після повторного підключення.</string>
     <string name="settings_notifications_pause">Призупинити всі сповіщення</string>
@@ -240,7 +240,6 @@
     <string name="settings_notifications_resume">Відновити</string>
     <string name="settings_notifications_pause_hour">На годину</string>
     <string name="settings_notifications_pause_tomorrow">До завтрашнього ранку</string>
-    <string name="settings_notifications_pause_forever">Поки не відновлю</string>
     <string name="settings_notifications_pause_footer">Пауза зупиняє сповіщення з цього сервера на всіх пристроях.</string>
     <string name="settings_notifications_devices_header">Пристрої</string>
     <string name="settings_notifications_device_this">%1$s (цей пристрій)</string>
@@ -250,5 +249,6 @@
     <string name="settings_notifications_pause_failed_title">Не вдалося змінити паузу</string>
     <string name="settings_notifications_device_failed_title">Не вдалося змінити пристрій</string>
     <string name="settings_notifications_device_remove_failed_title">Не вдалося видалити пристрій</string>
+    <string name="settings_notifications_change_failed_title">Не вдалося змінити сповіщення</string>
     <string name="settings_notifications_change_failed_message">Сервер не прийняв зміни.</string>
 </resources>

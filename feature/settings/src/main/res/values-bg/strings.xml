@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Нищо</string>
     <string name="settings_notifications_status_checking">Проверка на сървъра…</string>
     <string name="settings_notifications_status_no_permission">Първо разрешете известията по-горе.</string>
-    <string name="settings_notifications_status_outdated">Този сървър се нуждае от актуализация на OpenCode за известия.</string>
+    <string name="settings_notifications_status_outdated">Този сървър не поддържа известия. Може да е нужна актуализация на OpenCode.</string>
     <string name="settings_notifications_status_relay">Този сървър не приема препредавателя за известия на това приложение.</string>
     <string name="settings_notifications_status_failed">Неуспешно настройване на известията за този сървър. OpenCode ще опита отново при повторно свързване.</string>
     <string name="settings_notifications_pause">Пауза на всички известия</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Възобновяване</string>
     <string name="settings_notifications_pause_hour">За един час</string>
     <string name="settings_notifications_pause_tomorrow">До утре сутрин</string>
-    <string name="settings_notifications_pause_forever">Докато не ги възобновя</string>
     <string name="settings_notifications_pause_footer">Паузата спира известията от този сървър на всички устройства.</string>
     <string name="settings_notifications_devices_header">Устройства</string>
     <string name="settings_notifications_device_this">%1$s (това устройство)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Неуспешна промяна на паузата</string>
     <string name="settings_notifications_device_failed_title">Неуспешна промяна на устройството</string>
     <string name="settings_notifications_device_remove_failed_title">Неуспешно премахване на устройството</string>
+    <string name="settings_notifications_change_failed_title">Неуспешна промяна на известията</string>
     <string name="settings_notifications_change_failed_message">Сървърът не прие промяната.</string>
 </resources>

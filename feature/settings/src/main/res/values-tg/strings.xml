@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Ҳеҷ чиз</string>
     <string name="settings_notifications_status_checking">Сервер санҷида мешавад…</string>
     <string name="settings_notifications_status_no_permission">Аввал дар боло ба огоҳиҳо иҷозат диҳед.</string>
-    <string name="settings_notifications_status_outdated">Барои огоҳиҳо ин сервер ба навсозии OpenCode ниёз дорад.</string>
+    <string name="settings_notifications_status_outdated">Ин сервер огоҳиҳоро пешниҳод намекунад. Шояд навсозии OpenCode лозим бошад.</string>
     <string name="settings_notifications_status_relay">Ин сервер миёнарави огоҳиҳои ин барномаро қабул намекунад.</string>
     <string name="settings_notifications_status_failed">Огоҳиҳоро дар ин сервер танзим карда нашуд. OpenCode ҳангоми пайвасти дубора боз кӯшиш мекунад.</string>
     <string name="settings_notifications_pause">Таваққуфи ҳамаи огоҳиҳо</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Идома додан</string>
     <string name="settings_notifications_pause_hour">Барои як соат</string>
     <string name="settings_notifications_pause_tomorrow">То пагоҳ саҳар</string>
-    <string name="settings_notifications_pause_forever">То худам идома диҳам</string>
     <string name="settings_notifications_pause_footer">Таваққуф огоҳиҳоро аз ин сервер дар ҳамаи дастгоҳҳо қатъ мекунад.</string>
     <string name="settings_notifications_devices_header">Дастгоҳҳо</string>
     <string name="settings_notifications_device_this">%1$s (Ин дастгоҳ)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Таваққуфро тағйир дода нашуд</string>
     <string name="settings_notifications_device_failed_title">Дастгоҳро тағйир дода нашуд</string>
     <string name="settings_notifications_device_remove_failed_title">Дастгоҳро хориҷ карда нашуд</string>
+    <string name="settings_notifications_change_failed_title">Огоҳиҳоро тағйир дода нашуд</string>
     <string name="settings_notifications_change_failed_message">Сервер тағйиротро қабул накард.</string>
 </resources>

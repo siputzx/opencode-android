@@ -228,7 +228,7 @@
     <string name="settings_notifications_mode_none">Ništa</string>
     <string name="settings_notifications_status_checking">Provjera poslužitelja…</string>
     <string name="settings_notifications_status_no_permission">Prvo dopustite obavijesti iznad.</string>
-    <string name="settings_notifications_status_outdated">Za obavijesti je potrebno ažurirati OpenCode na ovom poslužitelju.</string>
+    <string name="settings_notifications_status_outdated">Ovaj poslužitelj ne podržava obavijesti. Možda je potrebno ažurirati OpenCode.</string>
     <string name="settings_notifications_status_relay">Ovaj poslužitelj ne prihvaća posrednik za obavijesti ove aplikacije.</string>
     <string name="settings_notifications_status_failed">Nije moguće postaviti obavijesti na ovom poslužitelju. OpenCode će pokušati ponovno kad se opet poveže.</string>
     <string name="settings_notifications_pause">Pauziraj sve obavijesti</string>
@@ -237,7 +237,6 @@
     <string name="settings_notifications_resume">Nastavi</string>
     <string name="settings_notifications_pause_hour">Na sat vremena</string>
     <string name="settings_notifications_pause_tomorrow">Do sutra ujutro</string>
-    <string name="settings_notifications_pause_forever">Dok ne nastavim</string>
     <string name="settings_notifications_pause_footer">Pauziranje zaustavlja obavijesti s ovog poslužitelja na svim uređajima.</string>
     <string name="settings_notifications_devices_header">Uređaji</string>
     <string name="settings_notifications_device_this">%1$s (ovaj uređaj)</string>
@@ -247,5 +246,6 @@
     <string name="settings_notifications_pause_failed_title">Nije moguće promijeniti pauzu</string>
     <string name="settings_notifications_device_failed_title">Nije moguće promijeniti uređaj</string>
     <string name="settings_notifications_device_remove_failed_title">Nije moguće ukloniti uređaj</string>
+    <string name="settings_notifications_change_failed_title">Nije moguće promijeniti obavijesti</string>
     <string name="settings_notifications_change_failed_message">Poslužitelj nije prihvatio promjenu.</string>
 </resources>

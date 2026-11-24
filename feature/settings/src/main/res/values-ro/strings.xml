@@ -228,7 +228,7 @@
     <string name="settings_notifications_mode_none">Nimic</string>
     <string name="settings_notifications_status_checking">Se verifică serverul…</string>
     <string name="settings_notifications_status_no_permission">Permite mai întâi notificările mai sus.</string>
-    <string name="settings_notifications_status_outdated">Acest server are nevoie de o actualizare OpenCode pentru notificări.</string>
+    <string name="settings_notifications_status_outdated">Acest server nu oferă notificări. Ar putea necesita o actualizare OpenCode.</string>
     <string name="settings_notifications_status_relay">Acest server nu acceptă releul de notificări al acestei aplicații.</string>
     <string name="settings_notifications_status_failed">Notificările nu au putut fi configurate pe acest server. OpenCode va încerca din nou la reconectare.</string>
     <string name="settings_notifications_pause">Pune toate notificările pe pauză</string>
@@ -237,7 +237,6 @@
     <string name="settings_notifications_resume">Reia</string>
     <string name="settings_notifications_pause_hour">Pentru o oră</string>
     <string name="settings_notifications_pause_tomorrow">Până mâine dimineață</string>
-    <string name="settings_notifications_pause_forever">Până le reiau</string>
     <string name="settings_notifications_pause_footer">Pauza oprește notificările de la acest server pe toate dispozitivele.</string>
     <string name="settings_notifications_devices_header">Dispozitive</string>
     <string name="settings_notifications_device_this">%1$s (acest dispozitiv)</string>
@@ -247,5 +246,6 @@
     <string name="settings_notifications_pause_failed_title">Nu s-a putut modifica pauza</string>
     <string name="settings_notifications_device_failed_title">Nu s-a putut modifica dispozitivul</string>
     <string name="settings_notifications_device_remove_failed_title">Nu s-a putut elimina dispozitivul</string>
+    <string name="settings_notifications_change_failed_title">Nu s-au putut modifica notificările</string>
     <string name="settings_notifications_change_failed_message">Serverul nu a acceptat modificarea.</string>
 </resources>

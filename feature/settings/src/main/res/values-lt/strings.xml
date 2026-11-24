@@ -231,7 +231,7 @@
     <string name="settings_notifications_mode_none">Nieko</string>
     <string name="settings_notifications_status_checking">Tikrinamas serveris…</string>
     <string name="settings_notifications_status_no_permission">Pirmiausia leiskite pranešimus aukščiau.</string>
-    <string name="settings_notifications_status_outdated">Kad veiktų pranešimai, šiame serveryje reikia atnaujinti OpenCode.</string>
+    <string name="settings_notifications_status_outdated">Šis serveris nepalaiko pranešimų. Gali reikėti atnaujinti OpenCode.</string>
     <string name="settings_notifications_status_relay">Šis serveris nepriima šios programos pranešimų persiuntimo tarnybos.</string>
     <string name="settings_notifications_status_failed">Nepavyko nustatyti pranešimų šiame serveryje. OpenCode bandys dar kartą, kai vėl prisijungs.</string>
     <string name="settings_notifications_pause">Pristabdyti visus pranešimus</string>
@@ -240,7 +240,6 @@
     <string name="settings_notifications_resume">Vėl įjungti</string>
     <string name="settings_notifications_pause_hour">Valandai</string>
     <string name="settings_notifications_pause_tomorrow">Iki rytojaus ryto</string>
-    <string name="settings_notifications_pause_forever">Kol vėl įjungsiu</string>
     <string name="settings_notifications_pause_footer">Pristabdžius šio serverio pranešimai sustabdomi visuose įrenginiuose.</string>
     <string name="settings_notifications_devices_header">Įrenginiai</string>
     <string name="settings_notifications_device_this">%1$s (šis įrenginys)</string>
@@ -250,5 +249,6 @@
     <string name="settings_notifications_pause_failed_title">Nepavyko pakeisti pristabdymo</string>
     <string name="settings_notifications_device_failed_title">Nepavyko pakeisti įrenginio</string>
     <string name="settings_notifications_device_remove_failed_title">Nepavyko pašalinti įrenginio</string>
+    <string name="settings_notifications_change_failed_title">Nepavyko pakeisti pranešimų</string>
     <string name="settings_notifications_change_failed_message">Serveris nepriėmė pakeitimo.</string>
 </resources>

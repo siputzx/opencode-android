@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">Ҳеҷ чиз</string>
     <string name="session_bell_mute_hour">Ҳеҷ чиз барои як соат</string>
     <string name="session_bell_mute_tomorrow">Ҳеҷ чиз то субҳи фардо</string>
-    <string name="session_bell_use_default">Интихоби ин телефонро истифода баред</string>
-    <string name="session_bell_source_own">Танҳо барои ин телефон танзим шудааст.</string>
-    <string name="session_bell_source_own_until">Танҳо барои ин телефон то %1$s танзим шудааст.</string>
-    <string name="session_bell_source_default">Интихоби ин телефон барои сервер. Барои иваз кардан дар ин сессия якеро интихоб кунед.</string>
-    <string name="session_bell_source_shared">Аз дастгоҳи дигар танзим шудааст. Барои иваз кардан дар ин телефон якеро интихоб кунед.</string>
-    <string name="session_bell_source_shared_until">Аз дастгоҳи дигар то %1$s танзим шудааст. Барои иваз кардан дар ин телефон якеро интихоб кунед.</string>
-    <string name="session_bell_source_phone_paused">Ин телефон дар Танзимот таваққуф шудааст.</string>
+    <string name="session_bell_use_default">Танзими ин дастгоҳро хориҷ кунед</string>
+    <string name="session_bell_source_own">Танҳо барои ин дастгоҳ танзим шудааст.</string>
+    <string name="session_bell_source_own_until">Танҳо барои ин дастгоҳ то %1$s танзим шудааст.</string>
+    <string name="session_bell_source_default">Интихоби ин дастгоҳ барои сервер. Барои тағйир додан дар ин сессия якеро интихоб кунед.</string>
+    <string name="session_bell_source_shared">Аз дастгоҳи дигар танзим шудааст. Барои тағйир додан дар ин дастгоҳ якеро интихоб кунед.</string>
+    <string name="session_bell_source_shared_until">Аз дастгоҳи дигар то %1$s танзим шудааст. Барои тағйир додан дар ин дастгоҳ якеро интихоб кунед.</string>
+    <string name="session_bell_source_phone_paused">Ин дастгоҳ дар Танзимотҳо таваққуф шудааст.</string>
     <string name="session_bell_source_server_paused">Ҳамаи огоҳиҳо аз ин сервер таваққуф шудаанд.</string>
     <string name="session_bell_source_server_paused_until">Ҳамаи огоҳиҳо аз ин сервер то %1$s таваққуф шудаанд.</string>
     <string name="session_sheet_bell_failed_title">Тағйир додани огоҳиҳо нашуд</string>
+    <string name="session_sheet_bell_failed_message">Сервер тағйиротро қабул накард.</string>
 </resources>

@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Heç nə</string>
     <string name="settings_notifications_status_checking">Server yoxlanılır…</string>
     <string name="settings_notifications_status_no_permission">Əvvəlcə yuxarıda bildirişlərə icazə verin.</string>
-    <string name="settings_notifications_status_outdated">Bildirişlər üçün bu serverdə OpenCode yenilənməlidir.</string>
+    <string name="settings_notifications_status_outdated">Bu server bildirişləri dəstəkləmir. OpenCode yeniləməsi lazım ola bilər.</string>
     <string name="settings_notifications_status_relay">Bu server bu tətbiqin bildiriş ötürücüsünü qəbul etmir.</string>
     <string name="settings_notifications_status_failed">Bu serverdə bildirişləri quraşdırmaq mümkün olmadı. OpenCode yenidən qoşulduqda təkrar cəhd edəcək.</string>
     <string name="settings_notifications_pause">Bütün bildirişlərə fasilə ver</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Davam etdir</string>
     <string name="settings_notifications_pause_hour">Bir saatlıq</string>
     <string name="settings_notifications_pause_tomorrow">Sabah səhərədək</string>
-    <string name="settings_notifications_pause_forever">Mən davam etdirənədək</string>
     <string name="settings_notifications_pause_footer">Fasilə vermək bu serverdən bütün cihazlara gələn bildirişləri dayandırır.</string>
     <string name="settings_notifications_devices_header">Cihazlar</string>
     <string name="settings_notifications_device_this">%1$s (bu cihaz)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Fasiləni dəyişmək mümkün olmadı</string>
     <string name="settings_notifications_device_failed_title">Cihazı dəyişmək mümkün olmadı</string>
     <string name="settings_notifications_device_remove_failed_title">Cihazı silmək mümkün olmadı</string>
+    <string name="settings_notifications_change_failed_title">Bildirişləri dəyişmək mümkün olmadı</string>
     <string name="settings_notifications_change_failed_message">Server dəyişikliyi qəbul etmədi.</string>
 </resources>

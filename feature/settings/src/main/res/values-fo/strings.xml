@@ -225,7 +225,7 @@
     <string name="settings_notifications_mode_none">Einki</string>
     <string name="settings_notifications_status_checking">Kannar ambætaran…</string>
     <string name="settings_notifications_status_no_permission">Loyv fráboðanum omanfyri fyrst.</string>
-    <string name="settings_notifications_status_outdated">Hesin ambætarin krevur eina OpenCode-dagføring til fráboðanir.</string>
+    <string name="settings_notifications_status_outdated">Hesin ambætarin bjóðar ikki fráboðanir. Hann hevur kanska tørv á eini OpenCode-dagføring.</string>
     <string name="settings_notifications_status_relay">Hesin ambætarin góðtekur ikki millumsendaran til fráboðanir hjá hesum forritinum.</string>
     <string name="settings_notifications_status_failed">Kundi ikki seta fráboðanir upp á hesum ambætaranum. OpenCode roynir aftur, tá ið samband kemur aftur.</string>
     <string name="settings_notifications_pause">Steðga øllum fráboðanum fyribils</string>
@@ -234,7 +234,6 @@
     <string name="settings_notifications_resume">Tak upp aftur</string>
     <string name="settings_notifications_pause_hour">Í ein tíma</string>
     <string name="settings_notifications_pause_tomorrow">Til í morgin á morgni</string>
-    <string name="settings_notifications_pause_forever">Til eg taki upp aftur</string>
     <string name="settings_notifications_pause_footer">Steðgar tú fyribils, koma ongar fráboðanir frá hesum ambætaranum á nøkrum tóli.</string>
     <string name="settings_notifications_devices_header">Tól</string>
     <string name="settings_notifications_device_this">%1$s (hetta tólið)</string>
@@ -244,5 +243,6 @@
     <string name="settings_notifications_pause_failed_title">Kundi ikki broyta fyribilssteðgin</string>
     <string name="settings_notifications_device_failed_title">Kundi ikki broyta tólið</string>
     <string name="settings_notifications_device_remove_failed_title">Kundi ikki taka tólið burtur</string>
+    <string name="settings_notifications_change_failed_title">Kundi ikki broyta fráboðanir</string>
     <string name="settings_notifications_change_failed_message">Ambætarin tók ikki ímóti broytingini.</string>
 </resources>
