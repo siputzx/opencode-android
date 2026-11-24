@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Bildirishnomalar</string>
     <string name="settings_notifications_device_header">Bu %1$s</string>
-    <string name="settings_notifications_device_footer">Bildirishnomalar hech narsa saqlamaydigan uzatuvchi server orqali o‘tadi va boshidan oxirigacha shifrlanadi.</string>
     <string name="settings_notifications_allow">Bildirishnomalarga ruxsat berish</string>
     <string name="settings_notifications_open_android_settings">Android sozlamalarini ochish</string>
     <string name="settings_notifications_turn_on">Bildirishnomalarni yoqish</string>

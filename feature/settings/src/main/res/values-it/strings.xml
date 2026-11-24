@@ -52,7 +52,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notifiche</string>
     <string name="settings_notifications_device_header">Questo %1$s</string>
-    <string name="settings_notifications_device_footer">Le notifiche passano attraverso un relay che non memorizza nulla e sono crittografate end-to-end.</string>
     <string name="settings_notifications_allow">Consenti notifiche</string>
     <string name="settings_notifications_open_android_settings">Apri le impostazioni Android</string>
     <string name="settings_notifications_turn_on">Attiva notifiche</string>

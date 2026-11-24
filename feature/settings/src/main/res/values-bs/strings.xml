@@ -52,7 +52,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Obavještenja</string>
     <string name="settings_notifications_device_header">Ovaj %1$s</string>
-    <string name="settings_notifications_device_footer">Obavještenja idu preko posrednika koji ništa ne čuva i šifrirana su s kraja na kraj.</string>
     <string name="settings_notifications_allow">Dozvoli obavještenja</string>
     <string name="settings_notifications_open_android_settings">Otvori Android postavke</string>
     <string name="settings_notifications_turn_on">Uključi obavještenja</string>

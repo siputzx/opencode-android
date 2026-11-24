@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Bildirişlər</string>
     <string name="settings_notifications_device_header">Bu %1$s</string>
-    <string name="settings_notifications_device_footer">Bildirişlər heç nə saxlamayan ötürücüdən keçir və ucdan-uca şifrələnir.</string>
     <string name="settings_notifications_allow">Bildirişlərə icazə ver</string>
     <string name="settings_notifications_open_android_settings">Android tənzimləmələrini aç</string>
     <string name="settings_notifications_turn_on">Bildirişləri aktivləşdir</string>

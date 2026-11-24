@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Értesítések</string>
     <string name="settings_notifications_device_header">Ez a %1$s</string>
-    <string name="settings_notifications_device_footer">Az értesítések végponttól végpontig titkosítottak, és olyan továbbítón mennek át, amely semmit nem tárol.</string>
     <string name="settings_notifications_allow">Értesítések engedélyezése</string>
     <string name="settings_notifications_open_android_settings">Android-beállítások megnyitása</string>
     <string name="settings_notifications_turn_on">Értesítések bekapcsolása</string>

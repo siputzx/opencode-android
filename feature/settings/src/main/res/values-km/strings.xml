@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">ការជូនដំណឹង</string>
     <string name="settings_notifications_device_header">%1$s នេះ</string>
-    <string name="settings_notifications_device_footer">ការជូនដំណឹងឆ្លងកាត់ប្រព័ន្ធបញ្ជូនបន្តដែលមិនរក្សាទុកអ្វីទាំងអស់ ហើយត្រូវបានអ៊ិនគ្រីបពីដើមដល់ចប់។</string>
     <string name="settings_notifications_allow">អនុញ្ញាតការជូនដំណឹង</string>
     <string name="settings_notifications_open_android_settings">បើកការកំណត់ Android</string>
     <string name="settings_notifications_turn_on">បើកការជូនដំណឹង</string>

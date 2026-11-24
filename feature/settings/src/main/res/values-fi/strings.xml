@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Ilmoitukset</string>
     <string name="settings_notifications_device_header">Tämä %1$s</string>
-    <string name="settings_notifications_device_footer">Ilmoitukset kulkevat välityspalvelimen kautta, joka ei tallenna mitään, ja ne ovat päästä päähän salattuja.</string>
     <string name="settings_notifications_allow">Salli ilmoitukset</string>
     <string name="settings_notifications_open_android_settings">Avaa Android-asetukset</string>
     <string name="settings_notifications_turn_on">Ota ilmoitukset käyttöön</string>

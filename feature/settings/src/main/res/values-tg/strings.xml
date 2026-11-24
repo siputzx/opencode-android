@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Огоҳиҳо</string>
     <string name="settings_notifications_device_header">Ин %1$s</string>
-    <string name="settings_notifications_device_footer">Огоҳиҳо сартосар рамзгузорӣ шудаанд ва тавассути миёнараве мегузаранд, ки ҳеҷ чиз захира намекунад.</string>
     <string name="settings_notifications_allow">Ба огоҳиҳо иҷозат диҳед</string>
     <string name="settings_notifications_open_android_settings">Танзимоти Android-ро кушоед</string>
     <string name="settings_notifications_turn_on">Огоҳиҳоро фаъол кунед</string>

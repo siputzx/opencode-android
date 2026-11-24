@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Aviseringar</string>
     <string name="settings_notifications_device_header">Denna %1$s</string>
-    <string name="settings_notifications_device_footer">Aviseringar är krypterade från ände till ände och går via ett relä som inte sparar något.</string>
     <string name="settings_notifications_allow">Tillåt aviseringar</string>
     <string name="settings_notifications_open_android_settings">Öppna Android-inställningar</string>
     <string name="settings_notifications_turn_on">Slå på aviseringar</string>

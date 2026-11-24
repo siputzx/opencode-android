@@ -53,7 +53,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Powiadomienia</string>
     <string name="settings_notifications_device_header">To urządzenie: %1$s</string>
-    <string name="settings_notifications_device_footer">Powiadomienia przechodzą przez przekaźnik, który nic nie przechowuje, i są szyfrowane end-to-end.</string>
     <string name="settings_notifications_allow">Zezwól na powiadomienia</string>
     <string name="settings_notifications_open_android_settings">Otwórz ustawienia Androida</string>
     <string name="settings_notifications_turn_on">Włącz powiadomienia</string>

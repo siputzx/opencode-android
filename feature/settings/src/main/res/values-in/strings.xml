@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notifikasi</string>
     <string name="settings_notifications_device_header">%1$s ini</string>
-    <string name="settings_notifications_device_footer">Notifikasi dikirim melalui relai yang tidak menyimpan apa pun dan terenkripsi ujung ke ujung.</string>
     <string name="settings_notifications_allow">Izinkan notifikasi</string>
     <string name="settings_notifications_open_android_settings">Buka pengaturan Android</string>
     <string name="settings_notifications_turn_on">Aktifkan notifikasi</string>

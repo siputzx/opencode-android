@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Bildirişler</string>
     <string name="settings_notifications_device_header">Bu %1$s</string>
-    <string name="settings_notifications_device_footer">Bildirişler hiç zat saklamaýan geçirijiden geçýär we uçdan-uja şifrlenýär.</string>
     <string name="settings_notifications_allow">Bildirişlere rugsat beriň</string>
     <string name="settings_notifications_open_android_settings">Android sazlamalaryny açyň</string>
     <string name="settings_notifications_turn_on">Bildirişleri işlediň</string>

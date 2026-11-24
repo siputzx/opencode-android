@@ -52,7 +52,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notificări</string>
     <string name="settings_notifications_device_header">Acest %1$s</string>
-    <string name="settings_notifications_device_footer">Notificările trec printr-un releu care nu stochează nimic și sunt criptate de la un capăt la altul.</string>
     <string name="settings_notifications_allow">Permite notificările</string>
     <string name="settings_notifications_open_android_settings">Deschide setările Android</string>
     <string name="settings_notifications_turn_on">Activează notificările</string>

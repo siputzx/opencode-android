@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">알림</string>
     <string name="settings_notifications_device_header">이 %1$s</string>
-    <string name="settings_notifications_device_footer">알림은 아무것도 저장하지 않는 중계 서버를 거치며, 종단 간 암호화돼요.</string>
     <string name="settings_notifications_allow">알림 허용</string>
     <string name="settings_notifications_open_android_settings">Android 설정 열기</string>
     <string name="settings_notifications_turn_on">알림 켜기</string>

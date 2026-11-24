@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Bildirimler</string>
     <string name="settings_notifications_device_header">Bu %1$s</string>
-    <string name="settings_notifications_device_footer">Bildirimler hiçbir veri saklamayan bir aktarıcıdan geçer ve uçtan uca şifrelenir.</string>
     <string name="settings_notifications_allow">Bildirimlere izin ver</string>
     <string name="settings_notifications_open_android_settings">Android ayarlarını aç</string>
     <string name="settings_notifications_turn_on">Bildirimleri aç</string>

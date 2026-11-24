@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Teavitused</string>
     <string name="settings_notifications_device_header">See %1$s</string>
-    <string name="settings_notifications_device_footer">Teavitused liiguvad läbi vahendusserveri, mis midagi ei salvesta, ja on otsast lõpuni krüptitud.</string>
     <string name="settings_notifications_allow">Luba teavitused</string>
     <string name="settings_notifications_open_android_settings">Ava Androidi seaded</string>
     <string name="settings_notifications_turn_on">Lülita teavitused sisse</string>

@@ -53,7 +53,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Oznámení</string>
     <string name="settings_notifications_device_header">Toto zařízení (%1$s)</string>
-    <string name="settings_notifications_device_footer">Oznámení procházejí přes přenosovou službu, která nic neukládá, a jsou koncově šifrovaná.</string>
     <string name="settings_notifications_allow">Povolit oznámení</string>
     <string name="settings_notifications_open_android_settings">Otevřít nastavení Androidu</string>
     <string name="settings_notifications_turn_on">Zapnout oznámení</string>

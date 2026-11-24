@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Ειδοποιήσεις</string>
     <string name="settings_notifications_device_header">Αυτό το %1$s</string>
-    <string name="settings_notifications_device_footer">Οι ειδοποιήσεις περνούν από έναν αναμεταδότη που δεν αποθηκεύει τίποτα και είναι κρυπτογραφημένες από άκρο σε άκρο.</string>
     <string name="settings_notifications_allow">Να επιτρέπονται οι ειδοποιήσεις</string>
     <string name="settings_notifications_open_android_settings">Άνοιγμα ρυθμίσεων Android</string>
     <string name="settings_notifications_turn_on">Ενεργοποίηση ειδοποιήσεων</string>

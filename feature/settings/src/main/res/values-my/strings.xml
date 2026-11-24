@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">အကြောင်းကြားချက်များ</string>
     <string name="settings_notifications_device_header">ဤ %1$s</string>
-    <string name="settings_notifications_device_footer">အကြောင်းကြားချက်များသည် ဘာမှ မသိမ်းဆည်းသော relay မှတစ်ဆင့် ပေးပို့ပြီး အစအဆုံး ကုဒ်ဝှက်ထားသည်။</string>
     <string name="settings_notifications_allow">အကြောင်းကြားချက်များကို ခွင့်ပြုပါ</string>
     <string name="settings_notifications_open_android_settings">Android ဆက်တင်များကို ဖွင့်ပါ</string>
     <string name="settings_notifications_turn_on">အကြောင်းကြားချက်များကို ဖွင့်ပါ</string>

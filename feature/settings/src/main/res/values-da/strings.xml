@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Meddelelser</string>
     <string name="settings_notifications_device_header">Denne %1$s</string>
-    <string name="settings_notifications_device_footer">Meddelelser går via et relæ, der ikke gemmer noget, og er end-to-end-krypterede.</string>
     <string name="settings_notifications_allow">Tillad meddelelser</string>
     <string name="settings_notifications_open_android_settings">Åbn Android-indstillinger</string>
     <string name="settings_notifications_turn_on">Slå meddelelser til</string>

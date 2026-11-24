@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">ማሳወቂያዎች</string>
     <string name="settings_notifications_device_header">ይህ %1$s</string>
-    <string name="settings_notifications_device_footer">ማሳወቂያዎች ምንም ነገር በማያከማች ማስተላለፊያ በኩል ያልፋሉ፣ ከጫፍ እስከ ጫፍም የተመሰጠሩ ናቸው።</string>
     <string name="settings_notifications_allow">ማሳወቂያዎችን ፍቀድ</string>
     <string name="settings_notifications_open_android_settings">የAndroid ቅንብሮችን ክፈት</string>
     <string name="settings_notifications_turn_on">ማሳወቂያዎችን አብራ</string>

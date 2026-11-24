@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">सूचनाएँ</string>
     <string name="settings_notifications_device_header">यह %1$s</string>
-    <string name="settings_notifications_device_footer">सूचनाएँ ऐसे रिले से जाती हैं जो कुछ भी स्टोर नहीं करता, और ये एंड-टू-एंड एन्क्रिप्टेड होती हैं।</string>
     <string name="settings_notifications_allow">सूचनाओं की अनुमति दें</string>
     <string name="settings_notifications_open_android_settings">Android सेटिंग्स खोलें</string>
     <string name="settings_notifications_turn_on">सूचनाएँ चालू करें</string>

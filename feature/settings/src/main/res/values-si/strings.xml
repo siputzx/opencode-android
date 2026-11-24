@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">දැනුම්දීම්</string>
     <string name="settings_notifications_device_header">මෙම %1$s</string>
-    <string name="settings_notifications_device_footer">දැනුම්දීම් කිසිවක් ගබඩා නොකරන රිලේ එකක් හරහා යැවෙන අතර, අග සිට අගට සංකේතනය කර ඇත.</string>
     <string name="settings_notifications_allow">දැනුම්දීම්වලට ඉඩ දෙන්න</string>
     <string name="settings_notifications_open_android_settings">Android සැකසුම් විවෘත කරන්න</string>
     <string name="settings_notifications_turn_on">දැනුම්දීම් සක්‍රිය කරන්න</string>

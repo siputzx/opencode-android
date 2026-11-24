@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">বিজ্ঞপ্তি</string>
     <string name="settings_notifications_device_header">এই %1$s</string>
-    <string name="settings_notifications_device_footer">বিজ্ঞপ্তিগুলো এমন একটি রিলে দিয়ে যায় যা কিছুই সংরক্ষণ করে না এবং এগুলো এন্ড-টু-এন্ড এনক্রিপ্টেড।</string>
     <string name="settings_notifications_allow">বিজ্ঞপ্তির অনুমতি দিন</string>
     <string name="settings_notifications_open_android_settings">Android সেটিংস খুলুন</string>
     <string name="settings_notifications_turn_on">বিজ্ঞপ্তি চালু করুন</string>

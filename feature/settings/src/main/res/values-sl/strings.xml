@@ -53,7 +53,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Obvestila</string>
     <string name="settings_notifications_device_header">Ta %1$s</string>
-    <string name="settings_notifications_device_footer">Obvestila gredo prek posrednika, ki ničesar ne shranjuje, in so šifrirana od konca do konca.</string>
     <string name="settings_notifications_allow">Dovoli obvestila</string>
     <string name="settings_notifications_open_android_settings">Odpri nastavitve Androida</string>
     <string name="settings_notifications_turn_on">Vklopi obvestila</string>

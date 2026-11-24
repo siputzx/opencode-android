@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">ການແຈ້ງເຕືອນ</string>
     <string name="settings_notifications_device_header">%1$s ນີ້</string>
-    <string name="settings_notifications_device_footer">ການແຈ້ງເຕືອນຈະສົ່ງຜ່ານຕົວສົ່ງຕໍ່ທີ່ບໍ່ເກັບຂໍ້ມູນໃດໆ ແລະ ເຂົ້າລະຫັດແບບຕົ້ນທາງຫາປາຍທາງ.</string>
     <string name="settings_notifications_allow">ອະນຸຍາດການແຈ້ງເຕືອນ</string>
     <string name="settings_notifications_open_android_settings">ເປີດການຕັ້ງຄ່າ Android</string>
     <string name="settings_notifications_turn_on">ເປີດການແຈ້ງເຕືອນ</string>

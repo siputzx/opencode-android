@@ -53,7 +53,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notifications</string>
     <string name="settings_notifications_device_header">This %1$s</string>
-    <string name="settings_notifications_device_footer">Notifications go through a relay that stores nothing, and are end-to-end encrypted.</string>
     <string name="settings_notifications_allow">Allow Notifications</string>
     <string name="settings_notifications_open_android_settings">Open Android Settings</string>
     <string name="settings_notifications_turn_on">Turn On Notifications</string>

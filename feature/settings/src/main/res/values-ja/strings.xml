@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">通知</string>
     <string name="settings_notifications_device_header">この%1$s</string>
-    <string name="settings_notifications_device_footer">通知はデータを保存しないリレーを経由し、エンドツーエンドで暗号化されます。</string>
     <string name="settings_notifications_allow">通知を許可</string>
     <string name="settings_notifications_open_android_settings">Androidの設定を開く</string>
     <string name="settings_notifications_turn_on">通知をオンにする</string>

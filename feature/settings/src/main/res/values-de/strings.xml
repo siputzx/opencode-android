@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Benachrichtigungen</string>
     <string name="settings_notifications_device_header">Dieses %1$s</string>
-    <string name="settings_notifications_device_footer">Benachrichtigungen laufen über ein Relay, das nichts speichert, und sind Ende-zu-Ende-verschlüsselt.</string>
     <string name="settings_notifications_allow">Benachrichtigungen erlauben</string>
     <string name="settings_notifications_open_android_settings">Android-Einstellungen öffnen</string>
     <string name="settings_notifications_turn_on">Benachrichtigungen aktivieren</string>

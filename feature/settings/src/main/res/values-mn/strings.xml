@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Мэдэгдэл</string>
     <string name="settings_notifications_device_header">Энэ %1$s</string>
-    <string name="settings_notifications_device_footer">Мэдэгдлүүд юу ч хадгалдаггүй дамжуулагчаар дамждаг бөгөөд төгсгөлөөс төгсгөл хүртэл шифрлэгдсэн.</string>
     <string name="settings_notifications_allow">Мэдэгдэл зөвшөөрөх</string>
     <string name="settings_notifications_open_android_settings">Android тохиргоог нээх</string>
     <string name="settings_notifications_turn_on">Мэдэгдэл асаах</string>

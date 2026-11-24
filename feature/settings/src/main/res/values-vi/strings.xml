@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Thông báo</string>
     <string name="settings_notifications_device_header">%1$s này</string>
-    <string name="settings_notifications_device_footer">Thông báo đi qua dịch vụ chuyển tiếp không lưu dữ liệu và được mã hóa đầu cuối.</string>
     <string name="settings_notifications_allow">Cho phép thông báo</string>
     <string name="settings_notifications_open_android_settings">Mở cài đặt Android</string>
     <string name="settings_notifications_turn_on">Bật thông báo</string>

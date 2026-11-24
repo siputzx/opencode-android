@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Ծանուցումներ</string>
     <string name="settings_notifications_device_header">Այս %1$s-ը</string>
-    <string name="settings_notifications_device_footer">Ծանուցումներն անցնում են միջնորդ սերվերով, որը ոչինչ չի պահում, և ծայրից ծայր գաղտնագրված են։</string>
     <string name="settings_notifications_allow">Թույլատրել ծանուցումները</string>
     <string name="settings_notifications_open_android_settings">Բացել Android-ի կարգավորումները</string>
     <string name="settings_notifications_turn_on">Միացնել ծանուցումները</string>

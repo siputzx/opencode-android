@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Tilkynningar</string>
     <string name="settings_notifications_device_header">Þetta %1$s</string>
-    <string name="settings_notifications_device_footer">Tilkynningar fara í gegnum miðlunarþjón sem geymir ekkert og eru dulkóðaðar frá enda til enda.</string>
     <string name="settings_notifications_allow">Leyfa tilkynningar</string>
     <string name="settings_notifications_open_android_settings">Opna Android-stillingar</string>
     <string name="settings_notifications_turn_on">Kveikja á tilkynningum</string>

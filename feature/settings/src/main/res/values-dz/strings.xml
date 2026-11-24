@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">བརྡ་བསྐུལ་ཚུ།</string>
     <string name="settings_notifications_device_header">%1$s འདི།</string>
-    <string name="settings_notifications_device_footer">བརྡ་བསྐུལ་ཚུ་ ག་ནི་ཡང་གསོག་འཇོག་མི་འབད་བའི་བརྒྱུད་སྤྲོད་ཐོག་ལས་འགྱོཝ་ཨིནམ་དང་ མགོ་མཇུག་གསང་བཟོ་འབད་ཡོདཔ་ཨིན།</string>
     <string name="settings_notifications_allow">བརྡ་བསྐུལ་གནང་བ་བྱིན།</string>
     <string name="settings_notifications_open_android_settings">Android སྒྲིག་སྟངས་ཁ་ཕྱེ།</string>
     <string name="settings_notifications_turn_on">བརྡ་བསྐུལ་ཨོན་འབད།</string>

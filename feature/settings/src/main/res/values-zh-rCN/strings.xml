@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">通知</string>
     <string name="settings_notifications_device_header">此 %1$s</string>
-    <string name="settings_notifications_device_footer">通知通过不存储任何内容的中继传输，且采用端到端加密。</string>
     <string name="settings_notifications_allow">允许通知</string>
     <string name="settings_notifications_open_android_settings">打开 Android 设置</string>
     <string name="settings_notifications_turn_on">开启通知</string>

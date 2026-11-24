@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Meldingen</string>
     <string name="settings_notifications_device_header">Deze %1$s</string>
-    <string name="settings_notifications_device_footer">Meldingen gaan via een relay die niets opslaat en zijn end-to-end versleuteld.</string>
     <string name="settings_notifications_allow">Meldingen toestaan</string>
     <string name="settings_notifications_open_android_settings">Android-instellingen openen</string>
     <string name="settings_notifications_turn_on">Meldingen inschakelen</string>

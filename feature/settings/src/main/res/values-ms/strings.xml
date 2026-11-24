@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notifikasi</string>
     <string name="settings_notifications_device_header">%1$s ini</string>
-    <string name="settings_notifications_device_footer">Notifikasi melalui geganti yang tidak menyimpan apa-apa, dan disulitkan hujung ke hujung.</string>
     <string name="settings_notifications_allow">Benarkan notifikasi</string>
     <string name="settings_notifications_open_android_settings">Buka tetapan Android</string>
     <string name="settings_notifications_turn_on">Hidupkan notifikasi</string>

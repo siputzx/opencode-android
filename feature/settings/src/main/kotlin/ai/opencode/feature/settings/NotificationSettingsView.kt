@@ -55,7 +55,6 @@ fun NotificationSettingsView(store: SettingsStore) {
     val pushState = push.state
     val isReady = choice.enabled && push.status == PushStatus.Ready && pushState != null
     val permissionHeader = stringResource(R.string.settings_notifications_device_header, ThisDeviceName)
-    val permissionFooter = stringResource(R.string.settings_notifications_device_footer, ThisDeviceName)
     val serverHeader = stringResource(R.string.settings_notifications_server_header)
     val serverFooter = pushStatusFooter(push.status)
     val pauseFooter = stringResource(R.string.settings_notifications_pause_footer)
@@ -67,11 +66,6 @@ fun NotificationSettingsView(store: SettingsStore) {
         settingsSection(
             key = "permission",
             header = permissionHeader,
-            footer = if (permission == NotificationPermission.Disabled) {
-                null
-            } else {
-                footerText(permissionFooter)
-            },
         ) {
             SettingsRowFrame(Modifier.semantics(mergeDescendants = true) {}) {
                 Text(stringResource(R.string.settings_notifications_allow), style = SettingsText.title, color = OpenCodeTheme.colors.text, modifier = Modifier.weight(1f))

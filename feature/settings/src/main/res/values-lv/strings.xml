@@ -52,7 +52,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Paziņojumi</string>
     <string name="settings_notifications_device_header">Šī ierīce (%1$s)</string>
-    <string name="settings_notifications_device_footer">Paziņojumi iet caur starpniekserveri, kas neko neglabā, un ir šifrēti no gala līdz galam.</string>
     <string name="settings_notifications_allow">Atļaut paziņojumus</string>
     <string name="settings_notifications_open_android_settings">Atvērt Android iestatījumus</string>
     <string name="settings_notifications_turn_on">Ieslēgt paziņojumus</string>

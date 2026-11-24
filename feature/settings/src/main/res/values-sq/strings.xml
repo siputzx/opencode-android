@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Njoftimet</string>
     <string name="settings_notifications_device_header">Ky %1$s</string>
-    <string name="settings_notifications_device_footer">Njoftimet kalojnë përmes një ndërmjetësi që nuk ruan asgjë dhe janë të enkriptuara skaj-më-skaj.</string>
     <string name="settings_notifications_allow">Lejo njoftimet</string>
     <string name="settings_notifications_open_android_settings">Hap cilësimet e Android</string>
     <string name="settings_notifications_turn_on">Aktivizo njoftimet</string>

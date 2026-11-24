@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Известувања</string>
     <string name="settings_notifications_device_header">Овој %1$s</string>
-    <string name="settings_notifications_device_footer">Известувањата минуваат преку посредник што не чува ништо и се шифрирани од крај до крај.</string>
     <string name="settings_notifications_allow">Дозволи известувања</string>
     <string name="settings_notifications_open_android_settings">Отвори ги поставките на Android</string>
     <string name="settings_notifications_turn_on">Вклучи известувања</string>

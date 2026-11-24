@@ -52,7 +52,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notificações</string>
     <string name="settings_notifications_device_header">Este %1$s</string>
-    <string name="settings_notifications_device_footer">As notificações passam por um retransmissor que não armazena nada e são criptografadas de ponta a ponta.</string>
     <string name="settings_notifications_allow">Permitir notificações</string>
     <string name="settings_notifications_open_android_settings">Abrir configurações do Android</string>
     <string name="settings_notifications_turn_on">Ativar notificações</string>

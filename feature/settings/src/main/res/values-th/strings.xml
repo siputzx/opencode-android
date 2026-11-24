@@ -50,7 +50,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">การแจ้งเตือน</string>
     <string name="settings_notifications_device_header">%1$s เครื่องนี้</string>
-    <string name="settings_notifications_device_footer">การแจ้งเตือนส่งผ่านรีเลย์ที่ไม่เก็บข้อมูลใด ๆ และเข้ารหัสแบบต้นทางถึงปลายทาง</string>
     <string name="settings_notifications_allow">อนุญาตการแจ้งเตือน</string>
     <string name="settings_notifications_open_android_settings">เปิดการตั้งค่า Android</string>
     <string name="settings_notifications_turn_on">เปิดการแจ้งเตือน</string>

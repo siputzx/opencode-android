@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Fráboðanir</string>
     <string name="settings_notifications_device_header">Hesin %1$s</string>
-    <string name="settings_notifications_device_footer">Fráboðanir fara gjøgnum ein millumsendara, sum einki goymir, og eru bronglaðar frá enda til enda.</string>
     <string name="settings_notifications_allow">Loyv fráboðanum</string>
     <string name="settings_notifications_open_android_settings">Opna Android-innstillingar</string>
     <string name="settings_notifications_turn_on">Tendra fráboðanir</string>

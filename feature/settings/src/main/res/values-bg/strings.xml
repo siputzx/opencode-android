@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Известия</string>
     <string name="settings_notifications_device_header">Този %1$s</string>
-    <string name="settings_notifications_device_footer">Известията преминават през препредавател, който не съхранява нищо, и са криптирани от край до край.</string>
     <string name="settings_notifications_allow">Разрешаване на известия</string>
     <string name="settings_notifications_open_android_settings">Отворете настройките на Android</string>
     <string name="settings_notifications_turn_on">Включване на известия</string>

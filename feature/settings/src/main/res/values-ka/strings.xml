@@ -51,7 +51,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">შეტყობინებები</string>
     <string name="settings_notifications_device_header">ეს %1$s</string>
-    <string name="settings_notifications_device_footer">შეტყობინებები იგზავნება შუამავლის გავლით, რომელიც არაფერს ინახავს, და ბოლომდე დაშიფრულია.</string>
     <string name="settings_notifications_allow">შეტყობინებების დაშვება</string>
     <string name="settings_notifications_open_android_settings">Android პარამეტრების გახსნა</string>
     <string name="settings_notifications_turn_on">შეტყობინებების ჩართვა</string>

@@ -52,7 +52,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notifications</string>
     <string name="settings_notifications_device_header">Ce %1$s</string>
-    <string name="settings_notifications_device_footer">Les notifications passent par un relais qui ne stocke rien et sont chiffrées de bout en bout.</string>
     <string name="settings_notifications_allow">Autoriser les notifications</string>
     <string name="settings_notifications_open_android_settings">Ouvrir les paramètres Android</string>
     <string name="settings_notifications_turn_on">Activer les notifications</string>

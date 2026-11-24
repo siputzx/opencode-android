@@ -53,7 +53,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Pranešimai</string>
     <string name="settings_notifications_device_header">Šis %1$s</string>
-    <string name="settings_notifications_device_footer">Pranešimai siunčiami per nieko nesaugančią persiuntimo tarnybą ir yra šifruojami nuo galo iki galo.</string>
     <string name="settings_notifications_allow">Leisti pranešimus</string>
     <string name="settings_notifications_open_android_settings">Atidaryti Android nustatymus</string>
     <string name="settings_notifications_turn_on">Įjungti pranešimus</string>

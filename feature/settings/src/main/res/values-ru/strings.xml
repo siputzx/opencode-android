@@ -53,7 +53,6 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Уведомления</string>
     <string name="settings_notifications_device_header">Это устройство: %1$s</string>
-    <string name="settings_notifications_device_footer">Уведомления передаются через ретранслятор, который ничего не хранит, и защищены сквозным шифрованием.</string>
     <string name="settings_notifications_allow">Разрешить уведомления</string>
     <string name="settings_notifications_open_android_settings">Открыть настройки Android</string>
     <string name="settings_notifications_turn_on">Включить уведомления</string>
