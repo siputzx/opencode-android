@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Njofto këtë pajisje</string>
     <string name="settings_notifications_mode">Njofto për</string>
     <string name="settings_notifications_mode_all">Gjithçka</string>
-    <string name="settings_notifications_mode_all_caption">Sesione të përfunduara, pyetje dhe kërkesa për leje.</string>
     <string name="settings_notifications_mode_attention">Vetëm kur ka nevojë për mua</string>
-    <string name="settings_notifications_mode_attention_caption">Pyetje dhe kërkesa për leje.</string>
     <string name="settings_notifications_mode_from_this_phone">Vetëm sesionet që përdor këtu</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Gjithçka nga sesionet ku dërgon nga ky %1$s.</string>
     <string name="settings_notifications_mode_none">Asgjë</string>
     <string name="settings_notifications_status_checking">Po kontrollohet serveri…</string>
     <string name="settings_notifications_status_no_permission">Fillimisht lejo njoftimet më lart.</string>

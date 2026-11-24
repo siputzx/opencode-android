@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Giv besked på denne enhed</string>
     <string name="settings_notifications_mode">Giv besked om</string>
     <string name="settings_notifications_mode_all">Alt</string>
-    <string name="settings_notifications_mode_all_caption">Afsluttede sessioner, spørgsmål og anmodninger om tilladelse.</string>
     <string name="settings_notifications_mode_attention">Kun når der er brug for mig</string>
-    <string name="settings_notifications_mode_attention_caption">Spørgsmål og anmodninger om tilladelse.</string>
     <string name="settings_notifications_mode_from_this_phone">Kun sessioner, jeg bruger her</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Alt fra sessioner, du sender til fra denne %1$s.</string>
     <string name="settings_notifications_mode_none">Intet</string>
     <string name="settings_notifications_status_checking">Tjekker serveren…</string>
     <string name="settings_notifications_status_no_permission">Tillad meddelelser ovenfor først.</string>

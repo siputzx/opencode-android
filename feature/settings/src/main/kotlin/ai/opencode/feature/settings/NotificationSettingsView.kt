@@ -108,7 +108,7 @@ fun NotificationSettingsView(store: SettingsStore) {
                         title = stringResource(R.string.settings_notifications_mode),
                         value = pushModeTitle(choice.mode),
                         selection = choice.mode,
-                        options = modes.map { SettingsMenuOption(it, pushModeTitle(it), pushModeCaption(it)) },
+                        options = modes.map { SettingsMenuOption(it, pushModeTitle(it)) },
                         onSelect = { send(PushSettingsFeature.Action.ModeChanged(it)) },
                     )
                 }
@@ -215,14 +215,6 @@ private fun pushModeTitle(mode: PushMode): String = when (mode) {
     PushMode.attention -> stringResource(R.string.settings_notifications_mode_attention)
     PushMode.fromThisPhone -> stringResource(R.string.settings_notifications_mode_from_this_phone)
     PushMode.none -> stringResource(R.string.settings_notifications_mode_none)
-}
-
-@Composable
-private fun pushModeCaption(mode: PushMode): String? = when (mode) {
-    PushMode.all -> stringResource(R.string.settings_notifications_mode_all_caption)
-    PushMode.attention -> stringResource(R.string.settings_notifications_mode_attention_caption)
-    PushMode.fromThisPhone -> stringResource(R.string.settings_notifications_mode_from_this_phone_caption, ThisDeviceName)
-    PushMode.none -> null
 }
 
 @Composable

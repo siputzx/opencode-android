@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Энэ төхөөрөмжид мэдэгдэх</string>
     <string name="settings_notifications_mode">Мэдэгдэх зүйлс</string>
     <string name="settings_notifications_mode_all">Бүх зүйл</string>
-    <string name="settings_notifications_mode_all_caption">Дууссан сессүүд, асуултууд болон зөвшөөрлийн хүсэлтүүд.</string>
     <string name="settings_notifications_mode_attention">Зөвхөн миний оролцоо хэрэгтэй үед</string>
-    <string name="settings_notifications_mode_attention_caption">Асуултууд болон зөвшөөрлийн хүсэлтүүд.</string>
     <string name="settings_notifications_mode_from_this_phone">Зөвхөн энд ашигладаг сессүүд</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Энэ %1$s дээрээс илгээдэг сессүүдийн бүх зүйл.</string>
     <string name="settings_notifications_mode_none">Юу ч үгүй</string>
     <string name="settings_notifications_status_checking">Серверийг шалгаж байна…</string>
     <string name="settings_notifications_status_no_permission">Эхлээд дээрх мэдэгдлийг зөвшөөрнө үү.</string>

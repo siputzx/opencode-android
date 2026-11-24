@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Ծանուցել այս սարքում</string>
     <string name="settings_notifications_mode">Ինչի մասին ծանուցել</string>
     <string name="settings_notifications_mode_all">Ամեն ինչ</string>
-    <string name="settings_notifications_mode_all_caption">Ավարտված նիստեր, հարցեր և թույլտվության հարցումներ։</string>
     <string name="settings_notifications_mode_attention">Միայն երբ իմ կարիքը կա</string>
-    <string name="settings_notifications_mode_attention_caption">Հարցեր և թույլտվության հարցումներ։</string>
     <string name="settings_notifications_mode_from_this_phone">Միայն այստեղ օգտագործածս նիստերը</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Ամեն ինչ այն նիստերից, որոնց հաղորդագրություն եք ուղարկում այս %1$s-ից։</string>
     <string name="settings_notifications_mode_none">Ոչինչ</string>
     <string name="settings_notifications_status_checking">Սերվերը ստուգվում է…</string>
     <string name="settings_notifications_status_no_permission">Նախ թույլատրեք ծանուցումները վերևում։</string>

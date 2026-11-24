@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Dieses Gerät benachrichtigen</string>
     <string name="settings_notifications_mode">Benachrichtigen über</string>
     <string name="settings_notifications_mode_all">Alles</string>
-    <string name="settings_notifications_mode_all_caption">Abgeschlossene Sitzungen, Fragen und Berechtigungsanfragen.</string>
     <string name="settings_notifications_mode_attention">Nur wenn ich gebraucht werde</string>
-    <string name="settings_notifications_mode_attention_caption">Fragen und Berechtigungsanfragen.</string>
     <string name="settings_notifications_mode_from_this_phone">Nur Sitzungen, die ich hier nutze</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Alles aus Sitzungen, an die du von diesem %1$s sendest.</string>
     <string name="settings_notifications_mode_none">Nichts</string>
     <string name="settings_notifications_status_checking">Server wird geprüft…</string>
     <string name="settings_notifications_status_no_permission">Erlaube oben zuerst Benachrichtigungen.</string>

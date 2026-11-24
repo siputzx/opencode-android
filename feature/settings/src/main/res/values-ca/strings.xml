@@ -219,11 +219,8 @@
     <string name="settings_notifications_server_toggle">Notifica en aquest dispositiu</string>
     <string name="settings_notifications_mode">Notifica sobre</string>
     <string name="settings_notifications_mode_all">Tot</string>
-    <string name="settings_notifications_mode_all_caption">Sessions acabades, preguntes i sol·licituds de permís.</string>
     <string name="settings_notifications_mode_attention">Només quan em necessiti</string>
-    <string name="settings_notifications_mode_attention_caption">Preguntes i sol·licituds de permís.</string>
     <string name="settings_notifications_mode_from_this_phone">Només les sessions que faig servir aquí</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Tot el de les sessions on envies missatges des d\'aquest %1$s.</string>
     <string name="settings_notifications_mode_none">Res</string>
     <string name="settings_notifications_status_checking">S\'està comprovant el servidor…</string>
     <string name="settings_notifications_status_no_permission">Primer permet les notificacions a dalt.</string>

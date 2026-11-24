@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">이 기기에서 알림 받기</string>
     <string name="settings_notifications_mode">알림 받을 항목</string>
     <string name="settings_notifications_mode_all">모든 알림</string>
-    <string name="settings_notifications_mode_all_caption">완료된 세션, 질문 및 권한 요청.</string>
     <string name="settings_notifications_mode_attention">내 확인이 필요할 때만</string>
-    <string name="settings_notifications_mode_attention_caption">질문 및 권한 요청.</string>
     <string name="settings_notifications_mode_from_this_phone">여기서 사용하는 세션만</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">이 %1$s에서 메시지를 보낸 세션의 모든 알림.</string>
     <string name="settings_notifications_mode_none">알림 없음</string>
     <string name="settings_notifications_status_checking">서버 확인 중…</string>
     <string name="settings_notifications_status_no_permission">먼저 위에서 알림을 허용해 주세요.</string>

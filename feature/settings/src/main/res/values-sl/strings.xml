@@ -222,11 +222,8 @@
     <string name="settings_notifications_server_toggle">Obveščaj to napravo</string>
     <string name="settings_notifications_mode">Obveščaj o</string>
     <string name="settings_notifications_mode_all">Vse</string>
-    <string name="settings_notifications_mode_all_caption">Končane seje, vprašanja in zahteve za dovoljenje.</string>
     <string name="settings_notifications_mode_attention">Samo ko me potrebuje</string>
-    <string name="settings_notifications_mode_attention_caption">Vprašanja in zahteve za dovoljenje.</string>
     <string name="settings_notifications_mode_from_this_phone">Samo seje, ki jih uporabljam tukaj</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Vse iz sej, v katere pošilja ta %1$s.</string>
     <string name="settings_notifications_mode_none">Nič</string>
     <string name="settings_notifications_status_checking">Preverjanje strežnika …</string>
     <string name="settings_notifications_status_no_permission">Najprej dovolite obvestila zgoraj.</string>

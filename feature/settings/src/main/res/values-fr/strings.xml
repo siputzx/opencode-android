@@ -219,11 +219,8 @@
     <string name="settings_notifications_server_toggle">Notifier cet appareil</string>
     <string name="settings_notifications_mode">Notifier pour</string>
     <string name="settings_notifications_mode_all">Tout</string>
-    <string name="settings_notifications_mode_all_caption">Sessions terminées, questions et demandes de permission.</string>
     <string name="settings_notifications_mode_attention">Uniquement si je dois intervenir</string>
-    <string name="settings_notifications_mode_attention_caption">Questions et demandes de permission.</string>
     <string name="settings_notifications_mode_from_this_phone">Uniquement les sessions utilisées ici</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Tout pour les sessions auxquelles vous envoyez des messages depuis ce %1$s.</string>
     <string name="settings_notifications_mode_none">Rien</string>
     <string name="settings_notifications_status_checking">Vérification du serveur…</string>
     <string name="settings_notifications_status_no_permission">Autorisez d’abord les notifications ci-dessus.</string>

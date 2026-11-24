@@ -222,11 +222,8 @@
     <string name="settings_notifications_server_toggle">Upozorňovat na tomto zařízení</string>
     <string name="settings_notifications_mode">Upozorňovat na</string>
     <string name="settings_notifications_mode_all">Všechno</string>
-    <string name="settings_notifications_mode_all_caption">Dokončené relace, otázky a žádosti o oprávnění.</string>
     <string name="settings_notifications_mode_attention">Jen když mě potřebuje</string>
-    <string name="settings_notifications_mode_attention_caption">Otázky a žádosti o oprávnění.</string>
     <string name="settings_notifications_mode_from_this_phone">Jen relace, které tu používám</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Všechno z relací, do kterých posíláte zprávy z tohoto zařízení (%1$s).</string>
     <string name="settings_notifications_mode_none">Nic</string>
     <string name="settings_notifications_status_checking">Kontrola serveru…</string>
     <string name="settings_notifications_status_no_permission">Nejprve výše povolte oznámení.</string>

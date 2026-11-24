@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">Beri tahu perangkat ini</string>
     <string name="settings_notifications_mode">Beri tahu tentang</string>
     <string name="settings_notifications_mode_all">Semuanya</string>
-    <string name="settings_notifications_mode_all_caption">Sesi selesai, pertanyaan, dan permintaan izin.</string>
     <string name="settings_notifications_mode_attention">Hanya saat membutuhkan saya</string>
-    <string name="settings_notifications_mode_attention_caption">Pertanyaan dan permintaan izin.</string>
     <string name="settings_notifications_mode_from_this_phone">Hanya sesi yang saya gunakan di sini</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Semuanya dari sesi yang Anda kirimi pesan dari %1$s ini.</string>
     <string name="settings_notifications_mode_none">Tidak ada</string>
     <string name="settings_notifications_status_checking">Memeriksa server…</string>
     <string name="settings_notifications_status_no_permission">Izinkan notifikasi di atas terlebih dahulu.</string>

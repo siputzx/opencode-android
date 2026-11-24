@@ -219,11 +219,8 @@
     <string name="settings_notifications_server_toggle">Paziņot šajā ierīcē</string>
     <string name="settings_notifications_mode">Par ko paziņot</string>
     <string name="settings_notifications_mode_all">Viss</string>
-    <string name="settings_notifications_mode_all_caption">Pabeigtas sesijas, jautājumi un atļauju pieprasījumi.</string>
     <string name="settings_notifications_mode_attention">Tikai kad nepieciešama uzmanība</string>
-    <string name="settings_notifications_mode_attention_caption">Jautājumi un atļauju pieprasījumi.</string>
     <string name="settings_notifications_mode_from_this_phone">Tikai sesijas, ko lietoju šeit</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Viss no sesijām, uz kurām sūti ziņas no šīs ierīces (%1$s).</string>
     <string name="settings_notifications_mode_none">Nekas</string>
     <string name="settings_notifications_status_checking">Pārbauda serveri…</string>
     <string name="settings_notifications_status_no_permission">Vispirms atļauj paziņojumus augstāk.</string>

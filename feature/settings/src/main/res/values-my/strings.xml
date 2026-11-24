@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">ဤစက်သို့ အကြောင်းကြားပါ</string>
     <string name="settings_notifications_mode">အကြောင်းကြားမည့်အရာ</string>
     <string name="settings_notifications_mode_all">အရာအားလုံး</string>
-    <string name="settings_notifications_mode_all_caption">ပြီးဆုံးသွားသော စက်ရှင်များ၊ မေးခွန်းများနှင့် ခွင့်ပြုချက် တောင်းဆိုမှုများ။</string>
     <string name="settings_notifications_mode_attention">ကျွန်ုပ်ကို လိုအပ်မှသာ</string>
-    <string name="settings_notifications_mode_attention_caption">မေးခွန်းများနှင့် ခွင့်ပြုချက် တောင်းဆိုမှုများ။</string>
     <string name="settings_notifications_mode_from_this_phone">ဤနေရာတွင် သုံးသော စက်ရှင်များသာ</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">ဤ %1$s မှ သင်စာပို့သည့် စက်ရှင်များမှ အရာအားလုံး။</string>
     <string name="settings_notifications_mode_none">အကြောင်းမကြားပါ</string>
     <string name="settings_notifications_status_checking">ဆာဗာကို စစ်ဆေးနေသည်…</string>
     <string name="settings_notifications_status_no_permission">အပေါ်တွင် အကြောင်းကြားချက်များကို အရင်ခွင့်ပြုပါ။</string>

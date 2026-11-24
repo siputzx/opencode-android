@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">ለዚህ መሣሪያ አሳውቅ</string>
     <string name="settings_notifications_mode">ስለ ምን ያሳውቅ</string>
     <string name="settings_notifications_mode_all">ሁሉም ነገር</string>
-    <string name="settings_notifications_mode_all_caption">የተጠናቀቁ ክፍለ ጊዜዎች፣ ጥያቄዎች እና የፈቃድ ጥያቄዎች።</string>
     <string name="settings_notifications_mode_attention">እኔን ሲፈልግ ብቻ</string>
-    <string name="settings_notifications_mode_attention_caption">ጥያቄዎች እና የፈቃድ ጥያቄዎች።</string>
     <string name="settings_notifications_mode_from_this_phone">እዚህ የምጠቀማቸው ክፍለ ጊዜዎች ብቻ</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">ከዚህ %1$s መልእክት ከሚልኩባቸው ክፍለ ጊዜዎች የሚመጣ ሁሉም ነገር።</string>
     <string name="settings_notifications_mode_none">ምንም</string>
     <string name="settings_notifications_status_checking">አገልጋዩን በማጣራት ላይ…</string>
     <string name="settings_notifications_status_no_permission">መጀመሪያ ከላይ ማሳወቂያዎችን ይፍቀዱ።</string>

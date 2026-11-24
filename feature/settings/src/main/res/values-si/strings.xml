@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">මෙම උපාංගයට දැනුම් දෙන්න</string>
     <string name="settings_notifications_mode">දැනුම් දිය යුතු දේ</string>
     <string name="settings_notifications_mode_all">සියල්ල</string>
-    <string name="settings_notifications_mode_all_caption">අවසන් වූ සැසි, ප්‍රශ්න සහ අවසර ඉල්ලීම්.</string>
     <string name="settings_notifications_mode_attention">මගේ අවධානය අවශ්‍ය විට පමණි</string>
-    <string name="settings_notifications_mode_attention_caption">ප්‍රශ්න සහ අවසර ඉල්ලීම්.</string>
     <string name="settings_notifications_mode_from_this_phone">මම මෙහි භාවිත කරන සැසි පමණි</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">මෙම %1$s වෙතින් ඔබ පණිවිඩ යවන සැසිවල සියලු දේ.</string>
     <string name="settings_notifications_mode_none">කිසිවක් නැත</string>
     <string name="settings_notifications_status_checking">සේවාදායකය පරීක්ෂා කරමින්…</string>
     <string name="settings_notifications_status_no_permission">පළමුව ඉහතින් දැනුම්දීම්වලට ඉඩ දෙන්න.</string>

@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Értesítések ezen az eszközön</string>
     <string name="settings_notifications_mode">Értesítés ezekről</string>
     <string name="settings_notifications_mode_all">Mindent</string>
-    <string name="settings_notifications_mode_all_caption">Befejezett munkamenetek, kérdések és engedélykérések.</string>
     <string name="settings_notifications_mode_attention">Csak ha szükség van rám</string>
-    <string name="settings_notifications_mode_attention_caption">Kérdések és engedélykérések.</string>
     <string name="settings_notifications_mode_from_this_phone">Csak az itt használt munkamenetek</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Minden értesítés azokból a munkamenetekből, amelyekbe erről a készülékről (%1$s) küld üzenetet.</string>
     <string name="settings_notifications_mode_none">Semmit</string>
     <string name="settings_notifications_status_checking">Szerver ellenőrzése…</string>
     <string name="settings_notifications_status_no_permission">Először engedélyezze fent az értesítéseket.</string>

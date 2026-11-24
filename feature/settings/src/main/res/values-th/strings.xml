@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">แจ้งเตือนบนอุปกรณ์นี้</string>
     <string name="settings_notifications_mode">แจ้งเตือนเกี่ยวกับ</string>
     <string name="settings_notifications_mode_all">ทุกอย่าง</string>
-    <string name="settings_notifications_mode_all_caption">เซสชันที่เสร็จแล้ว คำถาม และคำขอสิทธิ์</string>
     <string name="settings_notifications_mode_attention">เฉพาะเมื่อต้องการคุณ</string>
-    <string name="settings_notifications_mode_attention_caption">คำถามและคำขอสิทธิ์</string>
     <string name="settings_notifications_mode_from_this_phone">เฉพาะเซสชันที่ใช้บนเครื่องนี้</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">ทุกอย่างจากเซสชันที่คุณส่งข้อความจาก %1$s เครื่องนี้</string>
     <string name="settings_notifications_mode_none">ไม่แจ้งเตือน</string>
     <string name="settings_notifications_status_checking">กำลังตรวจสอบเซิร์ฟเวอร์…</string>
     <string name="settings_notifications_status_no_permission">อนุญาตการแจ้งเตือนด้านบนก่อน</string>

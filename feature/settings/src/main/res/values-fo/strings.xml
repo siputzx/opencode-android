@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Fráboðanir á hesum tólinum</string>
     <string name="settings_notifications_mode">Fráboðanir um</string>
     <string name="settings_notifications_mode_all">Alt</string>
-    <string name="settings_notifications_mode_all_caption">Liðugar setur, spurningar og umbønir um loyvi.</string>
     <string name="settings_notifications_mode_attention">Bert tá ið brúk er fyri mær</string>
-    <string name="settings_notifications_mode_attention_caption">Spurningar og umbønir um loyvi.</string>
     <string name="settings_notifications_mode_from_this_phone">Bert setur, eg brúki her</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Alt frá setum, sum tú sendir boð til frá hesum %1$s.</string>
     <string name="settings_notifications_mode_none">Einki</string>
     <string name="settings_notifications_status_checking">Kannar ambætaran…</string>
     <string name="settings_notifications_status_no_permission">Loyv fráboðanum omanfyri fyrst.</string>

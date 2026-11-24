@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">इस डिवाइस पर सूचना दें</string>
     <string name="settings_notifications_mode">किस बारे में सूचना दें</string>
     <string name="settings_notifications_mode_all">सब कुछ</string>
-    <string name="settings_notifications_mode_all_caption">पूरे हुए सेशन, प्रश्न और अनुमति के अनुरोध।</string>
     <string name="settings_notifications_mode_attention">केवल जब मेरी ज़रूरत हो</string>
-    <string name="settings_notifications_mode_attention_caption">प्रश्न और अनुमति के अनुरोध।</string>
     <string name="settings_notifications_mode_from_this_phone">केवल यहाँ उपयोग होने वाले सेशन</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">जिन सेशन में आप इस %1$s से भेजते हैं, उनका सब कुछ।</string>
     <string name="settings_notifications_mode_none">कुछ नहीं</string>
     <string name="settings_notifications_status_checking">सर्वर की जाँच हो रही है…</string>
     <string name="settings_notifications_status_no_permission">पहले ऊपर सूचनाओं की अनुमति दें।</string>

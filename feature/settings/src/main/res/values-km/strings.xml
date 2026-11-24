@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">ជូនដំណឹងឧបករណ៍នេះ</string>
     <string name="settings_notifications_mode">ជូនដំណឹងអំពី</string>
     <string name="settings_notifications_mode_all">អ្វីគ្រប់យ៉ាង</string>
-    <string name="settings_notifications_mode_all_caption">សម័យដែលបានបញ្ចប់ សំណួរ និងសំណើសុំការអនុញ្ញាត។</string>
     <string name="settings_notifications_mode_attention">តែពេលត្រូវការខ្ញុំ</string>
-    <string name="settings_notifications_mode_attention_caption">សំណួរ និងសំណើសុំការអនុញ្ញាត។</string>
     <string name="settings_notifications_mode_from_this_phone">តែសម័យដែលខ្ញុំប្រើនៅទីនេះ</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">អ្វីគ្រប់យ៉ាងពីសម័យដែលអ្នកផ្ញើចេញពី %1$s នេះ។</string>
     <string name="settings_notifications_mode_none">មិនជូនដំណឹង</string>
     <string name="settings_notifications_status_checking">កំពុងពិនិត្យម៉ាស៊ីនមេ…</string>
     <string name="settings_notifications_status_no_permission">អនុញ្ញាតការជូនដំណឹងខាងលើជាមុនសិន។</string>

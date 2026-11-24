@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Ειδοποιήσεις σε αυτή τη συσκευή</string>
     <string name="settings_notifications_mode">Ειδοποιήσεις για</string>
     <string name="settings_notifications_mode_all">Τα πάντα</string>
-    <string name="settings_notifications_mode_all_caption">Ολοκληρωμένες συνεδρίες, ερωτήσεις και αιτήματα άδειας.</string>
     <string name="settings_notifications_mode_attention">Μόνο όταν με χρειάζεται</string>
-    <string name="settings_notifications_mode_attention_caption">Ερωτήσεις και αιτήματα άδειας.</string>
     <string name="settings_notifications_mode_from_this_phone">Μόνο συνεδρίες που χρησιμοποιώ εδώ</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Τα πάντα από συνεδρίες στις οποίες στέλνετε από αυτό το %1$s.</string>
     <string name="settings_notifications_mode_none">Τίποτα</string>
     <string name="settings_notifications_status_checking">Έλεγχος διακομιστή…</string>
     <string name="settings_notifications_status_no_permission">Επιτρέψτε πρώτα τις ειδοποιήσεις παραπάνω.</string>

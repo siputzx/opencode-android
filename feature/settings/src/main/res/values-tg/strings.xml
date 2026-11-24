@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Огоҳиҳо дар ин дастгоҳ</string>
     <string name="settings_notifications_mode">Огоҳӣ дар бораи</string>
     <string name="settings_notifications_mode_all">Ҳама чиз</string>
-    <string name="settings_notifications_mode_all_caption">Сессияҳои анҷомёфта, саволҳо ва дархостҳои иҷозат.</string>
     <string name="settings_notifications_mode_attention">Танҳо вақте ман лозимам</string>
-    <string name="settings_notifications_mode_attention_caption">Саволҳо ва дархостҳои иҷозат.</string>
     <string name="settings_notifications_mode_from_this_phone">Танҳо сессияҳое, ки ин ҷо истифода мебарам</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Ҳама чиз аз сессияҳое, ки аз ин %1$s ба онҳо паём мефиристед.</string>
     <string name="settings_notifications_mode_none">Ҳеҷ чиз</string>
     <string name="settings_notifications_status_checking">Сервер санҷида мешавад…</string>
     <string name="settings_notifications_status_no_permission">Аввал дар боло ба огоҳиҳо иҷозат диҳед.</string>

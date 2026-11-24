@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">यो उपकरणमा सूचना पठाउनुहोस्</string>
     <string name="settings_notifications_mode">केका बारेमा सूचित गर्ने</string>
     <string name="settings_notifications_mode_all">सबै कुरा</string>
-    <string name="settings_notifications_mode_all_caption">सकिएका सत्रहरू, प्रश्नहरू र अनुमति अनुरोधहरू।</string>
     <string name="settings_notifications_mode_attention">मेरो आवश्यकता पर्दा मात्र</string>
-    <string name="settings_notifications_mode_attention_caption">प्रश्नहरू र अनुमति अनुरोधहरू।</string>
     <string name="settings_notifications_mode_from_this_phone">मैले यहाँ प्रयोग गर्ने सत्रहरू मात्र</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">तपाईंले यो %1$s बाट सन्देश पठाउने सत्रहरूका सबै कुरा।</string>
     <string name="settings_notifications_mode_none">केही पनि होइन</string>
     <string name="settings_notifications_status_checking">सर्भर जाँच गर्दै…</string>
     <string name="settings_notifications_status_no_permission">पहिले माथि सूचनाहरूलाई अनुमति दिनुहोस्।</string>

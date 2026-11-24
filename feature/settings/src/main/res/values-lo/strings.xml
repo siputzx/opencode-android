@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">ແຈ້ງເຕືອນອຸປະກອນນີ້</string>
     <string name="settings_notifications_mode">ແຈ້ງເຕືອນກ່ຽວກັບ</string>
     <string name="settings_notifications_mode_all">ທຸກຢ່າງ</string>
-    <string name="settings_notifications_mode_all_caption">ເຊດຊັນທີ່ສຳເລັດແລ້ວ, ຄຳຖາມ ແລະ ຄຳຂໍອະນຸຍາດ.</string>
     <string name="settings_notifications_mode_attention">ສະເພາະເວລາຕ້ອງການຂ້ອຍ</string>
-    <string name="settings_notifications_mode_attention_caption">ຄຳຖາມ ແລະ ຄຳຂໍອະນຸຍາດ.</string>
     <string name="settings_notifications_mode_from_this_phone">ສະເພາະເຊດຊັນທີ່ຂ້ອຍໃຊ້ຢູ່ນີ້</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">ທຸກຢ່າງຈາກເຊດຊັນທີ່ເຈົ້າສົ່ງໄປຈາກ %1$s ນີ້.</string>
     <string name="settings_notifications_mode_none">ບໍ່ແຈ້ງເຕືອນ</string>
     <string name="settings_notifications_status_checking">ກຳລັງກວດສອບເຊີບເວີ…</string>
     <string name="settings_notifications_status_no_permission">ອະນຸຍາດການແຈ້ງເຕືອນຂ້າງເທິງກ່ອນ.</string>

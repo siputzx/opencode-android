@@ -222,11 +222,8 @@
     <string name="settings_notifications_server_toggle">Уведомлять это устройство</string>
     <string name="settings_notifications_mode">О чём уведомлять</string>
     <string name="settings_notifications_mode_all">Всё</string>
-    <string name="settings_notifications_mode_all_caption">Завершённые сессии, вопросы и запросы разрешений.</string>
     <string name="settings_notifications_mode_attention">Только когда требуется участие</string>
-    <string name="settings_notifications_mode_attention_caption">Вопросы и запросы разрешений.</string>
     <string name="settings_notifications_mode_from_this_phone">Только сессии с этого устройства</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Всё из сессий, в которые вы отправляете сообщения с этого устройства (%1$s).</string>
     <string name="settings_notifications_mode_none">Ничего</string>
     <string name="settings_notifications_status_checking">Проверка сервера…</string>
     <string name="settings_notifications_status_no_permission">Сначала разрешите уведомления выше.</string>

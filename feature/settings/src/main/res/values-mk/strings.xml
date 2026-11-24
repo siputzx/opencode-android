@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Известувај го овој уред</string>
     <string name="settings_notifications_mode">Известувај за</string>
     <string name="settings_notifications_mode_all">Сѐ</string>
-    <string name="settings_notifications_mode_all_caption">Завршени сесии, прашања и барања за дозвола.</string>
     <string name="settings_notifications_mode_attention">Само кога му требам</string>
-    <string name="settings_notifications_mode_attention_caption">Прашања и барања за дозвола.</string>
     <string name="settings_notifications_mode_from_this_phone">Само сесии што ги користам овде</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Сѐ од сесиите во кои испраќаш од овој %1$s.</string>
     <string name="settings_notifications_mode_none">Ништо</string>
     <string name="settings_notifications_status_checking">Се проверува серверот…</string>
     <string name="settings_notifications_status_no_permission">Прво дозволи известувања погоре.</string>

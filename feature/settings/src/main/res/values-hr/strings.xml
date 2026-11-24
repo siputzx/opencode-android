@@ -219,11 +219,8 @@
     <string name="settings_notifications_server_toggle">Obavještavaj ovaj uređaj</string>
     <string name="settings_notifications_mode">Obavještavaj o</string>
     <string name="settings_notifications_mode_all">Sve</string>
-    <string name="settings_notifications_mode_all_caption">Završene sesije, pitanja i zahtjevi za dopuštenje.</string>
     <string name="settings_notifications_mode_attention">Samo kad me treba</string>
-    <string name="settings_notifications_mode_attention_caption">Pitanja i zahtjevi za dopuštenje.</string>
     <string name="settings_notifications_mode_from_this_phone">Samo sesije koje ovdje koristim</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Sve iz sesija u koje šaljete koristeći ovaj %1$s.</string>
     <string name="settings_notifications_mode_none">Ništa</string>
     <string name="settings_notifications_status_checking">Provjera poslužitelja…</string>
     <string name="settings_notifications_status_no_permission">Prvo dopustite obavijesti iznad.</string>

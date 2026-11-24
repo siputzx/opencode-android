@@ -222,11 +222,8 @@
     <string name="settings_notifications_server_toggle">Powiadamiaj to urządzenie</string>
     <string name="settings_notifications_mode">O czym powiadamiać</string>
     <string name="settings_notifications_mode_all">Wszystko</string>
-    <string name="settings_notifications_mode_all_caption">Zakończone sesje, pytania i prośby o uprawnienia.</string>
     <string name="settings_notifications_mode_attention">Tylko gdy mnie potrzebuje</string>
-    <string name="settings_notifications_mode_attention_caption">Pytania i prośby o uprawnienia.</string>
     <string name="settings_notifications_mode_from_this_phone">Tylko sesje używane tutaj</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Wszystko z sesji, do których piszesz z tego urządzenia (%1$s).</string>
     <string name="settings_notifications_mode_none">Nic</string>
     <string name="settings_notifications_status_checking">Sprawdzanie serwera…</string>
     <string name="settings_notifications_status_no_permission">Najpierw zezwól na powiadomienia powyżej.</string>

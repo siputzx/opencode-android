@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Meldingen op dit apparaat</string>
     <string name="settings_notifications_mode">Meldingen over</string>
     <string name="settings_notifications_mode_all">Alles</string>
-    <string name="settings_notifications_mode_all_caption">Voltooide sessies, vragen en toestemmingsverzoeken.</string>
     <string name="settings_notifications_mode_attention">Alleen wanneer ik nodig ben</string>
-    <string name="settings_notifications_mode_attention_caption">Vragen en toestemmingsverzoeken.</string>
     <string name="settings_notifications_mode_from_this_phone">Alleen sessies die ik hier gebruik</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Alles uit sessies waar je vanaf deze %1$s naar verzendt.</string>
     <string name="settings_notifications_mode_none">Niets</string>
     <string name="settings_notifications_status_checking">Server controleren…</string>
     <string name="settings_notifications_status_no_permission">Sta eerst meldingen hierboven toe.</string>

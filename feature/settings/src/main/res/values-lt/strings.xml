@@ -222,11 +222,8 @@
     <string name="settings_notifications_server_toggle">Pranešti šiame įrenginyje</string>
     <string name="settings_notifications_mode">Pranešti apie</string>
     <string name="settings_notifications_mode_all">Viskas</string>
-    <string name="settings_notifications_mode_all_caption">Baigti seansai, klausimai ir leidimų užklausos.</string>
     <string name="settings_notifications_mode_attention">Tik kai manęs reikia</string>
-    <string name="settings_notifications_mode_attention_caption">Klausimai ir leidimų užklausos.</string>
     <string name="settings_notifications_mode_from_this_phone">Tik čia naudojami seansai</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Viskas iš seansų, į kuriuos žinutes siunčia šis %1$s.</string>
     <string name="settings_notifications_mode_none">Nieko</string>
     <string name="settings_notifications_status_checking">Tikrinamas serveris…</string>
     <string name="settings_notifications_status_no_permission">Pirmiausia leiskite pranešimus aukščiau.</string>

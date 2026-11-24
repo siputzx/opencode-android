@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">Maklumkan peranti ini</string>
     <string name="settings_notifications_mode">Maklumkan tentang</string>
     <string name="settings_notifications_mode_all">Semuanya</string>
-    <string name="settings_notifications_mode_all_caption">Sesi selesai, soalan dan permintaan kebenaran.</string>
     <string name="settings_notifications_mode_attention">Hanya apabila memerlukan saya</string>
-    <string name="settings_notifications_mode_attention_caption">Soalan dan permintaan kebenaran.</string>
     <string name="settings_notifications_mode_from_this_phone">Hanya sesi yang saya guna di sini</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Semuanya daripada sesi yang anda hantar mesej dari %1$s ini.</string>
     <string name="settings_notifications_mode_none">Tiada</string>
     <string name="settings_notifications_status_checking">Sedang menyemak pelayan…</string>
     <string name="settings_notifications_status_no_permission">Benarkan notifikasi di atas dahulu.</string>

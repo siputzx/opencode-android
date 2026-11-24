@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Bu qurilmaga bildirishnoma yuborish</string>
     <string name="settings_notifications_mode">Nimalar haqida xabar berish</string>
     <string name="settings_notifications_mode_all">Hammasi</string>
-    <string name="settings_notifications_mode_all_caption">Yakunlangan sessiyalar, savollar va ruxsat so‘rovlari.</string>
     <string name="settings_notifications_mode_attention">Faqat e’tiborim kerak bo‘lganda</string>
-    <string name="settings_notifications_mode_attention_caption">Savollar va ruxsat so‘rovlari.</string>
     <string name="settings_notifications_mode_from_this_phone">Faqat bu yerda ishlatadigan sessiyalarim</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Bu %1$s dan xabar yuborgan sessiyalaringizdagi hamma narsa.</string>
     <string name="settings_notifications_mode_none">Hech narsa</string>
     <string name="settings_notifications_status_checking">Server tekshirilmoqda…</string>
     <string name="settings_notifications_status_no_permission">Avval yuqorida bildirishnomalarga ruxsat bering.</string>

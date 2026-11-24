@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">このデバイスに通知</string>
     <string name="settings_notifications_mode">通知する内容</string>
     <string name="settings_notifications_mode_all">すべて</string>
-    <string name="settings_notifications_mode_all_caption">セッションの完了、質問、権限のリクエスト。</string>
     <string name="settings_notifications_mode_attention">対応が必要なときのみ</string>
-    <string name="settings_notifications_mode_attention_caption">質問と権限のリクエスト。</string>
     <string name="settings_notifications_mode_from_this_phone">ここで使うセッションのみ</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">この%1$sから送信したセッションのすべての通知。</string>
     <string name="settings_notifications_mode_none">通知しない</string>
     <string name="settings_notifications_status_checking">サーバーを確認中…</string>
     <string name="settings_notifications_status_no_permission">先に上で通知を許可してください。</string>

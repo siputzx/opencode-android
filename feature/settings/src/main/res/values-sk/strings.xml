@@ -222,11 +222,8 @@
     <string name="settings_notifications_server_toggle">Upozorňovať toto zariadenie</string>
     <string name="settings_notifications_mode">Upozorňovať na</string>
     <string name="settings_notifications_mode_all">Všetko</string>
-    <string name="settings_notifications_mode_all_caption">Dokončené relácie, otázky a žiadosti o povolenie.</string>
     <string name="settings_notifications_mode_attention">Iba keď ma potrebuje</string>
-    <string name="settings_notifications_mode_attention_caption">Otázky a žiadosti o povolenie.</string>
     <string name="settings_notifications_mode_from_this_phone">Iba relácie, ktoré tu používam</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Všetko z relácií, do ktorých odosielate správy zo zariadenia %1$s.</string>
     <string name="settings_notifications_mode_none">Nič</string>
     <string name="settings_notifications_status_checking">Kontroluje sa server…</string>
     <string name="settings_notifications_status_no_permission">Najprv povoľte upozornenia vyššie.</string>

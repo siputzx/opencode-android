@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Varsle denne enheten</string>
     <string name="settings_notifications_mode">Varsle om</string>
     <string name="settings_notifications_mode_all">Alt</string>
-    <string name="settings_notifications_mode_all_caption">Fullførte sesjoner, spørsmål og forespørsler om tillatelse.</string>
     <string name="settings_notifications_mode_attention">Bare når jeg trengs</string>
-    <string name="settings_notifications_mode_attention_caption">Spørsmål og forespørsler om tillatelse.</string>
     <string name="settings_notifications_mode_from_this_phone">Bare sesjoner jeg bruker her</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Alt fra sesjoner du sender til fra denne enheten (%1$s).</string>
     <string name="settings_notifications_mode_none">Ingenting</string>
     <string name="settings_notifications_status_checking">Sjekker serveren…</string>
     <string name="settings_notifications_status_no_permission">Tillat varsler ovenfor først.</string>

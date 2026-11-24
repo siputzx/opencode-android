@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Avisera den här enheten</string>
     <string name="settings_notifications_mode">Avisera om</string>
     <string name="settings_notifications_mode_all">Allt</string>
-    <string name="settings_notifications_mode_all_caption">Slutförda sessioner, frågor och behörighetsförfrågningar.</string>
     <string name="settings_notifications_mode_attention">Endast när jag behövs</string>
-    <string name="settings_notifications_mode_attention_caption">Frågor och behörighetsförfrågningar.</string>
     <string name="settings_notifications_mode_from_this_phone">Endast sessioner jag använder här</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Allt från sessioner du skickar meddelanden till från denna %1$s.</string>
     <string name="settings_notifications_mode_none">Inget</string>
     <string name="settings_notifications_status_checking">Kontrollerar servern…</string>
     <string name="settings_notifications_status_no_permission">Tillåt aviseringar ovan först.</string>

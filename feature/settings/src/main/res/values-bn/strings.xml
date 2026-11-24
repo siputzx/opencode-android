@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">এই ডিভাইসে বিজ্ঞপ্তি দিন</string>
     <string name="settings_notifications_mode">যেসব বিজ্ঞপ্তি পাবেন</string>
     <string name="settings_notifications_mode_all">সবকিছু</string>
-    <string name="settings_notifications_mode_all_caption">শেষ হওয়া সেশন, প্রশ্ন ও অনুমতির অনুরোধ।</string>
     <string name="settings_notifications_mode_attention">শুধু আমার প্রয়োজন হলে</string>
-    <string name="settings_notifications_mode_attention_caption">প্রশ্ন ও অনুমতির অনুরোধ।</string>
     <string name="settings_notifications_mode_from_this_phone">শুধু এখানে ব্যবহার করা সেশন</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">এই %1$s থেকে যেসব সেশনে বার্তা পাঠান, সেগুলোর সবকিছু।</string>
     <string name="settings_notifications_mode_none">কিছুই না</string>
     <string name="settings_notifications_status_checking">সার্ভার পরীক্ষা করা হচ্ছে…</string>
     <string name="settings_notifications_status_no_permission">প্রথমে উপরে বিজ্ঞপ্তির অনুমতি দিন।</string>

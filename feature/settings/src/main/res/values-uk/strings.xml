@@ -222,11 +222,8 @@
     <string name="settings_notifications_server_toggle">Сповіщати на цьому пристрої</string>
     <string name="settings_notifications_mode">Сповіщати про</string>
     <string name="settings_notifications_mode_all">Все</string>
-    <string name="settings_notifications_mode_all_caption">Завершені сесії, запитання та запити на дозвіл.</string>
     <string name="settings_notifications_mode_attention">Лише коли потрібна моя увага</string>
-    <string name="settings_notifications_mode_attention_caption">Запитання та запити на дозвіл.</string>
     <string name="settings_notifications_mode_from_this_phone">Лише сесії, які я використовую тут</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Усе із сесій, у які ви надсилаєте повідомлення через цей %1$s.</string>
     <string name="settings_notifications_mode_none">Без сповіщень</string>
     <string name="settings_notifications_status_checking">Перевірка сервера…</string>
     <string name="settings_notifications_status_no_permission">Спочатку дозвольте сповіщення вище.</string>

@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">通知這台裝置</string>
     <string name="settings_notifications_mode">通知內容</string>
     <string name="settings_notifications_mode_all">所有通知</string>
-    <string name="settings_notifications_mode_all_caption">已完成的工作階段、問題和權限要求。</string>
     <string name="settings_notifications_mode_attention">僅在需要我時</string>
-    <string name="settings_notifications_mode_attention_caption">問題和權限要求。</string>
     <string name="settings_notifications_mode_from_this_phone">僅我在此使用的工作階段</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">凡是從這台 %1$s 傳送訊息的工作階段，都會收到所有通知。</string>
     <string name="settings_notifications_mode_none">不通知</string>
     <string name="settings_notifications_status_checking">正在檢查伺服器…</string>
     <string name="settings_notifications_status_no_permission">請先在上方允許通知。</string>

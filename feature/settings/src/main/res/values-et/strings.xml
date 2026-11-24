@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Teavita seda seadet</string>
     <string name="settings_notifications_mode">Millest teavitada</string>
     <string name="settings_notifications_mode_all">Kõik</string>
-    <string name="settings_notifications_mode_all_caption">Lõpetatud seansid, küsimused ja loataotlused.</string>
     <string name="settings_notifications_mode_attention">Ainult siis, kui mind on vaja</string>
-    <string name="settings_notifications_mode_attention_caption">Küsimused ja loataotlused.</string>
     <string name="settings_notifications_mode_from_this_phone">Ainult seansid, mida siin kasutan</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Kõik seanssidest, kuhu saadad sõnumeid siit (%1$s).</string>
     <string name="settings_notifications_mode_none">Mitte midagi</string>
     <string name="settings_notifications_status_checking">Serveri kontrollimine…</string>
     <string name="settings_notifications_status_no_permission">Luba esmalt ülalpool teavitused.</string>

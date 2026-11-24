@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">ཐབས་འཕྲུལ་འདི་ལུ་བརྡ་བསྐུལ་གཏང་།</string>
     <string name="settings_notifications_mode">བརྡ་བསྐུལ་གཏང་དགོཔ།</string>
     <string name="settings_notifications_mode_all">ག་ར།</string>
-    <string name="settings_notifications_mode_all_caption">མཇུག་བསྡུ་ཡོད་པའི་ལཱ་ཡུན་ཚུ་ དྲི་བ་ཚུ་དང་ གནང་བའི་ཞུ་བ་ཚུ།</string>
     <string name="settings_notifications_mode_attention">ང་དགོཔ་ད་རྐྱངམ་ཅིག</string>
-    <string name="settings_notifications_mode_attention_caption">དྲི་བ་ཚུ་དང་ གནང་བའི་ཞུ་བ་ཚུ།</string>
     <string name="settings_notifications_mode_from_this_phone">ང་གིས་འདི་ཁར་ལག་ལེན་འཐབ་པའི་ལཱ་ཡུན་ཚུ་རྐྱངམ་ཅིག</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">ཁྱོད་ཀྱིས་ %1$s འདི་ལས་གཏང་སའི་ལཱ་ཡུན་ཚུ་ནང་གི་ག་ར།</string>
     <string name="settings_notifications_mode_none">ག་ནི་ཡང་མེད།</string>
     <string name="settings_notifications_status_checking">སར་བར་ཞིབ་དཔྱད་འབད་དོ…</string>
     <string name="settings_notifications_status_no_permission">དང་པ་ལྟག་ལུ་བརྡ་བསྐུལ་ཚུ་གནང་བ་བྱིན།</string>

@@ -213,11 +213,8 @@
     <string name="settings_notifications_server_toggle">Thông báo trên thiết bị này</string>
     <string name="settings_notifications_mode">Thông báo về</string>
     <string name="settings_notifications_mode_all">Mọi thứ</string>
-    <string name="settings_notifications_mode_all_caption">Phiên đã hoàn tất, câu hỏi và yêu cầu cấp quyền.</string>
     <string name="settings_notifications_mode_attention">Chỉ khi cần tôi</string>
-    <string name="settings_notifications_mode_attention_caption">Câu hỏi và yêu cầu cấp quyền.</string>
     <string name="settings_notifications_mode_from_this_phone">Chỉ phiên tôi dùng ở đây</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Mọi thứ từ các phiên bạn gửi tin từ %1$s này.</string>
     <string name="settings_notifications_mode_none">Không thông báo</string>
     <string name="settings_notifications_status_checking">Đang kiểm tra máy chủ…</string>
     <string name="settings_notifications_status_no_permission">Hãy cho phép thông báo ở trên trước.</string>

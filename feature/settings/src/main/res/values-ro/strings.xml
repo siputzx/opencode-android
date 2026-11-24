@@ -219,11 +219,8 @@
     <string name="settings_notifications_server_toggle">Notifică acest dispozitiv</string>
     <string name="settings_notifications_mode">Notifică despre</string>
     <string name="settings_notifications_mode_all">Totul</string>
-    <string name="settings_notifications_mode_all_caption">Sesiuni încheiate, întrebări și cereri de permisiune.</string>
     <string name="settings_notifications_mode_attention">Doar când are nevoie de mine</string>
-    <string name="settings_notifications_mode_attention_caption">Întrebări și cereri de permisiune.</string>
     <string name="settings_notifications_mode_from_this_phone">Doar sesiunile folosite aici</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Totul din sesiunile în care trimiți de pe acest %1$s.</string>
     <string name="settings_notifications_mode_none">Nimic</string>
     <string name="settings_notifications_status_checking">Se verifică serverul…</string>
     <string name="settings_notifications_status_no_permission">Permite mai întâi notificările mai sus.</string>

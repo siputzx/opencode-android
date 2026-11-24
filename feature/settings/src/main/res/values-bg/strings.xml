@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">Известяване на това устройство</string>
     <string name="settings_notifications_mode">Известяване за</string>
     <string name="settings_notifications_mode_all">Всичко</string>
-    <string name="settings_notifications_mode_all_caption">Завършени сесии, въпроси и заявки за разрешение.</string>
     <string name="settings_notifications_mode_attention">Само когато има нужда от мен</string>
-    <string name="settings_notifications_mode_attention_caption">Въпроси и заявки за разрешение.</string>
     <string name="settings_notifications_mode_from_this_phone">Само сесиите, които използвам тук</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">Всичко от сесиите, към които изпращате от този %1$s.</string>
     <string name="settings_notifications_mode_none">Нищо</string>
     <string name="settings_notifications_status_checking">Проверка на сървъра…</string>
     <string name="settings_notifications_status_no_permission">Първо разрешете известията по-горе.</string>

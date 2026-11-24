@@ -216,11 +216,8 @@
     <string name="settings_notifications_server_toggle">შეტყობინებები ამ მოწყობილობაზე</string>
     <string name="settings_notifications_mode">რის შესახებ შეგატყობინოთ</string>
     <string name="settings_notifications_mode_all">ყველაფერი</string>
-    <string name="settings_notifications_mode_all_caption">დასრულებული სესიები, კითხვები და ნებართვის მოთხოვნები.</string>
     <string name="settings_notifications_mode_attention">მხოლოდ როცა ვჭირდები</string>
-    <string name="settings_notifications_mode_attention_caption">კითხვები და ნებართვის მოთხოვნები.</string>
     <string name="settings_notifications_mode_from_this_phone">მხოლოდ აქ გამოყენებული სესიები</string>
-    <string name="settings_notifications_mode_from_this_phone_caption">ყველაფერი იმ სესიებიდან, რომლებშიც ამ %1$s-დან აგზავნით.</string>
     <string name="settings_notifications_mode_none">არაფერი</string>
     <string name="settings_notifications_status_checking">სერვერის შემოწმება…</string>
     <string name="settings_notifications_status_no_permission">ჯერ ზემოთ დაუშვით შეტყობინებები.</string>
