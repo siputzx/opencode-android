@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Ez a párosítási kód lejárt, vagy már felhasználták. Futtassa újra az `opencode pair --remote` parancsot.</string>
     <string name="server_error_pairing_unsupported">Ez a kiszolgáló nem támogatja a párosítási linkeket. Frissítse az OpenCode alkalmazást a számítógépén, vagy adja meg kézzel a kiszolgálót.</string>
-    <string name="server_error_notification_previews_need_https">A titkosított értesítési előnézetekhez HTTPS-kapcsolat szükséges a kiszolgálóval.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Adjon meg egy érvényes HTTP vagy HTTPS kiszolgáló-URL-t.</string>

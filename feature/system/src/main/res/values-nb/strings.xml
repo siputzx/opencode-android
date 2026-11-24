@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Talesamtaler</string>
     <string name="system_channel_recording">Opptak</string>
     <string name="system_channel_session_runs">Sesjonskjøringer</string>
-    <string name="system_channel_session_updates">Sesjonsoppdateringer</string>
+    <string name="system_channel_session_finished">Fullførte sesjoner</string>
+    <string name="system_channel_session_questions">Spørsmål</string>
+    <string name="system_channel_session_permissions">Forespørsler om tillatelse</string>
+    <string name="system_channel_session_other">Andre sesjonsoppdateringer</string>
     <string name="system_channel_shared_items">Delte elementer</string>
 
     <!-- Share sheet: notifications -->

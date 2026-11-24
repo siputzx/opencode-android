@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">შეტყობინებები</string>
     <string name="settings_notifications_device_header">ეს %1$s</string>
-    <string name="settings_notifications_device_footer">შეტყობინებები გადის შუამავალ სერვერზე, რომელიც არაფერს ინახავს. ამ მოწყობილობაზე (%1$s) მხოლოდ მასზე დაწყებული სესიების შეტყობინებები მოდის.</string>
+    <string name="settings_notifications_device_footer">შეტყობინებები იგზავნება შუამავლის გავლით, რომელიც არაფერს ინახავს, და ბოლომდე დაშიფრულია.</string>
     <string name="settings_notifications_allow">შეტყობინებების დაშვება</string>
     <string name="settings_notifications_open_android_settings">Android პარამეტრების გახსნა</string>
     <string name="settings_notifications_turn_on">შეტყობინებების ჩართვა</string>
     <string name="settings_notifications_server_header">სერვერი</string>
-    <string name="settings_notifications_set_up_footer">ხსნის სესიას მოთხოვნით, რომ OpenCode-მა დანამატი დააყენოს. გაგზავნეთ მოთხოვნა, შემდეგ ხელახლა შეამოწმეთ.</string>
-    <string name="settings_notifications_plugin_needed_footer">სერვერს OpenCode-ის notify დანამატი სჭირდება.</string>
-    <string name="settings_notifications_notify_plugin">შეტყობინებების დანამატი</string>
-    <string name="settings_notifications_plugin_installed">დაყენებულია</string>
-    <string name="settings_notifications_plugin_not_running">არ მუშაობს</string>
-    <string name="settings_notifications_plugin_not_installed">არ არის დაყენებული</string>
-    <string name="settings_notifications_plugin_check_failed">სტატუსის შემოწმება ვერ მოხერხდა</string>
-    <string name="settings_notifications_set_up">გამართვა OpenCode-ით</string>
-    <string name="settings_notifications_check_again">ხელახლა შემოწმება</string>
     <string name="settings_notifications_in_app_footer">ჩანს გვერდითი პანელის ღილაკზე.</string>
     <string name="settings_notifications_in_app_notices">შეტყობინებები აპში</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">მიმართეთ კამერა QR კოდისკენ</string>
     <string name="settings_pairing_paste_link">დაწყვილების ბმულის ჩასმა</string>
     <string name="settings_pairing_computer_hint">კომპიუტერზე გახსენით OpenCode-ის პარამეტრები → დაწყვილება, ან ტერმინალში გაუშვით %1$s.</string>
+    <string name="settings_notifications_server_toggle">შეტყობინებები ამ მოწყობილობაზე</string>
+    <string name="settings_notifications_mode">რის შესახებ შეგატყობინოთ</string>
+    <string name="settings_notifications_mode_all">ყველაფერი</string>
+    <string name="settings_notifications_mode_all_caption">დასრულებული სესიები, კითხვები და ნებართვის მოთხოვნები.</string>
+    <string name="settings_notifications_mode_attention">მხოლოდ როცა ვჭირდები</string>
+    <string name="settings_notifications_mode_attention_caption">კითხვები და ნებართვის მოთხოვნები.</string>
+    <string name="settings_notifications_mode_from_this_phone">მხოლოდ აქ გამოყენებული სესიები</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">ყველაფერი იმ სესიებიდან, რომლებშიც ამ %1$s-დან აგზავნით.</string>
+    <string name="settings_notifications_mode_none">არაფერი</string>
+    <string name="settings_notifications_status_checking">სერვერის შემოწმება…</string>
+    <string name="settings_notifications_status_no_permission">ჯერ ზემოთ დაუშვით შეტყობინებები.</string>
+    <string name="settings_notifications_status_outdated">შეტყობინებებისთვის ამ სერვერზე OpenCode-ის განახლებაა საჭირო.</string>
+    <string name="settings_notifications_status_relay">ეს სერვერი არ იღებს ამ აპის შეტყობინებების შუამავალს.</string>
+    <string name="settings_notifications_status_failed">ამ სერვერზე შეტყობინებების გამართვა ვერ მოხერხდა. ხელახლა დაკავშირებისას OpenCode ისევ სცდის.</string>
+    <string name="settings_notifications_pause">ყველა შეტყობინების შეჩერება</string>
+    <string name="settings_notifications_pause_on">განახლებამდე</string>
+    <string name="settings_notifications_pause_until">%1$s-მდე</string>
+    <string name="settings_notifications_resume">განახლება</string>
+    <string name="settings_notifications_pause_hour">ერთი საათით</string>
+    <string name="settings_notifications_pause_tomorrow">ხვალ დილამდე</string>
+    <string name="settings_notifications_pause_forever">სანამ არ განვაახლებ</string>
+    <string name="settings_notifications_pause_footer">პაუზა აჩერებს ამ სერვერის შეტყობინებებს ყველა მოწყობილობაზე.</string>
+    <string name="settings_notifications_devices_header">მოწყობილობები</string>
+    <string name="settings_notifications_device_this">%1$s (ეს მოწყობილობა)</string>
+    <string name="settings_notifications_device_on">ჩართულია</string>
+    <string name="settings_notifications_device_paused">შეჩერებულია</string>
+    <string name="settings_notifications_device_remove">წაშლა</string>
+    <string name="settings_notifications_pause_failed_title">პაუზის შეცვლა ვერ მოხერხდა</string>
+    <string name="settings_notifications_device_failed_title">მოწყობილობის შეცვლა ვერ მოხერხდა</string>
+    <string name="settings_notifications_device_remove_failed_title">მოწყობილობის წაშლა ვერ მოხერხდა</string>
+    <string name="settings_notifications_change_failed_message">სერვერმა ცვლილება არ მიიღო.</string>
 </resources>

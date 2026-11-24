@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">音声通話</string>
     <string name="system_channel_recording">録音中</string>
     <string name="system_channel_session_runs">セッションの実行</string>
-    <string name="system_channel_session_updates">セッションの更新</string>
+    <string name="system_channel_session_finished">完了したセッション</string>
+    <string name="system_channel_session_questions">質問</string>
+    <string name="system_channel_session_permissions">権限のリクエスト</string>
+    <string name="system_channel_session_other">その他のセッション更新</string>
     <string name="system_channel_shared_items">共有アイテム</string>
 
     <!-- Share sheet: notifications -->

@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Kulu</string>
     <string name="session_sheet_media">Meedia</string>
     <string name="session_sheet_media_value">Failid ja lingid</string>
-    <string name="session_always_notify">Teavita alati</string>
-    <string name="session_always_notify_message_phone">Teavita selles telefonis iga vastuse valmimisest, ka siis, kui päring saadeti mujalt.</string>
-    <string name="session_always_notify_message_tablet">Teavita selles tahvelarvutis iga vastuse valmimisest, ka siis, kui päring saadeti mujalt.</string>
     <string name="session_delete_session">Kustuta seanss</string>
     <string name="session_rename_placeholder">Pealkiri</string>
     <string name="session_auto_rename">Nimeta automaatselt ümber</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Seansi hargnemine ebaõnnestus</string>
     <string name="session_sheet_save_export_failed">Ekspordi salvestamine ebaõnnestus</string>
     <string name="session_sheet_export_failed_title">Seansi eksportimine ebaõnnestus</string>
-    <string name="session_sheet_notifications_off_message">Lülita esmalt seadetes teavitused sisse.</string>
-    <string name="session_sheet_always_notify_on_failed_title">„Teavita alati“ sisselülitamine ebaõnnestus</string>
-    <string name="session_sheet_always_notify_off_failed_title">„Teavita alati“ väljalülitamine ebaõnnestus</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Server ei toeta faile</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Laadimine…</string>
     <string name="session_media_earlier_failed">Varasemate sõnumite laadimine ebaõnnestus. Kontrolli ühendust ja proovi uuesti.</string>
     <string name="session_media_earlier_nothing_new">Äsja laaditud sõnumites pole siin midagi uut. Varasemates võib veel olla.</string>
+    <string name="session_bell_title">Teavitused</string>
+    <string name="session_bell_level_all">Kõik</string>
+    <string name="session_bell_level_attention">Ainult siis, kui mind on vaja</string>
+    <string name="session_bell_level_none">Mitte midagi</string>
+    <string name="session_bell_mute_hour">Mitte midagi tund aega</string>
+    <string name="session_bell_mute_tomorrow">Mitte midagi kuni homse hommikuni</string>
+    <string name="session_bell_use_default">Kasuta selle telefoni valikut</string>
+    <string name="session_bell_source_own">Määratud ainult sellele telefonile.</string>
+    <string name="session_bell_source_own_until">Määratud ainult sellele telefonile kuni %1$s.</string>
+    <string name="session_bell_source_default">Selle telefoni valik serveri jaoks. Vali sobiv, et seda selle seansi jaoks muuta.</string>
+    <string name="session_bell_source_shared">Määratud teisest seadmest. Vali sobiv, et seda selle telefoni jaoks muuta.</string>
+    <string name="session_bell_source_shared_until">Määratud teisest seadmest kuni %1$s. Vali sobiv, et seda selle telefoni jaoks muuta.</string>
+    <string name="session_bell_source_phone_paused">See telefon on seadetes peatatud.</string>
+    <string name="session_bell_source_server_paused">Kõik selle serveri teavitused on peatatud.</string>
+    <string name="session_bell_source_server_paused_until">Kõik selle serveri teavitused on peatatud kuni %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Teavituste muutmine ebaõnnestus</string>
 </resources>

@@ -50,20 +50,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Thông báo</string>
     <string name="settings_notifications_device_header">%1$s này</string>
-    <string name="settings_notifications_device_footer">Thông báo đi qua máy chủ chuyển tiếp không lưu trữ gì. Chỉ các phiên bắt đầu trên %1$s này mới gửi thông báo đến thiết bị này.</string>
+    <string name="settings_notifications_device_footer">Thông báo đi qua dịch vụ chuyển tiếp không lưu dữ liệu và được mã hóa đầu cuối.</string>
     <string name="settings_notifications_allow">Cho phép thông báo</string>
     <string name="settings_notifications_open_android_settings">Mở cài đặt Android</string>
     <string name="settings_notifications_turn_on">Bật thông báo</string>
     <string name="settings_notifications_server_header">Máy chủ</string>
-    <string name="settings_notifications_set_up_footer">Mở một phiên với yêu cầu OpenCode cài plugin. Hãy gửi yêu cầu rồi kiểm tra lại.</string>
-    <string name="settings_notifications_plugin_needed_footer">Máy chủ cần plugin thông báo của OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Plugin thông báo</string>
-    <string name="settings_notifications_plugin_installed">Đã cài đặt</string>
-    <string name="settings_notifications_plugin_not_running">Không chạy</string>
-    <string name="settings_notifications_plugin_not_installed">Chưa cài đặt</string>
-    <string name="settings_notifications_plugin_check_failed">Không thể kiểm tra trạng thái</string>
-    <string name="settings_notifications_set_up">Thiết lập bằng OpenCode</string>
-    <string name="settings_notifications_check_again">Kiểm tra lại</string>
     <string name="settings_notifications_in_app_footer">Hiển thị trên nút ngăn điều hướng.</string>
     <string name="settings_notifications_in_app_notices">Thông báo trong ứng dụng</string>
 
@@ -220,4 +211,35 @@
     <string name="settings_pairing_point_camera">Hướng camera vào mã QR</string>
     <string name="settings_pairing_paste_link">Dán liên kết ghép cặp</string>
     <string name="settings_pairing_computer_hint">Trên máy tính, mở Cài đặt → Ghép cặp trong OpenCode, hoặc chạy %1$s trong terminal.</string>
+    <string name="settings_notifications_server_toggle">Thông báo trên thiết bị này</string>
+    <string name="settings_notifications_mode">Thông báo về</string>
+    <string name="settings_notifications_mode_all">Mọi thứ</string>
+    <string name="settings_notifications_mode_all_caption">Phiên đã hoàn tất, câu hỏi và yêu cầu cấp quyền.</string>
+    <string name="settings_notifications_mode_attention">Chỉ khi cần tôi</string>
+    <string name="settings_notifications_mode_attention_caption">Câu hỏi và yêu cầu cấp quyền.</string>
+    <string name="settings_notifications_mode_from_this_phone">Chỉ phiên tôi dùng ở đây</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Mọi thứ từ các phiên bạn gửi tin từ %1$s này.</string>
+    <string name="settings_notifications_mode_none">Không thông báo</string>
+    <string name="settings_notifications_status_checking">Đang kiểm tra máy chủ…</string>
+    <string name="settings_notifications_status_no_permission">Hãy cho phép thông báo ở trên trước.</string>
+    <string name="settings_notifications_status_outdated">Máy chủ này cần cập nhật OpenCode để dùng thông báo.</string>
+    <string name="settings_notifications_status_relay">Máy chủ này không chấp nhận dịch vụ chuyển tiếp thông báo của ứng dụng này.</string>
+    <string name="settings_notifications_status_failed">Không thể thiết lập thông báo trên máy chủ này. OpenCode sẽ thử lại khi kết nối lại.</string>
+    <string name="settings_notifications_pause">Tạm dừng tất cả thông báo</string>
+    <string name="settings_notifications_pause_on">Đến khi tiếp tục</string>
+    <string name="settings_notifications_pause_until">Đến %1$s</string>
+    <string name="settings_notifications_resume">Tiếp tục</string>
+    <string name="settings_notifications_pause_hour">Trong 1 giờ</string>
+    <string name="settings_notifications_pause_tomorrow">Đến sáng mai</string>
+    <string name="settings_notifications_pause_forever">Đến khi tôi tiếp tục</string>
+    <string name="settings_notifications_pause_footer">Tạm dừng sẽ ngừng thông báo từ máy chủ này trên mọi thiết bị.</string>
+    <string name="settings_notifications_devices_header">Thiết bị</string>
+    <string name="settings_notifications_device_this">%1$s (Thiết bị này)</string>
+    <string name="settings_notifications_device_on">Bật</string>
+    <string name="settings_notifications_device_paused">Đã tạm dừng</string>
+    <string name="settings_notifications_device_remove">Xóa</string>
+    <string name="settings_notifications_pause_failed_title">Không thể đổi trạng thái tạm dừng</string>
+    <string name="settings_notifications_device_failed_title">Không thể thay đổi thiết bị</string>
+    <string name="settings_notifications_device_remove_failed_title">Không thể xóa thiết bị</string>
+    <string name="settings_notifications_change_failed_message">Máy chủ không nhận thay đổi này.</string>
 </resources>

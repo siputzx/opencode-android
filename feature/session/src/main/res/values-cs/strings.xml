@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Cena</string>
     <string name="session_sheet_media">Média</string>
     <string name="session_sheet_media_value">Soubory a odkazy</string>
-    <string name="session_always_notify">Vždy upozornit</string>
-    <string name="session_always_notify_message_phone">Upozornit na tomto telefonu po dokončení každé odpovědi, i na zprávy odeslané odjinud.</string>
-    <string name="session_always_notify_message_tablet">Upozornit na tomto tabletu po dokončení každé odpovědi, i na zprávy odeslané odjinud.</string>
     <string name="session_delete_session">Odstranit relaci</string>
     <string name="session_rename_placeholder">Název</string>
     <string name="session_auto_rename">Automaticky přejmenovat</string>
@@ -287,9 +284,6 @@
     <string name="session_sheet_fork_failed_title">Nepodařilo se vytvořit větev relace</string>
     <string name="session_sheet_save_export_failed">Nepodařilo se uložit export</string>
     <string name="session_sheet_export_failed_title">Nepodařilo se exportovat relaci</string>
-    <string name="session_sheet_notifications_off_message">Nejprve zapněte oznámení v nastavení.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Nepodařilo se zapnout „Vždy upozornit“</string>
-    <string name="session_sheet_always_notify_off_failed_title">Nepodařilo se vypnout „Vždy upozornit“</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Server nepodporuje soubory</string>
@@ -353,4 +347,20 @@
     <string name="session_media_loading_earlier">Načítání…</string>
     <string name="session_media_earlier_failed">Starší zprávy se nepodařilo načíst. Zkontrolujte připojení a zkuste to znovu.</string>
     <string name="session_media_earlier_nothing_new">Mezi právě načtenými zprávami není nic nového. Starší zprávy mohou obsahovat více.</string>
+    <string name="session_bell_title">Oznámení</string>
+    <string name="session_bell_level_all">Všechno</string>
+    <string name="session_bell_level_attention">Jen když mě potřebuje</string>
+    <string name="session_bell_level_none">Nic</string>
+    <string name="session_bell_mute_hour">Nic na hodinu</string>
+    <string name="session_bell_mute_tomorrow">Nic do zítřejšího rána</string>
+    <string name="session_bell_use_default">Použít volbu tohoto telefonu</string>
+    <string name="session_bell_source_own">Nastaveno jen pro tento telefon.</string>
+    <string name="session_bell_source_own_until">Nastaveno jen pro tento telefon do %1$s.</string>
+    <string name="session_bell_source_default">Volba tohoto telefonu pro server. Výběrem možnosti ji změníte pro tuto relaci.</string>
+    <string name="session_bell_source_shared">Nastaveno z jiného zařízení. Výběrem možnosti to změníte pro tento telefon.</string>
+    <string name="session_bell_source_shared_until">Nastaveno z jiného zařízení do %1$s. Výběrem možnosti to změníte pro tento telefon.</string>
+    <string name="session_bell_source_phone_paused">Oznámení na tomto telefonu jsou pozastavena v Nastavení.</string>
+    <string name="session_bell_source_server_paused">Všechna oznámení z tohoto serveru jsou pozastavena.</string>
+    <string name="session_bell_source_server_paused_until">Všechna oznámení z tohoto serveru jsou pozastavena do %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Nepodařilo se změnit oznámení</string>
 </resources>

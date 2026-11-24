@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Ovozli qo‘ng‘iroqlar</string>
     <string name="system_channel_recording">Yozib olinmoqda</string>
     <string name="system_channel_session_runs">Sessiya jarayonlari</string>
-    <string name="system_channel_session_updates">Sessiya yangilanishlari</string>
+    <string name="system_channel_session_finished">Yakunlangan sessiyalar</string>
+    <string name="system_channel_session_questions">Savollar</string>
+    <string name="system_channel_session_permissions">Ruxsat so‘rovlari</string>
+    <string name="system_channel_session_other">Sessiyaning boshqa yangilanishlari</string>
     <string name="system_channel_shared_items">Ulashilgan elementlar</string>
 
     <!-- Share sheet: notifications -->

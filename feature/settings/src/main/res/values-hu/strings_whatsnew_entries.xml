@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">Kérjen folyamatábrát az üzenetküldés menetéről</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">Rajzolj folyamatábrát az üzenetküldés menetéről</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">Értesítés, ha elkészült</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">Értesítést kap, ha egy itt indított munkamenet végzett, az elvégzett munka rövid összefoglalójával.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">Kapcsolja be a Mindig értesítsen lehetőséget a munkamenet adatlapján, hogy minden válaszról értesüljön, a számítógépen indítottakról is.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">Koppintson egy értesítésre a hozzá tartozó munkamenet megnyitásához.</string>
-    <string name="settings_whatsnew_entry_always_notify_example">Küldjön üzenetet, majd zárolja a telefonját</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">Váltás a kiszolgálók között</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">Az oldalmenü címe az aktuális kiszolgáló neve. Koppintson rá másik kiszolgáló választásához vagy új hozzáadásához.</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">A munkamenet túléli a mappáját</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">Ha a munkamenet mappája már nem létezik, például törölték a munkaterületét, a sikertelen küldés felajánlja az áthelyezést a projekt mappájába, majd újraküldi az üzenetet.</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">Értesítések beállítása az OpenCode-dal</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">A Beállítások → Értesítések alatt koppintson a Beállítás az OpenCode-dal lehetőségre. Itt átnézheti a hiányzó értesítési bővítményt telepítő utasítást.</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">A híváskártya kitölti a képernyő alját</string>

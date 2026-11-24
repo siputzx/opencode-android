@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Deze koppelcode is verlopen of al gebruikt. Voer `opencode pair --remote` opnieuw uit.</string>
     <string name="server_error_pairing_unsupported">Deze server ondersteunt geen koppellinks. Werk OpenCode op je computer bij of voer de server handmatig in.</string>
-    <string name="server_error_notification_previews_need_https">Versleutelde meldingsvoorbeelden vereisen een HTTPS-serververbinding.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Voer een geldige HTTP- of HTTPS-server-URL in.</string>

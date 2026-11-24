@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Гласови обаждания</string>
     <string name="system_channel_recording">Запис</string>
     <string name="system_channel_session_runs">Изпълнения на сесии</string>
-    <string name="system_channel_session_updates">Актуализации на сесии</string>
+    <string name="system_channel_session_finished">Завършени сесии</string>
+    <string name="system_channel_session_questions">Въпроси</string>
+    <string name="system_channel_session_permissions">Заявки за разрешение</string>
+    <string name="system_channel_session_other">Други актуализации на сесии</string>
     <string name="system_channel_shared_items">Споделени елементи</string>
 
     <!-- Share sheet: notifications -->

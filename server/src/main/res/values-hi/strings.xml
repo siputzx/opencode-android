@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">यह पेयरिंग कोड समाप्त हो गया है या पहले इस्तेमाल हो चुका है। `opencode pair --remote` फिर से चलाएँ।</string>
     <string name="server_error_pairing_unsupported">यह सर्वर पेयरिंग लिंक का समर्थन नहीं करता। अपने कंप्यूटर पर OpenCode अपडेट करें या सर्वर मैन्युअल रूप से दर्ज करें।</string>
-    <string name="server_error_notification_previews_need_https">एन्क्रिप्टेड सूचना पूर्वावलोकन के लिए HTTPS सर्वर संबंध चाहिए।</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">मान्य HTTP या HTTPS सर्वर URL दर्ज करें।</string>

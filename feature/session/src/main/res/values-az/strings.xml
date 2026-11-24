@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Xərc</string>
     <string name="session_sheet_media">Media</string>
     <string name="session_sheet_media_value">Fayllar və linklər</string>
-    <string name="session_always_notify">Həmişə bildir</string>
-    <string name="session_always_notify_message_phone">Mesajı buradan göndərməsəniz belə, hər cavab tamamlananda bu telefona bildiriş göndər.</string>
-    <string name="session_always_notify_message_tablet">Mesajı buradan göndərməsəniz belə, hər cavab tamamlananda bu planşetə bildiriş göndər.</string>
     <string name="session_delete_session">Sessiyanı sil</string>
     <string name="session_rename_placeholder">Başlıq</string>
     <string name="session_auto_rename">Avtomatik adlandır</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Sessiyanı fork etmək mümkün olmadı</string>
     <string name="session_sheet_save_export_failed">İxrac faylını saxlamaq mümkün olmadı</string>
     <string name="session_sheet_export_failed_title">Sessiyanı ixrac etmək mümkün olmadı</string>
-    <string name="session_sheet_notifications_off_message">Əvvəlcə tənzimləmələrdə bildirişləri yandırın.</string>
-    <string name="session_sheet_always_notify_on_failed_title">“Həmişə bildir” seçimini yandırmaq mümkün olmadı</string>
-    <string name="session_sheet_always_notify_off_failed_title">“Həmişə bildir” seçimini söndürmək mümkün olmadı</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Server faylları dəstəkləmir</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Yüklənir…</string>
     <string name="session_media_earlier_failed">Əvvəlki mesajları yükləmək mümkün olmadı. Əlaqənizi yoxlayın və yenidən cəhd edin.</string>
     <string name="session_media_earlier_nothing_new">İndicə yüklənən mesajlarda yeni heç nə yoxdur. Əvvəlkilərdə daha çox ola bilər.</string>
+    <string name="session_bell_title">Bildirişlər</string>
+    <string name="session_bell_level_all">Hər şey</string>
+    <string name="session_bell_level_attention">Yalnız mənə ehtiyac olanda</string>
+    <string name="session_bell_level_none">Heç nə</string>
+    <string name="session_bell_mute_hour">Bir saat ərzində heç nə</string>
+    <string name="session_bell_mute_tomorrow">Sabah səhərədək heç nə</string>
+    <string name="session_bell_use_default">Bu telefonun seçimindən istifadə et</string>
+    <string name="session_bell_source_own">Yalnız bu telefon üçün təyin edilib.</string>
+    <string name="session_bell_source_own_until">Yalnız bu telefon üçün %1$s-dək təyin edilib.</string>
+    <string name="session_bell_source_default">Bu telefonun server üçün seçimi. Bu sessiyada dəyişmək üçün birini seçin.</string>
+    <string name="session_bell_source_shared">Başqa cihazdan təyin edilib. Bu telefonda dəyişmək üçün birini seçin.</string>
+    <string name="session_bell_source_shared_until">Başqa cihazdan %1$s-dək təyin edilib. Bu telefonda dəyişmək üçün birini seçin.</string>
+    <string name="session_bell_source_phone_paused">Tənzimləmələrdə bu telefon üçün fasilə verilib.</string>
+    <string name="session_bell_source_server_paused">Bu serverdən gələn bütün bildirişlərə fasilə verilib.</string>
+    <string name="session_bell_source_server_paused_until">Bu serverdən gələn bütün bildirişlərə %1$s-dək fasilə verilib.</string>
+    <string name="session_sheet_bell_failed_title">Bildirişləri dəyişmək mümkün olmadı</string>
 </resources>

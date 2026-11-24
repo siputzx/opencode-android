@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Известувања</string>
     <string name="settings_notifications_device_header">Овој %1$s</string>
-    <string name="settings_notifications_device_footer">Известувањата одат преку посредник што не зачувува ништо. На овој %1$s стигнуваат известувања само за сесиите започнати на него.</string>
+    <string name="settings_notifications_device_footer">Известувањата минуваат преку посредник што не чува ништо и се шифрирани од крај до крај.</string>
     <string name="settings_notifications_allow">Дозволи известувања</string>
     <string name="settings_notifications_open_android_settings">Отвори ги поставките на Android</string>
     <string name="settings_notifications_turn_on">Вклучи известувања</string>
     <string name="settings_notifications_server_header">Сервер</string>
-    <string name="settings_notifications_set_up_footer">Отвора сесија со барање OpenCode да го инсталира приклучокот. Испрати го барањето, па провери повторно.</string>
-    <string name="settings_notifications_plugin_needed_footer">На серверот му треба приклучокот за известувања на OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Приклучок за известувања</string>
-    <string name="settings_notifications_plugin_installed">Инсталиран</string>
-    <string name="settings_notifications_plugin_not_running">Не работи</string>
-    <string name="settings_notifications_plugin_not_installed">Не е инсталиран</string>
-    <string name="settings_notifications_plugin_check_failed">Проверката на статусот не успеа</string>
-    <string name="settings_notifications_set_up">Постави со OpenCode</string>
-    <string name="settings_notifications_check_again">Провери повторно</string>
     <string name="settings_notifications_in_app_footer">Се прикажуваат на копчето за страничното мени.</string>
     <string name="settings_notifications_in_app_notices">Известувања во апликацијата</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Насочи ја камерата кон QR кодот</string>
     <string name="settings_pairing_paste_link">Залепи врска за спарување</string>
     <string name="settings_pairing_computer_hint">На компјутерот, отвори Поставки → Спарување во OpenCode или изврши %1$s во терминал.</string>
+    <string name="settings_notifications_server_toggle">Известувај го овој уред</string>
+    <string name="settings_notifications_mode">Известувај за</string>
+    <string name="settings_notifications_mode_all">Сѐ</string>
+    <string name="settings_notifications_mode_all_caption">Завршени сесии, прашања и барања за дозвола.</string>
+    <string name="settings_notifications_mode_attention">Само кога му требам</string>
+    <string name="settings_notifications_mode_attention_caption">Прашања и барања за дозвола.</string>
+    <string name="settings_notifications_mode_from_this_phone">Само сесии што ги користам овде</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Сѐ од сесиите во кои испраќаш од овој %1$s.</string>
+    <string name="settings_notifications_mode_none">Ништо</string>
+    <string name="settings_notifications_status_checking">Се проверува серверот…</string>
+    <string name="settings_notifications_status_no_permission">Прво дозволи известувања погоре.</string>
+    <string name="settings_notifications_status_outdated">На овој сервер му треба ажурирање на OpenCode за известувања.</string>
+    <string name="settings_notifications_status_relay">Овој сервер не го прифаќа посредникот за известувања на оваа апликација.</string>
+    <string name="settings_notifications_status_failed">Не можеа да се постават известувања на овој сервер. OpenCode повторно ќе се обиде кога ќе се поврзе.</string>
+    <string name="settings_notifications_pause">Паузирај ги сите известувања</string>
+    <string name="settings_notifications_pause_on">До продолжување</string>
+    <string name="settings_notifications_pause_until">До %1$s</string>
+    <string name="settings_notifications_resume">Продолжи</string>
+    <string name="settings_notifications_pause_hour">За еден час</string>
+    <string name="settings_notifications_pause_tomorrow">До утре наутро</string>
+    <string name="settings_notifications_pause_forever">Додека не продолжам</string>
+    <string name="settings_notifications_pause_footer">Паузирањето ги запира известувањата од овој сервер на сите уреди.</string>
+    <string name="settings_notifications_devices_header">Уреди</string>
+    <string name="settings_notifications_device_this">%1$s (овој уред)</string>
+    <string name="settings_notifications_device_on">Вклучено</string>
+    <string name="settings_notifications_device_paused">Паузирано</string>
+    <string name="settings_notifications_device_remove">Отстрани</string>
+    <string name="settings_notifications_pause_failed_title">Не успеа промената на паузата</string>
+    <string name="settings_notifications_device_failed_title">Не успеа промената на уредот</string>
+    <string name="settings_notifications_device_remove_failed_title">Не успеа отстранувањето на уредот</string>
+    <string name="settings_notifications_change_failed_message">Серверот не ја прифати промената.</string>
 </resources>

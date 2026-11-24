@@ -53,20 +53,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Obvestila</string>
     <string name="settings_notifications_device_header">Ta %1$s</string>
-    <string name="settings_notifications_device_footer">Obvestila potujejo prek posrednika, ki ničesar ne shranjuje. Na napravo %1$s prihajajo le obvestila sej, začetih na njej.</string>
+    <string name="settings_notifications_device_footer">Obvestila gredo prek posrednika, ki ničesar ne shranjuje, in so šifrirana od konca do konca.</string>
     <string name="settings_notifications_allow">Dovoli obvestila</string>
     <string name="settings_notifications_open_android_settings">Odpri nastavitve Androida</string>
     <string name="settings_notifications_turn_on">Vklopi obvestila</string>
     <string name="settings_notifications_server_header">Strežnik</string>
-    <string name="settings_notifications_set_up_footer">Odpre sejo s pozivom, naj OpenCode namesti vtičnik. Pošlji ga in nato znova preveri.</string>
-    <string name="settings_notifications_plugin_needed_footer">Strežnik potrebuje vtičnik OpenCode notify.</string>
-    <string name="settings_notifications_notify_plugin">Vtičnik za obvestila</string>
-    <string name="settings_notifications_plugin_installed">Nameščen</string>
-    <string name="settings_notifications_plugin_not_running">Ne deluje</string>
-    <string name="settings_notifications_plugin_not_installed">Ni nameščen</string>
-    <string name="settings_notifications_plugin_check_failed">Stanja ni bilo mogoče preveriti</string>
-    <string name="settings_notifications_set_up">Nastavi z OpenCode</string>
-    <string name="settings_notifications_check_again">Preveri znova</string>
     <string name="settings_notifications_in_app_footer">Prikazana na gumbu stranskega predala.</string>
     <string name="settings_notifications_in_app_notices">Obvestila v aplikaciji</string>
 
@@ -229,4 +220,35 @@
     <string name="settings_pairing_point_camera">Usmeri kamero proti kodi QR</string>
     <string name="settings_pairing_paste_link">Prilepi povezavo za seznanjanje</string>
     <string name="settings_pairing_computer_hint">Na računalniku v OpenCode odpri Nastavitve → Seznanjanje ali v terminalu zaženi %1$s.</string>
+    <string name="settings_notifications_server_toggle">Obveščaj to napravo</string>
+    <string name="settings_notifications_mode">Obveščaj o</string>
+    <string name="settings_notifications_mode_all">Vse</string>
+    <string name="settings_notifications_mode_all_caption">Končane seje, vprašanja in zahteve za dovoljenje.</string>
+    <string name="settings_notifications_mode_attention">Samo ko me potrebuje</string>
+    <string name="settings_notifications_mode_attention_caption">Vprašanja in zahteve za dovoljenje.</string>
+    <string name="settings_notifications_mode_from_this_phone">Samo seje, ki jih uporabljam tukaj</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Vse iz sej, v katere pošilja ta %1$s.</string>
+    <string name="settings_notifications_mode_none">Nič</string>
+    <string name="settings_notifications_status_checking">Preverjanje strežnika …</string>
+    <string name="settings_notifications_status_no_permission">Najprej dovolite obvestila zgoraj.</string>
+    <string name="settings_notifications_status_outdated">Ta strežnik za obvestila potrebuje posodobitev OpenCode.</string>
+    <string name="settings_notifications_status_relay">Ta strežnik ne sprejema posrednika za obvestila te aplikacije.</string>
+    <string name="settings_notifications_status_failed">Obvestil na tem strežniku ni bilo mogoče nastaviti. OpenCode bo poskusil znova, ko se ponovno poveže.</string>
+    <string name="settings_notifications_pause">Začasno ustavi vsa obvestila</string>
+    <string name="settings_notifications_pause_on">Do nadaljevanja</string>
+    <string name="settings_notifications_pause_until">Do %1$s</string>
+    <string name="settings_notifications_resume">Nadaljuj</string>
+    <string name="settings_notifications_pause_hour">Za eno uro</string>
+    <string name="settings_notifications_pause_tomorrow">Do jutri zjutraj</string>
+    <string name="settings_notifications_pause_forever">Dokler ne nadaljujem</string>
+    <string name="settings_notifications_pause_footer">Začasna ustavitev prekine obvestila s tega strežnika na vseh napravah.</string>
+    <string name="settings_notifications_devices_header">Naprave</string>
+    <string name="settings_notifications_device_this">%1$s (ta naprava)</string>
+    <string name="settings_notifications_device_on">Vklopljeno</string>
+    <string name="settings_notifications_device_paused">Začasno ustavljeno</string>
+    <string name="settings_notifications_device_remove">Odstrani</string>
+    <string name="settings_notifications_pause_failed_title">Premora ni bilo mogoče spremeniti</string>
+    <string name="settings_notifications_device_failed_title">Naprave ni bilo mogoče spremeniti</string>
+    <string name="settings_notifications_device_remove_failed_title">Naprave ni bilo mogoče odstraniti</string>
+    <string name="settings_notifications_change_failed_message">Strežnik ni sprejel spremembe.</string>
 </resources>

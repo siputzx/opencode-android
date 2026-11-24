@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Értesítések</string>
     <string name="settings_notifications_device_header">Ez a %1$s</string>
-    <string name="settings_notifications_device_footer">Az értesítések egy közvetítőn keresztül érkeznek, amely semmit sem tárol. Csak az ezen az eszközön (%1$s) indított munkamenetek küldenek ide értesítést.</string>
+    <string name="settings_notifications_device_footer">Az értesítések végponttól végpontig titkosítottak, és olyan továbbítón mennek át, amely semmit nem tárol.</string>
     <string name="settings_notifications_allow">Értesítések engedélyezése</string>
     <string name="settings_notifications_open_android_settings">Android-beállítások megnyitása</string>
     <string name="settings_notifications_turn_on">Értesítések bekapcsolása</string>
     <string name="settings_notifications_server_header">Kiszolgáló</string>
-    <string name="settings_notifications_set_up_footer">Megnyit egy munkamenetet, amelyben megkéri az OpenCode-ot a beépülő modul telepítésére. Küldje el az utasítást, majd ellenőrizze újra.</string>
-    <string name="settings_notifications_plugin_needed_footer">A kiszolgálóhoz szükséges az OpenCode notify beépülő modul.</string>
-    <string name="settings_notifications_notify_plugin">Notify beépülő modul</string>
-    <string name="settings_notifications_plugin_installed">Telepítve</string>
-    <string name="settings_notifications_plugin_not_running">Nem fut</string>
-    <string name="settings_notifications_plugin_not_installed">Nincs telepítve</string>
-    <string name="settings_notifications_plugin_check_failed">Nem sikerült ellenőrizni az állapotot</string>
-    <string name="settings_notifications_set_up">Beállítás az OpenCode-dal</string>
-    <string name="settings_notifications_check_again">Újraellenőrzés</string>
     <string name="settings_notifications_in_app_footer">Az oldalmenü gombján jelennek meg.</string>
     <string name="settings_notifications_in_app_notices">Alkalmazáson belüli megjegyzések</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Irányítsa a kamerát a QR-kódra</string>
     <string name="settings_pairing_paste_link">Párosítási link beillesztése</string>
     <string name="settings_pairing_computer_hint">A számítógépen nyissa meg az OpenCode Beállítások → Párosítás menüjét, vagy futtassa a terminálban: %1$s.</string>
+    <string name="settings_notifications_server_toggle">Értesítések ezen az eszközön</string>
+    <string name="settings_notifications_mode">Értesítés ezekről</string>
+    <string name="settings_notifications_mode_all">Mindent</string>
+    <string name="settings_notifications_mode_all_caption">Befejezett munkamenetek, kérdések és engedélykérések.</string>
+    <string name="settings_notifications_mode_attention">Csak ha szükség van rám</string>
+    <string name="settings_notifications_mode_attention_caption">Kérdések és engedélykérések.</string>
+    <string name="settings_notifications_mode_from_this_phone">Csak az itt használt munkamenetek</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Minden értesítés azokból a munkamenetekből, amelyekbe erről a készülékről (%1$s) küld üzenetet.</string>
+    <string name="settings_notifications_mode_none">Semmit</string>
+    <string name="settings_notifications_status_checking">Szerver ellenőrzése…</string>
+    <string name="settings_notifications_status_no_permission">Először engedélyezze fent az értesítéseket.</string>
+    <string name="settings_notifications_status_outdated">Az értesítésekhez frissíteni kell az OpenCode-ot ezen a szerveren.</string>
+    <string name="settings_notifications_status_relay">Ez a szerver nem fogadja el az alkalmazás értesítéstovábbítóját.</string>
+    <string name="settings_notifications_status_failed">Nem sikerült beállítani az értesítéseket ezen a szerveren. Az OpenCode újracsatlakozáskor újra megpróbálja.</string>
+    <string name="settings_notifications_pause">Összes értesítés szüneteltetése</string>
+    <string name="settings_notifications_pause_on">Folytatásig</string>
+    <string name="settings_notifications_pause_until">Eddig: %1$s</string>
+    <string name="settings_notifications_resume">Folytatás</string>
+    <string name="settings_notifications_pause_hour">Egy órára</string>
+    <string name="settings_notifications_pause_tomorrow">Holnap reggelig</string>
+    <string name="settings_notifications_pause_forever">Amíg nem folytatom</string>
+    <string name="settings_notifications_pause_footer">A szüneteltetés minden eszközön leállítja az erről a szerverről érkező értesítéseket.</string>
+    <string name="settings_notifications_devices_header">Eszközök</string>
+    <string name="settings_notifications_device_this">%1$s (ez az eszköz)</string>
+    <string name="settings_notifications_device_on">Bekapcsolva</string>
+    <string name="settings_notifications_device_paused">Szüneteltetve</string>
+    <string name="settings_notifications_device_remove">Eltávolítás</string>
+    <string name="settings_notifications_pause_failed_title">Nem sikerült módosítani a szüneteltetést</string>
+    <string name="settings_notifications_device_failed_title">Nem sikerült módosítani az eszközt</string>
+    <string name="settings_notifications_device_remove_failed_title">Nem sikerült eltávolítani az eszközt</string>
+    <string name="settings_notifications_change_failed_message">A szerver nem fogadta el a módosítást.</string>
 </resources>

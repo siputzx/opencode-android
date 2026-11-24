@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Kustannus</string>
     <string name="session_sheet_media">Media</string>
     <string name="session_sheet_media_value">Tiedostot ja linkit</string>
-    <string name="session_always_notify">Ilmoita aina</string>
-    <string name="session_always_notify_message_phone">Ilmoita tähän puhelimeen aina, kun vastaus valmistuu, myös muualla lähetettyihin viesteihin.</string>
-    <string name="session_always_notify_message_tablet">Ilmoita tähän tablettiin aina, kun vastaus valmistuu, myös muualla lähetettyihin viesteihin.</string>
     <string name="session_delete_session">Poista istunto</string>
     <string name="session_rename_placeholder">Otsikko</string>
     <string name="session_auto_rename">Nimeä automaattisesti</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Istunnon haarautus epäonnistui</string>
     <string name="session_sheet_save_export_failed">Viennin tallentaminen epäonnistui</string>
     <string name="session_sheet_export_failed_title">Istunnon vienti epäonnistui</string>
-    <string name="session_sheet_notifications_off_message">Ota ilmoitukset ensin käyttöön asetuksista.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Ilmoita aina -asetuksen käyttöönotto epäonnistui</string>
-    <string name="session_sheet_always_notify_off_failed_title">Ilmoita aina -asetuksen poisto käytöstä epäonnistui</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Palvelin ei tue tiedostoja</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Ladataan…</string>
     <string name="session_media_earlier_failed">Aiempien viestien lataus epäonnistui. Tarkista yhteytesi ja yritä uudelleen.</string>
     <string name="session_media_earlier_nothing_new">Juuri ladatuissa viesteissä ei ole mitään uutta. Aiemmissa voi olla lisää.</string>
+    <string name="session_bell_title">Ilmoitukset</string>
+    <string name="session_bell_level_all">Kaikki</string>
+    <string name="session_bell_level_attention">Vain kun minua tarvitaan</string>
+    <string name="session_bell_level_none">Ei mitään</string>
+    <string name="session_bell_mute_hour">Ei mitään tuntiin</string>
+    <string name="session_bell_mute_tomorrow">Ei mitään huomisaamuun asti</string>
+    <string name="session_bell_use_default">Käytä tämän puhelimen valintaa</string>
+    <string name="session_bell_source_own">Asetettu vain tälle puhelimelle.</string>
+    <string name="session_bell_source_own_until">Asetettu vain tälle puhelimelle %1$s asti.</string>
+    <string name="session_bell_source_default">Tämän puhelimen valinta palvelimelle. Valitse vaihtoehto muuttaaksesi tämän istunnon asetusta.</string>
+    <string name="session_bell_source_shared">Asetettu toiselta laitteelta. Valitse vaihtoehto muuttaaksesi tämän puhelimen asetusta.</string>
+    <string name="session_bell_source_shared_until">Asetettu toiselta laitteelta %1$s asti. Valitse vaihtoehto muuttaaksesi tämän puhelimen asetusta.</string>
+    <string name="session_bell_source_phone_paused">Tämän puhelimen ilmoitukset on keskeytetty asetuksissa.</string>
+    <string name="session_bell_source_server_paused">Kaikki tämän palvelimen ilmoitukset on keskeytetty.</string>
+    <string name="session_bell_source_server_paused_until">Kaikki tämän palvelimen ilmoitukset on keskeytetty %1$s asti.</string>
+    <string name="session_sheet_bell_failed_title">Ilmoitusten muuttaminen epäonnistui</string>
 </resources>

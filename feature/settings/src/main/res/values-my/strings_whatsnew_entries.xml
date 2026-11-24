@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">မက်ဆေ့ဂျ်ပို့ပုံကို လုပ်ငန်းစဉ်ပြ ပုံကြမ်းဖြင့် ပြခိုင်းပါ</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">မက်ဆေ့ဂျ်ပို့ပုံကို လုပ်ငန်းစဉ်ပြ ပုံကြမ်း ရေးဆွဲပေးပါ</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">ပြီးလျှင် အသိပေးပါ</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">ဤနေရာမှ စတင်ထားသော စက်ရှင် အလုပ်ပြီးလျှင် လုပ်ဆောင်ခဲ့သည့် အကျဉ်းချုပ်နှင့်အတူ အကြောင်းကြားချက် ရမည်။</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">ကွန်ပျူတာမှ စတင်ထားသည့် အလုပ်များအပါအဝင် ပြန်စာတိုင်းအတွက် အသိပေးချက်ရရန် စက်ရှင်အကန့်တွင် အမြဲအသိပေးရန်ကို ဖွင့်ပါ။</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">သက်ဆိုင်ရာ စက်ရှင်ကို ဖွင့်ရန် အကြောင်းကြားချက်ကို နှိပ်ပါ။</string>
-    <string name="settings_whatsnew_entry_always_notify_example">မက်ဆေ့ဂျ်တစ်စောင် ပို့ပြီး ဖုန်းကို လော့ခ်ချပါ</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">ဆာဗာပြောင်းပါ</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">လက်ရှိဆာဗာအမည်ကို ဘေးအကန့်ခေါင်းစဉ်အဖြစ် ပြထားသည်။ အခြားဆာဗာသို့ ပြောင်းရန် သို့မဟုတ် အသစ်ထည့်ရန် ၎င်းကို နှိပ်ပါ။</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">ဖိုင်တွဲမရှိလည်း စက်ရှင် ဆက်သုံးနိုင်</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">အလုပ်နေရာ ဖယ်ရှားထားခြင်းကဲ့သို့ စက်ရှင်၏ ဖိုင်တွဲမရှိတော့လျှင် ပို့မအောင်မြင်သည့်အခါ ပရောဂျက်၏ ဖိုင်တွဲသို့ စက်ရှင်ကို ရွှေ့ပြီး ပြန်ပို့ရန် ကမ်းလှမ်းပါမည်။</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">OpenCode ဖြင့် အကြောင်းကြားချက်များ စနစ်ထည့်သွင်းပါ</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">ဆက်တင်များ → အကြောင်းကြားချက်များ တွင် OpenCode ဖြင့် စနစ်ထည့်သွင်းပါကို နှိပ်ပြီး လိုအပ်နေသော အကြောင်းကြားချက်ပလပ်အင် ထည့်သွင်းပေးမည့် အချက်ပြစာကို ပြန်လည်သုံးသပ်ပါ။</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">ခေါ်ဆိုမှုကတ်က အောက်ခြေကို နေရာယူ</string>

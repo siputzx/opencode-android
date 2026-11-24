@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">මෙම යුගල කිරීමේ කේතය කල් ඉකුත් වී හෝ දැනටමත් භාවිත කර ඇත. නැවත `opencode pair --remote` ක්‍රියාත්මක කරන්න.</string>
     <string name="server_error_pairing_unsupported">මෙම සේවාදායකය යුගල කිරීමේ සබැඳි සඳහා සහාය නොදක්වයි. පරිගණකයේ OpenCode යාවත්කාලීන කරන්න, නැත්නම් සේවාදායක විස්තර අතින් ඇතුළත් කරන්න.</string>
-    <string name="server_error_notification_previews_need_https">සංකේතනය කළ දැනුම්දීම් පෙරදසුන් සඳහා HTTPS සේවාදායක සම්බන්ධතාවයක් අවශ්‍යයි.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">වලංගු HTTP හෝ HTTPS සේවාදායක URL එකක් ඇතුළත් කරන්න.</string>

@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">メッセージ送信の流れをフローチャートにするよう頼む</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">メッセージ送信の流れをフローチャートにして</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">完了時に通知</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">このアプリで開始したセッションの作業が終わると、結果の短い要約とともに通知が届きます。</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">セッションの設定パネルで「常に通知」をオンにすると、パソコンから開始したものも含め、すべての応答が通知されます。</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">通知をタップすると、そのセッションが開きます。</string>
-    <string name="settings_whatsnew_entry_always_notify_example">メッセージを送信してスマホをロック</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">サーバーを切り替え</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">接続中のサーバー名がドロワーのタイトルに表示されます。タップして別のサーバーに切り替えたり、追加したりできます。</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">フォルダがなくてもセッションを継続</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">ワークスペースの削除などでセッションのフォルダがなくなった場合、送信に失敗するとプロジェクトのフォルダへの移動が提案され、再送信できます。</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">OpenCodeで通知を設定</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">設定 → 通知で「OpenCodeで設定」をタップすると、未導入の通知プラグインをインストールするプロンプトを確認できます。</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">通話カードを画面下部いっぱいに</string>

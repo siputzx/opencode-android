@@ -52,20 +52,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notificări</string>
     <string name="settings_notifications_device_header">Acest %1$s</string>
-    <string name="settings_notifications_device_footer">Notificările trec printr-un releu care nu stochează nimic. Doar sesiunile pornite pe acest %1$s îi trimit notificări.</string>
+    <string name="settings_notifications_device_footer">Notificările trec printr-un releu care nu stochează nimic și sunt criptate de la un capăt la altul.</string>
     <string name="settings_notifications_allow">Permite notificările</string>
     <string name="settings_notifications_open_android_settings">Deschide setările Android</string>
     <string name="settings_notifications_turn_on">Activează notificările</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_set_up_footer">Deschide o sesiune cu o solicitare către OpenCode de a instala pluginul. Trimite solicitarea, apoi verifică din nou.</string>
-    <string name="settings_notifications_plugin_needed_footer">Serverul are nevoie de pluginul notify pentru OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Plugin notify</string>
-    <string name="settings_notifications_plugin_installed">Instalat</string>
-    <string name="settings_notifications_plugin_not_running">Nu rulează</string>
-    <string name="settings_notifications_plugin_not_installed">Neinstalat</string>
-    <string name="settings_notifications_plugin_check_failed">Nu s-a putut verifica starea</string>
-    <string name="settings_notifications_set_up">Configurează cu OpenCode</string>
-    <string name="settings_notifications_check_again">Verifică din nou</string>
     <string name="settings_notifications_in_app_footer">Afișate pe butonul panoului lateral.</string>
     <string name="settings_notifications_in_app_notices">Notificări în aplicație</string>
 
@@ -226,4 +217,35 @@
     <string name="settings_pairing_point_camera">Îndreaptă camera spre codul QR</string>
     <string name="settings_pairing_paste_link">Lipește linkul de asociere</string>
     <string name="settings_pairing_computer_hint">Pe computer, deschide Setări → Asociere în OpenCode sau rulează %1$s într-un terminal.</string>
+    <string name="settings_notifications_server_toggle">Notifică acest dispozitiv</string>
+    <string name="settings_notifications_mode">Notifică despre</string>
+    <string name="settings_notifications_mode_all">Totul</string>
+    <string name="settings_notifications_mode_all_caption">Sesiuni încheiate, întrebări și cereri de permisiune.</string>
+    <string name="settings_notifications_mode_attention">Doar când are nevoie de mine</string>
+    <string name="settings_notifications_mode_attention_caption">Întrebări și cereri de permisiune.</string>
+    <string name="settings_notifications_mode_from_this_phone">Doar sesiunile folosite aici</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Totul din sesiunile în care trimiți de pe acest %1$s.</string>
+    <string name="settings_notifications_mode_none">Nimic</string>
+    <string name="settings_notifications_status_checking">Se verifică serverul…</string>
+    <string name="settings_notifications_status_no_permission">Permite mai întâi notificările mai sus.</string>
+    <string name="settings_notifications_status_outdated">Acest server are nevoie de o actualizare OpenCode pentru notificări.</string>
+    <string name="settings_notifications_status_relay">Acest server nu acceptă releul de notificări al acestei aplicații.</string>
+    <string name="settings_notifications_status_failed">Notificările nu au putut fi configurate pe acest server. OpenCode va încerca din nou la reconectare.</string>
+    <string name="settings_notifications_pause">Pune toate notificările pe pauză</string>
+    <string name="settings_notifications_pause_on">Până la reluare</string>
+    <string name="settings_notifications_pause_until">Până la %1$s</string>
+    <string name="settings_notifications_resume">Reia</string>
+    <string name="settings_notifications_pause_hour">Pentru o oră</string>
+    <string name="settings_notifications_pause_tomorrow">Până mâine dimineață</string>
+    <string name="settings_notifications_pause_forever">Până le reiau</string>
+    <string name="settings_notifications_pause_footer">Pauza oprește notificările de la acest server pe toate dispozitivele.</string>
+    <string name="settings_notifications_devices_header">Dispozitive</string>
+    <string name="settings_notifications_device_this">%1$s (acest dispozitiv)</string>
+    <string name="settings_notifications_device_on">Activat</string>
+    <string name="settings_notifications_device_paused">În pauză</string>
+    <string name="settings_notifications_device_remove">Elimină</string>
+    <string name="settings_notifications_pause_failed_title">Nu s-a putut modifica pauza</string>
+    <string name="settings_notifications_device_failed_title">Nu s-a putut modifica dispozitivul</string>
+    <string name="settings_notifications_device_remove_failed_title">Nu s-a putut elimina dispozitivul</string>
+    <string name="settings_notifications_change_failed_message">Serverul nu a acceptat modificarea.</string>
 </resources>

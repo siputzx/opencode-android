@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Þessi pörunarkóði er útrunninn eða hefur þegar verið notaður. Keyrðu `opencode pair --remote` aftur.</string>
     <string name="server_error_pairing_unsupported">Þessi netþjónn styður ekki pörunartengla. Uppfærðu OpenCode á tölvunni eða sláðu inn netþjóninn handvirkt.</string>
-    <string name="server_error_notification_previews_need_https">Dulkóðuð forskoðun tilkynninga krefst HTTPS-tengingar við netþjón.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Sláðu inn gilt HTTP- eða HTTPS-veffang netþjóns.</string>

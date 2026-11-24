@@ -113,7 +113,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Aquest codi d\'aparellament ha caducat o ja s\'ha fet servir. Torna a executar `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">Aquest servidor no admet enllaços d\'aparellament. Actualitza OpenCode a l\'ordinador o afegeix el servidor manualment.</string>
-    <string name="server_error_notification_previews_need_https">Les vistes prèvies xifrades de les notificacions necessiten una connexió HTTPS al servidor.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Introdueix un URL de servidor HTTP o HTTPS vàlid.</string>

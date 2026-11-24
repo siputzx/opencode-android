@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Llamadas de voz</string>
     <string name="system_channel_recording">Grabación</string>
     <string name="system_channel_session_runs">Ejecuciones de sesiones</string>
-    <string name="system_channel_session_updates">Actualizaciones de sesiones</string>
+    <string name="system_channel_session_finished">Sesiones terminadas</string>
+    <string name="system_channel_session_questions">Preguntas</string>
+    <string name="system_channel_session_permissions">Solicitudes de permiso</string>
+    <string name="system_channel_session_other">Otras actualizaciones de sesión</string>
     <string name="system_channel_shared_items">Elementos compartidos</string>
 
     <!-- Share sheet: notifications -->

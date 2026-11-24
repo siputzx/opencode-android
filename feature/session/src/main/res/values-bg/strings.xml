@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Цена</string>
     <string name="session_sheet_media">Медия</string>
     <string name="session_sheet_media_value">Файлове и връзки</string>
-    <string name="session_always_notify">Винаги известявай</string>
-    <string name="session_always_notify_message_phone">Известяване на този телефон при всеки готов отговор, дори за съобщения, изпратени от друго устройство.</string>
-    <string name="session_always_notify_message_tablet">Известяване на този таблет при всеки готов отговор, дори за съобщения, изпратени от друго устройство.</string>
     <string name="session_delete_session">Изтриване на сесия</string>
     <string name="session_rename_placeholder">Заглавие</string>
     <string name="session_auto_rename">Автоматично преименуване</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Неуспешно разклоняване на сесията</string>
     <string name="session_sheet_save_export_failed">Неуспешно запазване на експортирания файл</string>
     <string name="session_sheet_export_failed_title">Неуспешно експортиране на сесията</string>
-    <string name="session_sheet_notifications_off_message">Първо включете известията в Настройки.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Неуспешно включване на „Винаги известявай“</string>
-    <string name="session_sheet_always_notify_off_failed_title">Неуспешно изключване на „Винаги известявай“</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Сървърът не поддържа файлове</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Зареждане…</string>
     <string name="session_media_earlier_failed">По-ранните съобщения не можаха да бъдат заредени. Проверете връзката си и опитайте отново.</string>
     <string name="session_media_earlier_nothing_new">В току-що заредените съобщения няма нищо ново. По-ранните може да съдържат още.</string>
+    <string name="session_bell_title">Известия</string>
+    <string name="session_bell_level_all">Всичко</string>
+    <string name="session_bell_level_attention">Само когато има нужда от мен</string>
+    <string name="session_bell_level_none">Нищо</string>
+    <string name="session_bell_mute_hour">Нищо за един час</string>
+    <string name="session_bell_mute_tomorrow">Нищо до утре сутринта</string>
+    <string name="session_bell_use_default">Използване на избора за този телефон</string>
+    <string name="session_bell_source_own">Зададено само за този телефон.</string>
+    <string name="session_bell_source_own_until">Зададено само за този телефон до %1$s.</string>
+    <string name="session_bell_source_default">Изборът за сървъра на този телефон. Изберете опция, за да го промените за тази сесия.</string>
+    <string name="session_bell_source_shared">Зададено от друго устройство. Изберете опция, за да го промените за този телефон.</string>
+    <string name="session_bell_source_shared_until">Зададено от друго устройство до %1$s. Изберете опция, за да го промените за този телефон.</string>
+    <string name="session_bell_source_phone_paused">Този телефон е на пауза в Настройки.</string>
+    <string name="session_bell_source_server_paused">Всички известия от този сървър са на пауза.</string>
+    <string name="session_bell_source_server_paused_until">Всички известия от този сървър са на пауза до %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Неуспешна промяна на известията</string>
 </resources>

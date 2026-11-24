@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Tilkynningar</string>
     <string name="settings_notifications_device_header">Þetta %1$s</string>
-    <string name="settings_notifications_device_footer">Tilkynningar fara um millilið sem geymir ekkert. Aðeins setur sem eru hafnar á þessu %1$s senda því tilkynningar.</string>
+    <string name="settings_notifications_device_footer">Tilkynningar fara í gegnum miðlunarþjón sem geymir ekkert og eru dulkóðaðar frá enda til enda.</string>
     <string name="settings_notifications_allow">Leyfa tilkynningar</string>
     <string name="settings_notifications_open_android_settings">Opna Android-stillingar</string>
     <string name="settings_notifications_turn_on">Kveikja á tilkynningum</string>
     <string name="settings_notifications_server_header">Netþjónn</string>
-    <string name="settings_notifications_set_up_footer">Opnar setu með beiðni til OpenCode um að setja upp viðbótina. Sendu beiðnina og athugaðu svo aftur.</string>
-    <string name="settings_notifications_plugin_needed_footer">Netþjónninn þarf notify-viðbótina fyrir OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Tilkynningaviðbót</string>
-    <string name="settings_notifications_plugin_installed">Uppsett</string>
-    <string name="settings_notifications_plugin_not_running">Ekki í gangi</string>
-    <string name="settings_notifications_plugin_not_installed">Ekki uppsett</string>
-    <string name="settings_notifications_plugin_check_failed">Ekki tókst að athuga stöðu</string>
-    <string name="settings_notifications_set_up">Setja upp með OpenCode</string>
-    <string name="settings_notifications_check_again">Athuga aftur</string>
     <string name="settings_notifications_in_app_footer">Sýndar á hnappi hliðarvalmyndar.</string>
     <string name="settings_notifications_in_app_notices">Tilkynningar í forritinu</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Beindu myndavélinni að QR kóðanum</string>
     <string name="settings_pairing_paste_link">Líma pörunartengil</string>
     <string name="settings_pairing_computer_hint">Opnaðu Stillingar → Pörun í OpenCode á tölvunni þinni eða keyrðu %1$s í skel.</string>
+    <string name="settings_notifications_server_toggle">Tilkynningar á þessu tæki</string>
+    <string name="settings_notifications_mode">Tilkynna um</string>
+    <string name="settings_notifications_mode_all">Allt</string>
+    <string name="settings_notifications_mode_all_caption">Loknar setur, spurningar og leyfisbeiðnir.</string>
+    <string name="settings_notifications_mode_attention">Aðeins þegar þörf er á mér</string>
+    <string name="settings_notifications_mode_attention_caption">Spurningar og leyfisbeiðnir.</string>
+    <string name="settings_notifications_mode_from_this_phone">Aðeins setur sem ég nota hér</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Allt úr setum sem þú sendir í frá þessu %1$s.</string>
+    <string name="settings_notifications_mode_none">Ekkert</string>
+    <string name="settings_notifications_status_checking">Athugar netþjóninn…</string>
+    <string name="settings_notifications_status_no_permission">Leyfðu tilkynningar hér að ofan fyrst.</string>
+    <string name="settings_notifications_status_outdated">Þessi netþjónn þarf uppfærslu á OpenCode fyrir tilkynningar.</string>
+    <string name="settings_notifications_status_relay">Þessi netþjónn samþykkir ekki miðlunarþjón þessa forrits fyrir tilkynningar.</string>
+    <string name="settings_notifications_status_failed">Ekki tókst að setja upp tilkynningar á þessum netþjóni. OpenCode reynir aftur þegar það tengist aftur.</string>
+    <string name="settings_notifications_pause">Gera hlé á öllum tilkynningum</string>
+    <string name="settings_notifications_pause_on">Þar til haldið er áfram</string>
+    <string name="settings_notifications_pause_until">Til %1$s</string>
+    <string name="settings_notifications_resume">Halda áfram</string>
+    <string name="settings_notifications_pause_hour">Í klukkustund</string>
+    <string name="settings_notifications_pause_tomorrow">Til morguns</string>
+    <string name="settings_notifications_pause_forever">Þar til ég held áfram</string>
+    <string name="settings_notifications_pause_footer">Hlé stöðvar tilkynningar frá þessum netþjóni á öllum tækjum.</string>
+    <string name="settings_notifications_devices_header">Tæki</string>
+    <string name="settings_notifications_device_this">%1$s (þetta tæki)</string>
+    <string name="settings_notifications_device_on">Kveikt</string>
+    <string name="settings_notifications_device_paused">Í hléi</string>
+    <string name="settings_notifications_device_remove">Fjarlægja</string>
+    <string name="settings_notifications_pause_failed_title">Ekki tókst að breyta hléi</string>
+    <string name="settings_notifications_device_failed_title">Ekki tókst að breyta tækinu</string>
+    <string name="settings_notifications_device_remove_failed_title">Ekki tókst að fjarlægja tækið</string>
+    <string name="settings_notifications_change_failed_message">Netþjónninn tók ekki við breytingunni.</string>
 </resources>

@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Кодот за спарување истече или веќе е искористен. Изврши `opencode pair --remote` повторно.</string>
     <string name="server_error_pairing_unsupported">Овој сервер не поддржува врски за спарување. Ажурирај го OpenCode на компјутерот или внеси го серверот рачно.</string>
-    <string name="server_error_notification_previews_need_https">За шифрирани прегледи на известувањата е потребна HTTPS врска со серверот.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Внеси важечки HTTP или HTTPS URL на серверот.</string>

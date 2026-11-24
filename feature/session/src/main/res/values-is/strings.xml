@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Kostnaður</string>
     <string name="session_sheet_media">Margmiðlun</string>
     <string name="session_sheet_media_value">Skrár og tenglar</string>
-    <string name="session_always_notify">Alltaf tilkynna</string>
-    <string name="session_always_notify_message_phone">Tilkynna í þessum síma þegar svar er tilbúið, jafnvel við skilaboðum sem þú sendir annars staðar.</string>
-    <string name="session_always_notify_message_tablet">Tilkynna í þessari spjaldtölvu þegar svar er tilbúið, jafnvel við skilaboðum sem þú sendir annars staðar.</string>
     <string name="session_delete_session">Eyða setu</string>
     <string name="session_rename_placeholder">Titill</string>
     <string name="session_auto_rename">Endurnefna sjálfvirkt</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Ekki tókst að kvísla setu</string>
     <string name="session_sheet_save_export_failed">Ekki tókst að vista útflutning</string>
     <string name="session_sheet_export_failed_title">Ekki tókst að flytja út setu</string>
-    <string name="session_sheet_notifications_off_message">Kveiktu fyrst á tilkynningum í stillingum.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Ekki tókst að virkja „Alltaf tilkynna“</string>
-    <string name="session_sheet_always_notify_off_failed_title">Ekki tókst að slökkva á „Alltaf tilkynna“</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Netþjónn styður ekki skrár</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Hleður…</string>
     <string name="session_media_earlier_failed">Ekki tókst að hlaða eldri skilaboðum. Athugaðu tenginguna og reyndu aftur.</string>
     <string name="session_media_earlier_nothing_new">Ekkert nýtt hér í skilaboðunum sem voru að hlaðast. Eldri skilaboð gætu haft meira.</string>
+    <string name="session_bell_title">Tilkynningar</string>
+    <string name="session_bell_level_all">Allt</string>
+    <string name="session_bell_level_attention">Aðeins þegar mín er þörf</string>
+    <string name="session_bell_level_none">Ekkert</string>
+    <string name="session_bell_mute_hour">Ekkert í klukkutíma</string>
+    <string name="session_bell_mute_tomorrow">Ekkert fyrr en í fyrramálið</string>
+    <string name="session_bell_use_default">Nota val þessa síma</string>
+    <string name="session_bell_source_own">Aðeins stillt fyrir þennan síma.</string>
+    <string name="session_bell_source_own_until">Aðeins stillt fyrir þennan síma, til %1$s.</string>
+    <string name="session_bell_source_default">Val þessa síma fyrir netþjóninn. Veldu valkost til að breyta því fyrir þessa setu.</string>
+    <string name="session_bell_source_shared">Stillt frá öðru tæki. Veldu valkost til að breyta því fyrir þennan síma.</string>
+    <string name="session_bell_source_shared_until">Stillt frá öðru tæki til %1$s. Veldu valkost til að breyta því fyrir þennan síma.</string>
+    <string name="session_bell_source_phone_paused">Þessi sími er í hléi í stillingum.</string>
+    <string name="session_bell_source_server_paused">Allar tilkynningar frá þessum netþjóni eru í hléi.</string>
+    <string name="session_bell_source_server_paused_until">Allar tilkynningar frá þessum netþjóni eru í hléi til %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Ekki tókst að breyta tilkynningum</string>
 </resources>

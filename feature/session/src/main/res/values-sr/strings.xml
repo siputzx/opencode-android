@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Трошак</string>
     <string name="session_sheet_media">Медији</string>
     <string name="session_sheet_media_value">Датотеке и везе</string>
-    <string name="session_always_notify">Увек обавести</string>
-    <string name="session_always_notify_message_phone">Обавести овај телефон кад год је одговор спреман, чак и ако порука није послата одавде.</string>
-    <string name="session_always_notify_message_tablet">Обавести овај таблет кад год је одговор спреман, чак и ако порука није послата одавде.</string>
     <string name="session_delete_session">Избриши сесију</string>
     <string name="session_rename_placeholder">Наслов</string>
     <string name="session_auto_rename">Аутоматски преименуј</string>
@@ -277,9 +274,6 @@
     <string name="session_sheet_fork_failed_title">Прављење нове гране сесије није успело</string>
     <string name="session_sheet_save_export_failed">Чување извоза није успело</string>
     <string name="session_sheet_export_failed_title">Извоз сесије није успео</string>
-    <string name="session_sheet_notifications_off_message">Прво укључите обавештења у подешавањима.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Укључивање опције „Увек обавести“ није успело</string>
-    <string name="session_sheet_always_notify_off_failed_title">Искључивање опције „Увек обавести“ није успело</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Сервер не подржава датотеке</string>
@@ -341,4 +335,20 @@
     <string name="session_media_loading_earlier">Учитавање…</string>
     <string name="session_media_earlier_failed">Учитавање ранијих порука није успело. Проверите везу и покушајте поново.</string>
     <string name="session_media_earlier_nothing_new">У управо учитаним порукама нема ничег новог. Раније можда имају више.</string>
+    <string name="session_bell_title">Обавештења</string>
+    <string name="session_bell_level_all">Све</string>
+    <string name="session_bell_level_attention">Само кад тражи моју пажњу</string>
+    <string name="session_bell_level_none">Ништа</string>
+    <string name="session_bell_mute_hour">Ништа сат времена</string>
+    <string name="session_bell_mute_tomorrow">Ништа до сутра ујутру</string>
+    <string name="session_bell_use_default">Користи избор овог телефона</string>
+    <string name="session_bell_source_own">Подешено само за овај телефон.</string>
+    <string name="session_bell_source_own_until">Подешено само за овај телефон, до %1$s.</string>
+    <string name="session_bell_source_default">Избор овог телефона за сервер. Изаберите опцију да га промените за ову сесију.</string>
+    <string name="session_bell_source_shared">Подешено са другог уређаја. Изаберите опцију да то промените за овај телефон.</string>
+    <string name="session_bell_source_shared_until">Подешено са другог уређаја до %1$s. Изаберите опцију да то промените за овај телефон.</string>
+    <string name="session_bell_source_phone_paused">Овај телефон је паузиран у подешавањима.</string>
+    <string name="session_bell_source_server_paused">Сва обавештења са овог сервера су паузирана.</string>
+    <string name="session_bell_source_server_paused_until">Сва обавештења са овог сервера су паузирана до %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Није могуће променити обавештења</string>
 </resources>

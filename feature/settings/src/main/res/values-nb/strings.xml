@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Varsler</string>
     <string name="settings_notifications_device_header">Denne enheten (%1$s)</string>
-    <string name="settings_notifications_device_footer">Varsler går via en mellomtjener som ikke lagrer noe. Bare sesjoner startet på denne enheten (%1$s) sender varsler hit.</string>
+    <string name="settings_notifications_device_footer">Varsler går via et relé som ikke lagrer noe, og er ende-til-ende-kryptert.</string>
     <string name="settings_notifications_allow">Tillat varsler</string>
     <string name="settings_notifications_open_android_settings">Åpne Android-innstillinger</string>
     <string name="settings_notifications_turn_on">Slå på varsler</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_set_up_footer">Åpner en sesjon med en melding som ber OpenCode installere programtillegget. Send meldingen, og sjekk igjen.</string>
-    <string name="settings_notifications_plugin_needed_footer">Serveren trenger varslingsprogramtillegget til OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Varslingsprogramtillegg</string>
-    <string name="settings_notifications_plugin_installed">Installert</string>
-    <string name="settings_notifications_plugin_not_running">Kjører ikke</string>
-    <string name="settings_notifications_plugin_not_installed">Ikke installert</string>
-    <string name="settings_notifications_plugin_check_failed">Kunne ikke sjekke status</string>
-    <string name="settings_notifications_set_up">Sett opp med OpenCode</string>
-    <string name="settings_notifications_check_again">Sjekk igjen</string>
     <string name="settings_notifications_in_app_footer">Vises på knappen til sidepanelet.</string>
     <string name="settings_notifications_in_app_notices">Merknader i appen</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Rett kameraet mot QR-koden</string>
     <string name="settings_pairing_paste_link">Lim inn sammenkoblingslenke</string>
     <string name="settings_pairing_computer_hint">Åpne Innstillinger → Sammenkobling i OpenCode på datamaskinen, eller kjør %1$s i en terminal.</string>
+    <string name="settings_notifications_server_toggle">Varsle denne enheten</string>
+    <string name="settings_notifications_mode">Varsle om</string>
+    <string name="settings_notifications_mode_all">Alt</string>
+    <string name="settings_notifications_mode_all_caption">Fullførte sesjoner, spørsmål og forespørsler om tillatelse.</string>
+    <string name="settings_notifications_mode_attention">Bare når jeg trengs</string>
+    <string name="settings_notifications_mode_attention_caption">Spørsmål og forespørsler om tillatelse.</string>
+    <string name="settings_notifications_mode_from_this_phone">Bare sesjoner jeg bruker her</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Alt fra sesjoner du sender til fra denne enheten (%1$s).</string>
+    <string name="settings_notifications_mode_none">Ingenting</string>
+    <string name="settings_notifications_status_checking">Sjekker serveren…</string>
+    <string name="settings_notifications_status_no_permission">Tillat varsler ovenfor først.</string>
+    <string name="settings_notifications_status_outdated">Denne serveren trenger en OpenCode-oppdatering for varsler.</string>
+    <string name="settings_notifications_status_relay">Denne serveren godtar ikke varslingsreléet til denne appen.</string>
+    <string name="settings_notifications_status_failed">Kunne ikke sette opp varsler på denne serveren. OpenCode prøver igjen når den kobler til på nytt.</string>
+    <string name="settings_notifications_pause">Sett alle varsler på pause</string>
+    <string name="settings_notifications_pause_on">Til du gjenopptar</string>
+    <string name="settings_notifications_pause_until">Til %1$s</string>
+    <string name="settings_notifications_resume">Gjenoppta</string>
+    <string name="settings_notifications_pause_hour">I en time</string>
+    <string name="settings_notifications_pause_tomorrow">Til i morgen tidlig</string>
+    <string name="settings_notifications_pause_forever">Til jeg gjenopptar</string>
+    <string name="settings_notifications_pause_footer">Pause stopper varsler fra denne serveren på alle enheter.</string>
+    <string name="settings_notifications_devices_header">Enheter</string>
+    <string name="settings_notifications_device_this">%1$s (denne enheten)</string>
+    <string name="settings_notifications_device_on">På</string>
+    <string name="settings_notifications_device_paused">Satt på pause</string>
+    <string name="settings_notifications_device_remove">Fjern</string>
+    <string name="settings_notifications_pause_failed_title">Kunne ikke endre pausen</string>
+    <string name="settings_notifications_device_failed_title">Kunne ikke endre enheten</string>
+    <string name="settings_notifications_device_remove_failed_title">Kunne ikke fjerne enheten</string>
+    <string name="settings_notifications_change_failed_message">Serveren godtok ikke endringen.</string>
 </resources>

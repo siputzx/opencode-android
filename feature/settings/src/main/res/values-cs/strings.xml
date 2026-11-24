@@ -53,20 +53,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Oznámení</string>
     <string name="settings_notifications_device_header">Toto zařízení (%1$s)</string>
-    <string name="settings_notifications_device_footer">Oznámení procházejí přes prostředníka, který nic neukládá. Na toto zařízení (%1$s) chodí jen oznámení z relací, které na něm byly spuštěny.</string>
+    <string name="settings_notifications_device_footer">Oznámení procházejí přes přenosovou službu, která nic neukládá, a jsou koncově šifrovaná.</string>
     <string name="settings_notifications_allow">Povolit oznámení</string>
     <string name="settings_notifications_open_android_settings">Otevřít nastavení Androidu</string>
     <string name="settings_notifications_turn_on">Zapnout oznámení</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_set_up_footer">Otevře relaci se žádostí, aby OpenCode nainstaloval plugin. Odešlete ji a pak stav znovu zkontrolujte.</string>
-    <string name="settings_notifications_plugin_needed_footer">Server potřebuje plugin OpenCode notify.</string>
-    <string name="settings_notifications_notify_plugin">Plugin notify</string>
-    <string name="settings_notifications_plugin_installed">Nainstalován</string>
-    <string name="settings_notifications_plugin_not_running">Neběží</string>
-    <string name="settings_notifications_plugin_not_installed">Nenainstalován</string>
-    <string name="settings_notifications_plugin_check_failed">Nepodařilo se ověřit stav</string>
-    <string name="settings_notifications_set_up">Nastavit pomocí OpenCode</string>
-    <string name="settings_notifications_check_again">Znovu zkontrolovat</string>
     <string name="settings_notifications_in_app_footer">Zobrazují se na tlačítku výsuvného panelu.</string>
     <string name="settings_notifications_in_app_notices">Upozornění v aplikaci</string>
 
@@ -229,4 +220,35 @@
     <string name="settings_pairing_point_camera">Namiřte fotoaparát na QR kód</string>
     <string name="settings_pairing_paste_link">Vložit párovací odkaz</string>
     <string name="settings_pairing_computer_hint">Na počítači otevřete v OpenCode Nastavení → Párování nebo v terminálu spusťte %1$s.</string>
+    <string name="settings_notifications_server_toggle">Upozorňovat na tomto zařízení</string>
+    <string name="settings_notifications_mode">Upozorňovat na</string>
+    <string name="settings_notifications_mode_all">Všechno</string>
+    <string name="settings_notifications_mode_all_caption">Dokončené relace, otázky a žádosti o oprávnění.</string>
+    <string name="settings_notifications_mode_attention">Jen když mě potřebuje</string>
+    <string name="settings_notifications_mode_attention_caption">Otázky a žádosti o oprávnění.</string>
+    <string name="settings_notifications_mode_from_this_phone">Jen relace, které tu používám</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Všechno z relací, do kterých posíláte zprávy z tohoto zařízení (%1$s).</string>
+    <string name="settings_notifications_mode_none">Nic</string>
+    <string name="settings_notifications_status_checking">Kontrola serveru…</string>
+    <string name="settings_notifications_status_no_permission">Nejprve výše povolte oznámení.</string>
+    <string name="settings_notifications_status_outdated">Tento server potřebuje pro oznámení aktualizaci OpenCode.</string>
+    <string name="settings_notifications_status_relay">Tento server nepřijímá přenosovou službu oznámení této aplikace.</string>
+    <string name="settings_notifications_status_failed">Na tomto serveru se nepodařilo nastavit oznámení. OpenCode to zkusí znovu po opětovném připojení.</string>
+    <string name="settings_notifications_pause">Pozastavit všechna oznámení</string>
+    <string name="settings_notifications_pause_on">Do obnovení</string>
+    <string name="settings_notifications_pause_until">Do %1$s</string>
+    <string name="settings_notifications_resume">Obnovit</string>
+    <string name="settings_notifications_pause_hour">Na hodinu</string>
+    <string name="settings_notifications_pause_tomorrow">Do zítřejšího rána</string>
+    <string name="settings_notifications_pause_forever">Dokud je neobnovím</string>
+    <string name="settings_notifications_pause_footer">Pozastavením zastavíte oznámení z tohoto serveru na všech zařízeních.</string>
+    <string name="settings_notifications_devices_header">Zařízení</string>
+    <string name="settings_notifications_device_this">%1$s (toto zařízení)</string>
+    <string name="settings_notifications_device_on">Zapnuto</string>
+    <string name="settings_notifications_device_paused">Pozastaveno</string>
+    <string name="settings_notifications_device_remove">Odebrat</string>
+    <string name="settings_notifications_pause_failed_title">Nepodařilo se změnit pozastavení</string>
+    <string name="settings_notifications_device_failed_title">Nepodařilo se změnit zařízení</string>
+    <string name="settings_notifications_device_remove_failed_title">Nepodařilo se odebrat zařízení</string>
+    <string name="settings_notifications_change_failed_message">Server změnu nepřijal.</string>
 </resources>

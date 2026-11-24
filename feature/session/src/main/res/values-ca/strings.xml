@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Cost</string>
     <string name="session_sheet_media">Multimèdia</string>
     <string name="session_sheet_media_value">Fitxers i enllaços</string>
-    <string name="session_always_notify">Notifica sempre</string>
-    <string name="session_always_notify_message_phone">Notifica en aquest mòbil quan s\'acabi una resposta, encara que no l\'hagis demanat des d\'aquí.</string>
-    <string name="session_always_notify_message_tablet">Notifica en aquesta tauleta quan s\'acabi una resposta, encara que no l\'hagis demanat des d\'aquí.</string>
     <string name="session_delete_session">Suprimeix la sessió</string>
     <string name="session_rename_placeholder">Títol</string>
     <string name="session_auto_rename">Canvia el nom automàticament</string>
@@ -277,9 +274,6 @@
     <string name="session_sheet_fork_failed_title">No s\'ha pogut bifurcar la sessió</string>
     <string name="session_sheet_save_export_failed">No s\'ha pogut desar l\'exportació</string>
     <string name="session_sheet_export_failed_title">No s\'ha pogut exportar la sessió</string>
-    <string name="session_sheet_notifications_off_message">Activa primer les notificacions a Configuració.</string>
-    <string name="session_sheet_always_notify_on_failed_title">No s\'ha pogut activar «Notifica sempre»</string>
-    <string name="session_sheet_always_notify_off_failed_title">No s\'ha pogut desactivar «Notifica sempre»</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">El servidor no admet fitxers</string>
@@ -341,4 +335,20 @@
     <string name="session_media_loading_earlier">Carregant…</string>
     <string name="session_media_earlier_failed">No s\'han pogut carregar els missatges anteriors. Comprova la connexió i torna-ho a provar.</string>
     <string name="session_media_earlier_nothing_new">Als missatges que s\'acaben de carregar no hi ha res de nou. Els anteriors potser en tenen més.</string>
+    <string name="session_bell_title">Notificacions</string>
+    <string name="session_bell_level_all">Tot</string>
+    <string name="session_bell_level_attention">Només quan em necessiti</string>
+    <string name="session_bell_level_none">Res</string>
+    <string name="session_bell_mute_hour">Res durant una hora</string>
+    <string name="session_bell_mute_tomorrow">Res fins demà al matí</string>
+    <string name="session_bell_use_default">Fes servir l\'opció d\'aquest mòbil</string>
+    <string name="session_bell_source_own">Configurat només per a aquest mòbil.</string>
+    <string name="session_bell_source_own_until">Configurat només per a aquest mòbil, fins a %1$s.</string>
+    <string name="session_bell_source_default">Opció d\'aquest mòbil per al servidor. Tria\'n una per canviar-la per a aquesta sessió.</string>
+    <string name="session_bell_source_shared">Configurat des d\'un altre dispositiu. Tria una opció per canviar-ho en aquest mòbil.</string>
+    <string name="session_bell_source_shared_until">Configurat des d\'un altre dispositiu fins a %1$s. Tria una opció per canviar-ho en aquest mòbil.</string>
+    <string name="session_bell_source_phone_paused">Aquest mòbil està en pausa a la configuració.</string>
+    <string name="session_bell_source_server_paused">Totes les notificacions d\'aquest servidor estan en pausa.</string>
+    <string name="session_bell_source_server_paused_until">Totes les notificacions d\'aquest servidor estan en pausa fins a %1$s.</string>
+    <string name="session_sheet_bell_failed_title">No s\'han pogut canviar les notificacions</string>
 </resources>

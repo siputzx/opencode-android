@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Äänipuhelut</string>
     <string name="system_channel_recording">Äänitys</string>
     <string name="system_channel_session_runs">Istuntojen suoritukset</string>
-    <string name="system_channel_session_updates">Istuntojen päivitykset</string>
+    <string name="system_channel_session_finished">Valmistuneet istunnot</string>
+    <string name="system_channel_session_questions">Kysymykset</string>
+    <string name="system_channel_session_permissions">Lupapyynnöt</string>
+    <string name="system_channel_session_other">Muut istuntopäivitykset</string>
     <string name="system_channel_shared_items">Jaetut kohteet</string>
 
     <!-- Share sheet: notifications -->

@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Κόστος</string>
     <string name="session_sheet_media">Πολυμέσα</string>
     <string name="session_sheet_media_value">Αρχεία και σύνδεσμοι</string>
-    <string name="session_always_notify">Ειδοποίηση πάντα</string>
-    <string name="session_always_notify_message_phone">Ειδοποίηση σε αυτό το κινητό όταν ολοκληρώνεται μια απάντηση, ακόμα κι αν το μήνυμα στάλθηκε από αλλού.</string>
-    <string name="session_always_notify_message_tablet">Ειδοποίηση σε αυτό το τάμπλετ όταν ολοκληρώνεται μια απάντηση, ακόμα κι αν το μήνυμα στάλθηκε από αλλού.</string>
     <string name="session_delete_session">Διαγραφή συνεδρίας</string>
     <string name="session_rename_placeholder">Τίτλος</string>
     <string name="session_auto_rename">Αυτόματη μετονομασία</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Αδυναμία διακλάδωσης συνεδρίας</string>
     <string name="session_sheet_save_export_failed">Αδυναμία αποθήκευσης εξαγωγής</string>
     <string name="session_sheet_export_failed_title">Αδυναμία εξαγωγής συνεδρίας</string>
-    <string name="session_sheet_notifications_off_message">Ενεργοποιήστε πρώτα τις ειδοποιήσεις στις Ρυθμίσεις.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Αδυναμία ενεργοποίησης της επιλογής «Ειδοποίηση πάντα»</string>
-    <string name="session_sheet_always_notify_off_failed_title">Αδυναμία απενεργοποίησης της επιλογής «Ειδοποίηση πάντα»</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Ο διακομιστής δεν υποστηρίζει αρχεία</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Φόρτωση…</string>
     <string name="session_media_earlier_failed">Αδυναμία φόρτωσης προηγούμενων μηνυμάτων. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.</string>
     <string name="session_media_earlier_nothing_new">Δεν υπάρχει κάτι νέο στα μηνύματα που μόλις φορτώθηκαν. Τα προηγούμενα μπορεί να έχουν περισσότερα.</string>
+    <string name="session_bell_title">Ειδοποιήσεις</string>
+    <string name="session_bell_level_all">Τα πάντα</string>
+    <string name="session_bell_level_attention">Μόνο όταν με χρειάζεται</string>
+    <string name="session_bell_level_none">Τίποτα</string>
+    <string name="session_bell_mute_hour">Τίποτα για μία ώρα</string>
+    <string name="session_bell_mute_tomorrow">Τίποτα μέχρι αύριο το πρωί</string>
+    <string name="session_bell_use_default">Χρήση επιλογής αυτού του κινητού</string>
+    <string name="session_bell_source_own">Ορίστηκε μόνο για αυτό το κινητό.</string>
+    <string name="session_bell_source_own_until">Ορίστηκε μόνο για αυτό το κινητό, έως %1$s.</string>
+    <string name="session_bell_source_default">Η επιλογή αυτού του κινητού για τον διακομιστή. Διαλέξτε μία για να αλλάξει για αυτή τη συνεδρία.</string>
+    <string name="session_bell_source_shared">Ορίστηκε από άλλη συσκευή. Διαλέξτε μια επιλογή για να αλλάξει για αυτό το κινητό.</string>
+    <string name="session_bell_source_shared_until">Ορίστηκε από άλλη συσκευή έως %1$s. Διαλέξτε μια επιλογή για να αλλάξει για αυτό το κινητό.</string>
+    <string name="session_bell_source_phone_paused">Αυτό το κινητό είναι σε παύση στις Ρυθμίσεις.</string>
+    <string name="session_bell_source_server_paused">Όλες οι ειδοποιήσεις από αυτόν τον διακομιστή είναι σε παύση.</string>
+    <string name="session_bell_source_server_paused_until">Όλες οι ειδοποιήσεις από αυτόν τον διακομιστή είναι σε παύση έως %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Αδυναμία αλλαγής ειδοποιήσεων</string>
 </resources>

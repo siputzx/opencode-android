@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Röstsamtal</string>
     <string name="system_channel_recording">Spelar in</string>
     <string name="system_channel_session_runs">Sessionskörningar</string>
-    <string name="system_channel_session_updates">Sessionsuppdateringar</string>
+    <string name="system_channel_session_finished">Avslutade sessioner</string>
+    <string name="system_channel_session_questions">Frågor</string>
+    <string name="system_channel_session_permissions">Behörighetsförfrågningar</string>
+    <string name="system_channel_session_other">Övriga sessionsuppdateringar</string>
     <string name="system_channel_shared_items">Delade objekt</string>
 
     <!-- Share sheet: notifications -->

@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">यो जोडा बनाउने कोडको म्याद सकियो वा पहिले नै प्रयोग भयो। `opencode pair --remote` फेरि चलाउनुहोस्।</string>
     <string name="server_error_pairing_unsupported">यो सर्भरले जोडा बनाउने लिङ्कहरू समर्थन गर्दैन। कम्प्युटरमा OpenCode अपडेट गर्नुहोस् वा सर्भर आफैँ प्रविष्ट गर्नुहोस्।</string>
-    <string name="server_error_notification_previews_need_https">इन्क्रिप्ट गरिएका सूचनाका पूर्वावलोकनका लागि HTTPS सर्भर जडान चाहिन्छ।</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">मान्य HTTP वा HTTPS सर्भर URL प्रविष्ट गर्नुहोस्।</string>

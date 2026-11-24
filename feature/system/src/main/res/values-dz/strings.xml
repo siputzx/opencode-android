@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">སྐད་ཀྱི་བོད་བརྡ་ཚུ།</string>
     <string name="system_channel_recording">སྐད་བཟུང་དོ།</string>
     <string name="system_channel_session_runs">ལཱ་ཡུན་གཡོག་བཀོལ།</string>
-    <string name="system_channel_session_updates">ལཱ་ཡུན་གྱི་དུས་མཐུན་ཚུ།</string>
+    <string name="system_channel_session_finished">མཇུག་བསྡུ་ཡོད་པའི་ལཱ་ཡུན་ཚུ།</string>
+    <string name="system_channel_session_questions">དྲི་བ་ཚུ།</string>
+    <string name="system_channel_session_permissions">གནང་བའི་ཞུ་བ་ཚུ།</string>
+    <string name="system_channel_session_other">ལཱ་ཡུན་གྱི་དུས་མཐུན་གཞན་ཚུ།</string>
     <string name="system_channel_shared_items">བགོ་བཤའ་རྐྱབ་མི་ཅ་ལ་ཚུ།</string>
 
     <!-- Share sheet: notifications -->

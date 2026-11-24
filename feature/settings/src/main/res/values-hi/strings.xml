@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">सूचनाएँ</string>
     <string name="settings_notifications_device_header">यह %1$s</string>
-    <string name="settings_notifications_device_footer">सूचनाएँ एक रिले से होकर आती हैं, जो कुछ भी सहेजता नहीं है। इस %1$s पर शुरू किए गए सेशन की सूचनाएँ ही यहाँ आती हैं।</string>
+    <string name="settings_notifications_device_footer">सूचनाएँ ऐसे रिले से जाती हैं जो कुछ भी स्टोर नहीं करता, और ये एंड-टू-एंड एन्क्रिप्टेड होती हैं।</string>
     <string name="settings_notifications_allow">सूचनाओं की अनुमति दें</string>
     <string name="settings_notifications_open_android_settings">Android सेटिंग्स खोलें</string>
     <string name="settings_notifications_turn_on">सूचनाएँ चालू करें</string>
     <string name="settings_notifications_server_header">सर्वर</string>
-    <string name="settings_notifications_set_up_footer">ऐसा सेशन खोलता है जो OpenCode से प्लग-इन इंस्टॉल करने को कहता है। संदेश भेजें, फिर दोबारा जाँचें।</string>
-    <string name="settings_notifications_plugin_needed_footer">सर्वर को OpenCode notify प्लग-इन चाहिए।</string>
-    <string name="settings_notifications_notify_plugin">Notify प्लग-इन</string>
-    <string name="settings_notifications_plugin_installed">इंस्टॉल है</string>
-    <string name="settings_notifications_plugin_not_running">चल नहीं रहा है</string>
-    <string name="settings_notifications_plugin_not_installed">इंस्टॉल नहीं है</string>
-    <string name="settings_notifications_plugin_check_failed">स्थिति की जाँच नहीं हो सकी</string>
-    <string name="settings_notifications_set_up">OpenCode से सेट अप करें</string>
-    <string name="settings_notifications_check_again">फिर से जाँचें</string>
     <string name="settings_notifications_in_app_footer">ड्रॉअर बटन पर दिखाई जाती हैं।</string>
     <string name="settings_notifications_in_app_notices">ऐप में सूचनाएँ</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">कैमरा QR कोड की ओर करें</string>
     <string name="settings_pairing_paste_link">पेयरिंग लिंक पेस्ट करें</string>
     <string name="settings_pairing_computer_hint">कंप्यूटर पर OpenCode की सेटिंग्स → पेयरिंग खोलें, या टर्मिनल में %1$s चलाएँ।</string>
+    <string name="settings_notifications_server_toggle">इस डिवाइस पर सूचना दें</string>
+    <string name="settings_notifications_mode">किस बारे में सूचना दें</string>
+    <string name="settings_notifications_mode_all">सब कुछ</string>
+    <string name="settings_notifications_mode_all_caption">पूरे हुए सेशन, प्रश्न और अनुमति के अनुरोध।</string>
+    <string name="settings_notifications_mode_attention">केवल जब मेरी ज़रूरत हो</string>
+    <string name="settings_notifications_mode_attention_caption">प्रश्न और अनुमति के अनुरोध।</string>
+    <string name="settings_notifications_mode_from_this_phone">केवल यहाँ उपयोग होने वाले सेशन</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">जिन सेशन में आप इस %1$s से भेजते हैं, उनका सब कुछ।</string>
+    <string name="settings_notifications_mode_none">कुछ नहीं</string>
+    <string name="settings_notifications_status_checking">सर्वर की जाँच हो रही है…</string>
+    <string name="settings_notifications_status_no_permission">पहले ऊपर सूचनाओं की अनुमति दें।</string>
+    <string name="settings_notifications_status_outdated">सूचनाओं के लिए इस सर्वर पर OpenCode का अपडेट चाहिए।</string>
+    <string name="settings_notifications_status_relay">यह सर्वर इस ऐप के सूचना रिले को स्वीकार नहीं करता।</string>
+    <string name="settings_notifications_status_failed">इस सर्वर पर सूचनाएँ सेट अप नहीं हो सकीं। फिर से कनेक्ट होने पर OpenCode फिर से कोशिश करेगा।</string>
+    <string name="settings_notifications_pause">सभी सूचनाएँ रोकें</string>
+    <string name="settings_notifications_pause_on">फिर से चालू होने तक</string>
+    <string name="settings_notifications_pause_until">%1$s तक</string>
+    <string name="settings_notifications_resume">फिर से चालू करें</string>
+    <string name="settings_notifications_pause_hour">एक घंटे के लिए</string>
+    <string name="settings_notifications_pause_tomorrow">कल सुबह तक</string>
+    <string name="settings_notifications_pause_forever">जब तक मैं फिर से चालू न करूँ</string>
+    <string name="settings_notifications_pause_footer">रोकने पर हर डिवाइस पर इस सर्वर की सूचनाएँ बंद हो जाती हैं।</string>
+    <string name="settings_notifications_devices_header">डिवाइस</string>
+    <string name="settings_notifications_device_this">%1$s (यह डिवाइस)</string>
+    <string name="settings_notifications_device_on">चालू</string>
+    <string name="settings_notifications_device_paused">रुका हुआ है</string>
+    <string name="settings_notifications_device_remove">हटाएँ</string>
+    <string name="settings_notifications_pause_failed_title">रोकने की सेटिंग नहीं बदल सकी</string>
+    <string name="settings_notifications_device_failed_title">डिवाइस में बदलाव नहीं हो सका</string>
+    <string name="settings_notifications_device_remove_failed_title">डिवाइस नहीं हटाया जा सका</string>
+    <string name="settings_notifications_change_failed_message">सर्वर ने यह बदलाव स्वीकार नहीं किया।</string>
 </resources>

@@ -113,7 +113,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Acest cod de asociere a expirat sau a fost deja folosit. Rulează din nou `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">Acest server nu acceptă linkuri de asociere. Actualizează OpenCode pe computer sau adaugă serverul manual.</string>
-    <string name="server_error_notification_previews_need_https">Previzualizările criptate ale notificărilor necesită o conexiune HTTPS la server.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Introdu un URL de server HTTP sau HTTPS valid.</string>

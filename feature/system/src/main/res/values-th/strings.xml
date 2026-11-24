@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">โทรด้วยเสียง</string>
     <string name="system_channel_recording">กำลังบันทึกเสียง</string>
     <string name="system_channel_session_runs">การทำงานของเซสชัน</string>
-    <string name="system_channel_session_updates">การอัปเดตเซสชัน</string>
+    <string name="system_channel_session_finished">เซสชันที่เสร็จสิ้นแล้ว</string>
+    <string name="system_channel_session_questions">คำถาม</string>
+    <string name="system_channel_session_permissions">คำขอสิทธิ์</string>
+    <string name="system_channel_session_other">อัปเดตเซสชันอื่น ๆ</string>
     <string name="system_channel_shared_items">รายการที่แชร์</string>
 
     <!-- Share sheet: notifications -->

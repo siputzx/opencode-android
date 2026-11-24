@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Kosten</string>
     <string name="session_sheet_media">Medien</string>
     <string name="session_sheet_media_value">Dateien und Links</string>
-    <string name="session_always_notify">Immer benachrichtigen</string>
-    <string name="session_always_notify_message_phone">Dieses Handy bei jeder fertigen Antwort benachrichtigen, auch auf Nachrichten von anderen Geräten.</string>
-    <string name="session_always_notify_message_tablet">Dieses Tablet bei jeder fertigen Antwort benachrichtigen, auch auf Nachrichten von anderen Geräten.</string>
     <string name="session_delete_session">Sitzung löschen</string>
     <string name="session_rename_placeholder">Titel</string>
     <string name="session_auto_rename">Automatisch umbenennen</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Sitzung konnte nicht abgezweigt werden</string>
     <string name="session_sheet_save_export_failed">Export konnte nicht gespeichert werden</string>
     <string name="session_sheet_export_failed_title">Sitzung konnte nicht exportiert werden</string>
-    <string name="session_sheet_notifications_off_message">Aktiviere zuerst Benachrichtigungen in den Einstellungen.</string>
-    <string name="session_sheet_always_notify_on_failed_title">„Immer benachrichtigen“ konnte nicht aktiviert werden</string>
-    <string name="session_sheet_always_notify_off_failed_title">„Immer benachrichtigen“ konnte nicht deaktiviert werden</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Server unterstützt keine Dateien</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Wird geladen…</string>
     <string name="session_media_earlier_failed">Frühere Nachrichten konnten nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.</string>
     <string name="session_media_earlier_nothing_new">Unter den gerade geladenen Nachrichten ist nichts Neues. Frühere enthalten vielleicht mehr.</string>
+    <string name="session_bell_title">Benachrichtigungen</string>
+    <string name="session_bell_level_all">Alles</string>
+    <string name="session_bell_level_attention">Nur wenn ich gebraucht werde</string>
+    <string name="session_bell_level_none">Nichts</string>
+    <string name="session_bell_mute_hour">Eine Stunde lang nichts</string>
+    <string name="session_bell_mute_tomorrow">Bis morgen früh nichts</string>
+    <string name="session_bell_use_default">Auswahl dieses Handys verwenden</string>
+    <string name="session_bell_source_own">Nur für dieses Handy festgelegt.</string>
+    <string name="session_bell_source_own_until">Nur für dieses Handy festgelegt, bis %1$s.</string>
+    <string name="session_bell_source_default">Auswahl dieses Handys für den Server. Wähle eine Option, um sie für diese Sitzung zu ändern.</string>
+    <string name="session_bell_source_shared">Von einem anderen Gerät festgelegt. Wähle eine Option, um es für dieses Handy zu ändern.</string>
+    <string name="session_bell_source_shared_until">Von einem anderen Gerät bis %1$s festgelegt. Wähle eine Option, um es für dieses Handy zu ändern.</string>
+    <string name="session_bell_source_phone_paused">Dieses Handy ist in den Einstellungen pausiert.</string>
+    <string name="session_bell_source_server_paused">Alle Benachrichtigungen von diesem Server sind pausiert.</string>
+    <string name="session_bell_source_server_paused_until">Alle Benachrichtigungen von diesem Server sind bis %1$s pausiert.</string>
+    <string name="session_sheet_bell_failed_title">Benachrichtigungen konnten nicht geändert werden</string>
 </resources>

@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">ხმოვანი ზარები</string>
     <string name="system_channel_recording">ჩაწერა</string>
     <string name="system_channel_session_runs">სესიების გაშვება</string>
-    <string name="system_channel_session_updates">სესიების განახლებები</string>
+    <string name="system_channel_session_finished">დასრულებული სესიები</string>
+    <string name="system_channel_session_questions">კითხვები</string>
+    <string name="system_channel_session_permissions">ნებართვის მოთხოვნები</string>
+    <string name="system_channel_session_other">სესიის სხვა განახლებები</string>
     <string name="system_channel_shared_items">გაზიარებული ელემენტები</string>
 
     <!-- Share sheet: notifications -->

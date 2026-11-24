@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Sesli aramalar</string>
     <string name="system_channel_recording">Kaydediliyor</string>
     <string name="system_channel_session_runs">Oturum çalıştırmaları</string>
-    <string name="system_channel_session_updates">Oturum güncellemeleri</string>
+    <string name="system_channel_session_finished">Tamamlanan oturumlar</string>
+    <string name="system_channel_session_questions">Sorular</string>
+    <string name="system_channel_session_permissions">İzin istekleri</string>
+    <string name="system_channel_session_other">Diğer oturum güncellemeleri</string>
     <string name="system_channel_shared_items">Paylaşılan öğeler</string>
 
     <!-- Share sheet: notifications -->

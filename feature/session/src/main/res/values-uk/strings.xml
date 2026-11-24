@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Вартість</string>
     <string name="session_sheet_media">Медіа</string>
     <string name="session_sheet_media_value">Файли й посилання</string>
-    <string name="session_always_notify">Завжди сповіщати</string>
-    <string name="session_always_notify_message_phone">Сповіщати на цьому телефоні про кожну готову відповідь, навіть на запити з інших пристроїв.</string>
-    <string name="session_always_notify_message_tablet">Сповіщати на цьому планшеті про кожну готову відповідь, навіть на запити з інших пристроїв.</string>
     <string name="session_delete_session">Видалити сесію</string>
     <string name="session_rename_placeholder">Назва</string>
     <string name="session_auto_rename">Перейменувати автоматично</string>
@@ -287,9 +284,6 @@
     <string name="session_sheet_fork_failed_title">Не вдалося відгалузити сесію</string>
     <string name="session_sheet_save_export_failed">Не вдалося зберегти експорт</string>
     <string name="session_sheet_export_failed_title">Не вдалося експортувати сесію</string>
-    <string name="session_sheet_notifications_off_message">Спершу увімкніть сповіщення в налаштуваннях.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Не вдалося ввімкнути «Завжди сповіщати»</string>
-    <string name="session_sheet_always_notify_off_failed_title">Не вдалося вимкнути «Завжди сповіщати»</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Сервер не підтримує файли</string>
@@ -353,4 +347,20 @@
     <string name="session_media_loading_earlier">Завантаження…</string>
     <string name="session_media_earlier_failed">Не вдалося завантажити попередні повідомлення. Перевірте підключення й спробуйте ще раз.</string>
     <string name="session_media_earlier_nothing_new">У щойно завантажених повідомленнях нічого нового. Можливо, у попередніх є більше.</string>
+    <string name="session_bell_title">Сповіщення</string>
+    <string name="session_bell_level_all">Все</string>
+    <string name="session_bell_level_attention">Лише коли потрібна увага</string>
+    <string name="session_bell_level_none">Без сповіщень</string>
+    <string name="session_bell_mute_hour">Без сповіщень на годину</string>
+    <string name="session_bell_mute_tomorrow">Без сповіщень до завтрашнього ранку</string>
+    <string name="session_bell_use_default">За налаштуванням цього телефону</string>
+    <string name="session_bell_source_own">Налаштовано лише для цього телефону.</string>
+    <string name="session_bell_source_own_until">Налаштовано лише для цього телефону, до %1$s.</string>
+    <string name="session_bell_source_default">Налаштування цього телефону для сервера. Виберіть варіант, щоб змінити для цієї сесії.</string>
+    <string name="session_bell_source_shared">Налаштовано з іншого пристрою. Виберіть варіант, щоб змінити для цього телефону.</string>
+    <string name="session_bell_source_shared_until">Налаштовано з іншого пристрою, до %1$s. Виберіть варіант, щоб змінити для цього телефону.</string>
+    <string name="session_bell_source_phone_paused">Сповіщення на цьому телефоні на паузі в Налаштуваннях.</string>
+    <string name="session_bell_source_server_paused">Усі сповіщення від цього сервера на паузі.</string>
+    <string name="session_bell_source_server_paused_until">Усі сповіщення від цього сервера на паузі до %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Не вдалося змінити сповіщення</string>
 </resources>

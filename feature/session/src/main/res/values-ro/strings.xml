@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Cost</string>
     <string name="session_sheet_media">Media</string>
     <string name="session_sheet_media_value">Fișiere și linkuri</string>
-    <string name="session_always_notify">Notifică mereu</string>
-    <string name="session_always_notify_message_phone">Primește notificări pe acest telefon când un răspuns e gata, chiar și pentru mesajele trimise de pe alt dispozitiv.</string>
-    <string name="session_always_notify_message_tablet">Primește notificări pe această tabletă când un răspuns e gata, chiar și pentru mesajele trimise de pe alt dispozitiv.</string>
     <string name="session_delete_session">Șterge sesiunea</string>
     <string name="session_rename_placeholder">Titlu</string>
     <string name="session_auto_rename">Redenumește automat</string>
@@ -277,9 +274,6 @@
     <string name="session_sheet_fork_failed_title">Nu s-a putut deriva sesiunea</string>
     <string name="session_sheet_save_export_failed">Nu s-a putut salva exportul</string>
     <string name="session_sheet_export_failed_title">Nu s-a putut exporta sesiunea</string>
-    <string name="session_sheet_notifications_off_message">Activează mai întâi notificările în Setări.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Nu s-a putut activa „Notifică mereu”</string>
-    <string name="session_sheet_always_notify_off_failed_title">Nu s-a putut dezactiva „Notifică mereu”</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Serverul nu acceptă fișiere</string>
@@ -341,4 +335,20 @@
     <string name="session_media_loading_earlier">Se încarcă…</string>
     <string name="session_media_earlier_failed">Mesajele anterioare nu s-au putut încărca. Verifică conexiunea și încearcă din nou.</string>
     <string name="session_media_earlier_nothing_new">Nimic nou în mesajele tocmai încărcate. Cele anterioare ar putea avea mai mult.</string>
+    <string name="session_bell_title">Notificări</string>
+    <string name="session_bell_level_all">Totul</string>
+    <string name="session_bell_level_attention">Doar când e nevoie de mine</string>
+    <string name="session_bell_level_none">Nimic</string>
+    <string name="session_bell_mute_hour">Nimic timp de o oră</string>
+    <string name="session_bell_mute_tomorrow">Nimic până mâine dimineață</string>
+    <string name="session_bell_use_default">Folosește setarea acestui telefon</string>
+    <string name="session_bell_source_own">Setat doar pentru acest telefon.</string>
+    <string name="session_bell_source_own_until">Setat doar pentru acest telefon, până la %1$s.</string>
+    <string name="session_bell_source_default">Setarea acestui telefon pentru server. Alege o opțiune ca să o schimbi pentru această sesiune.</string>
+    <string name="session_bell_source_shared">Setat de pe alt dispozitiv. Alege o opțiune ca să schimbi pentru acest telefon.</string>
+    <string name="session_bell_source_shared_until">Setat de pe alt dispozitiv până la %1$s. Alege o opțiune ca să schimbi pentru acest telefon.</string>
+    <string name="session_bell_source_phone_paused">Acest telefon este în pauză în Setări.</string>
+    <string name="session_bell_source_server_paused">Toate notificările de la acest server sunt în pauză.</string>
+    <string name="session_bell_source_server_paused_until">Toate notificările de la acest server sunt în pauză până la %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Nu s-au putut schimba notificările</string>
 </resources>

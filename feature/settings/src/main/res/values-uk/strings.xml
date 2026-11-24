@@ -53,20 +53,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Сповіщення</string>
     <string name="settings_notifications_device_header">Цей %1$s</string>
-    <string name="settings_notifications_device_footer">Сповіщення проходять через проміжний сервер, який нічого не зберігає. Цей %1$s отримує сповіщення лише про сесії, розпочаті на ньому.</string>
+    <string name="settings_notifications_device_footer">Сповіщення проходять через ретранслятор, який нічого не зберігає, і захищені наскрізним шифруванням.</string>
     <string name="settings_notifications_allow">Дозволити сповіщення</string>
     <string name="settings_notifications_open_android_settings">Відкрити налаштування Android</string>
     <string name="settings_notifications_turn_on">Увімкнути сповіщення</string>
     <string name="settings_notifications_server_header">Сервер</string>
-    <string name="settings_notifications_set_up_footer">Відкриє сесію із запитом до OpenCode встановити плагін. Надішліть запит і перевірте ще раз.</string>
-    <string name="settings_notifications_plugin_needed_footer">Серверу потрібен плагін сповіщень OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Плагін сповіщень</string>
-    <string name="settings_notifications_plugin_installed">Встановлено</string>
-    <string name="settings_notifications_plugin_not_running">Не працює</string>
-    <string name="settings_notifications_plugin_not_installed">Не встановлено</string>
-    <string name="settings_notifications_plugin_check_failed">Не вдалося перевірити стан</string>
-    <string name="settings_notifications_set_up">Налаштувати з OpenCode</string>
-    <string name="settings_notifications_check_again">Перевірити ще раз</string>
     <string name="settings_notifications_in_app_footer">Показуються на кнопці бічної панелі.</string>
     <string name="settings_notifications_in_app_notices">Повідомлення в застосунку</string>
 
@@ -229,4 +220,35 @@
     <string name="settings_pairing_point_camera">Наведіть камеру на QR-код</string>
     <string name="settings_pairing_paste_link">Вставити посилання для сполучення</string>
     <string name="settings_pairing_computer_hint">На комп’ютері відкрийте в OpenCode Налаштування → Сполучення або виконайте %1$s у терміналі.</string>
+    <string name="settings_notifications_server_toggle">Сповіщати на цьому пристрої</string>
+    <string name="settings_notifications_mode">Сповіщати про</string>
+    <string name="settings_notifications_mode_all">Все</string>
+    <string name="settings_notifications_mode_all_caption">Завершені сесії, запитання та запити на дозвіл.</string>
+    <string name="settings_notifications_mode_attention">Лише коли потрібна моя увага</string>
+    <string name="settings_notifications_mode_attention_caption">Запитання та запити на дозвіл.</string>
+    <string name="settings_notifications_mode_from_this_phone">Лише сесії, які я використовую тут</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Усе із сесій, у які ви надсилаєте повідомлення через цей %1$s.</string>
+    <string name="settings_notifications_mode_none">Без сповіщень</string>
+    <string name="settings_notifications_status_checking">Перевірка сервера…</string>
+    <string name="settings_notifications_status_no_permission">Спочатку дозвольте сповіщення вище.</string>
+    <string name="settings_notifications_status_outdated">Для сповіщень потрібно оновити OpenCode на цьому сервері.</string>
+    <string name="settings_notifications_status_relay">Цей сервер не приймає ретранслятор сповіщень цього застосунку.</string>
+    <string name="settings_notifications_status_failed">Не вдалося налаштувати сповіщення на цьому сервері. OpenCode спробує ще раз після повторного підключення.</string>
+    <string name="settings_notifications_pause">Призупинити всі сповіщення</string>
+    <string name="settings_notifications_pause_on">До відновлення</string>
+    <string name="settings_notifications_pause_until">До %1$s</string>
+    <string name="settings_notifications_resume">Відновити</string>
+    <string name="settings_notifications_pause_hour">На годину</string>
+    <string name="settings_notifications_pause_tomorrow">До завтрашнього ранку</string>
+    <string name="settings_notifications_pause_forever">Поки не відновлю</string>
+    <string name="settings_notifications_pause_footer">Пауза зупиняє сповіщення з цього сервера на всіх пристроях.</string>
+    <string name="settings_notifications_devices_header">Пристрої</string>
+    <string name="settings_notifications_device_this">%1$s (цей пристрій)</string>
+    <string name="settings_notifications_device_on">Увімкнено</string>
+    <string name="settings_notifications_device_paused">На паузі</string>
+    <string name="settings_notifications_device_remove">Видалити</string>
+    <string name="settings_notifications_pause_failed_title">Не вдалося змінити паузу</string>
+    <string name="settings_notifications_device_failed_title">Не вдалося змінити пристрій</string>
+    <string name="settings_notifications_device_remove_failed_title">Не вдалося видалити пристрій</string>
+    <string name="settings_notifications_change_failed_message">Сервер не прийняв зміни.</string>
 </resources>

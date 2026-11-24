@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Spraakoproepen</string>
     <string name="system_channel_recording">Opname</string>
     <string name="system_channel_session_runs">Sessie-uitvoeringen</string>
-    <string name="system_channel_session_updates">Sessie-updates</string>
+    <string name="system_channel_session_finished">Voltooide sessies</string>
+    <string name="system_channel_session_questions">Vragen</string>
+    <string name="system_channel_session_permissions">Toestemmingsverzoeken</string>
+    <string name="system_channel_session_other">Overige sessie-updates</string>
     <string name="system_channel_shared_items">Gedeelde items</string>
 
     <!-- Share sheet: notifications -->

@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Зангҳои овозӣ</string>
     <string name="system_channel_recording">Сабт</string>
     <string name="system_channel_session_runs">Иҷрои сессияҳо</string>
-    <string name="system_channel_session_updates">Навсозиҳои сессия</string>
+    <string name="system_channel_session_finished">Сессияҳои анҷомёфта</string>
+    <string name="system_channel_session_questions">Саволҳо</string>
+    <string name="system_channel_session_permissions">Дархостҳои иҷозат</string>
+    <string name="system_channel_session_other">Навсозиҳои дигари сессия</string>
     <string name="system_channel_shared_items">Маводҳои мубодилашуда</string>
 
     <!-- Share sheet: notifications -->

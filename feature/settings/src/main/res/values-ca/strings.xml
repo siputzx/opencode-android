@@ -52,20 +52,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notificacions</string>
     <string name="settings_notifications_device_header">Aquest %1$s</string>
-    <string name="settings_notifications_device_footer">Les notificacions passen per un intermediari que no desa res. Només rep notificacions de les sessions iniciades en aquest %1$s.</string>
+    <string name="settings_notifications_device_footer">Les notificacions passen per un retransmissor que no desa res i estan xifrades d\'extrem a extrem.</string>
     <string name="settings_notifications_allow">Permet les notificacions</string>
     <string name="settings_notifications_open_android_settings">Obre la configuració d\'Android</string>
     <string name="settings_notifications_turn_on">Activa les notificacions</string>
     <string name="settings_notifications_server_header">Servidor</string>
-    <string name="settings_notifications_set_up_footer">Obre una sessió amb una petició perquè OpenCode instal·li el connector. Envia-la i torna-ho a comprovar.</string>
-    <string name="settings_notifications_plugin_needed_footer">El servidor necessita el connector notify d\'OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Connector notify</string>
-    <string name="settings_notifications_plugin_installed">Instal·lat</string>
-    <string name="settings_notifications_plugin_not_running">No està en execució</string>
-    <string name="settings_notifications_plugin_not_installed">No instal·lat</string>
-    <string name="settings_notifications_plugin_check_failed">No s\'ha pogut comprovar l\'estat</string>
-    <string name="settings_notifications_set_up">Configura amb OpenCode</string>
-    <string name="settings_notifications_check_again">Torna-ho a comprovar</string>
     <string name="settings_notifications_in_app_footer">Es mostren al botó del panell lateral.</string>
     <string name="settings_notifications_in_app_notices">Avisos a l\'aplicació</string>
 
@@ -226,4 +217,35 @@
     <string name="settings_pairing_point_camera">Apunta la càmera al codi QR</string>
     <string name="settings_pairing_paste_link">Enganxa l\'enllaç d\'aparellament</string>
     <string name="settings_pairing_computer_hint">A l\'ordinador, obre Configuració → Aparellament d\'OpenCode, o executa %1$s en un terminal.</string>
+    <string name="settings_notifications_server_toggle">Notifica en aquest dispositiu</string>
+    <string name="settings_notifications_mode">Notifica sobre</string>
+    <string name="settings_notifications_mode_all">Tot</string>
+    <string name="settings_notifications_mode_all_caption">Sessions acabades, preguntes i sol·licituds de permís.</string>
+    <string name="settings_notifications_mode_attention">Només quan em necessiti</string>
+    <string name="settings_notifications_mode_attention_caption">Preguntes i sol·licituds de permís.</string>
+    <string name="settings_notifications_mode_from_this_phone">Només les sessions que faig servir aquí</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Tot el de les sessions on envies missatges des d\'aquest %1$s.</string>
+    <string name="settings_notifications_mode_none">Res</string>
+    <string name="settings_notifications_status_checking">S\'està comprovant el servidor…</string>
+    <string name="settings_notifications_status_no_permission">Primer permet les notificacions a dalt.</string>
+    <string name="settings_notifications_status_outdated">Aquest servidor necessita una actualització d\'OpenCode per a les notificacions.</string>
+    <string name="settings_notifications_status_relay">Aquest servidor no accepta el retransmissor de notificacions d\'aquesta aplicació.</string>
+    <string name="settings_notifications_status_failed">No s\'han pogut configurar les notificacions en aquest servidor. OpenCode ho tornarà a provar quan es reconnecti.</string>
+    <string name="settings_notifications_pause">Pausa totes les notificacions</string>
+    <string name="settings_notifications_pause_on">Fins que es reprenguin</string>
+    <string name="settings_notifications_pause_until">Fins a %1$s</string>
+    <string name="settings_notifications_resume">Reprèn</string>
+    <string name="settings_notifications_pause_hour">Durant una hora</string>
+    <string name="settings_notifications_pause_tomorrow">Fins demà al matí</string>
+    <string name="settings_notifications_pause_forever">Fins que les reprengui</string>
+    <string name="settings_notifications_pause_footer">Si les pauses, s\'aturen les notificacions d\'aquest servidor en tots els dispositius.</string>
+    <string name="settings_notifications_devices_header">Dispositius</string>
+    <string name="settings_notifications_device_this">%1$s (aquest dispositiu)</string>
+    <string name="settings_notifications_device_on">Activat</string>
+    <string name="settings_notifications_device_paused">En pausa</string>
+    <string name="settings_notifications_device_remove">Elimina</string>
+    <string name="settings_notifications_pause_failed_title">No s\'ha pogut canviar la pausa</string>
+    <string name="settings_notifications_device_failed_title">No s\'ha pogut canviar el dispositiu</string>
+    <string name="settings_notifications_device_remove_failed_title">No s\'ha pogut eliminar el dispositiu</string>
+    <string name="settings_notifications_change_failed_message">El servidor no ha acceptat el canvi.</string>
 </resources>

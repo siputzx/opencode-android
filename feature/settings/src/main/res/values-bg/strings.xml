@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Известия</string>
     <string name="settings_notifications_device_header">Този %1$s</string>
-    <string name="settings_notifications_device_footer">Известията минават през междинен сървър, който не съхранява нищо. Само сесиите, започнати на този %1$s, изпращат известия до него.</string>
+    <string name="settings_notifications_device_footer">Известията преминават през препредавател, който не съхранява нищо, и са криптирани от край до край.</string>
     <string name="settings_notifications_allow">Разрешаване на известия</string>
     <string name="settings_notifications_open_android_settings">Отворете настройките на Android</string>
     <string name="settings_notifications_turn_on">Включване на известия</string>
     <string name="settings_notifications_server_header">Сървър</string>
-    <string name="settings_notifications_set_up_footer">Отваря сесия със заявка към OpenCode да инсталира плъгина. Изпратете я, после проверете отново.</string>
-    <string name="settings_notifications_plugin_needed_footer">Сървърът се нуждае от плъгина notify за OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Плъгин за известия</string>
-    <string name="settings_notifications_plugin_installed">Инсталиран</string>
-    <string name="settings_notifications_plugin_not_running">Не работи</string>
-    <string name="settings_notifications_plugin_not_installed">Не е инсталиран</string>
-    <string name="settings_notifications_plugin_check_failed">Неуспешна проверка на състоянието</string>
-    <string name="settings_notifications_set_up">Настройване с OpenCode</string>
-    <string name="settings_notifications_check_again">Проверете отново</string>
     <string name="settings_notifications_in_app_footer">Показват се върху бутона за страничното меню.</string>
     <string name="settings_notifications_in_app_notices">Бележки в приложението</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Насочете камерата към QR кода</string>
     <string name="settings_pairing_paste_link">Поставяне на връзка за сдвояване</string>
     <string name="settings_pairing_computer_hint">На компютъра отворете Настройки → Сдвояване в OpenCode или изпълнете %1$s в терминал.</string>
+    <string name="settings_notifications_server_toggle">Известяване на това устройство</string>
+    <string name="settings_notifications_mode">Известяване за</string>
+    <string name="settings_notifications_mode_all">Всичко</string>
+    <string name="settings_notifications_mode_all_caption">Завършени сесии, въпроси и заявки за разрешение.</string>
+    <string name="settings_notifications_mode_attention">Само когато има нужда от мен</string>
+    <string name="settings_notifications_mode_attention_caption">Въпроси и заявки за разрешение.</string>
+    <string name="settings_notifications_mode_from_this_phone">Само сесиите, които използвам тук</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Всичко от сесиите, към които изпращате от този %1$s.</string>
+    <string name="settings_notifications_mode_none">Нищо</string>
+    <string name="settings_notifications_status_checking">Проверка на сървъра…</string>
+    <string name="settings_notifications_status_no_permission">Първо разрешете известията по-горе.</string>
+    <string name="settings_notifications_status_outdated">Този сървър се нуждае от актуализация на OpenCode за известия.</string>
+    <string name="settings_notifications_status_relay">Този сървър не приема препредавателя за известия на това приложение.</string>
+    <string name="settings_notifications_status_failed">Неуспешно настройване на известията за този сървър. OpenCode ще опита отново при повторно свързване.</string>
+    <string name="settings_notifications_pause">Пауза на всички известия</string>
+    <string name="settings_notifications_pause_on">До възобновяване</string>
+    <string name="settings_notifications_pause_until">До %1$s</string>
+    <string name="settings_notifications_resume">Възобновяване</string>
+    <string name="settings_notifications_pause_hour">За един час</string>
+    <string name="settings_notifications_pause_tomorrow">До утре сутрин</string>
+    <string name="settings_notifications_pause_forever">Докато не ги възобновя</string>
+    <string name="settings_notifications_pause_footer">Паузата спира известията от този сървър на всички устройства.</string>
+    <string name="settings_notifications_devices_header">Устройства</string>
+    <string name="settings_notifications_device_this">%1$s (това устройство)</string>
+    <string name="settings_notifications_device_on">Включено</string>
+    <string name="settings_notifications_device_paused">На пауза</string>
+    <string name="settings_notifications_device_remove">Премахване</string>
+    <string name="settings_notifications_pause_failed_title">Неуспешна промяна на паузата</string>
+    <string name="settings_notifications_device_failed_title">Неуспешна промяна на устройството</string>
+    <string name="settings_notifications_device_remove_failed_title">Неуспешно премахване на устройството</string>
+    <string name="settings_notifications_change_failed_message">Сървърът не прие промяната.</string>
 </resources>

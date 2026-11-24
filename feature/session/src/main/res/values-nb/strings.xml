@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Kostnad</string>
     <string name="session_sheet_media">Medier</string>
     <string name="session_sheet_media_value">Filer og lenker</string>
-    <string name="session_always_notify">Varsle alltid</string>
-    <string name="session_always_notify_message_phone">Varsle denne telefonen når et svar er klart, også når meldingen ikke ble sendt herfra.</string>
-    <string name="session_always_notify_message_tablet">Varsle dette nettbrettet når et svar er klart, også når meldingen ikke ble sendt herfra.</string>
     <string name="session_delete_session">Slett sesjon</string>
     <string name="session_rename_placeholder">Tittel</string>
     <string name="session_auto_rename">Gi navn automatisk</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Kunne ikke forgrene sesjonen</string>
     <string name="session_sheet_save_export_failed">Kunne ikke lagre eksporten</string>
     <string name="session_sheet_export_failed_title">Kunne ikke eksportere sesjonen</string>
-    <string name="session_sheet_notifications_off_message">Slå på varsler i innstillingene først.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Kunne ikke slå på «Varsle alltid»</string>
-    <string name="session_sheet_always_notify_off_failed_title">Kunne ikke slå av «Varsle alltid»</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Serveren støtter ikke filer</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Laster…</string>
     <string name="session_media_earlier_failed">Kunne ikke laste inn tidligere meldinger. Sjekk tilkoblingen og prøv igjen.</string>
     <string name="session_media_earlier_nothing_new">Ingenting nytt her i meldingene som nettopp ble lastet inn. Tidligere meldinger kan ha mer.</string>
+    <string name="session_bell_title">Varsler</string>
+    <string name="session_bell_level_all">Alt</string>
+    <string name="session_bell_level_attention">Bare når jeg trengs</string>
+    <string name="session_bell_level_none">Ingenting</string>
+    <string name="session_bell_mute_hour">Ingenting i en time</string>
+    <string name="session_bell_mute_tomorrow">Ingenting før i morgen tidlig</string>
+    <string name="session_bell_use_default">Bruk denne telefonens valg</string>
+    <string name="session_bell_source_own">Angitt bare for denne telefonen.</string>
+    <string name="session_bell_source_own_until">Angitt bare for denne telefonen, til %1$s.</string>
+    <string name="session_bell_source_default">Denne telefonens valg for serveren. Velg et alternativ for å endre det for denne sesjonen.</string>
+    <string name="session_bell_source_shared">Angitt fra en annen enhet. Velg et alternativ for å endre det for denne telefonen.</string>
+    <string name="session_bell_source_shared_until">Angitt fra en annen enhet til %1$s. Velg et alternativ for å endre det for denne telefonen.</string>
+    <string name="session_bell_source_phone_paused">Denne telefonen er satt på pause i Innstillinger.</string>
+    <string name="session_bell_source_server_paused">Alle varsler fra denne serveren er satt på pause.</string>
+    <string name="session_bell_source_server_paused_until">Alle varsler fra denne serveren er satt på pause til %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Kunne ikke endre varsler</string>
 </resources>

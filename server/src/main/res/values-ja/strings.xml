@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">このペアリングコードは期限切れか、使用済みです。`opencode pair --remote`をもう一度実行してください。</string>
     <string name="server_error_pairing_unsupported">このサーバーはペアリングリンクに対応していません。パソコンのOpenCodeを更新するか、サーバーを手動で入力してください。</string>
-    <string name="server_error_notification_previews_need_https">暗号化された通知プレビューには、サーバーへのHTTPS接続が必要です。</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">有効なHTTPまたはHTTPSのサーバーURLを入力してください。</string>

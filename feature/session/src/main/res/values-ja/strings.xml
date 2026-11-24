@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">費用</string>
     <string name="session_sheet_media">メディア</string>
     <string name="session_sheet_media_value">ファイルとリンク</string>
-    <string name="session_always_notify">常に通知</string>
-    <string name="session_always_notify_message_phone">他の端末から送ったメッセージも含め、応答が完了するたびにこのスマホに通知します。</string>
-    <string name="session_always_notify_message_tablet">他の端末から送ったメッセージも含め、応答が完了するたびにこのタブレットに通知します。</string>
     <string name="session_delete_session">セッションを削除</string>
     <string name="session_rename_placeholder">タイトル</string>
     <string name="session_auto_rename">名前を自動設定</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">セッションをフォークできませんでした</string>
     <string name="session_sheet_save_export_failed">エクスポートを保存できませんでした</string>
     <string name="session_sheet_export_failed_title">セッションをエクスポートできませんでした</string>
-    <string name="session_sheet_notifications_off_message">まず設定で通知をオンにしてください。</string>
-    <string name="session_sheet_always_notify_on_failed_title">「常に通知」をオンにできませんでした</string>
-    <string name="session_sheet_always_notify_off_failed_title">「常に通知」をオフにできませんでした</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">サーバーがファイルに対応していません</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">読み込み中…</string>
     <string name="session_media_earlier_failed">以前のメッセージを読み込めませんでした。接続を確認して、もう一度お試しください。</string>
     <string name="session_media_earlier_nothing_new">読み込んだメッセージに新しい内容はありません。さらに以前のメッセージに続きがあるかもしれません。</string>
+    <string name="session_bell_title">通知</string>
+    <string name="session_bell_level_all">すべて</string>
+    <string name="session_bell_level_attention">対応が必要なときのみ</string>
+    <string name="session_bell_level_none">通知しない</string>
+    <string name="session_bell_mute_hour">1時間通知しない</string>
+    <string name="session_bell_mute_tomorrow">明日の朝まで通知しない</string>
+    <string name="session_bell_use_default">このスマホの設定を使用</string>
+    <string name="session_bell_source_own">このスマホのみに設定されています。</string>
+    <string name="session_bell_source_own_until">%1$sまで、このスマホのみに設定されています。</string>
+    <string name="session_bell_source_default">このサーバーに対するこのスマホの設定です。このセッション用に変更するには選択してください。</string>
+    <string name="session_bell_source_shared">別のデバイスで設定されています。このスマホ用に変更するには選択してください。</string>
+    <string name="session_bell_source_shared_until">別のデバイスで%1$sまで設定されています。このスマホ用に変更するには選択してください。</string>
+    <string name="session_bell_source_phone_paused">このスマホの通知は設定で一時停止中です。</string>
+    <string name="session_bell_source_server_paused">このサーバーからの通知はすべて一時停止中です。</string>
+    <string name="session_bell_source_server_paused_until">このサーバーからの通知は%1$sまですべて一時停止中です。</string>
+    <string name="session_sheet_bell_failed_title">通知を変更できませんでした</string>
 </resources>

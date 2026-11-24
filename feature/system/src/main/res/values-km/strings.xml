@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">ការហៅជាសំឡេង</string>
     <string name="system_channel_recording">កំពុងថតសំឡេង</string>
     <string name="system_channel_session_runs">ការដំណើរការសម័យ</string>
-    <string name="system_channel_session_updates">បច្ចុប្បន្នភាពសម័យ</string>
+    <string name="system_channel_session_finished">សម័យដែលបានបញ្ចប់</string>
+    <string name="system_channel_session_questions">សំណួរ</string>
+    <string name="system_channel_session_permissions">សំណើសុំការអនុញ្ញាត</string>
+    <string name="system_channel_session_other">បច្ចុប្បន្នភាពសម័យផ្សេងទៀត</string>
     <string name="system_channel_shared_items">ធាតុដែលបានចែករំលែក</string>
 
     <!-- Share sheet: notifications -->

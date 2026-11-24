@@ -50,20 +50,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">通知</string>
     <string name="settings_notifications_device_header">這台 %1$s</string>
-    <string name="settings_notifications_device_footer">通知透過中繼服務傳送，不會儲存任何資料。只有在這台 %1$s 上啟動的工作階段會傳送通知到這台裝置。</string>
+    <string name="settings_notifications_device_footer">通知會經由不儲存任何資料的中繼服務傳送，並採用端對端加密。</string>
     <string name="settings_notifications_allow">允許通知</string>
     <string name="settings_notifications_open_android_settings">開啟 Android 設定</string>
     <string name="settings_notifications_turn_on">開啟通知</string>
     <string name="settings_notifications_server_header">伺服器</string>
-    <string name="settings_notifications_set_up_footer">開啟工作階段，請 OpenCode 安裝外掛程式。傳送訊息後，再檢查一次。</string>
-    <string name="settings_notifications_plugin_needed_footer">伺服器需要 OpenCode notify 外掛程式。</string>
-    <string name="settings_notifications_notify_plugin">通知外掛程式</string>
-    <string name="settings_notifications_plugin_installed">已安裝</string>
-    <string name="settings_notifications_plugin_not_running">未執行</string>
-    <string name="settings_notifications_plugin_not_installed">未安裝</string>
-    <string name="settings_notifications_plugin_check_failed">無法檢查狀態</string>
-    <string name="settings_notifications_set_up">使用 OpenCode 設定</string>
-    <string name="settings_notifications_check_again">再次檢查</string>
     <string name="settings_notifications_in_app_footer">顯示在側邊欄按鈕上。</string>
     <string name="settings_notifications_in_app_notices">應用程式內通知</string>
 
@@ -220,4 +211,35 @@
     <string name="settings_pairing_point_camera">將相機對準 QR 碼</string>
     <string name="settings_pairing_paste_link">貼上配對連結</string>
     <string name="settings_pairing_computer_hint">在電腦上開啟 OpenCode 的「設定 → 配對」，或在終端機執行 %1$s。</string>
+    <string name="settings_notifications_server_toggle">通知這台裝置</string>
+    <string name="settings_notifications_mode">通知內容</string>
+    <string name="settings_notifications_mode_all">所有通知</string>
+    <string name="settings_notifications_mode_all_caption">已完成的工作階段、問題和權限要求。</string>
+    <string name="settings_notifications_mode_attention">僅在需要我時</string>
+    <string name="settings_notifications_mode_attention_caption">問題和權限要求。</string>
+    <string name="settings_notifications_mode_from_this_phone">僅我在此使用的工作階段</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">凡是從這台 %1$s 傳送訊息的工作階段，都會收到所有通知。</string>
+    <string name="settings_notifications_mode_none">不通知</string>
+    <string name="settings_notifications_status_checking">正在檢查伺服器…</string>
+    <string name="settings_notifications_status_no_permission">請先在上方允許通知。</string>
+    <string name="settings_notifications_status_outdated">這台伺服器需要更新 OpenCode 才能使用通知功能。</string>
+    <string name="settings_notifications_status_relay">這台伺服器不接受此應用程式的通知中繼服務。</string>
+    <string name="settings_notifications_status_failed">無法在這台伺服器上設定通知。OpenCode 會在重新連線時再試一次。</string>
+    <string name="settings_notifications_pause">暫停所有通知</string>
+    <string name="settings_notifications_pause_on">直到恢復為止</string>
+    <string name="settings_notifications_pause_until">直到 %1$s</string>
+    <string name="settings_notifications_resume">恢復</string>
+    <string name="settings_notifications_pause_hour">1 小時</string>
+    <string name="settings_notifications_pause_tomorrow">直到明天早上</string>
+    <string name="settings_notifications_pause_forever">直到我恢復為止</string>
+    <string name="settings_notifications_pause_footer">暫停後，所有裝置都不會收到這台伺服器的通知。</string>
+    <string name="settings_notifications_devices_header">裝置</string>
+    <string name="settings_notifications_device_this">%1$s（這台裝置）</string>
+    <string name="settings_notifications_device_on">開啟</string>
+    <string name="settings_notifications_device_paused">已暫停</string>
+    <string name="settings_notifications_device_remove">移除</string>
+    <string name="settings_notifications_pause_failed_title">無法變更暫停設定</string>
+    <string name="settings_notifications_device_failed_title">無法變更裝置設定</string>
+    <string name="settings_notifications_device_remove_failed_title">無法移除裝置</string>
+    <string name="settings_notifications_change_failed_message">伺服器未接受這項變更。</string>
 </resources>

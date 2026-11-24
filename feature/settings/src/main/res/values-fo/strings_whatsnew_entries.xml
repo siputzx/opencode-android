@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">Bið um eitt renslurit, ið vísir, hvussu boð verða send</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">Tekna eitt renslurit, ið vísir, hvussu boð verða send</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">Boða frá, tá liðugt er</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">Fá eina fráboðan, tá ein seta, sum tú byrjaði her, er liðug, við einum stuttum yvirliti yvir tað, sum hendi.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">Slá Boða altíð frá til í setuvalmyndini fyri at fáa boð um hvørt svar, eisini tey, ið vórðu sett í gongd á telduni.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">Trýst á eina fráboðan fyri at opna setuna.</string>
-    <string name="settings_whatsnew_entry_always_notify_example">Send boð og læs so telefonina</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">Skift ambætara</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">Ambætarin, tú ert á, er heitið á síðukarminum. Trýst á tað fyri at skifta ambætara ella leggja ein afturat.</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">Setur liva longur enn mappan</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">Er mappan hjá einari setu burtur, til dømis eitt strikað workspace, fært tú við miseydnaðari sending boð um at flyta setuna í verkætlanarmappuna og senda aftur.</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">Set fráboðanir upp við OpenCode</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">Í Innstillingar → Fráboðanir kanst tú trýsta á Set upp við OpenCode fyri at lesa eina umbøn, sum setur manglandi fráboðanartilskotið inn.</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">Samrøðukortið fyllir niðasta partin</string>

@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Ծանուցումներ</string>
     <string name="settings_notifications_device_header">Այս %1$s-ը</string>
-    <string name="settings_notifications_device_footer">Ծանուցումներն անցնում են միջնորդ սերվերով, որը ոչինչ չի պահում։ Այս %1$s-ում ծանուցումներ են գալիս միայն այստեղ սկսված նիստերից։</string>
+    <string name="settings_notifications_device_footer">Ծանուցումներն անցնում են միջնորդ սերվերով, որը ոչինչ չի պահում, և ծայրից ծայր գաղտնագրված են։</string>
     <string name="settings_notifications_allow">Թույլատրել ծանուցումները</string>
     <string name="settings_notifications_open_android_settings">Բացել Android-ի կարգավորումները</string>
     <string name="settings_notifications_turn_on">Միացնել ծանուցումները</string>
     <string name="settings_notifications_server_header">Սերվեր</string>
-    <string name="settings_notifications_set_up_footer">Բացում է նիստ՝ OpenCode-ին ընդլայնումը տեղադրելու խնդրանքով։ Ուղարկեք այն, ապա կրկին ստուգեք։</string>
-    <string name="settings_notifications_plugin_needed_footer">Սերվերին անհրաժեշտ է OpenCode-ի notify ընդլայնումը։</string>
-    <string name="settings_notifications_notify_plugin">Notify ընդլայնում</string>
-    <string name="settings_notifications_plugin_installed">Տեղադրված է</string>
-    <string name="settings_notifications_plugin_not_running">Չի աշխատում</string>
-    <string name="settings_notifications_plugin_not_installed">Տեղադրված չէ</string>
-    <string name="settings_notifications_plugin_check_failed">Չհաջողվեց ստուգել կարգավիճակը</string>
-    <string name="settings_notifications_set_up">Կարգավորել OpenCode-ով</string>
-    <string name="settings_notifications_check_again">Կրկին ստուգել</string>
     <string name="settings_notifications_in_app_footer">Ցուցադրվում են կողային վահանակի կոճակի վրա։</string>
     <string name="settings_notifications_in_app_notices">Ներհավելվածային ծանուցումներ</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Տեսախցիկն ուղղեք դեպի QR կոդը</string>
     <string name="settings_pairing_paste_link">Տեղադրել զուգակցման հղումը</string>
     <string name="settings_pairing_computer_hint">Համակարգչում բացեք OpenCode-ի Կարգավորումներ → Զուգակցում բաժինը կամ տերմինալում գործարկեք %1$s։</string>
+    <string name="settings_notifications_server_toggle">Ծանուցել այս սարքում</string>
+    <string name="settings_notifications_mode">Ինչի մասին ծանուցել</string>
+    <string name="settings_notifications_mode_all">Ամեն ինչ</string>
+    <string name="settings_notifications_mode_all_caption">Ավարտված նիստեր, հարցեր և թույլտվության հարցումներ։</string>
+    <string name="settings_notifications_mode_attention">Միայն երբ իմ կարիքը կա</string>
+    <string name="settings_notifications_mode_attention_caption">Հարցեր և թույլտվության հարցումներ։</string>
+    <string name="settings_notifications_mode_from_this_phone">Միայն այստեղ օգտագործածս նիստերը</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Ամեն ինչ այն նիստերից, որոնց հաղորդագրություն եք ուղարկում այս %1$s-ից։</string>
+    <string name="settings_notifications_mode_none">Ոչինչ</string>
+    <string name="settings_notifications_status_checking">Սերվերը ստուգվում է…</string>
+    <string name="settings_notifications_status_no_permission">Նախ թույլատրեք ծանուցումները վերևում։</string>
+    <string name="settings_notifications_status_outdated">Ծանուցումների համար այս սերվերում անհրաժեշտ է թարմացնել OpenCode-ը։</string>
+    <string name="settings_notifications_status_relay">Այս սերվերը չի ընդունում այս հավելվածի ծանուցումների միջնորդ սերվերը։</string>
+    <string name="settings_notifications_status_failed">Չհաջողվեց կարգավորել ծանուցումներն այս սերվերում։ OpenCode-ը կրկին կփորձի վերամիանալիս։</string>
+    <string name="settings_notifications_pause">Դադարեցնել բոլոր ծանուցումները</string>
+    <string name="settings_notifications_pause_on">Մինչև վերսկսելը</string>
+    <string name="settings_notifications_pause_until">Մինչև %1$s</string>
+    <string name="settings_notifications_resume">Վերսկսել</string>
+    <string name="settings_notifications_pause_hour">Մեկ ժամով</string>
+    <string name="settings_notifications_pause_tomorrow">Մինչև վաղն առավոտ</string>
+    <string name="settings_notifications_pause_forever">Մինչև ինքս վերսկսեմ</string>
+    <string name="settings_notifications_pause_footer">Դադարեցումը կանգնեցնում է այս սերվերի ծանուցումները բոլոր սարքերում։</string>
+    <string name="settings_notifications_devices_header">Սարքեր</string>
+    <string name="settings_notifications_device_this">%1$s (այս սարքը)</string>
+    <string name="settings_notifications_device_on">Միացված է</string>
+    <string name="settings_notifications_device_paused">Դադարեցված է</string>
+    <string name="settings_notifications_device_remove">Հեռացնել</string>
+    <string name="settings_notifications_pause_failed_title">Չհաջողվեց փոխել դադարեցումը</string>
+    <string name="settings_notifications_device_failed_title">Չհաջողվեց փոխել սարքը</string>
+    <string name="settings_notifications_device_remove_failed_title">Չհաջողվեց հեռացնել սարքը</string>
+    <string name="settings_notifications_change_failed_message">Սերվերը չընդունեց փոփոխությունը։</string>
 </resources>

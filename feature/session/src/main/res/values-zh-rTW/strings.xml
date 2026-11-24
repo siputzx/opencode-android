@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">費用</string>
     <string name="session_sheet_media">媒體</string>
     <string name="session_sheet_media_value">檔案與連結</string>
-    <string name="session_always_notify">一律通知</string>
-    <string name="session_always_notify_message_phone">每次回覆完成時都通知這支手機，即使訊息不是從這裡傳送的。</string>
-    <string name="session_always_notify_message_tablet">每次回覆完成時都通知這台平板，即使訊息不是從這裡傳送的。</string>
     <string name="session_delete_session">刪除工作階段</string>
     <string name="session_rename_placeholder">標題</string>
     <string name="session_auto_rename">自動重新命名</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">無法分支工作階段</string>
     <string name="session_sheet_save_export_failed">無法儲存匯出檔案</string>
     <string name="session_sheet_export_failed_title">無法匯出工作階段</string>
-    <string name="session_sheet_notifications_off_message">請先在設定中開啟通知。</string>
-    <string name="session_sheet_always_notify_on_failed_title">無法開啟一律通知</string>
-    <string name="session_sheet_always_notify_off_failed_title">無法關閉一律通知</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">伺服器不支援檔案</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">載入中…</string>
     <string name="session_media_earlier_failed">無法載入較早的訊息。請檢查連線後再試一次。</string>
     <string name="session_media_earlier_nothing_new">剛載入的訊息中沒有新內容，更早的訊息可能還有。</string>
+    <string name="session_bell_title">通知</string>
+    <string name="session_bell_level_all">所有通知</string>
+    <string name="session_bell_level_attention">僅在需要我時</string>
+    <string name="session_bell_level_none">不通知</string>
+    <string name="session_bell_mute_hour">一小時內不通知</string>
+    <string name="session_bell_mute_tomorrow">明天早上前不通知</string>
+    <string name="session_bell_use_default">使用這台手機的設定</string>
+    <string name="session_bell_source_own">僅為這台手機設定。</string>
+    <string name="session_bell_source_own_until">僅為這台手機設定，直到 %1$s。</string>
+    <string name="session_bell_source_default">這台手機對此伺服器的設定。選擇一項即可為此工作階段變更。</string>
+    <string name="session_bell_source_shared">由其他裝置設定。選擇一項即可為這台手機變更。</string>
+    <string name="session_bell_source_shared_until">由其他裝置設定，直到 %1$s。選擇一項即可為這台手機變更。</string>
+    <string name="session_bell_source_phone_paused">這台手機已在「設定」中暫停。</string>
+    <string name="session_bell_source_server_paused">此伺服器的所有通知都已暫停。</string>
+    <string name="session_bell_source_server_paused_until">此伺服器的所有通知都已暫停，直到 %1$s。</string>
+    <string name="session_sheet_bell_failed_title">無法變更通知設定</string>
 </resources>

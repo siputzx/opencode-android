@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Panggilan suara</string>
     <string name="system_channel_recording">Merekam</string>
     <string name="system_channel_session_runs">Sesi berjalan</string>
-    <string name="system_channel_session_updates">Pembaruan sesi</string>
+    <string name="system_channel_session_finished">Sesi selesai</string>
+    <string name="system_channel_session_questions">Pertanyaan</string>
+    <string name="system_channel_session_permissions">Permintaan izin</string>
+    <string name="system_channel_session_other">Pembaruan sesi lainnya</string>
     <string name="system_channel_shared_items">Item yang dibagikan</string>
 
     <!-- Share sheet: notifications -->

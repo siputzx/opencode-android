@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Raddsamrøður</string>
     <string name="system_channel_recording">Tekur upp</string>
     <string name="system_channel_session_runs">Setukoyrslur</string>
-    <string name="system_channel_session_updates">Setudagføringar</string>
+    <string name="system_channel_session_finished">Liðugar setur</string>
+    <string name="system_channel_session_questions">Spurningar</string>
+    <string name="system_channel_session_permissions">Umbønir um loyvi</string>
+    <string name="system_channel_session_other">Aðrar setudagføringar</string>
     <string name="system_channel_shared_items">Deildir lutir</string>
 
     <!-- Share sheet: notifications -->

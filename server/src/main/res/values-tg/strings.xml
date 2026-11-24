@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Муҳлати ин рамзи ҷуфткунӣ гузаштааст ё он аллакай истифода шудааст. `opencode pair --remote`-ро аз нав иҷро кунед.</string>
     <string name="server_error_pairing_unsupported">Ин сервер истинодҳои ҷуфткуниро дастгирӣ намекунад. OpenCode-ро дар компютери худ навсозӣ кунед ё серверро дастӣ ворид кунед.</string>
-    <string name="server_error_notification_previews_need_https">Пешнамоишҳои рамзгузоришудаи огоҳиҳо пайвасти HTTPS ба серверро талаб мекунанд.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">URL-и дурусти HTTP ё HTTPS-и серверро ворид кунед.</string>

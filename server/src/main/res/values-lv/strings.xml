@@ -113,7 +113,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Šis savienošanas kods ir beidzies vai jau izmantots. Palaid `opencode pair --remote` vēlreiz.</string>
     <string name="server_error_pairing_unsupported">Šis serveris neatbalsta savienošanas saites. Atjaunini OpenCode datorā vai ievadi serveri manuāli.</string>
-    <string name="server_error_notification_previews_need_https">Šifrētiem paziņojumu priekšskatījumiem vajadzīgs HTTPS savienojums ar serveri.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Ievadi derīgu servera HTTP vai HTTPS URL.</string>

@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Bu eşleştirme kodunun süresi doldu veya kod zaten kullanıldı. `opencode pair --remote` komutunu yeniden çalıştırın.</string>
     <string name="server_error_pairing_unsupported">Bu sunucu eşleştirme bağlantılarını desteklemiyor. Bilgisayarınızdaki OpenCode\'u güncelleyin veya sunucuyu elle girin.</string>
-    <string name="server_error_notification_previews_need_https">Şifreli bildirim önizlemeleri için HTTPS sunucu bağlantısı gerekir.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Geçerli bir HTTP veya HTTPS sunucu URL\'si girin.</string>

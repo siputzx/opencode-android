@@ -50,20 +50,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">การแจ้งเตือน</string>
     <string name="settings_notifications_device_header">%1$s เครื่องนี้</string>
-    <string name="settings_notifications_device_footer">การแจ้งเตือนส่งผ่านตัวกลางที่ไม่เก็บข้อมูลใดๆ เฉพาะเซสชันที่เริ่มบน %1$s เครื่องนี้เท่านั้นที่จะแจ้งเตือนมายังเครื่องนี้</string>
+    <string name="settings_notifications_device_footer">การแจ้งเตือนส่งผ่านรีเลย์ที่ไม่เก็บข้อมูลใด ๆ และเข้ารหัสแบบต้นทางถึงปลายทาง</string>
     <string name="settings_notifications_allow">อนุญาตการแจ้งเตือน</string>
     <string name="settings_notifications_open_android_settings">เปิดการตั้งค่า Android</string>
     <string name="settings_notifications_turn_on">เปิดการแจ้งเตือน</string>
     <string name="settings_notifications_server_header">เซิร์ฟเวอร์</string>
-    <string name="settings_notifications_set_up_footer">เปิดเซสชันเพื่อขอให้ OpenCode ติดตั้งปลั๊กอิน ส่งข้อความแล้วตรวจสอบอีกครั้ง</string>
-    <string name="settings_notifications_plugin_needed_footer">เซิร์ฟเวอร์ต้องมีปลั๊กอินแจ้งเตือนของ OpenCode</string>
-    <string name="settings_notifications_notify_plugin">ปลั๊กอินแจ้งเตือน</string>
-    <string name="settings_notifications_plugin_installed">ติดตั้งแล้ว</string>
-    <string name="settings_notifications_plugin_not_running">ไม่ได้ทำงานอยู่</string>
-    <string name="settings_notifications_plugin_not_installed">ยังไม่ได้ติดตั้ง</string>
-    <string name="settings_notifications_plugin_check_failed">ตรวจสอบสถานะไม่ได้</string>
-    <string name="settings_notifications_set_up">ตั้งค่าด้วย OpenCode</string>
-    <string name="settings_notifications_check_again">ตรวจสอบอีกครั้ง</string>
     <string name="settings_notifications_in_app_footer">แสดงบนปุ่มแถบด้านข้าง</string>
     <string name="settings_notifications_in_app_notices">ประกาศในแอป</string>
 
@@ -220,4 +211,35 @@
     <string name="settings_pairing_point_camera">หันกล้องไปที่รหัส QR</string>
     <string name="settings_pairing_paste_link">วางลิงก์จับคู่</string>
     <string name="settings_pairing_computer_hint">บนคอมพิวเตอร์ เปิดการตั้งค่า → การจับคู่ใน OpenCode หรือเรียกใช้ %1$s ในเทอร์มินัล</string>
+    <string name="settings_notifications_server_toggle">แจ้งเตือนบนอุปกรณ์นี้</string>
+    <string name="settings_notifications_mode">แจ้งเตือนเกี่ยวกับ</string>
+    <string name="settings_notifications_mode_all">ทุกอย่าง</string>
+    <string name="settings_notifications_mode_all_caption">เซสชันที่เสร็จแล้ว คำถาม และคำขอสิทธิ์</string>
+    <string name="settings_notifications_mode_attention">เฉพาะเมื่อต้องการคุณ</string>
+    <string name="settings_notifications_mode_attention_caption">คำถามและคำขอสิทธิ์</string>
+    <string name="settings_notifications_mode_from_this_phone">เฉพาะเซสชันที่ใช้บนเครื่องนี้</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">ทุกอย่างจากเซสชันที่คุณส่งข้อความจาก %1$s เครื่องนี้</string>
+    <string name="settings_notifications_mode_none">ไม่แจ้งเตือน</string>
+    <string name="settings_notifications_status_checking">กำลังตรวจสอบเซิร์ฟเวอร์…</string>
+    <string name="settings_notifications_status_no_permission">อนุญาตการแจ้งเตือนด้านบนก่อน</string>
+    <string name="settings_notifications_status_outdated">เซิร์ฟเวอร์นี้ต้องอัปเดต OpenCode เพื่อใช้การแจ้งเตือน</string>
+    <string name="settings_notifications_status_relay">เซิร์ฟเวอร์นี้ไม่ยอมรับรีเลย์การแจ้งเตือนของแอปนี้</string>
+    <string name="settings_notifications_status_failed">ตั้งค่าการแจ้งเตือนบนเซิร์ฟเวอร์นี้ไม่ได้ OpenCode จะลองอีกครั้งเมื่อเชื่อมต่อใหม่</string>
+    <string name="settings_notifications_pause">หยุดการแจ้งเตือนทั้งหมดชั่วคราว</string>
+    <string name="settings_notifications_pause_on">จนกว่าจะเปิดอีกครั้ง</string>
+    <string name="settings_notifications_pause_until">จนถึง %1$s</string>
+    <string name="settings_notifications_resume">เปิดอีกครั้ง</string>
+    <string name="settings_notifications_pause_hour">เป็นเวลา 1 ชั่วโมง</string>
+    <string name="settings_notifications_pause_tomorrow">จนถึงเช้าพรุ่งนี้</string>
+    <string name="settings_notifications_pause_forever">จนกว่าจะกลับมาเปิดเอง</string>
+    <string name="settings_notifications_pause_footer">การหยุดชั่วคราวจะหยุดการแจ้งเตือนจากเซิร์ฟเวอร์นี้ในทุกอุปกรณ์</string>
+    <string name="settings_notifications_devices_header">อุปกรณ์</string>
+    <string name="settings_notifications_device_this">%1$s (อุปกรณ์นี้)</string>
+    <string name="settings_notifications_device_on">เปิด</string>
+    <string name="settings_notifications_device_paused">หยุดชั่วคราวแล้ว</string>
+    <string name="settings_notifications_device_remove">เอาออก</string>
+    <string name="settings_notifications_pause_failed_title">เปลี่ยนการหยุดชั่วคราวไม่ได้</string>
+    <string name="settings_notifications_device_failed_title">เปลี่ยนแปลงอุปกรณ์ไม่ได้</string>
+    <string name="settings_notifications_device_remove_failed_title">เอาอุปกรณ์ออกไม่ได้</string>
+    <string name="settings_notifications_change_failed_message">เซิร์ฟเวอร์ไม่รับการเปลี่ยนแปลง</string>
 </resources>

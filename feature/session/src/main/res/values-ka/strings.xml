@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">ღირებულება</string>
     <string name="session_sheet_media">მედია</string>
     <string name="session_sheet_media_value">ფაილები და ბმულები</string>
-    <string name="session_always_notify">ყოველთვის შემატყობინე</string>
-    <string name="session_always_notify_message_phone">ამ ტელეფონზე შემატყობინე ყოველი პასუხის დასრულება, მაშინაც, თუ შეტყობინება აქედან არ გამიგზავნია.</string>
-    <string name="session_always_notify_message_tablet">ამ პლანშეტზე შემატყობინე ყოველი პასუხის დასრულება, მაშინაც, თუ შეტყობინება აქედან არ გამიგზავნია.</string>
     <string name="session_delete_session">სესიის წაშლა</string>
     <string name="session_rename_placeholder">სათაური</string>
     <string name="session_auto_rename">ავტომატური გადარქმევა</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">სესიის განშტოება ვერ მოხერხდა</string>
     <string name="session_sheet_save_export_failed">ექსპორტის შენახვა ვერ მოხერხდა</string>
     <string name="session_sheet_export_failed_title">სესიის ექსპორტი ვერ მოხერხდა</string>
-    <string name="session_sheet_notifications_off_message">ჯერ პარამეტრებში ჩართეთ შეტყობინებები.</string>
-    <string name="session_sheet_always_notify_on_failed_title">„ყოველთვის შემატყობინე“ ვერ ჩაირთო</string>
-    <string name="session_sheet_always_notify_off_failed_title">„ყოველთვის შემატყობინე“ ვერ გამოირთო</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">სერვერს ფაილების მხარდაჭერა არ აქვს</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">იტვირთება…</string>
     <string name="session_media_earlier_failed">წინა შეტყობინებების ჩატვირთვა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.</string>
     <string name="session_media_earlier_nothing_new">ახლახან ჩატვირთულ შეტყობინებებში ახალი არაფერია. შესაძლოა, უფრო ძველებში მეტი იყოს.</string>
+    <string name="session_bell_title">შეტყობინებები</string>
+    <string name="session_bell_level_all">ყველაფერი</string>
+    <string name="session_bell_level_attention">მხოლოდ როცა ვჭირდები</string>
+    <string name="session_bell_level_none">არაფერი</string>
+    <string name="session_bell_mute_hour">არაფერი ერთი საათით</string>
+    <string name="session_bell_mute_tomorrow">არაფერი ხვალ დილამდე</string>
+    <string name="session_bell_use_default">ამ ტელეფონის არჩევანის გამოყენება</string>
+    <string name="session_bell_source_own">დაყენებულია მხოლოდ ამ ტელეფონისთვის.</string>
+    <string name="session_bell_source_own_until">დაყენებულია მხოლოდ ამ ტელეფონისთვის, %1$s-მდე.</string>
+    <string name="session_bell_source_default">ამ ტელეფონის არჩევანი სერვერისთვის. აირჩიეთ ერთ-ერთი, რომ ამ სესიისთვის შეცვალოთ.</string>
+    <string name="session_bell_source_shared">დაყენებულია სხვა მოწყობილობიდან. აირჩიეთ ერთ-ერთი, რომ ამ ტელეფონისთვის შეცვალოთ.</string>
+    <string name="session_bell_source_shared_until">დაყენებულია სხვა მოწყობილობიდან %1$s-მდე. აირჩიეთ ერთ-ერთი, რომ ამ ტელეფონისთვის შეცვალოთ.</string>
+    <string name="session_bell_source_phone_paused">ეს ტელეფონი პარამეტრებში შეჩერებულია.</string>
+    <string name="session_bell_source_server_paused">ამ სერვერის ყველა შეტყობინება შეჩერებულია.</string>
+    <string name="session_bell_source_server_paused_until">ამ სერვერის ყველა შეტყობინება შეჩერებულია %1$s-მდე.</string>
+    <string name="session_sheet_bell_failed_title">შეტყობინებების შეცვლა ვერ მოხერხდა</string>
 </resources>

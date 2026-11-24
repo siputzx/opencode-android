@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Pris</string>
     <string name="session_sheet_media">Medier</string>
     <string name="session_sheet_media_value">Filer og links</string>
-    <string name="session_always_notify">Giv altid besked</string>
-    <string name="session_always_notify_message_phone">Giv besked på denne telefon, når et svar er klar, også hvis du ikke skrev herfra.</string>
-    <string name="session_always_notify_message_tablet">Giv besked på denne tablet, når et svar er klar, også hvis du ikke skrev herfra.</string>
     <string name="session_delete_session">Slet session</string>
     <string name="session_rename_placeholder">Titel</string>
     <string name="session_auto_rename">Omdøb automatisk</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Kunne ikke forgrene sessionen</string>
     <string name="session_sheet_save_export_failed">Kunne ikke gemme eksporten</string>
     <string name="session_sheet_export_failed_title">Kunne ikke eksportere sessionen</string>
-    <string name="session_sheet_notifications_off_message">Slå først meddelelser til i indstillingerne.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Kunne ikke slå Giv altid besked til</string>
-    <string name="session_sheet_always_notify_off_failed_title">Kunne ikke slå Giv altid besked fra</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Serveren understøtter ikke filer</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Indlæser…</string>
     <string name="session_media_earlier_failed">Kunne ikke indlæse tidligere beskeder. Tjek din forbindelse, og prøv igen.</string>
     <string name="session_media_earlier_nothing_new">Intet nyt her i de netop indlæste beskeder. Tidligere beskeder kan have mere.</string>
+    <string name="session_bell_title">Meddelelser</string>
+    <string name="session_bell_level_all">Alt</string>
+    <string name="session_bell_level_attention">Kun når der er brug for mig</string>
+    <string name="session_bell_level_none">Intet</string>
+    <string name="session_bell_mute_hour">Intet i en time</string>
+    <string name="session_bell_mute_tomorrow">Intet indtil i morgen tidlig</string>
+    <string name="session_bell_use_default">Brug denne telefons valg</string>
+    <string name="session_bell_source_own">Kun indstillet for denne telefon.</string>
+    <string name="session_bell_source_own_until">Kun indstillet for denne telefon indtil %1$s.</string>
+    <string name="session_bell_source_default">Denne telefons valg for serveren. Vælg en mulighed for at ændre det for denne session.</string>
+    <string name="session_bell_source_shared">Indstillet fra en anden enhed. Vælg en mulighed for at ændre det for denne telefon.</string>
+    <string name="session_bell_source_shared_until">Indstillet fra en anden enhed indtil %1$s. Vælg en mulighed for at ændre det for denne telefon.</string>
+    <string name="session_bell_source_phone_paused">Denne telefon er sat på pause i Indstillinger.</string>
+    <string name="session_bell_source_server_paused">Alle meddelelser fra denne server er sat på pause.</string>
+    <string name="session_bell_source_server_paused_until">Alle meddelelser fra denne server er sat på pause indtil %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Kunne ikke ændre meddelelser</string>
 </resources>

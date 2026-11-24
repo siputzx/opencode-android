@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Izmaksas</string>
     <string name="session_sheet_media">Multivide</string>
     <string name="session_sheet_media_value">Faili un saites</string>
-    <string name="session_always_notify">Vienmēr paziņot</string>
-    <string name="session_always_notify_message_phone">Paziņot šajā tālrunī par katru gatavo atbildi, pat ja ziņa sūtīta no citas ierīces.</string>
-    <string name="session_always_notify_message_tablet">Paziņot šajā planšetdatorā par katru gatavo atbildi, pat ja ziņa sūtīta no citas ierīces.</string>
     <string name="session_delete_session">Dzēst sesiju</string>
     <string name="session_rename_placeholder">Nosaukums</string>
     <string name="session_auto_rename">Automātiski pārdēvēt</string>
@@ -277,9 +274,6 @@
     <string name="session_sheet_fork_failed_title">Neizdevās atzarot sesiju</string>
     <string name="session_sheet_save_export_failed">Neizdevās saglabāt eksportu</string>
     <string name="session_sheet_export_failed_title">Neizdevās eksportēt sesiju</string>
-    <string name="session_sheet_notifications_off_message">Vispirms ieslēdz paziņojumus iestatījumos.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Neizdevās ieslēgt “Vienmēr paziņot”</string>
-    <string name="session_sheet_always_notify_off_failed_title">Neizdevās izslēgt “Vienmēr paziņot”</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Serveris neatbalsta failus</string>
@@ -341,4 +335,20 @@
     <string name="session_media_loading_earlier">Notiek ielāde…</string>
     <string name="session_media_earlier_failed">Neizdevās ielādēt iepriekšējās ziņas. Pārbaudi savienojumu un mēģini vēlreiz.</string>
     <string name="session_media_earlier_nothing_new">Tikko ielādētajās ziņās nekā jauna nav. Iepriekšējās var saturēt vairāk.</string>
+    <string name="session_bell_title">Paziņojumi</string>
+    <string name="session_bell_level_all">Viss</string>
+    <string name="session_bell_level_attention">Tikai kad mani vajag</string>
+    <string name="session_bell_level_none">Nekas</string>
+    <string name="session_bell_mute_hour">Nekas uz stundu</string>
+    <string name="session_bell_mute_tomorrow">Nekas līdz rītdienas rītam</string>
+    <string name="session_bell_use_default">Izmantot šī tālruņa izvēli</string>
+    <string name="session_bell_source_own">Iestatīts tikai šim tālrunim.</string>
+    <string name="session_bell_source_own_until">Iestatīts tikai šim tālrunim līdz %1$s.</string>
+    <string name="session_bell_source_default">Šī tālruņa izvēle serverim. Izvēlies variantu, lai to mainītu šai sesijai.</string>
+    <string name="session_bell_source_shared">Iestatīts no citas ierīces. Izvēlies variantu, lai to mainītu šim tālrunim.</string>
+    <string name="session_bell_source_shared_until">Iestatīts no citas ierīces līdz %1$s. Izvēlies variantu, lai to mainītu šim tālrunim.</string>
+    <string name="session_bell_source_phone_paused">Šis tālrunis ir pauzēts iestatījumos.</string>
+    <string name="session_bell_source_server_paused">Visi paziņojumi no šī servera ir pauzēti.</string>
+    <string name="session_bell_source_server_paused_until">Visi paziņojumi no šī servera ir pauzēti līdz %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Neizdevās mainīt paziņojumus</string>
 </resources>

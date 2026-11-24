@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Ձայնային զանգեր</string>
     <string name="system_channel_recording">Ձայնագրում</string>
     <string name="system_channel_session_runs">Նիստերի գործարկումներ</string>
-    <string name="system_channel_session_updates">Նիստերի թարմացումներ</string>
+    <string name="system_channel_session_finished">Ավարտված նիստեր</string>
+    <string name="system_channel_session_questions">Հարցեր</string>
+    <string name="system_channel_session_permissions">Թույլտվության հարցումներ</string>
+    <string name="system_channel_session_other">Նիստի այլ թարմացումներ</string>
     <string name="system_channel_shared_items">Կիսված տարրեր</string>
 
     <!-- Share sheet: notifications -->

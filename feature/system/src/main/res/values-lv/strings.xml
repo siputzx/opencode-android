@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Balss zvani</string>
     <string name="system_channel_recording">Notiek ierakstīšana</string>
     <string name="system_channel_session_runs">Sesiju izpilde</string>
-    <string name="system_channel_session_updates">Sesiju atjauninājumi</string>
+    <string name="system_channel_session_finished">Pabeigtas sesijas</string>
+    <string name="system_channel_session_questions">Jautājumi</string>
+    <string name="system_channel_session_permissions">Atļauju pieprasījumi</string>
+    <string name="system_channel_session_other">Citi sesiju atjauninājumi</string>
     <string name="system_channel_shared_items">Kopīgotie vienumi</string>
 
     <!-- Share sheet: notifications -->

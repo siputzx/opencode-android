@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Henda paringarkodan er útgingin ella longu brúkt. Koyr `opencode pair --remote` aftur.</string>
     <string name="server_error_pairing_unsupported">Hesin ambætarin stuðlar ikki paringarleinkjum. Dagfør OpenCode á telduni, ella skriva ambætaran inn manuelt.</string>
-    <string name="server_error_notification_previews_need_https">Bronglaðar forskoðanir av fráboðanum krevja HTTPS-samband við ambætaran.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Skriva eina gilda HTTP- ella HTTPS-URL til ambætaran.</string>

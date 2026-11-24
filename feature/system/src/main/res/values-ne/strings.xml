@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">आवाज कलहरू</string>
     <string name="system_channel_recording">रेकर्ड गर्दै</string>
     <string name="system_channel_session_runs">सत्र सञ्चालनहरू</string>
-    <string name="system_channel_session_updates">सत्र अपडेटहरू</string>
+    <string name="system_channel_session_finished">सकिएका सत्रहरू</string>
+    <string name="system_channel_session_questions">प्रश्नहरू</string>
+    <string name="system_channel_session_permissions">अनुमति अनुरोधहरू</string>
+    <string name="system_channel_session_other">सत्रका अन्य अपडेटहरू</string>
     <string name="system_channel_shared_items">साझा गरिएका सामग्री</string>
 
     <!-- Share sheet: notifications -->

@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">รหัสจับคู่นี้หมดอายุหรือใช้ไปแล้ว เรียกใช้ `opencode pair --remote` อีกครั้ง</string>
     <string name="server_error_pairing_unsupported">เซิร์ฟเวอร์นี้ไม่รองรับลิงก์จับคู่ อัปเดต OpenCode บนคอมพิวเตอร์ หรือป้อนข้อมูลเซิร์ฟเวอร์เอง</string>
-    <string name="server_error_notification_previews_need_https">ตัวอย่างการแจ้งเตือนที่เข้ารหัสต้องเชื่อมต่อเซิร์ฟเวอร์ผ่าน HTTPS</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">ป้อน URL เซิร์ฟเวอร์แบบ HTTP หรือ HTTPS ที่ถูกต้อง</string>

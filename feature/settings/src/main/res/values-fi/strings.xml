@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Ilmoitukset</string>
     <string name="settings_notifications_device_header">Tämä %1$s</string>
-    <string name="settings_notifications_device_footer">Ilmoitukset kulkevat välityspalvelun kautta, joka ei tallenna mitään. Vain tällä %1$s-laitteella aloitetut istunnot lähettävät sille ilmoituksia.</string>
+    <string name="settings_notifications_device_footer">Ilmoitukset kulkevat välityspalvelimen kautta, joka ei tallenna mitään, ja ne ovat päästä päähän salattuja.</string>
     <string name="settings_notifications_allow">Salli ilmoitukset</string>
     <string name="settings_notifications_open_android_settings">Avaa Android-asetukset</string>
     <string name="settings_notifications_turn_on">Ota ilmoitukset käyttöön</string>
     <string name="settings_notifications_server_header">Palvelin</string>
-    <string name="settings_notifications_set_up_footer">Avaa istunnon, jossa OpenCodea pyydetään asentamaan laajennus. Lähetä pyyntö ja tarkista uudelleen.</string>
-    <string name="settings_notifications_plugin_needed_footer">Palvelin tarvitsee OpenCode-ilmoituslaajennuksen.</string>
-    <string name="settings_notifications_notify_plugin">Ilmoituslaajennus</string>
-    <string name="settings_notifications_plugin_installed">Asennettu</string>
-    <string name="settings_notifications_plugin_not_running">Ei käynnissä</string>
-    <string name="settings_notifications_plugin_not_installed">Ei asennettu</string>
-    <string name="settings_notifications_plugin_check_failed">Tilan tarkistus epäonnistui</string>
-    <string name="settings_notifications_set_up">Ota käyttöön OpenCodella</string>
-    <string name="settings_notifications_check_again">Tarkista uudelleen</string>
     <string name="settings_notifications_in_app_footer">Näkyvät sivuvalikon painikkeessa.</string>
     <string name="settings_notifications_in_app_notices">Sovelluksen sisäiset ilmoitukset</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Suuntaa kamera QR-koodiin</string>
     <string name="settings_pairing_paste_link">Liitä pariliitoslinkki</string>
     <string name="settings_pairing_computer_hint">Avaa tietokoneella OpenCode ja valitse Asetukset → Laiteparin muodostus tai suorita %1$s terminaalissa.</string>
+    <string name="settings_notifications_server_toggle">Ilmoitukset tähän laitteeseen</string>
+    <string name="settings_notifications_mode">Mistä ilmoitetaan</string>
+    <string name="settings_notifications_mode_all">Kaikki</string>
+    <string name="settings_notifications_mode_all_caption">Valmistuneet istunnot, kysymykset ja lupapyynnöt.</string>
+    <string name="settings_notifications_mode_attention">Vain kun minua tarvitaan</string>
+    <string name="settings_notifications_mode_attention_caption">Kysymykset ja lupapyynnöt.</string>
+    <string name="settings_notifications_mode_from_this_phone">Vain täällä käyttämäni istunnot</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Kaikki istunnoista, joihin tämä %1$s lähettää viestejä.</string>
+    <string name="settings_notifications_mode_none">Ei mitään</string>
+    <string name="settings_notifications_status_checking">Tarkistetaan palvelinta…</string>
+    <string name="settings_notifications_status_no_permission">Salli ilmoitukset ensin yllä.</string>
+    <string name="settings_notifications_status_outdated">Tämä palvelin vaatii OpenCode-päivityksen ilmoituksia varten.</string>
+    <string name="settings_notifications_status_relay">Tämä palvelin ei hyväksy tämän sovelluksen ilmoitusten välityspalvelinta.</string>
+    <string name="settings_notifications_status_failed">Ilmoituksia ei voitu ottaa käyttöön tällä palvelimella. OpenCode yrittää uudelleen, kun yhteys palautuu.</string>
+    <string name="settings_notifications_pause">Keskeytä kaikki ilmoitukset</string>
+    <string name="settings_notifications_pause_on">Kunnes jatketaan</string>
+    <string name="settings_notifications_pause_until">%1$s asti</string>
+    <string name="settings_notifications_resume">Jatka</string>
+    <string name="settings_notifications_pause_hour">Tunniksi</string>
+    <string name="settings_notifications_pause_tomorrow">Huomisaamuun asti</string>
+    <string name="settings_notifications_pause_forever">Kunnes jatkan</string>
+    <string name="settings_notifications_pause_footer">Keskeyttäminen pysäyttää tämän palvelimen ilmoitukset kaikilla laitteilla.</string>
+    <string name="settings_notifications_devices_header">Laitteet</string>
+    <string name="settings_notifications_device_this">%1$s (tämä laite)</string>
+    <string name="settings_notifications_device_on">Käytössä</string>
+    <string name="settings_notifications_device_paused">Keskeytetty</string>
+    <string name="settings_notifications_device_remove">Poista</string>
+    <string name="settings_notifications_pause_failed_title">Keskeytystä ei voitu muuttaa</string>
+    <string name="settings_notifications_device_failed_title">Laitetta ei voitu muuttaa</string>
+    <string name="settings_notifications_device_remove_failed_title">Laitetta ei voitu poistaa</string>
+    <string name="settings_notifications_change_failed_message">Palvelin ei hyväksynyt muutosta.</string>
 </resources>

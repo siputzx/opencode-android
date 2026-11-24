@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Αυτός ο κωδικός ζευγοποίησης έληξε ή έχει ήδη χρησιμοποιηθεί. Εκτελέστε ξανά `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">Αυτός ο διακομιστής δεν υποστηρίζει συνδέσμους ζευγοποίησης. Ενημερώστε το OpenCode στον υπολογιστή σας ή προσθέστε τον διακομιστή χειροκίνητα.</string>
-    <string name="server_error_notification_previews_need_https">Οι κρυπτογραφημένες προεπισκοπήσεις ειδοποιήσεων απαιτούν σύνδεση HTTPS με τον διακομιστή.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Εισαγάγετε έγκυρο URL διακομιστή HTTP ή HTTPS.</string>

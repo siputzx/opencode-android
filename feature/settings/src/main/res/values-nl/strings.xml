@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Meldingen</string>
     <string name="settings_notifications_device_header">Deze %1$s</string>
-    <string name="settings_notifications_device_footer">Meldingen gaan via een tussenserver die niets opslaat. Alleen sessies die op deze %1$s zijn gestart, sturen er meldingen naartoe.</string>
+    <string name="settings_notifications_device_footer">Meldingen gaan via een relay die niets opslaat en zijn end-to-end versleuteld.</string>
     <string name="settings_notifications_allow">Meldingen toestaan</string>
     <string name="settings_notifications_open_android_settings">Android-instellingen openen</string>
     <string name="settings_notifications_turn_on">Meldingen inschakelen</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_set_up_footer">Opent een sessie met het verzoek aan OpenCode om de plug-in te installeren. Verzend het bericht en controleer opnieuw.</string>
-    <string name="settings_notifications_plugin_needed_footer">De server heeft de OpenCode notify-plug-in nodig.</string>
-    <string name="settings_notifications_notify_plugin">Notify-plug-in</string>
-    <string name="settings_notifications_plugin_installed">Geïnstalleerd</string>
-    <string name="settings_notifications_plugin_not_running">Niet actief</string>
-    <string name="settings_notifications_plugin_not_installed">Niet geïnstalleerd</string>
-    <string name="settings_notifications_plugin_check_failed">Status controleren mislukt</string>
-    <string name="settings_notifications_set_up">Instellen met OpenCode</string>
-    <string name="settings_notifications_check_again">Opnieuw controleren</string>
     <string name="settings_notifications_in_app_footer">Worden op de zijmenuknop getoond.</string>
     <string name="settings_notifications_in_app_notices">Meldingen in de app</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Richt je camera op de QR-code</string>
     <string name="settings_pairing_paste_link">Koppellink plakken</string>
     <string name="settings_pairing_computer_hint">Open op je computer Instellingen → Koppelen in OpenCode, of voer %1$s uit in een terminal.</string>
+    <string name="settings_notifications_server_toggle">Meldingen op dit apparaat</string>
+    <string name="settings_notifications_mode">Meldingen over</string>
+    <string name="settings_notifications_mode_all">Alles</string>
+    <string name="settings_notifications_mode_all_caption">Voltooide sessies, vragen en toestemmingsverzoeken.</string>
+    <string name="settings_notifications_mode_attention">Alleen wanneer ik nodig ben</string>
+    <string name="settings_notifications_mode_attention_caption">Vragen en toestemmingsverzoeken.</string>
+    <string name="settings_notifications_mode_from_this_phone">Alleen sessies die ik hier gebruik</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Alles uit sessies waar je vanaf deze %1$s naar verzendt.</string>
+    <string name="settings_notifications_mode_none">Niets</string>
+    <string name="settings_notifications_status_checking">Server controleren…</string>
+    <string name="settings_notifications_status_no_permission">Sta eerst meldingen hierboven toe.</string>
+    <string name="settings_notifications_status_outdated">Deze server heeft een OpenCode-update nodig voor meldingen.</string>
+    <string name="settings_notifications_status_relay">Deze server accepteert de meldingsrelay van deze app niet.</string>
+    <string name="settings_notifications_status_failed">Kan meldingen niet instellen op deze server. OpenCode probeert het opnieuw zodra er weer verbinding is.</string>
+    <string name="settings_notifications_pause">Alle meldingen pauzeren</string>
+    <string name="settings_notifications_pause_on">Tot hervatting</string>
+    <string name="settings_notifications_pause_until">Tot %1$s</string>
+    <string name="settings_notifications_resume">Hervatten</string>
+    <string name="settings_notifications_pause_hour">Een uur lang</string>
+    <string name="settings_notifications_pause_tomorrow">Tot morgenochtend</string>
+    <string name="settings_notifications_pause_forever">Tot ik hervat</string>
+    <string name="settings_notifications_pause_footer">Pauzeren stopt meldingen van deze server op elk apparaat.</string>
+    <string name="settings_notifications_devices_header">Apparaten</string>
+    <string name="settings_notifications_device_this">%1$s (dit apparaat)</string>
+    <string name="settings_notifications_device_on">Aan</string>
+    <string name="settings_notifications_device_paused">Gepauzeerd</string>
+    <string name="settings_notifications_device_remove">Verwijderen</string>
+    <string name="settings_notifications_pause_failed_title">Kan pauze niet wijzigen</string>
+    <string name="settings_notifications_device_failed_title">Kan apparaat niet wijzigen</string>
+    <string name="settings_notifications_device_remove_failed_title">Kan apparaat niet verwijderen</string>
+    <string name="settings_notifications_change_failed_message">De server heeft de wijziging niet overgenomen.</string>
 </resources>

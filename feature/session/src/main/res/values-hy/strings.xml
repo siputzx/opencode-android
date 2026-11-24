@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Արժեք</string>
     <string name="session_sheet_media">Մեդիա</string>
     <string name="session_sheet_media_value">Ֆայլեր և հղումներ</string>
-    <string name="session_always_notify">Միշտ ծանուցել</string>
-    <string name="session_always_notify_message_phone">Ծանուցել այս հեռախոսին, երբ պատասխանը պատրաստ է, նույնիսկ եթե հարցումն այստեղից չի ուղարկվել։</string>
-    <string name="session_always_notify_message_tablet">Ծանուցել այս պլանշետին, երբ պատասխանը պատրաստ է, նույնիսկ եթե հարցումն այստեղից չի ուղարկվել։</string>
     <string name="session_delete_session">Ջնջել նիստը</string>
     <string name="session_rename_placeholder">Վերնագիր</string>
     <string name="session_auto_rename">Ավտոմատ վերանվանել</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Չհաջողվեց ստեղծել նիստի ճյուղ</string>
     <string name="session_sheet_save_export_failed">Չհաջողվեց պահել արտահանված ֆայլը</string>
     <string name="session_sheet_export_failed_title">Չհաջողվեց արտահանել նիստը</string>
-    <string name="session_sheet_notifications_off_message">Նախ միացրեք ծանուցումները կարգավորումներում։</string>
-    <string name="session_sheet_always_notify_on_failed_title">Չհաջողվեց միացնել «Միշտ ծանուցել» գործառույթը</string>
-    <string name="session_sheet_always_notify_off_failed_title">Չհաջողվեց անջատել «Միշտ ծանուցել» գործառույթը</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Սերվերը չի աջակցում ֆայլերին</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Բեռնվում է…</string>
     <string name="session_media_earlier_failed">Չհաջողվեց բեռնել նախորդ հաղորդագրությունները։ Ստուգեք կապը և կրկին փորձեք։</string>
     <string name="session_media_earlier_nothing_new">Հենց բեռնված հաղորդագրություններում նոր ոչինչ չկա։ Նախորդներում կարող է ավելին լինել։</string>
+    <string name="session_bell_title">Ծանուցումներ</string>
+    <string name="session_bell_level_all">Ամեն ինչ</string>
+    <string name="session_bell_level_attention">Միայն երբ իմ կարիքն ունի</string>
+    <string name="session_bell_level_none">Ոչինչ</string>
+    <string name="session_bell_mute_hour">Ոչինչ մեկ ժամով</string>
+    <string name="session_bell_mute_tomorrow">Ոչինչ մինչև վաղը առավոտ</string>
+    <string name="session_bell_use_default">Օգտագործել այս հեռախոսի ընտրությունը</string>
+    <string name="session_bell_source_own">Սահմանված է միայն այս հեռախոսի համար։</string>
+    <string name="session_bell_source_own_until">Սահմանված է միայն այս հեռախոսի համար՝ մինչև %1$s։</string>
+    <string name="session_bell_source_default">Այս հեռախոսի ընտրությունն է սերվերի համար։ Ընտրեք տարբերակ՝ այս նիստում փոխելու համար։</string>
+    <string name="session_bell_source_shared">Սահմանված է մեկ այլ սարքից։ Ընտրեք տարբերակ՝ այս հեռախոսում փոխելու համար։</string>
+    <string name="session_bell_source_shared_until">Սահմանված է մեկ այլ սարքից մինչև %1$s։ Ընտրեք տարբերակ՝ այս հեռախոսում փոխելու համար։</string>
+    <string name="session_bell_source_phone_paused">Այս հեռախոսը դադարեցված է Կարգավորումներում։</string>
+    <string name="session_bell_source_server_paused">Այս սերվերի բոլոր ծանուցումները դադարեցված են։</string>
+    <string name="session_bell_source_server_paused_until">Այս սերվերի բոլոր ծանուցումները դադարեցված են մինչև %1$s։</string>
+    <string name="session_sheet_bell_failed_title">Չհաջողվեց փոխել ծանուցումները</string>
 </resources>

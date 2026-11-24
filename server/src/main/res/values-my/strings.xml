@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">ဒီချိတ်ဆက်ကုဒ် သက်တမ်းကုန်သွားပြီ သို့မဟုတ် သုံးပြီးသားဖြစ်နေသည်။ `opencode pair --remote` ကို ပြန်လုပ်ပါ။</string>
     <string name="server_error_pairing_unsupported">ဒီဆာဗာက ချိတ်ဆက်လင့်ခ်များကို မပံ့ပိုးပါ။ ကွန်ပျူတာပေါ်ရှိ OpenCode ကို အပ်ဒိတ်လုပ်ပါ၊ သို့မဟုတ် ဆာဗာကို ကိုယ်တိုင်ထည့်ပါ။</string>
-    <string name="server_error_notification_previews_need_https">ကုဒ်ဝှက်ထားသော အကြောင်းကြားချက်အကြိုမြင်ကွင်းများအတွက် HTTPS ဆာဗာချိတ်ဆက်မှု လိုအပ်သည်။</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">မှန်ကန်သော HTTP သို့မဟုတ် HTTPS ဆာဗာ URL ကို ထည့်ပါ။</string>

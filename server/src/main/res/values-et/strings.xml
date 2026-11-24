@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">See sidumiskood on aegunud või juba kasutatud. Käivita uuesti `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">See server ei toeta sidumislinke. Uuenda arvutis OpenCode\'i või sisesta server käsitsi.</string>
-    <string name="server_error_notification_previews_need_https">Krüpteeritud teavituste eelvaated vajavad HTTPS-ühendust serveriga.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Sisesta kehtiv serveri HTTP- või HTTPS-URL.</string>

@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Denne sammenkoblingskoden er utløpt eller allerede brukt. Kjør `opencode pair --remote` på nytt.</string>
     <string name="server_error_pairing_unsupported">Denne serveren støtter ikke sammenkoblingslenker. Oppdater OpenCode på datamaskinen, eller legg til serveren manuelt.</string>
-    <string name="server_error_notification_previews_need_https">Krypterte varselforhåndsvisninger krever en HTTPS-tilkobling til serveren.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Skriv inn en gyldig HTTP- eller HTTPS-URL til serveren.</string>

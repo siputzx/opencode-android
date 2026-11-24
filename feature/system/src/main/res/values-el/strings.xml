@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Φωνητικές κλήσεις</string>
     <string name="system_channel_recording">Ηχογράφηση</string>
     <string name="system_channel_session_runs">Εκτελέσεις συνεδριών</string>
-    <string name="system_channel_session_updates">Ενημερώσεις συνεδριών</string>
+    <string name="system_channel_session_finished">Ολοκληρωμένες συνεδρίες</string>
+    <string name="system_channel_session_questions">Ερωτήσεις</string>
+    <string name="system_channel_session_permissions">Αιτήματα άδειας</string>
+    <string name="system_channel_session_other">Άλλες ενημερώσεις συνεδρίας</string>
     <string name="system_channel_shared_items">Κοινοποιημένα στοιχεία</string>
 
     <!-- Share sheet: notifications -->

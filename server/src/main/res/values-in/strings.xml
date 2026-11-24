@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Kode pemasangan ini sudah kedaluwarsa atau sudah digunakan. Jalankan `opencode pair --remote` lagi.</string>
     <string name="server_error_pairing_unsupported">Server ini tidak mendukung tautan pemasangan. Perbarui OpenCode di komputer Anda, atau masukkan server secara manual.</string>
-    <string name="server_error_notification_previews_need_https">Pratinjau notifikasi terenkripsi memerlukan koneksi server HTTPS.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Masukkan URL server HTTP atau HTTPS yang valid.</string>

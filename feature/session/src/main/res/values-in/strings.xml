@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Biaya</string>
     <string name="session_sheet_media">Media</string>
     <string name="session_sheet_media_value">Berkas dan tautan</string>
-    <string name="session_always_notify">Selalu beri notifikasi</string>
-    <string name="session_always_notify_message_phone">Beri notifikasi di ponsel ini setiap balasan selesai, meski pesannya tidak dikirim dari sini.</string>
-    <string name="session_always_notify_message_tablet">Beri notifikasi di tablet ini setiap balasan selesai, meski pesannya tidak dikirim dari sini.</string>
     <string name="session_delete_session">Hapus sesi</string>
     <string name="session_rename_placeholder">Judul</string>
     <string name="session_auto_rename">Ganti nama otomatis</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">Gagal mencabangkan sesi</string>
     <string name="session_sheet_save_export_failed">Gagal menyimpan hasil ekspor</string>
     <string name="session_sheet_export_failed_title">Gagal mengekspor sesi</string>
-    <string name="session_sheet_notifications_off_message">Aktifkan notifikasi di Pengaturan terlebih dahulu.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Gagal mengaktifkan Selalu beri notifikasi</string>
-    <string name="session_sheet_always_notify_off_failed_title">Gagal menonaktifkan Selalu beri notifikasi</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Server tidak mendukung berkas</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">Memuat…</string>
     <string name="session_media_earlier_failed">Gagal memuat pesan sebelumnya. Periksa koneksi Anda lalu coba lagi.</string>
     <string name="session_media_earlier_nothing_new">Tidak ada yang baru di pesan yang baru dimuat. Pesan sebelumnya mungkin masih ada isinya.</string>
+    <string name="session_bell_title">Notifikasi</string>
+    <string name="session_bell_level_all">Semuanya</string>
+    <string name="session_bell_level_attention">Hanya saat butuh saya</string>
+    <string name="session_bell_level_none">Tidak ada</string>
+    <string name="session_bell_mute_hour">Tidak ada selama 1 jam</string>
+    <string name="session_bell_mute_tomorrow">Tidak ada sampai besok pagi</string>
+    <string name="session_bell_use_default">Gunakan pilihan ponsel ini</string>
+    <string name="session_bell_source_own">Diatur hanya untuk ponsel ini.</string>
+    <string name="session_bell_source_own_until">Diatur hanya untuk ponsel ini, sampai %1$s.</string>
+    <string name="session_bell_source_default">Pilihan ponsel ini untuk server. Pilih salah satu untuk mengubahnya di sesi ini.</string>
+    <string name="session_bell_source_shared">Diatur dari perangkat lain. Pilih salah satu untuk mengubahnya di ponsel ini.</string>
+    <string name="session_bell_source_shared_until">Diatur dari perangkat lain sampai %1$s. Pilih salah satu untuk mengubahnya di ponsel ini.</string>
+    <string name="session_bell_source_phone_paused">Ponsel ini dijeda di Pengaturan.</string>
+    <string name="session_bell_source_server_paused">Semua notifikasi dari server ini dijeda.</string>
+    <string name="session_bell_source_server_paused_until">Semua notifikasi dari server ini dijeda sampai %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Gagal mengubah notifikasi</string>
 </resources>

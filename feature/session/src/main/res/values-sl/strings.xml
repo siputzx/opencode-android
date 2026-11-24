@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Strošek</string>
     <string name="session_sheet_media">Predstavnost</string>
     <string name="session_sheet_media_value">Datoteke in povezave</string>
-    <string name="session_always_notify">Vedno obvesti</string>
-    <string name="session_always_notify_message_phone">Obvesti ta telefon ob vsakem dokončanem odgovoru, tudi na sporočila, poslana od drugod.</string>
-    <string name="session_always_notify_message_tablet">Obvesti to tablico ob vsakem dokončanem odgovoru, tudi na sporočila, poslana od drugod.</string>
     <string name="session_delete_session">Izbriši sejo</string>
     <string name="session_rename_placeholder">Naslov</string>
     <string name="session_auto_rename">Samodejno preimenuj</string>
@@ -287,9 +284,6 @@
     <string name="session_sheet_fork_failed_title">Odcepitev seje ni uspela</string>
     <string name="session_sheet_save_export_failed">Izvoza ni bilo mogoče shraniti</string>
     <string name="session_sheet_export_failed_title">Izvoz seje ni uspel</string>
-    <string name="session_sheet_notifications_off_message">Najprej vklopite obvestila v nastavitvah.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Vklop možnosti »Vedno obvesti« ni uspel</string>
-    <string name="session_sheet_always_notify_off_failed_title">Izklop možnosti »Vedno obvesti« ni uspel</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Strežnik ne podpira datotek</string>
@@ -353,4 +347,20 @@
     <string name="session_media_loading_earlier">Nalaganje…</string>
     <string name="session_media_earlier_failed">Prejšnjih sporočil ni bilo mogoče naložiti. Preverite povezavo in poskusite znova.</string>
     <string name="session_media_earlier_nothing_new">V pravkar naloženih sporočilih ni nič novega. Morda je več v prejšnjih.</string>
+    <string name="session_bell_title">Obvestila</string>
+    <string name="session_bell_level_all">Vse</string>
+    <string name="session_bell_level_attention">Samo ko me potrebuje</string>
+    <string name="session_bell_level_none">Nič</string>
+    <string name="session_bell_mute_hour">Nič za eno uro</string>
+    <string name="session_bell_mute_tomorrow">Nič do jutri zjutraj</string>
+    <string name="session_bell_use_default">Uporabi izbiro tega telefona</string>
+    <string name="session_bell_source_own">Nastavljeno samo za ta telefon.</string>
+    <string name="session_bell_source_own_until">Nastavljeno samo za ta telefon, do %1$s.</string>
+    <string name="session_bell_source_default">Izbira tega telefona za strežnik. Izberite možnost, da jo spremenite za to sejo.</string>
+    <string name="session_bell_source_shared">Nastavljeno z druge naprave. Izberite možnost, da to spremenite za ta telefon.</string>
+    <string name="session_bell_source_shared_until">Nastavljeno z druge naprave do %1$s. Izberite možnost, da to spremenite za ta telefon.</string>
+    <string name="session_bell_source_phone_paused">Obvestila na tem telefonu so v nastavitvah začasno ustavljena.</string>
+    <string name="session_bell_source_server_paused">Vsa obvestila s tega strežnika so začasno ustavljena.</string>
+    <string name="session_bell_source_server_paused_until">Vsa obvestila s tega strežnika so začasno ustavljena do %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Obvestil ni bilo mogoče spremeniti</string>
 </resources>

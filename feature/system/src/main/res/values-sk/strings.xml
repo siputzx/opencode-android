@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Hlasové hovory</string>
     <string name="system_channel_recording">Nahrávanie</string>
     <string name="system_channel_session_runs">Spustenia relácií</string>
-    <string name="system_channel_session_updates">Aktualizácie relácií</string>
+    <string name="system_channel_session_finished">Dokončené relácie</string>
+    <string name="system_channel_session_questions">Otázky</string>
+    <string name="system_channel_session_permissions">Žiadosti o povolenie</string>
+    <string name="system_channel_session_other">Ostatné aktualizácie relácií</string>
     <string name="system_channel_shared_items">Zdieľané položky</string>
 
     <!-- Share sheet: notifications -->

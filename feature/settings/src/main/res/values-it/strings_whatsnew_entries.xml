@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">Chiedi un diagramma di flusso dell\'invio di un messaggio</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">Disegna un diagramma di flusso dell\'invio di un messaggio</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">Notifica al termine</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">Ricevi una notifica quando una sessione avviata qui termina il lavoro, con un breve riepilogo di ciò che è successo.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">Attiva Notifica sempre nel pannello della sessione per ricevere una notifica a ogni risposta, anche per le richieste inviate dal computer.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">Tocca una notifica per aprire la relativa sessione.</string>
-    <string name="settings_whatsnew_entry_always_notify_example">Invia un messaggio, poi blocca il telefono</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">Cambia server</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">Il server in uso è il titolo del pannello laterale. Toccalo per passare a un altro server o aggiungerne uno.</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">Sessioni anche senza cartella</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">Se la cartella di una sessione non esiste più, ad esempio dopo aver rimosso uno spazio di lavoro, un invio non riuscito propone di spostare la sessione nella cartella del progetto e riprova l\'invio.</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">Configura le notifiche con OpenCode</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">In Impostazioni → Notifiche, tocca Configura con OpenCode per rivedere un prompt che installa il plugin notifiche mancante.</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">La scheda chiamata occupa la parte bassa</string>

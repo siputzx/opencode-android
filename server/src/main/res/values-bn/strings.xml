@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">এই পেয়ারিং কোডের মেয়াদ শেষ হয়েছে বা এটি আগেই ব্যবহার করা হয়েছে। আবার `opencode pair --remote` চালান।</string>
     <string name="server_error_pairing_unsupported">এই সার্ভার পেয়ারিং লিঙ্ক সমর্থন করে না। কম্পিউটারে OpenCode আপডেট করুন, অথবা সার্ভারের তথ্য নিজে লিখুন।</string>
-    <string name="server_error_notification_previews_need_https">এনক্রিপ্ট করা বিজ্ঞপ্তির পূর্বরূপের জন্য HTTPS সার্ভার সংযোগ প্রয়োজন।</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">একটি বৈধ HTTP বা HTTPS সার্ভার URL লিখুন।</string>

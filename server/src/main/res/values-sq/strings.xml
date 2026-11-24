@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Ky kod çiftimi ka skaduar ose është përdorur tashmë. Ekzekuto sërish `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">Ky server nuk mbështet lidhje çiftimi. Përditëso OpenCode në kompjuter ose shto serverin manualisht.</string>
-    <string name="server_error_notification_previews_need_https">Pamjet paraprake të enkriptuara të njoftimeve kërkojnë lidhje HTTPS me serverin.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Fut një URL të vlefshme HTTP ose HTTPS të serverit.</string>

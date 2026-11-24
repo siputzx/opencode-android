@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Səsli zənglər</string>
     <string name="system_channel_recording">Səs yazılır</string>
     <string name="system_channel_session_runs">Sessiya icraları</string>
-    <string name="system_channel_session_updates">Sessiya yeniləmələri</string>
+    <string name="system_channel_session_finished">Tamamlanmış sessiyalar</string>
+    <string name="system_channel_session_questions">Suallar</string>
+    <string name="system_channel_session_permissions">İcazə sorğuları</string>
+    <string name="system_channel_session_other">Digər sessiya yeniləmələri</string>
     <string name="system_channel_shared_items">Paylaşılan elementlər</string>
 
     <!-- Share sheet: notifications -->

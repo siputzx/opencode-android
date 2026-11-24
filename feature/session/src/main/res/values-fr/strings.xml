@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Coût</string>
     <string name="session_sheet_media">Médias</string>
     <string name="session_sheet_media_value">Fichiers et liens</string>
-    <string name="session_always_notify">Toujours notifier</string>
-    <string name="session_always_notify_message_phone">Notifier ce téléphone à chaque réponse terminée, même si le message n’a pas été envoyé d’ici.</string>
-    <string name="session_always_notify_message_tablet">Notifier cette tablette à chaque réponse terminée, même si le message n’a pas été envoyé d’ici.</string>
     <string name="session_delete_session">Supprimer la session</string>
     <string name="session_rename_placeholder">Titre</string>
     <string name="session_auto_rename">Renommer automatiquement</string>
@@ -277,9 +274,6 @@
     <string name="session_sheet_fork_failed_title">Impossible de bifurquer la session</string>
     <string name="session_sheet_save_export_failed">Impossible d’enregistrer l’export</string>
     <string name="session_sheet_export_failed_title">Impossible d’exporter la session</string>
-    <string name="session_sheet_notifications_off_message">Activez d’abord les notifications dans les paramètres.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Impossible d’activer « Toujours notifier »</string>
-    <string name="session_sheet_always_notify_off_failed_title">Impossible de désactiver « Toujours notifier »</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Le serveur ne prend pas en charge les fichiers</string>
@@ -341,4 +335,20 @@
     <string name="session_media_loading_earlier">Chargement…</string>
     <string name="session_media_earlier_failed">Impossible de charger les messages précédents. Vérifiez votre connexion et réessayez.</string>
     <string name="session_media_earlier_nothing_new">Rien de nouveau dans les messages qui viennent d’être chargés. Les messages précédents en contiennent peut-être davantage.</string>
+    <string name="session_bell_title">Notifications</string>
+    <string name="session_bell_level_all">Tout</string>
+    <string name="session_bell_level_attention">Uniquement si vous devez intervenir</string>
+    <string name="session_bell_level_none">Rien</string>
+    <string name="session_bell_mute_hour">Rien pendant une heure</string>
+    <string name="session_bell_mute_tomorrow">Rien jusqu’à demain matin</string>
+    <string name="session_bell_use_default">Utiliser le réglage de ce téléphone</string>
+    <string name="session_bell_source_own">Défini pour ce téléphone uniquement.</string>
+    <string name="session_bell_source_own_until">Défini pour ce téléphone uniquement, jusqu’à %1$s.</string>
+    <string name="session_bell_source_default">Réglage de ce téléphone pour le serveur. Choisissez-en un autre pour cette session.</string>
+    <string name="session_bell_source_shared">Défini depuis un autre appareil. Choisissez une option pour le modifier sur ce téléphone.</string>
+    <string name="session_bell_source_shared_until">Défini depuis un autre appareil jusqu’à %1$s. Choisissez une option pour le modifier sur ce téléphone.</string>
+    <string name="session_bell_source_phone_paused">Ce téléphone est en pause dans les paramètres.</string>
+    <string name="session_bell_source_server_paused">Toutes les notifications de ce serveur sont en pause.</string>
+    <string name="session_bell_source_server_paused_until">Toutes les notifications de ce serveur sont en pause jusqu’à %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Impossible de modifier les notifications</string>
 </resources>

@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Энэ холбох кодын хугацаа дууссан эсвэл ашиглагдсан байна. `opencode pair --remote` командыг дахин ажиллуулна уу.</string>
     <string name="server_error_pairing_unsupported">Энэ сервер холбох холбоос дэмждэггүй. Компьютер дээрх OpenCode-оо шинэчлэх эсвэл серверийг гараар оруулна уу.</string>
-    <string name="server_error_notification_previews_need_https">Шифрлэсэн мэдэгдлийг урьдчилан харахад HTTPS серверийн холболт хэрэгтэй.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Серверийн зөв HTTP эсвэл HTTPS URL оруулна уу.</string>

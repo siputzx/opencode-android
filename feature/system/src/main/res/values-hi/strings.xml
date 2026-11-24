@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">वॉइस कॉल</string>
     <string name="system_channel_recording">रिकॉर्डिंग</string>
     <string name="system_channel_session_runs">सेशन का संचालन</string>
-    <string name="system_channel_session_updates">सेशन अपडेट</string>
+    <string name="system_channel_session_finished">पूरे हुए सेशन</string>
+    <string name="system_channel_session_questions">प्रश्न</string>
+    <string name="system_channel_session_permissions">अनुमति के अनुरोध</string>
+    <string name="system_channel_session_other">अन्य सेशन अपडेट</string>
     <string name="system_channel_shared_items">शेयर किए गए आइटम</string>
 
     <!-- Share sheet: notifications -->

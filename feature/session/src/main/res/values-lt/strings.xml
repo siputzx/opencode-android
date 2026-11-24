@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Kaina</string>
     <string name="session_sheet_media">Medija</string>
     <string name="session_sheet_media_value">Failai ir nuorodos</string>
-    <string name="session_always_notify">Visada pranešti</string>
-    <string name="session_always_notify_message_phone">Pranešti šiame telefone, kai atsakymas paruoštas, net jei užklausa siųsta ne iš čia.</string>
-    <string name="session_always_notify_message_tablet">Pranešti šioje planšetėje, kai atsakymas paruoštas, net jei užklausa siųsta ne iš čia.</string>
     <string name="session_delete_session">Ištrinti seansą</string>
     <string name="session_rename_placeholder">Pavadinimas</string>
     <string name="session_auto_rename">Pervardyti automatiškai</string>
@@ -287,9 +284,6 @@
     <string name="session_sheet_fork_failed_title">Nepavyko atskirti į naują seansą</string>
     <string name="session_sheet_save_export_failed">Nepavyko išsaugoti eksporto</string>
     <string name="session_sheet_export_failed_title">Nepavyko eksportuoti seanso</string>
-    <string name="session_sheet_notifications_off_message">Pirmiausia nustatymuose įjunkite pranešimus.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Nepavyko įjungti „Visada pranešti“</string>
-    <string name="session_sheet_always_notify_off_failed_title">Nepavyko išjungti „Visada pranešti“</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Serveris nepalaiko failų</string>
@@ -353,4 +347,20 @@
     <string name="session_media_loading_earlier">Įkeliama…</string>
     <string name="session_media_earlier_failed">Nepavyko įkelti ankstesnių žinučių. Patikrinkite ryšį ir bandykite dar kartą.</string>
     <string name="session_media_earlier_nothing_new">Ką tik įkeltose žinutėse nieko naujo. Ankstesnėse gali būti daugiau.</string>
+    <string name="session_bell_title">Pranešimai</string>
+    <string name="session_bell_level_all">Viskas</string>
+    <string name="session_bell_level_attention">Tik kai manęs reikia</string>
+    <string name="session_bell_level_none">Nieko</string>
+    <string name="session_bell_mute_hour">Nieko valandą</string>
+    <string name="session_bell_mute_tomorrow">Nieko iki rytojaus ryto</string>
+    <string name="session_bell_use_default">Naudoti šio telefono pasirinkimą</string>
+    <string name="session_bell_source_own">Nustatyta tik šiam telefonui.</string>
+    <string name="session_bell_source_own_until">Nustatyta tik šiam telefonui iki %1$s.</string>
+    <string name="session_bell_source_default">Šio telefono pasirinkimas serveriui. Pasirinkite norimą, kad pakeistumėte šiam seansui.</string>
+    <string name="session_bell_source_shared">Nustatyta kitame įrenginyje. Pasirinkite norimą, kad pakeistumėte šiam telefonui.</string>
+    <string name="session_bell_source_shared_until">Nustatyta kitame įrenginyje iki %1$s. Pasirinkite norimą, kad pakeistumėte šiam telefonui.</string>
+    <string name="session_bell_source_phone_paused">Šio telefono pranešimai pristabdyti nustatymuose.</string>
+    <string name="session_bell_source_server_paused">Visi šio serverio pranešimai pristabdyti.</string>
+    <string name="session_bell_source_server_paused_until">Visi šio serverio pranešimai pristabdyti iki %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Nepavyko pakeisti pranešimų</string>
 </resources>

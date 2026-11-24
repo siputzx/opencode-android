@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Cuộc gọi thoại</string>
     <string name="system_channel_recording">Đang ghi âm</string>
     <string name="system_channel_session_runs">Chạy phiên</string>
-    <string name="system_channel_session_updates">Cập nhật phiên</string>
+    <string name="system_channel_session_finished">Phiên đã hoàn tất</string>
+    <string name="system_channel_session_questions">Câu hỏi</string>
+    <string name="system_channel_session_permissions">Yêu cầu cấp quyền</string>
+    <string name="system_channel_session_other">Cập nhật phiên khác</string>
     <string name="system_channel_shared_items">Mục được chia sẻ</string>
 
     <!-- Share sheet: notifications -->

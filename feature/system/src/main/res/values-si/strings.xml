@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">හඬ ඇමතුම්</string>
     <string name="system_channel_recording">හඬ පටිගත කරමින්</string>
     <string name="system_channel_session_runs">සැසි ධාවන</string>
-    <string name="system_channel_session_updates">සැසි යාවත්කාලීන</string>
+    <string name="system_channel_session_finished">අවසන් වූ සැසි</string>
+    <string name="system_channel_session_questions">ප්‍රශ්න</string>
+    <string name="system_channel_session_permissions">අවසර ඉල්ලීම්</string>
+    <string name="system_channel_session_other">වෙනත් සැසි යාවත්කාලීන</string>
     <string name="system_channel_shared_items">බෙදාගත් අයිතම</string>
 
     <!-- Share sheet: notifications -->

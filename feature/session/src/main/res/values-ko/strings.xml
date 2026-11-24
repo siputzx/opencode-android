@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">비용</string>
     <string name="session_sheet_media">미디어</string>
     <string name="session_sheet_media_value">파일 및 링크</string>
-    <string name="session_always_notify">항상 알림</string>
-    <string name="session_always_notify_message_phone">다른 기기에서 보낸 메시지도 응답이 완료되면 이 휴대폰으로 알려요.</string>
-    <string name="session_always_notify_message_tablet">다른 기기에서 보낸 메시지도 응답이 완료되면 이 태블릿으로 알려요.</string>
     <string name="session_delete_session">세션 삭제</string>
     <string name="session_rename_placeholder">제목</string>
     <string name="session_auto_rename">자동 이름 바꾸기</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">세션을 분기할 수 없어요</string>
     <string name="session_sheet_save_export_failed">내보낸 파일을 저장할 수 없어요</string>
     <string name="session_sheet_export_failed_title">세션을 내보낼 수 없어요</string>
-    <string name="session_sheet_notifications_off_message">먼저 설정에서 알림을 켜 주세요.</string>
-    <string name="session_sheet_always_notify_on_failed_title">항상 알림을 켤 수 없어요</string>
-    <string name="session_sheet_always_notify_off_failed_title">항상 알림을 끌 수 없어요</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">서버가 파일을 지원하지 않아요</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">로딩 중…</string>
     <string name="session_media_earlier_failed">이전 메시지를 불러올 수 없어요. 연결을 확인하고 다시 시도해 주세요.</string>
     <string name="session_media_earlier_nothing_new">방금 불러온 메시지에는 새로운 내용이 없어요. 더 이전 메시지에는 있을 수 있어요.</string>
+    <string name="session_bell_title">알림</string>
+    <string name="session_bell_level_all">모든 알림</string>
+    <string name="session_bell_level_attention">확인이 필요할 때만</string>
+    <string name="session_bell_level_none">알림 없음</string>
+    <string name="session_bell_mute_hour">1시간 동안 알림 끄기</string>
+    <string name="session_bell_mute_tomorrow">내일 아침까지 알림 끄기</string>
+    <string name="session_bell_use_default">이 휴대폰 설정 사용</string>
+    <string name="session_bell_source_own">이 휴대폰에만 설정되어 있어요.</string>
+    <string name="session_bell_source_own_until">%1$s까지 이 휴대폰에만 설정되어 있어요.</string>
+    <string name="session_bell_source_default">이 휴대폰의 서버 설정이에요. 이 세션만 바꾸려면 항목을 선택해 주세요.</string>
+    <string name="session_bell_source_shared">다른 기기에서 설정되어 있어요. 이 휴대폰만 바꾸려면 항목을 선택해 주세요.</string>
+    <string name="session_bell_source_shared_until">다른 기기에서 %1$s까지 설정되어 있어요. 이 휴대폰만 바꾸려면 항목을 선택해 주세요.</string>
+    <string name="session_bell_source_phone_paused">설정에서 이 휴대폰의 알림이 일시 정지되어 있어요.</string>
+    <string name="session_bell_source_server_paused">이 서버의 모든 알림이 일시 정지되어 있어요.</string>
+    <string name="session_bell_source_server_paused_until">이 서버의 모든 알림이 %1$s까지 일시 정지되어 있어요.</string>
+    <string name="session_sheet_bell_failed_title">알림을 변경할 수 없어요</string>
 </resources>

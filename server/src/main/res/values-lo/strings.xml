@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">ລະຫັດຈັບຄູ່ນີ້ໝົດອາຍຸ ຫຼືຖືກໃຊ້ແລ້ວ. ແລ່ນ `opencode pair --remote` ອີກຄັ້ງ.</string>
     <string name="server_error_pairing_unsupported">ເຊີບເວີນີ້ບໍ່ຮອງຮັບລິ້ງຈັບຄູ່. ອັບເດດ OpenCode ໃນຄອມພິວເຕີ ຫຼືປ້ອນເຊີບເວີເອງ.</string>
-    <string name="server_error_notification_previews_need_https">ຕົວຢ່າງການແຈ້ງເຕືອນທີ່ເຂົ້າລະຫັດຕ້ອງເຊື່ອມຕໍ່ເຊີບເວີຜ່ານ HTTPS.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">ປ້ອນ URL ເຊີບເວີ HTTP ຫຼື HTTPS ທີ່ຖືກຕ້ອງ.</string>

@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Kosten</string>
     <string name="session_sheet_media">Media</string>
     <string name="session_sheet_media_value">Bestanden en links</string>
-    <string name="session_always_notify">Altijd melden</string>
-    <string name="session_always_notify_message_phone">Stuur een melding naar deze telefoon wanneer een antwoord klaar is, ook als je het bericht niet vanaf hier hebt verstuurd.</string>
-    <string name="session_always_notify_message_tablet">Stuur een melding naar deze tablet wanneer een antwoord klaar is, ook als je het bericht niet vanaf hier hebt verstuurd.</string>
     <string name="session_delete_session">Sessie verwijderen</string>
     <string name="session_rename_placeholder">Titel</string>
     <string name="session_auto_rename">Automatisch hernoemen</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Sessie afsplitsen mislukt</string>
     <string name="session_sheet_save_export_failed">Export opslaan mislukt</string>
     <string name="session_sheet_export_failed_title">Sessie exporteren mislukt</string>
-    <string name="session_sheet_notifications_off_message">Zet eerst meldingen aan in Instellingen.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Altijd melden inschakelen mislukt</string>
-    <string name="session_sheet_always_notify_off_failed_title">Altijd melden uitschakelen mislukt</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Server ondersteunt geen bestanden</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Laden…</string>
     <string name="session_media_earlier_failed">Eerdere uitvoer laden mislukt. Controleer je verbinding en probeer het opnieuw.</string>
     <string name="session_media_earlier_nothing_new">Niets nieuws in de zojuist geladen uitvoer. Eerdere uitvoer bevat mogelijk meer.</string>
+    <string name="session_bell_title">Meldingen</string>
+    <string name="session_bell_level_all">Alles</string>
+    <string name="session_bell_level_attention">Alleen als ik nodig ben</string>
+    <string name="session_bell_level_none">Niets</string>
+    <string name="session_bell_mute_hour">Een uur lang niets</string>
+    <string name="session_bell_mute_tomorrow">Niets tot morgenochtend</string>
+    <string name="session_bell_use_default">Keuze van deze telefoon gebruiken</string>
+    <string name="session_bell_source_own">Alleen voor deze telefoon ingesteld.</string>
+    <string name="session_bell_source_own_until">Alleen voor deze telefoon ingesteld, tot %1$s.</string>
+    <string name="session_bell_source_default">Keuze van deze telefoon voor de server. Kies een optie om dit voor deze sessie te wijzigen.</string>
+    <string name="session_bell_source_shared">Ingesteld vanaf een ander apparaat. Kies een optie om dit voor deze telefoon te wijzigen.</string>
+    <string name="session_bell_source_shared_until">Ingesteld vanaf een ander apparaat tot %1$s. Kies een optie om dit voor deze telefoon te wijzigen.</string>
+    <string name="session_bell_source_phone_paused">Deze telefoon is gepauzeerd in Instellingen.</string>
+    <string name="session_bell_source_server_paused">Alle meldingen van deze server zijn gepauzeerd.</string>
+    <string name="session_bell_source_server_paused_until">Alle meldingen van deze server zijn gepauzeerd tot %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Meldingen wijzigen mislukt</string>
 </resources>

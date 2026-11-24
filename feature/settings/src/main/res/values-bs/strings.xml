@@ -52,20 +52,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Obavještenja</string>
     <string name="settings_notifications_device_header">Ovaj %1$s</string>
-    <string name="settings_notifications_device_footer">Obavještenja idu preko posrednika koji ništa ne pohranjuje. Na ovaj uređaj (%1$s) stižu samo obavještenja za sesije pokrenute na njemu.</string>
+    <string name="settings_notifications_device_footer">Obavještenja idu preko posrednika koji ništa ne čuva i šifrirana su s kraja na kraj.</string>
     <string name="settings_notifications_allow">Dozvoli obavještenja</string>
     <string name="settings_notifications_open_android_settings">Otvori Android postavke</string>
     <string name="settings_notifications_turn_on">Uključi obavještenja</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_set_up_footer">Otvara sesiju s upitom da OpenCode instalira plugin. Pošalji upit, pa provjeri ponovo.</string>
-    <string name="settings_notifications_plugin_needed_footer">Serveru je potreban OpenCode plugin za obavještenja.</string>
-    <string name="settings_notifications_notify_plugin">Plugin za obavještenja</string>
-    <string name="settings_notifications_plugin_installed">Instaliran</string>
-    <string name="settings_notifications_plugin_not_running">Nije pokrenut</string>
-    <string name="settings_notifications_plugin_not_installed">Nije instaliran</string>
-    <string name="settings_notifications_plugin_check_failed">Provjera statusa nije uspjela</string>
-    <string name="settings_notifications_set_up">Podesi uz OpenCode</string>
-    <string name="settings_notifications_check_again">Provjeri ponovo</string>
     <string name="settings_notifications_in_app_footer">Prikazuju se na dugmetu bočnog menija.</string>
     <string name="settings_notifications_in_app_notices">Napomene u aplikaciji</string>
 
@@ -226,4 +217,35 @@
     <string name="settings_pairing_point_camera">Usmjeri kameru prema QR kodu</string>
     <string name="settings_pairing_paste_link">Zalijepi link za uparivanje</string>
     <string name="settings_pairing_computer_hint">Na računaru otvori Postavke → Uparivanje u aplikaciji OpenCode ili pokreni %1$s u terminalu.</string>
+    <string name="settings_notifications_server_toggle">Obavještavaj ovaj uređaj</string>
+    <string name="settings_notifications_mode">Obavještavaj o</string>
+    <string name="settings_notifications_mode_all">Sve</string>
+    <string name="settings_notifications_mode_all_caption">Završene sesije, pitanja i zahtjevi za dozvolu.</string>
+    <string name="settings_notifications_mode_attention">Samo kad me treba</string>
+    <string name="settings_notifications_mode_attention_caption">Pitanja i zahtjevi za dozvolu.</string>
+    <string name="settings_notifications_mode_from_this_phone">Samo sesije koje koristim ovdje</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Sve iz sesija u koje šalješ koristeći ovaj %1$s.</string>
+    <string name="settings_notifications_mode_none">Ništa</string>
+    <string name="settings_notifications_status_checking">Provjera servera…</string>
+    <string name="settings_notifications_status_no_permission">Prvo dozvoli obavještenja iznad.</string>
+    <string name="settings_notifications_status_outdated">Za obavještenja je potrebno ažurirati OpenCode na ovom serveru.</string>
+    <string name="settings_notifications_status_relay">Ovaj server ne prihvata posrednika za obavještenja ove aplikacije.</string>
+    <string name="settings_notifications_status_failed">Nije moguće podesiti obavještenja na ovom serveru. OpenCode će pokušati ponovo kad se opet poveže.</string>
+    <string name="settings_notifications_pause">Pauziraj sva obavještenja</string>
+    <string name="settings_notifications_pause_on">Do nastavka</string>
+    <string name="settings_notifications_pause_until">Do %1$s</string>
+    <string name="settings_notifications_resume">Nastavi</string>
+    <string name="settings_notifications_pause_hour">Na jedan sat</string>
+    <string name="settings_notifications_pause_tomorrow">Do sutra ujutro</string>
+    <string name="settings_notifications_pause_forever">Dok ne nastavim</string>
+    <string name="settings_notifications_pause_footer">Pauziranje zaustavlja obavještenja s ovog servera na svim uređajima.</string>
+    <string name="settings_notifications_devices_header">Uređaji</string>
+    <string name="settings_notifications_device_this">%1$s (ovaj uređaj)</string>
+    <string name="settings_notifications_device_on">Uključeno</string>
+    <string name="settings_notifications_device_paused">Pauzirano</string>
+    <string name="settings_notifications_device_remove">Ukloni</string>
+    <string name="settings_notifications_pause_failed_title">Nije moguće promijeniti pauzu</string>
+    <string name="settings_notifications_device_failed_title">Nije moguće promijeniti uređaj</string>
+    <string name="settings_notifications_device_remove_failed_title">Nije moguće ukloniti uređaj</string>
+    <string name="settings_notifications_change_failed_message">Server nije prihvatio promjenu.</string>
 </resources>

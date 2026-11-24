@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">此配对码已过期或已使用。请重新运行 `opencode pair --remote`。</string>
     <string name="server_error_pairing_unsupported">此服务器不支持配对链接。请更新电脑上的 OpenCode，或手动输入服务器信息。</string>
-    <string name="server_error_notification_previews_need_https">加密通知预览需要通过 HTTPS 连接服务器。</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">请输入有效的 HTTP 或 HTTPS 服务器 URL。</string>

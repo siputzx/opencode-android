@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">ཟད་འགྲོ།</string>
     <string name="session_sheet_media">བརྡ་བརྒྱུད།</string>
     <string name="session_sheet_media_value">ཡིག་སྣོད་དང་འབྲེལ་མཐུད་ཚུ།</string>
-    <string name="session_always_notify">ཨ་རྟག་ར་བརྡ་བསྐུལ་འབད།</string>
-    <string name="session_always_notify_message_phone">ནཱ་ལས་མ་བཏང་མི་ཚུ་ཨིན་རུང་ ལན་འདེབས་རེ་མཇུག་བསྡུཝ་ད་ འགྲུལ་འཕྲིན་འདི་ལུ་བརྡ་བསྐུལ་འབད།</string>
-    <string name="session_always_notify_message_tablet">ནཱ་ལས་མ་བཏང་མི་ཚུ་ཨིན་རུང་ ལན་འདེབས་རེ་མཇུག་བསྡུཝ་ད་ ཊེབ་ལེཊ་འདི་ལུ་བརྡ་བསྐུལ་འབད།</string>
     <string name="session_delete_session">ལཱ་ཡུན་བཏོན་གཏང་།</string>
     <string name="session_rename_placeholder">མགོ་མིང་།</string>
     <string name="session_auto_rename">རང་བཞིན་གྱིས་མིང་བསྒྱུར།</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">ལཱ་ཡུན་ཕོརཀ་འབད་མ་ཚུགས།</string>
     <string name="session_sheet_save_export_failed">ཕྱིར་འདྲེན་འབད་མི་སྲུང་སྐྱོབས་འབད་མ་ཚུགས།</string>
     <string name="session_sheet_export_failed_title">ལཱ་ཡུན་ཕྱིར་འདྲེན་འབད་མ་ཚུགས།</string>
-    <string name="session_sheet_notifications_off_message">ཧེ་མ་སྒྲིག་སྟངས་ཚུ་ནང་བརྡ་བསྐུལ་ཚུ་ཨཱོན་འབད།</string>
-    <string name="session_sheet_always_notify_on_failed_title">ཨ་རྟག་ར་བརྡ་བསྐུལ་འབད་ནི་ཨཱོན་འབད་མ་ཚུགས།</string>
-    <string name="session_sheet_always_notify_off_failed_title">ཨ་རྟག་ར་བརྡ་བསྐུལ་འབད་ནི་ཨོཕ་འབད་མ་ཚུགས།</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">སར་བར་གྱིས་ཡིག་སྣོད་ཚུ་ལུ་རྒྱབ་སྐྱོར་མི་འབད།</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">མངོན་གསལ་འབད་དོ།</string>
     <string name="session_media_earlier_failed">ཧེ་མའི་འཕྲིན་དོན་ཚུ་མངོན་གསལ་འབད་མ་ཚུགས། ཁྱོད་ཀྱི་མཐུད་ལམ་ཞིབ་དཔྱད་འབད་དེ་བསྐྱར་དུ་ཚོད་ལྟ་འབད།</string>
     <string name="session_media_earlier_nothing_new">ད་ལྟོ་མངོན་གསལ་འབད་ཡོད་པའི་འཕྲིན་དོན་ཚུ་ནང་གསརཔ་ག་ཅི་ཡང་མེད། ཧེ་མའི་ཚུ་ནང་མང་སུ་ཡོད་ཚུགས།</string>
+    <string name="session_bell_title">བརྡ་བསྐུལ་ཚུ།</string>
+    <string name="session_bell_level_all">ག་ར།</string>
+    <string name="session_bell_level_attention">ང་དགོཔ་ད་རྐྱངམ་ཅིག</string>
+    <string name="session_bell_level_none">ག་ནི་ཡང་མེད།</string>
+    <string name="session_bell_mute_hour">ཆུ་ཚོད་གཅིག་གི་རིང་ག་ནི་ཡང་མེད།</string>
+    <string name="session_bell_mute_tomorrow">ནངས་པ་དྲོ་པ་ཚུན་ག་ནི་ཡང་མེད།</string>
+    <string name="session_bell_use_default">འགྲུལ་འཕྲིན་འདི་གི་གདམ་ཁ་ལག་ལེན་འཐབ།</string>
+    <string name="session_bell_source_own">འགྲུལ་འཕྲིན་འདི་གི་དོན་ལུ་རྐྱངམ་ཅིག་གཞི་སྒྲིག་འབད་ཡོད།</string>
+    <string name="session_bell_source_own_until">འགྲུལ་འཕྲིན་འདི་གི་དོན་ལུ་རྐྱངམ་ཅིག་ %1$s ཚུན་གཞི་སྒྲིག་འབད་ཡོད།</string>
+    <string name="session_bell_source_default">སར་བར་གྱི་དོན་ལུ་འགྲུལ་འཕྲིན་འདི་གི་གདམ་ཁ་ཨིན། ལཱ་ཡུན་འདི་ལུ་སོར་ནིའི་དོན་ལུ་གཅིག་གདམ་ཁ་རྐྱབས།</string>
+    <string name="session_bell_source_shared">ཐབས་འཕྲུལ་གཞན་ལས་གཞི་སྒྲིག་འབད་ཡོད། འགྲུལ་འཕྲིན་འདི་ལུ་སོར་ནིའི་དོན་ལུ་གཅིག་གདམ་ཁ་རྐྱབས།</string>
+    <string name="session_bell_source_shared_until">ཐབས་འཕྲུལ་གཞན་ལས་ %1$s ཚུན་གཞི་སྒྲིག་འབད་ཡོད། འགྲུལ་འཕྲིན་འདི་ལུ་སོར་ནིའི་དོན་ལུ་གཅིག་གདམ་ཁ་རྐྱབས།</string>
+    <string name="session_bell_source_phone_paused">འགྲུལ་འཕྲིན་འདི་སྒྲིག་སྟངས་ནང་ཐེངས་ཅིག་བཀག་ཡོད།</string>
+    <string name="session_bell_source_server_paused">སར་བར་འདི་ལས་འོང་མི་བརྡ་བསྐུལ་ཆ་མཉམ་ཐེངས་ཅིག་བཀག་ཡོད།</string>
+    <string name="session_bell_source_server_paused_until">སར་བར་འདི་ལས་འོང་མི་བརྡ་བསྐུལ་ཆ་མཉམ་ %1$s ཚུན་ཐེངས་ཅིག་བཀག་ཡོད།</string>
+    <string name="session_sheet_bell_failed_title">བརྡ་བསྐུལ་ཚུ་བསྒྱུར་བཅོས་འབད་མ་ཚུགས།</string>
 </resources>

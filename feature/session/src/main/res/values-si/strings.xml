@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">වියදම</string>
     <string name="session_sheet_media">මාධ්‍ය</string>
     <string name="session_sheet_media_value">ගොනු සහ සබැඳි</string>
-    <string name="session_always_notify">සැමවිටම දැනුම් දෙන්න</string>
-    <string name="session_always_notify_message_phone">මෙතැනින් නොයැවූ පණිවිඩවලට ලැබෙන ප්‍රතිචාර ඇතුළුව, ප්‍රතිචාරයක් අවසන් වන සෑම විටම මේ දුරකථනයට දැනුම් දෙන්න.</string>
-    <string name="session_always_notify_message_tablet">මෙතැනින් නොයැවූ පණිවිඩවලට ලැබෙන ප්‍රතිචාර ඇතුළුව, ප්‍රතිචාරයක් අවසන් වන සෑම විටම මේ ටැබ්ලටයට දැනුම් දෙන්න.</string>
     <string name="session_delete_session">සැසිය මකන්න</string>
     <string name="session_rename_placeholder">මාතෘකාව</string>
     <string name="session_auto_rename">ස්වයංක්‍රීයව නැවත නම් කරන්න</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">සැසිය ෆෝක් කිරීමට නොහැකි විය</string>
     <string name="session_sheet_save_export_failed">අපනයනය සුරැකීමට නොහැකි විය</string>
     <string name="session_sheet_export_failed_title">සැසිය අපනයනය කිරීමට නොහැකි විය</string>
-    <string name="session_sheet_notifications_off_message">පළමුව සැකසීම් තුළ දැනුම්දීම් සක්‍රිය කරන්න.</string>
-    <string name="session_sheet_always_notify_on_failed_title">සැමවිටම දැනුම් දීම සක්‍රිය කිරීමට නොහැකි විය</string>
-    <string name="session_sheet_always_notify_off_failed_title">සැමවිටම දැනුම් දීම අක්‍රිය කිරීමට නොහැකි විය</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">සේවාදායකය ගොනුවලට සහය නොදක්වයි</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">පූරණය වෙමින්…</string>
     <string name="session_media_earlier_failed">පෙර පණිවිඩ පූරණය කිරීමට නොහැකි විය. ඔබේ සම්බන්ධතාවය පරීක්ෂා කර නැවත උත්සාහ කරන්න.</string>
     <string name="session_media_earlier_nothing_new">දැන් පූරණය වූ පණිවිඩවල අලුත් දෙයක් නැත. පෙර පණිවිඩවල තවත් තිබිය හැක.</string>
+    <string name="session_bell_title">දැනුම්දීම්</string>
+    <string name="session_bell_level_all">සියල්ල</string>
+    <string name="session_bell_level_attention">මාව අවශ්‍ය විට පමණි</string>
+    <string name="session_bell_level_none">කිසිවක් නැත</string>
+    <string name="session_bell_mute_hour">පැයකට කිසිවක් නැත</string>
+    <string name="session_bell_mute_tomorrow">හෙට උදෑසන තෙක් කිසිවක් නැත</string>
+    <string name="session_bell_use_default">මෙම දුරකථනයේ තේරීම භාවිත කරන්න</string>
+    <string name="session_bell_source_own">මෙම දුරකථනය සඳහා පමණක් සකසා ඇත.</string>
+    <string name="session_bell_source_own_until">%1$s තෙක් මෙම දුරකථනය සඳහා පමණක් සකසා ඇත.</string>
+    <string name="session_bell_source_default">සේවාදායකය සඳහා මෙම දුරකථනයේ තේරීමයි. මෙම සැසිය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
+    <string name="session_bell_source_shared">වෙනත් උපාංගයකින් සකසා ඇත. මෙම දුරකථනය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
+    <string name="session_bell_source_shared_until">%1$s තෙක් වෙනත් උපාංගයකින් සකසා ඇත. මෙම දුරකථනය සඳහා එය වෙනස් කිරීමට එකක් තෝරන්න.</string>
+    <string name="session_bell_source_phone_paused">මෙම දුරකථනය සැකසීම් තුළ විරාම කර ඇත.</string>
+    <string name="session_bell_source_server_paused">මෙම සේවාදායකයෙන් එන සියලු දැනුම්දීම් විරාම කර ඇත.</string>
+    <string name="session_bell_source_server_paused_until">මෙම සේවාදායකයෙන් එන සියලු දැනුම්දීම් %1$s තෙක් විරාම කර ඇත.</string>
+    <string name="session_sheet_bell_failed_title">දැනුම්දීම් වෙනස් කිරීමට නොහැකි විය</string>
 </resources>

@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Този код за сдвояване е изтекъл или вече е използван. Изпълнете `opencode pair --remote` отново.</string>
     <string name="server_error_pairing_unsupported">Този сървър не поддържа връзки за сдвояване. Актуализирайте OpenCode на компютъра си или въведете сървъра ръчно.</string>
-    <string name="server_error_notification_previews_need_https">Шифрованите прегледи на известия изискват HTTPS връзка със сървъра.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Въведете валиден HTTP или HTTPS URL на сървъра.</string>

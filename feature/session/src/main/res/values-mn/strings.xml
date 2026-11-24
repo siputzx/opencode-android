@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Зардал</string>
     <string name="session_sheet_media">Медиа</string>
     <string name="session_sheet_media_value">Файлууд ба холбоосууд</string>
-    <string name="session_always_notify">Үргэлж мэдэгдэх</string>
-    <string name="session_always_notify_message_phone">Өөр газраас илгээсэн ч хариулт бэлэн болох бүрд энэ утсанд мэдэгдэнэ.</string>
-    <string name="session_always_notify_message_tablet">Өөр газраас илгээсэн ч хариулт бэлэн болох бүрд энэ таблетад мэдэгдэнэ.</string>
     <string name="session_delete_session">Сеанс устгах</string>
     <string name="session_rename_placeholder">Гарчиг</string>
     <string name="session_auto_rename">Автоматаар нэрлэх</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Сессийг салаалж чадсангүй</string>
     <string name="session_sheet_save_export_failed">Экспортыг хадгалж чадсангүй</string>
     <string name="session_sheet_export_failed_title">Сессийг экспортолж чадсангүй</string>
-    <string name="session_sheet_notifications_off_message">Эхлээд тохиргооноос мэдэгдлийг асаана уу.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Үргэлж мэдэгдэхийг асааж чадсангүй</string>
-    <string name="session_sheet_always_notify_off_failed_title">Үргэлж мэдэгдэхийг унтрааж чадсангүй</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Сервер файл дэмждэггүй</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Ачааж байна…</string>
     <string name="session_media_earlier_failed">Өмнөх мессежүүдийг ачаалж чадсангүй. Холболтоо шалгаад дахин оролдоно уу.</string>
     <string name="session_media_earlier_nothing_new">Дөнгөж ачаалсан мессежүүдэд шинэ зүйл алга. Үүнээс өмнөх мессежүүдэд байж магадгүй.</string>
+    <string name="session_bell_title">Мэдэгдэл</string>
+    <string name="session_bell_level_all">Бүх зүйл</string>
+    <string name="session_bell_level_attention">Зөвхөн би хэрэгтэй үед</string>
+    <string name="session_bell_level_none">Юу ч үгүй</string>
+    <string name="session_bell_mute_hour">1 цагийн турш мэдэгдэхгүй</string>
+    <string name="session_bell_mute_tomorrow">Маргааш өглөө хүртэл мэдэгдэхгүй</string>
+    <string name="session_bell_use_default">Энэ утасны сонголтыг ашиглах</string>
+    <string name="session_bell_source_own">Зөвхөн энэ утсанд тохируулсан.</string>
+    <string name="session_bell_source_own_until">Зөвхөн энэ утсанд %1$s хүртэл тохируулсан.</string>
+    <string name="session_bell_source_default">Серверт зориулсан энэ утасны сонголт. Энэ сессэд өөрчлөх бол нэгийг сонгоно уу.</string>
+    <string name="session_bell_source_shared">Өөр төхөөрөмжөөс тохируулсан. Энэ утсанд өөрчлөх бол нэгийг сонгоно уу.</string>
+    <string name="session_bell_source_shared_until">Өөр төхөөрөмжөөс %1$s хүртэл тохируулсан. Энэ утсанд өөрчлөх бол нэгийг сонгоно уу.</string>
+    <string name="session_bell_source_phone_paused">Энэ утсыг Тохиргоонд түр зогсоосон.</string>
+    <string name="session_bell_source_server_paused">Энэ серверээс ирэх бүх мэдэгдлийг түр зогсоосон.</string>
+    <string name="session_bell_source_server_paused_until">Энэ серверээс ирэх бүх мэдэгдлийг %1$s хүртэл түр зогсоосон.</string>
+    <string name="session_sheet_bell_failed_title">Мэдэгдлийг өөрчилж чадсангүй</string>
 </resources>

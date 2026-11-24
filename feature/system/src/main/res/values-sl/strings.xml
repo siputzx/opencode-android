@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Glasovni klici</string>
     <string name="system_channel_recording">Snemanje</string>
     <string name="system_channel_session_runs">Izvajanja sej</string>
-    <string name="system_channel_session_updates">Posodobitve sej</string>
+    <string name="system_channel_session_finished">Končane seje</string>
+    <string name="system_channel_session_questions">Vprašanja</string>
+    <string name="system_channel_session_permissions">Zahteve za dovoljenje</string>
+    <string name="system_channel_session_other">Druge posodobitve sej</string>
     <string name="system_channel_shared_items">Deljeni elementi</string>
 
     <!-- Share sheet: notifications -->

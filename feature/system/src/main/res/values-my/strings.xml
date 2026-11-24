@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">အသံခေါ်ဆိုမှုများ</string>
     <string name="system_channel_recording">အသံဖမ်းနေသည်</string>
     <string name="system_channel_session_runs">စက်ရှင် လုပ်ဆောင်မှုများ</string>
-    <string name="system_channel_session_updates">စက်ရှင် အပ်ဒိတ်များ</string>
+    <string name="system_channel_session_finished">ပြီးဆုံးသွားသော စက်ရှင်များ</string>
+    <string name="system_channel_session_questions">မေးခွန်းများ</string>
+    <string name="system_channel_session_permissions">ခွင့်ပြုချက် တောင်းဆိုမှုများ</string>
+    <string name="system_channel_session_other">အခြား စက်ရှင် အပ်ဒိတ်များ</string>
     <string name="system_channel_shared_items">မျှဝေထားသော အရာများ</string>
 
     <!-- Share sheet: notifications -->

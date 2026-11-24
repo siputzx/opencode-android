@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Дуут дуудлага</string>
     <string name="system_channel_recording">Дуу бичиж байна</string>
     <string name="system_channel_session_runs">Сессийн ажиллуулалт</string>
-    <string name="system_channel_session_updates">Сессийн шинэчлэлтүүд</string>
+    <string name="system_channel_session_finished">Дууссан сессүүд</string>
+    <string name="system_channel_session_questions">Асуултууд</string>
+    <string name="system_channel_session_permissions">Зөвшөөрлийн хүсэлтүүд</string>
+    <string name="system_channel_session_other">Сессийн бусад шинэчлэлт</string>
     <string name="system_channel_shared_items">Хуваалцсан зүйлс</string>
 
     <!-- Share sheet: notifications -->

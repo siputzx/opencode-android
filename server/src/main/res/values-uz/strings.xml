@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Bu ulash kodining muddati tugagan yoki u allaqachon ishlatilgan. `opencode pair --remote` buyrug‘ini qayta ishga tushiring.</string>
     <string name="server_error_pairing_unsupported">Bu server ulash havolalarini qo‘llamaydi. Kompyuteringizdagi OpenCode ilovasini yangilang yoki serverni qo‘lda kiriting.</string>
-    <string name="server_error_notification_previews_need_https">Shifrlangan bildirishnomalarni oldindan ko‘rish uchun serverga HTTPS orqali ulanish kerak.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Serverning yaroqli HTTP yoki HTTPS URL manzilini kiriting.</string>

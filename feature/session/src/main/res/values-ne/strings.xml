@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">खर्च</string>
     <string name="session_sheet_media">मिडिया</string>
     <string name="session_sheet_media_value">फाइलहरू र लिङ्कहरू</string>
-    <string name="session_always_notify">सधैं सूचना दिनुहोस्</string>
-    <string name="session_always_notify_message_phone">हरेक जवाफ तयार हुँदा यो फोनमा सूचना दिनुहोस्, सन्देश यहाँबाट नपठाएको भए पनि।</string>
-    <string name="session_always_notify_message_tablet">हरेक जवाफ तयार हुँदा यो ट्याब्लेटमा सूचना दिनुहोस्, सन्देश यहाँबाट नपठाएको भए पनि।</string>
     <string name="session_delete_session">सत्र मेटाउनुहोस्</string>
     <string name="session_rename_placeholder">शीर्षक</string>
     <string name="session_auto_rename">स्वतः पुन: नामाकरण</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">सत्र फोर्क गर्न सकिएन</string>
     <string name="session_sheet_save_export_failed">निर्यात बचत गर्न सकिएन</string>
     <string name="session_sheet_export_failed_title">सत्र निर्यात गर्न सकिएन</string>
-    <string name="session_sheet_notifications_off_message">पहिले सेटिङहरूमा सूचनाहरू चालु गर्नुहोस्।</string>
-    <string name="session_sheet_always_notify_on_failed_title">“सधैं सूचना दिनुहोस्” चालु गर्न सकिएन</string>
-    <string name="session_sheet_always_notify_off_failed_title">“सधैं सूचना दिनुहोस्” बन्द गर्न सकिएन</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">सर्भरले फाइलहरू समर्थन गर्दैन</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">लोड गर्दै…</string>
     <string name="session_media_earlier_failed">अघिल्ला सन्देशहरू लोड गर्न सकिएन। आफ्नो जडान जाँच गरेर फेरि प्रयास गर्नुहोस्।</string>
     <string name="session_media_earlier_nothing_new">भर्खरै लोड भएका सन्देशहरूमा यहाँ केही नयाँ छैन। अघिल्ला सन्देशहरूमा थप हुन सक्छ।</string>
+    <string name="session_bell_title">सूचनाहरू</string>
+    <string name="session_bell_level_all">सबै कुरा</string>
+    <string name="session_bell_level_attention">मेरो आवश्यकता पर्दा मात्र</string>
+    <string name="session_bell_level_none">केही पनि होइन</string>
+    <string name="session_bell_mute_hour">एक घण्टासम्म केही होइन</string>
+    <string name="session_bell_mute_tomorrow">भोलि बिहानसम्म केही होइन</string>
+    <string name="session_bell_use_default">यो फोनको छनोट प्रयोग गर्नुहोस्</string>
+    <string name="session_bell_source_own">यो फोनका लागि मात्र सेट गरिएको छ।</string>
+    <string name="session_bell_source_own_until">यो फोनका लागि मात्र %1$s सम्म सेट गरिएको छ।</string>
+    <string name="session_bell_source_default">सर्भरका लागि यो फोनको छनोट। यो सत्रका लागि बदल्न एउटा छान्नुहोस्।</string>
+    <string name="session_bell_source_shared">अर्को उपकरणबाट सेट गरिएको छ। यो फोनका लागि बदल्न एउटा छान्नुहोस्।</string>
+    <string name="session_bell_source_shared_until">अर्को उपकरणबाट %1$s सम्म सेट गरिएको छ। यो फोनका लागि बदल्न एउटा छान्नुहोस्।</string>
+    <string name="session_bell_source_phone_paused">यो फोन सेटिङहरूमा रोकिएको छ।</string>
+    <string name="session_bell_source_server_paused">यो सर्भरका सबै सूचनाहरू रोकिएका छन्।</string>
+    <string name="session_bell_source_server_paused_until">यो सर्भरका सबै सूचनाहरू %1$s सम्म रोकिएका छन्।</string>
+    <string name="session_sheet_bell_failed_title">सूचनाहरू बदल्न सकिएन</string>
 </resources>

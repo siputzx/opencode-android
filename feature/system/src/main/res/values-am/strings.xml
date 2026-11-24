@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">የድምፅ ጥሪዎች</string>
     <string name="system_channel_recording">በመቅዳት ላይ</string>
     <string name="system_channel_session_runs">የክፍለ ጊዜ ሂደቶች</string>
-    <string name="system_channel_session_updates">የክፍለ ጊዜ ዝማኔዎች</string>
+    <string name="system_channel_session_finished">የተጠናቀቁ ክፍለ ጊዜዎች</string>
+    <string name="system_channel_session_questions">ጥያቄዎች</string>
+    <string name="system_channel_session_permissions">የፈቃድ ጥያቄዎች</string>
+    <string name="system_channel_session_other">ሌሎች የክፍለ ጊዜ ዝማኔዎች</string>
     <string name="system_channel_shared_items">የተጋሩ ንጥሎች</string>
 
     <!-- Share sheet: notifications -->

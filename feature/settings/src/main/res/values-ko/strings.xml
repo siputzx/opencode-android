@@ -50,20 +50,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">알림</string>
     <string name="settings_notifications_device_header">이 %1$s</string>
-    <string name="settings_notifications_device_footer">알림은 아무것도 저장하지 않는 중계 서버를 거쳐요. 이 %1$s에서 시작한 세션만 이 기기로 알림을 보내요.</string>
+    <string name="settings_notifications_device_footer">알림은 아무것도 저장하지 않는 중계 서버를 거치며, 종단 간 암호화돼요.</string>
     <string name="settings_notifications_allow">알림 허용</string>
     <string name="settings_notifications_open_android_settings">Android 설정 열기</string>
     <string name="settings_notifications_turn_on">알림 켜기</string>
     <string name="settings_notifications_server_header">서버</string>
-    <string name="settings_notifications_set_up_footer">OpenCode에 플러그인 설치를 요청하는 세션을 열어요. 요청을 보낸 뒤 다시 확인해 주세요.</string>
-    <string name="settings_notifications_plugin_needed_footer">서버에 OpenCode notify 플러그인이 필요해요.</string>
-    <string name="settings_notifications_notify_plugin">알림 플러그인</string>
-    <string name="settings_notifications_plugin_installed">설치됨</string>
-    <string name="settings_notifications_plugin_not_running">실행 중 아님</string>
-    <string name="settings_notifications_plugin_not_installed">설치 안 됨</string>
-    <string name="settings_notifications_plugin_check_failed">상태를 확인할 수 없어요</string>
-    <string name="settings_notifications_set_up">OpenCode로 설정</string>
-    <string name="settings_notifications_check_again">다시 확인</string>
     <string name="settings_notifications_in_app_footer">탐색 패널 버튼에 표시돼요.</string>
     <string name="settings_notifications_in_app_notices">앱 내 공지사항</string>
 
@@ -220,4 +211,35 @@
     <string name="settings_pairing_point_camera">카메라로 QR 코드를 비추세요</string>
     <string name="settings_pairing_paste_link">페어링 링크 붙여넣기</string>
     <string name="settings_pairing_computer_hint">컴퓨터에서 OpenCode의 설정 → 페어링을 열거나 터미널에서 %1$s 명령을 실행하세요.</string>
+    <string name="settings_notifications_server_toggle">이 기기에서 알림 받기</string>
+    <string name="settings_notifications_mode">알림 받을 항목</string>
+    <string name="settings_notifications_mode_all">모든 알림</string>
+    <string name="settings_notifications_mode_all_caption">완료된 세션, 질문 및 권한 요청.</string>
+    <string name="settings_notifications_mode_attention">내 확인이 필요할 때만</string>
+    <string name="settings_notifications_mode_attention_caption">질문 및 권한 요청.</string>
+    <string name="settings_notifications_mode_from_this_phone">여기서 사용하는 세션만</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">이 %1$s에서 메시지를 보낸 세션의 모든 알림.</string>
+    <string name="settings_notifications_mode_none">알림 없음</string>
+    <string name="settings_notifications_status_checking">서버 확인 중…</string>
+    <string name="settings_notifications_status_no_permission">먼저 위에서 알림을 허용해 주세요.</string>
+    <string name="settings_notifications_status_outdated">알림을 사용하려면 이 서버의 OpenCode를 업데이트해야 해요.</string>
+    <string name="settings_notifications_status_relay">이 서버는 이 앱의 알림 중계 서버를 허용하지 않아요.</string>
+    <string name="settings_notifications_status_failed">이 서버에 알림을 설정할 수 없어요. 다시 연결되면 OpenCode가 다시 시도해요.</string>
+    <string name="settings_notifications_pause">모든 알림 일시 정지</string>
+    <string name="settings_notifications_pause_on">다시 켤 때까지</string>
+    <string name="settings_notifications_pause_until">%1$s까지</string>
+    <string name="settings_notifications_resume">다시 켜기</string>
+    <string name="settings_notifications_pause_hour">1시간 동안</string>
+    <string name="settings_notifications_pause_tomorrow">내일 아침까지</string>
+    <string name="settings_notifications_pause_forever">직접 다시 켤 때까지</string>
+    <string name="settings_notifications_pause_footer">일시 정지하면 모든 기기에서 이 서버의 알림이 중지돼요.</string>
+    <string name="settings_notifications_devices_header">기기</string>
+    <string name="settings_notifications_device_this">%1$s (이 기기)</string>
+    <string name="settings_notifications_device_on">켜짐</string>
+    <string name="settings_notifications_device_paused">일시 정지됨</string>
+    <string name="settings_notifications_device_remove">제거</string>
+    <string name="settings_notifications_pause_failed_title">일시 정지 설정을 변경할 수 없어요</string>
+    <string name="settings_notifications_device_failed_title">기기 설정을 변경할 수 없어요</string>
+    <string name="settings_notifications_device_remove_failed_title">기기를 제거할 수 없어요</string>
+    <string name="settings_notifications_change_failed_message">서버에서 변경 사항을 적용하지 못했어요.</string>
 </resources>

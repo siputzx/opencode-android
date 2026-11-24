@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">語音通話</string>
     <string name="system_channel_recording">錄音中</string>
     <string name="system_channel_session_runs">工作階段執行</string>
-    <string name="system_channel_session_updates">工作階段更新</string>
+    <string name="system_channel_session_finished">已完成的工作階段</string>
+    <string name="system_channel_session_questions">問題</string>
+    <string name="system_channel_session_permissions">權限要求</string>
+    <string name="system_channel_session_other">其他工作階段更新</string>
     <string name="system_channel_shared_items">分享的項目</string>
 
     <!-- Share sheet: notifications -->

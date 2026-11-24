@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">დაწყვილების კოდს ვადა გაუვიდა ან უკვე გამოყენებულია. ხელახლა გაუშვით `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">ამ სერვერს დაწყვილების ბმულების მხარდაჭერა არ აქვს. განაახლეთ OpenCode კომპიუტერზე ან ხელით დაამატეთ სერვერი.</string>
-    <string name="server_error_notification_previews_need_https">შეტყობინებების დაშიფრული გადახედვისთვის საჭიროა სერვერთან HTTPS კავშირი.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">შეიყვანეთ სერვერის სწორი HTTP ან HTTPS URL.</string>

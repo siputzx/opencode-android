@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Apeluri vocale</string>
     <string name="system_channel_recording">Înregistrare</string>
     <string name="system_channel_session_runs">Rulări de sesiuni</string>
-    <string name="system_channel_session_updates">Actualizări ale sesiunilor</string>
+    <string name="system_channel_session_finished">Sesiuni încheiate</string>
+    <string name="system_channel_session_questions">Întrebări</string>
+    <string name="system_channel_session_permissions">Cereri de permisiune</string>
+    <string name="system_channel_session_other">Alte actualizări de sesiune</string>
     <string name="system_channel_shared_items">Elemente distribuite</string>
 
     <!-- Share sheet: notifications -->

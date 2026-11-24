@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">ཆ་སྒྲིག་ཨང་རྟགས་འདི་དུས་ཡོལ་སོང་ནུག་ ཡང་ན་ ཧེ་མ་ལས་ལག་ལེན་འཐབ་ནུག། `opencode pair --remote` ལོག་གཡོག་བཀོལ།</string>
     <string name="server_error_pairing_unsupported">སར་བར་འདི་གིས་ཆ་སྒྲིག་འབྲེལ་མཐུད་ལུ་རྒྱབ་སྐྱོར་མི་འབད། ཁྱོད་རའི་གློག་རིག་ནང་ OpenCode དུས་མཐུན་བཟོ་ ཡང་ན་ སར་བར་ལག་ཐོག་ལས་བཙུགས།</string>
-    <string name="server_error_notification_previews_need_https">གསང་སྒྱུར་འབད་ཡོད་པའི་བརྡ་བསྐུལ་སྔོན་ལྟ་ལུ་ HTTPS སར་བར་མཐུད་ལམ་དགོ།</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">ནུས་ཅན་གྱི་ HTTP ཡང་ན་ HTTPS སར་བར་ URL བཙུགས།</string>

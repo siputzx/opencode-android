@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Çykdajy</string>
     <string name="session_sheet_media">Media</string>
     <string name="session_sheet_media_value">Faýllar we baglanyşyklar</string>
-    <string name="session_always_notify">Elmydama habar ber</string>
-    <string name="session_always_notify_message_phone">Her jogap taýýar bolanda, hatda habar bu ýerden iberilmedik bolsa-da, bu telefona bildiriş iber.</string>
-    <string name="session_always_notify_message_tablet">Her jogap taýýar bolanda, hatda habar bu ýerden iberilmedik bolsa-da, bu planşete bildiriş iber.</string>
     <string name="session_delete_session">Sessiýany poz</string>
     <string name="session_rename_placeholder">At</string>
     <string name="session_auto_rename">Adyny awtomatik üýtgetmek</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Sessiýany şahalandyryp bolmady</string>
     <string name="session_sheet_save_export_failed">Eksporty saklap bolmady</string>
     <string name="session_sheet_export_failed_title">Sessiýany eksport edip bolmady</string>
-    <string name="session_sheet_notifications_off_message">Ilki Sazlamalarda bildirişleri açyň.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Elmydama habar bermegi açyp bolmady</string>
-    <string name="session_sheet_always_notify_off_failed_title">Elmydama habar bermegi öçürip bolmady</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Serwer faýllary goldamaýar</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Ýüklenýär…</string>
     <string name="session_media_earlier_failed">Öňki habarlary ýükläp bolmady. Baglanyşygyňyzy barlap, täzeden synanyşyň.</string>
     <string name="session_media_earlier_nothing_new">Täze ýüklenen habarlarda bu ýerde täzelik ýok. Has öňkülerde has köp zat bolmagy mümkin.</string>
+    <string name="session_bell_title">Bildirişler</string>
+    <string name="session_bell_level_all">Ählisi</string>
+    <string name="session_bell_level_attention">Diňe men gerek bolanda</string>
+    <string name="session_bell_level_none">Hiç zat</string>
+    <string name="session_bell_mute_hour">Bir sagatlap hiç zat</string>
+    <string name="session_bell_mute_tomorrow">Ertir irdene çenli hiç zat</string>
+    <string name="session_bell_use_default">Bu telefonyň saýlawyny ulan</string>
+    <string name="session_bell_source_own">Diňe bu telefon üçin sazlandy.</string>
+    <string name="session_bell_source_own_until">Diňe bu telefon üçin %1$s çenli sazlandy.</string>
+    <string name="session_bell_source_default">Bu telefonyň serwer üçin saýlawy. Bu sessiýada üýtgetmek üçin birini saýlaň.</string>
+    <string name="session_bell_source_shared">Başga enjamdan sazlandy. Bu telefonda üýtgetmek üçin birini saýlaň.</string>
+    <string name="session_bell_source_shared_until">Başga enjamdan %1$s çenli sazlandy. Bu telefonda üýtgetmek üçin birini saýlaň.</string>
+    <string name="session_bell_source_phone_paused">Bu telefon Sazlamalarda wagtlaýyn togtadyldy.</string>
+    <string name="session_bell_source_server_paused">Bu serwerden gelýän ähli bildirişler wagtlaýyn togtadyldy.</string>
+    <string name="session_bell_source_server_paused_until">Bu serwerden gelýän ähli bildirişler %1$s çenli wagtlaýyn togtadyldy.</string>
+    <string name="session_sheet_bell_failed_title">Bildirişleri üýtgedip bolmady</string>
 </resources>

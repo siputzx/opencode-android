@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">费用</string>
     <string name="session_sheet_media">媒体</string>
     <string name="session_sheet_media_value">文件和链接</string>
-    <string name="session_always_notify">始终通知</string>
-    <string name="session_always_notify_message_phone">每次回复完成时都通知这台手机，即使消息不是从这里发送的。</string>
-    <string name="session_always_notify_message_tablet">每次回复完成时都通知这台平板，即使消息不是从这里发送的。</string>
     <string name="session_delete_session">删除会话</string>
     <string name="session_rename_placeholder">标题</string>
     <string name="session_auto_rename">自动重命名</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">无法创建分支会话</string>
     <string name="session_sheet_save_export_failed">无法保存导出文件</string>
     <string name="session_sheet_export_failed_title">无法导出会话</string>
-    <string name="session_sheet_notifications_off_message">请先在设置中开启通知。</string>
-    <string name="session_sheet_always_notify_on_failed_title">无法开启始终通知</string>
-    <string name="session_sheet_always_notify_off_failed_title">无法关闭始终通知</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">服务器不支持文件</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">加载中…</string>
     <string name="session_media_earlier_failed">无法加载更早的消息。请检查网络连接后重试。</string>
     <string name="session_media_earlier_nothing_new">刚加载的消息中没有新内容，更早的消息里可能还有。</string>
+    <string name="session_bell_title">通知</string>
+    <string name="session_bell_level_all">全部通知</string>
+    <string name="session_bell_level_attention">仅在需要我时</string>
+    <string name="session_bell_level_none">不通知</string>
+    <string name="session_bell_mute_hour">1 小时内不通知</string>
+    <string name="session_bell_mute_tomorrow">明早之前不通知</string>
+    <string name="session_bell_use_default">使用此手机的设置</string>
+    <string name="session_bell_source_own">仅为此手机设置。</string>
+    <string name="session_bell_source_own_until">仅为此手机设置，直到 %1$s。</string>
+    <string name="session_bell_source_default">此手机对该服务器的设置。选择一项即可为此会话更改。</string>
+    <string name="session_bell_source_shared">由其他设备设置。选择一项即可为此手机更改。</string>
+    <string name="session_bell_source_shared_until">由其他设备设置，直到 %1$s。选择一项即可为此手机更改。</string>
+    <string name="session_bell_source_phone_paused">此手机的通知已在设置中暂停。</string>
+    <string name="session_bell_source_server_paused">此服务器的所有通知已暂停。</string>
+    <string name="session_bell_source_server_paused_until">此服务器的所有通知已暂停，直到 %1$s。</string>
+    <string name="session_sheet_bell_failed_title">无法更改通知</string>
 </resources>

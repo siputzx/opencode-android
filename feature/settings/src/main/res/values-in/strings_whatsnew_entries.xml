@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">Minta diagram alir tentang cara pesan dikirim</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">Buat diagram alir tentang cara pesan dikirim</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">Beri tahu saat selesai</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">Dapatkan notifikasi saat sesi yang Anda mulai di sini selesai, beserta ringkasan singkat hasilnya.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">Aktifkan Selalu beri notifikasi di panel sesi untuk mendapat notifikasi setiap balasan, termasuk yang dimulai di komputer.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">Ketuk notifikasi untuk membuka sesinya.</string>
-    <string name="settings_whatsnew_entry_always_notify_example">Kirim pesan, lalu kunci ponsel</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">Ganti server</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">Server yang digunakan menjadi judul panel samping. Ketuk untuk beralih ke server lain atau menambahkan server.</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">Sesi tetap ada meski folder hilang</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">Jika folder sesi sudah tidak ada, misalnya ruang kerja yang dihapus, pengiriman yang gagal akan menawarkan pemindahan sesi ke folder proyeknya, lalu mengirim ulang.</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">Siapkan notifikasi dengan OpenCode</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">Di Pengaturan → Notifikasi, ketuk Siapkan dengan OpenCode untuk meninjau prompt yang memasang plugin notifikasi yang belum ada.</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">Kartu panggilan mengisi bagian bawah</string>

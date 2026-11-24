@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Teavitused</string>
     <string name="settings_notifications_device_header">See %1$s</string>
-    <string name="settings_notifications_device_footer">Teavitused liiguvad läbi vahendusserveri, mis ei salvesta midagi. Siia saadavad teavitusi ainult seadmes %1$s alustatud seansid.</string>
+    <string name="settings_notifications_device_footer">Teavitused liiguvad läbi vahendusserveri, mis midagi ei salvesta, ja on otsast lõpuni krüptitud.</string>
     <string name="settings_notifications_allow">Luba teavitused</string>
     <string name="settings_notifications_open_android_settings">Ava Androidi seaded</string>
     <string name="settings_notifications_turn_on">Lülita teavitused sisse</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_set_up_footer">Avab seansi, kus palutakse OpenCode\'il plugin paigaldada. Saada sõnum ja kontrolli siis uuesti.</string>
-    <string name="settings_notifications_plugin_needed_footer">Server vajab OpenCode notify pluginat.</string>
-    <string name="settings_notifications_notify_plugin">Notify plugin</string>
-    <string name="settings_notifications_plugin_installed">Paigaldatud</string>
-    <string name="settings_notifications_plugin_not_running">Ei tööta</string>
-    <string name="settings_notifications_plugin_not_installed">Paigaldamata</string>
-    <string name="settings_notifications_plugin_check_failed">Oleku kontroll ebaõnnestus</string>
-    <string name="settings_notifications_set_up">Seadista OpenCode\'iga</string>
-    <string name="settings_notifications_check_again">Kontrolli uuesti</string>
     <string name="settings_notifications_in_app_footer">Näidatakse külgpaneeli nupul.</string>
     <string name="settings_notifications_in_app_notices">Rakendusesisesed märkused</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Suuna kaamera QR-koodile</string>
     <string name="settings_pairing_paste_link">Kleebi sidumislink</string>
     <string name="settings_pairing_computer_hint">Ava arvutis OpenCode’i Seaded → Sidumine või käivita terminalis %1$s.</string>
+    <string name="settings_notifications_server_toggle">Teavita seda seadet</string>
+    <string name="settings_notifications_mode">Millest teavitada</string>
+    <string name="settings_notifications_mode_all">Kõik</string>
+    <string name="settings_notifications_mode_all_caption">Lõpetatud seansid, küsimused ja loataotlused.</string>
+    <string name="settings_notifications_mode_attention">Ainult siis, kui mind on vaja</string>
+    <string name="settings_notifications_mode_attention_caption">Küsimused ja loataotlused.</string>
+    <string name="settings_notifications_mode_from_this_phone">Ainult seansid, mida siin kasutan</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Kõik seanssidest, kuhu saadad sõnumeid siit (%1$s).</string>
+    <string name="settings_notifications_mode_none">Mitte midagi</string>
+    <string name="settings_notifications_status_checking">Serveri kontrollimine…</string>
+    <string name="settings_notifications_status_no_permission">Luba esmalt ülalpool teavitused.</string>
+    <string name="settings_notifications_status_outdated">See server vajab teavituste jaoks OpenCode\'i uuendust.</string>
+    <string name="settings_notifications_status_relay">See server ei aktsepteeri selle rakenduse teavituste vahendusserverit.</string>
+    <string name="settings_notifications_status_failed">Selles serveris ei õnnestunud teavitusi seadistada. OpenCode proovib uuesti, kui ühendus taastub.</string>
+    <string name="settings_notifications_pause">Peata kõik teavitused</string>
+    <string name="settings_notifications_pause_on">Kuni jätkamiseni</string>
+    <string name="settings_notifications_pause_until">Kuni %1$s</string>
+    <string name="settings_notifications_resume">Jätka</string>
+    <string name="settings_notifications_pause_hour">Tunniks</string>
+    <string name="settings_notifications_pause_tomorrow">Kuni homse hommikuni</string>
+    <string name="settings_notifications_pause_forever">Kuni ise jätkan</string>
+    <string name="settings_notifications_pause_footer">Peatamine lülitab selle serveri teavitused kõigis seadmetes välja.</string>
+    <string name="settings_notifications_devices_header">Seadmed</string>
+    <string name="settings_notifications_device_this">%1$s (see seade)</string>
+    <string name="settings_notifications_device_on">Sees</string>
+    <string name="settings_notifications_device_paused">Peatatud</string>
+    <string name="settings_notifications_device_remove">Eemalda</string>
+    <string name="settings_notifications_pause_failed_title">Pausi ei õnnestunud muuta</string>
+    <string name="settings_notifications_device_failed_title">Seadet ei õnnestunud muuta</string>
+    <string name="settings_notifications_device_remove_failed_title">Seadet ei õnnestunud eemaldada</string>
+    <string name="settings_notifications_change_failed_message">Server ei võtnud muudatust vastu.</string>
 </resources>

@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">Խնդրեք հաղորդագրության ուղարկման բլոկ-սխեմա</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">Գծիր հաղորդագրության ուղարկման բլոկ-սխեմա</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">Ծանուցել ավարտի մասին</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">Այստեղ սկսած նիստի աշխատանքն ավարտվելիս ստացեք ծանուցում՝ կատարվածի կարճ ամփոփմամբ։</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">Նիստի վահանակում միացրեք «Միշտ ծանուցել»՝ ամեն պատասխանի մասին տեղեկանալու համար, նույնիսկ եթե հարցումն ուղարկել եք համակարգչից։</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">Հպեք ծանուցմանը՝ համապատասխան նիստը բացելու համար։</string>
-    <string name="settings_whatsnew_entry_always_notify_example">Ուղարկեք հաղորդագրություն, ապա կողպեք հեռախոսը</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">Փոխել սերվերը</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">Կողային վահանակի վերնագիրը ընթացիկ սերվերի անունն է։ Հպեք դրան՝ այլ սերվերի անցնելու կամ նորը ավելացնելու համար։</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">Նիստերը մնում են առանց թղթապանակի էլ</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">Եթե նիստի թղթապանակն այլևս չկա, օրինակ՝ աշխատանքային տարածքը ջնջվել է, չհաջողված ուղարկումից հետո առաջարկվում է նիստը տեղափոխել նախագծի թղթապանակ և կրկին ուղարկել։</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">Կարգավորեք ծանուցումները OpenCode-ով</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">Կարգավորումներ → Ծանուցումներ բաժնում հպեք «Կարգավորել OpenCode-ով»՝ վերանայելու հուշումը, որը տեղադրում է ծանուցումների բացակայող ընդլայնումը։</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">Զանգի քարտը զբաղեցնում է ներքևի մասը</string>

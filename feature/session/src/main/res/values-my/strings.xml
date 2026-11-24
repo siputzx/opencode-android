@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">ကုန်ကျစရိတ်</string>
     <string name="session_sheet_media">မီဒီယာ</string>
     <string name="session_sheet_media_value">ဖိုင်များနှင့် လင့်ခ်များ</string>
-    <string name="session_always_notify">အမြဲအသိပေးပါ</string>
-    <string name="session_always_notify_message_phone">ဤဖုန်းမှ မပို့ထားသည့် မက်ဆေ့ဂျ်များအတွက်ပါ ပြန်စာပြီးတိုင်း ဤဖုန်းကို အသိပေးပါ။</string>
-    <string name="session_always_notify_message_tablet">ဤတက်ဘလက်မှ မပို့ထားသည့် မက်ဆေ့ဂျ်များအတွက်ပါ ပြန်စာပြီးတိုင်း ဤတက်ဘလက်ကို အသိပေးပါ။</string>
     <string name="session_delete_session">စက်ရှင်ကို ဖျက်ပါ။</string>
     <string name="session_rename_placeholder">ခေါင်းစဉ်</string>
     <string name="session_auto_rename">အလိုအလျောက် အမည်ပြောင်း</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">စက်ရှင် မခွဲနိုင်ပါ</string>
     <string name="session_sheet_save_export_failed">ထုတ်ယူထားသည်ကို မသိမ်းဆည်းနိုင်ပါ</string>
     <string name="session_sheet_export_failed_title">စက်ရှင်ကို မထုတ်ယူနိုင်ပါ</string>
-    <string name="session_sheet_notifications_off_message">ဆက်တင်များတွင် အကြောင်းကြားချက်များကို အရင်ဖွင့်ပါ။</string>
-    <string name="session_sheet_always_notify_on_failed_title">အမြဲအသိပေးခြင်းကို မဖွင့်နိုင်ပါ</string>
-    <string name="session_sheet_always_notify_off_failed_title">အမြဲအသိပေးခြင်းကို မပိတ်နိုင်ပါ</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">ဆာဗာက ဖိုင်များကို လက်မခံပါ</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">တင်နေသည်…</string>
     <string name="session_media_earlier_failed">အစောပိုင်း မက်ဆေ့ဂျ်များကို မဖွင့်နိုင်ပါ။ သင့်ချိတ်ဆက်မှုကို စစ်ပြီး ပြန်ကြိုးစားပါ။</string>
     <string name="session_media_earlier_nothing_new">ယခုလေးတင် ဖွင့်ထားသော မက်ဆေ့ဂျ်များတွင် အသစ်ဘာမှ မရှိပါ။ ပိုစောသော မက်ဆေ့ဂျ်များတွင် ရှိနိုင်ပါသည်။</string>
+    <string name="session_bell_title">အကြောင်းကြားချက်များ</string>
+    <string name="session_bell_level_all">အရာအားလုံး</string>
+    <string name="session_bell_level_attention">သင့်ကို လိုအပ်သည့်အခါမှသာ</string>
+    <string name="session_bell_level_none">အကြောင်းမကြားပါ</string>
+    <string name="session_bell_mute_hour">တစ်နာရီကြာ အကြောင်းမကြားပါ</string>
+    <string name="session_bell_mute_tomorrow">မနက်ဖြန် မနက်အထိ အကြောင်းမကြားပါ</string>
+    <string name="session_bell_use_default">ဤဖုန်း၏ ရွေးချယ်မှုကို သုံးပါ</string>
+    <string name="session_bell_source_own">ဤဖုန်းအတွက်သာ သတ်မှတ်ထားသည်။</string>
+    <string name="session_bell_source_own_until">ဤဖုန်းအတွက်သာ %1$s အထိ သတ်မှတ်ထားသည်။</string>
+    <string name="session_bell_source_default">ဆာဗာအတွက် ဤဖုန်း၏ ရွေးချယ်မှုဖြစ်သည်။ ဤစက်ရှင်အတွက် ပြောင်းလဲရန် တစ်ခုကို ရွေးပါ။</string>
+    <string name="session_bell_source_shared">အခြားစက်မှ သတ်မှတ်ထားသည်။ ဤဖုန်းအတွက် ပြောင်းလဲရန် တစ်ခုကို ရွေးပါ။</string>
+    <string name="session_bell_source_shared_until">အခြားစက်မှ %1$s အထိ သတ်မှတ်ထားသည်။ ဤဖုန်းအတွက် ပြောင်းလဲရန် တစ်ခုကို ရွေးပါ။</string>
+    <string name="session_bell_source_phone_paused">ဤဖုန်းကို ဆက်တင်များတွင် ခဏရပ်ထားသည်။</string>
+    <string name="session_bell_source_server_paused">ဤဆာဗာမှ အကြောင်းကြားချက်အားလုံးကို ခဏရပ်ထားသည်။</string>
+    <string name="session_bell_source_server_paused_until">ဤဆာဗာမှ အကြောင်းကြားချက်အားလုံးကို %1$s အထိ ခဏရပ်ထားသည်။</string>
+    <string name="session_sheet_bell_failed_title">အကြောင်းကြားချက်များကို မပြောင်းလဲနိုင်ပါ</string>
 </resources>

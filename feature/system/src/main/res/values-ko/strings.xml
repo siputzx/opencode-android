@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">음성 통화</string>
     <string name="system_channel_recording">녹음 중</string>
     <string name="system_channel_session_runs">세션 실행</string>
-    <string name="system_channel_session_updates">세션 업데이트</string>
+    <string name="system_channel_session_finished">완료된 세션</string>
+    <string name="system_channel_session_questions">질문</string>
+    <string name="system_channel_session_permissions">권한 요청</string>
+    <string name="system_channel_session_other">기타 세션 업데이트</string>
     <string name="system_channel_shared_items">공유 항목</string>
 
     <!-- Share sheet: notifications -->

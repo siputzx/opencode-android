@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">ลองขอผังงานแสดงขั้นตอนการส่งข้อความ</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">วาดผังงานแสดงขั้นตอนการส่งข้อความ</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">แจ้งเตือนเมื่อเสร็จ</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">รับการแจ้งเตือนเมื่อเซสชันที่คุณเริ่มจากที่นี่ทำงานเสร็จ พร้อมสรุปสั้น ๆ ว่าทำอะไรไปบ้าง</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">เปิดแจ้งเตือนเสมอในแผงเซสชัน เพื่อรับการแจ้งเตือนทุกคำตอบ แม้จะเริ่มจากคอมพิวเตอร์</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">แตะการแจ้งเตือนเพื่อเปิดเซสชันนั้น</string>
-    <string name="settings_whatsnew_entry_always_notify_example">ส่งข้อความ แล้วล็อกมือถือ</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">สลับเซิร์ฟเวอร์</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">ชื่อเซิร์ฟเวอร์ที่ใช้อยู่แสดงเป็นหัวข้อแถบด้านข้าง แตะเพื่อสลับไปเซิร์ฟเวอร์อื่นหรือเพิ่มเซิร์ฟเวอร์</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">โฟลเดอร์หาย เซสชันยังอยู่</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">เมื่อโฟลเดอร์ของเซสชันหายไป เช่น พื้นที่ทำงานถูกลบ หากส่งไม่สำเร็จ แอปจะเสนอให้ย้ายเซสชันไปยังโฟลเดอร์ของโปรเจกต์แล้วส่งอีกครั้ง</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">ตั้งค่าการแจ้งเตือนด้วย OpenCode</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">ใน การตั้งค่า → การแจ้งเตือน แตะตั้งค่าด้วย OpenCode เพื่อตรวจสอบพรอมต์ที่จะติดตั้งปลั๊กอินการแจ้งเตือนที่ยังไม่มี</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">การ์ดการโทรเต็มพื้นที่ด้านล่าง</string>

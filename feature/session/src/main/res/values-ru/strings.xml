@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Стоимость</string>
     <string name="session_sheet_media">Медиа</string>
     <string name="session_sheet_media_value">Файлы и ссылки</string>
-    <string name="session_always_notify">Всегда уведомлять</string>
-    <string name="session_always_notify_message_phone">Уведомлять на этом телефоне о каждом готовом ответе, даже на запросы с других устройств.</string>
-    <string name="session_always_notify_message_tablet">Уведомлять на этом планшете о каждом готовом ответе, даже на запросы с других устройств.</string>
     <string name="session_delete_session">Удалить сессию</string>
     <string name="session_rename_placeholder">Название</string>
     <string name="session_auto_rename">Назвать автоматически</string>
@@ -287,9 +284,6 @@
     <string name="session_sheet_fork_failed_title">Не удалось создать ответвление сессии</string>
     <string name="session_sheet_save_export_failed">Не удалось сохранить экспорт</string>
     <string name="session_sheet_export_failed_title">Не удалось экспортировать сессию</string>
-    <string name="session_sheet_notifications_off_message">Сначала включите уведомления в настройках.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Не удалось включить «Всегда уведомлять»</string>
-    <string name="session_sheet_always_notify_off_failed_title">Не удалось выключить «Всегда уведомлять»</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Сервер не поддерживает файлы</string>
@@ -353,4 +347,20 @@
     <string name="session_media_loading_earlier">Загрузка…</string>
     <string name="session_media_earlier_failed">Не удалось загрузить предыдущий вывод. Проверьте подключение и попробуйте снова.</string>
     <string name="session_media_earlier_nothing_new">В только что загруженном выводе ничего нового. Возможно, что-то есть в более раннем.</string>
+    <string name="session_bell_title">Уведомления</string>
+    <string name="session_bell_level_all">Всё</string>
+    <string name="session_bell_level_attention">Только когда нужно внимание</string>
+    <string name="session_bell_level_none">Ничего</string>
+    <string name="session_bell_mute_hour">Без уведомлений на час</string>
+    <string name="session_bell_mute_tomorrow">Без уведомлений до завтрашнего утра</string>
+    <string name="session_bell_use_default">Использовать настройку этого телефона</string>
+    <string name="session_bell_source_own">Задано только для этого телефона.</string>
+    <string name="session_bell_source_own_until">Задано только для этого телефона до %1$s.</string>
+    <string name="session_bell_source_default">Настройка этого телефона для сервера. Выберите вариант, чтобы изменить её для этой сессии.</string>
+    <string name="session_bell_source_shared">Задано с другого устройства. Выберите вариант, чтобы изменить настройку для этого телефона.</string>
+    <string name="session_bell_source_shared_until">Задано с другого устройства до %1$s. Выберите вариант, чтобы изменить настройку для этого телефона.</string>
+    <string name="session_bell_source_phone_paused">Этот телефон на паузе в настройках.</string>
+    <string name="session_bell_source_server_paused">Все уведомления от этого сервера на паузе.</string>
+    <string name="session_bell_source_server_paused_until">Все уведомления от этого сервера на паузе до %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Не удалось изменить уведомления</string>
 </resources>

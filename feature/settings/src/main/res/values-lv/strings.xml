@@ -52,20 +52,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Paziņojumi</string>
     <string name="settings_notifications_device_header">Šī ierīce (%1$s)</string>
-    <string name="settings_notifications_device_footer">Paziņojumi tiek pārsūtīti caur starpniekserveri, kas neko nesaglabā. Šī ierīce (%1$s) saņem paziņojumus tikai par tajā sāktām sesijām.</string>
+    <string name="settings_notifications_device_footer">Paziņojumi iet caur starpniekserveri, kas neko neglabā, un ir šifrēti no gala līdz galam.</string>
     <string name="settings_notifications_allow">Atļaut paziņojumus</string>
     <string name="settings_notifications_open_android_settings">Atvērt Android iestatījumus</string>
     <string name="settings_notifications_turn_on">Ieslēgt paziņojumus</string>
     <string name="settings_notifications_server_header">Serveris</string>
-    <string name="settings_notifications_set_up_footer">Atver sesiju ar lūgumu OpenCode instalēt spraudni. Nosūti ziņu un pārbaudi vēlreiz.</string>
-    <string name="settings_notifications_plugin_needed_footer">Serverim nepieciešams OpenCode paziņojumu spraudnis.</string>
-    <string name="settings_notifications_notify_plugin">Paziņojumu spraudnis</string>
-    <string name="settings_notifications_plugin_installed">Instalēts</string>
-    <string name="settings_notifications_plugin_not_running">Nedarbojas</string>
-    <string name="settings_notifications_plugin_not_installed">Nav instalēts</string>
-    <string name="settings_notifications_plugin_check_failed">Neizdevās pārbaudīt statusu</string>
-    <string name="settings_notifications_set_up">Iestatīt ar OpenCode</string>
-    <string name="settings_notifications_check_again">Pārbaudīt vēlreiz</string>
     <string name="settings_notifications_in_app_footer">Redzami uz sānu paneļa pogas.</string>
     <string name="settings_notifications_in_app_notices">Paziņojumi lietotnē</string>
 
@@ -226,4 +217,35 @@
     <string name="settings_pairing_point_camera">Pavērs kameru pret QR kodu</string>
     <string name="settings_pairing_paste_link">Ielīmēt savienošanas saiti</string>
     <string name="settings_pairing_computer_hint">Datorā atver OpenCode sadaļu Iestatījumi → Savienošana pārī vai terminālī palaid %1$s.</string>
+    <string name="settings_notifications_server_toggle">Paziņot šajā ierīcē</string>
+    <string name="settings_notifications_mode">Par ko paziņot</string>
+    <string name="settings_notifications_mode_all">Viss</string>
+    <string name="settings_notifications_mode_all_caption">Pabeigtas sesijas, jautājumi un atļauju pieprasījumi.</string>
+    <string name="settings_notifications_mode_attention">Tikai kad nepieciešama uzmanība</string>
+    <string name="settings_notifications_mode_attention_caption">Jautājumi un atļauju pieprasījumi.</string>
+    <string name="settings_notifications_mode_from_this_phone">Tikai sesijas, ko lietoju šeit</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Viss no sesijām, uz kurām sūti ziņas no šīs ierīces (%1$s).</string>
+    <string name="settings_notifications_mode_none">Nekas</string>
+    <string name="settings_notifications_status_checking">Pārbauda serveri…</string>
+    <string name="settings_notifications_status_no_permission">Vispirms atļauj paziņojumus augstāk.</string>
+    <string name="settings_notifications_status_outdated">Lai darbotos paziņojumi, šajā serverī jāatjaunina OpenCode.</string>
+    <string name="settings_notifications_status_relay">Šis serveris nepieņem šīs lietotnes paziņojumu starpniekserveri.</string>
+    <string name="settings_notifications_status_failed">Neizdevās iestatīt paziņojumus šajā serverī. OpenCode mēģinās vēlreiz, kad atkal savienosies.</string>
+    <string name="settings_notifications_pause">Pauzēt visus paziņojumus</string>
+    <string name="settings_notifications_pause_on">Līdz atsākšanai</string>
+    <string name="settings_notifications_pause_until">Līdz %1$s</string>
+    <string name="settings_notifications_resume">Atsākt</string>
+    <string name="settings_notifications_pause_hour">Uz stundu</string>
+    <string name="settings_notifications_pause_tomorrow">Līdz rītdienas rītam</string>
+    <string name="settings_notifications_pause_forever">Līdz atsākšu</string>
+    <string name="settings_notifications_pause_footer">Pauzēšana aptur paziņojumus no šī servera visās ierīcēs.</string>
+    <string name="settings_notifications_devices_header">Ierīces</string>
+    <string name="settings_notifications_device_this">%1$s (šī ierīce)</string>
+    <string name="settings_notifications_device_on">Ieslēgts</string>
+    <string name="settings_notifications_device_paused">Pauzēts</string>
+    <string name="settings_notifications_device_remove">Noņemt</string>
+    <string name="settings_notifications_pause_failed_title">Neizdevās mainīt pauzi</string>
+    <string name="settings_notifications_device_failed_title">Neizdevās mainīt ierīci</string>
+    <string name="settings_notifications_device_remove_failed_title">Neizdevās noņemt ierīci</string>
+    <string name="settings_notifications_change_failed_message">Serveris nepieņēma izmaiņas.</string>
 </resources>

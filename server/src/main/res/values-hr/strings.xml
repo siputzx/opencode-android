@@ -113,7 +113,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Ovaj kod za uparivanje je istekao ili je već iskorišten. Ponovno pokrenite `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">Ovaj poslužitelj ne podržava veze za uparivanje. Ažurirajte OpenCode na računalu ili ručno unesite poslužitelj.</string>
-    <string name="server_error_notification_previews_need_https">Za šifrirane preglede obavijesti potrebna je HTTPS veza s poslužiteljem.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Unesite valjani HTTP ili HTTPS URL poslužitelja.</string>

@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Kostnaður</string>
     <string name="session_sheet_media">Miðlar</string>
     <string name="session_sheet_media_value">Fílur og leinkjur</string>
-    <string name="session_always_notify">Boða altíð frá</string>
-    <string name="session_always_notify_message_phone">Boða frá á hesi telefonini, tá ið eitt svar er liðugt, eisini tá ið boðini ikki vórðu send hiðani.</string>
-    <string name="session_always_notify_message_tablet">Boða frá á hesum teldlinum, tá ið eitt svar er liðugt, eisini tá ið boðini ikki vórðu send hiðani.</string>
     <string name="session_delete_session">Strika setu</string>
     <string name="session_rename_placeholder">Heiti</string>
     <string name="session_auto_rename">Umnevna sjálvvirkandi</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Kundi ikki greina setuna</string>
     <string name="session_sheet_save_export_failed">Kundi ikki goyma útflutningin</string>
     <string name="session_sheet_export_failed_title">Kundi ikki útflyta setuna</string>
-    <string name="session_sheet_notifications_off_message">Tendra fyrst fráboðanir í innstillingum.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Kundi ikki tendra „Boða altíð frá“</string>
-    <string name="session_sheet_always_notify_off_failed_title">Kundi ikki sløkkja „Boða altíð frá“</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Ambætarin stuðlar ikki fílum</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Heintar…</string>
     <string name="session_media_earlier_failed">Kundi ikki heinta eldri boð. Kanna sambandið og royn aftur.</string>
     <string name="session_media_earlier_nothing_new">Einki nýtt her í boðunum, sum júst vórðu heintað. Eldri boð kunnu hava meira.</string>
+    <string name="session_bell_title">Fráboðanir</string>
+    <string name="session_bell_level_all">Alt</string>
+    <string name="session_bell_level_attention">Bert tá ið brúk er fyri mær</string>
+    <string name="session_bell_level_none">Einki</string>
+    <string name="session_bell_mute_hour">Einki í ein tíma</string>
+    <string name="session_bell_mute_tomorrow">Einki til í morgin á morgni</string>
+    <string name="session_bell_use_default">Brúka valið hjá hesi telefonini</string>
+    <string name="session_bell_source_own">Sett bert fyri hesa telefonina.</string>
+    <string name="session_bell_source_own_until">Sett bert fyri hesa telefonina, til %1$s.</string>
+    <string name="session_bell_source_default">Valið hjá hesi telefonini fyri ambætaran. Vel eitt fyri at broyta tað fyri hesa setuna.</string>
+    <string name="session_bell_source_shared">Sett frá einum øðrum tóli. Vel eitt fyri at broyta tað fyri hesa telefonina.</string>
+    <string name="session_bell_source_shared_until">Sett frá einum øðrum tóli til %1$s. Vel eitt fyri at broyta tað fyri hesa telefonina.</string>
+    <string name="session_bell_source_phone_paused">Henda telefonin er steðgað fyribils í innstillingum.</string>
+    <string name="session_bell_source_server_paused">Allar fráboðanir frá hesum ambætaranum eru steðgaðar fyribils.</string>
+    <string name="session_bell_source_server_paused_until">Allar fráboðanir frá hesum ambætaranum eru steðgaðar fyribils til %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Kundi ikki broyta fráboðanir</string>
 </resources>

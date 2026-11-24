@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Maliyet</string>
     <string name="session_sheet_media">Medya</string>
     <string name="session_sheet_media_value">Dosyalar ve bağlantılar</string>
-    <string name="session_always_notify">Her zaman bildir</string>
-    <string name="session_always_notify_message_phone">Başka yerden gönderdiğiniz mesajlar dahil, her yanıt tamamlandığında bu telefona bildirim gönder.</string>
-    <string name="session_always_notify_message_tablet">Başka yerden gönderdiğiniz mesajlar dahil, her yanıt tamamlandığında bu tablete bildirim gönder.</string>
     <string name="session_delete_session">Oturumu sil</string>
     <string name="session_rename_placeholder">Başlık</string>
     <string name="session_auto_rename">Otomatik adlandır</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Oturum dallandırılamadı</string>
     <string name="session_sheet_save_export_failed">Dışa aktarılan dosya kaydedilemedi</string>
     <string name="session_sheet_export_failed_title">Oturum dışa aktarılamadı</string>
-    <string name="session_sheet_notifications_off_message">Önce Ayarlar\'dan bildirimleri açın.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Her zaman bildir açılamadı</string>
-    <string name="session_sheet_always_notify_off_failed_title">Her zaman bildir kapatılamadı</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Sunucu dosyaları desteklemiyor</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Yükleniyor…</string>
     <string name="session_media_earlier_failed">Önceki mesajlar yüklenemedi. Bağlantınızı kontrol edip tekrar deneyin.</string>
     <string name="session_media_earlier_nothing_new">Yeni yüklenen mesajlarda yeni bir şey yok. Daha eskilerde olabilir.</string>
+    <string name="session_bell_title">Bildirimler</string>
+    <string name="session_bell_level_all">Her şey</string>
+    <string name="session_bell_level_attention">Yalnızca bana ihtiyaç duyduğunda</string>
+    <string name="session_bell_level_none">Hiçbir şey</string>
+    <string name="session_bell_mute_hour">Bir saat boyunca hiçbir şey</string>
+    <string name="session_bell_mute_tomorrow">Yarın sabaha kadar hiçbir şey</string>
+    <string name="session_bell_use_default">Bu telefonun tercihini kullan</string>
+    <string name="session_bell_source_own">Yalnızca bu telefon için ayarlandı.</string>
+    <string name="session_bell_source_own_until">Yalnızca bu telefon için şu zamana kadar ayarlandı: %1$s.</string>
+    <string name="session_bell_source_default">Bu telefonun sunucu için tercihi. Bu oturumda değiştirmek için birini seçin.</string>
+    <string name="session_bell_source_shared">Başka bir cihazdan ayarlandı. Bu telefonda değiştirmek için birini seçin.</string>
+    <string name="session_bell_source_shared_until">Başka bir cihazdan şu zamana kadar ayarlandı: %1$s. Bu telefonda değiştirmek için birini seçin.</string>
+    <string name="session_bell_source_phone_paused">Bu telefon Ayarlar\'da duraklatıldı.</string>
+    <string name="session_bell_source_server_paused">Bu sunucudan gelen tüm bildirimler duraklatıldı.</string>
+    <string name="session_bell_source_server_paused_until">Bu sunucudan gelen tüm bildirimler şu zamana kadar duraklatıldı: %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Bildirimler değiştirilemedi</string>
 </resources>

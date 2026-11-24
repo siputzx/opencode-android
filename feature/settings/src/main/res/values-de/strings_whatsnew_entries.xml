@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">Bitte um ein Flussdiagramm zum Senden einer Nachricht</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">Zeichne ein Flussdiagramm zum Senden einer Nachricht</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">Bei Abschluss benachrichtigen</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">Du erhältst eine Benachrichtigung, wenn eine hier gestartete Sitzung fertig ist – mit einer kurzen Zusammenfassung.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">Aktiviere „Immer benachrichtigen“ im Sitzungsmenü, um über jede Antwort informiert zu werden – auch bei Anfragen vom Computer.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">Tippe auf eine Benachrichtigung, um die zugehörige Sitzung zu öffnen.</string>
-    <string name="settings_whatsnew_entry_always_notify_example">Sende eine Nachricht und sperre dann dein Handy</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">Server wechseln</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">Dein aktueller Server steht als Titel im Seitenmenü. Tippe darauf, um den Server zu wechseln oder einen hinzuzufügen.</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">Sitzungen bleiben ohne Ordner erhalten</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">Fehlt der Ordner einer Sitzung, etwa nach dem Entfernen eines Arbeitsbereichs, bietet die App bei einem Sendefehler an, die Sitzung in den Projektordner zu verschieben und erneut zu senden.</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">Benachrichtigungen mit OpenCode einrichten</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">Tippe unter Einstellungen → Benachrichtigungen auf „Mit OpenCode einrichten“, um eine Anweisung zur Installation des fehlenden Benachrichtigungs-Plugins zu prüfen.</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">Anrufkarte füllt den unteren Bereich</string>

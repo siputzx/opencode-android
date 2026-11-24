@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">ຄ່າໃຊ້ຈ່າຍ</string>
     <string name="session_sheet_media">ສື່</string>
     <string name="session_sheet_media_value">ໄຟລ໌ ແລະລິ້ງ</string>
-    <string name="session_always_notify">ແຈ້ງເຕືອນສະເໝີ</string>
-    <string name="session_always_notify_message_phone">ແຈ້ງເຕືອນໂທລະສັບນີ້ທຸກຄັ້ງທີ່ຕອບແລ້ວ ເຖິງແມ່ນເຈົ້າບໍ່ໄດ້ສົ່ງຈາກທີ່ນີ້.</string>
-    <string name="session_always_notify_message_tablet">ແຈ້ງເຕືອນແທັບເລັດນີ້ທຸກຄັ້ງທີ່ຕອບແລ້ວ ເຖິງແມ່ນເຈົ້າບໍ່ໄດ້ສົ່ງຈາກທີ່ນີ້.</string>
     <string name="session_delete_session">ລຶບເຊດຊັນ</string>
     <string name="session_rename_placeholder">ຊື່</string>
     <string name="session_auto_rename">ປ່ຽນຊື່ອັດຕະໂນມັດ</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">ແຍກເຊດຊັນບໍ່ໄດ້</string>
     <string name="session_sheet_save_export_failed">ບັນທຶກໄຟລ໌ສົ່ງອອກບໍ່ໄດ້</string>
     <string name="session_sheet_export_failed_title">ສົ່ງອອກເຊດຊັນບໍ່ໄດ້</string>
-    <string name="session_sheet_notifications_off_message">ເປີດການແຈ້ງເຕືອນໃນການຕັ້ງຄ່າກ່ອນ.</string>
-    <string name="session_sheet_always_notify_on_failed_title">ເປີດແຈ້ງເຕືອນສະເໝີບໍ່ໄດ້</string>
-    <string name="session_sheet_always_notify_off_failed_title">ປິດແຈ້ງເຕືອນສະເໝີບໍ່ໄດ້</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">ເຊີບເວີບໍ່ຮອງຮັບໄຟລ໌</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">ກຳລັງໂຫຼດ…</string>
     <string name="session_media_earlier_failed">ໂຫຼດຂໍ້ຄວາມກ່ອນໜ້າບໍ່ໄດ້. ກວດການເຊື່ອມຕໍ່ຂອງເຈົ້າແລ້ວລອງໃໝ່.</string>
     <string name="session_media_earlier_nothing_new">ຂໍ້ຄວາມທີ່ຫາກໍໂຫຼດບໍ່ມີຫຍັງໃໝ່. ຂໍ້ຄວາມກ່ອນໜ້າອາດມີເພີ່ມ.</string>
+    <string name="session_bell_title">ການແຈ້ງເຕືອນ</string>
+    <string name="session_bell_level_all">ທຸກຢ່າງ</string>
+    <string name="session_bell_level_attention">ສະເພາະເມື່ອຕ້ອງການຂ້ອຍ</string>
+    <string name="session_bell_level_none">ບໍ່ແຈ້ງເຕືອນ</string>
+    <string name="session_bell_mute_hour">ບໍ່ແຈ້ງເຕືອນ 1 ຊົ່ວໂມງ</string>
+    <string name="session_bell_mute_tomorrow">ບໍ່ແຈ້ງເຕືອນຈົນຮອດເຊົ້າມື້ອື່ນ</string>
+    <string name="session_bell_use_default">ໃຊ້ຕົວເລືອກຂອງໂທລະສັບນີ້</string>
+    <string name="session_bell_source_own">ຕັ້ງຄ່າສຳລັບໂທລະສັບນີ້ເທົ່ານັ້ນ.</string>
+    <string name="session_bell_source_own_until">ຕັ້ງຄ່າສຳລັບໂທລະສັບນີ້ເທົ່ານັ້ນ ຈົນຮອດ %1$s.</string>
+    <string name="session_bell_source_default">ຕົວເລືອກຂອງໂທລະສັບນີ້ສຳລັບເຊີບເວີ. ເລືອກອັນໜຶ່ງເພື່ອປ່ຽນສຳລັບເຊດຊັນນີ້.</string>
+    <string name="session_bell_source_shared">ຕັ້ງຄ່າຈາກອຸປະກອນອື່ນ. ເລືອກອັນໜຶ່ງເພື່ອປ່ຽນສຳລັບໂທລະສັບນີ້.</string>
+    <string name="session_bell_source_shared_until">ຕັ້ງຄ່າຈາກອຸປະກອນອື່ນຈົນຮອດ %1$s. ເລືອກອັນໜຶ່ງເພື່ອປ່ຽນສຳລັບໂທລະສັບນີ້.</string>
+    <string name="session_bell_source_phone_paused">ໂທລະສັບນີ້ຖືກຢຸດຊົ່ວຄາວໃນການຕັ້ງຄ່າ.</string>
+    <string name="session_bell_source_server_paused">ການແຈ້ງເຕືອນທັງໝົດຈາກເຊີບເວີນີ້ຖືກຢຸດຊົ່ວຄາວແລ້ວ.</string>
+    <string name="session_bell_source_server_paused_until">ການແຈ້ງເຕືອນທັງໝົດຈາກເຊີບເວີນີ້ຖືກຢຸດຊົ່ວຄາວຈົນຮອດ %1$s.</string>
+    <string name="session_sheet_bell_failed_title">ປ່ຽນການແຈ້ງເຕືອນບໍ່ໄດ້</string>
 </resources>

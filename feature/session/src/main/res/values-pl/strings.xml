@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Koszt</string>
     <string name="session_sheet_media">Multimedia</string>
     <string name="session_sheet_media_value">Pliki i linki</string>
-    <string name="session_always_notify">Zawsze powiadamiaj</string>
-    <string name="session_always_notify_message_phone">Powiadamiaj ten telefon o każdej gotowej odpowiedzi, także na wiadomości wysłane z innych urządzeń.</string>
-    <string name="session_always_notify_message_tablet">Powiadamiaj ten tablet o każdej gotowej odpowiedzi, także na wiadomości wysłane z innych urządzeń.</string>
     <string name="session_delete_session">Usuń sesję</string>
     <string name="session_rename_placeholder">Tytuł</string>
     <string name="session_auto_rename">Nazwij automatycznie</string>
@@ -287,9 +284,6 @@
     <string name="session_sheet_fork_failed_title">Nie udało się rozwidlić sesji</string>
     <string name="session_sheet_save_export_failed">Nie udało się zapisać eksportu</string>
     <string name="session_sheet_export_failed_title">Nie udało się wyeksportować sesji</string>
-    <string name="session_sheet_notifications_off_message">Najpierw włącz powiadomienia w ustawieniach.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Nie udało się włączyć opcji „Zawsze powiadamiaj”</string>
-    <string name="session_sheet_always_notify_off_failed_title">Nie udało się wyłączyć opcji „Zawsze powiadamiaj”</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Serwer nie obsługuje plików</string>
@@ -353,4 +347,20 @@
     <string name="session_media_loading_earlier">Ładowanie…</string>
     <string name="session_media_earlier_failed">Nie udało się wczytać wcześniejszych wiadomości. Sprawdź połączenie i spróbuj ponownie.</string>
     <string name="session_media_earlier_nothing_new">W właśnie wczytanych wiadomościach nie ma nic nowego. Wcześniejsze mogą zawierać więcej.</string>
+    <string name="session_bell_title">Powiadomienia</string>
+    <string name="session_bell_level_all">Wszystko</string>
+    <string name="session_bell_level_attention">Tylko gdy mnie potrzebuje</string>
+    <string name="session_bell_level_none">Nic</string>
+    <string name="session_bell_mute_hour">Nic przez godzinę</string>
+    <string name="session_bell_mute_tomorrow">Nic do jutra rana</string>
+    <string name="session_bell_use_default">Użyj ustawienia tego telefonu</string>
+    <string name="session_bell_source_own">Ustawiono tylko dla tego telefonu.</string>
+    <string name="session_bell_source_own_until">Ustawiono tylko dla tego telefonu, do %1$s.</string>
+    <string name="session_bell_source_default">Ustawienie tego telefonu dla serwera. Wybierz opcję, aby zmienić je dla tej sesji.</string>
+    <string name="session_bell_source_shared">Ustawiono z innego urządzenia. Wybierz opcję, aby zmienić to dla tego telefonu.</string>
+    <string name="session_bell_source_shared_until">Ustawiono z innego urządzenia do %1$s. Wybierz opcję, aby zmienić to dla tego telefonu.</string>
+    <string name="session_bell_source_phone_paused">Wstrzymano dla tego telefonu w ustawieniach.</string>
+    <string name="session_bell_source_server_paused">Wszystkie powiadomienia z tego serwera są wstrzymane.</string>
+    <string name="session_bell_source_server_paused_until">Wszystkie powiadomienia z tego serwera są wstrzymane do %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Nie udało się zmienić powiadomień</string>
 </resources>

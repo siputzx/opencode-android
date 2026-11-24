@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">ค่าใช้จ่าย</string>
     <string name="session_sheet_media">สื่อ</string>
     <string name="session_sheet_media_value">ไฟล์และลิงก์</string>
-    <string name="session_always_notify">แจ้งเตือนเสมอ</string>
-    <string name="session_always_notify_message_phone">แจ้งเตือนบนมือถือนี้ทุกครั้งที่ตอบเสร็จ แม้จะไม่ได้ส่งข้อความจากเครื่องนี้</string>
-    <string name="session_always_notify_message_tablet">แจ้งเตือนบนแท็บเล็ตนี้ทุกครั้งที่ตอบเสร็จ แม้จะไม่ได้ส่งข้อความจากเครื่องนี้</string>
     <string name="session_delete_session">ลบเซสชัน</string>
     <string name="session_rename_placeholder">ชื่อ</string>
     <string name="session_auto_rename">เปลี่ยนชื่ออัตโนมัติ</string>
@@ -257,9 +254,6 @@
     <string name="session_sheet_fork_failed_title">แตกแขนงเซสชันไม่ได้</string>
     <string name="session_sheet_save_export_failed">บันทึกไฟล์ส่งออกไม่ได้</string>
     <string name="session_sheet_export_failed_title">ส่งออกเซสชันไม่ได้</string>
-    <string name="session_sheet_notifications_off_message">เปิดการแจ้งเตือนในการตั้งค่าก่อน</string>
-    <string name="session_sheet_always_notify_on_failed_title">เปิดการแจ้งเตือนเสมอไม่ได้</string>
-    <string name="session_sheet_always_notify_off_failed_title">ปิดการแจ้งเตือนเสมอไม่ได้</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">เซิร์ฟเวอร์ไม่รองรับไฟล์</string>
@@ -317,4 +311,20 @@
     <string name="session_media_loading_earlier">กำลังโหลด…</string>
     <string name="session_media_earlier_failed">โหลดข้อความก่อนหน้าไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง</string>
     <string name="session_media_earlier_nothing_new">ข้อความที่เพิ่งโหลดไม่มีอะไรใหม่ ข้อความก่อนหน้าอาจมีเพิ่มเติม</string>
+    <string name="session_bell_title">การแจ้งเตือน</string>
+    <string name="session_bell_level_all">ทุกอย่าง</string>
+    <string name="session_bell_level_attention">เฉพาะเมื่อต้องให้คุณช่วย</string>
+    <string name="session_bell_level_none">ไม่แจ้งเตือน</string>
+    <string name="session_bell_mute_hour">ไม่แจ้งเตือน 1 ชั่วโมง</string>
+    <string name="session_bell_mute_tomorrow">ไม่แจ้งเตือนจนถึงพรุ่งนี้เช้า</string>
+    <string name="session_bell_use_default">ใช้ตัวเลือกของมือถือเครื่องนี้</string>
+    <string name="session_bell_source_own">ตั้งค่าไว้สำหรับมือถือเครื่องนี้เท่านั้น</string>
+    <string name="session_bell_source_own_until">ตั้งค่าไว้สำหรับมือถือเครื่องนี้เท่านั้น จนถึง %1$s</string>
+    <string name="session_bell_source_default">ตัวเลือกของมือถือเครื่องนี้สำหรับเซิร์ฟเวอร์ แตะเลือกเพื่อเปลี่ยนสำหรับเซสชันนี้</string>
+    <string name="session_bell_source_shared">ตั้งค่าจากอุปกรณ์อื่น แตะเลือกเพื่อเปลี่ยนสำหรับมือถือเครื่องนี้</string>
+    <string name="session_bell_source_shared_until">ตั้งค่าจากอุปกรณ์อื่นจนถึง %1$s แตะเลือกเพื่อเปลี่ยนสำหรับมือถือเครื่องนี้</string>
+    <string name="session_bell_source_phone_paused">การแจ้งเตือนของมือถือเครื่องนี้หยุดชั่วคราวอยู่ในการตั้งค่า</string>
+    <string name="session_bell_source_server_paused">การแจ้งเตือนทั้งหมดจากเซิร์ฟเวอร์นี้หยุดชั่วคราวอยู่</string>
+    <string name="session_bell_source_server_paused_until">การแจ้งเตือนทั้งหมดจากเซิร์ฟเวอร์นี้หยุดชั่วคราวจนถึง %1$s</string>
+    <string name="session_sheet_bell_failed_title">เปลี่ยนการแจ้งเตือนไม่ได้</string>
 </resources>

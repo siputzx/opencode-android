@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">বার্তা কীভাবে পাঠানো হয়, তার একটি ফ্লোচার্ট চাইতে পারেন</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">বার্তা কীভাবে পাঠানো হয়, তার একটি ফ্লোচার্ট আঁকো</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">শেষ হলে বিজ্ঞপ্তি</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">এখান থেকে শুরু করা সেশনের কাজ শেষ হলে কী হয়েছে তার সংক্ষিপ্তসারসহ বিজ্ঞপ্তি পাবেন।</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">কম্পিউটার থেকে শুরু করা কাজসহ প্রতিটি জবাবের খবর পেতে সেশনের প্যানেলে সর্বদা বিজ্ঞপ্তি দিন চালু করুন।</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">সেশন খুলতে তার বিজ্ঞপ্তিতে ট্যাপ করুন।</string>
-    <string name="settings_whatsnew_entry_always_notify_example">একটি বার্তা পাঠিয়ে ফোন লক করুন</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">সার্ভার বদলান</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">বর্তমান সার্ভারের নামই ড্রয়ারের শিরোনাম। অন্য সার্ভারে যেতে বা নতুন সার্ভার যোগ করতে তাতে ট্যাপ করুন।</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">ফোল্ডার না থাকলেও সেশন থাকে</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">কোনো সেশনের ফোল্ডার না থাকলে, যেমন ওয়ার্কস্পেস মুছে ফেলা হলে, বার্তা পাঠানো ব্যর্থ হলে সেটিকে প্রকল্পের ফোল্ডারে সরিয়ে আবার পাঠানোর সুযোগ দেয়।</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">OpenCode দিয়ে বিজ্ঞপ্তি সেট আপ করুন</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">সেটিংস → বিজ্ঞপ্তি-তে OpenCode দিয়ে সেট আপ করুন-এ ট্যাপ করে প্রয়োজনীয় বিজ্ঞপ্তি প্লাগইন ইনস্টল করার প্রম্পটটি পর্যালোচনা করুন।</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">কলের কার্ড এখন নিচের অংশ জুড়ে</string>

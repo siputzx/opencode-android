@@ -113,7 +113,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Questo codice di associazione è scaduto o è già stato usato. Esegui di nuovo `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">Questo server non supporta i link di associazione. Aggiorna OpenCode sul computer o inserisci il server manualmente.</string>
-    <string name="server_error_notification_previews_need_https">Le anteprime crittografate delle notifiche richiedono una connessione HTTPS al server.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Inserisci un URL del server HTTP o HTTPS valido.</string>

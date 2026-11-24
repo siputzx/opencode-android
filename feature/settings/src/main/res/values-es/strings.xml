@@ -52,20 +52,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Notificaciones</string>
     <string name="settings_notifications_device_header">Este %1$s</string>
-    <string name="settings_notifications_device_footer">Las notificaciones pasan por un intermediario que no guarda nada. Solo recibirás las de sesiones iniciadas en este %1$s.</string>
+    <string name="settings_notifications_device_footer">Las notificaciones pasan por un retransmisor que no guarda nada y están cifradas de extremo a extremo.</string>
     <string name="settings_notifications_allow">Permitir notificaciones</string>
     <string name="settings_notifications_open_android_settings">Abrir ajustes de Android</string>
     <string name="settings_notifications_turn_on">Activar notificaciones</string>
     <string name="settings_notifications_server_header">Servidor</string>
-    <string name="settings_notifications_set_up_footer">Abre una sesión con una solicitud para que OpenCode instale el complemento. Envíala y vuelve a comprobar.</string>
-    <string name="settings_notifications_plugin_needed_footer">El servidor necesita el complemento notify de OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Complemento notify</string>
-    <string name="settings_notifications_plugin_installed">Instalado</string>
-    <string name="settings_notifications_plugin_not_running">No está en ejecución</string>
-    <string name="settings_notifications_plugin_not_installed">No instalado</string>
-    <string name="settings_notifications_plugin_check_failed">No se pudo comprobar el estado</string>
-    <string name="settings_notifications_set_up">Configurar con OpenCode</string>
-    <string name="settings_notifications_check_again">Volver a comprobar</string>
     <string name="settings_notifications_in_app_footer">Se muestran en el botón del panel lateral.</string>
     <string name="settings_notifications_in_app_notices">Avisos en la aplicación</string>
 
@@ -226,4 +217,35 @@
     <string name="settings_pairing_point_camera">Apunta la cámara al código QR</string>
     <string name="settings_pairing_paste_link">Pegar enlace de emparejamiento</string>
     <string name="settings_pairing_computer_hint">En tu ordenador, abre Ajustes → Emparejamiento en OpenCode o ejecuta %1$s en un terminal.</string>
+    <string name="settings_notifications_server_toggle">Notificar a este dispositivo</string>
+    <string name="settings_notifications_mode">Notificar sobre</string>
+    <string name="settings_notifications_mode_all">Todo</string>
+    <string name="settings_notifications_mode_all_caption">Sesiones terminadas, preguntas y solicitudes de permiso.</string>
+    <string name="settings_notifications_mode_attention">Solo cuando me necesite</string>
+    <string name="settings_notifications_mode_attention_caption">Preguntas y solicitudes de permiso.</string>
+    <string name="settings_notifications_mode_from_this_phone">Solo sesiones que uso aquí</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Todo lo de las sesiones a las que envías desde este %1$s.</string>
+    <string name="settings_notifications_mode_none">Nada</string>
+    <string name="settings_notifications_status_checking">Comprobando el servidor…</string>
+    <string name="settings_notifications_status_no_permission">Primero permite las notificaciones arriba.</string>
+    <string name="settings_notifications_status_outdated">Este servidor necesita una actualización de OpenCode para las notificaciones.</string>
+    <string name="settings_notifications_status_relay">Este servidor no acepta el retransmisor de notificaciones de esta aplicación.</string>
+    <string name="settings_notifications_status_failed">No se pudieron configurar las notificaciones en este servidor. OpenCode volverá a intentarlo al reconectarse.</string>
+    <string name="settings_notifications_pause">Pausar todas las notificaciones</string>
+    <string name="settings_notifications_pause_on">Hasta reanudar</string>
+    <string name="settings_notifications_pause_until">Hasta %1$s</string>
+    <string name="settings_notifications_resume">Reanudar</string>
+    <string name="settings_notifications_pause_hour">Durante una hora</string>
+    <string name="settings_notifications_pause_tomorrow">Hasta mañana por la mañana</string>
+    <string name="settings_notifications_pause_forever">Hasta que las reanude</string>
+    <string name="settings_notifications_pause_footer">Al pausar, se detienen las notificaciones de este servidor en todos los dispositivos.</string>
+    <string name="settings_notifications_devices_header">Dispositivos</string>
+    <string name="settings_notifications_device_this">%1$s (este dispositivo)</string>
+    <string name="settings_notifications_device_on">Activado</string>
+    <string name="settings_notifications_device_paused">En pausa</string>
+    <string name="settings_notifications_device_remove">Quitar</string>
+    <string name="settings_notifications_pause_failed_title">No se pudo cambiar la pausa</string>
+    <string name="settings_notifications_device_failed_title">No se pudo cambiar el dispositivo</string>
+    <string name="settings_notifications_device_remove_failed_title">No se pudo quitar el dispositivo</string>
+    <string name="settings_notifications_change_failed_message">El servidor no aceptó el cambio.</string>
 </resources>

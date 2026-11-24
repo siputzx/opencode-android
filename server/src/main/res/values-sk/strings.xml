@@ -119,7 +119,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Platnosť tohto párovacieho kódu vypršala alebo už bol použitý. Spustite znova `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">Tento server nepodporuje párovacie odkazy. Aktualizujte OpenCode v počítači alebo zadajte server ručne.</string>
-    <string name="server_error_notification_previews_need_https">Šifrované náhľady upozornení vyžadujú pripojenie k serveru cez HTTPS.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Zadajte platnú HTTP alebo HTTPS URL servera.</string>

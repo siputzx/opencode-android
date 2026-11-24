@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">ស្នើឱ្យគូរគំនូសតាងលំហូរនៃការផ្ញើសារ</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">គូរគំនូសតាងលំហូរនៃការផ្ញើសារ</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">ជូនដំណឹងពេលរួចរាល់</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">ទទួលការជូនដំណឹងពេលសម័យដែលអ្នកចាប់ផ្តើមនៅទីនេះធ្វើការរួច ដោយមានសេចក្តីសង្ខេបខ្លីអំពីអ្វីដែលបានកើតឡើង។</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">បើកជូនដំណឹងជានិច្ចក្នុងផ្ទាំងសម័យ ដើម្បីទទួលដំណឹងរាល់ការឆ្លើយតប ទោះចាប់ផ្តើមពីកុំព្យូទ័រក៏ដោយ។</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">ប៉ះការជូនដំណឹងដើម្បីបើកសម័យរបស់វា។</string>
-    <string name="settings_whatsnew_entry_always_notify_example">ផ្ញើសារ រួចចាក់សោទូរសព្ទ</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">ប្តូរម៉ាស៊ីនមេ</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">ម៉ាស៊ីនមេដែលអ្នកកំពុងប្រើ ជាចំណងជើងផ្ទាំងចំហៀង។ ប៉ះវាដើម្បីប្តូរទៅម៉ាស៊ីនមេផ្សេង ឬបន្ថែមថ្មី។</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">សម័យនៅតែប្រើបាន ទោះបាត់ថត</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">ពេលថតរបស់សម័យបាត់ ដូចជាកន្លែងធ្វើការដែលបានដកចេញ ការផ្ញើដែលបរាជ័យនឹងផ្តល់ជម្រើសឱ្យផ្លាស់ទីសម័យទៅថតគម្រោងរបស់វា ហើយផ្ញើម្តងទៀត។</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">រៀបចំការជូនដំណឹងជាមួយ OpenCode</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">ក្នុង ការកំណត់ → ការជូនដំណឹង ប៉ះ រៀបចំជាមួយ OpenCode ដើម្បីពិនិត្យអត្ថបទបញ្ចូលដែលដំឡើងកម្មវិធីជំនួយការជូនដំណឹងដែលមិនទាន់មាន។</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">ផ្ទាំងការហៅបំពេញផ្នែកខាងក្រោម</string>

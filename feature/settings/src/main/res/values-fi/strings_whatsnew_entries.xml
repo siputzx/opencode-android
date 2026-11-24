@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">Pyydä vuokaavio viestin lähettämisestä</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">Piirrä vuokaavio viestin lähettämisestä</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">Ilmoita valmistumisesta</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">Saat ilmoituksen, kun täällä aloittamasi istunto valmistuu, sekä lyhyen yhteenvedon tapahtuneesta.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">Ota istunnon valikosta käyttöön Ilmoita aina, niin saat ilmoituksen jokaisesta vastauksesta, myös tietokoneella aloitetuista.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">Avaa istunto napauttamalla sen ilmoitusta.</string>
-    <string name="settings_whatsnew_entry_always_notify_example">Lähetä viesti ja lukitse sitten puhelin</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">Vaihda palvelinta</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">Nykyinen palvelin näkyy sivuvalikon otsikkona. Napauta sitä vaihtaaksesi palvelinta tai lisätäksesi uuden.</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">Istunnot säilyvät ilman kansiotaan</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">Jos istunnon kansio puuttuu esimerkiksi työtilan poiston takia, epäonnistunut lähetys tarjoaa istunnon siirtoa projektin kansioon ja yrittää lähettää uudelleen.</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">Ota ilmoitukset käyttöön OpenCodella</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">Napauta kohdassa Asetukset → Ilmoitukset painiketta Ota käyttöön OpenCodella. Voit tarkistaa kehotteen, joka asentaa puuttuvan ilmoituslaajennuksen.</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">Puhelukortti täyttää alareunan</string>

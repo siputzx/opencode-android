@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">ভয়েস কল</string>
     <string name="system_channel_recording">রেকর্ডিং</string>
     <string name="system_channel_session_runs">সেশন চালানো</string>
-    <string name="system_channel_session_updates">সেশন আপডেট</string>
+    <string name="system_channel_session_finished">শেষ হওয়া সেশন</string>
+    <string name="system_channel_session_questions">প্রশ্ন</string>
+    <string name="system_channel_session_permissions">অনুমতির অনুরোধ</string>
+    <string name="system_channel_session_other">অন্যান্য সেশন আপডেট</string>
     <string name="system_channel_shared_items">শেয়ার করা আইটেম</string>
 
     <!-- Share sheet: notifications -->

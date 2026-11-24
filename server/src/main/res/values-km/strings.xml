@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">កូដផ្គូផ្គងនេះផុតកំណត់ ឬបានប្រើរួចហើយ។ ដំណើរការ `opencode pair --remote` ម្តងទៀត។</string>
     <string name="server_error_pairing_unsupported">ម៉ាស៊ីនមេនេះមិនគាំទ្រតំណផ្គូផ្គងទេ។ ធ្វើបច្ចុប្បន្នភាព OpenCode លើកុំព្យូទ័ររបស់អ្នក ឬបញ្ចូលម៉ាស៊ីនមេដោយដៃ។</string>
-    <string name="server_error_notification_previews_need_https">ការមើលការជូនដំណឹងដែលបានអ៊ិនគ្រីបជាមុន ត្រូវការការតភ្ជាប់ម៉ាស៊ីនមេតាម HTTPS។</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">បញ្ចូល URL ម៉ាស៊ីនមេ HTTP ឬ HTTPS ដែលត្រឹមត្រូវ។</string>

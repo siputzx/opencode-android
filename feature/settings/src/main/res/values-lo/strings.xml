@@ -50,20 +50,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">ການແຈ້ງເຕືອນ</string>
     <string name="settings_notifications_device_header">%1$s ນີ້</string>
-    <string name="settings_notifications_device_footer">ການແຈ້ງເຕືອນຜ່ານຕົວສົ່ງຕໍ່ທີ່ບໍ່ເກັບຂໍ້ມູນໃດໆ. ມີພຽງເຊດຊັນທີ່ເລີ່ມໃນ %1$s ນີ້ທີ່ຈະແຈ້ງເຕືອນມາ.</string>
+    <string name="settings_notifications_device_footer">ການແຈ້ງເຕືອນຈະສົ່ງຜ່ານຕົວສົ່ງຕໍ່ທີ່ບໍ່ເກັບຂໍ້ມູນໃດໆ ແລະ ເຂົ້າລະຫັດແບບຕົ້ນທາງຫາປາຍທາງ.</string>
     <string name="settings_notifications_allow">ອະນຸຍາດການແຈ້ງເຕືອນ</string>
     <string name="settings_notifications_open_android_settings">ເປີດການຕັ້ງຄ່າ Android</string>
     <string name="settings_notifications_turn_on">ເປີດການແຈ້ງເຕືອນ</string>
     <string name="settings_notifications_server_header">ເຊີບເວີ</string>
-    <string name="settings_notifications_set_up_footer">ເປີດເຊດຊັນເພື່ອຂໍໃຫ້ OpenCode ຕິດຕັ້ງປລັກອິນ. ສົ່ງຂໍ້ຄວາມແລ້ວກວດອີກຄັ້ງ.</string>
-    <string name="settings_notifications_plugin_needed_footer">ເຊີບເວີຕ້ອງມີປລັກອິນແຈ້ງເຕືອນຂອງ OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">ປລັກອິນແຈ້ງເຕືອນ</string>
-    <string name="settings_notifications_plugin_installed">ຕິດຕັ້ງແລ້ວ</string>
-    <string name="settings_notifications_plugin_not_running">ບໍ່ໄດ້ເຮັດວຽກ</string>
-    <string name="settings_notifications_plugin_not_installed">ຍັງບໍ່ຕິດຕັ້ງ</string>
-    <string name="settings_notifications_plugin_check_failed">ກວດສະຖານະບໍ່ໄດ້</string>
-    <string name="settings_notifications_set_up">ຕັ້ງຄ່າດ້ວຍ OpenCode</string>
-    <string name="settings_notifications_check_again">ກວດອີກຄັ້ງ</string>
     <string name="settings_notifications_in_app_footer">ສະແດງຢູ່ປຸ່ມແຖບເມນູຂ້າງ.</string>
     <string name="settings_notifications_in_app_notices">ແຈ້ງການໃນແອັບ</string>
 
@@ -220,4 +211,35 @@
     <string name="settings_pairing_point_camera">ເລັງກ້ອງໄປທີ່ QR code</string>
     <string name="settings_pairing_paste_link">ວາງລິ້ງຈັບຄູ່</string>
     <string name="settings_pairing_computer_hint">ໃນຄອມພິວເຕີ ເປີດການຕັ້ງຄ່າຂອງ OpenCode → ການຈັບຄູ່ ຫຼື ແລ່ນ %1$s ໃນສະຖານີ.</string>
+    <string name="settings_notifications_server_toggle">ແຈ້ງເຕືອນອຸປະກອນນີ້</string>
+    <string name="settings_notifications_mode">ແຈ້ງເຕືອນກ່ຽວກັບ</string>
+    <string name="settings_notifications_mode_all">ທຸກຢ່າງ</string>
+    <string name="settings_notifications_mode_all_caption">ເຊດຊັນທີ່ສຳເລັດແລ້ວ, ຄຳຖາມ ແລະ ຄຳຂໍອະນຸຍາດ.</string>
+    <string name="settings_notifications_mode_attention">ສະເພາະເວລາຕ້ອງການຂ້ອຍ</string>
+    <string name="settings_notifications_mode_attention_caption">ຄຳຖາມ ແລະ ຄຳຂໍອະນຸຍາດ.</string>
+    <string name="settings_notifications_mode_from_this_phone">ສະເພາະເຊດຊັນທີ່ຂ້ອຍໃຊ້ຢູ່ນີ້</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">ທຸກຢ່າງຈາກເຊດຊັນທີ່ເຈົ້າສົ່ງໄປຈາກ %1$s ນີ້.</string>
+    <string name="settings_notifications_mode_none">ບໍ່ແຈ້ງເຕືອນ</string>
+    <string name="settings_notifications_status_checking">ກຳລັງກວດສອບເຊີບເວີ…</string>
+    <string name="settings_notifications_status_no_permission">ອະນຸຍາດການແຈ້ງເຕືອນຂ້າງເທິງກ່ອນ.</string>
+    <string name="settings_notifications_status_outdated">ເຊີບເວີນີ້ຕ້ອງອັບເດດ OpenCode ເພື່ອໃຊ້ການແຈ້ງເຕືອນ.</string>
+    <string name="settings_notifications_status_relay">ເຊີບເວີນີ້ບໍ່ຮັບຕົວສົ່ງຕໍ່ການແຈ້ງເຕືອນຂອງແອັບນີ້.</string>
+    <string name="settings_notifications_status_failed">ຕັ້ງຄ່າການແຈ້ງເຕືອນໃນເຊີບເວີນີ້ບໍ່ໄດ້. OpenCode ຈະລອງໃໝ່ເມື່ອເຊື່ອມຕໍ່ອີກຄັ້ງ.</string>
+    <string name="settings_notifications_pause">ຢຸດການແຈ້ງເຕືອນທັງໝົດຊົ່ວຄາວ</string>
+    <string name="settings_notifications_pause_on">ຈົນກວ່າຈະເປີດຄືນ</string>
+    <string name="settings_notifications_pause_until">ຈົນຮອດ %1$s</string>
+    <string name="settings_notifications_resume">ເປີດຄືນ</string>
+    <string name="settings_notifications_pause_hour">ເປັນເວລາ 1 ຊົ່ວໂມງ</string>
+    <string name="settings_notifications_pause_tomorrow">ຈົນຮອດມື້ອື່ນເຊົ້າ</string>
+    <string name="settings_notifications_pause_forever">ຈົນກວ່າຂ້ອຍຈະເປີດຄືນ</string>
+    <string name="settings_notifications_pause_footer">ການຢຸດຊົ່ວຄາວຈະຢຸດການແຈ້ງເຕືອນຈາກເຊີບເວີນີ້ໃນທຸກອຸປະກອນ.</string>
+    <string name="settings_notifications_devices_header">ອຸປະກອນ</string>
+    <string name="settings_notifications_device_this">%1$s (ອຸປະກອນນີ້)</string>
+    <string name="settings_notifications_device_on">ເປີດ</string>
+    <string name="settings_notifications_device_paused">ຢຸດຊົ່ວຄາວແລ້ວ</string>
+    <string name="settings_notifications_device_remove">ເອົາອອກ</string>
+    <string name="settings_notifications_pause_failed_title">ປ່ຽນການຢຸດຊົ່ວຄາວບໍ່ໄດ້</string>
+    <string name="settings_notifications_device_failed_title">ປ່ຽນແປງອຸປະກອນບໍ່ໄດ້</string>
+    <string name="settings_notifications_device_remove_failed_title">ເອົາອຸປະກອນອອກບໍ່ໄດ້</string>
+    <string name="settings_notifications_change_failed_message">ເຊີບເວີບໍ່ຮັບການປ່ຽນແປງນີ້.</string>
 </resources>

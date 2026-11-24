@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Bildirişlər</string>
     <string name="settings_notifications_device_header">Bu %1$s</string>
-    <string name="settings_notifications_device_footer">Bildirişlər heç nə saxlamayan vasitəçi serverdən keçir. Bu %1$s cihazına yalnız burada başladılan sessiyalardan bildiriş gəlir.</string>
+    <string name="settings_notifications_device_footer">Bildirişlər heç nə saxlamayan ötürücüdən keçir və ucdan-uca şifrələnir.</string>
     <string name="settings_notifications_allow">Bildirişlərə icazə ver</string>
     <string name="settings_notifications_open_android_settings">Android tənzimləmələrini aç</string>
     <string name="settings_notifications_turn_on">Bildirişləri aktivləşdir</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_set_up_footer">OpenCode-dan plagini quraşdırmağı istəyən sessiya açır. Sorğunu göndərin, sonra yenidən yoxlayın.</string>
-    <string name="settings_notifications_plugin_needed_footer">Serverə OpenCode notify plagini lazımdır.</string>
-    <string name="settings_notifications_notify_plugin">Bildiriş plagini</string>
-    <string name="settings_notifications_plugin_installed">Quraşdırılıb</string>
-    <string name="settings_notifications_plugin_not_running">İşləmir</string>
-    <string name="settings_notifications_plugin_not_installed">Quraşdırılmayıb</string>
-    <string name="settings_notifications_plugin_check_failed">Statusu yoxlamaq mümkün olmadı</string>
-    <string name="settings_notifications_set_up">OpenCode ilə quraşdır</string>
-    <string name="settings_notifications_check_again">Yenidən yoxla</string>
     <string name="settings_notifications_in_app_footer">Yan panel düyməsində göstərilir.</string>
     <string name="settings_notifications_in_app_notices">Tətbiqdaxili bildirişlər</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Kameranı QR koda yönəldin</string>
     <string name="settings_pairing_paste_link">Cütləşdirmə linkini yapışdır</string>
     <string name="settings_pairing_computer_hint">Kompüterinizdə OpenCode tətbiqində Tənzimləmələr → Cütləşdirmə bölməsini açın və ya terminalda %1$s əmrini işlədin.</string>
+    <string name="settings_notifications_server_toggle">Bu cihaza bildiriş göndər</string>
+    <string name="settings_notifications_mode">Nə barədə bildirilsin</string>
+    <string name="settings_notifications_mode_all">Hər şey</string>
+    <string name="settings_notifications_mode_all_caption">Bitmiş sessiyalar, suallar və icazə sorğuları.</string>
+    <string name="settings_notifications_mode_attention">Yalnız mənə ehtiyac olduqda</string>
+    <string name="settings_notifications_mode_attention_caption">Suallar və icazə sorğuları.</string>
+    <string name="settings_notifications_mode_from_this_phone">Yalnız burada istifadə etdiyim sessiyalar</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Bu %1$s üzərindən mesaj göndərdiyiniz sessiyalardakı hər şey.</string>
+    <string name="settings_notifications_mode_none">Heç nə</string>
+    <string name="settings_notifications_status_checking">Server yoxlanılır…</string>
+    <string name="settings_notifications_status_no_permission">Əvvəlcə yuxarıda bildirişlərə icazə verin.</string>
+    <string name="settings_notifications_status_outdated">Bildirişlər üçün bu serverdə OpenCode yenilənməlidir.</string>
+    <string name="settings_notifications_status_relay">Bu server bu tətbiqin bildiriş ötürücüsünü qəbul etmir.</string>
+    <string name="settings_notifications_status_failed">Bu serverdə bildirişləri quraşdırmaq mümkün olmadı. OpenCode yenidən qoşulduqda təkrar cəhd edəcək.</string>
+    <string name="settings_notifications_pause">Bütün bildirişlərə fasilə ver</string>
+    <string name="settings_notifications_pause_on">Davam etdirilənədək</string>
+    <string name="settings_notifications_pause_until">Bu vaxtadək: %1$s</string>
+    <string name="settings_notifications_resume">Davam etdir</string>
+    <string name="settings_notifications_pause_hour">Bir saatlıq</string>
+    <string name="settings_notifications_pause_tomorrow">Sabah səhərədək</string>
+    <string name="settings_notifications_pause_forever">Mən davam etdirənədək</string>
+    <string name="settings_notifications_pause_footer">Fasilə vermək bu serverdən bütün cihazlara gələn bildirişləri dayandırır.</string>
+    <string name="settings_notifications_devices_header">Cihazlar</string>
+    <string name="settings_notifications_device_this">%1$s (bu cihaz)</string>
+    <string name="settings_notifications_device_on">Aktiv</string>
+    <string name="settings_notifications_device_paused">Fasilə verilib</string>
+    <string name="settings_notifications_device_remove">Sil</string>
+    <string name="settings_notifications_pause_failed_title">Fasiləni dəyişmək mümkün olmadı</string>
+    <string name="settings_notifications_device_failed_title">Cihazı dəyişmək mümkün olmadı</string>
+    <string name="settings_notifications_device_remove_failed_title">Cihazı silmək mümkün olmadı</string>
+    <string name="settings_notifications_change_failed_message">Server dəyişikliyi qəbul etmədi.</string>
 </resources>

@@ -50,20 +50,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">ការជូនដំណឹង</string>
     <string name="settings_notifications_device_header">%1$s នេះ</string>
-    <string name="settings_notifications_device_footer">ការជូនដំណឹងឆ្លងកាត់សេវាបញ្ជូនបន្តដែលមិនរក្សាទុកអ្វីទាំងអស់។ មានតែសម័យដែលចាប់ផ្តើមនៅលើ %1$s នេះប៉ុណ្ណោះដែលផ្ញើការជូនដំណឹងមកវា។</string>
+    <string name="settings_notifications_device_footer">ការជូនដំណឹងឆ្លងកាត់ប្រព័ន្ធបញ្ជូនបន្តដែលមិនរក្សាទុកអ្វីទាំងអស់ ហើយត្រូវបានអ៊ិនគ្រីបពីដើមដល់ចប់។</string>
     <string name="settings_notifications_allow">អនុញ្ញាតការជូនដំណឹង</string>
     <string name="settings_notifications_open_android_settings">បើកការកំណត់ Android</string>
     <string name="settings_notifications_turn_on">បើកការជូនដំណឹង</string>
     <string name="settings_notifications_server_header">ម៉ាស៊ីនមេ</string>
-    <string name="settings_notifications_set_up_footer">បើកសម័យដែលស្នើឱ្យ OpenCode ដំឡើងកម្មវិធីជំនួយ។ ផ្ញើសំណើ រួចពិនិត្យម្តងទៀត។</string>
-    <string name="settings_notifications_plugin_needed_footer">ម៉ាស៊ីនមេត្រូវការកម្មវិធីជំនួយជូនដំណឹងរបស់ OpenCode។</string>
-    <string name="settings_notifications_notify_plugin">កម្មវិធីជំនួយជូនដំណឹង</string>
-    <string name="settings_notifications_plugin_installed">បានដំឡើង</string>
-    <string name="settings_notifications_plugin_not_running">មិនកំពុងដំណើរការ</string>
-    <string name="settings_notifications_plugin_not_installed">មិនទាន់ដំឡើង</string>
-    <string name="settings_notifications_plugin_check_failed">មិនអាចពិនិត្យស្ថានភាពបាន</string>
-    <string name="settings_notifications_set_up">រៀបចំជាមួយ OpenCode</string>
-    <string name="settings_notifications_check_again">ពិនិត្យម្តងទៀត</string>
     <string name="settings_notifications_in_app_footer">បង្ហាញលើប៊ូតុងផ្ទាំងចំហៀង។</string>
     <string name="settings_notifications_in_app_notices">សេចក្តីជូនដំណឹងក្នុងកម្មវិធី</string>
 
@@ -220,4 +211,35 @@
     <string name="settings_pairing_point_camera">តម្រង់កាមេរ៉ាទៅកូដ QR</string>
     <string name="settings_pairing_paste_link">បិទភ្ជាប់តំណផ្គូផ្គង</string>
     <string name="settings_pairing_computer_hint">នៅលើកុំព្យូទ័រ បើកការកំណត់ → កំពុងផ្គូផ្គង របស់ OpenCode ឬដំណើរការ %1$s ក្នុងស្ថានីយ។</string>
+    <string name="settings_notifications_server_toggle">ជូនដំណឹងឧបករណ៍នេះ</string>
+    <string name="settings_notifications_mode">ជូនដំណឹងអំពី</string>
+    <string name="settings_notifications_mode_all">អ្វីគ្រប់យ៉ាង</string>
+    <string name="settings_notifications_mode_all_caption">សម័យដែលបានបញ្ចប់ សំណួរ និងសំណើសុំការអនុញ្ញាត។</string>
+    <string name="settings_notifications_mode_attention">តែពេលត្រូវការខ្ញុំ</string>
+    <string name="settings_notifications_mode_attention_caption">សំណួរ និងសំណើសុំការអនុញ្ញាត។</string>
+    <string name="settings_notifications_mode_from_this_phone">តែសម័យដែលខ្ញុំប្រើនៅទីនេះ</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">អ្វីគ្រប់យ៉ាងពីសម័យដែលអ្នកផ្ញើចេញពី %1$s នេះ។</string>
+    <string name="settings_notifications_mode_none">មិនជូនដំណឹង</string>
+    <string name="settings_notifications_status_checking">កំពុងពិនិត្យម៉ាស៊ីនមេ…</string>
+    <string name="settings_notifications_status_no_permission">អនុញ្ញាតការជូនដំណឹងខាងលើជាមុនសិន។</string>
+    <string name="settings_notifications_status_outdated">ម៉ាស៊ីនមេនេះត្រូវការបច្ចុប្បន្នភាព OpenCode សម្រាប់ការជូនដំណឹង។</string>
+    <string name="settings_notifications_status_relay">ម៉ាស៊ីនមេនេះមិនទទួលយកប្រព័ន្ធបញ្ជូនបន្តការជូនដំណឹងរបស់កម្មវិធីនេះទេ។</string>
+    <string name="settings_notifications_status_failed">មិនអាចរៀបចំការជូនដំណឹងលើម៉ាស៊ីនមេនេះបានទេ។ OpenCode នឹងព្យាយាមម្តងទៀតពេលភ្ជាប់ឡើងវិញ។</string>
+    <string name="settings_notifications_pause">ផ្អាកការជូនដំណឹងទាំងអស់</string>
+    <string name="settings_notifications_pause_on">រហូតដល់បន្តឡើងវិញ</string>
+    <string name="settings_notifications_pause_until">រហូតដល់ %1$s</string>
+    <string name="settings_notifications_resume">បន្តឡើងវិញ</string>
+    <string name="settings_notifications_pause_hour">រយៈពេលមួយម៉ោង</string>
+    <string name="settings_notifications_pause_tomorrow">រហូតដល់ព្រឹកស្អែក</string>
+    <string name="settings_notifications_pause_forever">រហូតដល់ខ្ញុំបន្តឡើងវិញ</string>
+    <string name="settings_notifications_pause_footer">ការផ្អាកនឹងបញ្ឈប់ការជូនដំណឹងពីម៉ាស៊ីនមេនេះលើគ្រប់ឧបករណ៍ទាំងអស់។</string>
+    <string name="settings_notifications_devices_header">ឧបករណ៍</string>
+    <string name="settings_notifications_device_this">%1$s (ឧបករណ៍នេះ)</string>
+    <string name="settings_notifications_device_on">បើក</string>
+    <string name="settings_notifications_device_paused">បានផ្អាក</string>
+    <string name="settings_notifications_device_remove">ដកចេញ</string>
+    <string name="settings_notifications_pause_failed_title">មិនអាចប្តូរការផ្អាកបាន</string>
+    <string name="settings_notifications_device_failed_title">មិនអាចប្តូរឧបករណ៍បាន</string>
+    <string name="settings_notifications_device_remove_failed_title">មិនអាចដកឧបករណ៍ចេញបាន</string>
+    <string name="settings_notifications_change_failed_message">ម៉ាស៊ីនមេមិនបានទទួលយកការផ្លាស់ប្តូរនេះទេ។</string>
 </resources>

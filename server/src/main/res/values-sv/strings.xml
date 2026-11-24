@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Parkopplingskoden har gått ut eller har redan använts. Kör `opencode pair --remote` igen.</string>
     <string name="server_error_pairing_unsupported">Servern stöder inte parkopplingslänkar. Uppdatera OpenCode på datorn eller ange servern manuellt.</string>
-    <string name="server_error_notification_previews_need_https">Krypterade aviseringsförhandsvisningar kräver en HTTPS-anslutning till servern.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Ange en giltig server-URL med HTTP eller HTTPS.</string>

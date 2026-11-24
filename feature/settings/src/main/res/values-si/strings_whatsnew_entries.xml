@@ -65,13 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">පණිවිඩයක් යවන ආකාරය දැක්වෙන ගැලීම් සටහනක් ඉල්ලන්න</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">පණිවිඩයක් යවන ආකාරය දැක්වෙන ගැලීම් සටහනක් අඳින්න</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">අවසන් වූ විට දැනුම් දෙන්න</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">ඔබ මෙහි ඇරඹූ සැසියක වැඩ අවසන් වූ විට, සිදු වූ දේ පිළිබඳ කෙටි සාරාංශයක් සමඟ දැනුම්දීමක් ලැබේ.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">පරිගණකයෙන් ඇරඹූ ඒවා ඇතුළු සෑම ප්‍රතිචාරයක් ගැනම දැනගැනීමට, සැසි පැනලයේ සැමවිටම දැනුම් දෙන්න සක්‍රිය කරන්න.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">අදාළ සැසිය විවෘත කිරීමට දැනුම්දීම තට්ටු කරන්න.</string>
-    <string name="settings_whatsnew_entry_always_notify_example">පණිවිඩයක් යවා දුරකථනය අගුලු දමන්න</string>
-
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">සේවාදායකයන් මාරු කරන්න</string>
     <string name="settings_whatsnew_entry_server_switcher_summary">දැනට සම්බන්ධ සේවාදායකය පැති පැනලයේ මාතෘකාවයි. වෙනත් සේවාදායකයකට මාරු වීමට හෝ එකක් එක් කිරීමට එය තට්ටු කරන්න.</string>
@@ -737,10 +730,6 @@
     <!-- 2026-10-31-02-move-session-folder-gone -->
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">ෆෝල්ඩරය නැතත් සැසි පවතී</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">ඉවත් කළ වැඩබිමක් වැනි හේතුවක් නිසා සැසියේ ෆෝල්ඩරය නැති විට, යැවීම අසාර්ථක වුවහොත් එය ව්යාපෘතියේ ෆෝල්ඩරයට ගෙන ගොස් නැවත යැවීමට යෝජනා කරයි.</string>
-
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">OpenCode සමඟ දැනුම්දීම් සකසන්න</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">නැති දැනුම්දීම් ප්ලගීනය ස්ථාපනය කරන ප්‍රොම්ප්ට් එක සමාලෝචනය කිරීමට, සැකසීම් → දැනුම්දීම් හි OpenCode සමඟ සකසන්න තට්ටු කරන්න.</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">ඇමතුම් කාඩ්පත තිරයේ පහළ පුරවයි</string>

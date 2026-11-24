@@ -51,20 +51,11 @@
     <!-- Notifications -->
     <string name="settings_notifications_title">Ειδοποιήσεις</string>
     <string name="settings_notifications_device_header">Αυτό το %1$s</string>
-    <string name="settings_notifications_device_footer">Οι ειδοποιήσεις περνούν από έναν ενδιάμεσο διακομιστή που δεν αποθηκεύει τίποτα. Μόνο οι συνεδρίες που ξεκινούν σε αυτό το %1$s στέλνουν ειδοποιήσεις εδώ.</string>
+    <string name="settings_notifications_device_footer">Οι ειδοποιήσεις περνούν από έναν αναμεταδότη που δεν αποθηκεύει τίποτα και είναι κρυπτογραφημένες από άκρο σε άκρο.</string>
     <string name="settings_notifications_allow">Να επιτρέπονται οι ειδοποιήσεις</string>
     <string name="settings_notifications_open_android_settings">Άνοιγμα ρυθμίσεων Android</string>
     <string name="settings_notifications_turn_on">Ενεργοποίηση ειδοποιήσεων</string>
     <string name="settings_notifications_server_header">Διακομιστής</string>
-    <string name="settings_notifications_set_up_footer">Ανοίγει μια συνεδρία που ζητά από το OpenCode να εγκαταστήσει την προσθήκη. Στείλτε το μήνυμα και ελέγξτε ξανά.</string>
-    <string name="settings_notifications_plugin_needed_footer">Ο διακομιστής χρειάζεται την προσθήκη ειδοποιήσεων του OpenCode.</string>
-    <string name="settings_notifications_notify_plugin">Προσθήκη ειδοποιήσεων</string>
-    <string name="settings_notifications_plugin_installed">Εγκατεστημένη</string>
-    <string name="settings_notifications_plugin_not_running">Δεν εκτελείται</string>
-    <string name="settings_notifications_plugin_not_installed">Δεν έχει εγκατασταθεί</string>
-    <string name="settings_notifications_plugin_check_failed">Αδυναμία ελέγχου κατάστασης</string>
-    <string name="settings_notifications_set_up">Ρύθμιση με το OpenCode</string>
-    <string name="settings_notifications_check_again">Νέος έλεγχος</string>
     <string name="settings_notifications_in_app_footer">Εμφανίζονται στο κουμπί του πλαϊνού μενού.</string>
     <string name="settings_notifications_in_app_notices">Ειδοποιήσεις εντός εφαρμογής</string>
 
@@ -223,4 +214,35 @@
     <string name="settings_pairing_point_camera">Στρέψτε την κάμερα στον κωδικό QR</string>
     <string name="settings_pairing_paste_link">Επικόλληση συνδέσμου ζευγοποίησης</string>
     <string name="settings_pairing_computer_hint">Στον υπολογιστή σας, ανοίξτε τις Ρυθμίσεις → Ζευγοποίηση του OpenCode ή εκτελέστε %1$s σε ένα τερματικό.</string>
+    <string name="settings_notifications_server_toggle">Ειδοποιήσεις σε αυτή τη συσκευή</string>
+    <string name="settings_notifications_mode">Ειδοποιήσεις για</string>
+    <string name="settings_notifications_mode_all">Τα πάντα</string>
+    <string name="settings_notifications_mode_all_caption">Ολοκληρωμένες συνεδρίες, ερωτήσεις και αιτήματα άδειας.</string>
+    <string name="settings_notifications_mode_attention">Μόνο όταν με χρειάζεται</string>
+    <string name="settings_notifications_mode_attention_caption">Ερωτήσεις και αιτήματα άδειας.</string>
+    <string name="settings_notifications_mode_from_this_phone">Μόνο συνεδρίες που χρησιμοποιώ εδώ</string>
+    <string name="settings_notifications_mode_from_this_phone_caption">Τα πάντα από συνεδρίες στις οποίες στέλνετε από αυτό το %1$s.</string>
+    <string name="settings_notifications_mode_none">Τίποτα</string>
+    <string name="settings_notifications_status_checking">Έλεγχος διακομιστή…</string>
+    <string name="settings_notifications_status_no_permission">Επιτρέψτε πρώτα τις ειδοποιήσεις παραπάνω.</string>
+    <string name="settings_notifications_status_outdated">Αυτός ο διακομιστής χρειάζεται ενημέρωση του OpenCode για ειδοποιήσεις.</string>
+    <string name="settings_notifications_status_relay">Αυτός ο διακομιστής δεν δέχεται τον αναμεταδότη ειδοποιήσεων αυτής της εφαρμογής.</string>
+    <string name="settings_notifications_status_failed">Δεν ήταν δυνατή η ρύθμιση ειδοποιήσεων σε αυτόν τον διακομιστή. Το OpenCode θα δοκιμάσει ξανά όταν επανασυνδεθεί.</string>
+    <string name="settings_notifications_pause">Παύση όλων των ειδοποιήσεων</string>
+    <string name="settings_notifications_pause_on">Μέχρι τη συνέχιση</string>
+    <string name="settings_notifications_pause_until">Μέχρι %1$s</string>
+    <string name="settings_notifications_resume">Συνέχιση</string>
+    <string name="settings_notifications_pause_hour">Για μία ώρα</string>
+    <string name="settings_notifications_pause_tomorrow">Μέχρι αύριο το πρωί</string>
+    <string name="settings_notifications_pause_forever">Μέχρι να τις συνεχίσω</string>
+    <string name="settings_notifications_pause_footer">Η παύση σταματά τις ειδοποιήσεις από αυτόν τον διακομιστή σε όλες τις συσκευές.</string>
+    <string name="settings_notifications_devices_header">Συσκευές</string>
+    <string name="settings_notifications_device_this">%1$s (Αυτή η συσκευή)</string>
+    <string name="settings_notifications_device_on">Ενεργό</string>
+    <string name="settings_notifications_device_paused">Σε παύση</string>
+    <string name="settings_notifications_device_remove">Αφαίρεση</string>
+    <string name="settings_notifications_pause_failed_title">Αδυναμία αλλαγής παύσης</string>
+    <string name="settings_notifications_device_failed_title">Αδυναμία αλλαγής συσκευής</string>
+    <string name="settings_notifications_device_remove_failed_title">Αδυναμία αφαίρεσης συσκευής</string>
+    <string name="settings_notifications_change_failed_message">Ο διακομιστής δεν δέχτηκε την αλλαγή.</string>
 </resources>

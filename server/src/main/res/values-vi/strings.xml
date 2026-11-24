@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Mã ghép cặp này đã hết hạn hoặc đã được dùng. Chạy lại `opencode pair --remote`.</string>
     <string name="server_error_pairing_unsupported">Máy chủ này không hỗ trợ liên kết ghép cặp. Hãy cập nhật OpenCode trên máy tính hoặc nhập máy chủ thủ công.</string>
-    <string name="server_error_notification_previews_need_https">Bản xem trước thông báo được mã hóa cần kết nối HTTPS tới máy chủ.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Nhập URL máy chủ HTTP hoặc HTTPS hợp lệ.</string>

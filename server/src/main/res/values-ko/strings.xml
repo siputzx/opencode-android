@@ -101,7 +101,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">이 페어링 코드는 만료됐거나 이미 사용됐어요. `opencode pair --remote`를 다시 실행해 주세요.</string>
     <string name="server_error_pairing_unsupported">이 서버는 페어링 링크를 지원하지 않아요. 컴퓨터의 OpenCode를 업데이트하거나 서버를 직접 입력해 주세요.</string>
-    <string name="server_error_notification_previews_need_https">암호화된 알림 미리보기에는 HTTPS 서버 연결이 필요해요.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">올바른 HTTP 또는 HTTPS 서버 URL을 입력해 주세요.</string>

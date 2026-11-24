@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Bu jübütleme kodunyň möhleti gutardy ýa-da ol eýýäm ulanyldy. `opencode pair --remote` buýrugyny täzeden işlediň.</string>
     <string name="server_error_pairing_unsupported">Bu serwer jübütleme baglanyşyklaryny goldamaýar. Kompýuteriňizdäki OpenCode programmasyny täzeläň ýa-da serweri el bilen giriziň.</string>
-    <string name="server_error_notification_previews_need_https">Şifrlenen bildiriş deslapky synlary üçin HTTPS serwer baglanyşygy gerek.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Dogry HTTP ýa-da HTTPS serwer URL salgysyny giriziň.</string>

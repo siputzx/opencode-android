@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Tämä pariliitoskoodi on vanhentunut tai jo käytetty. Suorita `opencode pair --remote` uudelleen.</string>
     <string name="server_error_pairing_unsupported">Tämä palvelin ei tue pariliitoslinkkejä. Päivitä OpenCode tietokoneellasi tai lisää palvelin käsin.</string>
-    <string name="server_error_notification_previews_need_https">Salatut ilmoitusten esikatselut vaativat HTTPS-yhteyden palvelimeen.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Anna kelvollinen palvelimen HTTP- tai HTTPS-URL-osoite.</string>

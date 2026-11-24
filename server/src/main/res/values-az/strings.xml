@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">Bu cütləşdirmə kodunun vaxtı bitib və ya artıq istifadə olunub. `opencode pair --remote` əmrini yenidən işlədin.</string>
     <string name="server_error_pairing_unsupported">Bu server cütləşdirmə linklərini dəstəkləmir. Kompüterinizdə OpenCode-u yeniləyin və ya serveri əl ilə daxil edin.</string>
-    <string name="server_error_notification_previews_need_https">Şifrələnmiş bildiriş önbaxışları üçün serverə HTTPS bağlantısı lazımdır.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Düzgün HTTP və ya HTTPS server URL-i daxil edin.</string>

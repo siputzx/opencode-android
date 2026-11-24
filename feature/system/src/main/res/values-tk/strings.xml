@@ -80,7 +80,10 @@
     <string name="system_channel_voice_calls">Sesli jaňlar</string>
     <string name="system_channel_recording">Ses ýazylýar</string>
     <string name="system_channel_session_runs">Sessiýa işledilişleri</string>
-    <string name="system_channel_session_updates">Sessiýa täzelenmeleri</string>
+    <string name="system_channel_session_finished">Tamamlanan sessiýalar</string>
+    <string name="system_channel_session_questions">Soraglar</string>
+    <string name="system_channel_session_permissions">Rugsat talaplary</string>
+    <string name="system_channel_session_other">Beýleki sessiýa täzelenmeleri</string>
     <string name="system_channel_shared_items">Paýlaşylan zatlar</string>
 
     <!-- Share sheet: notifications -->
