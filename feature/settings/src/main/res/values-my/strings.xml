@@ -221,21 +221,7 @@
     <string name="settings_notifications_status_outdated">ဤဆာဗာသည် အကြောင်းကြားချက်များကို မပံ့ပိုးပါ။ OpenCode အပ်ဒိတ် လိုအပ်နိုင်သည်။</string>
     <string name="settings_notifications_status_relay">ဤဆာဗာသည် ဤအက်ပ်၏ အကြောင်းကြားချက် relay ကို လက်မခံပါ။</string>
     <string name="settings_notifications_status_failed">ဤဆာဗာတွင် အကြောင်းကြားချက်များကို စနစ်ထည့်သွင်း၍ မရပါ။ ပြန်လည်ချိတ်ဆက်သည့်အခါ OpenCode မှ ပြန်ကြိုးစားပါမည်။</string>
-    <string name="settings_notifications_pause">အကြောင်းကြားချက်အားလုံးကို ခဏရပ်ပါ</string>
-    <string name="settings_notifications_pause_on">ပြန်ဖွင့်သည့်အထိ</string>
-    <string name="settings_notifications_pause_until">%1$s အထိ</string>
-    <string name="settings_notifications_resume">ပြန်ဖွင့်ပါ</string>
-    <string name="settings_notifications_pause_hour">တစ်နာရီကြာ</string>
-    <string name="settings_notifications_pause_tomorrow">မနက်ဖြန် မနက်အထိ</string>
-    <string name="settings_notifications_pause_footer">ခဏရပ်ထားပါက စက်အားလုံးတွင် ဤဆာဗာမှ အကြောင်းကြားချက်များကို ရပ်တန့်မည်။</string>
-    <string name="settings_notifications_devices_header">စက်များ</string>
-    <string name="settings_notifications_device_this">%1$s (ဤစက်)</string>
-    <string name="settings_notifications_device_on">ဖွင့်ထားသည်</string>
-    <string name="settings_notifications_device_paused">ခဏရပ်ထားသည်</string>
-    <string name="settings_notifications_device_remove">ဖယ်ရှားပါ</string>
-    <string name="settings_notifications_pause_failed_title">ခဏရပ်ခြင်းကို မပြောင်းလဲနိုင်ပါ</string>
-    <string name="settings_notifications_device_failed_title">စက်ကို မပြောင်းလဲနိုင်ပါ</string>
-    <string name="settings_notifications_device_remove_failed_title">စက်ကို မဖယ်ရှားနိုင်ပါ</string>
+    <string name="settings_notifications_status_disabled">ဤဆာဗာတွင် အကြောင်းကြားချက်များကို ပိတ်ထားသည်။</string>
     <string name="settings_notifications_change_failed_title">အကြောင်းကြားချက်များကို မပြောင်းလဲနိုင်ပါ</string>
     <string name="settings_notifications_change_failed_message">ဆာဗာက အပြောင်းအလဲကို လက်မခံပါ။</string>
 </resources>

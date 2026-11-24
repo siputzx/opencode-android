@@ -234,21 +234,7 @@
     <string name="settings_notifications_status_outdated">This server doesn’t offer notifications. It may need an OpenCode update.</string>
     <string name="settings_notifications_status_relay">This server doesn’t accept this app’s notification relay.</string>
     <string name="settings_notifications_status_failed">Couldn’t set up notifications on this server. OpenCode tries again when it reconnects.</string>
-    <string name="settings_notifications_pause">Pause All Notifications</string>
-    <string name="settings_notifications_pause_on">Until Resumed</string>
-    <string name="settings_notifications_pause_until">Until %1$s</string>
-    <string name="settings_notifications_resume">Resume</string>
-    <string name="settings_notifications_pause_hour">For an Hour</string>
-    <string name="settings_notifications_pause_tomorrow">Until Tomorrow Morning</string>
-    <string name="settings_notifications_pause_footer">Pausing stops notifications from this server on every device.</string>
-    <string name="settings_notifications_devices_header">Devices</string>
-    <string name="settings_notifications_device_this">%1$s (This Device)</string>
-    <string name="settings_notifications_device_on">On</string>
-    <string name="settings_notifications_device_paused">Paused</string>
-    <string name="settings_notifications_device_remove">Remove</string>
-    <string name="settings_notifications_pause_failed_title">Couldn’t Change the Pause</string>
-    <string name="settings_notifications_device_failed_title">Couldn’t Change the Device</string>
-    <string name="settings_notifications_device_remove_failed_title">Couldn’t Remove the Device</string>
+    <string name="settings_notifications_status_disabled">Notifications are disabled on this server.</string>
     <string name="settings_notifications_change_failed_title">Couldn’t Change Notifications</string>
     <string name="settings_notifications_change_failed_message">The server didn’t take the change.</string>
 </resources>

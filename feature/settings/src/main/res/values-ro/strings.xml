@@ -227,21 +227,7 @@
     <string name="settings_notifications_status_outdated">Acest server nu oferă notificări. Ar putea necesita o actualizare OpenCode.</string>
     <string name="settings_notifications_status_relay">Acest server nu acceptă releul de notificări al acestei aplicații.</string>
     <string name="settings_notifications_status_failed">Notificările nu au putut fi configurate pe acest server. OpenCode va încerca din nou la reconectare.</string>
-    <string name="settings_notifications_pause">Pune toate notificările pe pauză</string>
-    <string name="settings_notifications_pause_on">Până la reluare</string>
-    <string name="settings_notifications_pause_until">Până la %1$s</string>
-    <string name="settings_notifications_resume">Reia</string>
-    <string name="settings_notifications_pause_hour">Pentru o oră</string>
-    <string name="settings_notifications_pause_tomorrow">Până mâine dimineață</string>
-    <string name="settings_notifications_pause_footer">Pauza oprește notificările de la acest server pe toate dispozitivele.</string>
-    <string name="settings_notifications_devices_header">Dispozitive</string>
-    <string name="settings_notifications_device_this">%1$s (acest dispozitiv)</string>
-    <string name="settings_notifications_device_on">Activat</string>
-    <string name="settings_notifications_device_paused">În pauză</string>
-    <string name="settings_notifications_device_remove">Elimină</string>
-    <string name="settings_notifications_pause_failed_title">Nu s-a putut modifica pauza</string>
-    <string name="settings_notifications_device_failed_title">Nu s-a putut modifica dispozitivul</string>
-    <string name="settings_notifications_device_remove_failed_title">Nu s-a putut elimina dispozitivul</string>
+    <string name="settings_notifications_status_disabled">Notificările sunt dezactivate pe acest server.</string>
     <string name="settings_notifications_change_failed_title">Nu s-au putut modifica notificările</string>
     <string name="settings_notifications_change_failed_message">Serverul nu a acceptat modificarea.</string>
 </resources>

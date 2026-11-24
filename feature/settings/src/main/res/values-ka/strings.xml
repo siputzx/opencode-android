@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">ამ სერვერს შეტყობინებების მხარდაჭერა არ აქვს. შესაძლოა OpenCode-ის განახლება იყოს საჭირო.</string>
     <string name="settings_notifications_status_relay">ეს სერვერი არ იღებს ამ აპის შეტყობინებების შუამავალს.</string>
     <string name="settings_notifications_status_failed">ამ სერვერზე შეტყობინებების გამართვა ვერ მოხერხდა. ხელახლა დაკავშირებისას OpenCode ისევ სცდის.</string>
-    <string name="settings_notifications_pause">ყველა შეტყობინების შეჩერება</string>
-    <string name="settings_notifications_pause_on">განახლებამდე</string>
-    <string name="settings_notifications_pause_until">%1$s-მდე</string>
-    <string name="settings_notifications_resume">განახლება</string>
-    <string name="settings_notifications_pause_hour">ერთი საათით</string>
-    <string name="settings_notifications_pause_tomorrow">ხვალ დილამდე</string>
-    <string name="settings_notifications_pause_footer">პაუზა აჩერებს ამ სერვერის შეტყობინებებს ყველა მოწყობილობაზე.</string>
-    <string name="settings_notifications_devices_header">მოწყობილობები</string>
-    <string name="settings_notifications_device_this">%1$s (ეს მოწყობილობა)</string>
-    <string name="settings_notifications_device_on">ჩართულია</string>
-    <string name="settings_notifications_device_paused">შეჩერებულია</string>
-    <string name="settings_notifications_device_remove">წაშლა</string>
-    <string name="settings_notifications_pause_failed_title">პაუზის შეცვლა ვერ მოხერხდა</string>
-    <string name="settings_notifications_device_failed_title">მოწყობილობის შეცვლა ვერ მოხერხდა</string>
-    <string name="settings_notifications_device_remove_failed_title">მოწყობილობის წაშლა ვერ მოხერხდა</string>
+    <string name="settings_notifications_status_disabled">ამ სერვერზე შეტყობინებები გამორთულია.</string>
     <string name="settings_notifications_change_failed_title">შეტყობინებების შეცვლა ვერ მოხერხდა</string>
     <string name="settings_notifications_change_failed_message">სერვერმა ცვლილება არ მიიღო.</string>
 </resources>

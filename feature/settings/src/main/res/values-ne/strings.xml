@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">यो सर्भरले सूचनाहरू दिँदैन। यसलाई OpenCode अपडेट चाहिन सक्छ।</string>
     <string name="settings_notifications_status_relay">यो सर्भरले यस एपको सूचना रिले स्वीकार गर्दैन।</string>
     <string name="settings_notifications_status_failed">यो सर्भरमा सूचनाहरू सेटअप गर्न सकिएन। पुन: जडान हुँदा OpenCode ले फेरि प्रयास गर्नेछ।</string>
-    <string name="settings_notifications_pause">सबै सूचनाहरू रोक्नुहोस्</string>
-    <string name="settings_notifications_pause_on">पुन: सुरु नगरेसम्म</string>
-    <string name="settings_notifications_pause_until">%1$s सम्म</string>
-    <string name="settings_notifications_resume">पुन: सुरु गर्नुहोस्</string>
-    <string name="settings_notifications_pause_hour">एक घण्टाका लागि</string>
-    <string name="settings_notifications_pause_tomorrow">भोलि बिहानसम्म</string>
-    <string name="settings_notifications_pause_footer">रोक्दा यो सर्भरबाट सबै उपकरणमा आउने सूचनाहरू बन्द हुन्छन्।</string>
-    <string name="settings_notifications_devices_header">उपकरणहरू</string>
-    <string name="settings_notifications_device_this">%1$s (यो उपकरण)</string>
-    <string name="settings_notifications_device_on">चालु</string>
-    <string name="settings_notifications_device_paused">रोकिएको</string>
-    <string name="settings_notifications_device_remove">हटाउनुहोस्</string>
-    <string name="settings_notifications_pause_failed_title">रोक्ने स्थिति परिवर्तन गर्न सकिएन</string>
-    <string name="settings_notifications_device_failed_title">उपकरण परिवर्तन गर्न सकिएन</string>
-    <string name="settings_notifications_device_remove_failed_title">उपकरण हटाउन सकिएन</string>
+    <string name="settings_notifications_status_disabled">यो सर्भरमा सूचनाहरू असक्षम छन्।</string>
     <string name="settings_notifications_change_failed_title">सूचनाहरू परिवर्तन गर्न सकिएन</string>
     <string name="settings_notifications_change_failed_message">सर्भरले यो परिवर्तन स्वीकार गरेन।</string>
 </resources>

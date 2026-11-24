@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Denne serveren tilbyr ikke varsler. Den trenger kanskje en OpenCode-oppdatering.</string>
     <string name="settings_notifications_status_relay">Denne serveren godtar ikke varslingsreléet til denne appen.</string>
     <string name="settings_notifications_status_failed">Kunne ikke sette opp varsler på denne serveren. OpenCode prøver igjen når den kobler til på nytt.</string>
-    <string name="settings_notifications_pause">Sett alle varsler på pause</string>
-    <string name="settings_notifications_pause_on">Til du gjenopptar</string>
-    <string name="settings_notifications_pause_until">Til %1$s</string>
-    <string name="settings_notifications_resume">Gjenoppta</string>
-    <string name="settings_notifications_pause_hour">I en time</string>
-    <string name="settings_notifications_pause_tomorrow">Til i morgen tidlig</string>
-    <string name="settings_notifications_pause_footer">Pause stopper varsler fra denne serveren på alle enheter.</string>
-    <string name="settings_notifications_devices_header">Enheter</string>
-    <string name="settings_notifications_device_this">%1$s (denne enheten)</string>
-    <string name="settings_notifications_device_on">På</string>
-    <string name="settings_notifications_device_paused">Satt på pause</string>
-    <string name="settings_notifications_device_remove">Fjern</string>
-    <string name="settings_notifications_pause_failed_title">Kunne ikke endre pausen</string>
-    <string name="settings_notifications_device_failed_title">Kunne ikke endre enheten</string>
-    <string name="settings_notifications_device_remove_failed_title">Kunne ikke fjerne enheten</string>
+    <string name="settings_notifications_status_disabled">Varsler er deaktivert på denne serveren.</string>
     <string name="settings_notifications_change_failed_title">Kunne ikke endre varsler</string>
     <string name="settings_notifications_change_failed_message">Serveren godtok ikke endringen.</string>
 </resources>

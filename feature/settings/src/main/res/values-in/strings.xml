@@ -221,21 +221,7 @@
     <string name="settings_notifications_status_outdated">Server ini tidak mendukung notifikasi. Mungkin perlu pembaruan OpenCode.</string>
     <string name="settings_notifications_status_relay">Server ini tidak menerima relai notifikasi aplikasi ini.</string>
     <string name="settings_notifications_status_failed">Gagal menyiapkan notifikasi di server ini. OpenCode akan mencoba lagi saat terhubung kembali.</string>
-    <string name="settings_notifications_pause">Jeda semua notifikasi</string>
-    <string name="settings_notifications_pause_on">Hingga dilanjutkan</string>
-    <string name="settings_notifications_pause_until">Hingga %1$s</string>
-    <string name="settings_notifications_resume">Lanjutkan</string>
-    <string name="settings_notifications_pause_hour">Selama satu jam</string>
-    <string name="settings_notifications_pause_tomorrow">Hingga besok pagi</string>
-    <string name="settings_notifications_pause_footer">Menjeda akan menghentikan notifikasi dari server ini di semua perangkat.</string>
-    <string name="settings_notifications_devices_header">Perangkat</string>
-    <string name="settings_notifications_device_this">%1$s (Perangkat ini)</string>
-    <string name="settings_notifications_device_on">Aktif</string>
-    <string name="settings_notifications_device_paused">Dijeda</string>
-    <string name="settings_notifications_device_remove">Hapus</string>
-    <string name="settings_notifications_pause_failed_title">Gagal mengubah jeda</string>
-    <string name="settings_notifications_device_failed_title">Gagal mengubah perangkat</string>
-    <string name="settings_notifications_device_remove_failed_title">Gagal menghapus perangkat</string>
+    <string name="settings_notifications_status_disabled">Notifikasi dinonaktifkan di server ini.</string>
     <string name="settings_notifications_change_failed_title">Gagal mengubah notifikasi</string>
     <string name="settings_notifications_change_failed_message">Server tidak menerima perubahan ini.</string>
 </resources>

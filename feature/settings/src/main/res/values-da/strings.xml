@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Denne server understøtter ikke meddelelser. Den har muligvis brug for en OpenCode-opdatering.</string>
     <string name="settings_notifications_status_relay">Denne server accepterer ikke denne apps meddelelsesrelæ.</string>
     <string name="settings_notifications_status_failed">Kunne ikke opsætte meddelelser på denne server. OpenCode prøver igen, når forbindelsen genoprettes.</string>
-    <string name="settings_notifications_pause">Sæt alle meddelelser på pause</string>
-    <string name="settings_notifications_pause_on">Indtil genoptaget</string>
-    <string name="settings_notifications_pause_until">Indtil %1$s</string>
-    <string name="settings_notifications_resume">Genoptag</string>
-    <string name="settings_notifications_pause_hour">I en time</string>
-    <string name="settings_notifications_pause_tomorrow">Indtil i morgen tidlig</string>
-    <string name="settings_notifications_pause_footer">Pause stopper meddelelser fra denne server på alle enheder.</string>
-    <string name="settings_notifications_devices_header">Enheder</string>
-    <string name="settings_notifications_device_this">%1$s (denne enhed)</string>
-    <string name="settings_notifications_device_on">Til</string>
-    <string name="settings_notifications_device_paused">På pause</string>
-    <string name="settings_notifications_device_remove">Fjern</string>
-    <string name="settings_notifications_pause_failed_title">Kunne ikke ændre pausen</string>
-    <string name="settings_notifications_device_failed_title">Kunne ikke ændre enheden</string>
-    <string name="settings_notifications_device_remove_failed_title">Kunne ikke fjerne enheden</string>
+    <string name="settings_notifications_status_disabled">Meddelelser er deaktiveret på denne server.</string>
     <string name="settings_notifications_change_failed_title">Kunne ikke ændre meddelelser</string>
     <string name="settings_notifications_change_failed_message">Serveren tog ikke imod ændringen.</string>
 </resources>

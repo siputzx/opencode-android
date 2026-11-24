@@ -77,8 +77,6 @@ import ai.opencode.server.live.requestPushCapability
 import ai.opencode.server.live.requestPushState
 import ai.opencode.server.live.requestRegisterPushDevice
 import ai.opencode.server.live.requestRemovePushDevice
-import ai.opencode.server.live.requestSetPushDevicePaused
-import ai.opencode.server.live.requestSetPushPaused
 import ai.opencode.server.live.requestSetPushSessionBell
 import ai.opencode.server.model.FileReadTarget
 import ai.opencode.server.model.OpenCodeAutocompleteAgent
@@ -221,11 +219,8 @@ data class OpenCodeClient(
     val registerPushDevice: suspend (server: OpenCodeServer, id: String, registration: OpenCodePushRegistration) -> String,
     val removePushDevice: suspend (server: OpenCodeServer, id: String) -> Unit,
     val pushState: suspend (server: OpenCodeServer) -> OpenCodePushState,
-    val setPushDevicePaused: suspend (server: OpenCodeServer, id: String, paused: Boolean) -> Unit,
     /** This phone's own bell on a session; null removes it. */
     val setPushSessionBell: suspend (server: OpenCodeServer, id: String, sessionID: String, bell: OpenCodePushBell?) -> Unit,
-    /** Pauses or resumes every notification from the server, optionally until a time in epoch milliseconds. */
-    val setPushPaused: suspend (server: OpenCodeServer, paused: Boolean, until: Long?) -> Unit,
     /** Queues a compaction; it runs after the session's current run. */
     val compactSession: suspend (server: OpenCodeServer, sessionID: String) -> Unit,
     /** Undoes from a message on (V2's `revert/stage`, as the TUI's `/undo`). */
@@ -338,9 +333,7 @@ data class OpenCodeClient(
             registerPushDevice = ::requestRegisterPushDevice,
             removePushDevice = ::requestRemovePushDevice,
             pushState = ::requestPushState,
-            setPushDevicePaused = ::requestSetPushDevicePaused,
             setPushSessionBell = ::requestSetPushSessionBell,
-            setPushPaused = ::requestSetPushPaused,
             compactSession = ::requestCompactSession,
             stageRevert = ::requestStageRevert,
             clearRevert = ::requestClearRevert,
@@ -424,9 +417,7 @@ data class OpenCodeClient(
                     registerPushDevice = { _, _, _ -> unimplemented("registerPushDevice") },
                     removePushDevice = { _, _ -> },
                     pushState = { unimplemented("pushState") },
-                    setPushDevicePaused = { _, _, _ -> unimplemented("setPushDevicePaused") },
                     setPushSessionBell = { _, _, _, _ -> unimplemented("setPushSessionBell") },
-                    setPushPaused = { _, _, _ -> unimplemented("setPushPaused") },
                     compactSession = { _, _ -> unimplemented("compactSession") },
                     stageRevert = { _, _, _ -> unimplemented("stageRevert") },
                     clearRevert = { _, _ -> unimplemented("clearRevert") },

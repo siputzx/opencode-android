@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Αυτός ο διακομιστής δεν υποστηρίζει ειδοποιήσεις. Ίσως χρειάζεται ενημέρωση του OpenCode.</string>
     <string name="settings_notifications_status_relay">Αυτός ο διακομιστής δεν δέχεται τον αναμεταδότη ειδοποιήσεων αυτής της εφαρμογής.</string>
     <string name="settings_notifications_status_failed">Δεν ήταν δυνατή η ρύθμιση ειδοποιήσεων σε αυτόν τον διακομιστή. Το OpenCode θα δοκιμάσει ξανά όταν επανασυνδεθεί.</string>
-    <string name="settings_notifications_pause">Παύση όλων των ειδοποιήσεων</string>
-    <string name="settings_notifications_pause_on">Μέχρι τη συνέχιση</string>
-    <string name="settings_notifications_pause_until">Μέχρι %1$s</string>
-    <string name="settings_notifications_resume">Συνέχιση</string>
-    <string name="settings_notifications_pause_hour">Για μία ώρα</string>
-    <string name="settings_notifications_pause_tomorrow">Μέχρι αύριο το πρωί</string>
-    <string name="settings_notifications_pause_footer">Η παύση σταματά τις ειδοποιήσεις από αυτόν τον διακομιστή σε όλες τις συσκευές.</string>
-    <string name="settings_notifications_devices_header">Συσκευές</string>
-    <string name="settings_notifications_device_this">%1$s (Αυτή η συσκευή)</string>
-    <string name="settings_notifications_device_on">Ενεργό</string>
-    <string name="settings_notifications_device_paused">Σε παύση</string>
-    <string name="settings_notifications_device_remove">Αφαίρεση</string>
-    <string name="settings_notifications_pause_failed_title">Αδυναμία αλλαγής παύσης</string>
-    <string name="settings_notifications_device_failed_title">Αδυναμία αλλαγής συσκευής</string>
-    <string name="settings_notifications_device_remove_failed_title">Αδυναμία αφαίρεσης συσκευής</string>
+    <string name="settings_notifications_status_disabled">Οι ειδοποιήσεις είναι απενεργοποιημένες σε αυτόν τον διακομιστή.</string>
     <string name="settings_notifications_change_failed_title">Αδυναμία αλλαγής ειδοποιήσεων</string>
     <string name="settings_notifications_change_failed_message">Ο διακομιστής δεν δέχτηκε την αλλαγή.</string>
 </resources>

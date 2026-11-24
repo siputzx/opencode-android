@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">यह सर्वर सूचनाएँ नहीं देता। इसमें OpenCode अपडेट की ज़रूरत हो सकती है।</string>
     <string name="settings_notifications_status_relay">यह सर्वर इस ऐप के सूचना रिले को स्वीकार नहीं करता।</string>
     <string name="settings_notifications_status_failed">इस सर्वर पर सूचनाएँ सेट अप नहीं हो सकीं। फिर से कनेक्ट होने पर OpenCode फिर से कोशिश करेगा।</string>
-    <string name="settings_notifications_pause">सभी सूचनाएँ रोकें</string>
-    <string name="settings_notifications_pause_on">फिर से चालू होने तक</string>
-    <string name="settings_notifications_pause_until">%1$s तक</string>
-    <string name="settings_notifications_resume">फिर से चालू करें</string>
-    <string name="settings_notifications_pause_hour">एक घंटे के लिए</string>
-    <string name="settings_notifications_pause_tomorrow">कल सुबह तक</string>
-    <string name="settings_notifications_pause_footer">रोकने पर हर डिवाइस पर इस सर्वर की सूचनाएँ बंद हो जाती हैं।</string>
-    <string name="settings_notifications_devices_header">डिवाइस</string>
-    <string name="settings_notifications_device_this">%1$s (यह डिवाइस)</string>
-    <string name="settings_notifications_device_on">चालू</string>
-    <string name="settings_notifications_device_paused">रुका हुआ है</string>
-    <string name="settings_notifications_device_remove">हटाएँ</string>
-    <string name="settings_notifications_pause_failed_title">रोकने की सेटिंग नहीं बदल सकी</string>
-    <string name="settings_notifications_device_failed_title">डिवाइस में बदलाव नहीं हो सका</string>
-    <string name="settings_notifications_device_remove_failed_title">डिवाइस नहीं हटाया जा सका</string>
+    <string name="settings_notifications_status_disabled">इस सर्वर पर सूचनाएँ अक्षम हैं।</string>
     <string name="settings_notifications_change_failed_title">सूचना सेटिंग नहीं बदल सकी</string>
     <string name="settings_notifications_change_failed_message">सर्वर ने यह बदलाव स्वीकार नहीं किया।</string>
 </resources>

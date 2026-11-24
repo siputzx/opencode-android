@@ -227,21 +227,7 @@
     <string name="settings_notifications_status_outdated">Este servidor não oferece notificações. Talvez precise de uma atualização do OpenCode.</string>
     <string name="settings_notifications_status_relay">Este servidor não aceita o retransmissor de notificações deste app.</string>
     <string name="settings_notifications_status_failed">Não foi possível configurar as notificações neste servidor. O OpenCode tentará novamente ao reconectar.</string>
-    <string name="settings_notifications_pause">Pausar todas as notificações</string>
-    <string name="settings_notifications_pause_on">Até retomar</string>
-    <string name="settings_notifications_pause_until">Até %1$s</string>
-    <string name="settings_notifications_resume">Retomar</string>
-    <string name="settings_notifications_pause_hour">Por uma hora</string>
-    <string name="settings_notifications_pause_tomorrow">Até amanhã de manhã</string>
-    <string name="settings_notifications_pause_footer">Pausar interrompe as notificações deste servidor em todos os dispositivos.</string>
-    <string name="settings_notifications_devices_header">Dispositivos</string>
-    <string name="settings_notifications_device_this">%1$s (este dispositivo)</string>
-    <string name="settings_notifications_device_on">Ativado</string>
-    <string name="settings_notifications_device_paused">Pausado</string>
-    <string name="settings_notifications_device_remove">Remover</string>
-    <string name="settings_notifications_pause_failed_title">Não foi possível alterar a pausa</string>
-    <string name="settings_notifications_device_failed_title">Não foi possível alterar o dispositivo</string>
-    <string name="settings_notifications_device_remove_failed_title">Não foi possível remover o dispositivo</string>
+    <string name="settings_notifications_status_disabled">As notificações estão desativadas neste servidor.</string>
     <string name="settings_notifications_change_failed_title">Não foi possível alterar as notificações</string>
     <string name="settings_notifications_change_failed_message">O servidor não aceitou a alteração.</string>
 </resources>

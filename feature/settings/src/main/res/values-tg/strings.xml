@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Ин сервер огоҳиҳоро пешниҳод намекунад. Шояд навсозии OpenCode лозим бошад.</string>
     <string name="settings_notifications_status_relay">Ин сервер миёнарави огоҳиҳои ин барномаро қабул намекунад.</string>
     <string name="settings_notifications_status_failed">Огоҳиҳоро дар ин сервер танзим карда нашуд. OpenCode ҳангоми пайвасти дубора боз кӯшиш мекунад.</string>
-    <string name="settings_notifications_pause">Таваққуфи ҳамаи огоҳиҳо</string>
-    <string name="settings_notifications_pause_on">То идома додан</string>
-    <string name="settings_notifications_pause_until">То %1$s</string>
-    <string name="settings_notifications_resume">Идома додан</string>
-    <string name="settings_notifications_pause_hour">Барои як соат</string>
-    <string name="settings_notifications_pause_tomorrow">То пагоҳ саҳар</string>
-    <string name="settings_notifications_pause_footer">Таваққуф огоҳиҳоро аз ин сервер дар ҳамаи дастгоҳҳо қатъ мекунад.</string>
-    <string name="settings_notifications_devices_header">Дастгоҳҳо</string>
-    <string name="settings_notifications_device_this">%1$s (Ин дастгоҳ)</string>
-    <string name="settings_notifications_device_on">Фаъол</string>
-    <string name="settings_notifications_device_paused">Таваққуф шудааст</string>
-    <string name="settings_notifications_device_remove">Хориҷ кардан</string>
-    <string name="settings_notifications_pause_failed_title">Таваққуфро тағйир дода нашуд</string>
-    <string name="settings_notifications_device_failed_title">Дастгоҳро тағйир дода нашуд</string>
-    <string name="settings_notifications_device_remove_failed_title">Дастгоҳро хориҷ карда нашуд</string>
+    <string name="settings_notifications_status_disabled">Огоҳиҳо дар ин сервер хомӯш карда шудаанд.</string>
     <string name="settings_notifications_change_failed_title">Огоҳиҳоро тағйир дода нашуд</string>
     <string name="settings_notifications_change_failed_message">Сервер тағйиротро қабул накард.</string>
 </resources>

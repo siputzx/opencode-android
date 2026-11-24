@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Bu serwer bildirişleri goldamaýar. OpenCode-y täzelemek gerek bolup biler.</string>
     <string name="settings_notifications_status_relay">Bu serwer bu programmanyň bildiriş geçirijisini kabul etmeýär.</string>
     <string name="settings_notifications_status_failed">Bu serwerde bildirişleri sazlap bolmady. OpenCode gaýtadan birikende täzeden synanyşar.</string>
-    <string name="settings_notifications_pause">Ähli bildirişleri sägindir</string>
-    <string name="settings_notifications_pause_on">Dowam etdirilýänçä</string>
-    <string name="settings_notifications_pause_until">%1$s çenli</string>
-    <string name="settings_notifications_resume">Dowam etdir</string>
-    <string name="settings_notifications_pause_hour">Bir sagatlyk</string>
-    <string name="settings_notifications_pause_tomorrow">Ertir irdene çenli</string>
-    <string name="settings_notifications_pause_footer">Sägindirmek bu serwerden gelýän bildirişleri ähli enjamlarda duruzýar.</string>
-    <string name="settings_notifications_devices_header">Enjamlar</string>
-    <string name="settings_notifications_device_this">%1$s (Bu enjam)</string>
-    <string name="settings_notifications_device_on">Açyk</string>
-    <string name="settings_notifications_device_paused">Säginildi</string>
-    <string name="settings_notifications_device_remove">Aýyr</string>
-    <string name="settings_notifications_pause_failed_title">Sägindirmäni üýtgedip bolmady</string>
-    <string name="settings_notifications_device_failed_title">Enjamy üýtgedip bolmady</string>
-    <string name="settings_notifications_device_remove_failed_title">Enjamy aýryp bolmady</string>
+    <string name="settings_notifications_status_disabled">Bu serwerde bildirişler öçürilen.</string>
     <string name="settings_notifications_change_failed_title">Bildirişleri üýtgedip bolmady</string>
     <string name="settings_notifications_change_failed_message">Serwer üýtgeşmäni kabul etmedi.</string>
 </resources>

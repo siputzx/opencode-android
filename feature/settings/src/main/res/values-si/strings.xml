@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">මෙම සේවාදායකය දැනුම්දීම් ලබා නොදෙයි. එයට OpenCode යාවත්කාලීනයක් අවශ්‍ය විය හැක.</string>
     <string name="settings_notifications_status_relay">මෙම සේවාදායකය මෙම යෙදුමේ දැනුම්දීම් රිලේ එක පිළිගන්නේ නැත.</string>
     <string name="settings_notifications_status_failed">මෙම සේවාදායකයේ දැනුම්දීම් සැකසීමට නොහැකි විය. OpenCode නැවත සම්බන්ධ වූ විට යළි උත්සාහ කරයි.</string>
-    <string name="settings_notifications_pause">සියලු දැනුම්දීම් විරාම කරන්න</string>
-    <string name="settings_notifications_pause_on">නැවත අරඹන තෙක්</string>
-    <string name="settings_notifications_pause_until">%1$s තෙක්</string>
-    <string name="settings_notifications_resume">නැවත අරඹන්න</string>
-    <string name="settings_notifications_pause_hour">පැයකට</string>
-    <string name="settings_notifications_pause_tomorrow">හෙට උදෑසන තෙක්</string>
-    <string name="settings_notifications_pause_footer">විරාම කිරීමෙන් මෙම සේවාදායකයෙන් සෑම උපාංගයකටම එන දැනුම්දීම් නවතී.</string>
-    <string name="settings_notifications_devices_header">උපාංග</string>
-    <string name="settings_notifications_device_this">%1$s (මෙම උපාංගය)</string>
-    <string name="settings_notifications_device_on">සක්‍රියයි</string>
-    <string name="settings_notifications_device_paused">විරාම කර ඇත</string>
-    <string name="settings_notifications_device_remove">ඉවත් කරන්න</string>
-    <string name="settings_notifications_pause_failed_title">විරාමය වෙනස් කිරීමට නොහැකි විය</string>
-    <string name="settings_notifications_device_failed_title">උපාංගය වෙනස් කිරීමට නොහැකි විය</string>
-    <string name="settings_notifications_device_remove_failed_title">උපාංගය ඉවත් කිරීමට නොහැකි විය</string>
+    <string name="settings_notifications_status_disabled">මෙම සේවාදායකයේ දැනුම්දීම් අක්‍රිය කර ඇත.</string>
     <string name="settings_notifications_change_failed_title">දැනුම්දීම් වෙනස් කිරීමට නොහැකි විය</string>
     <string name="settings_notifications_change_failed_message">සේවාදායකය එම වෙනස පිළිගත්තේ නැත.</string>
 </resources>

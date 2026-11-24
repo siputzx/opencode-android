@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">ይህ አገልጋይ ማሳወቂያዎችን አያቀርብም። የOpenCode ዝማኔ ሊያስፈልገው ይችላል።</string>
     <string name="settings_notifications_status_relay">ይህ አገልጋይ የዚህን መተግበሪያ የማሳወቂያ ማስተላለፊያ አይቀበልም።</string>
     <string name="settings_notifications_status_failed">በዚህ አገልጋይ ላይ ማሳወቂያዎችን ማዋቀር አልተቻለም። OpenCode እንደገና ሲገናኝ ዳግም ይሞክራል።</string>
-    <string name="settings_notifications_pause">ሁሉንም ማሳወቂያዎች ለአፍታ አቁም</string>
-    <string name="settings_notifications_pause_on">እስኪቀጥል ድረስ</string>
-    <string name="settings_notifications_pause_until">እስከ %1$s ድረስ</string>
-    <string name="settings_notifications_resume">ቀጥል</string>
-    <string name="settings_notifications_pause_hour">ለአንድ ሰዓት</string>
-    <string name="settings_notifications_pause_tomorrow">እስከ ነገ ጠዋት ድረስ</string>
-    <string name="settings_notifications_pause_footer">ለአፍታ ማቆም ከዚህ አገልጋይ የሚመጡ ማሳወቂያዎችን በሁሉም መሣሪያዎች ላይ ያቆማል።</string>
-    <string name="settings_notifications_devices_header">መሣሪያዎች</string>
-    <string name="settings_notifications_device_this">%1$s (ይህ መሣሪያ)</string>
-    <string name="settings_notifications_device_on">በርቷል</string>
-    <string name="settings_notifications_device_paused">ለአፍታ ቆሟል</string>
-    <string name="settings_notifications_device_remove">አስወግድ</string>
-    <string name="settings_notifications_pause_failed_title">ለአፍታ ማቆሙን መቀየር አልተቻለም</string>
-    <string name="settings_notifications_device_failed_title">መሣሪያውን መቀየር አልተቻለም</string>
-    <string name="settings_notifications_device_remove_failed_title">መሣሪያውን ማስወገድ አልተቻለም</string>
+    <string name="settings_notifications_status_disabled">በዚህ አገልጋይ ላይ ማሳወቂያዎች ተሰናክለዋል።</string>
     <string name="settings_notifications_change_failed_title">ማሳወቂያዎችን መቀየር አልተቻለም</string>
     <string name="settings_notifications_change_failed_message">አገልጋዩ ለውጡን አልተቀበለውም።</string>
 </resources>

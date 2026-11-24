@@ -9,15 +9,12 @@ import ai.opencode.core.ui.OpenCodeErrorText
 import ai.opencode.core.ui.OpenCodeTheme
 import ai.opencode.feature.system.notifications.NotificationPermission
 import ai.opencode.feature.system.notifications.PushChoice
-import ai.opencode.feature.system.notifications.PushDuration
 import ai.opencode.feature.system.notifications.PushMode
 import ai.opencode.feature.system.notifications.PushServer
 import ai.opencode.feature.system.notifications.PushSharedKeys
 import ai.opencode.feature.system.notifications.PushStatus
 import ai.opencode.feature.system.notifications.rememberPushNow
-import ai.opencode.server.model.OpenCodePushDevice
 import ai.opencode.server.model.OpenCodePushLevel
-import android.text.format.DateUtils
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -26,13 +23,12 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.semantics
 
 /**
- * Settings → Notifications: this phone's permission, this server's notifications (on or off, what
- * to hear, a pause for everyone and the phones it knows), and the In-App Notices picker.
+ * Settings → Notifications: this phone's permission, this server's notifications (on or off and
+ * what to hear), and the In-App Notices picker.
  */
 @Composable
 fun NotificationSettingsView(store: SettingsStore) {
@@ -56,9 +52,11 @@ fun NotificationSettingsView(store: SettingsStore) {
     val isReady = choice.enabled && push.status == PushStatus.Ready && pushState != null
     val permissionHeader = stringResource(R.string.settings_notifications_device_header, ThisDeviceName)
     val serverHeader = stringResource(R.string.settings_notifications_server_header)
-    val serverFooter = pushStatusFooter(push.status)
-    val pauseFooter = stringResource(R.string.settings_notifications_pause_footer)
-    val devicesHeader = stringResource(R.string.settings_notifications_devices_header)
+    val pausedUntil = pushState?.pausedUntil
+    val now = rememberPushNow(listOf(pausedUntil))
+    val isServerPaused = pushState != null && pushState.paused && (pausedUntil == null || pausedUntil > now)
+    val isDisabled = isReady && (isServerPaused || push.device?.paused == true)
+    val serverFooter = if (isDisabled) stringResource(R.string.settings_notifications_status_disabled) else pushStatusFooter(push.status)
     val inAppFooter = stringResource(R.string.settings_notifications_in_app_footer)
     val send = { action: PushSettingsFeature.Action -> store.send(SettingsFeature.Action.Push(action)) }
 
@@ -114,38 +112,6 @@ fun NotificationSettingsView(store: SettingsStore) {
                 }
             }
         }
-        if (isReady && pushState != null) {
-            settingsSection(key = "pause", footer = footerText(pauseFooter)) {
-                val until = pushState.pausedUntil
-                val now = rememberPushNow(listOf(until))
-                val isPaused = pushState.paused && (until == null || until > now)
-                val value = when {
-                    !isPaused -> stringResource(R.string.settings_value_off)
-                    until != null -> stringResource(R.string.settings_notifications_pause_until, pushTime(until))
-                    else -> stringResource(R.string.settings_notifications_pause_on)
-                }
-                val options = mutableListOf<SettingsMenuOption<PushDuration?>>()
-                if (isPaused) options.add(SettingsMenuOption(null, stringResource(R.string.settings_notifications_resume)))
-                options.add(SettingsMenuOption(PushDuration.hour, stringResource(R.string.settings_notifications_pause_hour)))
-                options.add(SettingsMenuOption(PushDuration.tomorrowMorning, stringResource(R.string.settings_notifications_pause_tomorrow)))
-                options.add(SettingsMenuOption(PushDuration.forever, stringResource(R.string.settings_notifications_pause_on)))
-                SettingsMenuRow(
-                    title = stringResource(R.string.settings_notifications_pause),
-                    value = value,
-                    selection = if (isPaused && until == null) PushDuration.forever else null,
-                    options = options,
-                    onSelect = { send(PushSettingsFeature.Action.PauseChosen(it)) },
-                )
-            }
-            settingsSection(key = "devices", header = devicesHeader) {
-                var first = true
-                for (device in pushState.devices) {
-                    if (!first) SettingsDivider()
-                    first = false
-                    DeviceRow(device, isThisPhone = device.id == push.deviceID, send = send)
-                }
-            }
-        }
         settingsSection(
             key = "in-app",
             footer = footerText(inAppFooter),
@@ -170,33 +136,6 @@ fun NotificationSettingsView(store: SettingsStore) {
             },
         )
     }
-}
-
-private enum class DeviceChoice { on, paused, remove }
-
-@Composable
-private fun DeviceRow(device: OpenCodePushDevice, isThisPhone: Boolean, send: (PushSettingsFeature.Action) -> Unit) {
-    val onTitle = stringResource(R.string.settings_notifications_device_on)
-    val pausedTitle = stringResource(R.string.settings_notifications_device_paused)
-    val sections = mutableListOf<Pair<String?, List<SettingsMenuOption<DeviceChoice>>>>()
-    sections.add(null to listOf(SettingsMenuOption(DeviceChoice.on, onTitle), SettingsMenuOption(DeviceChoice.paused, pausedTitle)))
-    if (!isThisPhone) {
-        sections.add(null to listOf(SettingsMenuOption(DeviceChoice.remove, stringResource(R.string.settings_notifications_device_remove), destructive = true)))
-    }
-    val title = if (isThisPhone) stringResource(R.string.settings_notifications_device_this, device.name) else device.name
-    SettingsMenuRow(
-        title = title,
-        value = if (device.paused) pausedTitle else onTitle,
-        selection = if (device.paused) DeviceChoice.paused else DeviceChoice.on,
-        sections = sections,
-        onSelect = { picked ->
-            when (picked) {
-                DeviceChoice.on -> if (device.paused) send(PushSettingsFeature.Action.DevicePausedChanged(device.id, false))
-                DeviceChoice.paused -> if (!device.paused) send(PushSettingsFeature.Action.DevicePausedChanged(device.id, true))
-                DeviceChoice.remove -> send(PushSettingsFeature.Action.DeviceRemoved(device))
-            }
-        },
-    )
 }
 
 /** The phone's choices the server's levels allow; Only Sessions I Use needs both Everything and Nothing. */
@@ -225,14 +164,6 @@ private fun pushStatusFooter(status: PushStatus): String? = when (status) {
     PushStatus.RelayNotAllowed -> stringResource(R.string.settings_notifications_status_relay)
     PushStatus.Failed -> stringResource(R.string.settings_notifications_status_failed)
     PushStatus.Unavailable, PushStatus.Off, PushStatus.Ready -> null
-}
-
-@Composable
-private fun pushTime(until: Long): String {
-    val context = LocalContext.current
-    var flags = DateUtils.FORMAT_SHOW_TIME
-    if (!DateUtils.isToday(until)) flags = flags or DateUtils.FORMAT_SHOW_WEEKDAY or DateUtils.FORMAT_ABBREV_WEEKDAY
-    return DateUtils.formatDateTime(context, until, flags)
 }
 
 /** “phone” or “tablet”. */

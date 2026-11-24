@@ -230,21 +230,7 @@
     <string name="settings_notifications_status_outdated">Tento server nepodporuje oznámení. Možná je potřeba aktualizovat OpenCode.</string>
     <string name="settings_notifications_status_relay">Tento server nepřijímá přenosovou službu oznámení této aplikace.</string>
     <string name="settings_notifications_status_failed">Na tomto serveru se nepodařilo nastavit oznámení. OpenCode to zkusí znovu po opětovném připojení.</string>
-    <string name="settings_notifications_pause">Pozastavit všechna oznámení</string>
-    <string name="settings_notifications_pause_on">Do obnovení</string>
-    <string name="settings_notifications_pause_until">Do %1$s</string>
-    <string name="settings_notifications_resume">Obnovit</string>
-    <string name="settings_notifications_pause_hour">Na hodinu</string>
-    <string name="settings_notifications_pause_tomorrow">Do zítřejšího rána</string>
-    <string name="settings_notifications_pause_footer">Pozastavením zastavíte oznámení z tohoto serveru na všech zařízeních.</string>
-    <string name="settings_notifications_devices_header">Zařízení</string>
-    <string name="settings_notifications_device_this">%1$s (toto zařízení)</string>
-    <string name="settings_notifications_device_on">Zapnuto</string>
-    <string name="settings_notifications_device_paused">Pozastaveno</string>
-    <string name="settings_notifications_device_remove">Odebrat</string>
-    <string name="settings_notifications_pause_failed_title">Nepodařilo se změnit pozastavení</string>
-    <string name="settings_notifications_device_failed_title">Nepodařilo se změnit zařízení</string>
-    <string name="settings_notifications_device_remove_failed_title">Nepodařilo se odebrat zařízení</string>
+    <string name="settings_notifications_status_disabled">Oznámení jsou na tomto serveru zakázána.</string>
     <string name="settings_notifications_change_failed_title">Nepodařilo se změnit oznámení</string>
     <string name="settings_notifications_change_failed_message">Server změnu nepřijal.</string>
 </resources>

@@ -227,21 +227,7 @@
     <string name="settings_notifications_status_outdated">Овај сервер не подржава обавештења. Можда треба ажурирати OpenCode.</string>
     <string name="settings_notifications_status_relay">Овај сервер не прихвата релеј за обавештења ове апликације.</string>
     <string name="settings_notifications_status_failed">Није могуће подесити обавештења на овом серверу. OpenCode ће покушати поново при следећем повезивању.</string>
-    <string name="settings_notifications_pause">Паузирај сва обавештења</string>
-    <string name="settings_notifications_pause_on">До наставка</string>
-    <string name="settings_notifications_pause_until">До %1$s</string>
-    <string name="settings_notifications_resume">Настави</string>
-    <string name="settings_notifications_pause_hour">На сат времена</string>
-    <string name="settings_notifications_pause_tomorrow">До сутра ујутру</string>
-    <string name="settings_notifications_pause_footer">Паузирање зауставља обавештења са овог сервера на свим уређајима.</string>
-    <string name="settings_notifications_devices_header">Уређаји</string>
-    <string name="settings_notifications_device_this">%1$s (овај уређај)</string>
-    <string name="settings_notifications_device_on">Укључено</string>
-    <string name="settings_notifications_device_paused">Паузирано</string>
-    <string name="settings_notifications_device_remove">Уклони</string>
-    <string name="settings_notifications_pause_failed_title">Није могуће променити паузу</string>
-    <string name="settings_notifications_device_failed_title">Није могуће променити уређај</string>
-    <string name="settings_notifications_device_remove_failed_title">Није могуће уклонити уређај</string>
+    <string name="settings_notifications_status_disabled">Обавештења су онемогућена на овом серверу.</string>
     <string name="settings_notifications_change_failed_title">Није могуће променити обавештења</string>
     <string name="settings_notifications_change_failed_message">Сервер није прихватио промену.</string>
 </resources>

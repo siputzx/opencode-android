@@ -230,21 +230,7 @@
     <string name="settings_notifications_status_outdated">Этот сервер не поддерживает уведомления. Возможно, нужно обновить OpenCode.</string>
     <string name="settings_notifications_status_relay">Этот сервер не принимает ретранслятор уведомлений этого приложения.</string>
     <string name="settings_notifications_status_failed">Не удалось настроить уведомления на этом сервере. OpenCode попробует снова при повторном подключении.</string>
-    <string name="settings_notifications_pause">Приостановить все уведомления</string>
-    <string name="settings_notifications_pause_on">До возобновления</string>
-    <string name="settings_notifications_pause_until">До %1$s</string>
-    <string name="settings_notifications_resume">Возобновить</string>
-    <string name="settings_notifications_pause_hour">На час</string>
-    <string name="settings_notifications_pause_tomorrow">До завтрашнего утра</string>
-    <string name="settings_notifications_pause_footer">Пауза отключает уведомления от этого сервера на всех устройствах.</string>
-    <string name="settings_notifications_devices_header">Устройства</string>
-    <string name="settings_notifications_device_this">%1$s (это устройство)</string>
-    <string name="settings_notifications_device_on">Вкл.</string>
-    <string name="settings_notifications_device_paused">На паузе</string>
-    <string name="settings_notifications_device_remove">Удалить</string>
-    <string name="settings_notifications_pause_failed_title">Не удалось изменить паузу</string>
-    <string name="settings_notifications_device_failed_title">Не удалось изменить настройки устройства</string>
-    <string name="settings_notifications_device_remove_failed_title">Не удалось удалить устройство</string>
+    <string name="settings_notifications_status_disabled">Уведомления на этом сервере отключены.</string>
     <string name="settings_notifications_change_failed_title">Не удалось изменить настройки уведомлений</string>
     <string name="settings_notifications_change_failed_message">Сервер не принял изменения.</string>
 </resources>

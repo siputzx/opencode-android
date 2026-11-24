@@ -221,21 +221,7 @@
     <string name="settings_notifications_status_outdated">เซิร์ฟเวอร์นี้ไม่รองรับการแจ้งเตือน อาจต้องอัปเดต OpenCode</string>
     <string name="settings_notifications_status_relay">เซิร์ฟเวอร์นี้ไม่ยอมรับรีเลย์การแจ้งเตือนของแอปนี้</string>
     <string name="settings_notifications_status_failed">ตั้งค่าการแจ้งเตือนบนเซิร์ฟเวอร์นี้ไม่ได้ OpenCode จะลองอีกครั้งเมื่อเชื่อมต่อใหม่</string>
-    <string name="settings_notifications_pause">หยุดการแจ้งเตือนทั้งหมดชั่วคราว</string>
-    <string name="settings_notifications_pause_on">จนกว่าจะเปิดอีกครั้ง</string>
-    <string name="settings_notifications_pause_until">จนถึง %1$s</string>
-    <string name="settings_notifications_resume">เปิดอีกครั้ง</string>
-    <string name="settings_notifications_pause_hour">เป็นเวลา 1 ชั่วโมง</string>
-    <string name="settings_notifications_pause_tomorrow">จนถึงเช้าพรุ่งนี้</string>
-    <string name="settings_notifications_pause_footer">การหยุดชั่วคราวจะหยุดการแจ้งเตือนจากเซิร์ฟเวอร์นี้ในทุกอุปกรณ์</string>
-    <string name="settings_notifications_devices_header">อุปกรณ์</string>
-    <string name="settings_notifications_device_this">%1$s (อุปกรณ์นี้)</string>
-    <string name="settings_notifications_device_on">เปิด</string>
-    <string name="settings_notifications_device_paused">หยุดชั่วคราวแล้ว</string>
-    <string name="settings_notifications_device_remove">เอาออก</string>
-    <string name="settings_notifications_pause_failed_title">เปลี่ยนการหยุดชั่วคราวไม่ได้</string>
-    <string name="settings_notifications_device_failed_title">เปลี่ยนแปลงอุปกรณ์ไม่ได้</string>
-    <string name="settings_notifications_device_remove_failed_title">เอาอุปกรณ์ออกไม่ได้</string>
+    <string name="settings_notifications_status_disabled">เซิร์ฟเวอร์นี้ปิดใช้งานการแจ้งเตือนอยู่</string>
     <string name="settings_notifications_change_failed_title">เปลี่ยนการแจ้งเตือนไม่ได้</string>
     <string name="settings_notifications_change_failed_message">เซิร์ฟเวอร์ไม่รับการเปลี่ยนแปลง</string>
 </resources>

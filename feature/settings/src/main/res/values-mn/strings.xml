@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Энэ сервер мэдэгдэл дэмждэггүй. OpenCode-ийг шинэчлэх шаардлагатай байж магадгүй.</string>
     <string name="settings_notifications_status_relay">Энэ сервер уг аппын мэдэгдэл дамжуулагчийг хүлээн авахгүй байна.</string>
     <string name="settings_notifications_status_failed">Энэ сервер дээр мэдэгдэл тохируулж чадсангүй. OpenCode дахин холбогдохдоо дахин оролдоно.</string>
-    <string name="settings_notifications_pause">Бүх мэдэгдлийг түр зогсоох</string>
-    <string name="settings_notifications_pause_on">Үргэлжлүүлэх хүртэл</string>
-    <string name="settings_notifications_pause_until">%1$s хүртэл</string>
-    <string name="settings_notifications_resume">Үргэлжлүүлэх</string>
-    <string name="settings_notifications_pause_hour">Нэг цагийн турш</string>
-    <string name="settings_notifications_pause_tomorrow">Маргааш өглөө хүртэл</string>
-    <string name="settings_notifications_pause_footer">Түр зогсоосноор энэ серверээс бүх төхөөрөмж рүү ирэх мэдэгдэл зогсоно.</string>
-    <string name="settings_notifications_devices_header">Төхөөрөмжүүд</string>
-    <string name="settings_notifications_device_this">%1$s (Энэ төхөөрөмж)</string>
-    <string name="settings_notifications_device_on">Асаалттай</string>
-    <string name="settings_notifications_device_paused">Түр зогсоосон</string>
-    <string name="settings_notifications_device_remove">Арилгах</string>
-    <string name="settings_notifications_pause_failed_title">Түр зогсоолтыг өөрчилж чадсангүй</string>
-    <string name="settings_notifications_device_failed_title">Төхөөрөмжийг өөрчилж чадсангүй</string>
-    <string name="settings_notifications_device_remove_failed_title">Төхөөрөмжийг арилгаж чадсангүй</string>
+    <string name="settings_notifications_status_disabled">Энэ сервер дээр мэдэгдэл идэвхгүй байна.</string>
     <string name="settings_notifications_change_failed_title">Мэдэгдлийг өөрчилж чадсангүй</string>
     <string name="settings_notifications_change_failed_message">Сервер өөрчлөлтийг хүлээн авсангүй.</string>
 </resources>

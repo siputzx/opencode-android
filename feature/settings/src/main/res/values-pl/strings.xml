@@ -230,21 +230,7 @@
     <string name="settings_notifications_status_outdated">Ten serwer nie obsługuje powiadomień. Może wymagać aktualizacji OpenCode.</string>
     <string name="settings_notifications_status_relay">Ten serwer nie akceptuje przekaźnika powiadomień tej aplikacji.</string>
     <string name="settings_notifications_status_failed">Nie udało się skonfigurować powiadomień na tym serwerze. OpenCode spróbuje ponownie po ponownym połączeniu.</string>
-    <string name="settings_notifications_pause">Wstrzymaj wszystkie powiadomienia</string>
-    <string name="settings_notifications_pause_on">Do wznowienia</string>
-    <string name="settings_notifications_pause_until">Do %1$s</string>
-    <string name="settings_notifications_resume">Wznów</string>
-    <string name="settings_notifications_pause_hour">Na godzinę</string>
-    <string name="settings_notifications_pause_tomorrow">Do jutra rana</string>
-    <string name="settings_notifications_pause_footer">Wstrzymanie wyłącza powiadomienia z tego serwera na wszystkich urządzeniach.</string>
-    <string name="settings_notifications_devices_header">Urządzenia</string>
-    <string name="settings_notifications_device_this">%1$s (to urządzenie)</string>
-    <string name="settings_notifications_device_on">Włączone</string>
-    <string name="settings_notifications_device_paused">Wstrzymane</string>
-    <string name="settings_notifications_device_remove">Usuń</string>
-    <string name="settings_notifications_pause_failed_title">Nie udało się zmienić wstrzymania</string>
-    <string name="settings_notifications_device_failed_title">Nie udało się zmienić ustawień urządzenia</string>
-    <string name="settings_notifications_device_remove_failed_title">Nie udało się usunąć urządzenia</string>
+    <string name="settings_notifications_status_disabled">Powiadomienia są wyłączone na tym serwerze.</string>
     <string name="settings_notifications_change_failed_title">Nie udało się zmienić ustawień powiadomień</string>
     <string name="settings_notifications_change_failed_message">Serwer nie przyjął zmiany.</string>
 </resources>

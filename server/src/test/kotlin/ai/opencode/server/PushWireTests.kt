@@ -105,9 +105,6 @@ class PushWireTests {
             client.setPushSessionBell(fixture.server, "3f0c9a52-7d1e-4b8a-9c6f-1e2d3c4b5a69", "ses_a", OpenCodePushBell(OpenCodePushLevel.none, 3_600_000))
             client.setPushSessionBell(fixture.server, "3f0c9a52-7d1e-4b8a-9c6f-1e2d3c4b5a69", "ses_a", OpenCodePushBell(OpenCodePushLevel.all))
             client.setPushSessionBell(fixture.server, "3f0c9a52-7d1e-4b8a-9c6f-1e2d3c4b5a69", "ses_a", null)
-            client.setPushDevicePaused(fixture.server, "8b7a6c5d-4e3f-4a1b-9c2d-0e1f2a3b4c5d", true)
-            client.setPushPaused(fixture.server, true, 9_000)
-            client.setPushPaused(fixture.server, false, null)
             client.removePushDevice(fixture.server, "8b7a6c5d-4e3f-4a1b-9c2d-0e1f2a3b4c5d")
 
             val sent = mutableListOf<Pair<String, JsonElement?>>()
@@ -120,9 +117,6 @@ class PushWireTests {
                     "PUT /api/experimental/push/device/3f0c9a52-7d1e-4b8a-9c6f-1e2d3c4b5a69/session/ses_a" to json("""{"level":"none","until":3600000}"""),
                     "PUT /api/experimental/push/device/3f0c9a52-7d1e-4b8a-9c6f-1e2d3c4b5a69/session/ses_a" to json("""{"level":"all"}"""),
                     "DELETE /api/experimental/push/device/3f0c9a52-7d1e-4b8a-9c6f-1e2d3c4b5a69/session/ses_a" to null,
-                    "PATCH /api/experimental/push/device/8b7a6c5d-4e3f-4a1b-9c2d-0e1f2a3b4c5d" to json("""{"paused":true}"""),
-                    "PUT /api/experimental/push/settings" to json("""{"paused":true,"until":9000}"""),
-                    "PUT /api/experimental/push/settings" to json("""{"paused":false}"""),
                     "DELETE /api/experimental/push/device/8b7a6c5d-4e3f-4a1b-9c2d-0e1f2a3b4c5d" to null,
                 ),
                 sent,
@@ -135,7 +129,7 @@ class PushWireTests {
     @Test fun aRefusedWriteIsSentOnce() = runTest {
         val fixture = WireFixture { Reply.status(503) }
         try {
-            val error = runCatching { OpenCodeClient.liveValue.setPushPaused(fixture.server, true, null) }.exceptionOrNull()
+            val error = runCatching { OpenCodeClient.liveValue.removePushDevice(fixture.server, "8b7a6c5d-4e3f-4a1b-9c2d-0e1f2a3b4c5d") }.exceptionOrNull()
             assertEquals(503, (error as? OpenCodeClientError)?.statusCode)
             assertEquals(1, fixture.requests.size)
         } finally {

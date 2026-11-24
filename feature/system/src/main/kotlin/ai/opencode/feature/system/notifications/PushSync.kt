@@ -20,8 +20,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import java.time.Instant
-import java.time.ZoneId
 import kotlinx.serialization.Serializable
 import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
@@ -82,41 +80,6 @@ data class PushServer(
             }
             return null
         }
-
-    fun withDevicePaused(id: String, paused: Boolean): PushServer {
-        val state = state ?: return this
-        val devices = mutableListOf<OpenCodePushDevice>()
-        for (device in state.devices) {
-            devices.add(if (device.id == id) device.copy(paused = paused) else device)
-        }
-        return copy(state = state.copy(devices = devices))
-    }
-
-    fun withoutDevice(id: String): PushServer {
-        val state = state ?: return this
-        val devices = mutableListOf<OpenCodePushDevice>()
-        for (device in state.devices) {
-            if (device.id != id) devices.add(device)
-        }
-        return copy(state = state.copy(devices = devices))
-    }
-
-    fun withPaused(paused: Boolean, until: Long?): PushServer {
-        val state = state ?: return this
-        return copy(state = state.copy(paused = paused, pausedUntil = if (paused) until else null))
-    }
-}
-
-/** How long a pause lasts. */
-enum class PushDuration {
-    forever, hour, tomorrowMorning;
-
-    /** The end in epoch milliseconds, or null for forever. Tomorrow morning is 9 a.m. tomorrow. */
-    fun until(now: Instant, zone: ZoneId): Long? = when (this) {
-        forever -> null
-        hour -> now.toEpochMilli() + 60 * 60 * 1000
-        tomorrowMorning -> now.atZone(zone).toLocalDate().plusDays(1).atTime(9, 0).atZone(zone).toInstant().toEpochMilli()
-    }
 }
 
 object PushSharedKeys {
@@ -224,33 +187,10 @@ object PushSync {
         }
     }
 
-    /** Pauses or resumes a phone; a 404 for this phone registers it first. */
-    suspend fun setDevicePaused(server: OpenCodeServer, deviceID: String, paused: Boolean) {
-        val client = dependency(OpenCodeClient)
-        val notifications = dependency(SessionNotificationsClient)
-        try {
-            client.setPushDevicePaused(server, deviceID, paused)
-        } catch (error: OpenCodeClientError) {
-            val isThisPhone = deviceID == notifications.ref(server.persistenceID)
-            if (!isUnregistered(error) || !isThisPhone || !registerAgain(server)) throw error
-            client.setPushDevicePaused(server, deviceID, paused)
-        }
-    }
-
     private suspend fun registerAgain(server: OpenCodeServer): Boolean {
         AppLog.app.info("Push device unknown to the server; registering again")
         val choice = shared(PushSharedKeys.choices).value[server.persistenceID] ?: PushChoice()
         return dependency(SessionNotificationsClient).register(server, choice.defaultLevel)
-    }
-
-    /**
-     * The copy after the server refused a change shown as [after]: the server's own when it could
-     * be read again ([fetched]), otherwise [before] unless something else has changed it since.
-     */
-    fun afterRefusal(current: PushServer, before: PushServer, after: PushServer, fetched: OpenCodePushState?): PushServer {
-        if (fetched != null) return current.copy(state = fetched)
-        if (current == after) return before
-        return current
     }
 
     /** A 404 on a device call: the server doesn't know this phone. */

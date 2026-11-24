@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Այս սերվերը ծանուցումներ չի տրամադրում։ Հնարավոր է՝ OpenCode-ի թարմացում է պետք։</string>
     <string name="settings_notifications_status_relay">Այս սերվերը չի ընդունում այս հավելվածի ծանուցումների միջնորդ սերվերը։</string>
     <string name="settings_notifications_status_failed">Չհաջողվեց կարգավորել ծանուցումներն այս սերվերում։ OpenCode-ը կրկին կփորձի վերամիանալիս։</string>
-    <string name="settings_notifications_pause">Դադարեցնել բոլոր ծանուցումները</string>
-    <string name="settings_notifications_pause_on">Մինչև վերսկսելը</string>
-    <string name="settings_notifications_pause_until">Մինչև %1$s</string>
-    <string name="settings_notifications_resume">Վերսկսել</string>
-    <string name="settings_notifications_pause_hour">Մեկ ժամով</string>
-    <string name="settings_notifications_pause_tomorrow">Մինչև վաղն առավոտ</string>
-    <string name="settings_notifications_pause_footer">Դադարեցումը կանգնեցնում է այս սերվերի ծանուցումները բոլոր սարքերում։</string>
-    <string name="settings_notifications_devices_header">Սարքեր</string>
-    <string name="settings_notifications_device_this">%1$s (այս սարքը)</string>
-    <string name="settings_notifications_device_on">Միացված է</string>
-    <string name="settings_notifications_device_paused">Դադարեցված է</string>
-    <string name="settings_notifications_device_remove">Հեռացնել</string>
-    <string name="settings_notifications_pause_failed_title">Չհաջողվեց փոխել դադարեցումը</string>
-    <string name="settings_notifications_device_failed_title">Չհաջողվեց փոխել սարքը</string>
-    <string name="settings_notifications_device_remove_failed_title">Չհաջողվեց հեռացնել սարքը</string>
+    <string name="settings_notifications_status_disabled">Այս սերվերում ծանուցումներն անջատված են։</string>
     <string name="settings_notifications_change_failed_title">Չհաջողվեց փոխել ծանուցումները</string>
     <string name="settings_notifications_change_failed_message">Սերվերը չընդունեց փոփոխությունը։</string>
 </resources>

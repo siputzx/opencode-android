@@ -221,21 +221,7 @@
     <string name="settings_notifications_status_outdated">Pelayan ini tidak menawarkan notifikasi. Ia mungkin memerlukan kemas kini OpenCode.</string>
     <string name="settings_notifications_status_relay">Pelayan ini tidak menerima geganti notifikasi aplikasi ini.</string>
     <string name="settings_notifications_status_failed">Tidak dapat menyediakan notifikasi pada pelayan ini. OpenCode akan cuba lagi apabila disambungkan semula.</string>
-    <string name="settings_notifications_pause">Jeda semua notifikasi</string>
-    <string name="settings_notifications_pause_on">Sehingga disambung semula</string>
-    <string name="settings_notifications_pause_until">Sehingga %1$s</string>
-    <string name="settings_notifications_resume">Sambung semula</string>
-    <string name="settings_notifications_pause_hour">Selama sejam</string>
-    <string name="settings_notifications_pause_tomorrow">Sehingga esok pagi</string>
-    <string name="settings_notifications_pause_footer">Menjeda akan menghentikan notifikasi daripada pelayan ini pada setiap peranti.</string>
-    <string name="settings_notifications_devices_header">Peranti</string>
-    <string name="settings_notifications_device_this">%1$s (Peranti ini)</string>
-    <string name="settings_notifications_device_on">Hidup</string>
-    <string name="settings_notifications_device_paused">Dijeda</string>
-    <string name="settings_notifications_device_remove">Alih keluar</string>
-    <string name="settings_notifications_pause_failed_title">Tidak dapat mengubah jeda</string>
-    <string name="settings_notifications_device_failed_title">Tidak dapat mengubah peranti</string>
-    <string name="settings_notifications_device_remove_failed_title">Tidak dapat mengalih keluar peranti</string>
+    <string name="settings_notifications_status_disabled">Notifikasi dinyahdayakan pada pelayan ini.</string>
     <string name="settings_notifications_change_failed_title">Tidak dapat mengubah notifikasi</string>
     <string name="settings_notifications_change_failed_message">Pelayan tidak menerima perubahan itu.</string>
 </resources>

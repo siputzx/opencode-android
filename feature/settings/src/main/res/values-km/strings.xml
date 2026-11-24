@@ -221,21 +221,7 @@
     <string name="settings_notifications_status_outdated">ម៉ាស៊ីនមេនេះមិនផ្តល់ការជូនដំណឹងទេ។ វាប្រហែលជាត្រូវការធ្វើបច្ចុប្បន្នភាព OpenCode។</string>
     <string name="settings_notifications_status_relay">ម៉ាស៊ីនមេនេះមិនទទួលយកប្រព័ន្ធបញ្ជូនបន្តការជូនដំណឹងរបស់កម្មវិធីនេះទេ។</string>
     <string name="settings_notifications_status_failed">មិនអាចរៀបចំការជូនដំណឹងលើម៉ាស៊ីនមេនេះបានទេ។ OpenCode នឹងព្យាយាមម្តងទៀតពេលភ្ជាប់ឡើងវិញ។</string>
-    <string name="settings_notifications_pause">ផ្អាកការជូនដំណឹងទាំងអស់</string>
-    <string name="settings_notifications_pause_on">រហូតដល់បន្តឡើងវិញ</string>
-    <string name="settings_notifications_pause_until">រហូតដល់ %1$s</string>
-    <string name="settings_notifications_resume">បន្តឡើងវិញ</string>
-    <string name="settings_notifications_pause_hour">រយៈពេលមួយម៉ោង</string>
-    <string name="settings_notifications_pause_tomorrow">រហូតដល់ព្រឹកស្អែក</string>
-    <string name="settings_notifications_pause_footer">ការផ្អាកនឹងបញ្ឈប់ការជូនដំណឹងពីម៉ាស៊ីនមេនេះលើគ្រប់ឧបករណ៍ទាំងអស់។</string>
-    <string name="settings_notifications_devices_header">ឧបករណ៍</string>
-    <string name="settings_notifications_device_this">%1$s (ឧបករណ៍នេះ)</string>
-    <string name="settings_notifications_device_on">បើក</string>
-    <string name="settings_notifications_device_paused">បានផ្អាក</string>
-    <string name="settings_notifications_device_remove">ដកចេញ</string>
-    <string name="settings_notifications_pause_failed_title">មិនអាចប្តូរការផ្អាកបាន</string>
-    <string name="settings_notifications_device_failed_title">មិនអាចប្តូរឧបករណ៍បាន</string>
-    <string name="settings_notifications_device_remove_failed_title">មិនអាចដកឧបករណ៍ចេញបាន</string>
+    <string name="settings_notifications_status_disabled">ការជូនដំណឹងត្រូវបានបិទនៅលើម៉ាស៊ីនមេនេះ។</string>
     <string name="settings_notifications_change_failed_title">មិនអាចប្តូរការជូនដំណឹងបាន</string>
     <string name="settings_notifications_change_failed_message">ម៉ាស៊ីនមេមិនបានទទួលយកការផ្លាស់ប្តូរនេះទេ។</string>
 </resources>

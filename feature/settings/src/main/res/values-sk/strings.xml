@@ -230,21 +230,7 @@
     <string name="settings_notifications_status_outdated">Tento server nepodporuje upozornenia. Možno potrebuje aktualizáciu OpenCode.</string>
     <string name="settings_notifications_status_relay">Tento server neprijíma prenosovú službu upozornení tejto aplikácie.</string>
     <string name="settings_notifications_status_failed">Na tomto serveri sa nepodarilo nastaviť upozornenia. OpenCode to skúsi znova po opätovnom pripojení.</string>
-    <string name="settings_notifications_pause">Pozastaviť všetky upozornenia</string>
-    <string name="settings_notifications_pause_on">Do obnovenia</string>
-    <string name="settings_notifications_pause_until">Do %1$s</string>
-    <string name="settings_notifications_resume">Obnoviť</string>
-    <string name="settings_notifications_pause_hour">Na hodinu</string>
-    <string name="settings_notifications_pause_tomorrow">Do zajtra rána</string>
-    <string name="settings_notifications_pause_footer">Pozastavenie vypne upozornenia z tohto servera na všetkých zariadeniach.</string>
-    <string name="settings_notifications_devices_header">Zariadenia</string>
-    <string name="settings_notifications_device_this">%1$s (toto zariadenie)</string>
-    <string name="settings_notifications_device_on">Zapnuté</string>
-    <string name="settings_notifications_device_paused">Pozastavené</string>
-    <string name="settings_notifications_device_remove">Odstrániť</string>
-    <string name="settings_notifications_pause_failed_title">Nepodarilo sa zmeniť pozastavenie</string>
-    <string name="settings_notifications_device_failed_title">Nepodarilo sa zmeniť zariadenie</string>
-    <string name="settings_notifications_device_remove_failed_title">Nepodarilo sa odstrániť zariadenie</string>
+    <string name="settings_notifications_status_disabled">Upozornenia sú na tomto serveri zakázané.</string>
     <string name="settings_notifications_change_failed_title">Nepodarilo sa zmeniť upozornenia</string>
     <string name="settings_notifications_change_failed_message">Server neprijal zmenu.</string>
 </resources>

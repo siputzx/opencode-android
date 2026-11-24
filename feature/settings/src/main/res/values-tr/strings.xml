@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Bu sunucu bildirimleri desteklemiyor. OpenCode güncellemesi gerekebilir.</string>
     <string name="settings_notifications_status_relay">Bu sunucu, bu uygulamanın bildirim aktarıcısını kabul etmiyor.</string>
     <string name="settings_notifications_status_failed">Bu sunucuda bildirimler ayarlanamadı. OpenCode yeniden bağlandığında tekrar dener.</string>
-    <string name="settings_notifications_pause">Tüm bildirimleri duraklat</string>
-    <string name="settings_notifications_pause_on">Devam ettirilene kadar</string>
-    <string name="settings_notifications_pause_until">Şu zamana kadar: %1$s</string>
-    <string name="settings_notifications_resume">Devam ettir</string>
-    <string name="settings_notifications_pause_hour">1 saatliğine</string>
-    <string name="settings_notifications_pause_tomorrow">Yarın sabaha kadar</string>
-    <string name="settings_notifications_pause_footer">Duraklatmak, bu sunucudan gelen bildirimleri tüm cihazlarda durdurur.</string>
-    <string name="settings_notifications_devices_header">Cihazlar</string>
-    <string name="settings_notifications_device_this">%1$s (Bu cihaz)</string>
-    <string name="settings_notifications_device_on">Açık</string>
-    <string name="settings_notifications_device_paused">Duraklatıldı</string>
-    <string name="settings_notifications_device_remove">Kaldır</string>
-    <string name="settings_notifications_pause_failed_title">Duraklatma değiştirilemedi</string>
-    <string name="settings_notifications_device_failed_title">Cihaz değiştirilemedi</string>
-    <string name="settings_notifications_device_remove_failed_title">Cihaz kaldırılamadı</string>
+    <string name="settings_notifications_status_disabled">Bu sunucuda bildirimler devre dışı.</string>
     <string name="settings_notifications_change_failed_title">Bildirimler değiştirilemedi</string>
     <string name="settings_notifications_change_failed_message">Sunucu değişikliği kabul etmedi.</string>
 </resources>

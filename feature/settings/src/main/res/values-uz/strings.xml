@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Bu server bildirishnomalarni qo‘llab-quvvatlamaydi. OpenCode’ni yangilash kerak bo‘lishi mumkin.</string>
     <string name="settings_notifications_status_relay">Bu server ushbu ilovaning bildirishnoma uzatuvchi serverini qabul qilmaydi.</string>
     <string name="settings_notifications_status_failed">Bu serverda bildirishnomalarni sozlab bo‘lmadi. OpenCode qayta ulanganda yana urinib ko‘radi.</string>
-    <string name="settings_notifications_pause">Barcha bildirishnomalarni pauzalash</string>
-    <string name="settings_notifications_pause_on">Davom ettirilguncha</string>
-    <string name="settings_notifications_pause_until">%1$s gacha</string>
-    <string name="settings_notifications_resume">Davom ettirish</string>
-    <string name="settings_notifications_pause_hour">Bir soatga</string>
-    <string name="settings_notifications_pause_tomorrow">Ertaga ertalabgacha</string>
-    <string name="settings_notifications_pause_footer">Pauza bu serverdan barcha qurilmalarga keladigan bildirishnomalarni to‘xtatadi.</string>
-    <string name="settings_notifications_devices_header">Qurilmalar</string>
-    <string name="settings_notifications_device_this">%1$s (bu qurilma)</string>
-    <string name="settings_notifications_device_on">Yoqilgan</string>
-    <string name="settings_notifications_device_paused">Pauzada</string>
-    <string name="settings_notifications_device_remove">Olib tashlash</string>
-    <string name="settings_notifications_pause_failed_title">Pauzani o‘zgartirib bo‘lmadi</string>
-    <string name="settings_notifications_device_failed_title">Qurilmani o‘zgartirib bo‘lmadi</string>
-    <string name="settings_notifications_device_remove_failed_title">Qurilmani olib tashlab bo‘lmadi</string>
+    <string name="settings_notifications_status_disabled">Bu serverda bildirishnomalar o‘chirilgan.</string>
     <string name="settings_notifications_change_failed_title">Bildirishnomalarni o‘zgartirib bo‘lmadi</string>
     <string name="settings_notifications_change_failed_message">Server o‘zgarishni qabul qilmadi.</string>
 </resources>

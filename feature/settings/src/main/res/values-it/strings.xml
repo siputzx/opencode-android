@@ -227,21 +227,7 @@
     <string name="settings_notifications_status_outdated">Questo server non supporta le notifiche. Potrebbe essere necessario aggiornare OpenCode.</string>
     <string name="settings_notifications_status_relay">Questo server non accetta il relay delle notifiche di questa app.</string>
     <string name="settings_notifications_status_failed">Impossibile configurare le notifiche su questo server. OpenCode riproverà quando si riconnette.</string>
-    <string name="settings_notifications_pause">Metti in pausa tutte le notifiche</string>
-    <string name="settings_notifications_pause_on">Fino alla riattivazione</string>
-    <string name="settings_notifications_pause_until">Fino a %1$s</string>
-    <string name="settings_notifications_resume">Riprendi</string>
-    <string name="settings_notifications_pause_hour">Per un\'ora</string>
-    <string name="settings_notifications_pause_tomorrow">Fino a domani mattina</string>
-    <string name="settings_notifications_pause_footer">La pausa interrompe le notifiche da questo server su tutti i dispositivi.</string>
-    <string name="settings_notifications_devices_header">Dispositivi</string>
-    <string name="settings_notifications_device_this">%1$s (questo dispositivo)</string>
-    <string name="settings_notifications_device_on">Attivo</string>
-    <string name="settings_notifications_device_paused">In pausa</string>
-    <string name="settings_notifications_device_remove">Rimuovi</string>
-    <string name="settings_notifications_pause_failed_title">Impossibile modificare la pausa</string>
-    <string name="settings_notifications_device_failed_title">Impossibile modificare il dispositivo</string>
-    <string name="settings_notifications_device_remove_failed_title">Impossibile rimuovere il dispositivo</string>
+    <string name="settings_notifications_status_disabled">Le notifiche sono disattivate su questo server.</string>
     <string name="settings_notifications_change_failed_title">Impossibile modificare le notifiche</string>
     <string name="settings_notifications_change_failed_message">Il server non ha accettato la modifica.</string>
 </resources>

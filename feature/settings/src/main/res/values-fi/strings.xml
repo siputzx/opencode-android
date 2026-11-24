@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Tämä palvelin ei tue ilmoituksia. Se saattaa tarvita OpenCode-päivityksen.</string>
     <string name="settings_notifications_status_relay">Tämä palvelin ei hyväksy tämän sovelluksen ilmoitusten välityspalvelinta.</string>
     <string name="settings_notifications_status_failed">Ilmoituksia ei voitu ottaa käyttöön tällä palvelimella. OpenCode yrittää uudelleen, kun yhteys palautuu.</string>
-    <string name="settings_notifications_pause">Keskeytä kaikki ilmoitukset</string>
-    <string name="settings_notifications_pause_on">Kunnes jatketaan</string>
-    <string name="settings_notifications_pause_until">%1$s asti</string>
-    <string name="settings_notifications_resume">Jatka</string>
-    <string name="settings_notifications_pause_hour">Tunniksi</string>
-    <string name="settings_notifications_pause_tomorrow">Huomisaamuun asti</string>
-    <string name="settings_notifications_pause_footer">Keskeyttäminen pysäyttää tämän palvelimen ilmoitukset kaikilla laitteilla.</string>
-    <string name="settings_notifications_devices_header">Laitteet</string>
-    <string name="settings_notifications_device_this">%1$s (tämä laite)</string>
-    <string name="settings_notifications_device_on">Käytössä</string>
-    <string name="settings_notifications_device_paused">Keskeytetty</string>
-    <string name="settings_notifications_device_remove">Poista</string>
-    <string name="settings_notifications_pause_failed_title">Keskeytystä ei voitu muuttaa</string>
-    <string name="settings_notifications_device_failed_title">Laitetta ei voitu muuttaa</string>
-    <string name="settings_notifications_device_remove_failed_title">Laitetta ei voitu poistaa</string>
+    <string name="settings_notifications_status_disabled">Ilmoitukset on poistettu käytöstä tällä palvelimella.</string>
     <string name="settings_notifications_change_failed_title">Ilmoituksia ei voitu muuttaa</string>
     <string name="settings_notifications_change_failed_message">Palvelin ei hyväksynyt muutosta.</string>
 </resources>

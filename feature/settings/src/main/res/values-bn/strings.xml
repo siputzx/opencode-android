@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">এই সার্ভারে বিজ্ঞপ্তির সুবিধা নেই। এতে OpenCode আপডেট করতে হতে পারে।</string>
     <string name="settings_notifications_status_relay">এই সার্ভার এই অ্যাপের বিজ্ঞপ্তি রিলে গ্রহণ করে না।</string>
     <string name="settings_notifications_status_failed">এই সার্ভারে বিজ্ঞপ্তি সেট আপ করা যায়নি। পুনরায় সংযুক্ত হলে OpenCode আবার চেষ্টা করবে।</string>
-    <string name="settings_notifications_pause">সব বিজ্ঞপ্তিতে বিরতি দিন</string>
-    <string name="settings_notifications_pause_on">চালু না করা পর্যন্ত</string>
-    <string name="settings_notifications_pause_until">%1$s পর্যন্ত</string>
-    <string name="settings_notifications_resume">আবার চালু করুন</string>
-    <string name="settings_notifications_pause_hour">এক ঘণ্টার জন্য</string>
-    <string name="settings_notifications_pause_tomorrow">আগামীকাল সকাল পর্যন্ত</string>
-    <string name="settings_notifications_pause_footer">বিরতি দিলে সব ডিভাইসে এই সার্ভার থেকে বিজ্ঞপ্তি আসা বন্ধ হবে।</string>
-    <string name="settings_notifications_devices_header">ডিভাইস</string>
-    <string name="settings_notifications_device_this">%1$s (এই ডিভাইস)</string>
-    <string name="settings_notifications_device_on">চালু</string>
-    <string name="settings_notifications_device_paused">বিরতিতে</string>
-    <string name="settings_notifications_device_remove">সরান</string>
-    <string name="settings_notifications_pause_failed_title">বিরতি পরিবর্তন করা যায়নি</string>
-    <string name="settings_notifications_device_failed_title">ডিভাইস পরিবর্তন করা যায়নি</string>
-    <string name="settings_notifications_device_remove_failed_title">ডিভাইস সরানো যায়নি</string>
+    <string name="settings_notifications_status_disabled">এই সার্ভারে বিজ্ঞপ্তি নিষ্ক্রিয় করা আছে।</string>
     <string name="settings_notifications_change_failed_title">বিজ্ঞপ্তি পরিবর্তন করা যায়নি</string>
     <string name="settings_notifications_change_failed_message">সার্ভার পরিবর্তনটি গ্রহণ করেনি।</string>
 </resources>

@@ -221,21 +221,7 @@
     <string name="settings_notifications_status_outdated">此伺服器不支援通知功能。可能需要更新 OpenCode。</string>
     <string name="settings_notifications_status_relay">這台伺服器不接受此應用程式的通知中繼服務。</string>
     <string name="settings_notifications_status_failed">無法在這台伺服器上設定通知。OpenCode 會在重新連線時再試一次。</string>
-    <string name="settings_notifications_pause">暫停所有通知</string>
-    <string name="settings_notifications_pause_on">直到恢復為止</string>
-    <string name="settings_notifications_pause_until">直到 %1$s</string>
-    <string name="settings_notifications_resume">恢復</string>
-    <string name="settings_notifications_pause_hour">1 小時</string>
-    <string name="settings_notifications_pause_tomorrow">直到明天早上</string>
-    <string name="settings_notifications_pause_footer">暫停後，所有裝置都不會收到這台伺服器的通知。</string>
-    <string name="settings_notifications_devices_header">裝置</string>
-    <string name="settings_notifications_device_this">%1$s（這台裝置）</string>
-    <string name="settings_notifications_device_on">開啟</string>
-    <string name="settings_notifications_device_paused">已暫停</string>
-    <string name="settings_notifications_device_remove">移除</string>
-    <string name="settings_notifications_pause_failed_title">無法變更暫停設定</string>
-    <string name="settings_notifications_device_failed_title">無法變更裝置設定</string>
-    <string name="settings_notifications_device_remove_failed_title">無法移除裝置</string>
+    <string name="settings_notifications_status_disabled">此伺服器已停用通知。</string>
     <string name="settings_notifications_change_failed_title">無法變更通知設定</string>
     <string name="settings_notifications_change_failed_message">伺服器未接受這項變更。</string>
 </resources>

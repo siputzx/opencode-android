@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">See server ei paku teavitusi. OpenCode võib vajada uuendamist.</string>
     <string name="settings_notifications_status_relay">See server ei aktsepteeri selle rakenduse teavituste vahendusserverit.</string>
     <string name="settings_notifications_status_failed">Selles serveris ei õnnestunud teavitusi seadistada. OpenCode proovib uuesti, kui ühendus taastub.</string>
-    <string name="settings_notifications_pause">Peata kõik teavitused</string>
-    <string name="settings_notifications_pause_on">Kuni jätkamiseni</string>
-    <string name="settings_notifications_pause_until">Kuni %1$s</string>
-    <string name="settings_notifications_resume">Jätka</string>
-    <string name="settings_notifications_pause_hour">Tunniks</string>
-    <string name="settings_notifications_pause_tomorrow">Kuni homse hommikuni</string>
-    <string name="settings_notifications_pause_footer">Peatamine lülitab selle serveri teavitused kõigis seadmetes välja.</string>
-    <string name="settings_notifications_devices_header">Seadmed</string>
-    <string name="settings_notifications_device_this">%1$s (see seade)</string>
-    <string name="settings_notifications_device_on">Sees</string>
-    <string name="settings_notifications_device_paused">Peatatud</string>
-    <string name="settings_notifications_device_remove">Eemalda</string>
-    <string name="settings_notifications_pause_failed_title">Pausi ei õnnestunud muuta</string>
-    <string name="settings_notifications_device_failed_title">Seadet ei õnnestunud muuta</string>
-    <string name="settings_notifications_device_remove_failed_title">Seadet ei õnnestunud eemaldada</string>
+    <string name="settings_notifications_status_disabled">Teavitused on selles serveris keelatud.</string>
     <string name="settings_notifications_change_failed_title">Teavitusi ei õnnestunud muuta</string>
     <string name="settings_notifications_change_failed_message">Server ei võtnud muudatust vastu.</string>
 </resources>

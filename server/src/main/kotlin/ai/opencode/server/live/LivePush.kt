@@ -87,16 +87,6 @@ internal suspend fun requestPushState(server: OpenCodeServer): OpenCodePushState
     return decoded(response.data, decode = ::decodePushState)
 }
 
-@Serializable
-private data class DevicePauseBody(val paused: Boolean)
-
-internal suspend fun requestSetPushDevicePaused(server: OpenCodeServer, id: String, paused: Boolean) {
-    perform(
-        "$PUSH/device/$id", method = "PATCH", body = encodedBody(DevicePauseBody(paused)),
-        idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server,
-    )
-}
-
 /** This phone's own bell for one session; null removes it. */
 internal suspend fun requestSetPushSessionBell(server: OpenCodeServer, id: String, sessionID: String, bell: OpenCodePushBell?) {
     val path = "$PUSH/device/$id/session/$sessionID"
@@ -105,16 +95,6 @@ internal suspend fun requestSetPushSessionBell(server: OpenCodeServer, id: Strin
         return
     }
     perform(path, method = "PUT", body = encodedBody(bell), idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server)
-}
-
-@Serializable
-private data class PauseBody(val paused: Boolean, val until: Long? = null)
-
-internal suspend fun requestSetPushPaused(server: OpenCodeServer, paused: Boolean, until: Long?) {
-    perform(
-        "$PUSH/settings", method = "PUT", body = encodedBody(PauseBody(paused, until)),
-        idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server,
-    )
 }
 
 internal fun decodePushState(element: JsonElement): OpenCodePushState {

@@ -221,21 +221,7 @@
     <string name="settings_notifications_status_outdated">སར་བར་འདི་གིས་བརྡ་བསྐུལ་ཚུ་མི་བྱིན། OpenCode དུས་མཐུན་བཟོ་དགོཔ་འོང་།</string>
     <string name="settings_notifications_status_relay">སར་བར་འདི་གིས་ གློག་རིམ་འདི་གི་བརྡ་བསྐུལ་བརྒྱུད་སྤྲོད་དང་ལེན་མི་འབད།</string>
     <string name="settings_notifications_status_failed">སར་བར་འདི་གུ་ བརྡ་བསྐུལ་ཚུ་གཞི་སྒྲིག་འབད་མ་ཚུགས། ལོག་མཐུདཔ་ད་ OpenCode གིས་ལོག་འབད་རྩོལ་བསྐྱེད་འོང་།</string>
-    <string name="settings_notifications_pause">བརྡ་བསྐུལ་ཆ་མཉམ་ཐེངས་ཅིག་བཀག</string>
-    <string name="settings_notifications_pause_on">འཕྲོ་མཐུད་མ་འབད་ཚུན་ཚོད།</string>
-    <string name="settings_notifications_pause_until">%1$s ཚུན་ཚོད།</string>
-    <string name="settings_notifications_resume">འཕྲོ་མཐུད།</string>
-    <string name="settings_notifications_pause_hour">ཆུ་ཚོད་གཅིག་གི་རིང་ལུ།</string>
-    <string name="settings_notifications_pause_tomorrow">ནངས་པ་དྲོ་པ་ཚུན་ཚོད།</string>
-    <string name="settings_notifications_pause_footer">ཐེངས་ཅིག་བཀག་པ་ཅིན་ ཐབས་འཕྲུལ་ག་རའི་གུ་ སར་བར་འདི་ལས་བརྡ་བསྐུལ་ཚུ་བཀག་བཞགཔ་ཨིན།</string>
-    <string name="settings_notifications_devices_header">ཐབས་འཕྲུལ་ཚུ།</string>
-    <string name="settings_notifications_device_this">%1$s (ཐབས་འཕྲུལ་འདི)</string>
-    <string name="settings_notifications_device_on">ཨོན།</string>
-    <string name="settings_notifications_device_paused">ཐེངས་ཅིག་བཀག་ཡོདཔ།</string>
-    <string name="settings_notifications_device_remove">རྩ་བསྐྲད་གཏང་།</string>
-    <string name="settings_notifications_pause_failed_title">ཐེངས་ཅིག་བཀག་ནི་བསྒྱུར་བཅོས་འབད་མ་ཚུགས།</string>
-    <string name="settings_notifications_device_failed_title">ཐབས་འཕྲུལ་བསྒྱུར་བཅོས་འབད་མ་ཚུགས།</string>
-    <string name="settings_notifications_device_remove_failed_title">ཐབས་འཕྲུལ་རྩ་བསྐྲད་གཏང་མ་ཚུགས།</string>
+    <string name="settings_notifications_status_disabled">སར་བར་འདི་གུ་བརྡ་བསྐུལ་ཚུ་ལྕོགས་མིན་བཟོ་སྟེ་ཡོད།</string>
     <string name="settings_notifications_change_failed_title">བརྡ་བསྐུལ་ཚུ་བསྒྱུར་བཅོས་འབད་མ་ཚུགས།</string>
     <string name="settings_notifications_change_failed_message">སར་བར་གྱིས་བསྒྱུར་བཅོས་དང་ལེན་མ་འབད།</string>
 </resources>

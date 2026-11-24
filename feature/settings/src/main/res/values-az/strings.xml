@@ -224,21 +224,7 @@
     <string name="settings_notifications_status_outdated">Bu server bildirişləri dəstəkləmir. OpenCode yeniləməsi lazım ola bilər.</string>
     <string name="settings_notifications_status_relay">Bu server bu tətbiqin bildiriş ötürücüsünü qəbul etmir.</string>
     <string name="settings_notifications_status_failed">Bu serverdə bildirişləri quraşdırmaq mümkün olmadı. OpenCode yenidən qoşulduqda təkrar cəhd edəcək.</string>
-    <string name="settings_notifications_pause">Bütün bildirişlərə fasilə ver</string>
-    <string name="settings_notifications_pause_on">Davam etdirilənədək</string>
-    <string name="settings_notifications_pause_until">Bu vaxtadək: %1$s</string>
-    <string name="settings_notifications_resume">Davam etdir</string>
-    <string name="settings_notifications_pause_hour">Bir saatlıq</string>
-    <string name="settings_notifications_pause_tomorrow">Sabah səhərədək</string>
-    <string name="settings_notifications_pause_footer">Fasilə vermək bu serverdən bütün cihazlara gələn bildirişləri dayandırır.</string>
-    <string name="settings_notifications_devices_header">Cihazlar</string>
-    <string name="settings_notifications_device_this">%1$s (bu cihaz)</string>
-    <string name="settings_notifications_device_on">Aktiv</string>
-    <string name="settings_notifications_device_paused">Fasilə verilib</string>
-    <string name="settings_notifications_device_remove">Sil</string>
-    <string name="settings_notifications_pause_failed_title">Fasiləni dəyişmək mümkün olmadı</string>
-    <string name="settings_notifications_device_failed_title">Cihazı dəyişmək mümkün olmadı</string>
-    <string name="settings_notifications_device_remove_failed_title">Cihazı silmək mümkün olmadı</string>
+    <string name="settings_notifications_status_disabled">Bu serverdə bildirişlər söndürülüb.</string>
     <string name="settings_notifications_change_failed_title">Bildirişləri dəyişmək mümkün olmadı</string>
     <string name="settings_notifications_change_failed_message">Server dəyişikliyi qəbul etmədi.</string>
 </resources>
