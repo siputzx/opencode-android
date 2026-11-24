@@ -30,6 +30,7 @@ class AppIconBadgeTests {
     class Forgotten {
         val badges = Locked<List<String>>(emptyList())
         val notifications = Locked<List<String>>(emptyList())
+        val unregistered = Locked<List<String>>(emptyList())
         val system = Locked<List<String>>(emptyList())
     }
 
@@ -38,8 +39,7 @@ class AppIconBadgeTests {
         val notifications = SessionNotificationsClient.testValue
         this[SessionNotificationsClient] = SessionNotificationsClient(
             isAvailable = notifications.isAvailable,
-            callbackURL = notifications.callbackURL,
-            prepare = notifications.prepare,
+            unregister = { server -> forgotten.unregistered.update { it + server.persistenceID } },
             forget = { id -> forgotten.notifications.update { it + id } },
         )
         val system = SystemIntegrationClient.testValue
@@ -53,15 +53,16 @@ class AppIconBadgeTests {
     @Test
     fun removingTheServerForgetsItsBadge() = runTest {
         val saved = OpenCodeServer(url = "http://192.168.1.20:4096", username = "opencode", password = "")
-        val forgotten = Locked<List<String>>(emptyList())
+        val forgotten = Forgotten()
         shared.run { shared(ServerSharedKeys.savedServers).set(listOf(saved)) }
-        val store = shared.appStore(shared.appState(), this) {
-            this[AppIconBadgeClient] = AppIconBadgeClient(publish = { _, _ -> }, forget = { key -> forgotten.update { it + key } })
-        }
+        val store = shared.appStore(shared.appState(), this) { forgetting(forgotten) }
         store.exhaustive = false
         store.send(AppFeature.Action.ServerDeleted(saved))
         store.finish()
-        assertEquals(listOf(saved.persistenceID), forgotten.value)
+        assertEquals(listOf(saved.persistenceID), forgotten.badges.value)
+        // Removing a server also removes this phone from its notifications.
+        assertEquals(listOf(saved.persistenceID), forgotten.unregistered.value)
+        assertEquals(listOf(saved.persistenceID), forgotten.notifications.value)
     }
 
     @Test
@@ -86,6 +87,7 @@ class AppIconBadgeTests {
         assertEquals(listOf(repaired), savedServers)
         assertEquals(listOf(old.persistenceID), forgotten.badges.value)
         assertEquals(listOf(old.persistenceID), forgotten.notifications.value)
+        assertTrue(forgotten.unregistered.value.isEmpty())
         assertEquals(listOf(ShareConversation.serverKey(old.persistenceID)), forgotten.system.value)
     }
 

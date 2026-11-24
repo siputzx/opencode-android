@@ -50,7 +50,6 @@ private suspend fun postPrompt(
         promptBody(
             messageID, text, attachments, files, delivery,
             page = PromptContext.page.current(),
-            callbackURL = PromptContext.notificationCallbackURL.current(),
             mentions = PromptContext.mentions.current(),
             quotes = PromptContext.quotes.current(),
         ),
@@ -72,7 +71,6 @@ internal fun promptBody(
     files: List<OpenCodeFileReference>,
     delivery: OpenCodeDelivery?,
     page: OpenCodePageContext? = null,
-    callbackURL: String? = null,
     mentions: OpenCodeAutocompleteMentions? = null,
     quotes: List<OpenCodeQuote> = emptyList(),
 ): PromptBody {
@@ -87,7 +85,7 @@ internal fun promptBody(
         agents = mentions?.agents?.ifEmpty { null },
         skills = mentions?.skills?.ifEmpty { null },
         delivery = delivery?.rawValue,
-        metadata = PromptBody.Metadata.of(text, files, bounded, callbackURL, quotes),
+        metadata = PromptBody.Metadata.of(text, files, bounded, quotes),
     )
 }
 
@@ -115,12 +113,8 @@ internal data class PromptBody(
         /** Desktop only reads `displayText` when `comments` is an array. */
         val comments: List<Comment>? = null,
         val attachments: List<OpenCodeFileReference>? = null,
-        /** Read by the server's notify plugin: POSTs here when this run ends. */
-        val notification: Notification? = null,
         val page: Page? = null,
     ) {
-        @Serializable data class Notification(val callbackURL: String)
-
         @Serializable data class Comment(val type: String, val text: String, val comment: String? = null)
 
         /** The page a message was sent from; its visible text travels in `text` as a `<page>` block. */
@@ -132,10 +126,9 @@ internal data class PromptBody(
                 text: String,
                 files: List<OpenCodeFileReference>,
                 page: OpenCodePageContext?,
-                callbackURL: String?,
                 quotes: List<OpenCodeQuote> = emptyList(),
             ): Metadata? {
-                if (files.isEmpty() && page == null && callbackURL == null && quotes.isEmpty()) return null
+                if (files.isEmpty() && page == null && quotes.isEmpty()) return null
                 val describes = files.isNotEmpty() || page != null || quotes.isNotEmpty()
                 val comments = ArrayList<Comment>()
                 for (quote in quotes) comments += Comment("quote", quote.text, quote.comment?.trim()?.ifEmpty { null })
@@ -143,7 +136,6 @@ internal data class PromptBody(
                     displayText = if (describes) text else null,
                     comments = if (describes) comments else null,
                     attachments = files.ifEmpty { null },
-                    notification = callbackURL?.let(::Notification),
                     page = page?.let { Page(it.url, it.title, it.selection, it.scroll) },
                 )
             }

@@ -7,7 +7,6 @@ import ai.opencode.server.OpenCodeClientError
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.R
 import ai.opencode.server.SelfViewReceipts
-import ai.opencode.server.internal.WireJson
 import ai.opencode.server.model.OpenCodeSession
 import ai.opencode.server.model.OpenCodeSessionPage
 import ai.opencode.server.model.OpenCodeSessionPageRequest
@@ -20,8 +19,6 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.isActive
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.json.JsonObject
-import kotlinx.serialization.json.JsonPrimitive
 
 internal val WAIT_POLL_TIMEOUT = 25.seconds
 
@@ -200,25 +197,6 @@ private suspend fun requestSetArchived(server: OpenCodeServer, sessionID: String
         idempotency = RequestIdempotency.Idempotent,
         server = server,
     )
-}
-
-internal suspend fun requestSetAlwaysNotify(server: OpenCodeServer, sessionID: String, callbackURL: String?) {
-    // PATCH replaces the whole metadata object, so merge into what's there.
-    val current = perform("/api/session/$sessionID", server = server)
-    val info = runCatching { (WireJson.parseToJsonElement(current.data.decodeToString()) as? JsonObject)?.get("data") as? JsonObject }.getOrNull()
-    val metadata = ((info?.get("metadata") as? JsonObject) ?: JsonObject(emptyMap())).toMutableMap()
-    if (callbackURL != null) {
-        metadata["notification"] = JsonObject(mapOf("always" to JsonPrimitive(true), "callbackURL" to JsonPrimitive(callbackURL)))
-    } else {
-        metadata.remove("notification")
-    }
-    val body = try {
-        WireJson.encodeToString(JsonObject.serializer(), JsonObject(mapOf("metadata" to JsonObject(metadata)))).toByteArray()
-    } catch (_: Exception) {
-        throw OpenCodeClientError(localized(R.string.server_error_update_session))
-    }
-    // Sets the whole metadata object to the same value each time.
-    perform("/api/session/$sessionID", method = "PATCH", body = body, idempotency = RequestIdempotency.Idempotent, server = server)
 }
 
 internal suspend fun requestCompactSession(server: OpenCodeServer, sessionID: String) {

@@ -46,9 +46,8 @@ class AppFeatureTests {
             cache,
         )
 
-        // A session cached before Always Notify has no `alwaysNotify`.
-        val beforeAlwaysNotify = """{"serverID":"kit|https://saved.example","snapshot":{"projects":[],"sessions":[{"id":"ses_1","title":"Release","projectID":"global","directory":"/tmp","updatedAt":"2026-05-09T01:46:40Z","cost":0.5}],"activeSessionIDs":[]}}"""
-        val session = json.decodeFromString(CachedHomeSnapshot.serializer(), beforeAlwaysNotify).snapshot.sessions.first()
+        val cached = """{"serverID":"kit|https://saved.example","snapshot":{"projects":[],"sessions":[{"id":"ses_1","title":"Release","projectID":"global","directory":"/tmp","updatedAt":"2026-05-09T01:46:40Z","cost":0.5}],"activeSessionIDs":[]}}"""
+        val session = json.decodeFromString(CachedHomeSnapshot.serializer(), cached).snapshot.sessions.first()
         assertEquals(
             OpenCodeSession(
                 id = "ses_1", serverTitle = "Release", projectID = "global", directory = "/tmp",
@@ -56,7 +55,6 @@ class AppFeatureTests {
             ),
             session,
         )
-        assertFalse(session.alwaysNotify)
     }
 
     @Test

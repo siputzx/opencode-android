@@ -51,7 +51,6 @@ data class ShareSendRequest(
     val text: String,
     val images: List<Image> = emptyList(),
     val files: List<ComposerStagedFile> = emptyList(),
-    val callbackURL: String? = null,
 ) {
     sealed interface Target {
         val sessionID: String
@@ -139,7 +138,7 @@ class ShareSender(
             val tmp = temporaryDirectory(deadline)
             for (file in request.files) references.add(upload(file, tmp, target.directory, deadline))
         }
-        val body = promptBody(request.messageID, request.text, request.images, references, request.callbackURL)
+        val body = promptBody(request.messageID, request.text, request.images, references)
         val data = runCatching { WireJson.encodeToString(PromptBody.serializer(), body) }.getOrNull()
             ?: throw ShareSendFailure.Rejected(0)
         perform(
@@ -322,11 +321,7 @@ class ShareSender(
             val displayText: String? = null,
             val comments: List<String>? = null,
             val attachments: List<ShareFileReference>? = null,
-            val notification: Notification? = null,
-        ) {
-            @Serializable
-            data class Notification(val callbackURL: String)
-        }
+        )
     }
 
     companion object {
@@ -366,16 +361,14 @@ class ShareSender(
             text: String,
             images: List<ShareSendRequest.Image>,
             files: List<ShareFileReference>,
-            callbackURL: String?,
         ): PromptBody {
             val typed = if (text.trim().isEmpty()) emptyList() else listOf(text)
             val modelText = (typed + files.map { "Attached file: `${it.path}`" }).joinToString("\n")
-            val metadata = if (files.isNotEmpty() || callbackURL != null) {
+            val metadata = if (files.isNotEmpty()) {
                 PromptBody.Metadata(
                     displayText = if (files.isEmpty()) null else text,
                     comments = if (files.isEmpty()) null else emptyList(),
                     attachments = files.ifEmpty { null },
-                    notification = callbackURL?.let { PromptBody.Metadata.Notification(it) },
                 )
             } else {
                 null

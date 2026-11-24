@@ -17,14 +17,8 @@ data class ShareCredentials(
     /** `OpenCodeServer.persistenceID`; matches [ShareTargets.serverID]. */
     val serverID: String,
     val server: OpenCodeServer,
-    /**
-     * The notify relay's callback for this server, when notifications are on: a send from the
-     * share sheet asks for the same "done" push as the app's.
-     */
-    val callbackURL: String? = null,
 ) {
-    constructor(server: OpenCodeServer, callbackURL: String? = null) :
-        this(CURRENT_VERSION, server.persistenceID, server, callbackURL)
+    constructor(server: OpenCodeServer) : this(CURRENT_VERSION, server.persistenceID, server)
 
     companion object {
         // v1 retained a plaintext-capable push callback. The server credentials still work.
@@ -54,10 +48,10 @@ class ShareCredentialStore(
             )
         }
 
-        /** A v1 item keeps its server, not its callback; other versions read as none. */
+        /** A v1 item keeps its server; other versions read as none. */
         private fun current(stored: ShareCredentials?): ShareCredentials? {
             val credentials = stored?.let {
-                if (it.version == 1) it.copy(version = ShareCredentials.CURRENT_VERSION, callbackURL = null) else it
+                if (it.version == 1) it.copy(version = ShareCredentials.CURRENT_VERSION) else it
             }
             return credentials?.takeIf { it.version == ShareCredentials.CURRENT_VERSION }
         }

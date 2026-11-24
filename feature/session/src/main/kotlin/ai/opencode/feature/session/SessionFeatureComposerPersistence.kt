@@ -133,7 +133,6 @@ private fun SessionFeature.restoredDeliveryJob(
         clock = clock,
         networkPath = networkPath,
         undeliveredPrompts = undeliveredPrompts,
-        sessionNotifications = sessionNotifications,
         pageReader = pageReader,
     )
 }

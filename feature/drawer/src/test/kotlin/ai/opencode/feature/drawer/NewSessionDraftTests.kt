@@ -25,7 +25,6 @@ import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.model.OpenCodeHomeSnapshot
 import ai.opencode.server.model.OpenCodeModel
 import ai.opencode.server.model.OpenCodeModelCatalog
-import ai.opencode.server.model.OpenCodeNotifyPluginStatus
 import ai.opencode.server.model.OpenCodeProject
 import ai.opencode.server.model.OpenCodeSession
 import java.time.Instant
@@ -164,14 +163,6 @@ class NewSessionDraftTests {
         }
         assertEquals(SessionFeature.State.TaskIdentity(server.persistenceID, 3, null), store.state.sessionDetail?.taskIdentity)
         runTaskAndLoadModels()
-
-        // 4. Notify plugin "Set Up" over a draft keeps what's typed there and adds its prompt below.
-        store.send(HomeFeature.Action.NotifyPluginSetUpTapped) {
-            it.copy(drawerCloseRequests = it.drawerCloseRequests + 1).detail { detail -> detail.typeBelow(HomeFeature.notifyPluginSetUpPrompt) }
-        }
-        assertTrue(store.state.sessionDetail?.draft?.startsWith("Try this") == true)
-        assertTrue(store.state.sessionDetail?.draft?.contains(OpenCodeNotifyPluginStatus.PACKAGE_ENTRY) == true)
-        assertEquals(SessionFeature.State.TaskIdentity(server.persistenceID, 3, null), store.state.sessionDetail?.taskIdentity)
 
         // 5. Voice/deep-link openDraft from a draft gets a new taskIdentity and loads models.
         store.send(HomeFeature.Action.detail(SessionFeature.Action.Delegate(SessionFeature.Delegate.OpenDraft(projects[1].directory)))) {

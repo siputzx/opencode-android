@@ -664,7 +664,7 @@ internal fun SessionFeature.deliver(
     val job = SessionFeature.deliveryJob(
         target = target, server = server, reconcileFirst = reconcileFirst,
         openCodeClient = openCodeClient, clock = clock, networkPath = networkPath, undeliveredPrompts = undeliveredPrompts,
-        sessionNotifications = sessionNotifications, pageReader = pageReader,
+        pageReader = pageReader,
     )
     val destination = when (lane) {
         is PromptOutbox.Lane.Session -> lane.id

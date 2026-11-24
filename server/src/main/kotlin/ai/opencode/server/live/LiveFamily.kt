@@ -313,7 +313,6 @@ internal fun session(payload: SessionPayload) = OpenCodeSession(
     parentID = payload.parentID,
     agent = payload.agent,
     cost = payload.cost,
-    alwaysNotify = payload.metadata?.alwaysNotify == true,
     revertMessageID = payload.revert?.messageID,
     archivedMilliseconds = payload.time.archived?.toLong(),
 )

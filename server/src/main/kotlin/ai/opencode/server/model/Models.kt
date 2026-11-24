@@ -236,8 +236,6 @@ data class OpenCodeSession(
     val agent: String? = null,
     /** Spend in USD for this session alone (`Session.Info.cost`). */
     val cost: Double? = null,
-    /** Always Notify (`metadata.notification.always`). */
-    val alwaysNotify: Boolean = false,
     /** A staged undo (V2's `Session.Revert`): this message and everything after it are hidden. */
     val revertMessageID: String? = null,
     /**

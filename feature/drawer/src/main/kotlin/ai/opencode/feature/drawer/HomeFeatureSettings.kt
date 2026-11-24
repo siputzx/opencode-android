@@ -19,7 +19,6 @@ import ai.opencode.feature.session.isDraft
 import ai.opencode.feature.session.sessionComposer
 import ai.opencode.feature.session.typeBelow
 import ai.opencode.feature.drawer.catchup.CatchUpFeature
-import ai.opencode.feature.settings.NotifyPluginCheck
 import ai.opencode.feature.settings.ConnectionStatus
 import ai.opencode.feature.settings.HomeSettingsFeature
 import ai.opencode.feature.settings.SettingsFeature
@@ -81,12 +80,6 @@ private val State.settingsNotifications: SettingsFeature.Action.NotificationsCha
         permission = notificationPermission,
         isRequesting = isRequestingNotifications,
         setupError = notificationSetupError,
-        notifyPlugin = when (val check = notifyPlugin) {
-            null -> null
-            HomeNotificationsFeature.NotifyPluginCheck.Checking -> NotifyPluginCheck.Checking
-            is HomeNotificationsFeature.NotifyPluginCheck.Checked -> NotifyPluginCheck.Checked(check.status)
-            HomeNotificationsFeature.NotifyPluginCheck.Failed -> NotifyPluginCheck.Failed
-        },
     )
 
 /** What Settings shows of Home's notification state while it's up (null while it isn't). */
@@ -169,8 +162,7 @@ internal fun HomeFeature.reduceSettingsScreen(state: State, action: Presentation
                 Reduced(state, Effect.send(Action.Delegate(DelegateAction.ServerRemovalConfirmed(delegate.server))))
             SettingsDelegate.EnableNotificationsTapped -> Reduced(state, Effect.send(Action.EnableNotificationsTapped))
             SettingsDelegate.NotificationSettingsRequested -> Reduced(state, Effect.send(Action.NotificationSettingsRequested))
-            SettingsDelegate.NotifyPluginCheckRequested -> Reduced(state, Effect.send(Action.NotifyPluginCheckRequested))
-            SettingsDelegate.NotifyPluginSetUpTapped -> Reduced(state, Effect.send(Action.NotifyPluginSetUpTapped))
+            SettingsDelegate.PushSyncRequested -> Reduced(state, Effect.send(Action.PushSyncRequested))
             is SettingsDelegate.TryWhatsNew -> tryWhatsNew(delegate.destination, delegate.entryID, state)
         }
         else -> Reduced(state)

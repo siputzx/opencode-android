@@ -23,13 +23,10 @@ import ai.opencode.feature.composer.SharedDraftTarget
 import ai.opencode.feature.system.SystemAction
 import ai.opencode.feature.system.SystemIntegrationClient
 import ai.opencode.feature.system.SystemPublication
-import ai.opencode.feature.system.notifications.SessionNotificationsClient
 import ai.opencode.feature.system.share.ShareCredentials
 import ai.opencode.feature.system.share.ShareInboxClient
 import ai.opencode.feature.system.share.ShareTargets
 import ai.opencode.feature.system.share.ShareTargetsPublication
-import kotlinx.coroutines.currentCoroutineContext
-import kotlinx.coroutines.isActive
 import ai.opencode.feature.system.share.ReceivedShare
 import ai.opencode.feature.system.share.ShareHandoff
 import ai.opencode.feature.system.share.resolvedShareTarget
@@ -43,20 +40,11 @@ import ai.opencode.server.model.OpenCodeSession
  * the list published to the system.
  */
 
-/**
- * The share sheet's credentials, then its sends' "done" push: the callback this phone's
- * notifications use, or none while they're off.
- */
+/** The share sheet's credentials. */
 @Suppress("UnusedReceiverParameter")
 internal fun HomeFeature.publishShareCredentials(server: OpenCodeServer): Effect<Action> {
     val shareInbox = dependency(ShareInboxClient)
-    val sessionNotifications = dependency(SessionNotificationsClient)
-    return Effect.run {
-        shareInbox.publishCredentials(ShareCredentials(server), true)
-        val callbackURL = sessionNotifications.callbackURL(server)
-        if (!currentCoroutineContext().isActive) return@run
-        shareInbox.publishCredentials(ShareCredentials(server, callbackURL), false)
-    }
+    return Effect.run { shareInbox.publishCredentials(ShareCredentials(server)) }
 }
 
 internal fun HomeFeature.reduceSystem(state: State, action: Action): HomeReduced = when (action) {

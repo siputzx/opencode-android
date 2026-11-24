@@ -246,19 +246,3 @@ data class OpenCodeCompaction(
 }
 
 data class OpenCodeTranscriptPage(val items: List<OpenCodeTranscriptItem>, val next: String?)
-
-/** The server half of notifications (`packages/notify-plugin`). */
-enum class OpenCodeNotifyPluginStatus {
-    Active,
-    /** Listed but not running, e.g. still installing or failed to load. */
-    Inactive,
-    Missing;
-
-    companion object {
-        const val PLUGIN_ID = "opencode-notify-callback"
-        /** What `opencode.json` lists to install it: the npm package. */
-        const val PACKAGE_ENTRY = "opencode-mobile-notifications"
-        /** The private-repo entry earlier builds asked for; setup replaces it. */
-        const val LEGACY_PACKAGE_ENTRY = "github:anomalyco/opencode-ios#main::path:packages/notify-plugin"
-    }
-}

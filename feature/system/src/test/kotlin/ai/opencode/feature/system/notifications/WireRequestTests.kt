@@ -12,17 +12,17 @@ class WireRequestTests {
     @get:Rule val isolation = TestIsolationRule()
 
     @Test
-    fun restoringACallbackWithoutItsDeviceKeyMintsANewCapability() {
+    fun aCallbackIsReusedOnlyForTheSameTokenAndKeyWithThreeDaysLeft() {
         val relay = "https://relay.example".toHttpUrl()
         val now = Instant.ofEpochSecond(100)
         val cached = SessionNotifications.Callback(
             url = "https://relay.example/v2/notify/test", expiresAt = now.plusSeconds(30L * 86400),
-            token = "device", environment = "development", phonePublicKey = "old",
+            token = "device", environment = SessionNotifications.FCM_ENVIRONMENT, phonePublicKey = "old",
         )
-        fun reuse(publicKey: String?) = cached.isReusable("device", "development", publicKey, relay, now)
-        assertTrue(reuse("old"))
-        assertFalse(reuse("new"))
-        assertTrue("A temporarily locked key store is not a new device identity", reuse(null))
+        assertTrue(cached.isReusable("device", "old", relay, now))
+        assertFalse(cached.isReusable("device", "new", relay, now))
+        assertFalse(cached.isReusable("other-device", "old", relay, now))
+        assertFalse(cached.isReusable("device", "old", relay, now.plusSeconds(27L * 86400)))
     }
 
     @Test

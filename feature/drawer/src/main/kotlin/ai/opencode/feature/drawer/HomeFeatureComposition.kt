@@ -381,8 +381,11 @@ private fun notificationsAction(action: Action): HomeNotificationsFeature.Action
     Action.EnableNotificationsTapped -> HomeNotificationsFeature.Action.EnableNotificationsTapped
     is Action.NotificationPermissionRequested -> HomeNotificationsFeature.Action.NotificationPermissionRequested(action.permission)
     is Action.NotificationSettingsOpened -> HomeNotificationsFeature.Action.NotificationSettingsOpened(action.opened)
-    Action.NotifyPluginCheckRequested -> HomeNotificationsFeature.Action.NotifyPluginCheckRequested
-    is Action.NotifyPluginChecked -> HomeNotificationsFeature.Action.NotifyPluginChecked(action.status)
+    Action.Task -> HomeNotificationsFeature.Action.Task
+    Action.PushSyncRequested -> HomeNotificationsFeature.Action.PushSyncRequested
+    is Action.PushSynced -> HomeNotificationsFeature.Action.PushSynced(action.serverID, action.result)
+    Action.PushFetchRequested -> HomeNotificationsFeature.Action.PushFetchRequested
+    is Action.PushFetched -> HomeNotificationsFeature.Action.PushFetched(action.serverID, action.state)
     else -> null
 }
 
@@ -392,8 +395,11 @@ private fun homeAction(action: HomeNotificationsFeature.Action): Action = when (
     HomeNotificationsFeature.Action.EnableNotificationsTapped -> Action.EnableNotificationsTapped
     is HomeNotificationsFeature.Action.NotificationPermissionRequested -> Action.NotificationPermissionRequested(action.permission)
     is HomeNotificationsFeature.Action.NotificationSettingsOpened -> Action.NotificationSettingsOpened(action.opened)
-    HomeNotificationsFeature.Action.NotifyPluginCheckRequested -> Action.NotifyPluginCheckRequested
-    is HomeNotificationsFeature.Action.NotifyPluginChecked -> Action.NotifyPluginChecked(action.status)
+    HomeNotificationsFeature.Action.Task -> Action.Task
+    HomeNotificationsFeature.Action.PushSyncRequested -> Action.PushSyncRequested
+    is HomeNotificationsFeature.Action.PushSynced -> Action.PushSynced(action.serverID, action.result)
+    HomeNotificationsFeature.Action.PushFetchRequested -> Action.PushFetchRequested
+    is HomeNotificationsFeature.Action.PushFetched -> Action.PushFetched(action.serverID, action.state)
 }
 
 private fun connectionAction(action: Action): HomeConnectionFeature.Action? = when (action) {

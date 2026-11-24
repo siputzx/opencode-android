@@ -76,7 +76,6 @@ object ShareComposition {
         text: String,
         images: List<ShareSendRequest.Image>,
         files: List<ComposerStagedFile>,
-        callbackURL: String?,
     ): ShareSendRequest? {
         val target = when (destination) {
             is Destination.Session -> ShareSendRequest.Target.Session(destination.session.id, destination.session.directory)
@@ -85,7 +84,7 @@ object ShareComposition {
                 ShareSendRequest.Target.NewSession(newSessionID, directory)
             }
         }
-        return ShareSendRequest(target, messageID, text, images, files, callbackURL)
+        return ShareSendRequest(target, messageID, text, images, files)
     }
 
     /** What the sheet says when a send didn't go, and what it offers. */

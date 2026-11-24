@@ -445,8 +445,6 @@ data class OpenCodeAutocompleteMentions(
 /** Per-send context the prompt body folds in without changing every client signature. */
 object PromptContext {
     val page = TaskLocal<OpenCodePageContext?> { null }
-    /** The notify plugin's callback: POSTs here when this run ends. */
-    val notificationCallbackURL = TaskLocal<String?> { null }
     val mentions = TaskLocal<OpenCodeAutocompleteMentions?> { null }
     val quotes = TaskLocal<List<OpenCodeQuote>> { emptyList() }
     /** The ID a prompt sent with `sendDeliveredPrompt` is admitted under; unset, each call makes a fresh one. */

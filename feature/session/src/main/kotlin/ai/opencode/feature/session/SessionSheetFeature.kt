@@ -2,11 +2,13 @@ package ai.opencode.feature.session
 
 import ai.opencode.core.strings.localized
 import ai.opencode.core.dependencies.Clock
+import ai.opencode.core.dependencies.DateClient
 import ai.opencode.core.dependencies.PasteboardClient
 import ai.opencode.core.dependencies.UuidClient
 import ai.opencode.core.dependencies.dependency
 import ai.opencode.core.haptics.Haptic
 import ai.opencode.core.haptics.HapticsClient
+import ai.opencode.core.sharing.shared
 import ai.opencode.core.store.Effect
 import ai.opencode.core.store.Reduced
 import ai.opencode.core.store.Reducer
@@ -14,17 +16,20 @@ import ai.opencode.core.store.cancellable
 import ai.opencode.feature.session.sheet.asClientError
 import ai.opencode.feature.session.sheet.clientError
 import ai.opencode.feature.session.sheet.clientResult
-import ai.opencode.feature.system.notifications.NotificationPermission
-import ai.opencode.feature.system.notifications.NotificationPermissionClient
-import ai.opencode.feature.system.notifications.SessionNotificationsClient
+import ai.opencode.feature.system.notifications.PushDuration
+import ai.opencode.feature.system.notifications.PushSharedKeys
+import ai.opencode.feature.system.notifications.PushSync
 import ai.opencode.server.OpenCodeClient
 import ai.opencode.server.OpenCodeClientError
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.model.OpenCodeExportFormat
 import ai.opencode.server.model.OpenCodeModelRef
+import ai.opencode.server.model.OpenCodePushBell
+import ai.opencode.server.model.OpenCodePushLevel
 import ai.opencode.server.model.OpenCodeSession
 import ai.opencode.server.model.SessionTitle
 import kotlinx.coroutines.CancellationException
+import java.time.ZoneId
 import kotlin.time.Duration.Companion.milliseconds
 
 /**
@@ -46,8 +51,6 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         val failure: Failure? = null,
         /** Auto Rename failed: the title stays and says so briefly, no alert. */
         val autoRenameFailed: Boolean = false,
-        /** Always Notify is being written; the switch shows the value it's moving to. */
-        val alwaysNotifyPending: Boolean? = null,
         /** The composer's pick waiting for the next send: compaction applies it first, as the TUI does. */
         val pendingModel: OpenCodeModelRef? = null,
     )
@@ -94,8 +97,9 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         data object PinTapped : Action
         data object ReadTapped : Action
         data object MuteTapped : Action
-        data class AlwaysNotifyToggled(val isOn: Boolean) : Action
-        data class AlwaysNotifyFinished(val isOn: Boolean, val error: OpenCodeClientError?) : Action
+        /** This phone's own bell: a level for a while, or null to follow the phone's choice. */
+        data class BellChosen(val level: OpenCodePushLevel?, val duration: PushDuration) : Action
+        data class BellFinished(val previous: OpenCodePushBell?, val error: OpenCodeClientError?) : Action
         data object DeleteTapped : Action
         data object DeleteConfirmed : Action
         data object FailureDismissed : Action
@@ -110,7 +114,6 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         data object TogglePin : Delegate
         data object ToggleRead : Delegate
         data object ToggleMute : Delegate
-        data class AlwaysNotifyChanged(val isOn: Boolean) : Delegate
         data object DeleteSession : Delegate
     }
 
@@ -285,43 +288,37 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
             Action.ReadTapped -> Reduced(state, Effect.send(Action.Delegate(Delegate.ToggleRead)))
             Action.MuteTapped -> Reduced(state, Effect.send(Action.Delegate(Delegate.ToggleMute)))
 
-            is Action.AlwaysNotifyToggled -> {
-                if (state.alwaysNotifyPending != null) return Reduced(state)
-                val isOn = action.isOn
-                val client = dependency(OpenCodeClient)
-                val notifications = dependency(SessionNotificationsClient)
-                val permission = dependency(NotificationPermissionClient)
+            is Action.BellChosen -> {
+                val servers = shared(PushSharedKeys.servers)
+                val serverID = state.server.persistenceID
+                val current = servers.value[serverID] ?: return Reduced(state)
+                val device = current.device ?: return Reduced(state)
+                val previous = device.sessions[state.sessionID]
+                var bell: OpenCodePushBell? = null
+                if (action.level != null) {
+                    val until = action.duration.until(dependency(DateClient).now(), ZoneId.systemDefault())
+                    bell = OpenCodePushBell(action.level, until)
+                }
+                if (bell == previous) return Reduced(state)
+                servers.update { it + (serverID to current.withOwnBell(state.sessionID, bell)) }
                 val (server, sessionID) = state.server to state.sessionID
                 Reduced(
-                    state.copy(alwaysNotifyPending = isOn),
+                    state,
                     Effect.run { send ->
-                        val error = clientError {
-                            var callbackURL: String? = null
-                            if (isOn) {
-                                // Never asked yet: ask here rather than send people to Settings.
-                                if (permission.status() == NotificationPermission.NotDetermined) {
-                                    permission.request()
-                                }
-                                // The same callback a send attaches: null when notifications are off.
-                                callbackURL = notifications.callbackURL(server)
-                                    ?: throw OpenCodeClientError(localized(R.string.session_sheet_notifications_off_message))
-                            }
-                            client.setAlwaysNotify(server, sessionID, callbackURL)
-                        }
-                        send(Action.AlwaysNotifyFinished(isOn, error))
+                        val error = clientError { PushSync.setOwnBell(server, device.id, sessionID, bell) }
+                        send(Action.BellFinished(previous, error))
                     },
                 )
             }
 
-            is Action.AlwaysNotifyFinished -> {
-                val next = state.copy(alwaysNotifyPending = null)
-                val error = action.error
-                if (error != null) {
-                    haptics.play(Haptic.error)
-                    val title = if (action.isOn) localized(R.string.session_sheet_always_notify_on_failed_title) else localized(R.string.session_sheet_always_notify_off_failed_title)
-                    return Reduced(next.copy(failure = Failure(title, error.message)))
-                }
-                Reduced(next, Effect.send(Action.Delegate(Delegate.AlwaysNotifyChanged(action.isOn))))
+            is Action.BellFinished -> {
+                val error = action.error ?: return Reduced(state)
+                val servers = shared(PushSharedKeys.servers)
+                val serverID = state.server.persistenceID
+                val current = servers.value[serverID]
+                if (current != null) servers.update { it + (serverID to current.withOwnBell(state.sessionID, action.previous)) }
+                haptics.play(Haptic.error)
+                Reduced(state.copy(failure = Failure(localized(R.string.session_sheet_bell_failed_title), error.message)))
             }
 
             Action.DeleteTapped -> Reduced(state.copy(confirmsDeletion = true))

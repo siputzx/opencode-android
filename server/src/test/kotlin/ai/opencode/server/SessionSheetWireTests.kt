@@ -100,43 +100,6 @@ class SessionSheetWireTests {
         }
     }
 
-    @Test fun alwaysNotifyMergesIntoTheSessionsMetadataAndDecodes() = runTest {
-        val current = """{"data":{"id":"ses_1","projectID":"prj","time":{"created":1,"updated":2},"location":{"directory":"/w"},"metadata":{"anomaly.session":{"originSessionID":"ses_0"},"notification":{"always":true,"callbackURL":"https://old"}}}}"""
-        val fixture = WireFixture { request ->
-            when (request.route) {
-                "GET /api/session/ses_1" -> Reply.Json(200, current)
-                "PATCH /api/session/ses_1" -> Reply.status(204)
-                else -> Reply.status(404)
-            }
-        }
-        val forked = """{"id":"ses_f","projectID":"p","time":{"created":1,"updated":2},"location":{"directory":"/w"},"metadata":{"notification":{"always":true}}}"""
-        val odd = """{"id":"ses_g","projectID":"p","time":{"created":1,"updated":2},"location":{"directory":"/w"},"metadata":{"notification":"yes"}}"""
-        val forkFixture = WireFixture { request ->
-            when (request.route) {
-                "POST /api/session/ses_1/fork" -> Reply.Json(200, """{"data":$forked}""")
-                "POST /api/session/ses_2/fork" -> Reply.Json(200, """{"data":$odd}""")
-                else -> Reply.status(404)
-            }
-        }
-        try {
-            val client = OpenCodeClient.liveValue
-            client.setAlwaysNotify(fixture.server, "ses_1", "https://relay/v1/notify/abc")
-            client.setAlwaysNotify(fixture.server, "ses_1", null)
-
-            val patches = fixture.requests.filter { it.route == "PATCH /api/session/ses_1" }
-            assertEquals(
-                json("""{"metadata":{"anomaly.session":{"originSessionID":"ses_0"},"notification":{"always":true,"callbackURL":"https://relay/v1/notify/abc"}}}"""),
-                patches[0].json(),
-            )
-            assertEquals(json("""{"metadata":{"anomaly.session":{"originSessionID":"ses_0"}}}"""), patches[1].json())
-            assertTrue(client.forkSession(forkFixture.server, "ses_1").alwaysNotify)
-            assertFalse(client.forkSession(forkFixture.server, "ses_2").alwaysNotify)
-        } finally {
-            fixture.close()
-            forkFixture.close()
-        }
-    }
-
     @Test fun modelCatalogCarriesTheContextWindow() = runTest {
         val fixture = WireFixture { request ->
             when (request.path) {

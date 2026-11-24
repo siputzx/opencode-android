@@ -32,6 +32,7 @@ import ai.opencode.feature.system.SystemAction
 import ai.opencode.feature.system.liveactivity.DictationCommand
 import ai.opencode.feature.system.liveactivity.VoiceCallCommand
 import ai.opencode.feature.system.notifications.NotificationPermission
+import ai.opencode.feature.system.notifications.PushServer
 import ai.opencode.feature.system.share.ReceivedShare
 import ai.opencode.feature.settings.HomeSettingsFeature
 import ai.opencode.feature.system.liveactivity.SessionLiveActivity
@@ -46,8 +47,8 @@ import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.OpenCodeServerEvent
 import ai.opencode.server.model.OpenCodeHomeSnapshot
 import ai.opencode.server.model.OpenCodeModelRef
-import ai.opencode.server.model.OpenCodeNotifyPluginStatus
 import ai.opencode.server.model.OpenCodeProject
+import ai.opencode.server.model.OpenCodePushState
 import ai.opencode.server.model.OpenCodeSession
 import ai.opencode.server.model.OpenCodeTranscriptItem
 import ai.opencode.server.model.SessionActivity
@@ -443,7 +444,6 @@ class HomeFeature : Reducer<HomeFeature.State, HomeFeature.Action> {
         val notificationPermission: NotificationPermission? get() = notificationState.notificationPermission
         val isRequestingNotifications: Boolean get() = notificationState.isRequestingNotifications
         val notificationSetupError: String? get() = notificationState.notificationSetupError
-        val notifyPlugin: HomeNotificationsFeature.NotifyPluginCheck? get() = notificationState.notifyPlugin
 
         /** Slack-style catch-up: unread and waiting sessions as a card stack. */
         val catchUp: CatchUpFeature.Stack? get() = catchUpState.stack
@@ -685,10 +685,10 @@ class HomeFeature : Reducer<HomeFeature.State, HomeFeature.Action> {
         data object EnableNotificationsTapped : Action
         data class NotificationPermissionRequested(val permission: NotificationPermission) : Action
         data class NotificationSettingsOpened(val opened: Boolean) : Action
-        data object NotifyPluginCheckRequested : Action
-        data class NotifyPluginChecked(val status: OpenCodeNotifyPluginStatus?) : Action
-        /** Opens a draft whose prompt asks OpenCode to install the plugin. */
-        data object NotifyPluginSetUpTapped : Action
+        data object PushSyncRequested : Action
+        data class PushSynced(val serverID: String, val result: PushServer) : Action
+        data object PushFetchRequested : Action
+        data class PushFetched(val serverID: String, val state: OpenCodePushState?) : Action
         data object SettingsTapped : Action
 
         /** The drawer's call button: a call on the session behind the drawer. */
@@ -824,17 +824,6 @@ class HomeFeature : Reducer<HomeFeature.State, HomeFeature.Action> {
     override fun reduce(state: State, action: Action): Reduced<State, Action> = body.reduce(state, action)
 
     companion object {
-        /** Asks the user's own OpenCode to install the plugin; they review it before sending. */
-        val notifyPluginSetUpPrompt: String =
-            "Set up OpenCode iOS notifications on this server. Run `opencode plugin add " +
-                "${OpenCodeNotifyPluginStatus.PACKAGE_ENTRY}`, which installs the plugin and adds it to my global OpenCode " +
-                "config. If that command isn't available, add \"${OpenCodeNotifyPluginStatus.PACKAGE_ENTRY}\" to the \"plugins\" " +
-                "array of ~/.config/opencode/opencode.json (or opencode.jsonc, whichever exists), keeping every other entry " +
-                "and any comments. If the config lists \"${OpenCodeNotifyPluginStatus.LEGACY_PACKAGE_ENTRY}\", remove that entry. " +
-                "Don't restart the server: OpenCode reloads config changes on its own. Then confirm a plugin with ID " +
-                "\"${OpenCodeNotifyPluginStatus.PLUGIN_ID}\" is active (`opencode api get /api/plugin`). If it's listed but not " +
-                "active, tell me why (the server log says) before changing anything else. Tell me if anything went wrong."
-
         /** Mark All as Read receipts in flight at once. */
         const val receiptConcurrency = CatchUpFeature.receiptConcurrency
 

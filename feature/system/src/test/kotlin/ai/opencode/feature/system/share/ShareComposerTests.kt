@@ -61,51 +61,26 @@ class ShareCredentialsTests {
     @get:Rule val isolation = TestIsolationRule()
 
     @Test
-    fun publishingWritesOnlyChangesAndKeepsTheLastCallback() {
+    fun publishingWritesOnlyChanges() {
         var writes = 0
         val memory = ShareCredentialStore.inMemory()
         val store = ShareCredentialStore(load = memory.load, save = { writes += 1; memory.save(it) }, remove = memory.remove)
-        val callback = "https://relay.example/v2/notify/sealed"
-        ShareCredentials.publish(ShareCredentials(server, callbackURL = callback), store)
-        // Leaving the app republishes without a callback: the last one stays, unwritten.
+        ShareCredentials.publish(ShareCredentials(server), store)
         ShareCredentials.publish(ShareCredentials(server), store)
         assertEquals(1, writes)
-        assertEquals(callback, store.load()?.callbackURL)
         assertEquals(server, store.load()?.server)
 
         val renamed = server.copy(password = "rotated")
         ShareCredentials.publish(ShareCredentials(renamed), store)
         assertEquals(2, writes)
         assertEquals("rotated", store.load()?.server?.password)
-        assertEquals(callback, store.load()?.callbackURL)
     }
 
     @Test
-    fun aCallbackKnownToBeGoneIsCleared() {
+    fun upgradingShareKeepsTheServer() {
         val store = ShareCredentialStore.inMemory()
-        ShareCredentials.publish(ShareCredentials(server, callbackURL = "https://relay.example/a"), store)
-        // Notifications turned off: the authoritative answer has no callback.
-        ShareCredentials.publish(ShareCredentials(server), store, keepsCallback = false)
-        assertNull(store.load()?.callbackURL)
-    }
-
-    @Test
-    fun anotherServersCredentialsDontInheritTheCallback() {
-        val store = ShareCredentialStore.inMemory()
-        ShareCredentials.publish(ShareCredentials(server, callbackURL = "https://relay.example/a"), store)
-        val other = OpenCodeServer(url = "http://other.local:4096", username = "opencode", password = "x")
-        ShareCredentials.publish(ShareCredentials(other), store)
-        assertEquals(other.persistenceID, store.load()?.serverID)
-        assertNull(store.load()?.callbackURL)
-    }
-
-    @Test
-    fun upgradingShareKeepsTheServerButDropsThePlaintextCallback() {
-        val store = ShareCredentialStore.inMemory()
-        val old = ShareCredentials(server, "https://relay.example/v1/notify/sealed").copy(version = 1)
-        store.save(old)
+        store.save(ShareCredentials(server).copy(version = 1))
         assertEquals(server, store.load()?.server)
-        assertNull(store.load()?.callbackURL)
     }
 }
 
@@ -144,7 +119,7 @@ class ShareCredentialsFrameworkTests {
         val inbox = withDependencies({ this[AppContext] = RuntimeEnvironment.getApplication() }) {
             ShareInboxClient.live(credentials = store)
         }
-        inbox.publishCredentials(ShareCredentials(server), true)
+        inbox.publishCredentials(ShareCredentials(server))
         inbox.removeTargets("someone-else")
         assertNotNull(store.load())
         inbox.removeTargets(server.persistenceID)
@@ -231,19 +206,18 @@ class ShareSenderTests {
     @get:Rule val isolation = TestIsolationRule()
 
     private val image = ShareSendRequest.Image(byteArrayOf(0xFF.toByte(), 0xD8.toByte(), 0x01), "image/jpeg")
-    private val callback = "https://relay.example/v2/notify/sealed"
 
     /** The sheet's prompt is the app's prompt, byte for byte, for the same message. */
     @Test
     fun promptBodyMatchesTheApps() {
         val file = ShareFileReference(name = "crash.pdf", mime = "application/pdf", path = "/tmp/uploads/x/crash.pdf")
-        val share = ShareSender.promptBody(messageID = "msg_1", text = "What failed?", images = listOf(image), files = listOf(file), callbackURL = callback)
+        val share = ShareSender.promptBody(messageID = "msg_1", text = "What failed?", images = listOf(image), files = listOf(file))
         val app = Json.parseToJsonElement(
-            """{"id":"msg_1","text":"What failed?\nAttached file: `/tmp/uploads/x/crash.pdf`","files":[{"uri":"data:image/jpeg;base64,/9gB"}],"delivery":"steer","metadata":{"displayText":"What failed?","comments":[],"attachments":[{"name":"crash.pdf","mime":"application/pdf","path":"/tmp/uploads/x/crash.pdf"}],"notification":{"callbackURL":"https://relay.example/v2/notify/sealed"}}}""",
+            """{"id":"msg_1","text":"What failed?\nAttached file: `/tmp/uploads/x/crash.pdf`","files":[{"uri":"data:image/jpeg;base64,/9gB"}],"delivery":"steer","metadata":{"displayText":"What failed?","comments":[],"attachments":[{"name":"crash.pdf","mime":"application/pdf","path":"/tmp/uploads/x/crash.pdf"}]}}""",
         )
         assertEquals(app, encoder.encodeToJsonElement(ShareSender.PromptBody.serializer(), share))
 
-        val plainShare = ShareSender.promptBody(messageID = "msg_2", text = "Hi", images = emptyList(), files = emptyList(), callbackURL = null)
+        val plainShare = ShareSender.promptBody(messageID = "msg_2", text = "Hi", images = emptyList(), files = emptyList())
         val plainApp = Json.parseToJsonElement("""{"id":"msg_2","text":"Hi","delivery":"steer"}""")
         assertEquals(plainApp, encoder.encodeToJsonElement(ShareSender.PromptBody.serializer(), plainShare))
     }
@@ -252,14 +226,13 @@ class ShareSenderTests {
     fun sendsToASessionInOneRequest() = runBlocking {
         val fake = FakeServer(listOf(ok()))
         val sent = sender(fake).send(
-            ShareSendRequest(ShareSendRequest.Target.Session("ses_a", "/work"), messageID = "msg_a", text = "Look", images = listOf(image), callbackURL = callback),
+            ShareSendRequest(ShareSendRequest.Target.Session("ses_a", "/work"), messageID = "msg_a", text = "Look", images = listOf(image)),
         )
         assertEquals("ses_a", sent)
         assertEquals(listOf("/api/session/ses_a/prompt"), fake.requests.map { it.path })
         val body = json(fake.requests[0].body)
         assertEquals("msg_a", body["id"]?.jsonPrimitive?.content)
         assertEquals("steer", body["delivery"]?.jsonPrimitive?.content)
-        assertEquals(callback, body["metadata"]?.jsonObject?.get("notification")?.jsonObject?.get("callbackURL")?.jsonPrimitive?.content)
     }
 
     @Test
@@ -419,18 +392,18 @@ class ShareCompositionTests {
     @Test
     fun requestsNameTheirFolder() {
         val toSession = ShareComposition.request(
-            ShareComposition.Destination.Session(recent), messageID = "msg", newSessionID = "ses_n", text = "t", images = emptyList(), files = emptyList(), callbackURL = null,
+            ShareComposition.Destination.Session(recent), messageID = "msg", newSessionID = "ses_n", text = "t", images = emptyList(), files = emptyList(),
         )
         assertEquals(ShareSendRequest.Target.Session(recent.id, "/work"), toSession?.target)
         val toNew = ShareComposition.request(
-            ShareComposition.Destination.NewSession(work), messageID = "msg", newSessionID = "ses_n", text = "t", images = emptyList(), files = emptyList(), callbackURL = null,
+            ShareComposition.Destination.NewSession(work), messageID = "msg", newSessionID = "ses_n", text = "t", images = emptyList(), files = emptyList(),
         )
         assertEquals(ShareSendRequest.Target.NewSession("ses_n", "/work"), toNew?.target)
         // A project published before folders were: only the app can start it.
         assertNull(
             ShareComposition.request(
                 ShareComposition.Destination.NewSession(ShareTargets.Project(id = "p", name = "Old")), messageID = "m", newSessionID = "s", text = "",
-                images = emptyList(), files = emptyList(), callbackURL = null,
+                images = emptyList(), files = emptyList(),
             ),
         )
     }

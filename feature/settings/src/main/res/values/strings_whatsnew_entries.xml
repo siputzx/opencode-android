@@ -65,12 +65,6 @@
     <string name="settings_whatsnew_entry_math_and_diagrams_example">Ask for a flowchart of how a message is sent</string>
     <string name="settings_whatsnew_entry_math_and_diagrams_prompt">Draw a flowchart of how a message is sent</string>
 
-    <!-- 2026-10-09-04-always-notify -->
-    <string name="settings_whatsnew_entry_always_notify_title">Notify When Done</string>
-    <string name="settings_whatsnew_entry_always_notify_summary">Get a notification when a session you started here finishes, with a short summary of what happened.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_1">Turn on Always Notify in a session’s sheet to hear about every reply, even ones started on your computer.</string>
-    <string name="settings_whatsnew_entry_always_notify_detail_2">Tap a notification to open its session.</string>
-    <string name="settings_whatsnew_entry_always_notify_example">Send a message, then lock your phone</string>
 
     <!-- 2026-10-09-05-server-switcher -->
     <string name="settings_whatsnew_entry_server_switcher_title">Switch Servers</string>
@@ -738,9 +732,6 @@
     <string name="settings_whatsnew_entry_move_session_folder_gone_title">Sessions Outlive Their Folder</string>
     <string name="settings_whatsnew_entry_move_session_folder_gone_summary">When a session’s folder is gone, like a removed worktree, a failed send offers to move it to its project’s folder and sends again.</string>
 
-    <!-- 2026-10-31-03-notification-plugin-setup -->
-    <string name="settings_whatsnew_entry_notification_plugin_setup_title">Set Up Notifications with OpenCode</string>
-    <string name="settings_whatsnew_entry_notification_plugin_setup_summary">In Settings → Notifications, tap Set Up with OpenCode to review a prompt that installs the missing notification plugin.</string>
 
     <!-- 2026-11-01-01-call-card-takes-over -->
     <string name="settings_whatsnew_entry_call_card_takes_over_title">The Call’s Card Takes Over the Bottom</string>

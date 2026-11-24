@@ -4,9 +4,7 @@ import ai.opencode.core.strings.localized
 import ai.opencode.server.ConnectionRoute
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.R
-import ai.opencode.server.internal.ElementSerializer
 import ai.opencode.server.internal.WireJson
-import ai.opencode.server.internal.bool
 import ai.opencode.server.internal.dbl
 import ai.opencode.server.internal.int
 import ai.opencode.server.internal.list
@@ -205,25 +203,11 @@ internal data class SessionPayload(
     val parentID: String? = null,
     val agent: String? = null,
     val cost: Double? = null,
-    @Serializable(with = SessionMetadataPayloadSerializer::class) val metadata: SessionMetadataPayload? = null,
     val revert: RevertPayload? = null,
 )
 
 @Serializable
 internal data class RevertPayload(val messageID: String)
-
-/** Only `metadata.notification.always`; anything else, or another shape, decodes as off. */
-internal data class SessionMetadataPayload(val alwaysNotify: Boolean)
-
-internal object SessionMetadataPayloadSerializer : ElementSerializer<SessionMetadataPayload>(
-    decode = { element ->
-        val always = try {
-            (element as? JsonObject)?.opt("notification") { it.obj() }?.opt("always") { it.bool() }
-        } catch (_: RuntimeException) { null }
-        SessionMetadataPayload(always == true)
-    },
-    encode = { JsonNull },
-)
 
 @Serializable
 internal data class ModelInfoPayload(

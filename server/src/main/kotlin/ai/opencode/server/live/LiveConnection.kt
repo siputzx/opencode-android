@@ -6,14 +6,12 @@ import ai.opencode.server.OpenCodePairingLink
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.R
 import ai.opencode.server.ServerLinkStore
-import ai.opencode.server.model.OpenCodeNotifyPluginStatus
 import ai.opencode.server.retry.RequestIdempotency
 import ai.opencode.server.retry.RetryPolicy
 import kotlinx.coroutines.cancelChildren
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
-import kotlinx.serialization.Serializable
 import kotlin.time.Duration.Companion.seconds
 
 /**
@@ -109,48 +107,4 @@ private fun pairingFailure(failures: List<OpenCodeClientError>): OpenCodeClientE
     }
     val failure = failures.lastOrNull() ?: OpenCodeClientError(OpenCodeClientError.UNREACHABLE_MESSAGE)
     return failure.copy(connectionFailures = details)
-}
-
-internal suspend fun requestNotifyPluginStatus(server: OpenCodeServer): OpenCodeNotifyPluginStatus {
-    val payload = request<DataPayload<List<PluginPayload>>>("/api/plugin", server = server)
-    val plugin = payload.data.firstOrNull { it.id == OpenCodeNotifyPluginStatus.PLUGIN_ID } ?: return OpenCodeNotifyPluginStatus.Missing
-    return if (plugin.state?.status == "active") OpenCodeNotifyPluginStatus.Active else OpenCodeNotifyPluginStatus.Inactive
-}
-
-@Serializable
-private data class NotificationPreviewPairBody(val input: Input) {
-    @Serializable
-    data class Input(val callbackURL: String, val ref: String, val publicKey: String)
-}
-
-@Serializable
-private data class NotificationPreviewPairReply(val output: Output) {
-    @Serializable
-    data class Output(val publicKey: String)
-}
-
-/**
- * Exchanges public keys on the saved server, never on the push relay. A plain LAN connection can't
- * authenticate this exchange, so only a paired HTTPS address is used; without one it fails before
- * sending anything.
- */
-internal suspend fun requestPairNotificationPreview(
-    server: OpenCodeServer,
-    callbackURL: String,
-    ref: String,
-    publicKey: String,
-): String {
-    val secure = server.candidateURLs.firstOrNull { it.substringBefore("://", "").lowercase() == "https" }
-        ?: throw OpenCodeClientError(localized(R.string.server_error_notification_previews_need_https))
-    val reply = request<NotificationPreviewPairReply>(
-        "/api/rpc/mobile-notifications/pair",
-        method = "POST",
-        body = encodedBody(NotificationPreviewPairBody(NotificationPreviewPairBody.Input(callbackURL, ref, publicKey))),
-        timeout = 3.seconds,
-        idempotency = RequestIdempotency.Idempotent,
-        retry = RetryPolicy.once,
-        followsRedirects = false,
-        server = server.at(secure),
-    )
-    return reply.output.publicKey
 }

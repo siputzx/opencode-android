@@ -4,6 +4,12 @@ plugins {
 
 android {
     namespace = "ai.opencode.feature.system"
+    buildFeatures.buildConfig = true
+    defaultConfig {
+        // A test build can point at the dev relay with -PnotifyRelayURL=https://notify.dev.opencode.ai
+        val relay = providers.gradleProperty("notifyRelayURL").getOrElse("https://opencode-notify-relay.anomalyco.workers.dev")
+        buildConfigField("String", "NOTIFY_RELAY_URL", "\"$relay\"")
+    }
 }
 
 // The graph is acyclic: media, voice, system < transcript, composer, settings < session < drawer <

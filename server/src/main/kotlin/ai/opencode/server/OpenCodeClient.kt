@@ -39,7 +39,6 @@ import ai.opencode.server.live.requestMessage
 import ai.opencode.server.live.requestModelCatalog
 import ai.opencode.server.live.requestMoveSession
 import ai.opencode.server.live.requestMoveToBackground
-import ai.opencode.server.live.requestNotifyPluginStatus
 import ai.opencode.server.live.requestPendingInputs
 import ai.opencode.server.live.requestPrimaryAgents
 import ai.opencode.server.live.requestRedeemPairing
@@ -56,7 +55,6 @@ import ai.opencode.server.live.requestSendDeliveredPrompt
 import ai.opencode.server.live.requestSendPrompt
 import ai.opencode.server.live.requestServerCapabilities
 import ai.opencode.server.live.requestSessionFamily
-import ai.opencode.server.live.requestSetAlwaysNotify
 import ai.opencode.server.live.requestSetMCPConnected
 import ai.opencode.server.live.requestSetPendingInputDelivery
 import ai.opencode.server.live.requestShell
@@ -75,6 +73,13 @@ import ai.opencode.server.live.requestViewSession
 import ai.opencode.server.live.requestWaitForIdle
 import ai.opencode.server.live.subscribeEventsSharingWindows
 import ai.opencode.server.live.uploadFile
+import ai.opencode.server.live.requestPushCapability
+import ai.opencode.server.live.requestPushState
+import ai.opencode.server.live.requestRegisterPushDevice
+import ai.opencode.server.live.requestRemovePushDevice
+import ai.opencode.server.live.requestSetPushDevicePaused
+import ai.opencode.server.live.requestSetPushPaused
+import ai.opencode.server.live.requestSetPushSessionBell
 import ai.opencode.server.model.FileReadTarget
 import ai.opencode.server.model.OpenCodeAutocompleteAgent
 import ai.opencode.server.model.OpenCodeAutocompleteCommand
@@ -89,11 +94,14 @@ import ai.opencode.server.model.OpenCodeFormValue
 import ai.opencode.server.model.OpenCodeHomeSnapshot
 import ai.opencode.server.model.OpenCodeModelCatalog
 import ai.opencode.server.model.OpenCodeModelRef
-import ai.opencode.server.model.OpenCodeNotifyPluginStatus
 import ai.opencode.server.model.OpenCodeOAuthAttempt
 import ai.opencode.server.model.OpenCodeOAuthStatus
 import ai.opencode.server.model.OpenCodeOutgoingAttachment
 import ai.opencode.server.model.OpenCodePendingInput
+import ai.opencode.server.model.OpenCodePushBell
+import ai.opencode.server.model.OpenCodePushCapability
+import ai.opencode.server.model.OpenCodePushRegistration
+import ai.opencode.server.model.OpenCodePushState
 import ai.opencode.server.model.OpenCodePendingRequests
 import ai.opencode.server.model.OpenCodePermissionReply
 import ai.opencode.server.model.OpenCodeRunMessagesPage
@@ -182,8 +190,6 @@ data class OpenCodeClient(
     val replyForm: suspend (server: OpenCodeServer, sessionID: String, formID: String, answer: Map<String, OpenCodeFormValue>) -> Unit,
     val cancelForm: suspend (server: OpenCodeServer, sessionID: String, formID: String, message: String?) -> Unit,
     val getSession: suspend (server: OpenCodeServer, sessionID: String) -> OpenCodeSession,
-    /** Whether the server loaded the notify plugin (`GET /api/plugin`). */
-    val notifyPluginStatus: suspend (server: OpenCodeServer) -> OpenCodeNotifyPluginStatus,
     /** Location-scoped: pass only the open session's directory. */
     val runningShells: suspend (server: OpenCodeServer, directory: String) -> List<OpenCodeShell>,
     /** The session's running background jobs, its descendants' included (`GET /api/experimental/job`). */
@@ -209,8 +215,17 @@ data class OpenCodeClient(
     val unarchiveSession: suspend (server: OpenCodeServer, sessionID: String) -> Unit,
     /** The newest archived root sessions (`archived=true`) matching `search` (all when empty), as desktop's Archived list. */
     val archivedSessions: suspend (server: OpenCodeServer, search: String, limit: Int) -> List<OpenCodeSession>,
-    /** Turns Always Notify on (with the phone's callback URL) or off (null), keeping other metadata. */
-    val setAlwaysNotify: suspend (server: OpenCodeServer, sessionID: String, callbackURL: String?) -> Unit,
+    /** `capabilities.push` from `GET /api/info`; null on a server without push. */
+    val pushCapability: suspend (server: OpenCodeServer) -> OpenCodePushCapability?,
+    /** Registers this phone under `id` (its ref) and returns the server's public key. */
+    val registerPushDevice: suspend (server: OpenCodeServer, id: String, registration: OpenCodePushRegistration) -> String,
+    val removePushDevice: suspend (server: OpenCodeServer, id: String) -> Unit,
+    val pushState: suspend (server: OpenCodeServer) -> OpenCodePushState,
+    val setPushDevicePaused: suspend (server: OpenCodeServer, id: String, paused: Boolean) -> Unit,
+    /** This phone's own bell on a session; null removes it. */
+    val setPushSessionBell: suspend (server: OpenCodeServer, id: String, sessionID: String, bell: OpenCodePushBell?) -> Unit,
+    /** Pauses or resumes every notification from the server, optionally until a time in epoch milliseconds. */
+    val setPushPaused: suspend (server: OpenCodeServer, paused: Boolean, until: Long?) -> Unit,
     /** Queues a compaction; it runs after the session's current run. */
     val compactSession: suspend (server: OpenCodeServer, sessionID: String) -> Unit,
     /** Undoes from a message on (V2's `revert/stage`, as the TUI's `/undo`). */
@@ -264,13 +279,6 @@ data class OpenCodeClient(
         fun markdownImageKey(server: OpenCodeServer, directory: String?, source: String): String =
             markdownImageCacheKey(server, directory, source).removePrefix("markdown:")
 
-        /**
-         * Sends this phone's notification public key for `ref` to the saved server's HTTPS address
-         * and returns the server's. Only public keys cross; throws without an HTTPS address.
-         */
-        suspend fun pairNotificationPreview(server: OpenCodeServer, callbackURL: String, ref: String, publicKey: String): String =
-            ai.opencode.server.live.requestPairNotificationPreview(server, callbackURL, ref, publicKey)
-
         /** A prompt's reply in a `/message` page. */
         fun assistantReply(messagesJSON: ByteArray, afterMessageID: String, acrossSteers: Boolean = false): String? =
             ai.opencode.server.live.assistantReply(messagesJSON, afterMessageID, acrossSteers)
@@ -312,7 +320,6 @@ data class OpenCodeClient(
             replyForm = ::requestReplyForm,
             cancelForm = ::requestCancelForm,
             getSession = ::requestGetSession,
-            notifyPluginStatus = ::requestNotifyPluginStatus,
             runningShells = ::requestRunningShells,
             runningJobs = ::requestRunningJobs,
             cancelJob = ::requestCancelJob,
@@ -327,7 +334,13 @@ data class OpenCodeClient(
             archiveSession = ::requestArchiveSession,
             unarchiveSession = ::requestUnarchiveSession,
             archivedSessions = ::requestArchivedSessions,
-            setAlwaysNotify = ::requestSetAlwaysNotify,
+            pushCapability = ::requestPushCapability,
+            registerPushDevice = ::requestRegisterPushDevice,
+            removePushDevice = ::requestRemovePushDevice,
+            pushState = ::requestPushState,
+            setPushDevicePaused = ::requestSetPushDevicePaused,
+            setPushSessionBell = ::requestSetPushSessionBell,
+            setPushPaused = ::requestSetPushPaused,
             compactSession = ::requestCompactSession,
             stageRevert = ::requestStageRevert,
             clearRevert = ::requestClearRevert,
@@ -393,7 +406,6 @@ data class OpenCodeClient(
                     replyForm = { _, _, _, _ -> unimplemented("replyForm") },
                     cancelForm = { _, _, _, _ -> unimplemented("cancelForm") },
                     getSession = { _, _ -> unimplemented("getSession") },
-                    notifyPluginStatus = { unimplemented("notifyPluginStatus") },
                     runningShells = { _, _ -> unimplemented("runningShells") },
                     runningJobs = { _, _ -> emptyList() },
                     cancelJob = { _, _ -> },
@@ -408,7 +420,13 @@ data class OpenCodeClient(
                     archiveSession = { _, _ -> unimplemented("archiveSession") },
                     unarchiveSession = { _, _ -> unimplemented("unarchiveSession") },
                     archivedSessions = { _, _, _ -> unimplemented("archivedSessions") },
-                    setAlwaysNotify = { _, _, _ -> unimplemented("setAlwaysNotify") },
+                    pushCapability = { null },
+                    registerPushDevice = { _, _, _ -> unimplemented("registerPushDevice") },
+                    removePushDevice = { _, _ -> },
+                    pushState = { unimplemented("pushState") },
+                    setPushDevicePaused = { _, _, _ -> unimplemented("setPushDevicePaused") },
+                    setPushSessionBell = { _, _, _, _ -> unimplemented("setPushSessionBell") },
+                    setPushPaused = { _, _, _ -> unimplemented("setPushPaused") },
                     compactSession = { _, _ -> unimplemented("compactSession") },
                     stageRevert = { _, _, _ -> unimplemented("stageRevert") },
                     clearRevert = { _, _ -> unimplemented("clearRevert") },

@@ -11,6 +11,7 @@ import ai.opencode.feature.session.SessionFeature.Action
 import ai.opencode.feature.session.SessionFeature.AuthoritativeRefresh
 import ai.opencode.feature.session.SessionFeature.State
 import ai.opencode.feature.session.SessionTestSupport.Harness
+import ai.opencode.core.testing.eventually
 import ai.opencode.feature.session.SessionTestSupport.LockIsolated
 import ai.opencode.feature.session.SessionTestSupport.append
 import ai.opencode.feature.session.SessionTestSupport.distantPast
@@ -18,8 +19,13 @@ import ai.opencode.feature.session.SessionTestSupport.increment
 import ai.opencode.feature.session.SessionTestSupport.receive
 import ai.opencode.feature.session.SessionTestSupport.sessionTest
 import ai.opencode.feature.session.SessionTestSupport.settle
+import ai.opencode.feature.session.SessionTestSupport.testServer
 import ai.opencode.feature.session.SessionTestSupport.testSession
-import ai.opencode.feature.system.notifications.SessionNotificationsClient
+import ai.opencode.feature.system.notifications.PushChoice
+import ai.opencode.feature.system.notifications.PushMode
+import ai.opencode.feature.system.notifications.PushServer
+import ai.opencode.feature.system.notifications.PushSharedKeys
+import ai.opencode.feature.system.notifications.PushStatus
 import ai.opencode.feature.transcript.TranscriptEntry
 import ai.opencode.feature.transcript.TranscriptRowIdentityPlan
 import ai.opencode.feature.transcript.rows.ToolGroupLabel
@@ -33,7 +39,10 @@ import ai.opencode.server.model.OpenCodePendingRequests
 import ai.opencode.server.model.OpenCodeToolCall
 import ai.opencode.server.model.OpenCodeTranscriptItem
 import ai.opencode.server.model.OpenCodeTranscriptPage
-import ai.opencode.server.model.PromptContext
+import ai.opencode.server.model.OpenCodePushBell
+import ai.opencode.server.model.OpenCodePushDevice
+import ai.opencode.server.model.OpenCodePushLevel
+import ai.opencode.server.model.OpenCodePushState
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.awaitCancellation
@@ -767,28 +776,42 @@ class SessionFeatureTestsInbox {
         assertTrue(store.state.cancelledInputIDs.isEmpty())
     }
 
-    @Test fun composerSendCarriesThisPhonesNotificationCallback() = sessionTest { h ->
+    /** Only Sessions I Use Here: a send turns this phone's own bell on for that session, once. */
+    @Test fun composerSendTurnsThisPhonesBellOnWhenOnlySessionsUsedHereNotify() = sessionTest { h ->
         val session = testSession(id = "ses_notify", title = "Notify")
         val state = h.makeState(session = session, cachedItems = emptyList()).withDraft("Fix the bug")
-        val callback = "https://relay.example/v1/notify/sealed"
-        val seen = LockIsolated(listOf<String?>())
+        val device = OpenCodePushDevice(
+            id = "ref-1", name = "Pixel", platform = "android", expiresAt = 1L,
+            defaultLevel = OpenCodePushLevel.none, paused = false, sessions = emptyMap(),
+        )
+        h.sharedStore.reference(PushSharedKeys.choices).set(mapOf(testServer.persistenceID to PushChoice(mode = PushMode.fromThisPhone)))
+        h.sharedStore.reference(PushSharedKeys.servers).set(
+            mapOf(testServer.persistenceID to PushServer(PushStatus.Ready, OpenCodePushLevel.entries, "ref-1", OpenCodePushState(devices = listOf(device)))),
+        )
+        val bells = LockIsolated(listOf<Pair<String, OpenCodePushBell?>>())
+        val failures = LockIsolated(1)
         val store = h.store(state) {
             this[UuidClient] = UuidClient.incrementing()
-            this[SessionNotificationsClient] = SessionNotificationsClient.testValue.let {
-                SessionNotificationsClient(isAvailable = it.isAvailable, callbackURL = { callback }, prepare = it.prepare, forget = it.forget)
-            }
             this[OpenCodeClient] = this[OpenCodeClient].copy(
-                sendPrompt = { _, _, _, _, _, _, _ -> seen.append(PromptContext.notificationCallbackURL.current()) },
+                sendPrompt = { _, _, _, _, _, _, _ -> },
                 pendingInputs = { _, _ -> emptyList() },
                 waitForIdle = { _, _ -> awaitCancellation() },
+                setPushSessionBell = { _, id, sessionID, bell ->
+                    assertEquals("ref-1", id)
+                    if (failures.value > 0) {
+                        failures.setValue(0)
+                        throw OpenCodeClientError("Busy", statusCode = 503)
+                    }
+                    bells.update { it + (sessionID to bell) }
+                },
             )
         }
         store.exhaustive = false
         store.send(Action.SendTapped)
         store.receive(Action.PromptAdmitted::class)
+        assertTrue(eventually(timeout = 5.seconds, wallClock = true) { bells.value.isNotEmpty() })
         h.skipInFlightEffects()
-        assertEquals(listOf<String?>(callback), seen.value)
-        assertNull("The callback must not leak beyond the send", PromptContext.notificationCallbackURL.current())
+        assertEquals(listOf("ses_notify" to OpenCodePushBell(OpenCodePushLevel.all)), bells.value)
     }
 
     /**

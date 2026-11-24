@@ -5,6 +5,7 @@ import ai.opencode.core.files.ComposerStagedFile
 import ai.opencode.core.haptics.Haptic
 import ai.opencode.core.haptics.HapticsClient
 import ai.opencode.core.strings.localized
+import ai.opencode.feature.system.notifications.PushSync
 import ai.opencode.feature.system.R
 import ai.opencode.server.ServerID
 import ai.opencode.server.OpenCodeServer
@@ -196,7 +197,6 @@ class ShareModel(
                 text = text,
                 images = state.images.map { image -> ShareSendRequest.Image(image.jpeg, SharedImageEncoder.MIME) },
                 files = state.files,
-                callbackURL = it.callbackURL,
             )
         }
         if (credentials == null || request == null) {
@@ -206,6 +206,7 @@ class ShareModel(
         val started = System.nanoTime()
         return try {
             val sessionID = sender(credentials.server).send(request)
+            PushSync.sentFromPhone(credentials.server, sessionID)
             // A fast send still shows the spinner for a beat before the checkmark.
             val elapsed: Duration = (System.nanoTime() - started).nanoseconds
             val remaining = ShareComposition.SendMotion.remainingSending(elapsed)

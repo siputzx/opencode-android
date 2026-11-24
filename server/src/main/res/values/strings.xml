@@ -107,7 +107,6 @@
     <!-- LiveConnection.kt -->
     <string name="server_error_pairing_expired">This pairing code expired or was already used. Run `opencode pair --remote` again.</string>
     <string name="server_error_pairing_unsupported">This server doesn’t support pairing links. Update OpenCode on your computer, or enter the server manually.</string>
-    <string name="server_error_notification_previews_need_https">Encrypted notification previews need an HTTPS server connection.</string>
 
     <!-- LiveEvents.kt, LiveTransport.kt, LiveFiles.kt, MediaReferenceFetch.kt, SharedEvents.kt -->
     <string name="server_error_invalid_url">Enter a valid HTTP or HTTPS server URL.</string>

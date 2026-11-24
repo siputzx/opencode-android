@@ -65,9 +65,10 @@ private fun HomeFeature.coreRoute(state: State, action: Action): Reduced<State, 
     Action.EnableNotificationsTapped,
     is Action.NotificationPermissionRequested,
     is Action.NotificationSettingsOpened,
-    Action.NotifyPluginCheckRequested,
-    is Action.NotifyPluginChecked,
-    Action.NotifyPluginSetUpTapped,
+    Action.PushSyncRequested,
+    is Action.PushSynced,
+    Action.PushFetchRequested,
+    is Action.PushFetched,
     -> reduceNotifications(state, action)
 
     Action.Task,

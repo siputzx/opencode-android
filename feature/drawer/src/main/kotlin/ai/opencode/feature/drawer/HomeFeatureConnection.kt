@@ -83,7 +83,7 @@ internal fun HomeFeature.reduceConnection(state: State, action: Action): HomeRed
         // sends with this server's credentials.
         val shareInbox = dependency(ShareInboxClient)
         shareInbox.publishTargets(state.shareTargets)
-        shareInbox.publishCredentials(ShareCredentials(state.server), true)
+        shareInbox.publishCredentials(ShareCredentials(state.server))
         val persistence = dependency(TranscriptCachePersistence)
         val sharedStore = dependency(SharedStore)
         val flush = Effect.run<Action> {

@@ -95,8 +95,8 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
         val notificationPermission: NotificationPermission? = null,
         val isRequestingNotifications: Boolean = false,
         val notificationSetupError: String? = null,
-        /** The server half of notifications, read when Notifications opens. */
-        val notifyPlugin: NotifyPluginCheck? = null,
+        /** A push control the server didn't take. */
+        val pushFailure: PushSettingsFeature.Failure? = null,
         /** What the push shows, fixed as it opens: Settings, or What's New from the drawer's row. */
         val root: Root = Root.settings,
         /** Pages pushed above the root, innermost last. */
@@ -142,7 +142,6 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
             val permission: NotificationPermission?,
             val isRequesting: Boolean,
             val setupError: String?,
-            val notifyPlugin: NotifyPluginCheck? = null,
         ) : Action
 
         /** Push a page. */
@@ -156,6 +155,7 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
         data object ShowSettingsRoot : Action
 
         data class Settings(val action: HomeSettingsFeature.Action) : Action
+        data class Push(val action: PushSettingsFeature.Action) : Action
         data class WhatsNew(val action: WhatsNewFeature.Action) : Action
         data class ServerDetails(val action: ServerDetailsFeature.Action) : Action
         data class ModelVisibility(val action: ModelVisibilityFeature.Action) : Action
@@ -178,10 +178,8 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
         data class RemoveServer(val server: OpenCodeServer) : SettingsDelegate
         data object EnableNotificationsTapped : SettingsDelegate
         data object NotificationSettingsRequested : SettingsDelegate
-        /** Check Again, and opening Notifications. */
-        data object NotifyPluginCheckRequested : SettingsDelegate
-        /** Set Up with OpenCode. */
-        data object NotifyPluginSetUpTapped : SettingsDelegate
+        /** The phone's choice for the server changed: register again with it. */
+        data object PushSyncRequested : SettingsDelegate
         /** What's New's action that leaves Settings for a session (`HomeFeature.tryWhatsNew`). */
         data class TryWhatsNew(val destination: WhatsNewEntry.Destination, val entryID: String) : SettingsDelegate
     }
@@ -197,6 +195,13 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
             action = { (it as? Action.Settings)?.action },
             embed = { Action.Settings(it) },
             child = HomeSettingsFeature(),
+        ),
+        scope(
+            state = { PushSettingsFeature.State(server = it.server, failure = it.pushFailure) },
+            setState = { s, c -> s.copy(pushFailure = c.failure) },
+            action = { (it as? Action.Push)?.action },
+            embed = { Action.Push(it) },
+            child = PushSettingsFeature(),
         ),
         scope(
             state = { it.whatsNew },
@@ -282,7 +287,6 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
                 notificationPermission = action.permission,
                 isRequestingNotifications = action.isRequesting,
                 notificationSetupError = action.setupError,
-                notifyPlugin = action.notifyPlugin,
             ),
         )
         is Action.PagePushed -> push(state, action.page)
@@ -295,6 +299,11 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
             HomeSettingsFeature.Action.OnboardingPlaygroundOpened ->
                 Reduced(state.copy(onboardingPlayground = OnboardingPlaygroundFeature.State()))
             else -> Reduced(state)
+        }
+        is Action.Push -> if (action.action == PushSettingsFeature.Action.ChoiceSaved) {
+            Reduced(state, Effect.send(Action.Delegate(SettingsDelegate.PushSyncRequested)))
+        } else {
+            Reduced(state)
         }
         is Action.WhatsNew -> whatsNew(state, action.action)
         is Action.ServerDetails, is Action.ModelVisibility, is Action.Voice -> Reduced(state)

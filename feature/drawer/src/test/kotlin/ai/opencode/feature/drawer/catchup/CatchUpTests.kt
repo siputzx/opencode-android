@@ -717,7 +717,7 @@ class CatchUpTests {
             this[ShareInboxClient] = ShareInboxClient(
                 consume = { emptyList() },
                 publishTargets = { sharePublishCount += 1 },
-                publishCredentials = { _, _ -> },
+                publishCredentials = {},
                 removeTargets = {},
             )
             this[SystemIntegrationClient] = SystemIntegrationClient(

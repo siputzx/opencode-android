@@ -17,13 +17,20 @@ import ai.opencode.feature.session.SessionTestSupport.increment
 import ai.opencode.feature.session.SessionTestSupport.receive
 import ai.opencode.feature.session.SessionTestSupport.sessionTest
 import ai.opencode.feature.session.SessionTestSupport.settle
+import ai.opencode.feature.session.SessionTestSupport.testServer
 import ai.opencode.feature.session.header.SessionContextRing
 import ai.opencode.feature.session.header.SessionContextText
-import ai.opencode.feature.system.notifications.NotificationPermission
-import ai.opencode.feature.system.notifications.NotificationPermissionClient
+import ai.opencode.feature.system.notifications.PushDuration
+import ai.opencode.feature.system.notifications.PushServer
+import ai.opencode.feature.system.notifications.PushSharedKeys
+import ai.opencode.feature.system.notifications.PushStatus
 import ai.opencode.feature.system.notifications.SessionNotificationsClient
 import ai.opencode.server.OpenCodeClient
 import ai.opencode.server.OpenCodeClientError
+import ai.opencode.server.model.OpenCodePushBell
+import ai.opencode.server.model.OpenCodePushDevice
+import ai.opencode.server.model.OpenCodePushLevel
+import ai.opencode.server.model.OpenCodePushState
 import ai.opencode.server.OpenCodeLiveContentEvent
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.model.ModelVariant
@@ -103,10 +110,6 @@ class SessionSheetTests {
     private fun State.renamed(title: String) = copy(
         session = session?.copy(serverTitle = title),
         familySessions = familySessions.mapIndexed { index, s -> if (index == 0) s.copy(serverTitle = title) else s },
-    )
-    private fun State.alwaysNotify(isOn: Boolean) = copy(
-        session = session?.copy(alwaysNotify = isOn),
-        familySessions = familySessions.mapIndexed { index, s -> if (index == 0) s.copy(alwaysNotify = isOn) else s },
     )
 
     // region Context usage
@@ -714,99 +717,76 @@ class SessionSheetTests {
         assertNull(SessionListContext.project(null, projects))
     }
 
-    @Test fun alwaysNotifyNeedsNotificationsAndUpdatesTheSession() = sessionTest { h ->
-        val written = LockIsolated(listOf<String?>())
-        val callback = LockIsolated<String?>(null)
+    private fun pushServer(sessions: Map<String, OpenCodePushBell> = emptyMap()): PushServer {
+        val device = OpenCodePushDevice(
+            id = "ref-1", name = "Pixel", platform = "android", expiresAt = 1L,
+            defaultLevel = OpenCodePushLevel.all, paused = false, sessions = sessions,
+        )
+        return PushServer(PushStatus.Ready, OpenCodePushLevel.entries, "ref-1", OpenCodePushState(devices = listOf(device)))
+    }
+
+    @Test fun bellShowsTheChoiceAtOnceAndPutsItBackWhenTheServerRefuses() = sessionTest { h ->
+        val servers = h.sharedStore.reference(PushSharedKeys.servers)
+        servers.set(mapOf(testServer.persistenceID to pushServer()))
+        val written = LockIsolated(listOf<OpenCodePushBell?>())
+        val refuse = LockIsolated(false)
         val store = h.sheetStore {
             client {
                 copy(
-                    setAlwaysNotify = { _, id, url ->
-                        assertEquals("ses_sheet", id)
-                        written.append(url)
+                    setPushSessionBell = { _, id, sessionID, bell ->
+                        assertEquals("ref-1", id)
+                        assertEquals("ses_sheet", sessionID)
+                        if (refuse.value) throw OpenCodeClientError("Server error", statusCode = 500)
+                        written.append(bell)
+                    },
+                )
+            }
+        }
+        openSheet(store)
+
+        store.send(sheet(SessionSheetFeature.Action.BellChosen(OpenCodePushLevel.none, PushDuration.hour)))
+        val muted = OpenCodePushBell(OpenCodePushLevel.none, until = 3_600_000L)
+        assertEquals(muted, servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
+        store.receive(sheet(SessionSheetFeature.Action.BellFinished(null, null)))
+        assertEquals(listOf<OpenCodePushBell?>(muted), written.value)
+
+        refuse.setValue(true)
+        store.send(sheet(SessionSheetFeature.Action.BellChosen(null, PushDuration.forever)))
+        assertNull(servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
+        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.BellFinished>()) {
+            it.updatingSheet { copy(failure = SessionSheetFeature.Failure(title = "Couldn’t Change Notifications", message = "Server error")) }
+        }
+        assertEquals(muted, servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
+        store.finish()
+    }
+
+    @Test fun bellRegistersAgainWhenTheServerDoesNotKnowThePhone() = sessionTest { h ->
+        h.sharedStore.reference(PushSharedKeys.servers).set(mapOf(testServer.persistenceID to pushServer()))
+        val registered = LockIsolated(listOf<OpenCodePushLevel>())
+        val calls = LockIsolated(0)
+        val store = h.sheetStore {
+            client {
+                copy(
+                    setPushSessionBell = { _, _, _, _ ->
+                        calls.increment()
+                        if (registered.value.isEmpty()) throw OpenCodeClientError("Not found", statusCode = 404)
                     },
                 )
             }
             this[SessionNotificationsClient] = SessionNotificationsClient(
                 isAvailable = true,
-                callbackURL = { callback.value },
-                prepare = {},
-                forget = {},
-            )
-        }
-        openSheet(store)
-
-        // Notifications off: nothing is written and the sheet says why.
-        store.send(sheet(SessionSheetFeature.Action.AlwaysNotifyToggled(true))) { it.updatingSheet { copy(alwaysNotifyPending = true) } }
-        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.AlwaysNotifyFinished>()) {
-            it.updatingSheet {
-                copy(
-                    alwaysNotifyPending = null,
-                    failure = SessionSheetFeature.Failure(title = "Couldn’t Turn On Always Notify", message = "Turn on notifications in Settings first."),
-                )
-            }
-        }
-        assertTrue(written.value.isEmpty())
-        store.send(sheet(SessionSheetFeature.Action.FailureDismissed)) { it.updatingSheet { copy(failure = null) } }
-
-        callback.setValue("https://relay/v1/notify/abc")
-        store.send(sheet(SessionSheetFeature.Action.AlwaysNotifyToggled(true))) { it.updatingSheet { copy(alwaysNotifyPending = true) } }
-        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.AlwaysNotifyFinished>()) { it.updatingSheet { copy(alwaysNotifyPending = null) } }
-        store.receive(sheetDelegate(SessionSheetFeature.Delegate.AlwaysNotifyChanged(true))) { it.alwaysNotify(true) }
-
-        store.send(sheet(SessionSheetFeature.Action.AlwaysNotifyToggled(false))) { it.updatingSheet { copy(alwaysNotifyPending = false) } }
-        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.AlwaysNotifyFinished>()) { it.updatingSheet { copy(alwaysNotifyPending = null) } }
-        store.receive(sheetDelegate(SessionSheetFeature.Delegate.AlwaysNotifyChanged(false))) { it.alwaysNotify(false) }
-        assertEquals(listOf("https://relay/v1/notify/abc", null), written.value)
-        store.finish()
-    }
-
-    @Test fun alwaysNotifyAsksForNotificationsWhenNeverAsked() = sessionTest { h ->
-        // Until the app asks, there's nothing in Settings worth sending people to,
-        // so "Turn on notifications in Settings first" would be a dead end.
-        val permission = LockIsolated(NotificationPermission.NotDetermined)
-        val requests = LockIsolated(0)
-        val written = LockIsolated(listOf<String?>())
-        val store = h.sheetStore {
-            client { copy(setAlwaysNotify = { _, _, url -> written.append(url) }) }
-            this[NotificationPermissionClient] = NotificationPermissionClient(
-                status = { permission.value },
-                request = {
-                    requests.increment()
-                    permission.setValue(NotificationPermission.Enabled)
-                    NotificationPermission.Enabled
+                register = { _, level ->
+                    registered.append(level)
+                    true
                 },
-                openSettings = { true },
-            )
-            this[SessionNotificationsClient] = SessionNotificationsClient(
-                isAvailable = true,
-                callbackURL = { if (permission.value == NotificationPermission.Enabled) "https://relay/v1/notify/abc" else null },
-                prepare = {},
-                forget = {},
             )
         }
         openSheet(store)
 
-        store.send(sheet(SessionSheetFeature.Action.AlwaysNotifyToggled(true))) { it.updatingSheet { copy(alwaysNotifyPending = true) } }
-        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.AlwaysNotifyFinished>()) { it.updatingSheet { copy(alwaysNotifyPending = null) } }
-        store.receive(sheetDelegate(SessionSheetFeature.Delegate.AlwaysNotifyChanged(true))) { it.alwaysNotify(true) }
-        assertEquals(1, requests.value)
-        assertEquals(listOf<String?>("https://relay/v1/notify/abc"), written.value)
-
-        // Already decided: never prompts again.
-        store.send(sheet(SessionSheetFeature.Action.AlwaysNotifyToggled(false))) { it.updatingSheet { copy(alwaysNotifyPending = false) } }
-        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.AlwaysNotifyFinished>()) { it.updatingSheet { copy(alwaysNotifyPending = null) } }
-        store.receive(sheetDelegate(SessionSheetFeature.Delegate.AlwaysNotifyChanged(false))) { it.alwaysNotify(false) }
-        permission.setValue(NotificationPermission.Disabled)
-        store.send(sheet(SessionSheetFeature.Action.AlwaysNotifyToggled(true))) { it.updatingSheet { copy(alwaysNotifyPending = true) } }
-        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.AlwaysNotifyFinished>()) {
-            it.updatingSheet {
-                copy(
-                    alwaysNotifyPending = null,
-                    failure = SessionSheetFeature.Failure(title = "Couldn’t Turn On Always Notify", message = "Turn on notifications in Settings first."),
-                )
-            }
-        }
-        assertEquals(1, requests.value)
+        store.send(sheet(SessionSheetFeature.Action.BellChosen(OpenCodePushLevel.attention, PushDuration.forever)))
+        store.receive(sheet(SessionSheetFeature.Action.BellFinished(null, null)))
+        assertEquals(listOf(OpenCodePushLevel.all), registered.value)
+        assertEquals(2, calls.value)
         store.finish()
     }
 

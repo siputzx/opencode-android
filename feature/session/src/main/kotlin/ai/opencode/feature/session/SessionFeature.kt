@@ -42,7 +42,6 @@ import ai.opencode.feature.media.OpenURLClient
 import ai.opencode.feature.media.PageReaderClient
 import ai.opencode.feature.system.SceneWindowClient
 import ai.opencode.feature.transcript.SessionLinkTarget
-import ai.opencode.feature.system.notifications.SessionNotificationsClient
 import ai.opencode.feature.composer.SharedComposerDraft
 import ai.opencode.feature.composer.SharedDraftTarget
 import ai.opencode.feature.composer.SharedLocation
@@ -1035,7 +1034,6 @@ class SessionFeature : Reducer<SessionFeature.State, SessionFeature.Action> {
     internal val composerPersistence by Dependency(ComposerPersistence)
     internal val undeliveredPrompts by Dependency(UndeliveredPrompts)
     internal val promptOutbox by Dependency(PromptOutbox)
-    internal val sessionNotifications by Dependency(SessionNotificationsClient)
     internal val haptics by Dependency(HapticsClient)
     internal val soundEffects by Dependency(SoundEffectsClient)
     internal val mediaReferences by Dependency(MediaReferenceClient)

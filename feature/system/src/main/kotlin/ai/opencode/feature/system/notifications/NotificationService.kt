@@ -17,11 +17,11 @@ import kotlinx.serialization.json.jsonObject
  * Turns a session push into a notification, and decides how it shows in the foreground and where a
  * tap leads.
  *
- * A push carries only the encrypted `v2` envelope under `opencode`. Its title,
- * body, session and status show only once [NotificationContent.verifiedPayload] opens the box
- * with this phone's key for its ref; anything else ("no key yet", a tampered box, a v1 push)
- * shows the generic "OpenCode" / "New activity" notification, never clear text from the
- * transport. The badge counts verified pushes only.
+ * A push carries only the encrypted `v2` envelope under `opencode`. Its title, body, session and
+ * type show only once [NotificationContent.verifiedPayload] opens the box with this phone's key for
+ * its ref; a box that can't be opened or read shows the generic "OpenCode" / "New activity"
+ * notification, never clear text from the transport. Each type posts on its own channel. The
+ * badge counts verified pushes for a session only.
  *
  * Taps: the content intent is built from the verified payload and targets the unexported
  * [SystemActionActivity], so only this app can send it.
@@ -30,8 +30,8 @@ import kotlinx.serialization.json.jsonObject
  * channel exists (see [SessionNotifications]).
  */
 object SessionPushNotifications {
-    /** Statuses a needs-input notification carries. */
-    val needsInputStatuses = setOf("needs-input", "permission", "question", "form")
+    /** Types a needs-input notification carries. */
+    val needsInputStatuses = setOf("permission", "question")
 
     private const val EXTRA_SESSION = "opencode.sessionID"
     private const val EXTRA_STATUS = "opencode.status"
@@ -40,14 +40,14 @@ object SessionPushNotifications {
     @SuppressLint("MissingPermission")
     fun handle(context: Context, data: Map<String, String>) {
         val verified = NotificationContent.verifiedPayload(data)
-        val shown = NotificationContent.content(data, verified)
+        val shown = NotificationContent.content(data, verified) ?: return
         val sessionID = verified?.payload?.sessionID
         val notifications = SessionNotifications.shared
         val presentation = notifications.presentation(sessionID)
         if (presentation == NotificationPresentation.None) return
         if (!NotificationManagerCompat.from(context).areNotificationsEnabled()) return
         SystemNotificationChannels.ensure(context)
-        val builder = NotificationCompat.Builder(context, SystemNotificationChannels.SESSIONS)
+        val builder = NotificationCompat.Builder(context, SystemNotificationChannels.forType(shown.type))
             .setSmallIcon(R.drawable.ic_opencode_mark)
             .setContentTitle(shown.title)
             .setContentText(shown.body)
@@ -59,19 +59,19 @@ object SessionPushNotifications {
         // The thread is "<ref>:<session>", set only after verifying.
         shown.thread?.let { builder.setGroup(it) }
         builder.extras.putString(EXTRA_SESSION, sessionID)
-        builder.extras.putString(EXTRA_STATUS, verified?.payload?.status)
+        builder.extras.putString(EXTRA_STATUS, shown.type)
         builder.extras.putString(EXTRA_ENVELOPE, shown.envelope?.toString())
-        if (verified != null) {
+        if (verified != null && sessionID != null) {
             // The badge the ledger counts for its session.
             val defaults = AppBadgeLedger.groupDefaults(context)
-            AppBadgeLedger.load(defaults)?.badgeAfterPush(sessionID = verified.payload.sessionID, ref = verified.ref)?.let { (ledger, badge) ->
+            AppBadgeLedger.load(defaults)?.badgeAfterPush(sessionID = sessionID, ref = verified.ref)?.let { (ledger, badge) ->
                 ledger.save(defaults)
                 builder.setNumber(badge)
             }
             builder.setContentIntent(
                 PendingIntent.getActivity(
-                    context, verified.payload.sessionID.hashCode(),
-                    SystemActionActivity.pushIntent(context, verified.ref, verified.payload.sessionID),
+                    context, sessionID.hashCode(),
+                    SystemActionActivity.pushIntent(context, verified.ref, sessionID),
                     PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT,
                 ),
             )
@@ -135,11 +135,7 @@ object SessionPushNotifications {
         return content.sessionID ?: content.tag
     }
 
-    internal fun isNeedsInput(content: Delivered): Boolean {
-        // Encrypted previews are run completions, not local pending-request notices.
-        if (encrypted(content) != null) return false
-        return content.status in needsInputStatuses
-    }
+    internal fun isNeedsInput(content: Delivered): Boolean = content.status in needsInputStatuses
 
     /** The `opencode` envelope when it is an encrypted one. */
     private fun encrypted(content: Delivered): JsonObject? =

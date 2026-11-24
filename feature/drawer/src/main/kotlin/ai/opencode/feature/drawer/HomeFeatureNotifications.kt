@@ -15,7 +15,6 @@ import ai.opencode.feature.drawer.HomeFeature.Action
 import ai.opencode.feature.drawer.HomeFeature.State
 import ai.opencode.feature.drawer.notices.AccessibilityAnnouncer
 import ai.opencode.feature.session.InAppNotice
-import ai.opencode.feature.settings.whatsnew.WhatsNewEntry
 import ai.opencode.core.experiments.InAppNoticeMode
 import ai.opencode.feature.drawer.notices.InAppNoticeSettings
 import ai.opencode.feature.drawer.notices.InAppNoticeSignal
@@ -29,7 +28,7 @@ import java.time.Instant
 
 /*
  * What Home does as notifications change (before `HomeNotificationsFeature` settles the same
- * action), the notify plugin's set-up draft, the app icon's badge, and In-App Notices' rules:
+ * action), the app icon's badge, and In-App Notices' rules:
  * Home's live state in, the drawer button's label out.
  *
  * Home's composition watches [noticeInput] and calls [inAppNoticeSignalChanged] with the old and
@@ -43,10 +42,6 @@ internal fun HomeFeature.reduceNotifications(state: State, action: Action): Home
         val credentials = if (changed && state.hasConnected) publishShareCredentials(state.server) else Effect.none()
         Reduced(state, Effect.merge(credentials, if (changed && action.permission == NotificationPermission.Enabled) publishAppBadge(state) else Effect.none()))
     }
-
-    // Try It's path: onto the new-session draft, keeping anything already typed there.
-    Action.NotifyPluginSetUpTapped ->
-        tryWhatsNew(WhatsNewEntry.Destination.Prompt(HomeFeature.notifyPluginSetUpPrompt), "notification-plugin-setup", state)
 
     else -> Reduced(state)
 }

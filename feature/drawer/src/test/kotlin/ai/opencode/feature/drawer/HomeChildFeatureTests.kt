@@ -3,19 +3,27 @@ package ai.opencode.feature.drawer
 import ai.opencode.core.dependencies.BackgroundTimeClient
 import ai.opencode.core.dependencies.Clock
 import ai.opencode.core.dependencies.DateClient
+import ai.opencode.core.dependencies.DependencyValues
+import ai.opencode.core.sharing.SharedStore
+import ai.opencode.core.sharing.shared
 import ai.opencode.core.dependencies.TestClock
 import ai.opencode.core.store.TestStore
 import ai.opencode.core.testing.TestIsolationRule
 import ai.opencode.feature.system.notifications.NotificationPermission
 import ai.opencode.feature.system.notifications.NotificationPermissionClient
+import ai.opencode.feature.system.notifications.PushServer
+import ai.opencode.feature.system.notifications.PushSharedKeys
+import ai.opencode.feature.system.notifications.PushStatus
 import ai.opencode.feature.system.notifications.SessionNotificationsClient
 import ai.opencode.server.EventStreamOverflow
 import ai.opencode.server.OpenCodeClient
 import ai.opencode.server.OpenCodeClientError
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.OpenCodeServerEvent
-import ai.opencode.server.model.OpenCodeNotifyPluginStatus
-import kotlinx.coroutines.CancellationException
+import ai.opencode.server.model.OpenCodePushCapability
+import ai.opencode.server.model.OpenCodePushDevice
+import ai.opencode.server.model.OpenCodePushLevel
+import ai.opencode.server.model.OpenCodePushState
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.consumeAsFlow
 import kotlinx.coroutines.flow.flow
@@ -45,19 +53,16 @@ class HomeChildFeatureTests {
                 server = server,
                 status = HomeNotificationsFeature.Status(notificationPermission = NotificationPermission.NotDetermined),
             )
-            val prepared = Collections.synchronizedList(mutableListOf<OpenCodeServer>())
+            val asked = Collections.synchronizedList(mutableListOf<OpenCodeServer>())
             val store = TestStore(state, HomeNotificationsFeature(), this) {
+                this[SharedStore] = SharedStore.inMemory()
                 this[NotificationPermissionClient] = NotificationPermissionClient(
                     status = { permission },
                     request = { permission },
                     openSettings = { true },
                 )
-                this[SessionNotificationsClient] = SessionNotificationsClient(
-                    isAvailable = true,
-                    callbackURL = { null },
-                    prepare = { prepared += it },
-                    forget = {},
-                )
+                this[SessionNotificationsClient] = SessionNotificationsClient(isAvailable = true)
+                this[OpenCodeClient] = this[OpenCodeClient].copy(pushCapability = { asked += it; null })
             }
             store.send(HomeNotificationsFeature.Action.EnableNotificationsTapped) {
                 it.copy(status = it.status.copy(isRequestingNotifications = true))
@@ -81,44 +86,91 @@ class HomeChildFeatureTests {
                     it.copy(status = it.status.copy(notificationPermission = permission))
                 }
             }
+            if (permission == NotificationPermission.Enabled) {
+                store.receive(HomeNotificationsFeature.Action.PushSyncRequested)
+                store.receive(HomeNotificationsFeature.Action.PushSynced(server.persistenceID, PushServer(PushStatus.Outdated)))
+            }
             store.finish()
             assertEquals(
                 "$permission",
                 if (permission == NotificationPermission.Enabled) listOf(server) else emptyList(),
-                prepared.toList(),
+                asked.toList(),
             )
         }
     }
 
-    @Test fun notificationPluginCheckCancelsThePreviousRead() = runTest {
-        val clock = TestClock()
-        var calls = 0
+    /** A connect registers this phone and keeps the server's copy; `push.updated` replaces it whole. */
+    @Test fun pushSyncRegistersThenFetchReplacesTheCopy() = runTest {
+        val shared = SharedStore.inMemory()
+        val first = OpenCodePushState(devices = listOf(device(paused = false)))
+        val second = OpenCodePushState(paused = true, devices = listOf(device(paused = true)))
+        var fetches = 0
+        val registered = Collections.synchronizedList(mutableListOf<OpenCodePushLevel>())
         val store = TestStore(HomeNotificationsFeature.State(server = server), HomeNotificationsFeature(), this) {
+            this[SharedStore] = shared
+            this[NotificationPermissionClient] = NotificationPermissionClient(status = { NotificationPermission.Enabled }, request = { NotificationPermission.Enabled }, openSettings = { true })
+            this[SessionNotificationsClient] = SessionNotificationsClient(
+                isAvailable = true,
+                relay = "https://relay.example",
+                register = { _, level -> registered += level; true },
+                ref = { "ref-1" },
+            )
             this[OpenCodeClient] = this[OpenCodeClient].copy(
-                notifyPluginStatus = {
-                    calls += 1
-                    val call = calls
-                    try {
-                        clock.sleep((if (call == 1) 2 else 1).seconds)
-                    } catch (cancellation: CancellationException) {
-                        throw OpenCodeClientError("Cancelled")
-                    }
-                    if (call == 1) OpenCodeNotifyPluginStatus.Missing else OpenCodeNotifyPluginStatus.Active
+                pushCapability = {
+                    OpenCodePushCapability(1, listOf("https://relay.example/"), listOf(OpenCodePushLevel.all, OpenCodePushLevel.none))
+                },
+                pushState = {
+                    fetches += 1
+                    if (fetches == 1) first else second
                 },
             )
         }
-        store.send(HomeNotificationsFeature.Action.NotifyPluginCheckRequested) {
-            it.copy(status = it.status.copy(notifyPlugin = HomeNotificationsFeature.NotifyPluginCheck.Checking))
-        }
-        store.send(HomeNotificationsFeature.Action.NotifyPluginCheckRequested)
-        clock.advance(1.seconds)
-        store.receive(HomeNotificationsFeature.Action.NotifyPluginChecked(OpenCodeNotifyPluginStatus.Active)) {
-            it.copy(status = it.status.copy(notifyPlugin = HomeNotificationsFeature.NotifyPluginCheck.Checked(OpenCodeNotifyPluginStatus.Active)))
-        }
-        clock.advance(1.seconds)
+        val ready = PushServer(PushStatus.Ready, listOf(OpenCodePushLevel.all, OpenCodePushLevel.none), "ref-1", first)
+        store.send(HomeNotificationsFeature.Action.PushSyncRequested)
+        store.receive(HomeNotificationsFeature.Action.PushSynced(server.persistenceID, ready))
+        assertEquals(ready, servers(shared))
+        assertEquals(listOf(OpenCodePushLevel.all), registered.toList())
+
+        store.send(HomeNotificationsFeature.Action.PushFetchRequested)
+        store.receive(HomeNotificationsFeature.Action.PushFetched(server.persistenceID, second))
+        assertEquals(ready.copy(state = second), servers(shared))
         store.finish()
-        assertEquals(2, calls)
     }
+
+    /** A server that doesn't list this build's relay isn't registered with. */
+    @Test fun pushSyncSkipsAServerWithoutThisRelay() = runTest {
+        val registered = Collections.synchronizedList(mutableListOf<OpenCodePushLevel>())
+        val store = TestStore(HomeNotificationsFeature.State(server = server), HomeNotificationsFeature(), this) {
+            this[SharedStore] = SharedStore.inMemory()
+            this[SessionNotificationsClient] = SessionNotificationsClient(
+                isAvailable = true,
+                relay = "https://relay.example",
+                register = { _, level -> registered += level; true },
+            )
+            this[OpenCodeClient] = this[OpenCodeClient].copy(
+                pushCapability = { OpenCodePushCapability(1, listOf("https://other.example"), listOf(OpenCodePushLevel.all)) },
+            )
+        }
+        store.send(HomeNotificationsFeature.Action.PushSyncRequested)
+        store.receive(HomeNotificationsFeature.Action.PushSynced(server.persistenceID, PushServer(PushStatus.RelayNotAllowed)))
+        store.finish()
+        assertTrue(registered.isEmpty())
+    }
+
+    private fun device(paused: Boolean) = OpenCodePushDevice(
+        id = "ref-1",
+        name = "Pixel",
+        platform = "android",
+        expiresAt = 1L,
+        defaultLevel = OpenCodePushLevel.all,
+        paused = paused,
+        sessions = emptyMap(),
+    )
+
+    private fun servers(shared: SharedStore): PushServer? =
+        DependencyValues.withValues(DependencyValues.testing().update { this[SharedStore] = shared }) {
+            shared(PushSharedKeys.servers).value[server.persistenceID]
+        }
 
     @Test fun connectionRetriesReplaceThePreviousTimerWithoutDisconnecting() = runTest {
         val clock = TestClock()

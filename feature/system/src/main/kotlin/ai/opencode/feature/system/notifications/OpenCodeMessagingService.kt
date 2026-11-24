@@ -14,18 +14,16 @@ import com.google.firebase.messaging.RemoteMessage
  * google-services plugin generates; plain resources in `:app` work too). None ship, so no
  * `FirebaseApp` exists, [FcmPushTokenProvider] fails at once and this service never runs.
  *
- * The relay is expected to send a data-only, high-priority FCM message whose `data` is the
- * APNs alert's fields (`title`, `body`, `sessionID`, `status`, `ref`), so the app builds the
- * notification itself ([SessionPushNotifications]: the In-App Notices rule, the visible
- * session, the badge count) whether it runs or not.
+ * The relay sends a data-only, high-priority FCM message whose `data` holds one field, `opencode`:
+ * the encrypted envelope `{"v":2,"ref":…,"box":…}` as a JSON string. The app opens the box and
+ * builds the notification itself ([SessionPushNotifications]).
  */
 class OpenCodeMessagingService : FirebaseMessagingService() {
     override fun onNewToken(token: String) {
-        SessionNotifications.shared.didRegister(token)
+        SessionNotifications.shared.didChangeToken(token)
     }
 
     override fun onMessageReceived(message: RemoteMessage) {
-        // The relay's payload: title, body, sessionID, status and ref, as data.
         SessionPushNotifications.handle(applicationContext, message.data)
     }
 }

@@ -44,8 +44,8 @@ object NotificationContent {
         }
     }
 
-    /** What a session notification shows. */
-    data class Shown(val title: String, val body: String, val thread: String?, val envelope: JsonObject?)
+    /** What a session notification shows; [type] is null for the generic notification. */
+    data class Shown(val title: String, val body: String, val thread: String?, val envelope: JsonObject?, val type: String? = null)
 
     fun placeholder(): Shown = Shown(PLACEHOLDER_TITLE, PLACEHOLDER_BODY, thread = null, envelope = null)
 
@@ -76,17 +76,21 @@ object NotificationContent {
         return if (NotificationCrypto.isValid(sessionID = sessionID)) sessionID else null
     }
 
-    fun content(data: Map<String, String>, verified: Verified?): Shown {
+    /** Null when nothing should show: a message of a type this version doesn't know, without a title. */
+    fun content(data: Map<String, String>, verified: Verified?): Shown? {
         // Keep the encrypted envelope so the app authenticates independently on tap.
         // No clear siblings (including the separate local-share router) survive.
         val kept = objectOf(data[ENVELOPE_KEY])?.let { original -> JsonObject(original.filterKeys { it in setOf("v", "ref", "box") }) }
-        val content = placeholder().copy(envelope = kept)
-        verified ?: return content
+        if (verified == null) return placeholder().copy(envelope = kept)
+        val payload = verified.payload
+        if (payload.title.isEmpty()) return null
+        val thread = if (payload.sessionID != null) "${verified.ref}:${payload.sessionID}" else null
         return Shown(
-            title = verified.payload.title,
-            body = verified.payload.body,
-            thread = "${verified.ref}:${verified.payload.sessionID}",
+            title = payload.title,
+            body = payload.body,
+            thread = thread,
             envelope = encoded(Envelope(verified.ref, verified.box)),
+            type = payload.type,
         )
     }
 

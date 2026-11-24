@@ -64,7 +64,7 @@ internal fun HomeFeature.reduceServerEvent(state: State, event: OpenCodeServerEv
                 Effect.none()
             }
             val refreshed = familyAndListRefresh(s)
-            return Reduced(refreshed.state, Effect.merge(refreshed.effect, voiceReconnect))
+            return Reduced(refreshed.state, Effect.merge(refreshed.effect, voiceReconnect, Effect.send(Action.PushSyncRequested)))
         }
 
         is OpenCodeServerEvent.SessionCreated -> {
@@ -349,6 +349,7 @@ internal fun HomeFeature.reduceServerEvent(state: State, event: OpenCodeServerEv
         }
 
         OpenCodeServerEvent.ModelsChanged -> return Reduced(state, forwardToScreens(state, SessionFeature.Action.ModelsChanged))
+        OpenCodeServerEvent.PushUpdated -> return Reduced(state, Effect.send(Action.PushFetchRequested))
 
         OpenCodeServerEvent.AgentsChanged -> return Reduced(state, forwardToScreens(state, SessionFeature.Action.AgentsChanged))
     }

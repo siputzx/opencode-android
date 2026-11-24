@@ -72,9 +72,6 @@
     <string name="session_sheet_cost">Cost</string>
     <string name="session_sheet_media">Media</string>
     <string name="session_sheet_media_value">Files and Links</string>
-    <string name="session_always_notify">Always Notify</string>
-    <string name="session_always_notify_message_phone">Notify this phone whenever a reply finishes, even ones you didn’t send from here.</string>
-    <string name="session_always_notify_message_tablet">Notify this tablet whenever a reply finishes, even ones you didn’t send from here.</string>
     <string name="session_delete_session">Delete Session</string>
     <string name="session_rename_placeholder">Title</string>
     <string name="session_auto_rename">Auto Rename</string>
@@ -267,9 +264,6 @@
     <string name="session_sheet_fork_failed_title">Couldn’t Fork Session</string>
     <string name="session_sheet_save_export_failed">Couldn’t save export</string>
     <string name="session_sheet_export_failed_title">Couldn’t Export Session</string>
-    <string name="session_sheet_notifications_off_message">Turn on notifications in Settings first.</string>
-    <string name="session_sheet_always_notify_on_failed_title">Couldn’t Turn On Always Notify</string>
-    <string name="session_sheet_always_notify_off_failed_title">Couldn’t Turn Off Always Notify</string>
 
     <!-- Attachments -->
     <string name="session_attachment_files_unsupported">Server doesn’t support files</string>
@@ -329,4 +323,20 @@
     <string name="session_media_loading_earlier">Loading…</string>
     <string name="session_media_earlier_failed">Couldn’t load earlier messages. Check your connection and try again.</string>
     <string name="session_media_earlier_nothing_new">Nothing new here in the messages just loaded. Earlier ones may have more.</string>
+    <string name="session_bell_title">Notifications</string>
+    <string name="session_bell_level_all">Everything</string>
+    <string name="session_bell_level_attention">Only When It Needs Me</string>
+    <string name="session_bell_level_none">Nothing</string>
+    <string name="session_bell_mute_hour">Nothing for an Hour</string>
+    <string name="session_bell_mute_tomorrow">Nothing Until Tomorrow Morning</string>
+    <string name="session_bell_use_default">Use This Phone’s Choice</string>
+    <string name="session_bell_source_own">Set for this phone only.</string>
+    <string name="session_bell_source_own_until">Set for this phone only, until %1$s.</string>
+    <string name="session_bell_source_default">This phone’s choice for the server. Pick one to change it for this session.</string>
+    <string name="session_bell_source_shared">Set from another device. Pick one to change it for this phone.</string>
+    <string name="session_bell_source_shared_until">Set from another device until %1$s. Pick one to change it for this phone.</string>
+    <string name="session_bell_source_phone_paused">This phone is paused in Settings.</string>
+    <string name="session_bell_source_server_paused">All notifications from this server are paused.</string>
+    <string name="session_bell_source_server_paused_until">All notifications from this server are paused until %1$s.</string>
+    <string name="session_sheet_bell_failed_title">Couldn’t Change Notifications</string>
 </resources>

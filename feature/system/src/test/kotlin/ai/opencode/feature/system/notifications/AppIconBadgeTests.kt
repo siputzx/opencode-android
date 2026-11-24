@@ -123,10 +123,10 @@ class AppIconBadgeTests {
     fun aServersRefIsMadeOnceAndKept() {
         val values = DependencyValues.testing().update { this[SharedStore] = SharedStore.inMemory() }
         DependencyValues.withValues(values) {
-            val notifications = SessionNotifications { _, _ -> }
+            val notifications = SessionNotifications(PushTokenProvider { _, _ -> })
             val first = notifications.ref("server")
             // Saved as soon as it's made: another instance over the same storage reads it back.
-            assertEquals("Saved as soon as it's made, before any relay registration", first, SessionNotifications { _, _ -> }.ref("server"))
+            assertEquals("Saved as soon as it's made, before any relay registration", first, SessionNotifications(PushTokenProvider { _, _ -> }).ref("server"))
             assertEquals("The callback minted later seals the same one", first, notifications.ref("server"))
             assertNotEquals(first, notifications.ref("other"))
             UUID.fromString(first)
@@ -138,7 +138,7 @@ class AppIconBadgeTests {
     // Node crypto ECDH/HKDF/AES-GCM vector: private scalars 1 and 2, nonce 00…0b.
     // Synthetic keys only; this also pins UTF-8, padded base64 and wire ordering.
     private val encryptedRef = "12345678-1234-1234-1234-123456789abc"
-    private val encryptedBox = "AAECAwQFBgcICQoLC4dJyQruN1/zqsh/R/xDql8IOBGM6LrqRHv2TWWhg6SckoCRnM4Via3Ut8PuKBcnmgv5Cdv/yeOoUC/38P5ewf6O/jRfz49VMw8i4VvesvFmd8H8cN/N/YKJw2fd/yHT3bVOTwVKrJEpuEP3ljI3"
+    private val encryptedBox = "AAECAwQFBgcICQoLC4dLgkSzfl+98ep/BKIY+djn2FrPpPbsRG6xVWvC0LGdiJ+fhuJx2fKFscrpWVxlzB3uFdi0iq+VfXmht68BkPOC8SRDnQK5ggEssE3Qov03b9mfI9rc95GN02eZrzlQtY7phGFGx3HF1/2Ikk0wYGvcggE1EvIVdD68PH/715rpVZMXyR5Hjp6bnwEXgYmoVC/eMTk="
 
     private fun notificationKey(): ByteArray = NotificationCrypto.sharedKey(
         privateKey = NotificationCrypto.privateKey(ByteArray(31) + byteArrayOf(1)),
@@ -146,15 +146,16 @@ class AppIconBadgeTests {
         ref = encryptedRef,
     )
 
-    private val payloadJson = Json { encodeDefaults = true }
+    private fun message(type: String, sessionID: String, title: String, body: String): String =
+        """{"v":1,"type":"$type","sessionID":"$sessionID","title":"$title","body":"$body","data":{}}"""
 
     /** Nonce, ciphertext and tag. */
-    private fun seal(payload: NotificationCrypto.Payload, key: ByteArray, ref: String): ByteArray {
+    private fun seal(text: String, key: ByteArray, ref: String): ByteArray {
         val nonce = ByteArray(12).also { SecureRandom().nextBytes(it) }
         val cipher = Cipher.getInstance("AES/GCM/NoPadding")
         cipher.init(Cipher.ENCRYPT_MODE, SecretKeySpec(key, "AES"), GCMParameterSpec(128, nonce))
         cipher.updateAAD("${NotificationCrypto.CONTEXT}:$ref".toByteArray(Charsets.UTF_8))
-        return nonce + cipher.doFinal(payloadJson.encodeToString(NotificationCrypto.Payload.serializer(), payload).toByteArray(Charsets.UTF_8))
+        return nonce + cipher.doFinal(text.toByteArray(Charsets.UTF_8))
     }
 
     private fun base64(bytes: ByteArray) = Base64.getEncoder().encodeToString(bytes)
@@ -184,10 +185,12 @@ class AppIconBadgeTests {
         store.establish(ref, base64(senderPublic))
         val peer = NotificationCrypto.sharedKey(sender, phone, ref)
         assertArrayEquals(peer, store.sharedKey(ref))
-        val message = NotificationCrypto.Payload(title = "Ready", body = "Review the change", sessionID = "ses_device", status = "succeeded")
-        val remote = envelope(ref, base64(seal(message, peer, ref)))
+        val remote = envelope(ref, base64(seal(message("question", "ses_device", "Ready", "Review the change"), peer, ref)))
         val key: (String) -> ByteArray = { store.sharedKey(it) }
-        assertEquals(message, NotificationContent.verifiedPayload(remote, key)?.payload)
+        assertEquals(
+            NotificationCrypto.Payload(type = "question", sessionID = "ses_device", title = "Ready", body = "Review the change"),
+            NotificationContent.verifiedPayload(remote, key)?.payload,
+        )
         // Pairing again replaces the cached key.
         val (resenderRaw, resenderPublic) = NotificationCrypto.generateKeyPair()
         store.establish(ref, base64(resenderPublic))
@@ -201,7 +204,7 @@ class AppIconBadgeTests {
     @Test
     fun encryptedNotificationMatchesNodeCrypto() {
         val payload = NotificationCrypto.open(encryptedBox, encryptedRef, notificationKey())
-        assertEquals(NotificationCrypto.Payload(title = "Ready ✓", body = "A private result.", sessionID = "ses_interop", status = "succeeded"), payload)
+        assertEquals(NotificationCrypto.Payload(type = "session.idle", sessionID = "ses_interop", title = "Ready ✓", body = "A private result."), payload)
     }
 
     @Test
@@ -221,15 +224,14 @@ class AppIconBadgeTests {
     @Test
     fun notificationBoxLimitCountsDecodedBytes() {
         val key = notificationKey()
-        var payload = NotificationCrypto.Payload(title = "Ready", body = "x", sessionID = "ses_limit", status = "succeeded")
-        val overhead = payloadJson.encodeToString(NotificationCrypto.Payload.serializer(), payload).toByteArray().size - 1
-        payload = payload.copy(body = "x".repeat(2700 - 28 - overhead))
-        val bytes = seal(payload, key, encryptedRef)
+        val overhead = message("session.idle", "ses_limit", "Ready", "x").toByteArray().size - 1
+        var body = "x".repeat(2700 - 28 - overhead)
+        val bytes = seal(message("session.idle", "ses_limit", "Ready", body), key, encryptedRef)
         assertEquals(2700, bytes.size)
         assertEquals(3600, base64(bytes).toByteArray().size)
-        assertEquals(payload, NotificationCrypto.open(base64(bytes), encryptedRef, key))
-        payload = payload.copy(body = payload.body + "x")
-        val box = base64(seal(payload, key, encryptedRef))
+        assertEquals(body, NotificationCrypto.open(base64(bytes), encryptedRef, key).body)
+        body += "x"
+        val box = base64(seal(message("session.idle", "ses_limit", "Ready", body), key, encryptedRef))
         assertFails { NotificationCrypto.open(box, encryptedRef, key) }
     }
 
@@ -242,7 +244,7 @@ class AppIconBadgeTests {
         val verified = requireNotNull(NotificationContent.verifiedPayload(original) { key })
         assertEquals(encryptedRef, verified.ref)
         assertEquals("ses_interop", verified.payload.sessionID)
-        val content = NotificationContent.content(original, verified)
+        val content = requireNotNull(NotificationContent.content(original, verified))
         assertEquals("Ready ✓", content.title)
         assertEquals("A private result.", content.body)
         assertEquals("$encryptedRef:ses_interop", content.thread)
@@ -259,7 +261,7 @@ class AppIconBadgeTests {
         val blocked = NotificationContent.verifiedPayload(original) { throw NotificationKeyStore.Failure.MissingKey }
         assertNull(blocked)
         // The same fallback is delivered on timeout; the app can retry the box later.
-        val fallback = NotificationContent.content(original, blocked)
+        val fallback = requireNotNull(NotificationContent.content(original, blocked))
         assertEquals("OpenCode", fallback.title)
         assertEquals("New activity", fallback.body)
         assertNull(fallback.thread)
@@ -295,6 +297,36 @@ class AppIconBadgeTests {
     }
 
     @Test
+    fun messagesFollowTheContract() {
+        val idle = NotificationCrypto.Payload.parse(
+            """{"v":1,"type":"session.idle","sessionID":"ses_a","title":"Fix the login bug","body":"Finished","data":{"outcome":"succeeded"},"extra":true}""",
+        )
+        assertEquals(NotificationCrypto.Payload("session.idle", "ses_a", "Fix the login bug", "Finished"), idle)
+        val permission = NotificationCrypto.Payload.parse("""{"v":1,"type":"permission","sessionID":"ses_a","title":"Run tests?","body":"bun test","data":{"requestID":"per_1","action":"bash"}}""")
+        assertEquals("permission", permission?.type)
+        // A known type needs a session and a title.
+        assertNull(NotificationCrypto.Payload.parse("""{"v":1,"type":"question","title":"Which one?","body":""}"""))
+        assertNull(NotificationCrypto.Payload.parse("""{"v":1,"type":"question","sessionID":"ses_a","title":"","body":"x"}"""))
+        // Another version, or not JSON at all, can't be read.
+        assertNull(NotificationCrypto.Payload.parse("""{"v":2,"type":"session.idle","sessionID":"ses_a","title":"t","body":"b"}"""))
+        assertNull(NotificationCrypto.Payload.parse("not json"))
+
+        // An unknown type shows its title and body, and nothing without a title.
+        val verified = { text: String ->
+            NotificationContent.Verified(encryptedRef, encryptedBox, requireNotNull(NotificationCrypto.Payload.parse(text)))
+        }
+        val unknown = NotificationContent.content(emptyMap(), verified("""{"v":1,"type":"later.kind","title":"Deploy done","body":"prod"}"""))
+        assertEquals("Deploy done", unknown?.title)
+        assertEquals("prod", unknown?.body)
+        assertNull(unknown?.thread)
+        assertEquals(SystemNotificationChannels.SESSION_OTHER, SystemNotificationChannels.forType(unknown?.type))
+        assertNull(NotificationContent.content(emptyMap(), verified("""{"v":1,"type":"later.kind","body":"quiet"}""")))
+        assertEquals(SystemNotificationChannels.SESSION_QUESTIONS, SystemNotificationChannels.forType("question"))
+        assertEquals(SystemNotificationChannels.SESSION_PERMISSIONS, SystemNotificationChannels.forType("permission"))
+        assertEquals(SystemNotificationChannels.SESSION_FINISHED, SystemNotificationChannels.forType("session.idle"))
+    }
+
+    @Test
     fun clearingReadsTheVerifiedThreadWithoutTheKeychain() {
         fun envelopeOf(ref: String = encryptedRef) = NotificationContent.Envelope(ref, encryptedBox)
         fun content(thread: String, ref: String = encryptedRef) = SessionPushNotifications.Delivered(
@@ -306,6 +338,7 @@ class AppIconBadgeTests {
         assertEquals("ses_interop", NotificationContent.threadSessionID("$encryptedRef:ses_interop", envelopeOf()))
         assertEquals("ses_interop", SessionPushNotifications.sessionID(verified, noKeychain))
         assertFalse(SessionPushNotifications.isNeedsInput(verified))
+        assertTrue(SessionPushNotifications.isNeedsInput(verified.copy(status = "question")))
         // Only a thread the extension wrote for this envelope's ref counts.
         assertNull(NotificationContent.threadSessionID("ses_interop", envelopeOf()))
         assertNull(NotificationContent.threadSessionID("12345678-1234-1234-1234-123456789abd:ses_interop", envelopeOf()))

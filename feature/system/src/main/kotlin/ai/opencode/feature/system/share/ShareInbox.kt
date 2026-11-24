@@ -24,12 +24,8 @@ class ShareInboxClient(
     val consume: suspend () -> List<ReceivedShare>,
     /** Publishes the sessions the share sheet offers. */
     val publishTargets: (ShareTargets) -> Unit,
-    /**
-     * Shares the current server's credentials with the share sheet, so it can send.
-     * `keepsCallback` keeps the server's last callback when this one has none (it isn't known
-     * yet); otherwise a null callback clears it (notifications are off).
-     */
-    val publishCredentials: (credentials: ShareCredentials, keepsCallback: Boolean) -> Unit,
+    /** Shares the current server's credentials with the share sheet, so it can send. */
+    val publishCredentials: (credentials: ShareCredentials) -> Unit,
     /** Forgets published sessions and credentials for a server that is no longer saved. */
     val removeTargets: (serverID: String) -> Unit,
     /** Offers a session in the share sheet's suggestions ([ShareSuggestion]). */
@@ -43,7 +39,7 @@ class ShareInboxClient(
         override val testValue: ShareInboxClient = ShareInboxClient(
             consume = { emptyList() },
             publishTargets = {},
-            publishCredentials = { _, _ -> },
+            publishCredentials = {},
             removeTargets = {},
         )
 
@@ -75,9 +71,7 @@ class ShareInboxClient(
                         }
                     }
                 },
-                publishCredentials = { value, keepsCallback ->
-                    ShareCredentials.publish(value, credentials, keepsCallback)
-                },
+                publishCredentials = { value -> ShareCredentials.publish(value, credentials) },
                 removeTargets = { serverID ->
                     if (credentials.load()?.serverID == serverID) credentials.remove()
                     targetsQueue.execute {
@@ -101,22 +95,10 @@ class ShareInboxClient(
     }
 }
 
-/**
- * Writes [credentials] unless the item already holds them. With [keepsCallback] and no
- * callback, the server's last one stays.
- */
-fun ShareCredentials.Companion.publish(
-    credentials: ShareCredentials,
-    store: ShareCredentialStore,
-    keepsCallback: Boolean = true,
-) {
-    val stored = store.load()
-    var value = credentials
-    if (keepsCallback && value.callbackURL == null && stored != null && stored.serverID == value.serverID) {
-        value = value.copy(callbackURL = stored.callbackURL)
-    }
-    if (stored == value) return
-    store.save(value)
+/** Writes [credentials] unless the item already holds them. */
+fun ShareCredentials.Companion.publish(credentials: ShareCredentials, store: ShareCredentialStore) {
+    if (store.load() == credentials) return
+    store.save(credentials)
 }
 
 /**

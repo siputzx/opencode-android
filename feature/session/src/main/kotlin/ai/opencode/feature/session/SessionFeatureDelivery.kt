@@ -9,7 +9,7 @@ import ai.opencode.core.dependencies.Clock
 import ai.opencode.core.log.AppLog
 import ai.opencode.core.log.logSummary
 import ai.opencode.feature.media.PageReaderClient
-import ai.opencode.feature.system.notifications.SessionNotificationsClient
+import ai.opencode.feature.system.notifications.PushSync
 import ai.opencode.server.OpenCodeClient
 import ai.opencode.server.OpenCodeClientError
 import ai.opencode.server.OpenCodeServer
@@ -86,7 +86,6 @@ internal fun SessionFeature.Companion.deliveryJob(
     clock: Clock,
     networkPath: NetworkPathClient,
     undeliveredPrompts: UndeliveredPrompts,
-    sessionNotifications: SessionNotificationsClient,
     pageReader: PageReaderClient,
 ): PromptOutbox.Job {
     suspend fun deliver(handle: PromptOutbox.Handle): DeliveryOutcome {
@@ -227,8 +226,10 @@ internal fun SessionFeature.Companion.deliveryJob(
             }
 
             // These are later user intents, not another attempt of the admitted send.
-            suspend fun admitted(sessionID: String, created: OpenCodeSession?, appliedModel: OpenCodeModelRef? = null): DeliveryOutcome =
-                NetworkRetry.manualOperation.withValue(null) { admissionOutcome(sessionID, created, appliedModel) }
+            suspend fun admitted(sessionID: String, created: OpenCodeSession?, appliedModel: OpenCodeModelRef? = null): DeliveryOutcome {
+                PushSync.sentFromPhone(server, sessionID)
+                return NetworkRetry.manualOperation.withValue(null) { admissionOutcome(sessionID, created, appliedModel) }
+            }
 
             val sessionID: String
             var created: OpenCodeSession? = null
@@ -288,9 +289,6 @@ internal fun SessionFeature.Companion.deliveryJob(
                 log.info { "$sendID already on the server" }
                 return admitted(sessionID, created, applied)
             }
-            // Only sends from this phone carry a callback: the run that follows notifies this phone
-            // when it ends, through the server's notify plugin.
-            val callbackURL = sessionNotifications.callbackURL(server)
             // The page is read now, once: never while browsing, never for a message that didn't come from it.
             val first = handle.current()
             val attachments: List<OpenCodeOutgoingAttachment> = first.attachments
@@ -351,19 +349,17 @@ internal fun SessionFeature.Companion.deliveryJob(
                 moveBackgroundWorkIfNeeded(sessionID)
                 attemptStarting()
                 log.info { "$sendID posting to $sessionID, attempt $attempts, ${pending.delivery.rawValue}" }
-                val posted: OpenCodeClientError? = PromptContext.notificationCallbackURL.withValue(callbackURL) {
-                    PromptContext.page.withValue(page) {
-                        PromptContext.mentions.withValue(pending.mentions) {
-                            PromptContext.quotes.withValue(pending.quotes.map { it.quote }) {
-                                try {
-                                    openCodeClient.sendPrompt(
-                                        server, sessionID, pending.text, attachments,
-                                        pending.files.mapNotNull { it.reference }, pending.messageID, pending.delivery,
-                                    )
-                                    null
-                                } catch (error: OpenCodeClientError) {
-                                    error
-                                }
+                val posted: OpenCodeClientError? = PromptContext.page.withValue(page) {
+                    PromptContext.mentions.withValue(pending.mentions) {
+                        PromptContext.quotes.withValue(pending.quotes.map { it.quote }) {
+                            try {
+                                openCodeClient.sendPrompt(
+                                    server, sessionID, pending.text, attachments,
+                                    pending.files.mapNotNull { it.reference }, pending.messageID, pending.delivery,
+                                )
+                                null
+                            } catch (error: OpenCodeClientError) {
+                                error
                             }
                         }
                     }
