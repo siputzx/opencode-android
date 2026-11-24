@@ -57,8 +57,6 @@
     <string name="settings_notifications_open_android_settings">Open Android Settings</string>
     <string name="settings_notifications_turn_on">Turn On Notifications</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_in_app_footer">Shown on the drawer button.</string>
-    <string name="settings_notifications_in_app_notices">In-App Notices</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sessions</string>

@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Android-instellingen openen</string>
     <string name="settings_notifications_turn_on">Meldingen inschakelen</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_in_app_footer">Worden op de zijmenuknop getoond.</string>
-    <string name="settings_notifications_in_app_notices">Meldingen in de app</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sessies</string>

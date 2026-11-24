@@ -54,8 +54,6 @@
     <string name="settings_notifications_open_android_settings">Android 설정 열기</string>
     <string name="settings_notifications_turn_on">알림 켜기</string>
     <string name="settings_notifications_server_header">서버</string>
-    <string name="settings_notifications_in_app_footer">탐색 패널 버튼에 표시돼요.</string>
-    <string name="settings_notifications_in_app_notices">앱 내 공지사항</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">세션</string>

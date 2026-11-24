@@ -57,8 +57,6 @@
     <string name="settings_notifications_open_android_settings">Odpri nastavitve Androida</string>
     <string name="settings_notifications_turn_on">Vklopi obvestila</string>
     <string name="settings_notifications_server_header">Strežnik</string>
-    <string name="settings_notifications_in_app_footer">Prikazana na gumbu stranskega predala.</string>
-    <string name="settings_notifications_in_app_notices">Obvestila v aplikaciji</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Seje</string>

@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Android sozlamalarini ochish</string>
     <string name="settings_notifications_turn_on">Bildirishnomalarni yoqish</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_in_app_footer">Yon panel tugmasida ko‘rsatiladi.</string>
-    <string name="settings_notifications_in_app_notices">Ilova ichidagi bildirishnomalar</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Seanslar</string>

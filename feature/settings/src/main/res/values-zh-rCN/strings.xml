@@ -54,8 +54,6 @@
     <string name="settings_notifications_open_android_settings">打开 Android 设置</string>
     <string name="settings_notifications_turn_on">开启通知</string>
     <string name="settings_notifications_server_header">服务器</string>
-    <string name="settings_notifications_in_app_footer">显示在侧边栏按钮上。</string>
-    <string name="settings_notifications_in_app_notices">应用内注意事项</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">会话</string>

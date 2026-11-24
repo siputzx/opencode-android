@@ -57,8 +57,6 @@
     <string name="settings_notifications_open_android_settings">Відкрити налаштування Android</string>
     <string name="settings_notifications_turn_on">Увімкнути сповіщення</string>
     <string name="settings_notifications_server_header">Сервер</string>
-    <string name="settings_notifications_in_app_footer">Показуються на кнопці бічної панелі.</string>
-    <string name="settings_notifications_in_app_notices">Повідомлення в застосунку</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Сесії</string>

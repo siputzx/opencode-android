@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Android सेटिङहरू खोल्नुहोस्</string>
     <string name="settings_notifications_turn_on">सूचनाहरू चालु गर्नुहोस्</string>
     <string name="settings_notifications_server_header">सर्भर</string>
-    <string name="settings_notifications_in_app_footer">साइड प्यानलको बटनमा देखाइन्छ।</string>
-    <string name="settings_notifications_in_app_notices">एपभित्रका सूचनाहरू</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">सत्रहरू</string>

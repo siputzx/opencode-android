@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Άνοιγμα ρυθμίσεων Android</string>
     <string name="settings_notifications_turn_on">Ενεργοποίηση ειδοποιήσεων</string>
     <string name="settings_notifications_server_header">Διακομιστής</string>
-    <string name="settings_notifications_in_app_footer">Εμφανίζονται στο κουμπί του πλαϊνού μενού.</string>
-    <string name="settings_notifications_in_app_notices">Ειδοποιήσεις εντός εφαρμογής</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Συνεδρίες</string>

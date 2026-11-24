@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Отвори ги поставките на Android</string>
     <string name="settings_notifications_turn_on">Вклучи известувања</string>
     <string name="settings_notifications_server_header">Сервер</string>
-    <string name="settings_notifications_in_app_footer">Се прикажуваат на копчето за страничното мени.</string>
-    <string name="settings_notifications_in_app_notices">Известувања во апликацијата</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Сесии</string>

@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Android-beállítások megnyitása</string>
     <string name="settings_notifications_turn_on">Értesítések bekapcsolása</string>
     <string name="settings_notifications_server_header">Kiszolgáló</string>
-    <string name="settings_notifications_in_app_footer">Az oldalmenü gombján jelennek meg.</string>
-    <string name="settings_notifications_in_app_notices">Alkalmazáson belüli megjegyzések</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Munkamenetek</string>

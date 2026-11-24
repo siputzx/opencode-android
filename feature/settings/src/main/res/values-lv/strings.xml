@@ -56,8 +56,6 @@
     <string name="settings_notifications_open_android_settings">Atvērt Android iestatījumus</string>
     <string name="settings_notifications_turn_on">Ieslēgt paziņojumus</string>
     <string name="settings_notifications_server_header">Serveris</string>
-    <string name="settings_notifications_in_app_footer">Redzami uz sānu paneļa pogas.</string>
-    <string name="settings_notifications_in_app_notices">Paziņojumi lietotnē</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sesijas</string>

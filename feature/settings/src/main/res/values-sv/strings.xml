@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Öppna Android-inställningar</string>
     <string name="settings_notifications_turn_on">Slå på aviseringar</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_in_app_footer">Visas på knappen för sidomenyn.</string>
-    <string name="settings_notifications_in_app_notices">Meddelanden i appen</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sessioner</string>

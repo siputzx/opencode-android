@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">የAndroid ቅንብሮችን ክፈት</string>
     <string name="settings_notifications_turn_on">ማሳወቂያዎችን አብራ</string>
     <string name="settings_notifications_server_header">አገልጋይ</string>
-    <string name="settings_notifications_in_app_footer">በጎን ምናሌው አዝራር ላይ ይታያሉ።</string>
-    <string name="settings_notifications_in_app_notices">የመተግበሪያ ውስጥ ማሳወቂያዎች</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">ክፍለ-ጊዜዎች</string>

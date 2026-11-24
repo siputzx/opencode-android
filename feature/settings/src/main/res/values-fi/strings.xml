@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Avaa Android-asetukset</string>
     <string name="settings_notifications_turn_on">Ota ilmoitukset käyttöön</string>
     <string name="settings_notifications_server_header">Palvelin</string>
-    <string name="settings_notifications_in_app_footer">Näkyvät sivuvalikon painikkeessa.</string>
-    <string name="settings_notifications_in_app_notices">Sovelluksen sisäiset ilmoitukset</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Istunnot</string>

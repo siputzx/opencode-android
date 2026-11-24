@@ -54,8 +54,6 @@
     <string name="settings_notifications_open_android_settings">Buka tetapan Android</string>
     <string name="settings_notifications_turn_on">Hidupkan notifikasi</string>
     <string name="settings_notifications_server_header">Pelayan</string>
-    <string name="settings_notifications_in_app_footer">Dipaparkan pada butang panel sisi.</string>
-    <string name="settings_notifications_in_app_notices">Notis dalam aplikasi</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sesi</string>

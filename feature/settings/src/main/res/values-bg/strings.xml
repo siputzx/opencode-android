@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Отворете настройките на Android</string>
     <string name="settings_notifications_turn_on">Включване на известия</string>
     <string name="settings_notifications_server_header">Сървър</string>
-    <string name="settings_notifications_in_app_footer">Показват се върху бутона за страничното меню.</string>
-    <string name="settings_notifications_in_app_notices">Бележки в приложението</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Сесии</string>

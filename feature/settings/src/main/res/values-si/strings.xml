@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Android සැකසුම් විවෘත කරන්න</string>
     <string name="settings_notifications_turn_on">දැනුම්දීම් සක්‍රිය කරන්න</string>
     <string name="settings_notifications_server_header">සේවාදායකය</string>
-    <string name="settings_notifications_in_app_footer">පැති පැනල බොත්තමේ පෙන්වයි.</string>
-    <string name="settings_notifications_in_app_notices">යෙදුම තුළ දැනුම්දීම්</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">සැසි</string>

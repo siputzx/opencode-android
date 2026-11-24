@@ -56,8 +56,6 @@
     <string name="settings_notifications_open_android_settings">Deschide setările Android</string>
     <string name="settings_notifications_turn_on">Activează notificările</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_in_app_footer">Afișate pe butonul panoului lateral.</string>
-    <string name="settings_notifications_in_app_notices">Notificări în aplicație</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sesiuni</string>

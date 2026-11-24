@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Android সেটিংস খুলুন</string>
     <string name="settings_notifications_turn_on">বিজ্ঞপ্তি চালু করুন</string>
     <string name="settings_notifications_server_header">সার্ভার</string>
-    <string name="settings_notifications_in_app_footer">ড্রয়ার বোতামে দেখানো হয়।</string>
-    <string name="settings_notifications_in_app_notices">অ্যাপের ভেতরে বিজ্ঞপ্তি</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">সেশন</string>

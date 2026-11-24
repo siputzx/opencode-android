@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Opna Android-stillingar</string>
     <string name="settings_notifications_turn_on">Kveikja á tilkynningum</string>
     <string name="settings_notifications_server_header">Netþjónn</string>
-    <string name="settings_notifications_in_app_footer">Sýndar á hnappi hliðarvalmyndar.</string>
-    <string name="settings_notifications_in_app_notices">Tilkynningar í forritinu</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Fundir</string>

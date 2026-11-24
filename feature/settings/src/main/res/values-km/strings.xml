@@ -54,8 +54,6 @@
     <string name="settings_notifications_open_android_settings">បើកការកំណត់ Android</string>
     <string name="settings_notifications_turn_on">បើកការជូនដំណឹង</string>
     <string name="settings_notifications_server_header">ម៉ាស៊ីនមេ</string>
-    <string name="settings_notifications_in_app_footer">បង្ហាញលើប៊ូតុងផ្ទាំងចំហៀង។</string>
-    <string name="settings_notifications_in_app_notices">សេចក្តីជូនដំណឹងក្នុងកម្មវិធី</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">សម័យ</string>

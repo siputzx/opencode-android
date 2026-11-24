@@ -56,8 +56,6 @@
     <string name="settings_notifications_open_android_settings">Отвори Android подешавања</string>
     <string name="settings_notifications_turn_on">Укључи обавештења</string>
     <string name="settings_notifications_server_header">Сервер</string>
-    <string name="settings_notifications_in_app_footer">Приказују се на дугмету бочног панела.</string>
-    <string name="settings_notifications_in_app_notices">Обавештења у апликацији</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Сесије</string>

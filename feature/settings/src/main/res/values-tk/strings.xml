@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Android sazlamalaryny açyň</string>
     <string name="settings_notifications_turn_on">Bildirişleri işlediň</string>
     <string name="settings_notifications_server_header">Serwer</string>
-    <string name="settings_notifications_in_app_footer">Gapdal panel düwmesinde görkezilýär.</string>
-    <string name="settings_notifications_in_app_notices">Programmadaky bildirişler</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sessiýalar</string>

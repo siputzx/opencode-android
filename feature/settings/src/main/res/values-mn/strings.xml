@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Android тохиргоог нээх</string>
     <string name="settings_notifications_turn_on">Мэдэгдэл асаах</string>
     <string name="settings_notifications_server_header">Сервер</string>
-    <string name="settings_notifications_in_app_footer">Хажуугийн цэсний товч дээр харагдана.</string>
-    <string name="settings_notifications_in_app_notices">Апп доторх мэдэгдлүүд</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Хурал</string>

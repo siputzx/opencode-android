@@ -57,8 +57,6 @@
     <string name="settings_notifications_open_android_settings">Otvoriť nastavenia Androidu</string>
     <string name="settings_notifications_turn_on">Zapnúť upozornenia</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_in_app_footer">Zobrazujú sa na tlačidle bočného panela.</string>
-    <string name="settings_notifications_in_app_notices">Oznámenia v aplikácii</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Relácie</string>

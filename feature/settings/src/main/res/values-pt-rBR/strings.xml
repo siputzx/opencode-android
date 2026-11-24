@@ -56,8 +56,6 @@
     <string name="settings_notifications_open_android_settings">Abrir configurações do Android</string>
     <string name="settings_notifications_turn_on">Ativar notificações</string>
     <string name="settings_notifications_server_header">Servidor</string>
-    <string name="settings_notifications_in_app_footer">Exibidos no botão do painel lateral.</string>
-    <string name="settings_notifications_in_app_notices">Avisos no app</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sessões</string>

@@ -57,8 +57,6 @@
     <string name="settings_notifications_open_android_settings">Atidaryti Android nustatymus</string>
     <string name="settings_notifications_turn_on">Įjungti pranešimus</string>
     <string name="settings_notifications_server_header">Serveris</string>
-    <string name="settings_notifications_in_app_footer">Rodomi ant šoninio skydelio mygtuko.</string>
-    <string name="settings_notifications_in_app_notices">Pranešimai programoje</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Sesijos</string>

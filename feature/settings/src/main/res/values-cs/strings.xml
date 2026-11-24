@@ -57,8 +57,6 @@
     <string name="settings_notifications_open_android_settings">Otevřít nastavení Androidu</string>
     <string name="settings_notifications_turn_on">Zapnout oznámení</string>
     <string name="settings_notifications_server_header">Server</string>
-    <string name="settings_notifications_in_app_footer">Zobrazují se na tlačítku výsuvného panelu.</string>
-    <string name="settings_notifications_in_app_notices">Upozornění v aplikaci</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Relace</string>

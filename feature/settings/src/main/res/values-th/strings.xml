@@ -54,8 +54,6 @@
     <string name="settings_notifications_open_android_settings">เปิดการตั้งค่า Android</string>
     <string name="settings_notifications_turn_on">เปิดการแจ้งเตือน</string>
     <string name="settings_notifications_server_header">เซิร์ฟเวอร์</string>
-    <string name="settings_notifications_in_app_footer">แสดงบนปุ่มแถบด้านข้าง</string>
-    <string name="settings_notifications_in_app_notices">ประกาศในแอป</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">เซสชัน</string>

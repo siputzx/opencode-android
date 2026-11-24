@@ -55,8 +55,6 @@
     <string name="settings_notifications_open_android_settings">Танзимоти Android-ро кушоед</string>
     <string name="settings_notifications_turn_on">Огоҳиҳоро фаъол кунед</string>
     <string name="settings_notifications_server_header">Сервер</string>
-    <string name="settings_notifications_in_app_footer">Дар тугмаи менюи паҳлуӣ нишон дода мешаванд.</string>
-    <string name="settings_notifications_in_app_notices">Огоҳиҳои дохили барнома</string>
 
     <!-- Sessions -->
     <string name="settings_sessions_title">Сеансхо</string>

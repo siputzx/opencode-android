@@ -1,7 +1,6 @@
 package ai.opencode.feature.settings
 
 import ai.opencode.core.R as CoreR
-import ai.opencode.core.experiments.InAppNoticeMode
 import ai.opencode.core.sharing.shared
 import ai.opencode.core.store.observe
 import ai.opencode.core.ui.OpenCodeAlertDialog
@@ -27,8 +26,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.semantics
 
 /**
- * Settings → Notifications: this phone's permission, this server's notifications (on or off and
- * what to hear), and the In-App Notices picker.
+ * Settings → Notifications: this phone's permission and this server's notifications (on or off and
+ * what to hear).
  */
 @Composable
 fun NotificationSettingsView(store: SettingsStore) {
@@ -38,7 +37,6 @@ fun NotificationSettingsView(store: SettingsStore) {
     val server by store.observe { it.server }
     val failure by store.observe { it.pushFailure }
     val pendingChoice by store.observe { it.pushPendingChoice }
-    val noticeMode by remember { shared(InAppNoticeMode.key).flow }.collectAsState()
     val choices by remember { shared(PushSharedKeys.choices).flow }.collectAsState(initial = shared(PushSharedKeys.choices).value)
     val servers by remember { shared(PushSharedKeys.servers).flow }.collectAsState(initial = shared(PushSharedKeys.servers).value)
     LaunchedEffect(store) {
@@ -57,7 +55,6 @@ fun NotificationSettingsView(store: SettingsStore) {
     val isServerPaused = pushState != null && pushState.paused && (pausedUntil == null || pausedUntil > now)
     val isDisabled = isReady && (isServerPaused || push.device?.paused == true)
     val serverFooter = if (isDisabled) stringResource(R.string.settings_notifications_status_disabled) else pushStatusFooter(push.status)
-    val inAppFooter = stringResource(R.string.settings_notifications_in_app_footer)
     val send = { action: PushSettingsFeature.Action -> store.send(SettingsFeature.Action.Push(action)) }
 
     SettingsPageScaffold(title = stringResource(R.string.settings_notifications_title), store = store) {
@@ -111,18 +108,6 @@ fun NotificationSettingsView(store: SettingsStore) {
                     )
                 }
             }
-        }
-        settingsSection(
-            key = "in-app",
-            footer = footerText(inAppFooter),
-        ) {
-            SettingsMenuRow(
-                title = stringResource(R.string.settings_notifications_in_app_notices),
-                value = noticeMode.title,
-                selection = noticeMode,
-                options = InAppNoticeMode.entries.map { SettingsMenuOption(it, it.title) },
-                onSelect = { store.send(SettingsFeature.Action.Settings(HomeSettingsFeature.Action.InAppNoticeModeChanged(it))) },
-            )
         }
     }
 
