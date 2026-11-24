@@ -308,21 +308,4 @@
     <string name="session_media_loading_earlier">တင်နေသည်…</string>
     <string name="session_media_earlier_failed">အစောပိုင်း မက်ဆေ့ဂျ်များကို မဖွင့်နိုင်ပါ။ သင့်ချိတ်ဆက်မှုကို စစ်ပြီး ပြန်ကြိုးစားပါ။</string>
     <string name="session_media_earlier_nothing_new">ယခုလေးတင် ဖွင့်ထားသော မက်ဆေ့ဂျ်များတွင် အသစ်ဘာမှ မရှိပါ။ ပိုစောသော မက်ဆေ့ဂျ်များတွင် ရှိနိုင်ပါသည်။</string>
-    <string name="session_bell_title">အကြောင်းကြားချက်များ</string>
-    <string name="session_bell_level_all">အရာအားလုံး</string>
-    <string name="session_bell_level_attention">သင့်ကို လိုအပ်သည့်အခါမှသာ</string>
-    <string name="session_bell_level_none">အကြောင်းမကြားပါ</string>
-    <string name="session_bell_mute_hour">တစ်နာရီကြာ အကြောင်းမကြားပါ</string>
-    <string name="session_bell_mute_tomorrow">မနက်ဖြန် မနက်အထိ အကြောင်းမကြားပါ</string>
-    <string name="session_bell_use_default">ဤစက်၏ ဆက်တင်ကို ဖယ်ရှားပါ</string>
-    <string name="session_bell_source_own">ဤစက်အတွက်သာ သတ်မှတ်ထားသည်။</string>
-    <string name="session_bell_source_own_until">ဤစက်အတွက်သာ %1$s အထိ သတ်မှတ်ထားသည်။</string>
-    <string name="session_bell_source_default">ဆာဗာအတွက် ဤစက်၏ ရွေးချယ်မှုဖြစ်သည်။ ဤစက်ရှင်အတွက် ပြောင်းလဲရန် တစ်ခုရွေးပါ။</string>
-    <string name="session_bell_source_shared">အခြားစက်မှ သတ်မှတ်ထားသည်။ ဤစက်အတွက် ပြောင်းလဲရန် တစ်ခုရွေးပါ။</string>
-    <string name="session_bell_source_shared_until">အခြားစက်မှ %1$s အထိ သတ်မှတ်ထားသည်။ ဤစက်အတွက် ပြောင်းလဲရန် တစ်ခုရွေးပါ။</string>
-    <string name="session_bell_source_phone_paused">ဆက်တင်များတွင် ဤစက်ကို ခဏရပ်ထားသည်။</string>
-    <string name="session_bell_source_server_paused">ဤဆာဗာမှ အကြောင်းကြားချက်အားလုံးကို ခဏရပ်ထားသည်။</string>
-    <string name="session_bell_source_server_paused_until">ဤဆာဗာမှ အကြောင်းကြားချက်အားလုံးကို %1$s အထိ ခဏရပ်ထားသည်။</string>
-    <string name="session_sheet_bell_failed_title">အကြောင်းကြားချက်များကို မပြောင်းလဲနိုင်ပါ</string>
-    <string name="session_sheet_bell_failed_message">ဆာဗာက အပြောင်းအလဲကို လက်မခံပါ။</string>
 </resources>

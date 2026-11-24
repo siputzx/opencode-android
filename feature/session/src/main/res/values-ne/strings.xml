@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">लोड गर्दै…</string>
     <string name="session_media_earlier_failed">अघिल्ला सन्देशहरू लोड गर्न सकिएन। आफ्नो जडान जाँच गरेर फेरि प्रयास गर्नुहोस्।</string>
     <string name="session_media_earlier_nothing_new">भर्खरै लोड भएका सन्देशहरूमा यहाँ केही नयाँ छैन। अघिल्ला सन्देशहरूमा थप हुन सक्छ।</string>
-    <string name="session_bell_title">सूचनाहरू</string>
-    <string name="session_bell_level_all">सबै कुरा</string>
-    <string name="session_bell_level_attention">मेरो आवश्यकता पर्दा मात्र</string>
-    <string name="session_bell_level_none">केही पनि होइन</string>
-    <string name="session_bell_mute_hour">एक घण्टासम्म केही होइन</string>
-    <string name="session_bell_mute_tomorrow">भोलि बिहानसम्म केही होइन</string>
-    <string name="session_bell_use_default">यो उपकरणको सेटिङ हटाउनुहोस्</string>
-    <string name="session_bell_source_own">यो उपकरणका लागि मात्र सेट गरिएको छ।</string>
-    <string name="session_bell_source_own_until">यो उपकरणका लागि मात्र %1$s सम्म सेट गरिएको छ।</string>
-    <string name="session_bell_source_default">सर्भरका लागि यो उपकरणको छनोट। यो सत्रका लागि बदल्न एउटा छान्नुहोस्।</string>
-    <string name="session_bell_source_shared">अर्को उपकरणबाट सेट गरिएको छ। यो उपकरणका लागि बदल्न एउटा छान्नुहोस्।</string>
-    <string name="session_bell_source_shared_until">अर्को उपकरणबाट %1$s सम्म सेट गरिएको छ। यो उपकरणका लागि बदल्न एउटा छान्नुहोस्।</string>
-    <string name="session_bell_source_phone_paused">यो उपकरण सेटिङहरूमा रोकिएको छ।</string>
-    <string name="session_bell_source_server_paused">यो सर्भरका सबै सूचनाहरू रोकिएका छन्।</string>
-    <string name="session_bell_source_server_paused_until">यो सर्भरका सबै सूचनाहरू %1$s सम्म रोकिएका छन्।</string>
-    <string name="session_sheet_bell_failed_title">सूचनाहरू बदल्न सकिएन</string>
-    <string name="session_sheet_bell_failed_message">सर्भरले परिवर्तन स्वीकार गरेन।</string>
 </resources>

@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Yuklanmoqda…</string>
     <string name="session_media_earlier_failed">Oldingi xabarlarni yuklab bo‘lmadi. Ulanishni tekshirib, qayta urinib ko‘ring.</string>
     <string name="session_media_earlier_nothing_new">Hozir yuklangan xabarlarda yangilik yo‘q. Oldingilarida bo‘lishi mumkin.</string>
-    <string name="session_bell_title">Bildirishnomalar</string>
-    <string name="session_bell_level_all">Hammasi</string>
-    <string name="session_bell_level_attention">Faqat men kerak bo‘lganda</string>
-    <string name="session_bell_level_none">Hech narsa</string>
-    <string name="session_bell_mute_hour">Bir soat davomida hech narsa</string>
-    <string name="session_bell_mute_tomorrow">Ertaga ertalabgacha hech narsa</string>
-    <string name="session_bell_use_default">Bu qurilma sozlamasini olib tashlash</string>
-    <string name="session_bell_source_own">Faqat bu qurilma uchun belgilangan.</string>
-    <string name="session_bell_source_own_until">Faqat bu qurilma uchun %1$s gacha belgilangan.</string>
-    <string name="session_bell_source_default">Bu qurilmaning server uchun tanlovi. Bu sessiyada o‘zgartirish uchun birini tanlang.</string>
-    <string name="session_bell_source_shared">Boshqa qurilmadan belgilangan. Bu qurilmada o‘zgartirish uchun birini tanlang.</string>
-    <string name="session_bell_source_shared_until">Boshqa qurilmadan %1$s gacha belgilangan. Bu qurilmada o‘zgartirish uchun birini tanlang.</string>
-    <string name="session_bell_source_phone_paused">Bu qurilma Sozlamalarda pauzaga qo‘yilgan.</string>
-    <string name="session_bell_source_server_paused">Bu serverning barcha bildirishnomalari pauzaga qo‘yilgan.</string>
-    <string name="session_bell_source_server_paused_until">Bu serverning barcha bildirishnomalari %1$s gacha pauzaga qo‘yilgan.</string>
-    <string name="session_sheet_bell_failed_title">Bildirishnomalarni o‘zgartirib bo‘lmadi</string>
-    <string name="session_sheet_bell_failed_message">Server o‘zgarishni qabul qilmadi.</string>
 </resources>

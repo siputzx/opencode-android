@@ -13,24 +13,13 @@ import ai.opencode.feature.session.SessionFeature.State
 import ai.opencode.feature.session.SessionTestSupport.Harness
 import ai.opencode.feature.session.SessionTestSupport.LockIsolated
 import ai.opencode.feature.session.SessionTestSupport.append
-import ai.opencode.feature.session.SessionTestSupport.increment
 import ai.opencode.feature.session.SessionTestSupport.receive
 import ai.opencode.feature.session.SessionTestSupport.sessionTest
 import ai.opencode.feature.session.SessionTestSupport.settle
-import ai.opencode.feature.session.SessionTestSupport.testServer
 import ai.opencode.feature.session.header.SessionContextRing
 import ai.opencode.feature.session.header.SessionContextText
-import ai.opencode.feature.system.notifications.PushDuration
-import ai.opencode.feature.system.notifications.PushServer
-import ai.opencode.feature.system.notifications.PushSharedKeys
-import ai.opencode.feature.system.notifications.PushStatus
-import ai.opencode.feature.system.notifications.SessionNotificationsClient
 import ai.opencode.server.OpenCodeClient
 import ai.opencode.server.OpenCodeClientError
-import ai.opencode.server.model.OpenCodePushBell
-import ai.opencode.server.model.OpenCodePushDevice
-import ai.opencode.server.model.OpenCodePushLevel
-import ai.opencode.server.model.OpenCodePushState
 import ai.opencode.server.OpenCodeLiveContentEvent
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.model.ModelVariant
@@ -62,7 +51,6 @@ import org.junit.Test
 import java.io.File
 import java.time.Instant
 import kotlin.time.Duration.Companion.milliseconds
-import ai.opencode.core.testing.eventually
 
 /**
  * `contextFractionUsesTheReplyModelsWindow`'s compact `"32% of 400K"` line runs under Robolectric
@@ -713,80 +701,6 @@ class SessionSheetTests {
         val global = session().copy(projectID = "global")
         assertNull(SessionListContext.project(global, projects))
         assertNull(SessionListContext.project(null, projects))
-    }
-
-    private fun pushServer(sessions: Map<String, OpenCodePushBell> = emptyMap()): PushServer {
-        val device = OpenCodePushDevice(
-            id = "ref-1", name = "Pixel", platform = "android", expiresAt = 1L,
-            defaultLevel = OpenCodePushLevel.all, paused = false, sessions = sessions,
-        )
-        return PushServer(PushStatus.Ready, OpenCodePushLevel.entries, "ref-1", OpenCodePushState(devices = listOf(device)))
-    }
-
-    @Test fun bellShowsTheChoiceAtOnceAndTakesTheServersCopyWhenRefused() = sessionTest { h ->
-        val servers = h.sharedStore.reference(PushSharedKeys.servers)
-        servers.set(mapOf(testServer.persistenceID to pushServer()))
-        val written = LockIsolated(listOf<OpenCodePushBell?>())
-        val refuse = LockIsolated(false)
-        val muted = OpenCodePushBell(OpenCodePushLevel.none, until = 3_600_000L)
-        val store = h.sheetStore {
-            client {
-                copy(
-                    setPushSessionBell = { _, id, sessionID, bell ->
-                        assertEquals("ref-1", id)
-                        assertEquals("ses_sheet", sessionID)
-                        if (refuse.value) throw OpenCodeClientError("Server error", statusCode = 500)
-                        written.append(bell)
-                    },
-                    pushState = { _ -> pushServer(mapOf("ses_sheet" to muted)).state!! },
-                )
-            }
-        }
-        openSheet(store)
-
-        store.send(sheet(SessionSheetFeature.Action.BellChosen(OpenCodePushLevel.none, PushDuration.hour)))
-        assertEquals(muted, servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
-        assertTrue(eventually { written.value == listOf<OpenCodePushBell?>(muted) })
-
-        refuse.setValue(true)
-        store.send(sheet(SessionSheetFeature.Action.BellChosen(null, PushDuration.forever)))
-        assertNull(servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
-        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.BellRefused>()) {
-            it.updatingSheet {
-                copy(failure = SessionSheetFeature.Failure(title = "Couldn’t Change Notifications", message = "The server didn’t take the change."))
-            }
-        }
-        assertEquals(muted, servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
-        store.finish()
-    }
-
-    @Test fun bellRegistersAgainWhenTheServerDoesNotKnowThePhone() = sessionTest { h ->
-        h.sharedStore.reference(PushSharedKeys.servers).set(mapOf(testServer.persistenceID to pushServer()))
-        val registered = LockIsolated(listOf<OpenCodePushLevel>())
-        val calls = LockIsolated(0)
-        val store = h.sheetStore {
-            client {
-                copy(
-                    setPushSessionBell = { _, _, _, _ ->
-                        calls.increment()
-                        if (registered.value.isEmpty()) throw OpenCodeClientError("Not found", statusCode = 404)
-                    },
-                )
-            }
-            this[SessionNotificationsClient] = SessionNotificationsClient(
-                isAvailable = true,
-                register = { _, level ->
-                    registered.append(level)
-                    true
-                },
-            )
-        }
-        openSheet(store)
-
-        store.send(sheet(SessionSheetFeature.Action.BellChosen(OpenCodePushLevel.attention, PushDuration.forever)))
-        assertTrue(eventually { calls.value == 2 })
-        assertEquals(listOf(OpenCodePushLevel.all), registered.value)
-        store.finish()
     }
 
     @Test fun copySessionIDMenuActionWritesToPasteboard() = sessionTest { h ->

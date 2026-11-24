@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Wird geladen…</string>
     <string name="session_media_earlier_failed">Frühere Nachrichten konnten nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.</string>
     <string name="session_media_earlier_nothing_new">Unter den gerade geladenen Nachrichten ist nichts Neues. Frühere enthalten vielleicht mehr.</string>
-    <string name="session_bell_title">Benachrichtigungen</string>
-    <string name="session_bell_level_all">Alles</string>
-    <string name="session_bell_level_attention">Nur wenn ich gebraucht werde</string>
-    <string name="session_bell_level_none">Nichts</string>
-    <string name="session_bell_mute_hour">Eine Stunde lang nichts</string>
-    <string name="session_bell_mute_tomorrow">Bis morgen früh nichts</string>
-    <string name="session_bell_use_default">Einstellung für dieses Gerät entfernen</string>
-    <string name="session_bell_source_own">Nur für dieses Gerät festgelegt.</string>
-    <string name="session_bell_source_own_until">Nur für dieses Gerät festgelegt, bis %1$s.</string>
-    <string name="session_bell_source_default">Auswahl dieses Geräts für den Server. Wähle eine Option, um sie für diese Sitzung zu ändern.</string>
-    <string name="session_bell_source_shared">Von einem anderen Gerät festgelegt. Wähle eine Option, um es für dieses Gerät zu ändern.</string>
-    <string name="session_bell_source_shared_until">Von einem anderen Gerät bis %1$s festgelegt. Wähle eine Option, um es für dieses Gerät zu ändern.</string>
-    <string name="session_bell_source_phone_paused">Dieses Gerät ist in den Einstellungen pausiert.</string>
-    <string name="session_bell_source_server_paused">Alle Benachrichtigungen von diesem Server sind pausiert.</string>
-    <string name="session_bell_source_server_paused_until">Alle Benachrichtigungen von diesem Server sind bis %1$s pausiert.</string>
-    <string name="session_sheet_bell_failed_title">Benachrichtigungen konnten nicht geändert werden</string>
-    <string name="session_sheet_bell_failed_message">Der Server hat die Änderung nicht übernommen.</string>
 </resources>

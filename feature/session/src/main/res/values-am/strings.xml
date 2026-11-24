@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">በመጫን ላይ…</string>
     <string name="session_media_earlier_failed">የቀደሙ መልእክቶችን መጫን አልተቻለም። ግንኙነትዎን ይፈትሹና እንደገና ይሞክሩ።</string>
     <string name="session_media_earlier_nothing_new">አሁን በተጫኑት መልእክቶች ውስጥ አዲስ ነገር የለም። የቀደሙት ተጨማሪ ሊኖራቸው ይችላል።</string>
-    <string name="session_bell_title">ማሳወቂያዎች</string>
-    <string name="session_bell_level_all">ሁሉም ነገር</string>
-    <string name="session_bell_level_attention">እኔን ሲፈልገኝ ብቻ</string>
-    <string name="session_bell_level_none">ምንም</string>
-    <string name="session_bell_mute_hour">ለአንድ ሰዓት ምንም</string>
-    <string name="session_bell_mute_tomorrow">እስከ ነገ ጠዋት ምንም</string>
-    <string name="session_bell_use_default">የዚህን መሣሪያ ቅንብር አስወግድ</string>
-    <string name="session_bell_source_own">ለዚህ መሣሪያ ብቻ ተቀናብሯል።</string>
-    <string name="session_bell_source_own_until">ለዚህ መሣሪያ ብቻ እስከ %1$s ድረስ ተቀናብሯል።</string>
-    <string name="session_bell_source_default">ለአገልጋዩ የዚህ መሣሪያ ምርጫ ነው። ለዚህ ክፍለ ጊዜ ለመቀየር አንዱን ምረጥ።</string>
-    <string name="session_bell_source_shared">ከሌላ መሣሪያ ተቀናብሯል። ለዚህ መሣሪያ ለመቀየር አንዱን ምረጥ።</string>
-    <string name="session_bell_source_shared_until">ከሌላ መሣሪያ እስከ %1$s ድረስ ተቀናብሯል። ለዚህ መሣሪያ ለመቀየር አንዱን ምረጥ።</string>
-    <string name="session_bell_source_phone_paused">ይህ መሣሪያ በቅንብሮች ውስጥ ለአፍታ ቆሟል።</string>
-    <string name="session_bell_source_server_paused">ከዚህ አገልጋይ የሚመጡ ሁሉም ማሳወቂያዎች ለአፍታ ቆመዋል።</string>
-    <string name="session_bell_source_server_paused_until">ከዚህ አገልጋይ የሚመጡ ሁሉም ማሳወቂያዎች እስከ %1$s ለአፍታ ቆመዋል።</string>
-    <string name="session_sheet_bell_failed_title">ማሳወቂያዎችን መቀየር አልተቻለም</string>
-    <string name="session_sheet_bell_failed_message">አገልጋዩ ለውጡን አልተቀበለም።</string>
 </resources>

@@ -308,21 +308,4 @@
     <string name="session_media_loading_earlier">กำลังโหลด…</string>
     <string name="session_media_earlier_failed">โหลดข้อความก่อนหน้าไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง</string>
     <string name="session_media_earlier_nothing_new">ข้อความที่เพิ่งโหลดไม่มีอะไรใหม่ ข้อความก่อนหน้าอาจมีเพิ่มเติม</string>
-    <string name="session_bell_title">การแจ้งเตือน</string>
-    <string name="session_bell_level_all">ทุกอย่าง</string>
-    <string name="session_bell_level_attention">เฉพาะเมื่อต้องให้คุณช่วย</string>
-    <string name="session_bell_level_none">ไม่แจ้งเตือน</string>
-    <string name="session_bell_mute_hour">ไม่แจ้งเตือน 1 ชั่วโมง</string>
-    <string name="session_bell_mute_tomorrow">ไม่แจ้งเตือนจนถึงพรุ่งนี้เช้า</string>
-    <string name="session_bell_use_default">เอาการตั้งค่าของอุปกรณ์นี้ออก</string>
-    <string name="session_bell_source_own">ตั้งไว้สำหรับอุปกรณ์นี้เท่านั้น</string>
-    <string name="session_bell_source_own_until">ตั้งไว้สำหรับอุปกรณ์นี้เท่านั้น จนถึง %1$s</string>
-    <string name="session_bell_source_default">ตัวเลือกของอุปกรณ์นี้สำหรับเซิร์ฟเวอร์ เลือกหนึ่งรายการเพื่อเปลี่ยนสำหรับเซสชันนี้</string>
-    <string name="session_bell_source_shared">ตั้งไว้จากอุปกรณ์อื่น เลือกหนึ่งรายการเพื่อเปลี่ยนสำหรับอุปกรณ์นี้</string>
-    <string name="session_bell_source_shared_until">ตั้งไว้จากอุปกรณ์อื่นจนถึง %1$s เลือกหนึ่งรายการเพื่อเปลี่ยนสำหรับอุปกรณ์นี้</string>
-    <string name="session_bell_source_phone_paused">อุปกรณ์นี้ถูกหยุดชั่วคราวไว้ในการตั้งค่า</string>
-    <string name="session_bell_source_server_paused">การแจ้งเตือนทั้งหมดจากเซิร์ฟเวอร์นี้หยุดชั่วคราวอยู่</string>
-    <string name="session_bell_source_server_paused_until">การแจ้งเตือนทั้งหมดจากเซิร์ฟเวอร์นี้หยุดชั่วคราวจนถึง %1$s</string>
-    <string name="session_sheet_bell_failed_title">เปลี่ยนการแจ้งเตือนไม่ได้</string>
-    <string name="session_sheet_bell_failed_message">เซิร์ฟเวอร์ไม่รับการเปลี่ยนแปลงนี้</string>
 </resources>

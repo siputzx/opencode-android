@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Φόρτωση…</string>
     <string name="session_media_earlier_failed">Αδυναμία φόρτωσης προηγούμενων μηνυμάτων. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.</string>
     <string name="session_media_earlier_nothing_new">Δεν υπάρχει κάτι νέο στα μηνύματα που μόλις φορτώθηκαν. Τα προηγούμενα μπορεί να έχουν περισσότερα.</string>
-    <string name="session_bell_title">Ειδοποιήσεις</string>
-    <string name="session_bell_level_all">Τα πάντα</string>
-    <string name="session_bell_level_attention">Μόνο όταν με χρειάζεται</string>
-    <string name="session_bell_level_none">Τίποτα</string>
-    <string name="session_bell_mute_hour">Τίποτα για μία ώρα</string>
-    <string name="session_bell_mute_tomorrow">Τίποτα μέχρι αύριο το πρωί</string>
-    <string name="session_bell_use_default">Αφαίρεση ρύθμισης αυτής της συσκευής</string>
-    <string name="session_bell_source_own">Ορίστηκε μόνο για αυτή τη συσκευή.</string>
-    <string name="session_bell_source_own_until">Ορίστηκε μόνο για αυτή τη συσκευή, μέχρι %1$s.</string>
-    <string name="session_bell_source_default">Η επιλογή αυτής της συσκευής για τον διακομιστή. Επιλέξτε μία για να την αλλάξετε για αυτή τη συνεδρία.</string>
-    <string name="session_bell_source_shared">Ορίστηκε από άλλη συσκευή. Διαλέξτε μια επιλογή για να την αλλάξετε για αυτή τη συσκευή.</string>
-    <string name="session_bell_source_shared_until">Ορίστηκε από άλλη συσκευή μέχρι %1$s. Διαλέξτε μια επιλογή για να την αλλάξετε για αυτή τη συσκευή.</string>
-    <string name="session_bell_source_phone_paused">Αυτή η συσκευή είναι σε παύση στις Ρυθμίσεις.</string>
-    <string name="session_bell_source_server_paused">Όλες οι ειδοποιήσεις από αυτόν τον διακομιστή είναι σε παύση.</string>
-    <string name="session_bell_source_server_paused_until">Όλες οι ειδοποιήσεις από αυτόν τον διακομιστή είναι σε παύση έως %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Αδυναμία αλλαγής ειδοποιήσεων</string>
-    <string name="session_sheet_bell_failed_message">Ο διακομιστής δεν δέχτηκε την αλλαγή.</string>
 </resources>

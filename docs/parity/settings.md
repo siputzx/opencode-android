@@ -52,7 +52,7 @@ Status values: `todo`, `partial: <what is missing>`, `done`, `n/a: <reason and w
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-06-01-voice-messages.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-06-01-voice-messages.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-07-01-attachment-menu-hold.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-07-01-attachment-menu-hold.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-08-01-voice-webrtc-weak-connection.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-01-voice-webrtc-weak-connection.kt` | done |  |
-| `OpenCode/Settings/WhatsNew/Entries/2026-10-08-02-mute-sessions.swift` | 3 | — | n/a | Android differs on purpose: session Mute is removed and the Notifications bell replaces it. |
+| `OpenCode/Settings/WhatsNew/Entries/2026-10-08-02-mute-sessions.swift` | 3 | — | n/a | Android differs on purpose: session Mute is removed. |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-08-03-pair-from-anywhere.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-03-pair-from-anywhere.kt` | done | Android copy: “on your phone” |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-08-04-drawer-peek.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-04-drawer-peek.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-08-05-dictation-keeps-going.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-05-dictation-keeps-going.kt` | done |  |
@@ -60,7 +60,7 @@ Status values: `todo`, `partial: <what is missing>`, `done`, `n/a: <reason and w
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-09-01-working-orb.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-01-working-orb.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-09-02-shell-glyph.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-02-shell-glyph.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-09-03-math-and-diagrams.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-03-math-and-diagrams.kt` | done |  |
-| `OpenCode/Settings/WhatsNew/Entries/2026-10-09-04-always-notify.swift` | 3 | — | n/a | Android differs on purpose: Always Notify is removed and the Notifications bell replaces it. |
+| `OpenCode/Settings/WhatsNew/Entries/2026-10-09-04-always-notify.swift` | 3 | — | n/a | Android differs on purpose: Always Notify is removed. |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-09-05-server-switcher.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-05-server-switcher.kt` | done | Android copy: “this phone” |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-10-01-share-opened-files.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-10-01-share-opened-files.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-10-02-call-voice.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-10-02-call-voice.kt` | done | Android copy: the call’s notification (on the Lock Screen too) for the Lock Screen and Dynamic Island |

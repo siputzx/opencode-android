@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Ladataan…</string>
     <string name="session_media_earlier_failed">Aiempien viestien lataus epäonnistui. Tarkista yhteytesi ja yritä uudelleen.</string>
     <string name="session_media_earlier_nothing_new">Juuri ladatuissa viesteissä ei ole mitään uutta. Aiemmissa voi olla lisää.</string>
-    <string name="session_bell_title">Ilmoitukset</string>
-    <string name="session_bell_level_all">Kaikki</string>
-    <string name="session_bell_level_attention">Vain kun minua tarvitaan</string>
-    <string name="session_bell_level_none">Ei mitään</string>
-    <string name="session_bell_mute_hour">Ei mitään tuntiin</string>
-    <string name="session_bell_mute_tomorrow">Ei mitään huomisaamuun asti</string>
-    <string name="session_bell_use_default">Poista tämän laitteen asetus</string>
-    <string name="session_bell_source_own">Asetettu vain tälle laitteelle.</string>
-    <string name="session_bell_source_own_until">Asetettu vain tälle laitteelle %1$s asti.</string>
-    <string name="session_bell_source_default">Tämän laitteen valinta palvelimelle. Valitse vaihtoehto muuttaaksesi asetuksen tälle istunnolle.</string>
-    <string name="session_bell_source_shared">Asetettu toiselta laitteelta. Valitse vaihtoehto muuttaaksesi asetuksen tälle laitteelle.</string>
-    <string name="session_bell_source_shared_until">Asetettu toiselta laitteelta %1$s asti. Valitse vaihtoehto muuttaaksesi asetuksen tälle laitteelle.</string>
-    <string name="session_bell_source_phone_paused">Tämä laite on keskeytetty asetuksissa.</string>
-    <string name="session_bell_source_server_paused">Kaikki tämän palvelimen ilmoitukset on keskeytetty.</string>
-    <string name="session_bell_source_server_paused_until">Kaikki tämän palvelimen ilmoitukset on keskeytetty %1$s asti.</string>
-    <string name="session_sheet_bell_failed_title">Ilmoitusten muuttaminen epäonnistui</string>
-    <string name="session_sheet_bell_failed_message">Palvelin ei hyväksynyt muutosta.</string>
 </resources>

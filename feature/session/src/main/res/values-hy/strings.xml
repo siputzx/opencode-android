@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Բեռնվում է…</string>
     <string name="session_media_earlier_failed">Չհաջողվեց բեռնել նախորդ հաղորդագրությունները։ Ստուգեք կապը և կրկին փորձեք։</string>
     <string name="session_media_earlier_nothing_new">Հենց բեռնված հաղորդագրություններում նոր ոչինչ չկա։ Նախորդներում կարող է ավելին լինել։</string>
-    <string name="session_bell_title">Ծանուցումներ</string>
-    <string name="session_bell_level_all">Ամեն ինչ</string>
-    <string name="session_bell_level_attention">Միայն երբ իմ կարիքն ունի</string>
-    <string name="session_bell_level_none">Ոչինչ</string>
-    <string name="session_bell_mute_hour">Ոչինչ մեկ ժամով</string>
-    <string name="session_bell_mute_tomorrow">Ոչինչ մինչև վաղը առավոտ</string>
-    <string name="session_bell_use_default">Հեռացնել այս սարքի կարգավորումը</string>
-    <string name="session_bell_source_own">Սահմանված է միայն այս սարքի համար։</string>
-    <string name="session_bell_source_own_until">Սահմանված է միայն այս սարքի համար՝ մինչև %1$s։</string>
-    <string name="session_bell_source_default">Այս սարքի ընտրությունն է սերվերի համար։ Ընտրեք մեկը՝ այս նիստում փոխելու համար։</string>
-    <string name="session_bell_source_shared">Սահմանված է այլ սարքից։ Ընտրեք մեկը՝ այս սարքում փոխելու համար։</string>
-    <string name="session_bell_source_shared_until">Սահմանված է այլ սարքից մինչև %1$s։ Ընտրեք մեկը՝ այս սարքում փոխելու համար։</string>
-    <string name="session_bell_source_phone_paused">Այս սարքը դադարեցված է կարգավորումներում։</string>
-    <string name="session_bell_source_server_paused">Այս սերվերի բոլոր ծանուցումները դադարեցված են։</string>
-    <string name="session_bell_source_server_paused_until">Այս սերվերի բոլոր ծանուցումները դադարեցված են մինչև %1$s։</string>
-    <string name="session_sheet_bell_failed_title">Չհաջողվեց փոխել ծանուցումները</string>
-    <string name="session_sheet_bell_failed_message">Սերվերը չընդունեց փոփոխությունը։</string>
 </resources>

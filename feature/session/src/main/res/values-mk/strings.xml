@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Се вчитува…</string>
     <string name="session_media_earlier_failed">Претходните пораки не се вчитаа. Провери ја врската и обиди се повторно.</string>
     <string name="session_media_earlier_nothing_new">Нема ништо ново во штотуку вчитаните пораки. Претходните може да имаат повеќе.</string>
-    <string name="session_bell_title">Известувања</string>
-    <string name="session_bell_level_all">Сѐ</string>
-    <string name="session_bell_level_attention">Само кога бара внимание</string>
-    <string name="session_bell_level_none">Ништо</string>
-    <string name="session_bell_mute_hour">Ништо на еден час</string>
-    <string name="session_bell_mute_tomorrow">Ништо до утре наутро</string>
-    <string name="session_bell_use_default">Отстрани ја поставката за овој уред</string>
-    <string name="session_bell_source_own">Поставено само за овој уред.</string>
-    <string name="session_bell_source_own_until">Поставено само за овој уред, до %1$s.</string>
-    <string name="session_bell_source_default">Изборот на овој уред за серверот. Избери опција за да го смениш за оваа сесија.</string>
-    <string name="session_bell_source_shared">Поставено од друг уред. Избери опција за да го смениш за овој уред.</string>
-    <string name="session_bell_source_shared_until">Поставено од друг уред до %1$s. Избери опција за да го смениш за овој уред.</string>
-    <string name="session_bell_source_phone_paused">Овој уред е паузиран во Поставки.</string>
-    <string name="session_bell_source_server_paused">Сите известувања од овој сервер се паузирани.</string>
-    <string name="session_bell_source_server_paused_until">Сите известувања од овој сервер се паузирани до %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Не успеа промената на известувањата</string>
-    <string name="session_sheet_bell_failed_message">Серверот не ја прифати промената.</string>
 </resources>

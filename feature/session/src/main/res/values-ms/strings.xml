@@ -308,21 +308,4 @@
     <string name="session_media_loading_earlier">Memuatkan…</string>
     <string name="session_media_earlier_failed">Tidak dapat memuatkan mesej terdahulu. Semak sambungan anda dan cuba lagi.</string>
     <string name="session_media_earlier_nothing_new">Tiada yang baharu dalam mesej yang baru dimuatkan. Mesej terdahulu mungkin ada lebih banyak.</string>
-    <string name="session_bell_title">Notifikasi</string>
-    <string name="session_bell_level_all">Semuanya</string>
-    <string name="session_bell_level_attention">Hanya apabila saya diperlukan</string>
-    <string name="session_bell_level_none">Tiada</string>
-    <string name="session_bell_mute_hour">Tiada selama sejam</string>
-    <string name="session_bell_mute_tomorrow">Tiada sehingga esok pagi</string>
-    <string name="session_bell_use_default">Alih keluar tetapan peranti ini</string>
-    <string name="session_bell_source_own">Ditetapkan untuk peranti ini sahaja.</string>
-    <string name="session_bell_source_own_until">Ditetapkan untuk peranti ini sahaja, sehingga %1$s.</string>
-    <string name="session_bell_source_default">Pilihan peranti ini untuk pelayan. Pilih satu untuk mengubahnya bagi sesi ini.</string>
-    <string name="session_bell_source_shared">Ditetapkan dari peranti lain. Pilih satu untuk mengubahnya bagi peranti ini.</string>
-    <string name="session_bell_source_shared_until">Ditetapkan dari peranti lain sehingga %1$s. Pilih satu untuk mengubahnya bagi peranti ini.</string>
-    <string name="session_bell_source_phone_paused">Peranti ini dijeda dalam Tetapan.</string>
-    <string name="session_bell_source_server_paused">Semua notifikasi daripada pelayan ini dijeda.</string>
-    <string name="session_bell_source_server_paused_until">Semua notifikasi daripada pelayan ini dijeda sehingga %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Tidak dapat mengubah notifikasi</string>
-    <string name="session_sheet_bell_failed_message">Pelayan tidak menerima perubahan ini.</string>
 </resources>

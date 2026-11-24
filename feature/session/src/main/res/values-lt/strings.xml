@@ -344,21 +344,4 @@
     <string name="session_media_loading_earlier">Įkeliama…</string>
     <string name="session_media_earlier_failed">Nepavyko įkelti ankstesnių žinučių. Patikrinkite ryšį ir bandykite dar kartą.</string>
     <string name="session_media_earlier_nothing_new">Ką tik įkeltose žinutėse nieko naujo. Ankstesnėse gali būti daugiau.</string>
-    <string name="session_bell_title">Pranešimai</string>
-    <string name="session_bell_level_all">Viskas</string>
-    <string name="session_bell_level_attention">Tik kai manęs reikia</string>
-    <string name="session_bell_level_none">Nieko</string>
-    <string name="session_bell_mute_hour">Nieko valandą</string>
-    <string name="session_bell_mute_tomorrow">Nieko iki rytojaus ryto</string>
-    <string name="session_bell_use_default">Pašalinti šio įrenginio nustatymą</string>
-    <string name="session_bell_source_own">Nustatyta tik šiam įrenginiui.</string>
-    <string name="session_bell_source_own_until">Nustatyta tik šiam įrenginiui, iki %1$s.</string>
-    <string name="session_bell_source_default">Šio įrenginio pasirinkimas serveriui. Pasirinkite, kad pakeistumėte šiam seansui.</string>
-    <string name="session_bell_source_shared">Nustatyta iš kito įrenginio. Pasirinkite, kad pakeistumėte šiam įrenginiui.</string>
-    <string name="session_bell_source_shared_until">Nustatyta iš kito įrenginio iki %1$s. Pasirinkite, kad pakeistumėte šiam įrenginiui.</string>
-    <string name="session_bell_source_phone_paused">Šis įrenginys pristabdytas nustatymuose.</string>
-    <string name="session_bell_source_server_paused">Visi šio serverio pranešimai pristabdyti.</string>
-    <string name="session_bell_source_server_paused_until">Visi šio serverio pranešimai pristabdyti iki %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Nepavyko pakeisti pranešimų</string>
-    <string name="session_sheet_bell_failed_message">Serveris nepriėmė pakeitimo.</string>
 </resources>

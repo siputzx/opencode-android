@@ -332,21 +332,4 @@
     <string name="session_media_loading_earlier">Cargando…</string>
     <string name="session_media_earlier_failed">No se pudieron cargar los mensajes anteriores. Comprueba tu conexión y vuelve a intentarlo.</string>
     <string name="session_media_earlier_nothing_new">No hay nada nuevo en los mensajes recién cargados. Puede que los anteriores tengan más.</string>
-    <string name="session_bell_title">Notificaciones</string>
-    <string name="session_bell_level_all">Todo</string>
-    <string name="session_bell_level_attention">Solo cuando me necesite</string>
-    <string name="session_bell_level_none">Nada</string>
-    <string name="session_bell_mute_hour">Nada durante una hora</string>
-    <string name="session_bell_mute_tomorrow">Nada hasta mañana por la mañana</string>
-    <string name="session_bell_use_default">Quitar el ajuste de este dispositivo</string>
-    <string name="session_bell_source_own">Configurado solo para este dispositivo.</string>
-    <string name="session_bell_source_own_until">Configurado solo para este dispositivo, hasta %1$s.</string>
-    <string name="session_bell_source_default">Opción de este dispositivo para el servidor. Elige una para cambiarla en esta sesión.</string>
-    <string name="session_bell_source_shared">Configurado desde otro dispositivo. Elige una opción para cambiarlo en este dispositivo.</string>
-    <string name="session_bell_source_shared_until">Configurado desde otro dispositivo hasta %1$s. Elige una opción para cambiarlo en este dispositivo.</string>
-    <string name="session_bell_source_phone_paused">Este dispositivo está en pausa en Ajustes.</string>
-    <string name="session_bell_source_server_paused">Todas las notificaciones de este servidor están en pausa.</string>
-    <string name="session_bell_source_server_paused_until">Todas las notificaciones de este servidor están en pausa hasta %1$s.</string>
-    <string name="session_sheet_bell_failed_title">No se pudieron cambiar las notificaciones</string>
-    <string name="session_sheet_bell_failed_message">El servidor no aceptó el cambio.</string>
 </resources>

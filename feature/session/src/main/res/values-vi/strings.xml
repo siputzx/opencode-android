@@ -308,21 +308,4 @@
     <string name="session_media_loading_earlier">Đang tải…</string>
     <string name="session_media_earlier_failed">Không thể tải các tin nhắn trước đó. Hãy kiểm tra kết nối và thử lại.</string>
     <string name="session_media_earlier_nothing_new">Không có gì mới trong các tin nhắn vừa tải. Các tin nhắn trước đó có thể còn nhiều nội dung hơn.</string>
-    <string name="session_bell_title">Thông báo</string>
-    <string name="session_bell_level_all">Mọi thứ</string>
-    <string name="session_bell_level_attention">Chỉ khi cần tôi</string>
-    <string name="session_bell_level_none">Không thông báo</string>
-    <string name="session_bell_mute_hour">Không thông báo trong 1 giờ</string>
-    <string name="session_bell_mute_tomorrow">Không thông báo đến sáng mai</string>
-    <string name="session_bell_use_default">Xóa cài đặt của thiết bị này</string>
-    <string name="session_bell_source_own">Chỉ đặt cho thiết bị này.</string>
-    <string name="session_bell_source_own_until">Chỉ đặt cho thiết bị này, đến %1$s.</string>
-    <string name="session_bell_source_default">Lựa chọn của thiết bị này cho máy chủ. Chọn một mục để đổi cho phiên này.</string>
-    <string name="session_bell_source_shared">Đã đặt từ thiết bị khác. Chọn một mục để đổi cho thiết bị này.</string>
-    <string name="session_bell_source_shared_until">Đã đặt từ thiết bị khác đến %1$s. Chọn một mục để đổi cho thiết bị này.</string>
-    <string name="session_bell_source_phone_paused">Thiết bị này đang tạm dừng trong Cài đặt.</string>
-    <string name="session_bell_source_server_paused">Tất cả thông báo từ máy chủ này đang tạm dừng.</string>
-    <string name="session_bell_source_server_paused_until">Tất cả thông báo từ máy chủ này đang tạm dừng đến %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Không thể thay đổi thông báo</string>
-    <string name="session_sheet_bell_failed_message">Máy chủ không nhận thay đổi này.</string>
 </resources>

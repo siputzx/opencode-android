@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Betöltés…</string>
     <string name="session_media_earlier_failed">Nem sikerült betölteni a korábbi üzeneteket. Ellenőrizze a kapcsolatot, és próbálja újra.</string>
     <string name="session_media_earlier_nothing_new">Az imént betöltött üzenetek között nincs semmi új. A korábbiakban lehet még több.</string>
-    <string name="session_bell_title">Értesítések</string>
-    <string name="session_bell_level_all">Mindent</string>
-    <string name="session_bell_level_attention">Csak ha rám van szükség</string>
-    <string name="session_bell_level_none">Semmit</string>
-    <string name="session_bell_mute_hour">Egy óráig semmit</string>
-    <string name="session_bell_mute_tomorrow">Holnap reggelig semmit</string>
-    <string name="session_bell_use_default">Ezen eszköz beállításának eltávolítása</string>
-    <string name="session_bell_source_own">Csak erre az eszközre beállítva.</string>
-    <string name="session_bell_source_own_until">Csak erre az eszközre beállítva, eddig: %1$s.</string>
-    <string name="session_bell_source_default">Ezen eszköz beállítása a kiszolgálóhoz. Válasszon egyet, ha ehhez a munkamenethez módosítani szeretné.</string>
-    <string name="session_bell_source_shared">Másik eszközről beállítva. Válasszon egyet, ha ezen az eszközön módosítani szeretné.</string>
-    <string name="session_bell_source_shared_until">Másik eszközről beállítva, eddig: %1$s. Válasszon egyet, ha ezen az eszközön módosítani szeretné.</string>
-    <string name="session_bell_source_phone_paused">Ez az eszköz szüneteltetve van a Beállításokban.</string>
-    <string name="session_bell_source_server_paused">Erről a kiszolgálóról minden értesítés szüneteltetve van.</string>
-    <string name="session_bell_source_server_paused_until">Erről a kiszolgálóról minden értesítés szüneteltetve van eddig: %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Nem sikerült módosítani az értesítéseket</string>
-    <string name="session_sheet_bell_failed_message">A kiszolgáló nem fogadta el a módosítást.</string>
 </resources>

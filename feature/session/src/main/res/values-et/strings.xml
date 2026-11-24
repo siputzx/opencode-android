@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Laadimine…</string>
     <string name="session_media_earlier_failed">Varasemate sõnumite laadimine ebaõnnestus. Kontrolli ühendust ja proovi uuesti.</string>
     <string name="session_media_earlier_nothing_new">Äsja laaditud sõnumites pole siin midagi uut. Varasemates võib veel olla.</string>
-    <string name="session_bell_title">Teavitused</string>
-    <string name="session_bell_level_all">Kõik</string>
-    <string name="session_bell_level_attention">Ainult siis, kui mind on vaja</string>
-    <string name="session_bell_level_none">Mitte midagi</string>
-    <string name="session_bell_mute_hour">Mitte midagi tund aega</string>
-    <string name="session_bell_mute_tomorrow">Mitte midagi kuni homse hommikuni</string>
-    <string name="session_bell_use_default">Eemalda selle seadme seadistus</string>
-    <string name="session_bell_source_own">Määratud ainult sellele seadmele.</string>
-    <string name="session_bell_source_own_until">Määratud ainult sellele seadmele kuni %1$s.</string>
-    <string name="session_bell_source_default">Selle seadme valik serveri jaoks. Vali sobiv, et muuta seda selle seansi jaoks.</string>
-    <string name="session_bell_source_shared">Määratud teisest seadmest. Vali sobiv, et muuta seda selle seadme jaoks.</string>
-    <string name="session_bell_source_shared_until">Määratud teisest seadmest kuni %1$s. Vali sobiv, et muuta seda selle seadme jaoks.</string>
-    <string name="session_bell_source_phone_paused">See seade on seadetes peatatud.</string>
-    <string name="session_bell_source_server_paused">Kõik selle serveri teavitused on peatatud.</string>
-    <string name="session_bell_source_server_paused_until">Kõik selle serveri teavitused on peatatud kuni %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Teavituste muutmine ebaõnnestus</string>
-    <string name="session_sheet_bell_failed_message">Server ei võtnud muudatust vastu.</string>
 </resources>

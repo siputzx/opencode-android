@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Po ngarkohet…</string>
     <string name="session_media_earlier_failed">Mesazhet e mëparshme nuk u ngarkuan dot. Kontrollo lidhjen dhe provo sërish.</string>
     <string name="session_media_earlier_nothing_new">Asgjë e re te mesazhet që sapo u ngarkuan. Të mëparshmet mund të kenë më shumë.</string>
-    <string name="session_bell_title">Njoftimet</string>
-    <string name="session_bell_level_all">Gjithçka</string>
-    <string name="session_bell_level_attention">Vetëm kur ka nevojë për mua</string>
-    <string name="session_bell_level_none">Asgjë</string>
-    <string name="session_bell_mute_hour">Asgjë për një orë</string>
-    <string name="session_bell_mute_tomorrow">Asgjë deri nesër në mëngjes</string>
-    <string name="session_bell_use_default">Hiq cilësimin e kësaj pajisjeje</string>
-    <string name="session_bell_source_own">Caktuar vetëm për këtë pajisje.</string>
-    <string name="session_bell_source_own_until">Caktuar vetëm për këtë pajisje, deri në %1$s.</string>
-    <string name="session_bell_source_default">Zgjedhja e kësaj pajisjeje për serverin. Zgjidh një opsion për ta ndryshuar për këtë sesion.</string>
-    <string name="session_bell_source_shared">Caktuar nga një pajisje tjetër. Zgjidh një opsion për ta ndryshuar për këtë pajisje.</string>
-    <string name="session_bell_source_shared_until">Caktuar nga një pajisje tjetër deri në %1$s. Zgjidh një opsion për ta ndryshuar për këtë pajisje.</string>
-    <string name="session_bell_source_phone_paused">Kjo pajisje është në pauzë te Cilësimet.</string>
-    <string name="session_bell_source_server_paused">Të gjitha njoftimet nga ky server janë në pauzë.</string>
-    <string name="session_bell_source_server_paused_until">Të gjitha njoftimet nga ky server janë në pauzë deri në %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Nuk u ndryshuan dot njoftimet</string>
-    <string name="session_sheet_bell_failed_message">Serveri nuk e pranoi ndryshimin.</string>
 </resources>

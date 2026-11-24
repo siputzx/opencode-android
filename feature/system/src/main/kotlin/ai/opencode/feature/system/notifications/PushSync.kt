@@ -83,22 +83,6 @@ data class PushServer(
             return null
         }
 
-    /** The copy with this phone's own bell on [sessionID] set, or removed when [bell] is null. */
-    fun withOwnBell(sessionID: String, bell: OpenCodePushBell?): PushServer {
-        val state = state ?: return this
-        val devices = mutableListOf<OpenCodePushDevice>()
-        for (device in state.devices) {
-            if (device.id != deviceID) {
-                devices.add(device)
-                continue
-            }
-            val sessions = device.sessions.toMutableMap()
-            if (bell == null) sessions.remove(sessionID) else sessions[sessionID] = bell
-            devices.add(device.copy(sessions = sessions))
-        }
-        return copy(state = state.copy(devices = devices))
-    }
-
     fun withDevicePaused(id: String, paused: Boolean): PushServer {
         val state = state ?: return this
         val devices = mutableListOf<OpenCodePushDevice>()
@@ -123,7 +107,7 @@ data class PushServer(
     }
 }
 
-/** How long a bell or a pause lasts. */
+/** How long a pause lasts. */
 enum class PushDuration {
     forever, hour, tomorrowMorning;
 
@@ -139,31 +123,11 @@ object PushSharedKeys {
     /** Server persistence ID → this phone's choices. */
     val choices = SharedKey.appStorage("push-server-choices", emptyMap<String, PushChoice>())
 
-    /** Server persistence ID → the server's copy, written by the drawer, Settings and the session sheet. */
+    /** Server persistence ID → the server's copy, written by the drawer and Settings. */
     val servers = SharedKey.inMemory("push-servers", emptyMap<String, PushServer>())
 }
 
-/** Where a session's bell comes from, in the order the server applies them. */
-enum class PushBellSource { ServerPaused, PhonePaused, ThisPhone, Shared, PhoneDefault }
-
-data class PushBellState(val level: OpenCodePushLevel, val until: Long?, val source: PushBellSource)
-
 object PushBells {
-    /** What this phone hears from [sessionID]; null until the server's copy has this phone. */
-    fun effective(server: PushServer, sessionID: String, now: Long): PushBellState? {
-        val state = server.state ?: return null
-        val device = server.device ?: return null
-        if (state.paused && isActive(state.pausedUntil, now)) {
-            return PushBellState(OpenCodePushLevel.none, state.pausedUntil, PushBellSource.ServerPaused)
-        }
-        if (device.paused) return PushBellState(OpenCodePushLevel.none, null, PushBellSource.PhonePaused)
-        val own = device.sessions[sessionID]
-        if (own != null && isActive(own.until, now)) return PushBellState(own.level, own.until, PushBellSource.ThisPhone)
-        val shared = state.sessions[sessionID]
-        if (shared != null && isActive(shared.until, now)) return PushBellState(shared.level, shared.until, PushBellSource.Shared)
-        return PushBellState(device.defaultLevel, null, PushBellSource.PhoneDefault)
-    }
-
     fun isActive(until: Long?, now: Long): Boolean = until == null || until > now
 }
 

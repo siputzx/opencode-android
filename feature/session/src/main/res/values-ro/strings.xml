@@ -332,21 +332,4 @@
     <string name="session_media_loading_earlier">Se încarcă…</string>
     <string name="session_media_earlier_failed">Mesajele anterioare nu s-au putut încărca. Verifică conexiunea și încearcă din nou.</string>
     <string name="session_media_earlier_nothing_new">Nimic nou în mesajele tocmai încărcate. Cele anterioare ar putea avea mai mult.</string>
-    <string name="session_bell_title">Notificări</string>
-    <string name="session_bell_level_all">Totul</string>
-    <string name="session_bell_level_attention">Doar când e nevoie de mine</string>
-    <string name="session_bell_level_none">Nimic</string>
-    <string name="session_bell_mute_hour">Nimic timp de o oră</string>
-    <string name="session_bell_mute_tomorrow">Nimic până mâine dimineață</string>
-    <string name="session_bell_use_default">Elimină setarea acestui dispozitiv</string>
-    <string name="session_bell_source_own">Setat doar pentru acest dispozitiv.</string>
-    <string name="session_bell_source_own_until">Setat doar pentru acest dispozitiv, până la %1$s.</string>
-    <string name="session_bell_source_default">Opțiunea acestui dispozitiv pentru server. Alege una pentru a schimba setarea acestei sesiuni.</string>
-    <string name="session_bell_source_shared">Setat de pe alt dispozitiv. Alege o opțiune pentru a schimba setarea acestui dispozitiv.</string>
-    <string name="session_bell_source_shared_until">Setat de pe alt dispozitiv până la %1$s. Alege o opțiune pentru a schimba setarea acestui dispozitiv.</string>
-    <string name="session_bell_source_phone_paused">Acest dispozitiv este în pauză în Setări.</string>
-    <string name="session_bell_source_server_paused">Toate notificările de la acest server sunt în pauză.</string>
-    <string name="session_bell_source_server_paused_until">Toate notificările de la acest server sunt în pauză până la %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Nu s-au putut schimba notificările</string>
-    <string name="session_sheet_bell_failed_message">Serverul nu a acceptat modificarea.</string>
 </resources>

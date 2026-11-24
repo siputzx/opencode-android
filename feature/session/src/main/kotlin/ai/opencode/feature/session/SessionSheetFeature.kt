@@ -2,13 +2,11 @@ package ai.opencode.feature.session
 
 import ai.opencode.core.strings.localized
 import ai.opencode.core.dependencies.Clock
-import ai.opencode.core.dependencies.DateClient
 import ai.opencode.core.dependencies.PasteboardClient
 import ai.opencode.core.dependencies.UuidClient
 import ai.opencode.core.dependencies.dependency
 import ai.opencode.core.haptics.Haptic
 import ai.opencode.core.haptics.HapticsClient
-import ai.opencode.core.sharing.shared
 import ai.opencode.core.store.Effect
 import ai.opencode.core.store.Reduced
 import ai.opencode.core.store.Reducer
@@ -16,22 +14,14 @@ import ai.opencode.core.store.cancellable
 import ai.opencode.feature.session.sheet.asClientError
 import ai.opencode.feature.session.sheet.clientError
 import ai.opencode.feature.session.sheet.clientResult
-import ai.opencode.feature.system.notifications.PushDuration
-import ai.opencode.feature.system.notifications.PushServer
-import ai.opencode.feature.system.notifications.PushSharedKeys
-import ai.opencode.feature.system.notifications.PushSync
 import ai.opencode.server.OpenCodeClient
 import ai.opencode.server.OpenCodeClientError
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.model.OpenCodeExportFormat
 import ai.opencode.server.model.OpenCodeModelRef
-import ai.opencode.server.model.OpenCodePushBell
-import ai.opencode.server.model.OpenCodePushState
-import ai.opencode.server.model.OpenCodePushLevel
 import ai.opencode.server.model.OpenCodeSession
 import ai.opencode.server.model.SessionTitle
 import kotlinx.coroutines.CancellationException
-import java.time.ZoneId
 import kotlin.time.Duration.Companion.milliseconds
 
 /**
@@ -98,10 +88,6 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         data object CopySessionIDTapped : Action
         data object PinTapped : Action
         data object ReadTapped : Action
-        /** This phone's own bell: a level for a while, or null to follow the phone's choice. */
-        data class BellChosen(val level: OpenCodePushLevel?, val duration: PushDuration) : Action
-        /** The server refused the bell shown as [after]; [fetched] is its copy, read again. */
-        data class BellRefused(val before: PushServer, val after: PushServer, val fetched: OpenCodePushState?) : Action
         data object DeleteTapped : Action
         data object DeleteConfirmed : Action
         data object FailureDismissed : Action
@@ -118,7 +104,7 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         data object DeleteSession : Delegate
     }
 
-    private enum class CancelID { AutoRenameFailure, Bell }
+    private enum class CancelID { AutoRenameFailure }
 
     override fun reduce(state: State, action: Action): Reduced<State, Action> {
         val haptics = dependency(HapticsClient)
@@ -287,43 +273,6 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
 
             Action.PinTapped -> Reduced(state, Effect.send(Action.Delegate(Delegate.TogglePin)))
             Action.ReadTapped -> Reduced(state, Effect.send(Action.Delegate(Delegate.ToggleRead)))
-
-            is Action.BellChosen -> {
-                val servers = shared(PushSharedKeys.servers)
-                val serverID = state.server.persistenceID
-                val current = servers.value[serverID] ?: return Reduced(state)
-                val device = current.device ?: return Reduced(state)
-                val previous = device.sessions[state.sessionID]
-                var bell: OpenCodePushBell? = null
-                if (action.level != null) {
-                    val until = action.duration.until(dependency(DateClient).now(), ZoneId.systemDefault())
-                    bell = OpenCodePushBell(action.level, until)
-                }
-                if (bell == previous) return Reduced(state)
-                val after = current.withOwnBell(state.sessionID, bell)
-                servers.update { it + (serverID to after) }
-                val (server, sessionID) = state.server to state.sessionID
-                Reduced(
-                    state,
-                    Effect.run<Action> { send ->
-                        val error = clientError { PushSync.setOwnBell(server, device.id, sessionID, bell) }
-                        if (error != null) send(Action.BellRefused(current, after, PushSync.fetchState(server)))
-                    }.cancellable(CancelID.Bell, cancelInFlight = true),
-                )
-            }
-
-            is Action.BellRefused -> {
-                val servers = shared(PushSharedKeys.servers)
-                val serverID = state.server.persistenceID
-                val current = servers.value[serverID]
-                if (current != null) {
-                    val restored = PushSync.afterRefusal(current, action.before, action.after, action.fetched)
-                    if (restored != current) servers.update { it + (serverID to restored) }
-                }
-                haptics.play(Haptic.error)
-                val failure = Failure(localized(R.string.session_sheet_bell_failed_title), localized(R.string.session_sheet_bell_failed_message))
-                Reduced(state.copy(failure = failure))
-            }
 
             Action.DeleteTapped -> Reduced(state.copy(confirmsDeletion = true))
             Action.DeleteConfirmed -> Reduced(state.copy(confirmsDeletion = false), Effect.send(Action.Delegate(Delegate.DeleteSession)))

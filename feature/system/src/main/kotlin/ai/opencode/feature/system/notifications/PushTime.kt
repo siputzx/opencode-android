@@ -10,7 +10,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import kotlinx.coroutines.delay
 
-/** The time in ms, read again as each of [untils] passes, so a pause or bell that ends stops showing. */
+/** The time in ms, read again as each of [untils] passes, so a pause that ends stops showing. */
 @Composable
 fun rememberPushNow(untils: List<Long?>): Long {
     val date = remember { dependency(DateClient) }

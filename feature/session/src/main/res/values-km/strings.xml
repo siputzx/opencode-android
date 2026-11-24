@@ -308,21 +308,4 @@
     <string name="session_media_loading_earlier">កំពុងផ្ទុក…</string>
     <string name="session_media_earlier_failed">មិនអាចផ្ទុកសារមុនៗបានទេ។ សូមពិនិត្យការតភ្ជាប់របស់អ្នក រួចព្យាយាមម្តងទៀត។</string>
     <string name="session_media_earlier_nothing_new">គ្មានអ្វីថ្មីក្នុងសារដែលទើបតែផ្ទុកនេះទេ។ សារមុនៗអាចមានច្រើនជាងនេះ។</string>
-    <string name="session_bell_title">ការជូនដំណឹង</string>
-    <string name="session_bell_level_all">អ្វីគ្រប់យ៉ាង</string>
-    <string name="session_bell_level_attention">តែពេលត្រូវការខ្ញុំ</string>
-    <string name="session_bell_level_none">មិនជូនដំណឹង</string>
-    <string name="session_bell_mute_hour">មិនជូនដំណឹងរយៈពេលមួយម៉ោង</string>
-    <string name="session_bell_mute_tomorrow">មិនជូនដំណឹងរហូតដល់ព្រឹកស្អែក</string>
-    <string name="session_bell_use_default">ដកការកំណត់របស់ឧបករណ៍នេះចេញ</string>
-    <string name="session_bell_source_own">បានកំណត់សម្រាប់តែឧបករណ៍នេះប៉ុណ្ណោះ។</string>
-    <string name="session_bell_source_own_until">បានកំណត់សម្រាប់តែឧបករណ៍នេះប៉ុណ្ណោះ រហូតដល់ %1$s។</string>
-    <string name="session_bell_source_default">ជម្រើសរបស់ឧបករណ៍នេះសម្រាប់ម៉ាស៊ីនមេ។ ជ្រើសរើសមួយដើម្បីប្តូរសម្រាប់សម័យនេះ។</string>
-    <string name="session_bell_source_shared">បានកំណត់ពីឧបករណ៍ផ្សេង។ ជ្រើសរើសមួយដើម្បីប្តូរសម្រាប់ឧបករណ៍នេះ។</string>
-    <string name="session_bell_source_shared_until">បានកំណត់ពីឧបករណ៍ផ្សេងរហូតដល់ %1$s។ ជ្រើសរើសមួយដើម្បីប្តូរសម្រាប់ឧបករណ៍នេះ។</string>
-    <string name="session_bell_source_phone_paused">ឧបករណ៍នេះត្រូវបានផ្អាកក្នុងការកំណត់។</string>
-    <string name="session_bell_source_server_paused">ការជូនដំណឹងទាំងអស់ពីម៉ាស៊ីនមេនេះត្រូវបានផ្អាក។</string>
-    <string name="session_bell_source_server_paused_until">ការជូនដំណឹងទាំងអស់ពីម៉ាស៊ីនមេនេះត្រូវបានផ្អាករហូតដល់ %1$s។</string>
-    <string name="session_sheet_bell_failed_title">មិនអាចប្តូរការជូនដំណឹងបាន</string>
-    <string name="session_sheet_bell_failed_message">ម៉ាស៊ីនមេមិនបានទទួលយកការផ្លាស់ប្តូរនេះទេ។</string>
 </resources>

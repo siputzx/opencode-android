@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Hleður…</string>
     <string name="session_media_earlier_failed">Ekki tókst að hlaða eldri skilaboðum. Athugaðu tenginguna og reyndu aftur.</string>
     <string name="session_media_earlier_nothing_new">Ekkert nýtt hér í skilaboðunum sem voru að hlaðast. Eldri skilaboð gætu haft meira.</string>
-    <string name="session_bell_title">Tilkynningar</string>
-    <string name="session_bell_level_all">Allt</string>
-    <string name="session_bell_level_attention">Aðeins þegar mín er þörf</string>
-    <string name="session_bell_level_none">Ekkert</string>
-    <string name="session_bell_mute_hour">Ekkert í klukkutíma</string>
-    <string name="session_bell_mute_tomorrow">Ekkert fyrr en í fyrramálið</string>
-    <string name="session_bell_use_default">Fjarlægja stillingu þessa tækis</string>
-    <string name="session_bell_source_own">Stillt aðeins fyrir þetta tæki.</string>
-    <string name="session_bell_source_own_until">Stillt aðeins fyrir þetta tæki, til %1$s.</string>
-    <string name="session_bell_source_default">Val þessa tækis fyrir netþjóninn. Veldu valkost til að breyta því fyrir þessa setu.</string>
-    <string name="session_bell_source_shared">Stillt frá öðru tæki. Veldu valkost til að breyta því fyrir þetta tæki.</string>
-    <string name="session_bell_source_shared_until">Stillt frá öðru tæki til %1$s. Veldu valkost til að breyta því fyrir þetta tæki.</string>
-    <string name="session_bell_source_phone_paused">Þetta tæki er í hléi í stillingum.</string>
-    <string name="session_bell_source_server_paused">Allar tilkynningar frá þessum netþjóni eru í hléi.</string>
-    <string name="session_bell_source_server_paused_until">Allar tilkynningar frá þessum netþjóni eru í hléi til %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Ekki tókst að breyta tilkynningum</string>
-    <string name="session_sheet_bell_failed_message">Netþjónninn tók ekki við breytingunni.</string>
 </resources>

@@ -332,21 +332,4 @@
     <string name="session_media_loading_earlier">Chargement…</string>
     <string name="session_media_earlier_failed">Impossible de charger les messages précédents. Vérifiez votre connexion et réessayez.</string>
     <string name="session_media_earlier_nothing_new">Rien de nouveau dans les messages qui viennent d’être chargés. Les messages précédents en contiennent peut-être davantage.</string>
-    <string name="session_bell_title">Notifications</string>
-    <string name="session_bell_level_all">Tout</string>
-    <string name="session_bell_level_attention">Uniquement si vous devez intervenir</string>
-    <string name="session_bell_level_none">Rien</string>
-    <string name="session_bell_mute_hour">Rien pendant une heure</string>
-    <string name="session_bell_mute_tomorrow">Rien jusqu’à demain matin</string>
-    <string name="session_bell_use_default">Supprimer le réglage de cet appareil</string>
-    <string name="session_bell_source_own">Défini pour cet appareil uniquement.</string>
-    <string name="session_bell_source_own_until">Défini pour cet appareil uniquement, jusqu’à %1$s.</string>
-    <string name="session_bell_source_default">Choix de cet appareil pour le serveur. Choisissez une option pour modifier le réglage de cette session.</string>
-    <string name="session_bell_source_shared">Défini depuis un autre appareil. Choisissez une option pour modifier le réglage de cet appareil.</string>
-    <string name="session_bell_source_shared_until">Défini depuis un autre appareil jusqu’à %1$s. Choisissez une option pour modifier le réglage de cet appareil.</string>
-    <string name="session_bell_source_phone_paused">Cet appareil est en pause dans les paramètres.</string>
-    <string name="session_bell_source_server_paused">Toutes les notifications de ce serveur sont en pause.</string>
-    <string name="session_bell_source_server_paused_until">Toutes les notifications de ce serveur sont en pause jusqu’à %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Impossible de modifier les notifications</string>
-    <string name="session_sheet_bell_failed_message">Le serveur n’a pas pris en compte la modification.</string>
 </resources>

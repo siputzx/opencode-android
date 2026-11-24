@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Loading…</string>
     <string name="session_media_earlier_failed">Couldn’t load earlier messages. Check your connection and try again.</string>
     <string name="session_media_earlier_nothing_new">Nothing new here in the messages just loaded. Earlier ones may have more.</string>
-    <string name="session_bell_title">Notifications</string>
-    <string name="session_bell_level_all">Everything</string>
-    <string name="session_bell_level_attention">Only When It Needs Me</string>
-    <string name="session_bell_level_none">Nothing</string>
-    <string name="session_bell_mute_hour">Nothing for an Hour</string>
-    <string name="session_bell_mute_tomorrow">Nothing Until Tomorrow Morning</string>
-    <string name="session_bell_use_default">Remove This Device’s Setting</string>
-    <string name="session_bell_source_own">Set for this device only.</string>
-    <string name="session_bell_source_own_until">Set for this device only, until %1$s.</string>
-    <string name="session_bell_source_default">This device’s choice for the server. Pick one to change it for this session.</string>
-    <string name="session_bell_source_shared">Set from another device. Pick one to change it for this device.</string>
-    <string name="session_bell_source_shared_until">Set from another device until %1$s. Pick one to change it for this device.</string>
-    <string name="session_bell_source_phone_paused">This device is paused in Settings.</string>
-    <string name="session_bell_source_server_paused">All notifications from this server are paused.</string>
-    <string name="session_bell_source_server_paused_until">All notifications from this server are paused until %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Couldn’t Change Notifications</string>
-    <string name="session_sheet_bell_failed_message">The server didn’t take the change.</string>
 </resources>

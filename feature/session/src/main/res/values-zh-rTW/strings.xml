@@ -308,21 +308,4 @@
     <string name="session_media_loading_earlier">載入中…</string>
     <string name="session_media_earlier_failed">無法載入較早的訊息。請檢查連線後再試一次。</string>
     <string name="session_media_earlier_nothing_new">剛載入的訊息中沒有新內容，更早的訊息可能還有。</string>
-    <string name="session_bell_title">通知</string>
-    <string name="session_bell_level_all">所有通知</string>
-    <string name="session_bell_level_attention">僅在需要我時</string>
-    <string name="session_bell_level_none">不通知</string>
-    <string name="session_bell_mute_hour">一小時內不通知</string>
-    <string name="session_bell_mute_tomorrow">明天早上前不通知</string>
-    <string name="session_bell_use_default">移除這台裝置的設定</string>
-    <string name="session_bell_source_own">僅針對這台裝置設定。</string>
-    <string name="session_bell_source_own_until">僅針對這台裝置設定，直到 %1$s。</string>
-    <string name="session_bell_source_default">這台裝置對此伺服器的選項。選擇一項即可變更此工作階段的設定。</string>
-    <string name="session_bell_source_shared">由其他裝置設定。選擇一項即可變更這台裝置的設定。</string>
-    <string name="session_bell_source_shared_until">由其他裝置設定，直到 %1$s。選擇一項即可變更這台裝置的設定。</string>
-    <string name="session_bell_source_phone_paused">這台裝置已在設定中暫停。</string>
-    <string name="session_bell_source_server_paused">此伺服器的所有通知都已暫停。</string>
-    <string name="session_bell_source_server_paused_until">此伺服器的所有通知都已暫停，直到 %1$s。</string>
-    <string name="session_sheet_bell_failed_title">無法變更通知設定</string>
-    <string name="session_sheet_bell_failed_message">伺服器未接受此變更。</string>
 </resources>

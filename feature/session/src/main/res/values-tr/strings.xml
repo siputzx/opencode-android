@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">Yükleniyor…</string>
     <string name="session_media_earlier_failed">Önceki mesajlar yüklenemedi. Bağlantınızı kontrol edip tekrar deneyin.</string>
     <string name="session_media_earlier_nothing_new">Yeni yüklenen mesajlarda yeni bir şey yok. Daha eskilerde olabilir.</string>
-    <string name="session_bell_title">Bildirimler</string>
-    <string name="session_bell_level_all">Her şey</string>
-    <string name="session_bell_level_attention">Yalnızca bana ihtiyaç duyduğunda</string>
-    <string name="session_bell_level_none">Hiçbir şey</string>
-    <string name="session_bell_mute_hour">Bir saat boyunca hiçbir şey</string>
-    <string name="session_bell_mute_tomorrow">Yarın sabaha kadar hiçbir şey</string>
-    <string name="session_bell_use_default">Bu cihazın ayarını kaldır</string>
-    <string name="session_bell_source_own">Yalnızca bu cihaz için ayarlandı.</string>
-    <string name="session_bell_source_own_until">Yalnızca bu cihaz için şu zamana kadar ayarlandı: %1$s.</string>
-    <string name="session_bell_source_default">Bu cihazın sunucu tercihi. Bu oturumda değiştirmek için birini seçin.</string>
-    <string name="session_bell_source_shared">Başka bir cihazdan ayarlandı. Bu cihazda değiştirmek için birini seçin.</string>
-    <string name="session_bell_source_shared_until">Başka bir cihazdan şu zamana kadar ayarlandı: %1$s. Bu cihazda değiştirmek için birini seçin.</string>
-    <string name="session_bell_source_phone_paused">Bu cihaz Ayarlar\'da duraklatıldı.</string>
-    <string name="session_bell_source_server_paused">Bu sunucudan gelen tüm bildirimler duraklatıldı.</string>
-    <string name="session_bell_source_server_paused_until">Bu sunucudan gelen tüm bildirimler şu zamana kadar duraklatıldı: %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Bildirimler değiştirilemedi</string>
-    <string name="session_sheet_bell_failed_message">Sunucu değişikliği kabul etmedi.</string>
 </resources>

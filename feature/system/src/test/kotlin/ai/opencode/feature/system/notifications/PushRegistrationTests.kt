@@ -126,47 +126,12 @@ class PushRegistrationTests {
     }
 }
 
-/** What the bell shows: the server's pause, this phone's pause, its own bell, the shared bell, its default. */
+/** The relay match, and the bell a send turns on. */
 class PushBellTests {
     private val device = OpenCodePushDevice(
         id = "ref-1", name = "Pixel", platform = "android", expiresAt = 1,
         defaultLevel = OpenCodePushLevel.attention, paused = false, sessions = emptyMap(),
     )
-
-    private fun server(state: OpenCodePushState) = PushServer(PushStatus.Ready, OpenCodePushLevel.entries, "ref-1", state)
-
-    @Test
-    fun theFirstRuleThatHoldsWins() {
-        val now = 1_000L
-        var state = OpenCodePushState(devices = listOf(device))
-        assertEquals(PushBellState(OpenCodePushLevel.attention, null, PushBellSource.PhoneDefault), PushBells.effective(server(state), "ses_a", now))
-
-        state = state.copy(sessions = mapOf("ses_a" to OpenCodePushBell(OpenCodePushLevel.none, until = 5_000)))
-        assertEquals(PushBellState(OpenCodePushLevel.none, 5_000, PushBellSource.Shared), PushBells.effective(server(state), "ses_a", now))
-
-        val own = device.copy(sessions = mapOf("ses_a" to OpenCodePushBell(OpenCodePushLevel.all)))
-        state = state.copy(devices = listOf(own))
-        assertEquals(PushBellState(OpenCodePushLevel.all, null, PushBellSource.ThisPhone), PushBells.effective(server(state), "ses_a", now))
-
-        state = state.copy(devices = listOf(own.copy(paused = true)))
-        assertEquals(PushBellSource.PhonePaused, PushBells.effective(server(state), "ses_a", now)?.source)
-
-        state = state.copy(paused = true, pausedUntil = 9_000)
-        assertEquals(PushBellState(OpenCodePushLevel.none, 9_000, PushBellSource.ServerPaused), PushBells.effective(server(state), "ses_a", now))
-    }
-
-    @Test
-    fun anEndedTimeNoLongerCounts() {
-        val own = device.copy(sessions = mapOf("ses_a" to OpenCodePushBell(OpenCodePushLevel.none, until = 500)))
-        val state = OpenCodePushState(paused = true, pausedUntil = 500, devices = listOf(own))
-        assertEquals(PushBellSource.PhoneDefault, PushBells.effective(server(state), "ses_a", 1_000)?.source)
-    }
-
-    @Test
-    fun nothingIsShownUntilTheServerKnowsThisPhone() {
-        val state = OpenCodePushState(devices = listOf(device.copy(id = "ref-other")))
-        assertEquals(null, PushBells.effective(server(state), "ses_a", 0))
-    }
 
     @Test
     fun theRelayIsMatchedByItsOrigin() {

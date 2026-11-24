@@ -332,21 +332,4 @@
     <string name="session_media_loading_earlier">Caricamento…</string>
     <string name="session_media_earlier_failed">Impossibile caricare i messaggi precedenti. Controlla la connessione e riprova.</string>
     <string name="session_media_earlier_nothing_new">Nessuna novità nei messaggi appena caricati. Quelli precedenti potrebbero avere altro.</string>
-    <string name="session_bell_title">Notifiche</string>
-    <string name="session_bell_level_all">Tutto</string>
-    <string name="session_bell_level_attention">Solo quando ha bisogno di me</string>
-    <string name="session_bell_level_none">Niente</string>
-    <string name="session_bell_mute_hour">Niente per un\'ora</string>
-    <string name="session_bell_mute_tomorrow">Niente fino a domattina</string>
-    <string name="session_bell_use_default">Rimuovi l\'impostazione di questo dispositivo</string>
-    <string name="session_bell_source_own">Impostato solo per questo dispositivo.</string>
-    <string name="session_bell_source_own_until">Impostato solo per questo dispositivo, fino a %1$s.</string>
-    <string name="session_bell_source_default">Scelta di questo dispositivo per il server. Scegli un\'opzione per cambiarla in questa sessione.</string>
-    <string name="session_bell_source_shared">Impostato da un altro dispositivo. Scegli un\'opzione per cambiarlo su questo dispositivo.</string>
-    <string name="session_bell_source_shared_until">Impostato da un altro dispositivo fino a %1$s. Scegli un\'opzione per cambiarlo su questo dispositivo.</string>
-    <string name="session_bell_source_phone_paused">Questo dispositivo è in pausa nelle Impostazioni.</string>
-    <string name="session_bell_source_server_paused">Tutte le notifiche di questo server sono in pausa.</string>
-    <string name="session_bell_source_server_paused_until">Tutte le notifiche di questo server sono in pausa fino a %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Impossibile modificare le notifiche</string>
-    <string name="session_sheet_bell_failed_message">Il server non ha accettato la modifica.</string>
 </resources>

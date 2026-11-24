@@ -104,7 +104,7 @@ Notes: the handoff JSON test decodes this port's own format (Android writes and 
 compares with the JSON `:server`'s internal `promptBody` writes; the app's `controlIntentsPostTheirChoice` reads `ControlIntents.perform`
 (what `SystemActionActivity` posts); the publisher runs on virtual time. `AppIconBadgeTests.swift`'s `:feature:system` suites were ported by the lead.
 
-Android-only tests for the push contract: `notifications/PushRegistrationTests.kt` (`PushRegistrationTests`: one token request for concurrent registrations, callback reuse and renewal, the PUT body; `PushBellTests`: which setting wins and ended times) and `AppIconBadgeTests.messagesFollowTheContract`.
+Android-only tests for the push contract: `notifications/PushRegistrationTests.kt` (`PushRegistrationTests`: one token request for concurrent registrations, callback reuse and renewal, the PUT body; `PushBellTests`: the relay match and the bell a send turns on) and `AppIconBadgeTests.messagesFollowTheContract`.
 
 Production bugs the ported tests found: none.
 

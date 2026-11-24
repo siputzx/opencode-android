@@ -25,16 +25,6 @@ import ai.opencode.feature.session.header.BreathingTitleHold
 import ai.opencode.feature.session.header.SessionContextRing
 import ai.opencode.feature.session.header.SessionContextText
 import ai.opencode.feature.session.header.titleBreathing
-import ai.opencode.core.sharing.shared
-import ai.opencode.feature.system.notifications.PushBellSource
-import ai.opencode.feature.system.notifications.PushBellState
-import ai.opencode.feature.system.notifications.PushBells
-import ai.opencode.feature.system.notifications.rememberPushNow
-import ai.opencode.feature.system.notifications.PushDuration
-import ai.opencode.feature.system.notifications.PushSharedKeys
-import ai.opencode.feature.system.notifications.PushStatus
-import ai.opencode.server.model.OpenCodePushLevel
-import android.text.format.DateUtils
 import ai.opencode.server.model.ModelVariant
 import ai.opencode.server.model.isUntitled
 import ai.opencode.server.model.OpenCodeContextUsage
@@ -110,8 +100,6 @@ import androidx.compose.ui.layout.FirstBaseline
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
-import androidx.compose.runtime.collectAsState
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.disabled
 import androidx.compose.ui.semantics.onClick
 import androidx.compose.animation.core.snap
@@ -272,8 +260,6 @@ private fun SessionSheetContent(
 ) {
     val state by sheet.collectState()
     val isListRow = context.isPinned != null
-    val pushServers by remember { shared(PushSharedKeys.servers).flow }.collectAsState(initial = shared(PushSharedKeys.servers).value)
-    val push = pushServers[state.server.persistenceID]
     Column(
         Modifier
             .verticalScroll(rememberScrollState())
@@ -287,13 +273,6 @@ private fun SessionSheetContent(
         Tiles(state, isListRow, context, details.session?.title, sheet::send)
         DetailsCard(details, onModelTapped, providerIcon)
         MediaCard(onMediaTapped)
-        if (push != null && push.status == PushStatus.Ready && details.session?.parentID == null) {
-            val untils = listOf(push.state?.pausedUntil, push.device?.sessions?.get(state.sessionID)?.until, push.state?.sessions?.get(state.sessionID)?.until)
-            val bell = PushBells.effective(push, state.sessionID, rememberPushNow(untils))
-            if (bell != null) {
-                BellCard(bell, push.levels) { level, duration -> sheet.send(SessionSheetFeature.Action.BellChosen(level, duration)) }
-            }
-        }
         if (isListRow) {
             DeleteRow(enabled = state.operation == null) { sheet.send(SessionSheetFeature.Action.DeleteTapped) }
         }
@@ -862,116 +841,6 @@ private fun MediaCard(onClick: () -> Unit) {
             OpenCodeIcon(SFSymbol.ChevronRight, contentDescription = null, size = 16.dp, tint = OpenCodeTheme.colors.tertiaryText)
         }
     }
-}
-
-// MARK: Bell
-
-@Composable
-private fun BellCard(bell: PushBellState, levels: List<OpenCodePushLevel>, onChoose: (OpenCodePushLevel?, PushDuration) -> Unit) {
-    var expanded by remember { mutableStateOf(false) }
-    val isOwn = bell.source == PushBellSource.ThisPhone
-    val isPaused = bell.source == PushBellSource.ServerPaused || bell.source == PushBellSource.PhonePaused
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Box {
-            Row(
-                Modifier
-                    .fillMaxWidth()
-                    .heightIn(min = 48.dp)
-                    .testTag("session-sheet-bell")
-                    .background(cardFill(), cardShape)
-                    .openCodeHairline(cardShape)
-                    .clip(cardShape)
-                    .clickable(enabled = !isPaused, role = Role.Button) { expanded = true }
-                    .padding(horizontal = 16.dp, vertical = if (isAccessibilitySize) 10.dp else 0.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-            ) {
-                Text(stringResource(R.string.session_bell_title), style = OpenCodeTextStyles.callout, color = OpenCodeTheme.colors.text, modifier = Modifier.weight(1f))
-                Text(bellLevelTitle(bell.level), style = OpenCodeTextStyles.callout, color = OpenCodeTheme.colors.secondaryText, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                OpenCodeIcon(SFSymbol.ChevronUpChevronDown, contentDescription = null, size = 16.dp, tint = OpenCodeTheme.colors.tertiaryText)
-            }
-            DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
-                for (level in OpenCodePushLevel.entries) {
-                    if (level !in levels) continue
-                    DropdownMenuItem(
-                        text = { Text(bellLevelTitle(level)) },
-                        trailingIcon = if (isOwn && bell.level == level && bell.until == null) {
-                            { OpenCodeIcon(SFSymbol.Checkmark, contentDescription = null, size = 18.dp) }
-                        } else {
-                            null
-                        },
-                        onClick = {
-                            expanded = false
-                            onChoose(level, PushDuration.forever)
-                        },
-                    )
-                }
-                if (OpenCodePushLevel.none in levels) {
-                    DropdownMenuItem(
-                        text = { Text(stringResource(R.string.session_bell_mute_hour)) },
-                        onClick = {
-                            expanded = false
-                            onChoose(OpenCodePushLevel.none, PushDuration.hour)
-                        },
-                    )
-                    DropdownMenuItem(
-                        text = { Text(stringResource(R.string.session_bell_mute_tomorrow)) },
-                        onClick = {
-                            expanded = false
-                            onChoose(OpenCodePushLevel.none, PushDuration.tomorrowMorning)
-                        },
-                    )
-                }
-                if (isOwn) {
-                    DropdownMenuItem(
-                        text = { Text(stringResource(R.string.session_bell_use_default)) },
-                        onClick = {
-                            expanded = false
-                            onChoose(null, PushDuration.forever)
-                        },
-                    )
-                }
-            }
-        }
-        Text(
-            bellFootnote(bell),
-            style = OpenCodeTextStyles.footnote,
-            color = OpenCodeTheme.colors.secondaryText,
-            modifier = Modifier.padding(horizontal = 16.dp),
-        )
-    }
-}
-
-@Composable
-private fun bellLevelTitle(level: OpenCodePushLevel): String = when (level) {
-    OpenCodePushLevel.all -> stringResource(R.string.session_bell_level_all)
-    OpenCodePushLevel.attention -> stringResource(R.string.session_bell_level_attention)
-    OpenCodePushLevel.none -> stringResource(R.string.session_bell_level_none)
-}
-
-@Composable
-private fun bellFootnote(bell: PushBellState): String {
-    val until = bell.until
-    if (bell.source == PushBellSource.ServerPaused) {
-        if (until != null) return stringResource(R.string.session_bell_source_server_paused_until, bellTime(until))
-        return stringResource(R.string.session_bell_source_server_paused)
-    }
-    if (bell.source == PushBellSource.PhonePaused) return stringResource(R.string.session_bell_source_phone_paused)
-    if (bell.source == PushBellSource.PhoneDefault) return stringResource(R.string.session_bell_source_default)
-    if (bell.source == PushBellSource.Shared) {
-        if (until != null) return stringResource(R.string.session_bell_source_shared_until, bellTime(until))
-        return stringResource(R.string.session_bell_source_shared)
-    }
-    if (until != null) return stringResource(R.string.session_bell_source_own_until, bellTime(until))
-    return stringResource(R.string.session_bell_source_own)
-}
-
-@Composable
-private fun bellTime(until: Long): String {
-    val context = LocalContext.current
-    var flags = DateUtils.FORMAT_SHOW_TIME
-    if (!DateUtils.isToday(until)) flags = flags or DateUtils.FORMAT_SHOW_WEEKDAY or DateUtils.FORMAT_ABBREV_WEEKDAY
-    return DateUtils.formatDateTime(context, until, flags)
 }
 
 // MARK: Delete

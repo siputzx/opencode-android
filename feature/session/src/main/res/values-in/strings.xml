@@ -308,21 +308,4 @@
     <string name="session_media_loading_earlier">Memuat…</string>
     <string name="session_media_earlier_failed">Gagal memuat pesan sebelumnya. Periksa koneksi Anda lalu coba lagi.</string>
     <string name="session_media_earlier_nothing_new">Tidak ada yang baru di pesan yang baru dimuat. Pesan sebelumnya mungkin masih ada isinya.</string>
-    <string name="session_bell_title">Notifikasi</string>
-    <string name="session_bell_level_all">Semuanya</string>
-    <string name="session_bell_level_attention">Hanya saat butuh saya</string>
-    <string name="session_bell_level_none">Tidak ada</string>
-    <string name="session_bell_mute_hour">Tidak ada selama 1 jam</string>
-    <string name="session_bell_mute_tomorrow">Tidak ada sampai besok pagi</string>
-    <string name="session_bell_use_default">Hapus pengaturan perangkat ini</string>
-    <string name="session_bell_source_own">Diatur hanya untuk perangkat ini.</string>
-    <string name="session_bell_source_own_until">Diatur hanya untuk perangkat ini, hingga %1$s.</string>
-    <string name="session_bell_source_default">Pilihan perangkat ini untuk server. Pilih satu untuk mengubahnya di sesi ini.</string>
-    <string name="session_bell_source_shared">Diatur dari perangkat lain. Pilih satu untuk mengubahnya di perangkat ini.</string>
-    <string name="session_bell_source_shared_until">Diatur dari perangkat lain hingga %1$s. Pilih satu untuk mengubahnya di perangkat ini.</string>
-    <string name="session_bell_source_phone_paused">Perangkat ini dijeda di Pengaturan.</string>
-    <string name="session_bell_source_server_paused">Semua notifikasi dari server ini dijeda.</string>
-    <string name="session_bell_source_server_paused_until">Semua notifikasi dari server ini dijeda sampai %1$s.</string>
-    <string name="session_sheet_bell_failed_title">Gagal mengubah notifikasi</string>
-    <string name="session_sheet_bell_failed_message">Server tidak menerima perubahan ini.</string>
 </resources>

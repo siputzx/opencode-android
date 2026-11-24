@@ -320,21 +320,4 @@
     <string name="session_media_loading_earlier">लोड हो रहा है…</string>
     <string name="session_media_earlier_failed">पहले के संदेश लोड नहीं हो सके। अपना कनेक्शन जाँचें और फिर से कोशिश करें।</string>
     <string name="session_media_earlier_nothing_new">अभी लोड हुए संदेशों में कुछ नया नहीं है। पहले के संदेशों में और कुछ हो सकता है।</string>
-    <string name="session_bell_title">सूचनाएँ</string>
-    <string name="session_bell_level_all">सब कुछ</string>
-    <string name="session_bell_level_attention">केवल जब मेरी ज़रूरत हो</string>
-    <string name="session_bell_level_none">कुछ नहीं</string>
-    <string name="session_bell_mute_hour">एक घंटे तक कुछ नहीं</string>
-    <string name="session_bell_mute_tomorrow">कल सुबह तक कुछ नहीं</string>
-    <string name="session_bell_use_default">इस डिवाइस की सेटिंग हटाएँ</string>
-    <string name="session_bell_source_own">केवल इस डिवाइस के लिए सेट है।</string>
-    <string name="session_bell_source_own_until">केवल इस डिवाइस के लिए %1$s तक सेट है।</string>
-    <string name="session_bell_source_default">सर्वर के लिए इस डिवाइस की पसंद। इस सेशन में इसे बदलने के लिए कोई एक चुनें।</string>
-    <string name="session_bell_source_shared">दूसरे डिवाइस से सेट है। इस डिवाइस पर इसे बदलने के लिए कोई एक चुनें।</string>
-    <string name="session_bell_source_shared_until">दूसरे डिवाइस से %1$s तक सेट है। इस डिवाइस पर इसे बदलने के लिए कोई एक चुनें।</string>
-    <string name="session_bell_source_phone_paused">यह डिवाइस सेटिंग्स में रुका हुआ है।</string>
-    <string name="session_bell_source_server_paused">इस सर्वर से आने वाली सभी सूचनाएँ रुकी हुई हैं।</string>
-    <string name="session_bell_source_server_paused_until">इस सर्वर से आने वाली सभी सूचनाएँ %1$s तक रुकी हुई हैं।</string>
-    <string name="session_sheet_bell_failed_title">सूचनाएँ नहीं बदली जा सकीं</string>
-    <string name="session_sheet_bell_failed_message">सर्वर ने यह बदलाव स्वीकार नहीं किया।</string>
 </resources>
