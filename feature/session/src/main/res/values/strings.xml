@@ -56,8 +56,6 @@
     <string name="session_pin">Pin</string>
     <string name="session_pinned">Pinned</string>
     <string name="session_unread">Unread</string>
-    <string name="session_mute">Mute</string>
-    <string name="session_muted">Muted</string>
     <string name="session_compact">Compact</string>
     <string name="session_fork">Fork</string>
     <string name="session_toggle_on_description">On</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Copy Session ID</string>
     <string name="session_mark_as_read">Mark as Read</string>
     <string name="session_mark_as_unread">Mark as Unread</string>
-    <string name="session_unmute">Unmute</string>
     <string name="session_menu_export_expanded_description">Expanded</string>
     <string name="session_menu_export_collapsed_description">Collapsed</string>
     <string name="session_info">Session Info</string>

@@ -37,7 +37,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 /*
- * The drawer's own actions — opening sessions and drafts, pins, mutes, read state, deletion, and
+ * The drawer's own actions — opening sessions and drafts, pins, read state, deletion, and
  * the transcript reads around a tap.
  */
 
@@ -188,16 +188,6 @@ internal fun HomeFeature.reduceDrawer(state: State, action: Action): HomeReduced
                 if (state.isPinned(action.sessionID)) state.updatingPinnedSessionKeys { keys -> keys.filterNot { it == key } }
                 else state.updatingPinnedSessionKeys { it + key },
             )
-        }
-
-        is Action.ToggleMute -> {
-            if (state.sessions.none { it.id == action.sessionID }) return Reduced(state)
-            haptics.play(Haptic.selection)
-            val key = state.sessionKey(action.sessionID)
-            val s = if (state.isMuted(action.sessionID)) state.updatingMutedSessionKeys { it - key }
-            else state.updatingMutedSessionKeys { it + key }
-            // A muted card leaves the stack unless it is the one on screen.
-            return Reduced(s.reconcilingCatchUp())
         }
 
         is Action.ToggleHidden -> {

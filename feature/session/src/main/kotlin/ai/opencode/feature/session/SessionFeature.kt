@@ -876,7 +876,6 @@ class SessionFeature : Reducer<SessionFeature.State, SessionFeature.Action> {
         /** From the voice agent: a new session's draft, in a project when given. */
         data class OpenDraft(val directory: String?) : Delegate
         data class ToggleRead(val sessionID: String) : Delegate
-        data class ToggleMute(val sessionID: String) : Delegate
         data class DeleteSession(val sessionID: String) : Delegate
         /** A recording's words for another session's composer, unsent. */
         data class KeepDraft(val target: SharedDraftTarget, val draft: SharedComposerDraft) : Delegate

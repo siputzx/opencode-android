@@ -172,7 +172,7 @@ fun HomeFeature.State.transcriptCachePriority(session: OpenCodeSession, status: 
         needsInput = session.id in status.attention,
         isWorking = session.id in status.busy,
         isPinned = isPinned(session.id),
-        isUnread = status.isUnread(session) && !status.isMuted(session.id),
+        isUnread = status.isUnread(session),
     )
 
 fun HomeFeature.State.touchingCachedTranscript(session: OpenCodeSession): HomeFeature.State {

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">連線不穩時，通話只會短暫卡頓，不再無聲好幾秒。</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">將工作階段靜音</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">已靜音的工作階段仍會保留在清單中，但不會出現在「補看動態」，也不會顯示未讀圓點。</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">按住「補看動態」即可全部標為已讀，等待你回應的工作階段仍會保留。</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">在側邊欄中長按工作階段，再點「靜音」</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">隨處都能配對</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">應用程式圖示標記</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">應用程式圖示會顯示未讀或等待你回應的工作階段數量，與「補看動態」的數量相同。</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">已靜音的工作階段不計入。</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">需要開啟通知才能使用。</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">讓工作階段停在等待你回答問題的狀態，再返回主畫面</string>
 

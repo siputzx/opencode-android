@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Een haperende verbinding geeft nu een korte storing in je oproep in plaats van secondenlange stilte.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Sessies dempen</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Gedempte sessies blijven in je lijst, maar verschijnen nooit bij Bijlezen en krijgen geen ongelezenstip.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Houd Bijlezen ingedrukt om alles als gelezen te markeren. Sessies die op je wachten, blijven staan.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Houd een sessie in het zijmenu ingedrukt en tik op Dempen</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Overal koppelen</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Badge op het app-pictogram</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Het app-pictogram toont hoeveel sessies ongelezen zijn of op je wachten, hetzelfde aantal als bij Bijlezen.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Gedempte sessies tellen niet mee.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Hiervoor moeten meldingen aanstaan.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Laat een vraag in een sessie onbeantwoord en ga naar het startscherm</string>
 

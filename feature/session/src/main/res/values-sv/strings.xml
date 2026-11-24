@@ -56,8 +56,6 @@
     <string name="session_pin">Fäst</string>
     <string name="session_pinned">Fäst</string>
     <string name="session_unread">Oläst</string>
-    <string name="session_mute">Tysta</string>
-    <string name="session_muted">Tystad</string>
     <string name="session_compact">Kompakt</string>
     <string name="session_fork">Förgrena</string>
     <string name="session_toggle_on_description">På</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Kopiera sessions-ID</string>
     <string name="session_mark_as_read">Markera som läst</string>
     <string name="session_mark_as_unread">Markera som oläst</string>
-    <string name="session_unmute">Slå på aviseringar</string>
     <string name="session_menu_export_expanded_description">Utfälld</string>
     <string name="session_menu_export_collapsed_description">Hopfälld</string>
     <string name="session_info">Sessionsinfo</string>

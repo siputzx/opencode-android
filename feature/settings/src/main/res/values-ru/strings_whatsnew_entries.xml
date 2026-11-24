@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">При нестабильном соединении вместо нескольких секунд тишины — лишь короткий сбой звука.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Без уведомлений от сессий</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Сессии с отключёнными уведомлениями остаются в списке, но не попадают в «Обзор обновлений» и не отмечаются точкой непрочитанного.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Удерживайте «Обзор обновлений», чтобы отметить всё как прочитанное. Сессии, ожидающие вашего ответа, останутся.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Удерживайте сессию в боковой панели и нажмите «Отключить уведомления»</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Сопряжение откуда угодно</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Счётчик на значке приложения</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Значок приложения показывает число непрочитанных сессий и сессий, ожидающих вас, — как в «Обзоре обновлений».</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Сессии с отключёнными уведомлениями не учитываются.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Для этого нужно включить уведомления.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Оставьте вопрос в сессии без ответа и перейдите на главный экран</string>
 

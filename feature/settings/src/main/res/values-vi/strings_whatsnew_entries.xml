@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Khi kết nối chập chờn, cuộc gọi chỉ khựng một chút thay vì mất tiếng nhiều giây.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Tắt thông báo phiên</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Phiên đã tắt thông báo vẫn ở trong danh sách nhưng không xuất hiện trong Xem cập nhật hay có chấm chưa đọc.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Nhấn giữ Xem cập nhật để đánh dấu tất cả là đã đọc. Các phiên đang chờ bạn vẫn được giữ lại.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Nhấn giữ một phiên trong ngăn điều hướng rồi chạm Tắt thông báo</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Ghép cặp từ mọi nơi</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Số trên biểu tượng ứng dụng</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Biểu tượng ứng dụng hiển thị số phiên chưa đọc hoặc đang chờ bạn, giống số trong Xem cập nhật.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Không tính các phiên đã tắt thông báo.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Cần bật thông báo để dùng tính năng này.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Để một phiên chờ bạn trả lời câu hỏi, rồi về màn hình chính</string>
 

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">A patchy connection costs a call a brief glitch instead of seconds of silence.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Mute Sessions</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Muted sessions stay in your list but never join Catch Up or show an unread dot.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Hold Catch Up to mark everything as read. Sessions waiting on you stay.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Hold a session in the drawer and tap Mute</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Pair From Anywhere</string>
@@ -176,7 +172,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Badge on the App Icon</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">The app icon shows how many sessions are unread or waiting on you, the same count as Catch Up.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Muted sessions don’t count.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">It needs notifications turned on.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Leave a session waiting on a question, then go to the Home Screen</string>
 

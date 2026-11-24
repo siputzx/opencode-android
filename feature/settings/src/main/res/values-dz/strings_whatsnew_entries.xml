@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">མཐུད་ལམ་མ་ལེགས་རུང་ བོད་བརྡ་ནང་སྐར་ཆ་ལེ་ཤ་སྒྲ་མེད་པར་མ་ལུས་པ་ ཐོགས་ཆག་ཐུང་ཀུ་ཅིག་རྐྱངམ་ཅིག་འབྱུངམ་ཨིན།</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">ལཱ་ཡུན་གྱི་བརྡ་བསྐུལ་བཀག</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">བརྡ་བསྐུལ་བཀག་ཡོད་པའི་ལཱ་ཡུན་ཚུ་ཐོ་ནང་ལུསཔ་ཨིན། དེ་འབདཝ་ད་ དུས་མཐུན་བལྟ་ནང་མི་ཚུད་ནི་དང་ མ་ལྷག་པའི་ཚག་ཡང་མི་སྟོན།</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">ཆ་མཉམ་ལྷག་ཡོདཔ་སྦེ་རྟགས་བཀལ་ནི་ལུ་ དུས་མཐུན་བལྟ་ཨེབ་བཞག ཁྱོད་ལུ་བསྒུག་ཡོད་པའི་ལཱ་ཡུན་ཚུ་ལུསཔ་ཨིན།</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">ཟུར་ཐོ་ནང་ལཱ་ཡུན་ཅིག་ཨེབ་བཞག་སྟེ་ བརྡ་བསྐུལ་བཀག་ཨེབ།</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">ག་ཏེ་ལས་འབད་རུང་ཆ་སྒྲིག</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">གློག་རིམ་ངོས་དཔར་གུ་གྱངས་ཁ།</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">གློག་རིམ་ངོས་དཔར་གྱིས་ མ་ལྷག་པའམ་ཁྱོད་ལུ་བསྒུག་མི་ལཱ་ཡུན་གྱི་གྱངས་ཁ་སྟོནམ་ཨིན། འདི་ «དུས་མཐུན་བལྟ» ནང་གི་གྱངས་ཁ་དང་ཅོག་འཐདཔ་ཨིན།</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">བརྡ་བསྐུལ་བཀག་ཡོད་པའི་ལཱ་ཡུན་ཚུ་མི་བརྩི།</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">བརྡ་བསྐུལ་ཚུ་ཨོན་འབད་དགོ།</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">ལཱ་ཡུན་ཅིག་དྲི་བའི་ལན་ལུ་བསྒུག་སྟེ་བཞག་ དེ་ལས་ཁྱིམ་གསལ་གཞི་ལུ་འགྱོ།</string>
 

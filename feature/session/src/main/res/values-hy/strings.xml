@@ -56,8 +56,6 @@
     <string name="session_pin">Ամրացնել</string>
     <string name="session_pinned">Ամրացված</string>
     <string name="session_unread">Չընթերցված</string>
-    <string name="session_mute">Լռեցնել</string>
-    <string name="session_muted">Լռեցված</string>
     <string name="session_compact">Կոմպակտ</string>
     <string name="session_fork">Ստեղծել ճյուղ</string>
     <string name="session_toggle_on_description">Միացված</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Պատճենել նիստի ID-ն</string>
     <string name="session_mark_as_read">Նշել որպես ընթերցված</string>
     <string name="session_mark_as_unread">Նշել որպես չընթերցված</string>
-    <string name="session_unmute">Միացնել ծանուցումները</string>
     <string name="session_menu_export_expanded_description">Ընդարձակված</string>
     <string name="session_menu_export_collapsed_description">Ծալված</string>
     <string name="session_info">Նիստի տվյալները</string>

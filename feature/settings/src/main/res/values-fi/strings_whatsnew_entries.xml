@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Epävakaa yhteys aiheuttaa puheluun vain lyhyen häiriön sekuntien hiljaisuuden sijaan.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Mykistä istuntoja</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Mykistetyt istunnot pysyvät luettelossa, mutta eivät näy Käy läpi -näkymässä eikä niissä ole lukemattomuuspistettä.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Merkitse kaikki luetuiksi pitämällä Käy läpi -painiketta painettuna. Sinua odottavat istunnot jäävät.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Pidä istuntoa painettuna sivuvalikossa ja napauta Mykistä</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Muodosta laitepari mistä vain</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Merkki sovelluskuvakkeessa</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Sovelluskuvake näyttää lukemattomien tai sinua odottavien istuntojen määrän, kuten Käy läpi -näkymä.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Mykistettyjä istuntoja ei lasketa mukaan.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Ilmoitusten on oltava käytössä.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Jätä istunto odottamaan vastausta kysymykseen ja siirry aloitusnäyttöön</string>
 

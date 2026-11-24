@@ -56,8 +56,6 @@
     <string name="session_pin">Vastzetten</string>
     <string name="session_pinned">Vastgezet</string>
     <string name="session_unread">Ongelezen</string>
-    <string name="session_mute">Dempen</string>
-    <string name="session_muted">Gedempt</string>
     <string name="session_compact">Comprimeren</string>
     <string name="session_fork">Afsplitsen</string>
     <string name="session_toggle_on_description">Aan</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Sessie-ID kopiëren</string>
     <string name="session_mark_as_read">Markeren als gelezen</string>
     <string name="session_mark_as_unread">Markeren als ongelezen</string>
-    <string name="session_unmute">Dempen opheffen</string>
     <string name="session_menu_export_expanded_description">Uitgevouwen</string>
     <string name="session_menu_export_collapsed_description">Samengevouwen</string>
     <string name="session_info">Sessie-info</string>

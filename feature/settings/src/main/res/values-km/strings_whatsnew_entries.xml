@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">ពេលការតភ្ជាប់រអាក់រអួល ការហៅរំខានតែបន្តិច ជំនួសឱ្យការបាត់សំឡេងជាច្រើនវិនាទី។</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">បិទការជូនដំណឹងសម័យ</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">សម័យដែលបានបិទការជូនដំណឹងនៅតែក្នុងបញ្ជី ប៉ុន្តែមិនបង្ហាញក្នុងមើលព័ត៌មានថ្មីៗ ឬមានចំណុចមិនទាន់អានទេ។</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">ចុចមើលព័ត៌មានថ្មីៗឱ្យជាប់ ដើម្បីសម្គាល់ទាំងអស់ថាបានអាន។ សម័យដែលកំពុងរង់ចាំអ្នកនៅតែបង្ហាញ។</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">ចុចសម័យក្នុងផ្ទាំងចំហៀងឱ្យជាប់ រួចប៉ះបិទការជូនដំណឹង</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">ផ្គូផ្គងពីគ្រប់ទីកន្លែង</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">ផ្លាកលេខលើរូបតំណាងកម្មវិធី</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">រូបតំណាងកម្មវិធីបង្ហាញចំនួនសម័យមិនទាន់អាន ឬកំពុងរង់ចាំអ្នក ដូចចំនួនក្នុង «មើលព័ត៌មានថ្មីៗ»។</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">សម័យដែលបានបិទការជូនដំណឹងមិនត្រូវបានរាប់ទេ។</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">ត្រូវបើកការជូនដំណឹងជាមុន។</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">ទុកសម័យមួយឱ្យរង់ចាំចម្លើយសំណួរ រួចទៅអេក្រង់ដើម</string>
 

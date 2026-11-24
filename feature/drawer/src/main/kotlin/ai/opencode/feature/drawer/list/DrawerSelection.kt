@@ -21,7 +21,6 @@ import ai.opencode.feature.drawer.InboxSidebarFeature
 import ai.opencode.feature.drawer.R
 import ai.opencode.feature.drawer.inboxSidebarArchivedRows
 import ai.opencode.feature.drawer.isHidden
-import ai.opencode.feature.drawer.isMuted
 import ai.opencode.feature.drawer.isPinned
 import ai.opencode.feature.drawer.isUnread
 import ai.opencode.feature.drawer.visibleSessions
@@ -185,7 +184,7 @@ internal fun DrawerSelectionBar(
 
 /**
  * The chosen sessions' actions: Mark as Read (Mark as Unread when none is unread), Archive and
- * Delete as icons; Mute or Unmute, Pin or Unpin (the regular list; the Inbox Sidebar has no pins),
+ * Delete as icons; Pin or Unpin (the regular list; the Inbox Sidebar has no pins),
  * Hide or Unhide and, for one session where the device has several windows, Open in New Window behind ⋮.
  * Each action ends the selection.
  */
@@ -198,12 +197,10 @@ internal fun selectionActions(
     val ids = selection.ids.toList()
     val sessions = state.visibleSessions.filter { it.id in selection.ids }
     var anyUnread = false
-    var allMuted = true
     var allPinned = true
     var allHidden = true
     for (session in sessions) {
         if (state.isUnread(session)) anyUnread = true
-        if (!state.isMuted(session.id)) allMuted = false
         if (!state.isPinned(session.id)) allPinned = false
         if (!state.isHidden(session.id)) allHidden = false
     }
@@ -240,14 +237,6 @@ internal fun selectionActions(
     )
 
     val overflow = mutableListOf<DrawerRowMenuItem>()
-    overflow.add(
-        DrawerRowMenuItem(if (allMuted) localized(R.string.drawer_unmute) else localized(R.string.drawer_mute), if (allMuted) SFSymbol.Bell else SFSymbol.BellSlash) {
-            for (session in sessions) {
-                if (state.isMuted(session.id) == allMuted) store.send(HomeFeature.Action.ToggleMute(session.id))
-            }
-            selection.clear()
-        },
-    )
     if (pins) {
         overflow.add(
             DrawerRowMenuItem(if (allPinned) localized(R.string.drawer_unpin) else localized(R.string.drawer_pin), if (allPinned) SFSymbol.PinSlash else SFSymbol.Pin) {

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Нестабільний зв’язок тепер спричиняє лише короткий збій замість кількох секунд тиші.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Сесії без сповіщень</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Сесії з вимкненими сповіщеннями лишаються в списку, але не потрапляють у «Перегляд нового» й не мають позначки непрочитаного.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Утримуйте «Перегляд нового», щоб позначити все прочитаним. Сесії, що чекають на вас, залишаться.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Утримуйте сесію в бічній панелі й натисніть «Вимкнути сповіщення»</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Сполучення звідусіль</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Лічильник на іконці застосунку</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Іконка застосунку показує кількість непрочитаних сесій або тих, що чекають на вас, як і «Перегляд нового».</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Сесії з вимкненими сповіщеннями не враховуються.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Для цього потрібно ввімкнути сповіщення.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Залиште запитання в сесії без відповіді й перейдіть на головний екран</string>
 

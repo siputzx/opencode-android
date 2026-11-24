@@ -37,8 +37,6 @@
     <string name="drawer_unpin">Desfijar</string>
     <string name="drawer_mark_as_read">Marcar como leída</string>
     <string name="drawer_mark_as_unread">Marcar como no leída</string>
-    <string name="drawer_mute">Silenciar</string>
-    <string name="drawer_unmute">Dejar de silenciar</string>
     <string name="drawer_hide">Ocultar</string>
     <string name="drawer_unhide">Mostrar</string>
     <string name="drawer_move_up">Subir</string>
@@ -126,7 +124,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Fijada</string>
-    <string name="drawer_row_muted_state">Silenciada</string>
     <string name="drawer_row_hidden_state">Ocultos</string>
     <string name="drawer_row_needs_input_state">Necesita tu respuesta</string>
     <string name="drawer_row_working_state">Trabajando</string>

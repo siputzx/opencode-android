@@ -56,8 +56,6 @@
     <string name="session_pin">གཏན་བཟུང་འབད།</string>
     <string name="session_pinned">གཏན་བཟུང་འབད་ཡོདཔ།</string>
     <string name="session_unread">མ་ལྷགཔ།</string>
-    <string name="session_mute">བརྡ་བསྐུལ་བཀག</string>
-    <string name="session_muted">བརྡ་བསྐུལ་བཀག་ཡོདཔ།</string>
     <string name="session_compact">བསྡུ་སྒྲིག།</string>
     <string name="session_fork">ཕོརཀ།</string>
     <string name="session_toggle_on_description">ཨཱོན།</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">ལཱ་ཡུན་གྱི་ཨའི་ཌི་འདྲ་བཤུས་འབད།</string>
     <string name="session_mark_as_read">ལྷག་ཡོདཔ་སྦེ་རྟགས་བཀལ།</string>
     <string name="session_mark_as_unread">མ་ལྷགཔ་སྦེ་རྟགས་བཀལ།</string>
-    <string name="session_unmute">བརྡ་བསྐུལ་ལོག་སྤྲོད།</string>
     <string name="session_menu_export_expanded_description">རྒྱ་བསྐྱེད་ཡོདཔ།</string>
     <string name="session_menu_export_collapsed_description">བརྡིབས་ཡོདཔ།</string>
     <string name="session_info">ལཱ་ཡུན་གྱི་བརྡ་དོན།</string>

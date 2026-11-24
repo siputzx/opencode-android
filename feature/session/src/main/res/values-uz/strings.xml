@@ -56,8 +56,6 @@
     <string name="session_pin">Mahkamlash</string>
     <string name="session_pinned">Mahkamlangan</string>
     <string name="session_unread">O‘qilmagan</string>
-    <string name="session_mute">Bildirishnomalarni o‘chirish</string>
-    <string name="session_muted">Bildirishnomalar o‘chirilgan</string>
     <string name="session_compact">Ixcham</string>
     <string name="session_fork">Tarmoqlash</string>
     <string name="session_toggle_on_description">Yoqilgan</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Sessiya ID-sini nusxalash</string>
     <string name="session_mark_as_read">O‘qilgan deb belgilash</string>
     <string name="session_mark_as_unread">O‘qilmagan deb belgilash</string>
-    <string name="session_unmute">Bildirishnomalarni yoqish</string>
     <string name="session_menu_export_expanded_description">Kengaytirilgan</string>
     <string name="session_menu_export_collapsed_description">Yig\'ilgan</string>
     <string name="session_info">Sessiya haqida</string>

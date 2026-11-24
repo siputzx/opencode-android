@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">कमजोर जडान हुँदा कलमा अब केही सेकेन्ड चुप्पी छाउनुको सट्टा क्षणभर मात्र आवाज अड्किन्छ।</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">सत्रका सूचना बन्द गर्नुहोस्</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">सूचना बन्द गरिएका सत्रहरू सूचीमै रहन्छन्, तर छुटेका अपडेटहरूमा आउँदैनन् र नपढिएको जनाउने थोप्लो पनि देखाउँदैनन्।</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">सबैलाई पढिएको चिन्ह लगाउन छुटेका अपडेटहरू थिचिराख्नुहोस्। तपाईंको जवाफ पर्खिरहेका सत्रहरू भने रहन्छन्।</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">साइड प्यानलमा सत्र थिचिराख्नुहोस् र सूचना बन्द गर्नुहोस् मा ट्याप गर्नुहोस्</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">जहाँबाट पनि जोड्नुहोस्</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">एप आइकनमा ब्याज</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">एप आइकनले नपढिएका वा तपाईंलाई पर्खिरहेका सत्रहरूको सङ्ख्या देखाउँछ, जुन “छुटेका अपडेटहरू” कै सङ्ख्या हो।</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">सूचना बन्द गरिएका सत्रहरू गनिँदैनन्।</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">यसका लागि सूचनाहरू चालू हुनुपर्छ।</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">सत्रमा एउटा प्रश्नको उत्तर नदिई गृह स्क्रिनमा जानुहोस्</string>
 

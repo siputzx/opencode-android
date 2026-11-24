@@ -56,8 +56,6 @@
     <string name="session_pin">Festa</string>
     <string name="session_pinned">Fest</string>
     <string name="session_unread">Ólesið</string>
-    <string name="session_mute">Þagga</string>
-    <string name="session_muted">Þögguð</string>
     <string name="session_compact">Þjappa</string>
     <string name="session_fork">Kvísla</string>
     <string name="session_toggle_on_description">Kveikt</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Afrita auðkenni setu</string>
     <string name="session_mark_as_read">Merkja sem lesna</string>
     <string name="session_mark_as_unread">Merkja sem ólesna</string>
-    <string name="session_unmute">Hætta að þagga</string>
     <string name="session_menu_export_expanded_description">Útvíkkað</string>
     <string name="session_menu_export_collapsed_description">Samandregið</string>
     <string name="session_info">Upplýsingar um setu</string>

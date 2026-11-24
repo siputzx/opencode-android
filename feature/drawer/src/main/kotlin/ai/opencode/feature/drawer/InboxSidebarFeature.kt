@@ -331,7 +331,7 @@ fun HomeFeature.State.inboxSidebarRows(): List<InboxSidebarRow> {
             title = session.title,
             project = project.ifEmpty { null },
             line = line,
-            unread = status.isUnread(session) && !status.isMuted(session.id),
+            unread = status.isUnread(session),
             updatedAt = session.updatedAt,
         )
     }

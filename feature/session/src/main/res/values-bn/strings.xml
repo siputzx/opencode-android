@@ -56,8 +56,6 @@
     <string name="session_pin">পিন করুন</string>
     <string name="session_pinned">পিন করা</string>
     <string name="session_unread">অপঠিত</string>
-    <string name="session_mute">মিউট করুন</string>
-    <string name="session_muted">মিউট করা</string>
     <string name="session_compact">সংক্ষিপ্ত</string>
     <string name="session_fork">ফর্ক</string>
     <string name="session_toggle_on_description">চালু</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">সেশনের ID কপি করুন</string>
     <string name="session_mark_as_read">পঠিত হিসেবে চিহ্নিত করুন</string>
     <string name="session_mark_as_unread">অপঠিত হিসেবে চিহ্নিত করুন</string>
-    <string name="session_unmute">আনমিউট করুন</string>
     <string name="session_menu_export_expanded_description">প্রসারিত</string>
     <string name="session_menu_export_collapsed_description">সঙ্কুচিত</string>
     <string name="session_info">সেশনের তথ্য</string>

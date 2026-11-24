@@ -2,6 +2,7 @@ package ai.opencode.app
 
 import ai.opencode.core.dependencies.dependency
 import ai.opencode.core.log.AppLog
+import ai.opencode.core.sharing.FileDirectory
 import ai.opencode.core.sharing.ExperimentalFeature
 import ai.opencode.core.sharing.InstallHistory
 import ai.opencode.core.sharing.SharedKey
@@ -25,6 +26,7 @@ internal fun migrateSettingsIfNeeded(savedServers: List<OpenCodeServer>) {
     ExperimentalFeature.removeRetiredSwitches(store)
     ExperimentalFeature.adoptNewExperimentsIntoAll()
     removeRetiredOrbStyles(store)
+    store.remove(SharedKey.fileStorage(FileDirectory.Documents, "muted-sessions.json", emptySet<String>()))
 }
 
 internal const val RETIRED_ORB_STYLE_KEY = "living-orb-style"

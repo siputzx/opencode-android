@@ -268,7 +268,6 @@ private fun HomeFeature.reduceSessionDelegate(state: State, delegate: SessionFea
     is SessionFeature.Delegate.OpenDraft ->
         if (state.connectionStatus == HomeConnectionFeature.State.ConnectionStatus.disconnected) Reduced(state)
         else Reduced(state.leavingCatchUp().openingDraft(delegate.directory, reason = "the voice agent opened a draft"))
-    is SessionFeature.Delegate.ToggleMute -> Reduced(state, Effect.send(Action.ToggleMute(delegate.sessionID)))
     is SessionFeature.Delegate.KeepDraft -> {
         val drafts = state.sharedDrafts
         drafts[delegate.target] = drafts.getOrDefault(delegate.target) { SharedComposerDraft() }.appending(delegate.draft)

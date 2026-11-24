@@ -56,8 +56,6 @@
     <string name="session_pin">Připnout</string>
     <string name="session_pinned">Připnuté</string>
     <string name="session_unread">Nepřečtené</string>
-    <string name="session_mute">Ztlumit</string>
-    <string name="session_muted">Ztlumené</string>
     <string name="session_compact">Kompaktní</string>
     <string name="session_fork">Vytvořit větev</string>
     <string name="session_toggle_on_description">Zapnuto</string>
@@ -133,7 +131,6 @@
     <string name="session_copy_session_id">Kopírovat ID relace</string>
     <string name="session_mark_as_read">Označit jako přečtené</string>
     <string name="session_mark_as_unread">Označit jako nepřečtené</string>
-    <string name="session_unmute">Zrušit ztlumení</string>
     <string name="session_menu_export_expanded_description">Rozbaleno</string>
     <string name="session_menu_export_collapsed_description">Sbaleno</string>
     <string name="session_info">Informace o relaci</string>

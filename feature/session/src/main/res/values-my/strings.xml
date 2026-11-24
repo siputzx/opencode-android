@@ -56,8 +56,6 @@
     <string name="session_pin">ထိပ်တွင် ချိတ်ထားပါ</string>
     <string name="session_pinned">ထိပ်တွင် ချိတ်ထားသည်များ</string>
     <string name="session_unread">မဖတ်ရသေး</string>
-    <string name="session_mute">အသိပေးချက် ပိတ်ပါ</string>
-    <string name="session_muted">အကြောင်းကြားချက် ပိတ်ထားသည်</string>
     <string name="session_compact">ကျစ်လျစ်သော</string>
     <string name="session_fork">စက်ရှင်ခွဲပါ</string>
     <string name="session_toggle_on_description">ဖွင့်</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">ဆက်ရှင် ID ကို ကူးယူပါ</string>
     <string name="session_mark_as_read">ဖတ်ပြီးဟု မှတ်ပါ</string>
     <string name="session_mark_as_unread">မဖတ်ရသေးဟု မှတ်ပါ</string>
-    <string name="session_unmute">အသိပေးချက် ပြန်ဖွင့်ပါ</string>
     <string name="session_menu_export_expanded_description">ချဲ့ထားသည်</string>
     <string name="session_menu_export_collapsed_description">ခေါက်သိမ်းထားသည်</string>
     <string name="session_info">စက်ရှင် အချက်အလက်</string>

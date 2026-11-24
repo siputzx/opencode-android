@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Gowşak baglanyşykda jaň birnäçe sekunt dymmagyň ýerine diňe gysga wagt bökdenýär.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Sessiýalaryň duýduryşlaryny öçür</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Bildirişleri öçürilen sessiýalar sanawda galýar, ýöne Habarly bol bölümine goşulmaýar we okalmadyk nokadyny görkezmeýär.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Ählisini okaldy diýip bellemek üçin Habarly bol düwmesini basyp saklaň. Size garaşýan sessiýalar galýar.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Gapdal panelde sessiýany basyp saklaň we Duýduryşlary öçür düwmesine basyň</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Islendik ýerden jübütleşdir</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Programma nyşanyndaky san</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Programma nyşany okalmadyk ýa-da size garaşýan sessiýalaryň sanyny görkezýär. Bu san «Habarly bol» bölümindäki bilen deňdir.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Bildirişleri öçürilen sessiýalar hasaba alynmaýar.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Munuň üçin bildirişler açyk bolmaly.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Sessiýadaky soragy jogapsyz goýup, baş ekrana geçiň</string>
 

@@ -56,8 +56,6 @@
     <string name="session_pin">Καρφίτσωμα</string>
     <string name="session_pinned">Καρφιτσωμένη</string>
     <string name="session_unread">Αδιάβαστη</string>
-    <string name="session_mute">Σίγαση</string>
-    <string name="session_muted">Σε σίγαση</string>
     <string name="session_compact">Συμπαγές</string>
     <string name="session_fork">Διακλάδωση</string>
     <string name="session_toggle_on_description">Ενεργό</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Αντιγραφή ID συνεδρίας</string>
     <string name="session_mark_as_read">Σήμανση ως αναγνωσμένης</string>
     <string name="session_mark_as_unread">Σήμανση ως αδιάβαστης</string>
-    <string name="session_unmute">Άρση σίγασης</string>
     <string name="session_menu_export_expanded_description">Αναπτυγμένο</string>
     <string name="session_menu_export_collapsed_description">Συμπτυγμένο</string>
     <string name="session_info">Πληροφορίες συνεδρίας</string>

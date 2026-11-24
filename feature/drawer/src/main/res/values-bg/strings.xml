@@ -36,8 +36,6 @@
     <string name="drawer_unpin">Откачане</string>
     <string name="drawer_mark_as_read">Маркиране като прочетено</string>
     <string name="drawer_mark_as_unread">Маркиране като непрочетено</string>
-    <string name="drawer_mute">Заглушаване</string>
-    <string name="drawer_unmute">Отмяна на заглушаването</string>
     <string name="drawer_hide">Скриване</string>
     <string name="drawer_unhide">Показване</string>
     <string name="drawer_move_up">Преместване нагоре</string>
@@ -122,7 +120,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Закачена</string>
-    <string name="drawer_row_muted_state">Заглушена</string>
     <string name="drawer_row_hidden_state">Скрити</string>
     <string name="drawer_row_needs_input_state">Изисква се отговор</string>
     <string name="drawer_row_working_state">Работи</string>

@@ -56,8 +56,6 @@
     <string name="session_pin">पिन गर्नुहोस्</string>
     <string name="session_pinned">पिन गरिएका</string>
     <string name="session_unread">नपढिएका</string>
-    <string name="session_mute">सूचना बन्द गर्नुहोस्</string>
-    <string name="session_muted">सूचना बन्द गरिएका</string>
     <string name="session_compact">सङ्क्षिप्त</string>
     <string name="session_fork">फोर्क</string>
     <string name="session_toggle_on_description">चालु</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">सत्र ID प्रतिलिपि गर्नुहोस्</string>
     <string name="session_mark_as_read">पढिएको चिन्ह लगाउनुहोस्</string>
     <string name="session_mark_as_unread">नपढिएको चिन्ह लगाउनुहोस्</string>
-    <string name="session_unmute">सूचना खोल्नुहोस्</string>
     <string name="session_menu_export_expanded_description">विस्तारित</string>
     <string name="session_menu_export_collapsed_description">संक्षिप्त</string>
     <string name="session_info">सत्रको जानकारी</string>

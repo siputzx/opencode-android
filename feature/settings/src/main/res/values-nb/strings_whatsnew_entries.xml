@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">En ustabil tilkobling gir nå bare et kort hakk i samtalen i stedet for flere sekunder med stillhet.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Demp sesjoner</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Dempede sesjoner blir i listen, men tas aldri med i Bli oppdatert og får ingen ulestprikk.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Hold inne Bli oppdatert for å merke alt som lest. Sesjoner som venter på deg, blir værende.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Hold inne en sesjon i sidepanelet og trykk på Demp</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Koble sammen fra hvor som helst</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Merke på appikonet</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Appikonet viser hvor mange sesjoner som er uleste eller venter på deg, samme antall som i Bli oppdatert.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Dempede sesjoner telles ikke med.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Varsler må være slått på.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">La en sesjon vente på svar på et spørsmål, og gå til startskjermen</string>
 

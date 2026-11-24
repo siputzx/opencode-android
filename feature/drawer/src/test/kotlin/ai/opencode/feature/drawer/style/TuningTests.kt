@@ -103,12 +103,11 @@ class DrawerSpacingTests {
     }
 
     @Test
-    fun drawerRowsReadSelectedThenActiveThenReadThenMuted() {
+    fun drawerRowsReadSelectedThenActiveThenRead() {
         // Unread, attention and running are indicators; none isn't.
-        assertEquals(DrawerRowEmphasis.Selected, DrawerRowEmphasis.of(selected = true, muted = false, hasIndicator = true))
-        assertEquals(DrawerRowEmphasis.Muted, DrawerRowEmphasis.of(selected = false, muted = true, hasIndicator = true))
-        assertEquals(DrawerRowEmphasis.Active, DrawerRowEmphasis.of(selected = false, muted = false, hasIndicator = true))
-        assertEquals(DrawerRowEmphasis.Read, DrawerRowEmphasis.of(selected = false, muted = false, hasIndicator = false))
+        assertEquals(DrawerRowEmphasis.Selected, DrawerRowEmphasis.of(selected = true, hasIndicator = true))
+        assertEquals(DrawerRowEmphasis.Active, DrawerRowEmphasis.of(selected = false, hasIndicator = true))
+        assertEquals(DrawerRowEmphasis.Read, DrawerRowEmphasis.of(selected = false, hasIndicator = false))
         assertEquals(androidx.compose.ui.text.font.FontWeight.SemiBold, DrawerRowEmphasis.Selected.weight)
         assertEquals(androidx.compose.ui.text.font.FontWeight.Medium, DrawerRowEmphasis.Active.weight)
         assertEquals(androidx.compose.ui.text.font.FontWeight.Normal, DrawerRowEmphasis.Read.weight)

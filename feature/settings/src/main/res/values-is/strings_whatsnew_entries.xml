@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Óstöðug tenging veldur nú stuttu hökti í símtali í stað margra sekúndna þagnar.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Þagga niður í setum</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Þaggaðar setur haldast á listanum en birtast hvorki í Fara yfir nýtt né með punkti fyrir ólesið.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Haltu Fara yfir nýtt inni til að merkja allt sem lesið. Setur sem bíða eftir þér haldast þar.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Haltu setu inni í hliðarvalmyndinni og pikkaðu á Þagga</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Para hvaðan sem er</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Tölumerki á táknmynd forritsins</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Táknmynd forritsins sýnir fjölda ólesinna seta eða seta sem bíða eftir þér, sömu tölu og Fara yfir nýtt.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Þaggaðar setur telja ekki með.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Kveikt þarf að vera á tilkynningum.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Láttu setu bíða eftir svari við spurningu og farðu svo á heimaskjáinn</string>
 

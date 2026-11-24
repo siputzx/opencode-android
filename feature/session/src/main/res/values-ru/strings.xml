@@ -56,8 +56,6 @@
     <string name="session_pin">Закрепить</string>
     <string name="session_pinned">Закреплена</string>
     <string name="session_unread">Непрочитанная</string>
-    <string name="session_mute">Отключить уведомления</string>
-    <string name="session_muted">Уведомления отключены</string>
     <string name="session_compact">Сжать сессию</string>
     <string name="session_fork">Создать ответвление</string>
     <string name="session_toggle_on_description">Включено</string>
@@ -133,7 +131,6 @@
     <string name="session_copy_session_id">Копировать идентификатор сеанса</string>
     <string name="session_mark_as_read">Отметить прочитанной</string>
     <string name="session_mark_as_unread">Отметить непрочитанной</string>
-    <string name="session_unmute">Включить уведомления</string>
     <string name="session_menu_export_expanded_description">Развёрнуто</string>
     <string name="session_menu_export_collapsed_description">Свёрнуто</string>
     <string name="session_info">О сессии</string>

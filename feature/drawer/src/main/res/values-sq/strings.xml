@@ -36,8 +36,6 @@
     <string name="drawer_unpin">Hiq fiksimin</string>
     <string name="drawer_mark_as_read">Shëno si të lexuar</string>
     <string name="drawer_mark_as_unread">Shëno si të palexuar</string>
-    <string name="drawer_mute">Hesht</string>
-    <string name="drawer_unmute">Hiq heshtjen</string>
     <string name="drawer_hide">Fshih</string>
     <string name="drawer_unhide">Shfaq</string>
     <string name="drawer_move_up">Zhvendos lart</string>
@@ -122,7 +120,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Të fiksuara</string>
-    <string name="drawer_row_muted_state">Pa zë</string>
     <string name="drawer_row_hidden_state">Të fshehura</string>
     <string name="drawer_row_needs_input_state">Kërkohet përgjigjja jote</string>
     <string name="drawer_row_working_state">Duke punuar</string>

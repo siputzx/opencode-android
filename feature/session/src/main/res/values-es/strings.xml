@@ -56,8 +56,6 @@
     <string name="session_pin">Fijar</string>
     <string name="session_pinned">Fijada</string>
     <string name="session_unread">Sin leer</string>
-    <string name="session_mute">Silenciar</string>
-    <string name="session_muted">Silenciada</string>
     <string name="session_compact">Compactar</string>
     <string name="session_fork">Bifurcar</string>
     <string name="session_toggle_on_description">Activado</string>
@@ -131,7 +129,6 @@
     <string name="session_copy_session_id">Copiar ID de la sesión</string>
     <string name="session_mark_as_read">Marcar como leída</string>
     <string name="session_mark_as_unread">Marcar como no leída</string>
-    <string name="session_unmute">Dejar de silenciar</string>
     <string name="session_menu_export_expanded_description">Expandido</string>
     <string name="session_menu_export_collapsed_description">Contraído</string>
     <string name="session_info">Información de la sesión</string>

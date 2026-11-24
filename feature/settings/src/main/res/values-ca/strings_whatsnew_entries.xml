@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Amb una connexió inestable, la trucada només fa un petit salt en lloc de quedar-se segons en silenci.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Silencia sessions</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Les sessions silenciades continuen a la llista, però no apareixen a Posa\'t al dia ni mostren el punt de missatges sense llegir.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Mantén premut Posa\'t al dia per marcar-ho tot com a llegit. Les sessions que t\'esperen es queden.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Mantén premuda una sessió al panell lateral i toca Silencia</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Aparella des de qualsevol lloc</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Indicador a la icona de l\'aplicació</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">La icona de l\'aplicació mostra quantes sessions tens sense llegir o pendents de tu, el mateix recompte que a Posa\'t al dia.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Les sessions silenciades no compten.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Cal tenir les notificacions activades.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Deixa una sessió amb una pregunta pendent i ves a la pantalla d\'inici</string>
 

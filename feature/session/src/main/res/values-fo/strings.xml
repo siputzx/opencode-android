@@ -56,8 +56,6 @@
     <string name="session_pin">Fest</string>
     <string name="session_pinned">Fest</string>
     <string name="session_unread">Ólisið</string>
-    <string name="session_mute">Sløkk fráboðanir</string>
-    <string name="session_muted">Fráboðanir sløktar</string>
     <string name="session_compact">Kompakt</string>
     <string name="session_fork">Greina</string>
     <string name="session_toggle_on_description">Tendrað</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Avrita setu-ID</string>
     <string name="session_mark_as_read">Merk sum lisið</string>
     <string name="session_mark_as_unread">Merk sum ólisið</string>
-    <string name="session_unmute">Tendra fráboðanir</string>
     <string name="session_menu_export_expanded_description">Víðkað</string>
     <string name="session_menu_export_collapsed_description">Samanlagt</string>
     <string name="session_info">Upplýsingar um setuna</string>

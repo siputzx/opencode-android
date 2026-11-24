@@ -56,7 +56,7 @@ import java.util.UUID
 import kotlin.math.abs
 import kotlin.time.Duration.Companion.seconds
 
-/** The drawer's part: pins, mutes, the pin drag, deletion, local sends and read state. */
+/** The drawer's part: pins, the pin drag, deletion, local sends and read state. */
 class HomeFeatureTestsDrawer {
     @get:Rule val isolation = TestIsolationRule()
 
@@ -81,29 +81,6 @@ class HomeFeatureTestsDrawer {
         assertTrue(h.state { HomeFeature.State(otherServer, snapshot) }.pinnedSessions.isEmpty())
         store.send(Action.TogglePin(older.id)) { it.copy(pinnedSessionKeys = emptyList()) }
         assertEquals(listOf(recent, older), store.state.recentSessions)
-    }
-
-    @Test
-    fun mutesArePersistentServerScopedAndForgottenWithTheSession() = homeTest { h ->
-        val recent = session("recent", "Recent", Instant.now())
-        val older = session("older", "Older", distantPast, projectID = "q", directory = "/other")
-        val snapshot = snapshot(listOf(recent, older))
-        val store = h.store(h.state { HomeFeature.State(server, snapshot) })
-        store.send(Action.ToggleMute(older.id)) { it.copy(mutedSessionKeys = setOf(key(older.id))) }
-        assertTrue(store.state.isMuted(older.id))
-        assertFalse(store.state.isMuted(recent.id))
-        assertEquals("muted sessions stay listed", listOf(recent, older), store.state.recentSessions)
-        assertEquals(setOf(key(older.id)), h.shared(SharedKeys.mutedSessionKeys))
-        val restored = h.state { HomeFeature.State(server, snapshot) }
-        assertTrue("a relaunch reads the same file", restored.isMuted(older.id))
-        assertFalse(h.state { HomeFeature.State(otherServer, snapshot) }.isMuted(older.id))
-        store.send(Action.ToggleMute(older.id)) { it.copy(mutedSessionKeys = emptySet()) }
-        store.send(Action.ToggleMute("missing"))
-
-        store.send(Action.ToggleMute(recent.id)) { it.copy(mutedSessionKeys = setOf(key(recent.id))) }
-        store.exhaustive = false
-        h.state { restored.purgingSession(recent.id) }
-        assertTrue("deleting a session forgets its mute", h.shared(SharedKeys.mutedSessionKeys).isEmpty())
     }
 
     @Test

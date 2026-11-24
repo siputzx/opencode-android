@@ -36,8 +36,6 @@
     <string name="drawer_unpin">Ξεκαρφίτσωμα</string>
     <string name="drawer_mark_as_read">Σήμανση ως αναγνωσμένης</string>
     <string name="drawer_mark_as_unread">Σήμανση ως αδιάβαστης</string>
-    <string name="drawer_mute">Σίγαση</string>
-    <string name="drawer_unmute">Άρση σίγασης</string>
     <string name="drawer_hide">Απόκρυψη</string>
     <string name="drawer_unhide">Επανεμφάνιση</string>
     <string name="drawer_move_up">Μετακίνηση πάνω</string>
@@ -122,7 +120,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Καρφιτσωμένη</string>
-    <string name="drawer_row_muted_state">Σε σίγαση</string>
     <string name="drawer_row_hidden_state">Κρυφή</string>
     <string name="drawer_row_needs_input_state">Χρειάζεται η συμβολή σας</string>
     <string name="drawer_row_working_state">Εργασία</string>

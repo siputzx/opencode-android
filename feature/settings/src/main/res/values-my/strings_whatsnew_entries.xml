@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">လိုင်းမကောင်းလျှင် စက္ကန့်အတော်ကြာ အသံပျောက်မည့်အစား ခဏသာ အသံထစ်တော့သည်။</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">စက်ရှင် အသိပေးချက် ပိတ်ပါ</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">အသိပေးချက် ပိတ်ထားသော ဆက်ရှင်များသည် စာရင်းထဲတွင် ရှိနေသော်လည်း အမီလိုက်ကြည့်ရန်တွင် မပါဝင်ဘဲ မဖတ်ရသေးသည့် အစက်လည်း မပြပါ။</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">အားလုံးကို ဖတ်ပြီးဟု မှတ်ရန် အမီလိုက်ကြည့်ရန်ကို ဖိထားပါ။ သင့်ကို စောင့်နေသော ဆက်ရှင်များတော့ ကျန်နေမည်။</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">ဘေးအကန့်ရှိ စက်ရှင်တစ်ခုကို ဖိထားပြီး အသိပေးချက် ပိတ်ပါကို နှိပ်ပါ</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">ဘယ်နေရာမှမဆို တွဲချိတ်ပါ</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">အက်ပ်သင်္ကေတပေါ်က အရေအတွက်</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">အက်ပ်သင်္ကေတတွင် မဖတ်ရသေးသော သို့မဟုတ် သင့်ကို စောင့်နေသော စက်ရှင်အရေအတွက်ကို “အမီလိုက်ကြည့်ရန်” နှင့် တူညီစွာ ပြထားသည်။</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">အကြောင်းကြားချက် ပိတ်ထားသော စက်ရှင်များကို မထည့်တွက်ပါ။</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">အကြောင်းကြားချက်များ ဖွင့်ထားရန် လိုသည်။</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">မေးခွန်းအဖြေကို စောင့်နေသည့် စက်ရှင်တစ်ခုကို ထားခဲ့ပြီး ပင်မဖန်သားပြင်သို့ သွားပါ</string>
 

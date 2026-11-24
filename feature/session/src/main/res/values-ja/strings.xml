@@ -56,8 +56,6 @@
     <string name="session_pin">ピン留め</string>
     <string name="session_pinned">ピン留め済み</string>
     <string name="session_unread">未読</string>
-    <string name="session_mute">ミュート</string>
-    <string name="session_muted">ミュート中</string>
     <string name="session_compact">コンパクト</string>
     <string name="session_fork">フォーク</string>
     <string name="session_toggle_on_description">オン</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">セッション ID をコピー</string>
     <string name="session_mark_as_read">既読にする</string>
     <string name="session_mark_as_unread">未読にする</string>
-    <string name="session_unmute">ミュートを解除</string>
     <string name="session_menu_export_expanded_description">展開済み</string>
     <string name="session_menu_export_collapsed_description">折りたたみ済み</string>
     <string name="session_info">セッション情報</string>

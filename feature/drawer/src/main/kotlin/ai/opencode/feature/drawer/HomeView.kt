@@ -453,7 +453,7 @@ private fun HomeSessionStack(
 }
 
 /**
- * What a session screen shows of the drawer's knowledge of it: its project, pin, read and mute
+ * What a session screen shows of the drawer's knowledge of it: its project, pin and read
  * state, the drawer button's dot for other sessions, and the In-App Notice and the connection pill,
  * outside Catch Up.
  */
@@ -464,7 +464,6 @@ internal fun HomeFeature.State.sessionListContext(session: OpenCodeSession?): Se
         project = SessionListContext.project(session, projects),
         isPinned = listed?.let { isPinned(it.id) },
         isUnread = listed?.let { isUnread(it) } ?: false,
-        isMuted = listed?.let { isMuted(it.id) } ?: false,
         elsewhere = if (isCatchUp) null else drawerBadge(excluding = session?.id),
         notice = if (isCatchUp) null else inAppNotice,
         connection = if (isCatchUp) null else serverConnectionNotice(),

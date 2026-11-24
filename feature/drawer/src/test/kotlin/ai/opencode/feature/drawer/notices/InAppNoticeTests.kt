@@ -11,7 +11,6 @@ import ai.opencode.feature.drawer.HomeConnectionFeature
 import ai.opencode.feature.drawer.HomeFeature
 import ai.opencode.feature.drawer.HomeFeature.Action
 import ai.opencode.feature.drawer.openingDraft
-import ai.opencode.feature.drawer.sessionKey
 import ai.opencode.feature.session.*
 import ai.opencode.feature.settings.SettingsFeature
 import ai.opencode.server.OpenCodeClient
@@ -97,10 +96,6 @@ class InAppNoticeTests {
                 homeSnapshot = { snapshot() ?: throw OpenCodeClientError("offline") },
             )
         }
-        // The mirror the fixture seeded, in the store's own shared storage too.
-        store.withDependencies {
-            ai.opencode.core.sharing.shared(ai.opencode.core.sharing.SharedKeys.mutedSessionKeys).update { state.mutedSessionKeys }
-        }
         store.exhaustive = false
         return store
     }
@@ -176,11 +171,9 @@ class InAppNoticeTests {
         store.skipInFlightEffects()
     }
 
-    @Test fun nothingForSubagentsOrMutedSessions() = runTest {
-        var state = home()
-        state = state.copy(mutedSessionKeys = setOf(state.sessionKey("upload")))
-        val store = store(state, InAppNoticeMode.all)
-        store.send(Action.AttentionRefreshed(setOf("upload", "sub")))
+    @Test fun nothingForSubagents() = runTest {
+        val store = store(home(), InAppNoticeMode.all)
+        store.send(Action.AttentionRefreshed(setOf("sub")))
         finish("sub", store)
         assertNull(store.state.inAppNotice)
         store.skipInFlightEffects()

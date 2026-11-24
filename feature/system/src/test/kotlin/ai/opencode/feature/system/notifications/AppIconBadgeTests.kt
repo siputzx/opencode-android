@@ -33,7 +33,7 @@ class AppIconBadgeTests {
     @get:Rule val isolation = TestIsolationRule()
 
     private fun ledger() = AppBadgeLedger(
-        serverKey = "0123456789ab", ref = "ref", sessionIDs = listOf("a"), mutedSessionIDs = listOf("m"), viewingSessionIDs = listOf("v"),
+        serverKey = "0123456789ab", ref = "ref", sessionIDs = listOf("a"), viewingSessionIDs = listOf("v"),
     )
 
     @Test
@@ -51,7 +51,6 @@ class AppIconBadgeTests {
         var ledger = ledger()
         fun push(id: String, ref: String): Int? = ledger.badgeAfterPush(id, ref)?.let { (next, badge) -> ledger = next; badge }
         assertNull(push("b", "another server"))
-        assertNull("Muted", push("m", "ref"))
         assertNull("On screen", push("v", "ref"))
         ledger = ledger.copy(ref = null)
         assertNull("No ref minted yet", push("b", "ref"))

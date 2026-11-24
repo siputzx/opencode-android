@@ -56,8 +56,6 @@
     <string name="session_pin">ខ្ទាស់</string>
     <string name="session_pinned">បានខ្ទាស់</string>
     <string name="session_unread">មិនទាន់អាន</string>
-    <string name="session_mute">បិទការជូនដំណឹង</string>
-    <string name="session_muted">បានបិទការជូនដំណឹង</string>
     <string name="session_compact">បង្រួម</string>
     <string name="session_fork">បំបែកទៅសម័យថ្មី</string>
     <string name="session_toggle_on_description">បើក</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">ចម្លង ID សម័យ</string>
     <string name="session_mark_as_read">សម្គាល់ថាបានអាន</string>
     <string name="session_mark_as_unread">សម្គាល់ថាមិនទាន់អាន</string>
-    <string name="session_unmute">បើកការជូនដំណឹង</string>
     <string name="session_menu_export_expanded_description">បានពង្រីក</string>
     <string name="session_menu_export_collapsed_description">បានបង្រួម</string>
     <string name="session_info">ព័ត៌មានសម័យ</string>

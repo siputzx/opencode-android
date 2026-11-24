@@ -29,7 +29,7 @@ import ai.opencode.server.model.OpenCodeProject
 import java.time.Instant
 
 /*
- * The drawer's derived lists, read state, pins and mutes, Catch Up's queue upkeep, and what a
+ * The drawer's derived lists, read state, pins, Catch Up's queue upkeep, and what a
  * deleted session leaves behind. These return the next state. Shared keys are written through (only
  * when changed) along with their mirrors in [HomeFeature.State].
  */
@@ -69,13 +69,9 @@ internal fun HomeFeature.State.updatingSessionReadDates(transform: (Map<String, 
 internal fun HomeFeature.State.updatingManuallyUnreadSessionKeys(transform: (Set<String>) -> Set<String>): HomeFeature.State =
     writingThrough(SharedKeys.manuallyUnreadSessionKeys, manuallyUnreadSessionKeys, transform) { copy(manuallyUnreadSessionKeys = it) }
 
-/** `$mutedSessionKeys.withLock { … }`. */
 /** `$sessionSeenWatermarks.withLock { … }`. */
 internal fun HomeFeature.State.updatingSessionSeenWatermarks(transform: (SessionSeenWatermarks) -> SessionSeenWatermarks): HomeFeature.State =
     writingThrough(SharedKeys.sessionSeenWatermarks, sessionSeenWatermarks, transform) { copy(sessionSeenWatermarks = it) }
-
-internal fun HomeFeature.State.updatingMutedSessionKeys(transform: (Set<String>) -> Set<String>): HomeFeature.State =
-    writingThrough(SharedKeys.mutedSessionKeys, mutedSessionKeys, transform) { copy(mutedSessionKeys = it) }
 
 /** `$hiddenSessionKeys.withLock { … }`. */
 internal fun HomeFeature.State.updatingHiddenSessionKeys(transform: (Set<String>) -> Set<String>): HomeFeature.State =
@@ -545,7 +541,6 @@ fun HomeFeature.State.isHidden(id: String): Boolean = sessionKey(id) in hiddenSe
  * One implementation, in `StatusSnapshot`, so the drawer's bulk loops and a single question here
  * can't drift. Neither reads the busy set, so it isn't computed for them.
  */
-fun HomeFeature.State.isMuted(id: String): Boolean = statusSnapshot(busy = emptySet()).isMuted(id)
 fun HomeFeature.State.isUnread(session: OpenCodeSession): Boolean = statusSnapshot(busy = emptySet()).isUnread(session)
 
 /**
@@ -626,7 +621,6 @@ fun HomeFeature.State.purgingSession(sessionID: String): HomeFeature.State {
         .updatingSessionReadDates { it - key }
         .clearingSeenWatermark(sessionID)
         .updatingManuallyUnreadSessionKeys { it - key }
-        .updatingMutedSessionKeys { it - key }
         .updatingHiddenSessionKeys { it - key }
     if (s.lastViewedSessionIDs[serverID] == sessionID) s = s.updatingLastViewedSessionIDs { it - serverID }
     return s
@@ -642,7 +636,6 @@ fun HomeFeature.State.statusSnapshot(busy: Set<String>? = null): StatusSnapshot 
             (connectionStatus == HomeConnectionFeature.State.ConnectionStatus.reconnecting && lastKnownActivityDeadline != null),
         busy = busy ?: busySessionIDs,
         attention = attentionSessionIDs,
-        mutedKeys = mutedSessionKeys,
         manuallyUnreadKeys = manuallyUnreadSessionKeys,
         readDates = sessionReadDates,
     )
@@ -687,7 +680,7 @@ val HomeFeature.State.streamFocusSessionIDs: Set<String>
 /** The sessions whose delivered notifications go when they're on screen. */
 val HomeFeature.State.viewedNotificationThreads: Set<String> get() = viewing.threads
 
-/** The drawer button's dot: whether any session besides the open one needs input or is unread. Muted sessions never light it. */
+/** The drawer button's dot: whether any session besides the open one needs input or is unread. */
 fun HomeFeature.State.drawerBadge(excluding: String?): DrawerBadge? {
     if (!(isConnected ||
             (connectionStatus == HomeConnectionFeature.State.ConnectionStatus.reconnecting && lastKnownActivityDeadline != null))
@@ -697,7 +690,7 @@ fun HomeFeature.State.drawerBadge(excluding: String?): DrawerBadge? {
     val status = statusSnapshot(busy = emptySet())
     val unreadCandidates = mutableListOf<String>()
     for (session in sessions) {
-        if (session.id == excluding || session.isArchived || status.isMuted(session.id)) continue
+        if (session.id == excluding || session.isArchived) continue
         if (session.id in status.attention) return DrawerBadge.Attention
         if (status.isUnread(session)) unreadCandidates += session.id
     }

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">ເມື່ອສັນຍານບໍ່ດີ ສຽງໂທຈະສະດຸດພຽງຊົ່ວຄາວ ແທນທີ່ຈະງຽບໄປຫຼາຍວິນາທີ.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">ປິດສຽງເຊດຊັນ</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">ເຊດຊັນທີ່ປິດສຽງໄວ້ຍັງຢູ່ໃນລາຍການ ແຕ່ບໍ່ເຂົ້າຮ່ວມຕິດຕາມອັບເດດ ຫຼືສະແດງຈຸດຍັງບໍ່ອ່ານ.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">ກົດຕິດຕາມອັບເດດຄ້າງໄວ້ ເພື່ອໝາຍທັງໝົດວ່າອ່ານແລ້ວ. ເຊດຊັນທີ່ລໍຖ້າເຈົ້າຍັງຄົງຢູ່.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">ກົດເຊດຊັນໃນແຖບເມນູຂ້າງຄ້າງໄວ້ ແລ້ວແຕະປິດສຽງ</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">ຈັບຄູ່ຈາກທຸກບ່ອນ</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">ປ້າຍຕົວເລກເທິງໄອຄອນແອັບ</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">ໄອຄອນແອັບສະແດງຈຳນວນເຊດຊັນທີ່ຍັງບໍ່ອ່ານ ຫຼືລໍຖ້າເຈົ້າ, ເທົ່າກັບຈຳນວນໃນ ຕິດຕາມອັບເດດ.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">ບໍ່ນັບເຊດຊັນທີ່ປິດສຽງໄວ້.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">ຕ້ອງເປີດການແຈ້ງເຕືອນກ່ອນ.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">ປ່ອຍໃຫ້ເຊດຊັນລໍຖ້າຄຳຕອບ ແລ້ວກັບໄປໜ້າຫຼັກ</string>
 

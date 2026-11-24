@@ -56,8 +56,6 @@
     <string name="session_pin">Bərkit</string>
     <string name="session_pinned">Bərkidilmiş</string>
     <string name="session_unread">Oxunmamış</string>
-    <string name="session_mute">Səssizə al</string>
-    <string name="session_muted">Səssizə alınmış</string>
     <string name="session_compact">Sıxlaşdır</string>
     <string name="session_fork">Fork et</string>
     <string name="session_toggle_on_description">Aktivdir</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Sessiya ID-sini kopyala</string>
     <string name="session_mark_as_read">Oxunmuş kimi işarələ</string>
     <string name="session_mark_as_unread">Oxunmamış kimi işarələ</string>
-    <string name="session_unmute">Səsi aç</string>
     <string name="session_menu_export_expanded_description">Genişləndirilib</string>
     <string name="session_menu_export_collapsed_description">Yığılıb</string>
     <string name="session_info">Sessiya məlumatı</string>

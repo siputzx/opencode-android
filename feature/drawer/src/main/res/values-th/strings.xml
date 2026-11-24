@@ -35,8 +35,6 @@
     <string name="drawer_unpin">เลิกปักหมุด</string>
     <string name="drawer_mark_as_read">ทำเครื่องหมายว่าอ่านแล้ว</string>
     <string name="drawer_mark_as_unread">ทำเครื่องหมายว่ายังไม่อ่าน</string>
-    <string name="drawer_mute">ปิดการแจ้งเตือน</string>
-    <string name="drawer_unmute">เปิดการแจ้งเตือน</string>
     <string name="drawer_hide">ซ่อน</string>
     <string name="drawer_unhide">เลิกซ่อน</string>
     <string name="drawer_move_up">เลื่อนขึ้น</string>
@@ -118,7 +116,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">ปักหมุดแล้ว</string>
-    <string name="drawer_row_muted_state">ปิดเสียงแล้ว</string>
     <string name="drawer_row_hidden_state">ซ่อนอยู่</string>
     <string name="drawer_row_needs_input_state">ต้องการคำตอบจากคุณ</string>
     <string name="drawer_row_working_state">การทำงาน</string>

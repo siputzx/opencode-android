@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">कमज़ोर कनेक्शन पर अब कॉल में कई सेकंड की चुप्पी के बजाय बस हल्की रुकावट आती है।</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">सेशन म्यूट करें</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">म्यूट किए गए सेशन सूची में रहते हैं, लेकिन न \'अपडेट देखें\' में आते हैं, न उन पर न पढ़े जाने का बिंदु दिखता है।</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">सबको पढ़ा हुआ चिह्नित करने के लिए \'अपडेट देखें\' दबाकर रखें। आपके जवाब का इंतज़ार कर रहे सेशन बने रहते हैं।</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">ड्रॉअर में कोई सेशन दबाकर रखें और \'म्यूट करें\' पर टैप करें</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">कहीं से भी पेयर करें</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">ऐप आइकन पर बैज</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">ऐप आइकन पर न पढ़े गए या आपके जवाब का इंतज़ार कर रहे सेशन की संख्या दिखती है, जो “अपडेट देखें” में भी दिखती है।</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">म्यूट किए गए सेशन नहीं गिने जाते।</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">इसके लिए सूचनाएँ चालू होनी चाहिए।</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">किसी सेशन में प्रश्न का जवाब दिए बिना होम स्क्रीन पर जाएँ</string>
 

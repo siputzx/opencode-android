@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Kai ryšys trūkinėja, skambutis tik trumpam sutrinka, užuot kelioms sekundėms nutilęs.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Nutildyti seansus</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Nutildyti seansai lieka sąraše, bet nepatenka į „Peržiūrėti naujienas“ ir nerodo neperskaitytų žinučių taško.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Palaikykite „Peržiūrėti naujienas“, kad viską pažymėtumėte kaip perskaitytą. Jūsų veiksmo laukiantys seansai lieka.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Šoniniame skydelyje palaikykite seansą ir palieskite „Nutildyti“</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Susiekite iš bet kur</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Ženklelis ant programos piktogramos</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Programos piktograma rodo neperskaitytų arba jūsų atsako laukiančių seansų skaičių – tokį patį kaip „Peržiūrėti naujienas“.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Nutildyti seansai neskaičiuojami.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Tam reikia įjungti pranešimus.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Palikite seansą laukti atsakymo į klausimą ir grįžkite į pradžios ekraną</string>
 

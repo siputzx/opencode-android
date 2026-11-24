@@ -56,8 +56,6 @@
     <string name="session_pin">고정</string>
     <string name="session_pinned">고정됨</string>
     <string name="session_unread">읽지 않음</string>
-    <string name="session_mute">알림 끄기</string>
-    <string name="session_muted">알림 꺼짐</string>
     <string name="session_compact">콤팩트</string>
     <string name="session_fork">분기</string>
     <string name="session_toggle_on_description">켜기</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">세션 ID 복사</string>
     <string name="session_mark_as_read">읽음으로 표시</string>
     <string name="session_mark_as_unread">읽지 않음으로 표시</string>
-    <string name="session_unmute">알림 켜기</string>
     <string name="session_menu_export_expanded_description">펼쳐짐</string>
     <string name="session_menu_export_collapsed_description">접힘</string>
     <string name="session_info">세션 정보</string>

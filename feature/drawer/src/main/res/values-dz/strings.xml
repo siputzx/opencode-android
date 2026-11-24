@@ -35,8 +35,6 @@
     <string name="drawer_unpin">གཏན་བཟུང་བཤོལ།</string>
     <string name="drawer_mark_as_read">ལྷག་ཡོདཔ་སྦེ་རྟགས་བཀལ།</string>
     <string name="drawer_mark_as_unread">མ་ལྷགཔ་སྦེ་རྟགས་བཀལ།</string>
-    <string name="drawer_mute">བརྡ་བསྐུལ་བཀག</string>
-    <string name="drawer_unmute">བརྡ་བསྐུལ་ལོག་སྤྲོད།</string>
     <string name="drawer_hide">སྦ་བཞག</string>
     <string name="drawer_unhide">སྦ་བཞག་མ་འབད།</string>
     <string name="drawer_move_up">ཡར་སྤོ།</string>
@@ -118,7 +116,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">གཏན་བཟུང་འབད་ཡོདཔ།</string>
-    <string name="drawer_row_muted_state">བརྡ་བསྐུལ་བཀག་ཡོདཔ།</string>
     <string name="drawer_row_hidden_state">སྦ་བཞག་ཡོདཔ།</string>
     <string name="drawer_row_needs_input_state">ཁྱོད་ཀྱི་ལན་དགོཔ་ཨིན།</string>
     <string name="drawer_row_working_state">ལཱ་འབད་དོ།</string>

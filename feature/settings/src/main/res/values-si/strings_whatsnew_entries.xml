@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">සම්බන්ධතාවය දුර්වල වූ විට ඇමතුම තත්පර ගණනක් නිහඬ නොවී, කෙටි බාධාවක් පමණක් ඇති වේ.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">සැසි නිහඬ කරන්න</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">නිහඬ කළ සැසි ලැයිස්තුවේ තිබුණත්, අලුත් දේ බලන්න වෙත එක් නොවන අතර නොකියවූ තිතක්ද නොපෙන්වයි.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">සියල්ල කියවූ ලෙස සලකුණු කිරීමට අලුත් දේ බලන්න ඔබාගෙන සිටින්න. ඔබේ ප්‍රතිචාරය බලා සිටින සැසි ඉතිරි වේ.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">පැති පැනලයේ සැසියක් ඔබාගෙන සිට නිහඬ කරන්න තට්ටු කරන්න</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">ඕනෑම තැනක සිට යුගල කරන්න</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">යෙදුම් නිරූපකයේ ලකුණ</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">නොකියවූ හෝ ඔබේ ප්‍රතිචාරය බලා සිටින සැසි ගණන යෙදුම් නිරූපකයේ පෙන්වයි. එය “අලුත් දේ බලන්න” හි පෙන්වන ගණනමයි.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">නිහඬ කළ සැසි ගණන් නොගනී.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">මේ සඳහා දැනුම්දීම් සක්‍රිය කර තිබිය යුතුයි.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">ප්රශ්නයකට පිළිතුරක් බලා සිටින සැසියක් තබා මුල් තිරයට යන්න</string>
 

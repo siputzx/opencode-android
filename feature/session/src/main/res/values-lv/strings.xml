@@ -56,8 +56,6 @@
     <string name="session_pin">Piespraust</string>
     <string name="session_pinned">Piesprausta</string>
     <string name="session_unread">Nelasīta</string>
-    <string name="session_mute">Apklusināt</string>
-    <string name="session_muted">Apklusināta</string>
     <string name="session_compact">Saspiest</string>
     <string name="session_fork">Atzarot</string>
     <string name="session_toggle_on_description">Ieslēgts</string>
@@ -131,7 +129,6 @@
     <string name="session_copy_session_id">Kopēt sesijas ID</string>
     <string name="session_mark_as_read">Atzīmēt kā lasītu</string>
     <string name="session_mark_as_unread">Atzīmēt kā nelasītu</string>
-    <string name="session_unmute">Ieslēgt paziņojumus</string>
     <string name="session_menu_export_expanded_description">Izvērsts</string>
     <string name="session_menu_export_collapsed_description">Sakļauts</string>
     <string name="session_info">Sesijas informācija</string>

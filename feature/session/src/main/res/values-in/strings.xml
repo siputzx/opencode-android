@@ -56,8 +56,6 @@
     <string name="session_pin">Sematkan</string>
     <string name="session_pinned">Disematkan</string>
     <string name="session_unread">Belum dibaca</string>
-    <string name="session_mute">Bisukan</string>
-    <string name="session_muted">Dibisukan</string>
     <string name="session_compact">Kompak</string>
     <string name="session_fork">Cabangkan</string>
     <string name="session_toggle_on_description">Aktif</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">Salin ID sesi</string>
     <string name="session_mark_as_read">Tandai sudah dibaca</string>
     <string name="session_mark_as_unread">Tandai belum dibaca</string>
-    <string name="session_unmute">Bunyikan</string>
     <string name="session_menu_export_expanded_description">Dibentangkan</string>
     <string name="session_menu_export_collapsed_description">Diciutkan</string>
     <string name="session_info">Info sesi</string>

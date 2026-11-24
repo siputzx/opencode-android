@@ -17,18 +17,14 @@ import ai.opencode.feature.drawer.HomeSnapshotDate
 import ai.opencode.feature.drawer.VoiceHomeTestSupport.live
 import ai.opencode.feature.drawer.VoiceHomeTestSupport.withCall
 import ai.opencode.feature.drawer.catchUpSessions
-import ai.opencode.feature.drawer.drawerBadge
 import ai.opencode.feature.drawer.indicator
-import ai.opencode.feature.drawer.isMuted
 import ai.opencode.feature.drawer.isUnread
 import ai.opencode.feature.drawer.openingCatchUpCard
 import ai.opencode.feature.drawer.openingDetail
 import ai.opencode.feature.drawer.persistingTranscriptCache
 import ai.opencode.feature.drawer.publishingTranscript
-import ai.opencode.feature.drawer.recentSessions
 import ai.opencode.feature.drawer.sessionKey
 import ai.opencode.feature.drawer.statusSnapshot
-import ai.opencode.feature.drawer.visibleSessions
 import ai.opencode.feature.drawer.list.DrawerListInputs
 import ai.opencode.feature.drawer.list.DrawerListModel
 import ai.opencode.feature.session.*
@@ -139,10 +135,9 @@ class CatchUpTests {
                 homeAttention = { _, _, _ -> attention },
             )
         }
-        // The mirrors the fixture seeded, in the store's own shared storage too.
+        // The mirror the fixture seeded, in the store's own shared storage too.
         store.withDependencies {
             shared(SharedKeys.manuallyUnreadSessionKeys).update { state.manuallyUnreadSessionKeys }
-            shared(SharedKeys.mutedSessionKeys).update { state.mutedSessionKeys }
         }
         store.exhaustive = false
         return store
@@ -591,71 +586,6 @@ class CatchUpTests {
         val state = home(listing = listOf(child, root), attention = setOf(root.id))
         assertEquals(listOf(root.id), state.catchUpSessions.map { it.id })
         assertEquals(HomeFeature.State.Indicator.attention, state.indicator(state.byID(root.id)))
-    }
-
-    @Test fun mutedSessionsStayListedButNeverJoinCatchUpOrBadges() = runTest {
-        val store = store(home())
-        fun indicator(id: String) = store.state.indicator(store.state.byID(id))
-
-        store.send(Action.ToggleMute("newer"))
-        store.send(Action.ToggleMute("waiting"))
-        assertTrue(store.state.isMuted("newer") && store.state.isMuted("waiting"))
-        assertEquals("even a waiting session stays out", listOf("older"), store.state.catchUpSessions.map { it.id })
-        assertEquals("no unread dot", HomeFeature.State.Indicator.none, indicator("newer"))
-        assertEquals("its own row still shows the pending request", HomeFeature.State.Indicator.attention, indicator("waiting"))
-        assertTrue("read state is kept underneath", store.state.isUnread(store.state.byID("newer")))
-        assertEquals("the unmuted older session still counts", DrawerBadge.Unread, store.state.drawerBadge(excluding = "read"))
-        assertTrue(store.state.visibleSessions.map { it.id }.contains("newer"))
-        store.send(Action.SearchChanged("newer"))
-        assertEquals("search still finds it", listOf("newer"), store.state.recentSessions.map { it.id })
-        store.send(Action.SearchChanged(""))
-
-        store.send(Action.ToggleMute("older"))
-        assertTrue(store.state.catchUpSessions.isEmpty())
-        assertNull(store.state.drawerBadge(excluding = "read"))
-
-        store.send(Action.ToggleMute("newer"))
-        assertFalse(store.state.isMuted("newer"))
-        assertEquals(listOf("newer"), store.state.catchUpSessions.map { it.id })
-        assertEquals(HomeFeature.State.Indicator.unread, indicator("newer"))
-        assertEquals(DrawerBadge.Unread, store.state.drawerBadge(excluding = "read"))
-        store.finish()
-    }
-
-    @Test fun mutedSessionsCanStillBeOpened() = runTest {
-        val receipts = synchronizedList()
-        val store = store(home(), receipts)
-        store.send(Action.ToggleMute("newer"))
-        store.send(Action.SessionTapped("newer"))
-        store.finish()
-        store.skipReceivedActions()
-        assertEquals("newer", store.state.sessionDetail?.session?.id)
-        assertTrue("opening still reads it", receipts.contains("newer"))
-    }
-
-    @Test fun mutingDuringCatchUpDropsQueuedCardsButKeepsTheOpenOne() = runTest {
-        val store = store(home())
-        store.send(Action.catchUpTapped)
-        assertEquals(listOf("waiting", "newer", "older"), store.state.catchUp?.queue)
-        store.send(Action.ToggleMute("older"))
-        assertEquals(listOf("waiting", "newer"), store.state.catchUp?.queue)
-        store.send(Action.ToggleMute("waiting"))
-        assertEquals("the card on screen stays until moved along", listOf("waiting", "newer"), store.state.catchUp?.queue)
-        assertEquals("waiting", store.state.sessionDetail?.session?.id)
-        store.send(Action.catchUpCardDismissed("waiting", CatchUpFeature.Disposition.keepUnread))
-        assertEquals(listOf("newer"), store.state.catchUp?.queue)
-        store.finish()
-    }
-
-    @Test fun markAllAsReadLeavesMutedSessionsAlone() = runTest {
-        val receipts = synchronizedList()
-        val store = store(home(includeWaiting = false), receipts)
-        store.send(Action.ToggleMute("older"))
-        store.send(Action.catchUpMarkAllReadTapped)
-        store.finish()
-        store.skipReceivedActions()
-        assertFalse("no receipt is sent for a muted session", receipts.contains("older"))
-        assertTrue(store.state.catchUpSessions.isEmpty())
     }
 
     @Test fun projectedLandingDecidesFastShortFlicksAndSlowDrags() {

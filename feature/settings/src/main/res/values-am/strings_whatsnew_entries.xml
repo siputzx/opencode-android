@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">ያልተረጋጋ ግንኙነት አሁን ጥሪን ለሰከንዶች ዝም ከማሰኘት ይልቅ አጭር መቆራረጥ ብቻ ያስከትላል።</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">የክፍለ ጊዜዎችን ድምፅ አጥፋ</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">ድምፃቸው የጠፋ ክፍለ ጊዜዎች በዝርዝርዎ ይቆያሉ፣ ግን በ«ያመለጠዎትን ይዩ» ውስጥ አይካተቱም፣ ያልተነበበ ምልክትም አያሳዩም።</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">ሁሉንም እንደተነበቡ ለማድረግ «ያመለጠዎትን ይዩ» ተጭነው ይያዙ። እርስዎን የሚጠብቁ ክፍለ ጊዜዎች ይቆያሉ።</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">በጎን ምናሌው ክፍለ ጊዜን ተጭነው ይያዙና «ድምፅ አጥፋ» መታ ያድርጉ</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">ከየትም አጣምር</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">በመተግበሪያው አዶ ላይ ቆጣሪ</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">የመተግበሪያው አዶ ስንት ክፍለ ጊዜዎች እንዳልተነበቡ ወይም እርስዎን እንደሚጠብቁ ያሳያል፤ ቁጥሩም በ«ያመለጠዎትን ይዩ» ካለው ጋር አንድ ነው።</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">ድምፀ ከል የተደረጉ ክፍለ ጊዜዎች አይቆጠሩም።</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">ማሳወቂያዎች መብራት አለባቸው።</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">ክፍለ ጊዜን የጥያቄ መልስ እየጠበቀ ይተዉት፣ ከዚያ ወደ መነሻ ማያ ገጽ ይሂዱ</string>
 

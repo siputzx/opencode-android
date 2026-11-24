@@ -134,10 +134,10 @@ enum class DrawerFontWeight(val weight: FontWeight) {
 /**
  * How a session row's title reads: the selected row semibold;
  * unread, waiting and running rows at `unreadWeight` in full primary; read rows regular,
- * dimmed to `readOpacity` (full primary under high contrast); muted rows secondary.
+ * dimmed to `readOpacity` (full primary under high contrast).
  */
 enum class DrawerRowEmphasis {
-    Selected, Active, Read, Muted;
+    Selected, Active, Read;
 
     val weight: FontWeight get() = weight()
 
@@ -148,7 +148,6 @@ enum class DrawerRowEmphasis {
         Selected -> FontWeight.SemiBold
         Active -> unread.weight
         Read -> read.weight
-        Muted -> FontWeight.Normal
     }
 
     fun opacity(increasedContrast: Boolean, readOpacity: Float = DrawerTunables.readOpacity): Float =
@@ -159,9 +158,8 @@ enum class DrawerRowEmphasis {
          * [hasIndicator] is `indicator != HomeFeature.State.Indicator.none` (attention, running or
          * unread).
          */
-        fun of(selected: Boolean, muted: Boolean, hasIndicator: Boolean): DrawerRowEmphasis = when {
+        fun of(selected: Boolean, hasIndicator: Boolean): DrawerRowEmphasis = when {
             selected -> Selected
-            muted -> Muted
             !hasIndicator -> Read
             else -> Active
         }

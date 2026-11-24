@@ -56,8 +56,6 @@
     <string name="session_pin">ඉහළ රඳවන්න</string>
     <string name="session_pinned">ඉහළ රඳවා ඇති</string>
     <string name="session_unread">නොකියවූ</string>
-    <string name="session_mute">නිහඬ කරන්න</string>
-    <string name="session_muted">නිහඬ කළ</string>
     <string name="session_compact">සංක්ෂිප්ත</string>
     <string name="session_fork">ෆෝක් කරන්න</string>
     <string name="session_toggle_on_description">සක්‍රියයි</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">සැසි ID පිටපත් කරන්න</string>
     <string name="session_mark_as_read">කියවූ ලෙස සලකුණු කරන්න</string>
     <string name="session_mark_as_unread">නොකියවූ ලෙස සලකුණු කරන්න</string>
-    <string name="session_unmute">නිහඬ බව ඉවත් කරන්න</string>
     <string name="session_menu_export_expanded_description">දිග හැර ඇත</string>
     <string name="session_menu_export_collapsed_description">හකුළා ඇත</string>
     <string name="session_info">සැසි තොරතුරු</string>

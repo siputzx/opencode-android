@@ -56,8 +56,6 @@
     <string name="session_pin">Закачане</string>
     <string name="session_pinned">Закачена</string>
     <string name="session_unread">Непрочетена</string>
-    <string name="session_mute">Заглушаване</string>
-    <string name="session_muted">Заглушена</string>
     <string name="session_compact">Компактен</string>
     <string name="session_fork">Разклоняване</string>
     <string name="session_toggle_on_description">Включено</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Копиране на идентификатора на сесията</string>
     <string name="session_mark_as_read">Маркиране като прочетено</string>
     <string name="session_mark_as_unread">Маркиране като непрочетено</string>
-    <string name="session_unmute">Отмяна на заглушаването</string>
     <string name="session_menu_export_expanded_description">Разгънато</string>
     <string name="session_menu_export_collapsed_description">Свито</string>
     <string name="session_info">Информация за сесията</string>

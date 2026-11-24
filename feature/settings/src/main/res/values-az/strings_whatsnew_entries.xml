@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Zəif bağlantı artıq zəngdə saniyələrlə səssizlik yox, qısa kəsilmə yaradır.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Sessiyaları səssizə al</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Səssizə alınmış sessiyalar siyahıda qalır, amma Yeniliklərə bax bölməsinə daxil olmur və oxunmamış nöqtəsi göstərmir.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Hamısını oxunmuş işarələmək üçün Yeniliklərə bax düyməsini basıb saxlayın. Sizi gözləyən sessiyalar qalır.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Yan paneldə sessiyanı basıb saxlayın və Səssizə al düyməsinə toxunun</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Hər yerdən cütləşdir</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Tətbiq ikonunda say göstəricisi</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Tətbiq ikonu oxunmamış və ya sizi gözləyən sessiyaların sayını göstərir. Bu say “Yeniliklərə bax”dakı ilə eynidir.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Səssizə alınmış sessiyalar sayılmır.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Bunun üçün bildirişlər açıq olmalıdır.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Sessiyanı sualın cavabını gözləyən halda saxlayıb ana ekrana keçin</string>
 

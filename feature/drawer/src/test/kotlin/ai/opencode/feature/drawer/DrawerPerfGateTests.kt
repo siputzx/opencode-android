@@ -61,7 +61,7 @@ class DrawerPerfGateTests {
         assertEquals("The visible drawer builds its rows", 1, holder.builds)
 
         for (index in 0 until 10) {
-            state = state.copy(mutedSessionKeys = state.mutedSessionKeys + "${server.persistenceID}|s$index")
+            state = state.copy(manuallyUnreadSessionKeys = state.manuallyUnreadSessionKeys + "${server.persistenceID}|s$index")
             holder.model(isHidden = true) { build(state) }
         }
         assertEquals("Ten status changes on a shut drawer build nothing", 1, holder.builds)
@@ -90,14 +90,14 @@ class DrawerPerfGateTests {
      */
     @Test fun catchUpRowShowsWithTheDrawer() {
         for (case in listOf("visible", "prewarmed", "whileHidden")) {
-            var state = home((0 until 6).map { session("s$it", updated = it.toLong()) })
+            val viewed = if (case == "whileHidden") 2_000L else 1_000L
+            var state = home((0 until 6).map { session("s$it", updated = it.toLong()).copy(viewedMilliseconds = viewed) })
             val keys = (0 until 6).map { "${server.persistenceID}|s$it" }.toSet()
-            if (case == "whileHidden") state = state.copy(mutedSessionKeys = keys)
             val holder = DrawerListModelHolder()
             var model = holder.model(isHidden = case != "visible") { build(state) }
             if (case != "visible") {
                 if (case == "whileHidden") {
-                    state = state.copy(mutedSessionKeys = emptySet())
+                    state = state.copy(manuallyUnreadSessionKeys = keys)
                     holder.model(isHidden = true) { build(state) }
                 }
                 model = holder.model(isHidden = false) { build(state) }

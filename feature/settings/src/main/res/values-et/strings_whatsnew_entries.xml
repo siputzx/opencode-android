@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Katkendlik ühendus põhjustab nüüd kõnes vaid lühikese tõrke, mitte sekunditepikkust vaikust.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Vaigista seansid</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Vaigistatud seansid jäävad loendisse, kuid ei ilmu vaatesse „Vaata üle” ega saa lugemata sõnumi täppi.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Hoia nuppu „Vaata üle” all, et märkida kõik loetuks. Sinu vastust ootavad seansid jäävad alles.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Hoia külgpaneelil seanssi all ja puuduta „Vaigista”</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Seo kõikjalt</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Märk rakenduse ikoonil</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Rakenduse ikoon näitab lugemata või sinu ootel seansside arvu, nagu vaade „Vaata üle“.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Vaigistatud seansse ei loendata.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Selleks peavad teavitused olema sisse lülitatud.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Jäta seanss küsimusele vastust ootama ja mine avakuvale</string>
 

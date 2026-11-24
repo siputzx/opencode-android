@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">En ustabil forbindelse giver nu et kort udfald i opkaldet i stedet for flere sekunders stilhed.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Slå sessionsnotifikationer fra</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Lydløse sessioner bliver på listen, men vises aldrig i Bliv opdateret eller med en prik for ulæst.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Hold Bliv opdateret nede for at markere alt som læst. Sessioner, der venter på dig, bliver stående.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Hold en session i sidepanelet nede, og tryk på Slå notifikationer fra</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Par fra hvor som helst</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Tæller på appikonet</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Appikonet viser antallet af ulæste sessioner og sessioner, der venter på dig – samme antal som i Bliv opdateret.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Lydløse sessioner tæller ikke med.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Det kræver, at meddelelser er slået til.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Lad en session vente på svar på et spørgsmål, og gå så til hjemmeskærmen</string>
 

@@ -35,8 +35,6 @@
     <string name="drawer_unpin">取消釘選</string>
     <string name="drawer_mark_as_read">標示為已讀</string>
     <string name="drawer_mark_as_unread">標示為未讀</string>
-    <string name="drawer_mute">靜音</string>
-    <string name="drawer_unmute">取消靜音</string>
     <string name="drawer_hide">隱藏</string>
     <string name="drawer_unhide">取消隱藏</string>
     <string name="drawer_move_up">上移</string>
@@ -118,7 +116,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">已釘選</string>
-    <string name="drawer_row_muted_state">已靜音</string>
     <string name="drawer_row_hidden_state">已隱藏</string>
     <string name="drawer_row_needs_input_state">需要你回應</string>
     <string name="drawer_row_working_state">工作中</string>

@@ -56,8 +56,6 @@
     <string name="session_pin">Prisegti</string>
     <string name="session_pinned">Prisegtas</string>
     <string name="session_unread">Neperskaitytas</string>
-    <string name="session_mute">Nutildyti</string>
-    <string name="session_muted">Nutildytas</string>
     <string name="session_compact">Glaudinti seansą</string>
     <string name="session_fork">Atskirti į naują seansą</string>
     <string name="session_toggle_on_description">Įjungta</string>
@@ -133,7 +131,6 @@
     <string name="session_copy_session_id">Kopijuoti seanso ID</string>
     <string name="session_mark_as_read">Pažymėti kaip perskaitytą</string>
     <string name="session_mark_as_unread">Pažymėti kaip neperskaitytą</string>
-    <string name="session_unmute">Įjungti garsą</string>
     <string name="session_menu_export_expanded_description">Išskleista</string>
     <string name="session_menu_export_collapsed_description">Sutraukta</string>
     <string name="session_info">Seanso informacija</string>

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Zayıf bağlantı artık aramada saniyelerce sessizlik yerine kısa bir kesintiye yol açar.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Oturumları sessize al</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Sessize alınan oturumlar listenizde kalır ama Gözden geçir\'e dahil edilmez ve okunmamış noktası göstermez.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Tümünü okundu olarak işaretlemek için Gözden geçir\'i basılı tutun. Sizden yanıt bekleyen oturumlar kalır.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Yan panelde bir oturumu basılı tutup Sessize al\'a dokunun</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Her yerden eşleştir</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Uygulama simgesinde rozet</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Uygulama simgesi, Gözden geçir ile aynı sayıyı gösterir: okunmamış veya sizi bekleyen oturumların sayısı.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Sessize alınan oturumlar sayılmaz.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Bildirimlerin açık olması gerekir.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Bir oturumda soruyu yanıtsız bırakın, ardından ana ekrana dönün</string>
 

@@ -64,7 +64,6 @@ data class DrawerListRow(
     val isPinnedSection: Boolean,
     val selected: Boolean,
     val indicator: Indicator,
-    val muted: Boolean,
     /** Hidden from the list; it shows only while searching. */
     val hidden: Boolean = false,
     val unread: Boolean,
@@ -86,7 +85,6 @@ data class DrawerListRow(
         get() {
             val parts = mutableListOf<String>()
             if (isPinnedSection) parts += localized(R.string.drawer_row_pinned_state)
-            if (muted) parts += localized(R.string.drawer_row_muted_state)
             if (hidden) parts += localized(R.string.drawer_row_hidden_state)
             if (unsent == Unsent.Failed) parts += localized(R.string.drawer_row_unsent_failed_state)
             if (unsent == Unsent.Sending) parts += localized(R.string.drawer_row_unsent_sending_state)
@@ -216,7 +214,6 @@ data class DrawerListModel(
                 isPinnedSection = pinned,
                 selected = inputs.selectedSessionID == session.id,
                 indicator = status.indicator(session),
-                muted = status.isMuted(session.id),
                 hidden = session.id in hiddenIDs,
                 unread = status.isUnread(session),
                 isLifted = liftedID == session.id,
@@ -253,7 +250,6 @@ data class DrawerListModel(
                     isPinnedSection = false,
                     selected = open != null && open.session == null && open.outboxDraftID == draft.draftID,
                     indicator = if (draft.isFailed) Indicator.none else Indicator.running,
-                    muted = false,
                     unread = false,
                     isLifted = false,
                     time = timestamp(session.updatedAt, now),

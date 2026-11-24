@@ -284,7 +284,6 @@ private fun SessionFeature.sessionSheetDelegate(delegate: SessionSheetFeature.De
 
         SessionSheetFeature.Delegate.TogglePin -> Reduced(state, Effect.send(Action.Delegate(SessionFeature.Delegate.TogglePin(sessionID))))
         SessionSheetFeature.Delegate.ToggleRead -> Reduced(state, Effect.send(Action.Delegate(SessionFeature.Delegate.ToggleRead(sessionID))))
-        SessionSheetFeature.Delegate.ToggleMute -> Reduced(state, Effect.send(Action.Delegate(SessionFeature.Delegate.ToggleMute(sessionID))))
 
         SessionSheetFeature.Delegate.DeleteSession -> {
             val next = if (state.activePicker == State.ActivePicker.session) state.copy(activePicker = null) else state

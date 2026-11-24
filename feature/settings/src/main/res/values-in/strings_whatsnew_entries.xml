@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Koneksi tersendat kini hanya mengganggu panggilan sesaat, bukan membuatnya hening beberapa detik.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Bisukan sesi</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Sesi yang dibisukan tetap ada di daftar, tetapi tidak masuk Tinjau pembaruan atau menampilkan titik belum dibaca.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Tekan tahan Tinjau pembaruan untuk menandai semuanya sudah dibaca. Sesi yang menunggu Anda tetap ada.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Tekan tahan sesi di panel samping, lalu ketuk Bisukan</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Pasangkan dari mana saja</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Lencana di ikon aplikasi</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Ikon aplikasi menampilkan jumlah sesi yang belum dibaca atau menunggu Anda, sama seperti di Tinjau pembaruan.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Sesi yang dibisukan tidak dihitung.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Notifikasi harus diaktifkan.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Biarkan sesi menunggu jawaban Anda, lalu buka layar utama</string>
 

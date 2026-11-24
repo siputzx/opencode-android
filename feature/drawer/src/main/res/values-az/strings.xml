@@ -36,8 +36,6 @@
     <string name="drawer_unpin">Bərkitməni ləğv et</string>
     <string name="drawer_mark_as_read">Oxunmuş kimi işarələ</string>
     <string name="drawer_mark_as_unread">Oxunmamış kimi işarələ</string>
-    <string name="drawer_mute">Səssizə al</string>
-    <string name="drawer_unmute">Səsi aç</string>
     <string name="drawer_hide">Gizlət</string>
     <string name="drawer_unhide">Göstər</string>
     <string name="drawer_move_up">Yuxarı keçir</string>
@@ -122,7 +120,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Bərkidilmiş</string>
-    <string name="drawer_row_muted_state">Səssizə alınmış</string>
     <string name="drawer_row_hidden_state">Gizlədilib</string>
     <string name="drawer_row_needs_input_state">Müdaxiləniz lazımdır</string>
     <string name="drawer_row_working_state">İşləyir</string>

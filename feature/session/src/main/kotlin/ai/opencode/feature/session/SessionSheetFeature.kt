@@ -98,7 +98,6 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         data object CopySessionIDTapped : Action
         data object PinTapped : Action
         data object ReadTapped : Action
-        data object MuteTapped : Action
         /** This phone's own bell: a level for a while, or null to follow the phone's choice. */
         data class BellChosen(val level: OpenCodePushLevel?, val duration: PushDuration) : Action
         /** The server refused the bell shown as [after]; [fetched] is its copy, read again. */
@@ -116,7 +115,6 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         data class Forked(val session: OpenCodeSession) : Delegate
         data object TogglePin : Delegate
         data object ToggleRead : Delegate
-        data object ToggleMute : Delegate
         data object DeleteSession : Delegate
     }
 
@@ -289,7 +287,6 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
 
             Action.PinTapped -> Reduced(state, Effect.send(Action.Delegate(Delegate.TogglePin)))
             Action.ReadTapped -> Reduced(state, Effect.send(Action.Delegate(Delegate.ToggleRead)))
-            Action.MuteTapped -> Reduced(state, Effect.send(Action.Delegate(Delegate.ToggleMute)))
 
             is Action.BellChosen -> {
                 val servers = shared(PushSharedKeys.servers)

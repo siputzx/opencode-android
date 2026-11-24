@@ -185,7 +185,6 @@ fun rememberProjectIcon(
 fun DrawerListProjectTile(
     project: OpenCodeProject,
     server: OpenCodeServer,
-    muted: Boolean,
     side: Dp,
     increasedContrast: Boolean,
     reducedMotion: Boolean,
@@ -197,7 +196,6 @@ fun DrawerListProjectTile(
     DrawerListProjectTile(
         project = project,
         icon = icon,
-        muted = muted,
         side = side,
         increasedContrast = increasedContrast,
         reducedMotion = reducedMotion,
@@ -216,7 +214,6 @@ fun DrawerListProjectTile(
 fun DrawerListProjectTile(
     project: OpenCodeProject,
     icon: ProjectIcon?,
-    muted: Boolean,
     side: Dp,
     increasedContrast: Boolean,
     reducedMotion: Boolean,
@@ -232,7 +229,6 @@ fun DrawerListProjectTile(
     Box(
         modifier
             .size(side)
-            .graphicsLayer { alpha = if (muted) 0.65f else 1f }
             .projectTileShadow(radius, k, depth)
             .clip(shape)
             .clearAndSetSemantics {},

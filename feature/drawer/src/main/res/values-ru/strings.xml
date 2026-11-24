@@ -38,8 +38,6 @@
     <string name="drawer_unpin">Открепить</string>
     <string name="drawer_mark_as_read">Отметить прочитанной</string>
     <string name="drawer_mark_as_unread">Отметить непрочитанной</string>
-    <string name="drawer_mute">Отключить уведомления</string>
-    <string name="drawer_unmute">Включить уведомления</string>
     <string name="drawer_hide">Скрыть</string>
     <string name="drawer_unhide">Показать</string>
     <string name="drawer_move_up">Переместить выше</string>
@@ -130,7 +128,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Закреплена</string>
-    <string name="drawer_row_muted_state">Уведомления отключены</string>
     <string name="drawer_row_hidden_state">Скрыты</string>
     <string name="drawer_row_needs_input_state">Нужен ваш ответ</string>
     <string name="drawer_row_working_state">Работает</string>

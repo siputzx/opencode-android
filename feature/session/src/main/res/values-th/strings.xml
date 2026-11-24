@@ -56,8 +56,6 @@
     <string name="session_pin">ปักหมุด</string>
     <string name="session_pinned">ปักหมุดแล้ว</string>
     <string name="session_unread">ยังไม่อ่าน</string>
-    <string name="session_mute">ปิดการแจ้งเตือน</string>
-    <string name="session_muted">ปิดการแจ้งเตือนแล้ว</string>
     <string name="session_compact">บีบอัด</string>
     <string name="session_fork">แตกแขนง</string>
     <string name="session_toggle_on_description">เปิด</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">คัดลอก ID เซสชัน</string>
     <string name="session_mark_as_read">ทำเครื่องหมายว่าอ่านแล้ว</string>
     <string name="session_mark_as_unread">ทำเครื่องหมายว่ายังไม่อ่าน</string>
-    <string name="session_unmute">เปิดการแจ้งเตือน</string>
     <string name="session_menu_export_expanded_description">ขยายแล้ว</string>
     <string name="session_menu_export_collapsed_description">ย่อแล้ว</string>
     <string name="session_info">ข้อมูลเซสชัน</string>

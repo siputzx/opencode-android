@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Нестабилна веза сада изазива тек кратку сметњу у позиву уместо неколико секунди тишине.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Утишај сесије</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Утишане сесије остају на листи, али се не појављују у прегледу новости и немају тачку за непрочитано.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Задржи „Преглед новости“ да све означиш као прочитано. Сесије које чекају на тебе остају.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Задржи сесију у бочном панелу и додирни „Утишај“</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Упаривање са било ког места</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Значка на икони апликације</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Икона апликације показује број непрочитаних сесија и оних које чекају на тебе, као у прегледу новости.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Утишане сесије се не броје.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Обавештења морају бити укључена.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Остави питање у сесији без одговора, па пређи на почетни екран</string>
 

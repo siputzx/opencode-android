@@ -553,9 +553,6 @@ private fun SessionMenu(
                 if (listContext.isUnread) stringResource(R.string.session_mark_as_read) else stringResource(R.string.session_mark_as_unread),
                 if (listContext.isUnread) SFSymbol.EnvelopeOpen else SFSymbol.EnvelopeBadge,
             ) { menu(SessionSheetFeature.Action.ReadTapped) }
-            MenuItem(if (listContext.isMuted) stringResource(R.string.session_unmute) else stringResource(R.string.session_mute), if (listContext.isMuted) SFSymbol.Bell else SFSymbol.BellSlash) {
-                menu(SessionSheetFeature.Action.MuteTapped)
-            }
         }
         HorizontalDivider()
         MenuItem(stringResource(R.string.session_compact), SFSymbol.RectangleCompressVertical) { menu(SessionSheetFeature.Action.CompactTapped) }

@@ -3,8 +3,6 @@ package ai.opencode.feature.drawer
 import ai.opencode.core.dependencies.Clock
 import ai.opencode.core.dependencies.DateClient
 import ai.opencode.core.dependencies.ImmediateClock
-import ai.opencode.core.sharing.SharedKeys
-import ai.opencode.core.sharing.shared
 import ai.opencode.core.store.TestStore
 import ai.opencode.core.testing.TestIsolationRule
 import ai.opencode.feature.drawer.HomeFeature.Action
@@ -40,17 +38,16 @@ class AppIconBadgeTests {
     )
 
     /**
-     * `unread` and `muted` have news, `waiting` will need input once the attention read lands,
+     * `unread` has news, `waiting` will need input once the attention read lands,
      * and `read` has nothing new. The list has loaded; its attention read hasn't.
      */
-    private fun home(server: OpenCodeServer = this.server, muted: Set<String>? = null): HomeFeature.State {
-        val sessions = listOf(session("unread", idle = 2_000), session("read"), session("waiting"), session("muted", idle = 2_000))
+    private fun home(server: OpenCodeServer = this.server): HomeFeature.State {
+        val sessions = listOf(session("unread", idle = 2_000), session("read"), session("waiting"))
         var state = HomeFeature.State(server, OpenCodeHomeSnapshot(emptyList(), sessions, emptySet()))
         state = state.copy(
             connection = state.connection.copy(hasConnected = true),
             noticeReadiness = HomeFeature.State.NoticeReadiness.listed,
         )
-        state = state.copy(mutedSessionKeys = muted ?: setOf(state.sessionKey("muted")))
         state = state.openingDraft()
         return state.copy(sessionDetail = state.sessionDetail?.copy(isVisible = true))
     }
@@ -78,8 +75,6 @@ class AppIconBadgeTests {
                 homeSnapshot = { OpenCodeHomeSnapshot(emptyList(), listed, emptySet()) },
             )
         }
-        // The mirror the fixture seeded, in the store's own shared storage too.
-        store.withDependencies { shared(SharedKeys.mutedSessionKeys).update { state.mutedSessionKeys } }
         store.exhaustive = false
         return store
     }
@@ -95,30 +90,10 @@ class AppIconBadgeTests {
         val ledger = published.lastOrNull()
         assertEquals(listOf("unread", "waiting"), ledger?.sessionIDs)
         assertEquals(store.state.catchUpSessions.size, ledger?.count)
-        assertEquals(listOf("muted"), ledger?.mutedSessionIDs)
         // A hash of the server's identity, never its username or address.
         assertEquals(ShareConversation.serverKey(server.persistenceID), ledger?.serverKey)
         assertTrue(ledger?.let { AppBadgeLedger.isHashedKey(it.serverKey) } == true)
         assertFalse(ledger?.serverKey?.contains("localhost") ?: true)
-        store.skipInFlightEffects()
-    }
-
-    @Test fun mutingAndUnmutingChangeTheCount() = runTest {
-        val published = published()
-        val store = store(home(), published)
-        store.send(Action.AttentionRefreshed(setOf("waiting")))
-
-        store.send(Action.ToggleMute("unread"))
-        assertEquals(listOf("waiting"), published.last().sessionIDs)
-        assertEquals(listOf("muted", "unread"), published.last().mutedSessionIDs)
-
-        // A muted session that needs input still never counts.
-        store.send(Action.ToggleMute("waiting"))
-        assertEquals(0, published.last().count)
-
-        store.send(Action.ToggleMute("muted"))
-        assertEquals(listOf("muted"), published.last().sessionIDs)
-        assertEquals(store.state.catchUpSessions.size, published.last().count)
         store.skipInFlightEffects()
     }
 
@@ -191,15 +166,12 @@ class AppIconBadgeTests {
         val other = OpenCodeServer(url = "http://localhost:10", username = "", password = "")
         val published = published()
         val base = home(server = other)
-        // The same session ID muted on the first server doesn't mute it here.
-        val elsewhere = "${server.persistenceID}|unread"
-        val store = store(base.copy(mutedSessionKeys = base.mutedSessionKeys + elsewhere), published)
+        val store = store(base, published)
         store.send(Action.AttentionRefreshed(setOf("waiting")))
         val ledger = published.lastOrNull()
         assertEquals(ShareConversation.serverKey(other.persistenceID), ledger?.serverKey)
         assertNotEquals(ShareConversation.serverKey(server.persistenceID), ledger?.serverKey)
         assertEquals(listOf("unread", "waiting"), ledger?.sessionIDs)
-        assertEquals(listOf("muted"), ledger?.mutedSessionIDs)
         store.skipInFlightEffects()
     }
 

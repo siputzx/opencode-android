@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">O conexiune instabilă provoacă doar o scurtă întrerupere în apel, nu secunde de liniște.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Dezactivează notificările sesiunilor</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Sesiunile cu notificările oprite rămân în listă, dar nu apar în La zi și nu au punct de necitit.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Ține apăsat La zi pentru a marca totul ca citit. Sesiunile care așteaptă un răspuns de la tine rămân.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Ține apăsată o sesiune în panoul lateral și atinge Dezactivează notificările</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Asociere de oriunde</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Insignă pe pictograma aplicației</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Pictograma aplicației arată câte sesiuni sunt necitite sau te așteaptă, același număr ca în La zi.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Sesiunile cu notificările oprite nu se numără.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Notificările trebuie să fie activate.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Lasă o sesiune în așteptarea unui răspuns la o întrebare, apoi mergi la ecranul de pornire</string>
 

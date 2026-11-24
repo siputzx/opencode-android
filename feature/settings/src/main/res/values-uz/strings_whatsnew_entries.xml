@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Aloqa zaiflashsa, qo‘ng‘iroqda soniyalab jimlik o‘rniga qisqa uzilish bo‘ladi.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Sessiya bildirishnomalarini o‘chirish</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Bildirishnomalari o‘chirilgan sessiyalar ro‘yxatda qoladi, lekin Yangiliklarni ko‘rishda chiqmaydi va o‘qilmaganlik nuqtasi ko‘rinmaydi.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Hammasini o‘qilgan deb belgilash uchun Yangiliklarni ko‘rishni bosib turing. Javobingizni kutayotgan sessiyalar qoladi.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Yon panelda sessiyani bosib turing va Bildirishnomalarni o‘chirishni bosing</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Istalgan joydan juftlash</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Ilova belgisidagi hisoblagich</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Ilova belgisi o‘qilmagan yoki sizni kutayotgan seanslar sonini ko‘rsatadi — bu «Yangiliklarni ko‘rish»dagi son bilan bir xil.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Bildirishnomalari o‘chirilgan seanslar hisobga olinmaydi.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Buning uchun bildirishnomalar yoqilgan bo‘lishi kerak.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Sessiyada savolni javobsiz qoldiring, so‘ng bosh ekranga o‘ting</string>
 

@@ -56,8 +56,6 @@
     <string name="session_pin">置顶</string>
     <string name="session_pinned">已置顶</string>
     <string name="session_unread">未读</string>
-    <string name="session_mute">静音</string>
-    <string name="session_muted">已静音</string>
     <string name="session_compact">压缩会话</string>
     <string name="session_fork">创建分支会话</string>
     <string name="session_toggle_on_description">开启</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">复制会话 ID</string>
     <string name="session_mark_as_read">标为已读</string>
     <string name="session_mark_as_unread">标为未读</string>
-    <string name="session_unmute">取消静音</string>
     <string name="session_menu_export_expanded_description">已展开</string>
     <string name="session_menu_export_collapsed_description">已折叠</string>
     <string name="session_info">会话信息</string>

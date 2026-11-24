@@ -56,8 +56,6 @@
     <string name="session_pin">Pripnúť</string>
     <string name="session_pinned">Pripnuté</string>
     <string name="session_unread">Neprečítané</string>
-    <string name="session_mute">Stlmiť</string>
-    <string name="session_muted">Stlmené</string>
     <string name="session_compact">Zhutniť</string>
     <string name="session_fork">Vytvoriť vetvu</string>
     <string name="session_toggle_on_description">Zapnuté</string>
@@ -133,7 +131,6 @@
     <string name="session_copy_session_id">Kopírovať ID relácie</string>
     <string name="session_mark_as_read">Označiť ako prečítané</string>
     <string name="session_mark_as_unread">Označiť ako neprečítané</string>
-    <string name="session_unmute">Zrušiť stlmenie</string>
     <string name="session_menu_export_expanded_description">Rozbalené</string>
     <string name="session_menu_export_collapsed_description">Zbalené</string>
     <string name="session_info">Informácie o relácii</string>

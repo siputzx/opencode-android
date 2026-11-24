@@ -62,7 +62,7 @@ import java.util.UUID
 
 /**
  * Notifications and Settings, busy state and priority, the transcript caches, snapshots, prefetch
- * and attention. The drawer's pins, mutes, deletion and read state are in
+ * and attention. The drawer's pins, deletion and read state are in
  * `HomeFeatureTestsDrawer.kt`; navigation and the connection in `HomeFeatureTestsNavigation.kt`.
  */
 class HomeFeatureTests {

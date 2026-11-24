@@ -56,7 +56,7 @@ internal fun HomeFeature.publishAppBadge(state: State, ledger: AppBadgeLedger? =
 }
 
 /**
- * What the icon's badge counts: the sessions Catch Up holds (unread or needing input, never muted),
+ * What the icon's badge counts: the sessions Catch Up holds (unread or needing input),
  * matching its row in the drawer. Null until the list and its attention read have landed on a live
  * connection, so a reconnect, an outage, or the app leaving keeps the last count rather than
  * clearing it.
@@ -77,7 +77,6 @@ internal val State.appBadgePublication: AppBadgePublication
             attentionSessionIDs = attentionSessionIDs,
             sessionReadDates = sessionReadDates,
             manuallyUnreadSessionKeys = manuallyUnreadSessionKeys,
-            mutedSessionKeys = mutedSessionKeys,
             viewing = viewing,
         )
     }
@@ -92,7 +91,6 @@ internal data class AppBadgePublication(
     val attentionSessionIDs: Set<String>,
     val sessionReadDates: Map<String, Instant>,
     val manuallyUnreadSessionKeys: Set<String>,
-    val mutedSessionKeys: Set<String>,
     val viewing: State.Viewing,
 ) {
     val ledger: AppBadgeLedger?
@@ -104,18 +102,14 @@ internal data class AppBadgePublication(
                 showsActivity = true,
                 busy = parents.busy(activeSessionIDs),
                 attention = attentionSessionIDs,
-                mutedKeys = mutedSessionKeys,
                 manuallyUnreadKeys = manuallyUnreadSessionKeys,
                 readDates = sessionReadDates,
             )
             val counted = sessions.filter { status.needsCatchUp(it) }
-            val prefix = "$serverID|"
-            val muted = mutedSessionKeys.mapNotNull { key -> if (key.startsWith(prefix)) key.removePrefix(prefix) else null }
             return AppBadgeLedger(
                 serverKey = AppBadgeLedger.serverKey(serverID),
                 ref = null,
                 sessionIDs = counted.map { it.id }.sorted(),
-                mutedSessionIDs = muted.sorted(),
                 viewingSessionIDs = viewing.threads.sorted(),
             )
         }
@@ -124,7 +118,7 @@ internal data class AppBadgePublication(
         val notReady = AppBadgePublication(
             isReady = false, server = null, sessions = emptyList(), activeSessionIDs = emptySet(),
             parents = State.ParentSources.empty, attentionSessionIDs = emptySet(),
-            sessionReadDates = emptyMap(), manuallyUnreadSessionKeys = emptySet(), mutedSessionKeys = emptySet(),
+            sessionReadDates = emptyMap(), manuallyUnreadSessionKeys = emptySet(),
             viewing = State.Viewing(),
         )
     }
@@ -144,7 +138,6 @@ data class InAppNoticeInput(
     val attentionSessionIDs: Set<String>,
     val sessionReadDates: Map<String, Instant>,
     val manuallyUnreadSessionKeys: Set<String>,
-    val mutedSessionKeys: Set<String>,
 ) {
     val signal: InAppNoticeSignal
         get() {
@@ -154,13 +147,12 @@ data class InAppNoticeInput(
                 showsActivity = true,
                 busy = parents.busy(activeSessionIDs),
                 attention = attentionSessionIDs,
-                mutedKeys = mutedSessionKeys,
                 manuallyUnreadKeys = manuallyUnreadSessionKeys,
                 readDates = sessionReadDates,
             )
             val signals = HashMap<String, InAppNoticeSignal.Session>(sessions.size)
             for (session in sessions) {
-                if (session.parentID != null || status.isMuted(session.id)) continue
+                if (session.parentID != null) continue
                 val indicator = status.indicator(session)
                 signals[session.id] = InAppNoticeSignal.Session(
                     title = session.title,
@@ -176,7 +168,7 @@ data class InAppNoticeInput(
         val off = InAppNoticeInput(
             mode = InAppNoticeMode.off, isLive = false, server = null, sessions = emptyList(), activeSessionIDs = emptySet(),
             parents = State.ParentSources.empty, attentionSessionIDs = emptySet(),
-            sessionReadDates = emptyMap(), manuallyUnreadSessionKeys = emptySet(), mutedSessionKeys = emptySet(),
+            sessionReadDates = emptyMap(), manuallyUnreadSessionKeys = emptySet(),
         )
     }
 }
@@ -200,7 +192,6 @@ internal fun HomeFeature.noticeInput(state: State): InAppNoticeInput {
         attentionSessionIDs = state.attentionSessionIDs,
         sessionReadDates = state.sessionReadDates,
         manuallyUnreadSessionKeys = state.manuallyUnreadSessionKeys,
-        mutedSessionKeys = state.mutedSessionKeys,
     )
 }
 

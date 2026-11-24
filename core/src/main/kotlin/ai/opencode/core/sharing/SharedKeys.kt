@@ -80,8 +80,6 @@ object SharedKeys {
     val manuallyUnreadSessionKeys =
         SharedKey.fileStorage<Set<String>>(FileDirectory.Documents, "manually-unread-sessions.json", emptySet())
 
-    /** Phone-local, server-scoped (`serverID|sessionID`) like pins: muted sessions never reach Catch Up or an unread badge. */
-    val mutedSessionKeys = SharedKey.fileStorage<Set<String>>(FileDirectory.Documents, "muted-sessions.json", emptySet())
 
     /** Phone-local, server-scoped (`serverID|sessionID`) like pins: hidden sessions leave the drawer's list but still turn up in search. */
     val hiddenSessionKeys = SharedKey.fileStorage<Set<String>>(FileDirectory.Documents, "hidden-sessions.json", emptySet())

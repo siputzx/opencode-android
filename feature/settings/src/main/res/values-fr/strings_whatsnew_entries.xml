@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Une connexion instable ne provoque qu’une brève coupure pendant l’appel, au lieu de plusieurs secondes de silence.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Sessions en sourdine</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Les sessions en sourdine restent dans la liste, mais sont exclues de Faire le point et n’affichent aucun point de non-lecture.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Maintenez Faire le point pour tout marquer comme lu. Les sessions qui attendent votre réponse restent.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Maintenez une session dans le volet latéral et touchez Mettre en sourdine</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Couplage où que vous soyez</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Badge sur l’icône de l’application</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">L’icône affiche le nombre de sessions non lues ou qui vous attendent, comme dans « Faire le point ».</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Les sessions en sourdine ne comptent pas.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Les notifications doivent être activées.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Laissez une session en attente d’une réponse, puis revenez à l’écran d’accueil</string>
 

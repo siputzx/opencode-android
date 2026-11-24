@@ -56,8 +56,6 @@
     <string name="session_pin">Собит кунед</string>
     <string name="session_pinned">Собитшуда</string>
     <string name="session_unread">Нохонда</string>
-    <string name="session_mute">Огоҳиҳоро хомӯш кунед</string>
-    <string name="session_muted">Бе огоҳӣ</string>
     <string name="session_compact">Фишурда</string>
     <string name="session_fork">Шоха созед</string>
     <string name="session_toggle_on_description">Фаъол</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Нусхабардории ID-и сессия</string>
     <string name="session_mark_as_read">Хондашуда қайд кунед</string>
     <string name="session_mark_as_unread">Нохонда қайд кунед</string>
-    <string name="session_unmute">Огоҳиҳоро фаъол кунед</string>
     <string name="session_menu_export_expanded_description">Васеъшуда</string>
     <string name="session_menu_export_collapsed_description">Ҷамъшуда</string>
     <string name="session_info">Маълумоти сессия</string>

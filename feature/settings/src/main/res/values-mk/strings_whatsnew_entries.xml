@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">При нестабилна врска, повикот има краток прекин наместо неколку секунди тишина.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Исклучи известувања за сесии</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Сесиите без известувања остануваат во списокот, но не се вклучуваат во „Биди во тек“ и немаат точка за непрочитано.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Задржи „Биди во тек“ за да означиш сè како прочитано. Сесиите што чекаат на тебе остануваат.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Задржи сесија во страничното мени и допри „Исклучи известувања“</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Спарување од секаде</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Ознака на иконата на апликацијата</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Иконата на апликацијата покажува колку сесии се непрочитани или чекаат на тебе — ист број како во „Биди во тек“.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Сесиите без известувања не се бројат.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Известувањата мора да се вклучени.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Остави сесија да чека одговор на прашање, па оди на почетниот екран</string>
 

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">网络不稳时，通话只会短暂卡顿，不再出现数秒的静音。</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">会话静音</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">已静音的会话仍保留在列表中，但不会出现在“查看动态”中，也不会显示未读圆点。</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">长按“查看动态”可将全部会话标为已读。等待你回应的会话仍会保留。</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">长按侧边栏中的会话，然后点击“静音”</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">随处配对</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">应用图标角标</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">应用图标会显示未读或等待你处理的会话数量，与“查看动态”中的数量一致。</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">已静音的会话不计入。</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">需要开启通知。</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">让会话停在等待你回答问题的状态，然后返回主屏幕</string>
 

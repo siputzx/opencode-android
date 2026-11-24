@@ -202,7 +202,6 @@ private fun buildEntries(): List<WhatsNewEntry> =
         WhatsNewShipped.dictationKeepsGoing,
         WhatsNewShipped.drawerPeek,
         WhatsNewShipped.pairFromAnywhere,
-        WhatsNewShipped.muteSessions,
         WhatsNewShipped.voiceWebrtcWeakConnection,
         WhatsNewShipped.attachmentMenuHold,
         WhatsNewShipped.voiceMessages,

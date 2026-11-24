@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Një lidhje e dobët shkakton vetëm një ndërprerje të shkurtër në thirrje, jo disa sekonda heshtjeje.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Hesht sesionet</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Sesionet pa zë mbeten në listë, por nuk përfshihen te Shiko të rejat dhe nuk shfaqin pikën e paleximit.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Mbaje shtypur Shiko të rejat për t’i shënuar të gjitha si të lexuara. Sesionet që presin përgjigjen tënde mbeten.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Mbaje shtypur një sesion në panelin anësor dhe prek Hesht</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Çifto nga kudo</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Numëruesi në ikonën e aplikacionit</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Ikona e aplikacionit tregon sa sesione janë të palexuara ose presin përgjigjen tënde, njësoj si te Shiko të rejat.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Sesionet pa zë nuk numërohen.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Njoftimet duhet të jenë të aktivizuara.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Lër një sesion në pritje të përgjigjes për një pyetje, pastaj shko në ekranin kryesor</string>
 

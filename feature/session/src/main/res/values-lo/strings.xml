@@ -56,8 +56,6 @@
     <string name="session_pin">ປັກໝຸດ</string>
     <string name="session_pinned">ປັກໝຸດໄວ້</string>
     <string name="session_unread">ຍັງບໍ່ອ່ານ</string>
-    <string name="session_mute">ປິດສຽງ</string>
-    <string name="session_muted">ປິດສຽງໄວ້</string>
     <string name="session_compact">ກະທັດຮັດ</string>
     <string name="session_fork">ແຍກເຊດຊັນ</string>
     <string name="session_toggle_on_description">ເປີດ</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">ສຳເນົາ ID ເຊດຊັນ</string>
     <string name="session_mark_as_read">ໝາຍວ່າອ່ານແລ້ວ</string>
     <string name="session_mark_as_unread">ໝາຍວ່າຍັງບໍ່ອ່ານ</string>
-    <string name="session_unmute">ເປີດສຽງ</string>
     <string name="session_menu_export_expanded_description">ຂະຫຍາຍແລ້ວ</string>
     <string name="session_menu_export_collapsed_description">ຫຍໍ້ແລ້ວ</string>
     <string name="session_info">ຂໍ້ມູນເຊດຊັນ</string>

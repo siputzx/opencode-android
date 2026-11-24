@@ -521,7 +521,6 @@ private fun rowActions(
         lifted = { liftedID.value = it },
         togglePin = { store.send(HomeFeature.Action.TogglePin(id)) },
         toggleRead = { store.send(if (unread) HomeFeature.Action.MarkRead(id) else HomeFeature.Action.MarkUnread(id)) },
-        toggleMute = { store.send(HomeFeature.Action.ToggleMute(id)) },
         toggleHidden = { store.send(HomeFeature.Action.ToggleHidden(id)) },
         delete = { store.send(HomeFeature.Action.DeleteSessionTapped(id)) },
         movePinUp = { store.send(HomeFeature.Action.MovePinUp(id)) },

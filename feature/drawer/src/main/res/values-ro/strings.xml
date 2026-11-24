@@ -37,8 +37,6 @@
     <string name="drawer_unpin">Anulează fixarea</string>
     <string name="drawer_mark_as_read">Marchează ca citită</string>
     <string name="drawer_mark_as_unread">Marchează ca necitită</string>
-    <string name="drawer_mute">Dezactivează notificările</string>
-    <string name="drawer_unmute">Activează notificările</string>
     <string name="drawer_hide">Ascunde</string>
     <string name="drawer_unhide">Reafișează</string>
     <string name="drawer_move_up">Mută în sus</string>
@@ -126,7 +124,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Fixată</string>
-    <string name="drawer_row_muted_state">Cu notificările oprite</string>
     <string name="drawer_row_hidden_state">Ascunsă</string>
     <string name="drawer_row_needs_input_state">E nevoie de tine</string>
     <string name="drawer_row_working_state">De lucru</string>

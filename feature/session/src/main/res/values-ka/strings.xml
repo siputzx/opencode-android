@@ -56,8 +56,6 @@
     <string name="session_pin">ჩამაგრება</string>
     <string name="session_pinned">ჩამაგრებული</string>
     <string name="session_unread">წაუკითხავი</string>
-    <string name="session_mute">დადუმება</string>
-    <string name="session_muted">დადუმებული</string>
     <string name="session_compact">კომპაქტური</string>
     <string name="session_fork">განშტოება</string>
     <string name="session_toggle_on_description">ჩართული</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">სესიის ID-ის კოპირება</string>
     <string name="session_mark_as_read">წაკითხულად მონიშვნა</string>
     <string name="session_mark_as_unread">წაუკითხავად მონიშვნა</string>
-    <string name="session_unmute">დადუმების გაუქმება</string>
     <string name="session_menu_export_expanded_description">გაშლილი</string>
     <string name="session_menu_export_collapsed_description">ჩაკეცილი</string>
     <string name="session_info">სესიის ინფორმაცია</string>

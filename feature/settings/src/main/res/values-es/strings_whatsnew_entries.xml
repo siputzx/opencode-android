@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Con una conexión inestable, la llamada solo sufre un breve corte en lugar de segundos de silencio.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Silenciar sesiones</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Las sesiones silenciadas siguen en tu lista, pero no aparecen en Ponerse al día ni muestran el punto de sin leer.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Mantén pulsado Ponerse al día para marcar todo como leído. Las sesiones que esperan tu respuesta se quedan.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Mantén pulsada una sesión en el panel lateral y toca Silenciar</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Emparejar desde cualquier lugar</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Contador en el icono de la aplicación</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">El icono muestra cuántas sesiones están sin leer o esperan tu respuesta, igual que Ponerse al día.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Las sesiones silenciadas no cuentan.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Requiere tener las notificaciones activadas.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Deja una sesión con una pregunta pendiente y ve a la pantalla de inicio</string>
 

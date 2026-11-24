@@ -56,8 +56,6 @@
     <string name="session_pin">Закріпити</string>
     <string name="session_pinned">Закріплені</string>
     <string name="session_unread">Непрочитані</string>
-    <string name="session_mute">Вимкнути сповіщення</string>
-    <string name="session_muted">Сповіщення вимкнено</string>
     <string name="session_compact">Стиснути</string>
     <string name="session_fork">Відгалузити</string>
     <string name="session_toggle_on_description">Увімкнено</string>
@@ -133,7 +131,6 @@
     <string name="session_copy_session_id">Копіювати ідентифікатор сеансу</string>
     <string name="session_mark_as_read">Позначити як прочитану</string>
     <string name="session_mark_as_unread">Позначити як непрочитану</string>
-    <string name="session_unmute">Увімкнути сповіщення</string>
     <string name="session_menu_export_expanded_description">Розгорнуто</string>
     <string name="session_menu_export_collapsed_description">Згорнуто</string>
     <string name="session_info">Інформація про сесію</string>

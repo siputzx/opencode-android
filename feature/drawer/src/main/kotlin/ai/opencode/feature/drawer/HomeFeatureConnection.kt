@@ -553,7 +553,7 @@ internal val State.voiceSessionBoard: VoiceSessionBoard?
             sessions = sessions,
             busyIDs = status.busy,
             attentionIDs = status.attention,
-            unreadIDs = sessions.filter { status.isUnread(it) && !status.isMuted(it.id) }.mapTo(HashSet()) { it.id },
+            unreadIDs = sessions.filter { status.isUnread(it) }.mapTo(HashSet()) { it.id },
             pinnedSessionKeys = pinnedSessionKeys,
             attentionDirectories = HomeFeature.attentionDirectories(this).toSet(),
             isLive = status.showsActivity,

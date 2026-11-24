@@ -56,8 +56,6 @@
     <string name="session_pin">Fixează</string>
     <string name="session_pinned">Fixată</string>
     <string name="session_unread">Necitită</string>
-    <string name="session_mute">Dezactivează notificările</string>
-    <string name="session_muted">Cu notificările oprite</string>
     <string name="session_compact">Compactează</string>
     <string name="session_fork">Derivează</string>
     <string name="session_toggle_on_description">Activat</string>
@@ -131,7 +129,6 @@
     <string name="session_copy_session_id">Copiază ID-ul sesiunii</string>
     <string name="session_mark_as_read">Marchează ca citită</string>
     <string name="session_mark_as_unread">Marchează ca necitită</string>
-    <string name="session_unmute">Activează notificările</string>
     <string name="session_menu_export_expanded_description">Extins</string>
     <string name="session_menu_export_collapsed_description">Restrâns</string>
     <string name="session_info">Informații despre sesiune</string>

@@ -323,7 +323,6 @@ internal fun State.adoptingSearchResultFor(action: Action): State {
     val sessionID = when (action) {
         is Action.SessionTapped -> action.sessionID
         is Action.TogglePin -> action.sessionID
-        is Action.ToggleMute -> action.sessionID
         is Action.ToggleHidden -> action.sessionID
         is Action.MarkRead -> action.sessionID
         is Action.MarkUnread -> action.sessionID

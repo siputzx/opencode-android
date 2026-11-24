@@ -56,8 +56,6 @@
     <string name="session_pin">Anheften</string>
     <string name="session_pinned">Angeheftet</string>
     <string name="session_unread">Ungelesen</string>
-    <string name="session_mute">Stummschalten</string>
-    <string name="session_muted">Stummgeschaltet</string>
     <string name="session_compact">Komprimieren</string>
     <string name="session_fork">Abzweigen</string>
     <string name="session_toggle_on_description">Ein</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Sitzungs-ID kopieren</string>
     <string name="session_mark_as_read">Als gelesen markieren</string>
     <string name="session_mark_as_unread">Als ungelesen markieren</string>
-    <string name="session_unmute">Stummschaltung aufheben</string>
     <string name="session_menu_export_expanded_description">Ausgeklappt</string>
     <string name="session_menu_export_collapsed_description">Eingeklappt</string>
     <string name="session_info">Sitzungsinfo</string>

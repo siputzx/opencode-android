@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">При нестабилна връзка вече има само кратко смущение вместо секунди тишина.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Заглушаване на сесии</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Заглушените сесии остават в списъка, но не се включват в Наваксване и нямат точка за непрочетено.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Задръжте Наваксване, за да маркирате всичко като прочетено. Сесиите, които чакат действие от вас, остават.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Задръжте сесия в страничното меню и докоснете Заглушаване</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Сдвояване отвсякъде</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Значка върху иконата на приложението</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Иконата на приложението показва броя на непрочетените сесии и тези, които ви чакат — същия като в „Наваксване“.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Заглушените сесии не се броят.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Известията трябва да са включени.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Оставете сесия да чака отговор на въпрос и отидете на началния екран</string>
 

@@ -56,8 +56,6 @@
     <string name="session_pin">Ghim</string>
     <string name="session_pinned">Đã ghim</string>
     <string name="session_unread">Chưa đọc</string>
-    <string name="session_mute">Tắt thông báo</string>
-    <string name="session_muted">Đã tắt thông báo</string>
     <string name="session_compact">Nhỏ gọn</string>
     <string name="session_fork">Tách nhánh</string>
     <string name="session_toggle_on_description">Bật</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">Sao chép ID phiên</string>
     <string name="session_mark_as_read">Đánh dấu đã đọc</string>
     <string name="session_mark_as_unread">Đánh dấu chưa đọc</string>
-    <string name="session_unmute">Bật thông báo</string>
     <string name="session_menu_export_expanded_description">Đã mở rộng</string>
     <string name="session_menu_export_collapsed_description">Đã thu gọn</string>
     <string name="session_info">Thông tin phiên</string>

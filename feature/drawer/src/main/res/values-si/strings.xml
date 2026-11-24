@@ -36,8 +36,6 @@
     <string name="drawer_unpin">ඉහළින් ඉවත් කරන්න</string>
     <string name="drawer_mark_as_read">කියවූ ලෙස සලකුණු කරන්න</string>
     <string name="drawer_mark_as_unread">නොකියවූ ලෙස සලකුණු කරන්න</string>
-    <string name="drawer_mute">නිහඬ කරන්න</string>
-    <string name="drawer_unmute">නිහඬ බව ඉවත් කරන්න</string>
     <string name="drawer_hide">සඟවන්න</string>
     <string name="drawer_unhide">සැඟවීම ඉවත් කරන්න</string>
     <string name="drawer_move_up">ඉහළට ගෙන යන්න</string>
@@ -122,7 +120,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">ඉහළ රඳවා ඇති</string>
-    <string name="drawer_row_muted_state">නිහඬ කළ</string>
     <string name="drawer_row_hidden_state">සැඟවූ</string>
     <string name="drawer_row_needs_input_state">ඔබේ යෙදවුම අවශ්‍යයි</string>
     <string name="drawer_row_working_state">ක්‍රියා කරමින්</string>

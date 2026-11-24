@@ -56,8 +56,6 @@
     <string name="session_pin">釘選</string>
     <string name="session_pinned">已釘選</string>
     <string name="session_unread">未讀</string>
-    <string name="session_mute">靜音</string>
-    <string name="session_muted">已靜音</string>
     <string name="session_compact">精簡</string>
     <string name="session_fork">分支</string>
     <string name="session_toggle_on_description">開啟</string>
@@ -127,7 +125,6 @@
     <string name="session_copy_session_id">複製工作階段 ID</string>
     <string name="session_mark_as_read">標示為已讀</string>
     <string name="session_mark_as_unread">標示為未讀</string>
-    <string name="session_unmute">取消靜音</string>
     <string name="session_menu_export_expanded_description">已展開</string>
     <string name="session_menu_export_collapsed_description">已摺疊</string>
     <string name="session_info">工作階段資訊</string>

@@ -56,8 +56,6 @@
     <string name="session_pin">Fissa in alto</string>
     <string name="session_pinned">Fissata</string>
     <string name="session_unread">Da leggere</string>
-    <string name="session_mute">Silenzia</string>
-    <string name="session_muted">Silenziata</string>
     <string name="session_compact">Compatta</string>
     <string name="session_fork">Crea una nuova sessione</string>
     <string name="session_toggle_on_description">Attivato</string>
@@ -131,7 +129,6 @@
     <string name="session_copy_session_id">Copia ID sessione</string>
     <string name="session_mark_as_read">Segna come letta</string>
     <string name="session_mark_as_unread">Segna come da leggere</string>
-    <string name="session_unmute">Riattiva notifiche</string>
     <string name="session_menu_export_expanded_description">Espanso</string>
     <string name="session_menu_export_collapsed_description">Compresso</string>
     <string name="session_info">Info sessione</string>

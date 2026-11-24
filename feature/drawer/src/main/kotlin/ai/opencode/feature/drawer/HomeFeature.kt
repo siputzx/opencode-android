@@ -144,8 +144,6 @@ class HomeFeature : Reducer<HomeFeature.State, HomeFeature.Action> {
         val manuallyUnreadSessionKeys: Set<String> = emptySet(),
         /** How a session read from the drawer stood before the read, for the New divider when it opens. */
         val pendingOpenReadState: Map<String, PendingOpenReadState> = emptyMap(),
-        /** Mirror of `SharedKeys.mutedSessionKeys`. */
-        val mutedSessionKeys: Set<String> = emptySet(),
         /** Mirror of `SharedKeys.hiddenSessionKeys`. */
         val hiddenSessionKeys: Set<String> = emptySet(),
         /** Mirror of `SharedKeys.sidebarShown`: beside a wide window's sidebar, whether it shows. */
@@ -263,19 +261,16 @@ class HomeFeature : Reducer<HomeFeature.State, HomeFeature.Action> {
                 }
         }
 
-        /** Read/mute state and busy sessions, snapshotted once for bulk loops over `sessions`. */
+        /** Read state and busy sessions, snapshotted once for bulk loops over `sessions`. */
         data class StatusSnapshot(
             val serverID: String,
             val showsActivity: Boolean,
             val busy: Set<String>,
             val attention: Set<String>,
-            val mutedKeys: Set<String>,
             val manuallyUnreadKeys: Set<String>,
             val readDates: Map<String, Instant>,
         ) {
             fun key(id: String): String = "$serverID|$id"
-
-            fun isMuted(id: String): Boolean = mutedKeys.isNotEmpty() && key(id) in mutedKeys
 
             fun isUnread(session: OpenCodeSession): Boolean {
                 if (manuallyUnreadKeys.isNotEmpty() && key(session.id) in manuallyUnreadKeys) return true
@@ -287,18 +282,17 @@ class HomeFeature : Reducer<HomeFeature.State, HomeFeature.Action> {
                 if (!showsActivity) return Indicator.none
                 if (session.id in attention) return Indicator.attention
                 if (session.id in busy) return Indicator.running
-                // A muted session's read state is kept, just never shown.
-                if (isUnread(session) && !isMuted(session.id)) return Indicator.unread
+                if (isUnread(session)) return Indicator.unread
                 return Indicator.none
             }
 
             /**
-             * Idle with something new, or waiting on the reader. Muted and archived sessions never
+             * Idle with something new, or waiting on the reader. Archived sessions never
              * do, and a subagent's session never does: it reaches the reader from its parent, which
              * a pending request inside it already lights (`attentionSessionIDs` holds family roots).
              */
             fun needsCatchUp(session: OpenCodeSession): Boolean {
-                if (session.parentID != null || session.isArchived || isMuted(session.id)) return false
+                if (session.parentID != null || session.isArchived) return false
                 return when (indicator(session)) {
                     Indicator.attention, Indicator.unread -> true
                     Indicator.running, Indicator.none -> false
@@ -578,7 +572,6 @@ class HomeFeature : Reducer<HomeFeature.State, HomeFeature.Action> {
                     sessionReadDates = shared(SharedKeys.sessionReadDates).value,
                     sessionSeenWatermarks = shared(SharedKeys.sessionSeenWatermarks).value,
                     manuallyUnreadSessionKeys = shared(SharedKeys.manuallyUnreadSessionKeys).value,
-                    mutedSessionKeys = shared(SharedKeys.mutedSessionKeys).value,
                     hiddenSessionKeys = shared(SharedKeys.hiddenSessionKeys).value,
                     isSidebarShown = shared(SharedKeys.sidebarShown).value,
                     showsWhatsNewButton = WhatsNewFeature.State().showsButton,
@@ -710,7 +703,6 @@ class HomeFeature : Reducer<HomeFeature.State, HomeFeature.Action> {
         /** The unsent outbox changed: the list's unsent sessions are read again. */
         data object UnsentDraftsChanged : Action
         data class TogglePin(val sessionID: String) : Action
-        data class ToggleMute(val sessionID: String) : Action
         data class ToggleHidden(val sessionID: String) : Action
         data class MovePinUp(val sessionID: String) : Action
         data class MovePinDown(val sessionID: String) : Action

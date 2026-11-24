@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Холболт муудахад дуудлага хэдэн секунд чимээгүй болохын оронд түр зуур л тасалдана.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Сессийн мэдэгдлийг хаах</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Мэдэгдлийг хаасан сесс жагсаалтад үлдэх ч Шинэ зүйлсийг үзэх хэсэгт орохгүй, уншаагүй цэг харагдахгүй.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Шинэ зүйлсийг үзэх товчийг удаан дарж бүгдийг уншсанд тооцно. Таныг хүлээж буй сессүүд үлдэнэ.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Хажуугийн цэсэнд сессийг удаан дараад Мэдэгдлийг хаах дээр товшино уу</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Хаанаас ч хослуулах</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Аппын дүрс дээрх тоо</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Аппын дүрс дээр уншаагүй эсвэл таныг хүлээж буй сессийн тоо харагдана. Энэ нь «Шинэ зүйлсийг үзэх» хэсгийн тоотой ижил.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Мэдэгдлийг нь хаасан сессийг тооцохгүй.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Мэдэгдлийг асаасан байх шаардлагатай.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Сессийг асуултын хариу хүлээж байхад нь үлдээгээд үндсэн дэлгэц рүү очно уу</string>
 

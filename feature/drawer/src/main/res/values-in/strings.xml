@@ -35,8 +35,6 @@
     <string name="drawer_unpin">Lepas sematan</string>
     <string name="drawer_mark_as_read">Tandai sudah dibaca</string>
     <string name="drawer_mark_as_unread">Tandai belum dibaca</string>
-    <string name="drawer_mute">Bisukan</string>
-    <string name="drawer_unmute">Bunyikan</string>
     <string name="drawer_hide">Sembunyikan</string>
     <string name="drawer_unhide">Tampilkan lagi</string>
     <string name="drawer_move_up">Pindahkan ke atas</string>
@@ -118,7 +116,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Disematkan</string>
-    <string name="drawer_row_muted_state">Dibisukan</string>
     <string name="drawer_row_hidden_state">Disembunyikan</string>
     <string name="drawer_row_needs_input_state">Perlu masukan Anda</string>
     <string name="drawer_row_working_state">Bekerja</string>

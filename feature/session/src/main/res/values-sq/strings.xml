@@ -56,8 +56,6 @@
     <string name="session_pin">Fikso</string>
     <string name="session_pinned">I fiksuar</string>
     <string name="session_unread">I palexuar</string>
-    <string name="session_mute">Hesht</string>
-    <string name="session_muted">Pa zë</string>
     <string name="session_compact">Kompakt</string>
     <string name="session_fork">Degëzo</string>
     <string name="session_toggle_on_description">Aktivizuar</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Kopjo ID-në e sesionit</string>
     <string name="session_mark_as_read">Shëno si të lexuar</string>
     <string name="session_mark_as_unread">Shëno si të palexuar</string>
-    <string name="session_unmute">Hiq heshtjen</string>
     <string name="session_menu_export_expanded_description">E zgjeruar</string>
     <string name="session_menu_export_collapsed_description">E palosur</string>
     <string name="session_info">Informacion për sesionin</string>

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Pri slabom pripojení sa hovor len krátko zasekne namiesto niekoľkých sekúnd ticha.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Stlmenie relácií</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Stlmené relácie zostanú v zozname, no nezobrazia sa v prehľade noviniek ani nemajú bodku neprečítaného obsahu.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Podržaním tlačidla Prehľad noviniek označíte všetko ako prečítané. Relácie čakajúce na vás zostanú.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Podržte reláciu v bočnom paneli a ťuknite na Stlmiť</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Párovanie odkiaľkoľvek</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Odznak na ikone aplikácie</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Ikona aplikácie zobrazuje počet neprečítaných relácií alebo relácií čakajúcich na vás, rovnako ako Prehľad noviniek.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Stlmené relácie sa nepočítajú.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Vyžaduje zapnuté upozornenia.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Nechajte v relácii nezodpovedanú otázku a prejdite na domovskú obrazovku</string>
 

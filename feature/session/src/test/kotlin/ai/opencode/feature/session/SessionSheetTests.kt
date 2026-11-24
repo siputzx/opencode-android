@@ -688,9 +688,6 @@ class SessionSheetTests {
         store.send(sheet(SessionSheetFeature.Action.ReadTapped))
         store.receive(sheetDelegate(SessionSheetFeature.Delegate.ToggleRead))
         store.receive(Action.Delegate(SessionFeature.Delegate.ToggleRead("ses_sheet")))
-        store.send(sheet(SessionSheetFeature.Action.MuteTapped))
-        store.receive(sheetDelegate(SessionSheetFeature.Delegate.ToggleMute))
-        store.receive(Action.Delegate(SessionFeature.Delegate.ToggleMute("ses_sheet")))
         store.send(sheet(SessionSheetFeature.Action.DeleteTapped)) { it.updatingSheet { copy(confirmsDeletion = true) } }
         store.send(sheet(SessionSheetFeature.Action.DeleteConfirmed)) { it.updatingSheet { copy(confirmsDeletion = false) } }
         store.receive(sheetDelegate(SessionSheetFeature.Delegate.DeleteSession)) { it.copy(activePicker = null) }

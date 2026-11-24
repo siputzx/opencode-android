@@ -37,8 +37,6 @@
     <string name="drawer_unpin">Atspraust</string>
     <string name="drawer_mark_as_read">Atzīmēt kā lasītu</string>
     <string name="drawer_mark_as_unread">Atzīmēt kā nelasītu</string>
-    <string name="drawer_mute">Apklusināt</string>
-    <string name="drawer_unmute">Ieslēgt paziņojumus</string>
     <string name="drawer_hide">Slēpt</string>
     <string name="drawer_unhide">Rādīt</string>
     <string name="drawer_move_up">Pārvietot augšup</string>
@@ -126,7 +124,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Piesprausta</string>
-    <string name="drawer_row_muted_state">Apklusināta</string>
     <string name="drawer_row_hidden_state">Paslēpta</string>
     <string name="drawer_row_needs_input_state">Vajadzīga tava ievade</string>
     <string name="drawer_row_working_state">Darbojas</string>

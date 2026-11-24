@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Vājā savienojumā zvana laikā tagad ir īss traucējums, nevis vairākas sekundes klusuma.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Apklusināt sesijas</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Apklusinātās sesijas paliek sarakstā, bet neparādās jaunumu pārskatā un netiek atzīmētas ar nelasītas ziņas punktu.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Turi nospiestu Jaunumu pārskats, lai visu atzīmētu kā lasītu. Sesijas, kas gaida tavu rīcību, paliek.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Sānu panelī turi nospiestu sesiju un pieskaries Apklusināt</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Savienot pārī no jebkuras vietas</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Skaitītājs uz lietotnes ikonas</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Lietotnes ikona rāda nelasīto un tavu rīcību gaidošo sesiju skaitu — tāpat kā jaunumu pārskatā.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Apklusinātās sesijas netiek skaitītas.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Jābūt ieslēgtiem paziņojumiem.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Atstāj sesijā neatbildētu jautājumu un pārej uz sākuma ekrānu</string>
 

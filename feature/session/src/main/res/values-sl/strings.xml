@@ -56,8 +56,6 @@
     <string name="session_pin">Pripni</string>
     <string name="session_pinned">Pripeto</string>
     <string name="session_unread">Neprebrano</string>
-    <string name="session_mute">Utišaj</string>
-    <string name="session_muted">Utišano</string>
     <string name="session_compact">Kompakten</string>
     <string name="session_fork">Odcepi</string>
     <string name="session_toggle_on_description">Vklopljeno</string>
@@ -133,7 +131,6 @@
     <string name="session_copy_session_id">Kopiraj ID seje</string>
     <string name="session_mark_as_read">Označi kot prebrano</string>
     <string name="session_mark_as_unread">Označi kot neprebrano</string>
-    <string name="session_unmute">Vklopi obvestila</string>
     <string name="session_menu_export_expanded_description">Razširjeno</string>
     <string name="session_menu_export_collapsed_description">Strnjeno</string>
     <string name="session_info">Podatki o seji</string>

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Przy słabym połączeniu rozmowa zacina się na chwilę zamiast milknąć na kilka sekund.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Wyciszanie sesji</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Wyciszone sesje zostają na liście, ale nie trafiają do „Nadrób zaległości” i nie mają kropki nieprzeczytanych.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Przytrzymaj „Nadrób zaległości”, by oznaczyć wszystko jako przeczytane. Sesje czekające na Ciebie pozostaną.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Przytrzymaj sesję w panelu bocznym i dotknij „Wycisz”</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Parowanie z dowolnego miejsca</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Licznik na ikonie aplikacji</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Ikona aplikacji pokazuje liczbę sesji nieprzeczytanych lub czekających na Ciebie — taką samą jak w „Nadrób zaległości”.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Wyciszone sesje nie są liczone.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Wymaga włączonych powiadomień.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Zostaw sesję czekającą na odpowiedź na pytanie i przejdź do ekranu głównego</string>
 

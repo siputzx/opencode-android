@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Uma conexão instável causa só uma breve falha na chamada, em vez de segundos de silêncio.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Silenciar sessões</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Sessões silenciadas continuam na lista, mas não entram em Fique em dia nem mostram o ponto de não lida.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Segure Fique em dia para marcar tudo como lido. Sessões que esperam por você continuam ali.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Segure uma sessão no painel lateral e toque em Silenciar</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Emparelhar de qualquer lugar</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Contador no ícone do app</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">O ícone do app mostra quantas sessões estão não lidas ou aguardando você, a mesma contagem de Fique em dia.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Sessões silenciadas não entram na contagem.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">As notificações precisam estar ativadas.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Deixe uma sessão aguardando uma pergunta e vá para a tela inicial</string>
 

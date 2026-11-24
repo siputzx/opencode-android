@@ -17,7 +17,6 @@ internal val WhatsNewShipped.appIconBadge: WhatsNewEntry
         tint = Tint.red,
         summary = localized(R.string.settings_whatsnew_entry_app_icon_badge_summary),
         details = listOf(
-            localized(R.string.settings_whatsnew_entry_app_icon_badge_detail_1),
             localized(R.string.settings_whatsnew_entry_app_icon_badge_detail_2),
         ),
         example = localized(R.string.settings_whatsnew_entry_app_icon_badge_example),

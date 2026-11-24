@@ -106,7 +106,6 @@ class DrawerListRowActions(
     val lifted: (String?) -> Unit,
     val togglePin: () -> Unit,
     val toggleRead: () -> Unit,
-    val toggleMute: () -> Unit,
     val toggleHidden: () -> Unit,
     val delete: () -> Unit,
     val movePinUp: () -> Unit,
@@ -145,7 +144,6 @@ fun DrawerListSessionCell(
     val selectLabel = stringResource(R.string.drawer_row_select_action)
     val pinLabel = if (row.isPinnedSection) stringResource(R.string.drawer_unpin) else stringResource(R.string.drawer_pin)
     val readLabel = if (row.unread) stringResource(R.string.drawer_mark_as_read) else stringResource(R.string.drawer_mark_as_unread)
-    val muteLabel = if (row.muted) stringResource(R.string.drawer_unmute) else stringResource(R.string.drawer_mute)
     val hideLabel = if (row.hidden) stringResource(R.string.drawer_unhide) else stringResource(R.string.drawer_hide)
     val deleteLabel = stringResource(CoreR.string.common_delete)
     val moveUpLabel = stringResource(R.string.drawer_move_up)
@@ -158,7 +156,7 @@ fun DrawerListSessionCell(
 
     val failed = row.unsent == DrawerListRow.Unsent.Failed
     val hasStatus = row.indicator != Indicator.none || failed
-    val emphasis = DrawerRowEmphasis.of(selected = row.selected, muted = row.muted, hasIndicator = hasStatus)
+    val emphasis = DrawerRowEmphasis.of(selected = row.selected, hasIndicator = hasStatus)
     val weight = emphasis.weight(DrawerTunables.unreadWeight, DrawerTunables.readWeight)
     // While the drawer selects, the chosen rows' tint stands in for the open session's mark.
     val selection = if (row.selected && row.checked == null) DrawerTunables.selection else null
@@ -167,7 +165,6 @@ fun DrawerListSessionCell(
     val onTint = selection == DrawerSelectionStyle.Tint
     val titleColor = when {
         onTint -> Color.White
-        row.muted -> colors.secondaryText
         emphasis == DrawerRowEmphasis.Active && DrawerTunables.unreadTone != DrawerTone.Primary -> DrawerTunables.unreadTone.color
         else -> colors.text.copy(alpha = colors.text.alpha * emphasis.opacity(row.increasedContrast, DrawerTunables.readOpacity))
     }
@@ -330,7 +327,6 @@ fun DrawerListSessionCell(
                         if (row.unsent == null) {
                             add(CustomAccessibilityAction(pinLabel) { currentActions.togglePin(); true })
                             add(CustomAccessibilityAction(readLabel) { currentActions.toggleRead(); true })
-                            add(CustomAccessibilityAction(muteLabel) { currentActions.toggleMute(); true })
                             add(CustomAccessibilityAction(hideLabel) { currentActions.toggleHidden(); true })
                         }
                         add(CustomAccessibilityAction(deleteLabel) { currentActions.delete(); true })
@@ -379,7 +375,6 @@ fun DrawerListSessionCell(
                             DrawerListProjectTile(
                                 project = row.project,
                                 server = row.server,
-                                muted = row.muted,
                                 side = side,
                                 increasedContrast = row.increasedContrast,
                                 reducedMotion = row.reducedMotion,

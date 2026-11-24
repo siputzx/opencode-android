@@ -36,8 +36,6 @@
     <string name="drawer_unpin">Loslösen</string>
     <string name="drawer_mark_as_read">Als gelesen markieren</string>
     <string name="drawer_mark_as_unread">Als ungelesen markieren</string>
-    <string name="drawer_mute">Stummschalten</string>
-    <string name="drawer_unmute">Stummschaltung aufheben</string>
     <string name="drawer_hide">Verstecken</string>
     <string name="drawer_unhide">Einblenden</string>
     <string name="drawer_move_up">Nach oben</string>
@@ -122,7 +120,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Angeheftet</string>
-    <string name="drawer_row_muted_state">Stummgeschaltet</string>
     <string name="drawer_row_hidden_state">Versteckt</string>
     <string name="drawer_row_needs_input_state">Deine Eingabe ist nötig</string>
     <string name="drawer_row_working_state">In Arbeit</string>

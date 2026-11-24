@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Při slabém připojení hovor jen krátce zadrhne místo několika sekund ticha.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Ztlumení relací</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Ztlumené relace zůstávají v seznamu, ale nezobrazují se v přehledu novinek ani nemají tečku nepřečtených zpráv.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Podržením přehledu novinek označíte vše jako přečtené. Relace, které na vás čekají, zůstanou.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Podržte relaci ve výsuvném panelu a klepněte na Ztlumit</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Párování odkudkoli</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Odznak na ikoně aplikace</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Ikona aplikace ukazuje počet nepřečtených relací nebo relací čekajících na vás, stejně jako Přehled novinek.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Ztlumené relace se nepočítají.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Vyžaduje zapnutá oznámení.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Nechte v relaci nezodpovězenou otázku a přejděte na plochu</string>
 

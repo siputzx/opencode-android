@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Una connessione instabile causa solo un breve disturbo nella chiamata, anziché secondi di silenzio.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Silenzia le sessioni</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Le sessioni silenziate restano nell\'elenco, ma non compaiono in Mettiti in pari e non mostrano il pallino dei messaggi da leggere.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Tieni premuto Mettiti in pari per segnare tutto come letto. Le sessioni in attesa di una tua risposta restano.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Tieni premuta una sessione nel pannello laterale e tocca Silenzia</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Associazione da ovunque</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Badge sull\'icona dell\'app</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">L\'icona dell\'app mostra quante sessioni sono da leggere o in attesa di te, come in Mettiti in pari.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Le sessioni silenziate non contano.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Le notifiche devono essere attive.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Lascia una sessione in attesa di una domanda, poi vai alla schermata Home</string>
 

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Sambungan yang tidak stabil hanya mengganggu panggilan seketika, bukannya menyebabkan senyap beberapa saat.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Senyapkan sesi</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Sesi yang disenyapkan kekal dalam senarai tetapi tidak muncul dalam Ikuti perkembangan atau memaparkan titik belum dibaca.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Tekan lama Ikuti perkembangan untuk menandai semuanya sebagai dibaca. Sesi yang menunggu tindakan anda kekal.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Tekan lama sesi dalam panel sisi dan ketik Senyapkan</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Berpasangan dari mana-mana</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Lencana pada ikon aplikasi</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Ikon aplikasi menunjukkan bilangan sesi yang belum dibaca atau menunggu anda, sama seperti dalam Ikuti perkembangan.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Sesi yang disenyapkan tidak dikira.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Notifikasi perlu dihidupkan.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Biarkan sesi menunggu jawapan soalan, kemudian pergi ke skrin utama</string>
 

@@ -56,8 +56,6 @@
     <string name="session_pin">Prikvači</string>
     <string name="session_pinned">Prikvačeno</string>
     <string name="session_unread">Nepročitano</string>
-    <string name="session_mute">Utišaj</string>
-    <string name="session_muted">Utišano</string>
     <string name="session_compact">Sažmi</string>
     <string name="session_fork">Odvoji u novu sesiju</string>
     <string name="session_toggle_on_description">Uključeno</string>
@@ -131,7 +129,6 @@
     <string name="session_copy_session_id">Kopiraj ID sesije</string>
     <string name="session_mark_as_read">Označi kao pročitano</string>
     <string name="session_mark_as_unread">Označi kao nepročitano</string>
-    <string name="session_unmute">Uključi zvuk</string>
     <string name="session_menu_export_expanded_description">Prošireno</string>
     <string name="session_menu_export_collapsed_description">Sažeto</string>
     <string name="session_info">Podaci o sesiji</string>

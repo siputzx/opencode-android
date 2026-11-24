@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Бо пайвастшавии ноустувор акнун ба ҷойи чанд сония хомӯшӣ танҳо халали кӯтоҳе дар занг мешавад.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Огоҳиҳои сессияҳоро хомӯш кунед</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Сессияҳои бе огоҳӣ дар рӯйхат мемонанд, вале ба «Бохабар шудан» намедароянд ва нуқтаи нохонда надоранд.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">«Бохабар шудан»-ро нигоҳ доред, то ҳамаро хондашуда қайд кунед. Сессияҳое, ки интизори шумо ҳастанд, мемонанд.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Сессияро дар менюи паҳлуӣ нигоҳ доред ва «Огоҳиҳоро хомӯш кунед»-ро ламс кунед</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Аз ҳар ҷо ҷуфт кунед</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Ҳисобкунак дар нишонаи барнома</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Нишонаи барнома шумораи сессияҳои нохонда ё мунтазири шуморо нишон медиҳад — ҳамон ададе, ки дар «Бохабар шудан» аст.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Сессияҳои бе огоҳӣ ҳисоб намешаванд.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Огоҳиҳо бояд фаъол бошанд.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Сессияро мунтазири ҷавоби савол гузоред ва ба экрани асосӣ равед</string>
 

@@ -56,8 +56,6 @@
     <string name="session_pin">Épingler</string>
     <string name="session_pinned">Épinglée</string>
     <string name="session_unread">Non lue</string>
-    <string name="session_mute">Mettre en sourdine</string>
-    <string name="session_muted">En sourdine</string>
     <string name="session_compact">Compacter</string>
     <string name="session_fork">Bifurquer</string>
     <string name="session_toggle_on_description">Activé</string>
@@ -131,7 +129,6 @@
     <string name="session_copy_session_id">Copier l’ID de la session</string>
     <string name="session_mark_as_read">Marquer comme lue</string>
     <string name="session_mark_as_unread">Marquer comme non lue</string>
-    <string name="session_unmute">Réactiver les notifications</string>
     <string name="session_menu_export_expanded_description">Développé</string>
     <string name="session_menu_export_collapsed_description">Réduit</string>
     <string name="session_info">Infos de la session</string>

@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">দুর্বল সংযোগে এখন কয়েক সেকেন্ড নীরব থাকার বদলে কলে সামান্য বিঘ্ন ঘটে।</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">সেশন মিউট করুন</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">মিউট করা সেশন তালিকায় থাকে, তবে আপডেট দেখুন-এ আসে না বা অপঠিত চিহ্ন দেখায় না।</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">সব পড়া হয়েছে হিসেবে চিহ্নিত করতে আপডেট দেখুন চেপে ধরুন। আপনার অপেক্ষায় থাকা সেশনগুলো থেকে যাবে।</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">ড্রয়ারে একটি সেশন চেপে ধরে মিউট করুন-এ ট্যাপ করুন</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">যেকোনো জায়গা থেকে পেয়ার করুন</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">অ্যাপ আইকনে ব্যাজ</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">কতটি সেশন অপঠিত বা আপনার অপেক্ষায় আছে, অ্যাপ আইকনে সেই সংখ্যা দেখায়—‘আপডেট দেখুন’-এর মতোই।</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">মিউট করা সেশন গোনা হয় না।</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">এর জন্য বিজ্ঞপ্তি চালু থাকতে হবে।</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">কোনো সেশনে প্রশ্নের উত্তর না দিয়ে হোম স্ক্রিনে যান</string>
 

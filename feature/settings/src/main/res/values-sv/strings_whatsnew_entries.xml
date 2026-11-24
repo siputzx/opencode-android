@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">En svajig anslutning ger nu bara ett kort hack i samtalet i stället för flera sekunders tystnad.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Tysta sessioner</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Tystade sessioner finns kvar i listan men visas aldrig i Läs ikapp eller med en olästmarkering.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Håll inne Läs ikapp för att markera allt som läst. Sessioner som väntar på dig blir kvar.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Håll inne en session i sidomenyn och tryck på Tysta</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Para ihop var du än är</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Siffra på appikonen</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Appikonen visar hur många sessioner som är olästa eller väntar på dig, samma antal som i Läs ikapp.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Tystade sessioner räknas inte.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Aviseringar måste vara på.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Lämna en session som väntar på svar på en fråga och gå till hemskärmen</string>
 

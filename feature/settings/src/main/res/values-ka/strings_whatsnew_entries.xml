@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">არასტაბილური კავშირისას ზარში ხანგრძლივ სიჩუმეს მხოლოდ მცირე შეფერხება ცვლის.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">სესიების დადუმება</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">დადუმებული სესიები სიაში რჩება, მაგრამ სიახლეების გაცნობაში არ ხვდება და წაუკითხავის წერტილიც არ უჩნდება.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">ყველაფრის წაკითხულად მოსანიშნად გეჭიროთ „სიახლეების გაცნობა“. სესიები, რომლებიც თქვენს პასუხს ელოდება, დარჩება.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">გვერდით პანელში გეჭიროთ სესიაზე და შეეხეთ „დადუმებას“</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">დაწყვილება ნებისმიერი ადგილიდან</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">მრიცხველი აპის ხატულაზე</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">აპის ხატულა აჩვენებს წაუკითხავი ან თქვენი პასუხის მომლოდინე სესიების რაოდენობას — ისევე, როგორც „სიახლეების გაცნობა“.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">დადუმებული სესიები არ ითვლება.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">ამისთვის შეტყობინებები ჩართული უნდა იყოს.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">დატოვეთ სესიაში კითხვა უპასუხოდ და გადადით მთავარ ეკრანზე</string>
 

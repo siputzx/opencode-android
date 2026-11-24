@@ -56,8 +56,6 @@
     <string name="session_pin">Przypnij</string>
     <string name="session_pinned">Przypięte</string>
     <string name="session_unread">Nieprzeczytane</string>
-    <string name="session_mute">Wycisz</string>
-    <string name="session_muted">Wyciszone</string>
     <string name="session_compact">Kompaktuj</string>
     <string name="session_fork">Rozwidlij</string>
     <string name="session_toggle_on_description">Włączone</string>
@@ -133,7 +131,6 @@
     <string name="session_copy_session_id">Kopiuj identyfikator sesji</string>
     <string name="session_mark_as_read">Oznacz jako przeczytane</string>
     <string name="session_mark_as_unread">Oznacz jako nieprzeczytane</string>
-    <string name="session_unmute">Wyłącz wyciszenie</string>
     <string name="session_menu_export_expanded_description">Rozwinięte</string>
     <string name="session_menu_export_collapsed_description">Zwinięte</string>
     <string name="session_info">Informacje o sesji</string>

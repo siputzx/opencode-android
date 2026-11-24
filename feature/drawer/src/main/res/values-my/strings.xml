@@ -35,8 +35,6 @@
     <string name="drawer_unpin">ထိပ်တွင် ချိတ်ထားမှု ဖြုတ်ပါ</string>
     <string name="drawer_mark_as_read">ဖတ်ပြီးဟု မှတ်ပါ</string>
     <string name="drawer_mark_as_unread">မဖတ်ရသေးဟု မှတ်ပါ</string>
-    <string name="drawer_mute">အသိပေးချက် ပိတ်ပါ</string>
-    <string name="drawer_unmute">အသိပေးချက် ပြန်ဖွင့်ပါ</string>
     <string name="drawer_hide">ဖျောက်ရန်</string>
     <string name="drawer_unhide">ပြန်ပြရန်</string>
     <string name="drawer_move_up">အပေါ်သို့ ရွှေ့ပါ</string>
@@ -118,7 +116,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">ထိပ်တွင် ချိတ်ထားသည်များ</string>
-    <string name="drawer_row_muted_state">အကြောင်းကြားချက် ပိတ်ထားသည်</string>
     <string name="drawer_row_hidden_state">ဖျောက်ထားသည်</string>
     <string name="drawer_row_needs_input_state">သင့်တုံ့ပြန်မှု လိုအပ်သည်</string>
     <string name="drawer_row_working_state">အလုပ်လုပ်တယ်။</string>

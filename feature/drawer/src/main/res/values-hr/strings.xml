@@ -37,8 +37,6 @@
     <string name="drawer_unpin">Otkvači</string>
     <string name="drawer_mark_as_read">Označi kao pročitano</string>
     <string name="drawer_mark_as_unread">Označi kao nepročitano</string>
-    <string name="drawer_mute">Utišaj</string>
-    <string name="drawer_unmute">Uključi zvuk</string>
     <string name="drawer_hide">Sakrij</string>
     <string name="drawer_unhide">Prikaži</string>
     <string name="drawer_move_up">Pomakni gore</string>
@@ -126,7 +124,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Prikvačeno</string>
-    <string name="drawer_row_muted_state">Utišano</string>
     <string name="drawer_row_hidden_state">Skriveni</string>
     <string name="drawer_row_needs_input_state">Potreban je vaš unos</string>
     <string name="drawer_row_working_state">U tijeku</string>

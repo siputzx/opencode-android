@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Óstøðugt samband gevur nú bert eitt stutt órógv í samrøðuni í staðin fyri fleiri sekund við tøgn.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Sløkk fráboðanir fyri setur</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Setur við sløktum fráboðanum verða verandi á listanum, men koma ikki við í Fá yvirlit og vísa ongan prikk fyri ólisið.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Halt Fá yvirlit inni fyri at merkja alt sum lisið. Setur, sum bíða eftir tær, verða verandi.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Halt eina setu inni í síðukarminum og trýst á Sløkk fráboðanir</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Para allastaðni</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Tal á forritsikoninum</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Forritsikonið vísir, hvussu nógvar setur eru ólisnar ella bíða eftir tær, sama tal sum í Fá yvirlit.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Setur við sløktum fráboðanum telja ikki við.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Fráboðanir mugu vera tendraðar.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Lat eina setu bíða eftir svari til ein spurning og far so á heimaskíggjan</string>
 

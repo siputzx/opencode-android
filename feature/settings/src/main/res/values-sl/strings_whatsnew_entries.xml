@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Slaba povezava zdaj povzroči le kratko motnjo v klicu namesto več sekund tišine.</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Utišaj seje</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Utišane seje ostanejo na seznamu, a se ne pojavijo v pregledu novosti in nimajo pike za neprebrano.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Pridrži Pregled novosti, da vse označiš kot prebrano. Seje, ki čakajo nate, ostanejo.</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Pridrži sejo v stranskem predalu in tapni Utišaj</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Seznanjanje od kjer koli</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Značka na ikoni aplikacije</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Ikona aplikacije kaže število neprebranih sej ali sej, ki čakajo nate, enako kot Pregled novosti.</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Utišane seje se ne štejejo.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Obvestila morajo biti vklopljena.</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Pusti sejo čakati na odgovor na vprašanje in pojdi na začetni zaslon</string>
 

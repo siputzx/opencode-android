@@ -36,8 +36,6 @@
     <string name="drawer_unpin">Losmaken</string>
     <string name="drawer_mark_as_read">Markeren als gelezen</string>
     <string name="drawer_mark_as_unread">Markeren als ongelezen</string>
-    <string name="drawer_mute">Dempen</string>
-    <string name="drawer_unmute">Dempen opheffen</string>
     <string name="drawer_hide">Verbergen</string>
     <string name="drawer_unhide">Zichtbaar maken</string>
     <string name="drawer_move_up">Omhoog verplaatsen</string>
@@ -122,7 +120,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">Vastgezet</string>
-    <string name="drawer_row_muted_state">Gedempt</string>
     <string name="drawer_row_hidden_state">Verborgen</string>
     <string name="drawer_row_needs_input_state">Je invoer is nodig</string>
     <string name="drawer_row_working_state">Bezig</string>

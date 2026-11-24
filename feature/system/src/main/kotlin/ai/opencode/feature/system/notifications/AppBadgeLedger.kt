@@ -22,8 +22,6 @@ data class AppBadgeLedger(
     val ref: String? = null,
     /** The sessions the badge counts: Catch Up's. */
     val sessionIDs: List<String>,
-    /** Muted sessions, which never count. */
-    val mutedSessionIDs: List<String>,
     /** Sessions on screen in the foreground, already being read. */
     val viewingSessionIDs: List<String>,
 ) {
@@ -35,7 +33,7 @@ data class AppBadgeLedger(
      */
     fun badgeAfterPush(sessionID: String, ref: String): Pair<AppBadgeLedger, Int>? {
         val ownRef = this.ref ?: return null
-        if (ownRef != ref || sessionID in mutedSessionIDs || sessionID in viewingSessionIDs) return null
+        if (ownRef != ref || sessionID in viewingSessionIDs) return null
         val updated = if (sessionID in sessionIDs) this else copy(sessionIDs = sessionIDs + sessionID)
         return updated to updated.count
     }

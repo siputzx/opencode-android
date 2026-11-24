@@ -56,8 +56,6 @@
     <string name="session_pin">Fest</string>
     <string name="session_pinned">Festet</string>
     <string name="session_unread">Ulest</string>
-    <string name="session_mute">Demp</string>
-    <string name="session_muted">Dempet</string>
     <string name="session_compact">Komprimer</string>
     <string name="session_fork">Forgren</string>
     <string name="session_toggle_on_description">På</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Kopier sesjons-ID</string>
     <string name="session_mark_as_read">Merk som lest</string>
     <string name="session_mark_as_unread">Merk som ulest</string>
-    <string name="session_unmute">Opphev demping</string>
     <string name="session_menu_export_expanded_description">Utvidet</string>
     <string name="session_menu_export_collapsed_description">Sammenfoldet</string>
     <string name="session_info">Sesjonsinfo</string>

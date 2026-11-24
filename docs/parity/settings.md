@@ -52,7 +52,7 @@ Status values: `todo`, `partial: <what is missing>`, `done`, `n/a: <reason and w
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-06-01-voice-messages.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-06-01-voice-messages.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-07-01-attachment-menu-hold.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-07-01-attachment-menu-hold.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-08-01-voice-webrtc-weak-connection.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-01-voice-webrtc-weak-connection.kt` | done |  |
-| `OpenCode/Settings/WhatsNew/Entries/2026-10-08-02-mute-sessions.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-02-mute-sessions.kt` | done |  |
+| `OpenCode/Settings/WhatsNew/Entries/2026-10-08-02-mute-sessions.swift` | 3 | — | n/a | Android differs on purpose: session Mute is removed and the Notifications bell replaces it. |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-08-03-pair-from-anywhere.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-03-pair-from-anywhere.kt` | done | Android copy: “on your phone” |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-08-04-drawer-peek.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-04-drawer-peek.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-08-05-dictation-keeps-going.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-08-05-dictation-keeps-going.kt` | done |  |

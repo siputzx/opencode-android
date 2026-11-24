@@ -145,8 +145,6 @@ data class SessionListContext(
     /** Null when the session isn't a list row (a subagent). */
     val isPinned: Boolean? = null,
     val isUnread: Boolean = false,
-    /** Kept out of Catch Up and unread badges. */
-    val isMuted: Boolean = false,
     /** Another session needs input or is unread: the drawer button shows it. */
     val elsewhere: DrawerBadge? = null,
     /** In-App Notices: what the drawer button says about another session. */
@@ -549,7 +547,6 @@ private fun Tiles(
         if (isListRow) {
             add { ToggleTile(stringResource(R.string.session_pin), stringResource(R.string.session_pinned), SFSymbol.Pin, SFSymbol.PinFill, context.isPinned == true, "pin") { send(SessionSheetFeature.Action.PinTapped) } }
             add { ToggleTile(stringResource(R.string.session_unread), stringResource(R.string.session_unread), SFSymbol.EnvelopeOpen, SFSymbol.EnvelopeBadgeFill, context.isUnread, "read") { send(SessionSheetFeature.Action.ReadTapped) } }
-            add { ToggleTile(stringResource(R.string.session_mute), stringResource(R.string.session_muted), SFSymbol.Bell, SFSymbol.BellSlashFill, context.isMuted, "mute") { send(SessionSheetFeature.Action.MuteTapped) } }
         }
         add {
             ActionTile(stringResource(R.string.session_compact), SFSymbol.RectangleCompressVertical, state.operation == SessionSheetFeature.Operation.Compacting, isBusy, "compact") {

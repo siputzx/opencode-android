@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">Անկայուն կապի դեպքում զանգն այժմ կարճ է խափանվում՝ վայրկյաններ տևող լռության փոխարեն։</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">Լռեցնել նիստերը</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">Լռեցված նիստերը մնում են ցանկում, բայց չեն հայտնվում «Ծանոթանալ նորին» բաժնում և չեն նշվում չընթերցվածի կետով։</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">Սեղմած պահեք «Ծանոթանալ նորին» կոճակը՝ ամեն ինչ կարդացված նշելու համար։ Ձեզ սպասող նիստերը մնում են։</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">Կողային վահանակում սեղմած պահեք նիստը և հպեք «Լռեցնել»</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">Զուգակցել ցանկացած վայրից</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">Նշիչ՝ հավելվածի պատկերակի վրա</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">Հավելվածի պատկերակը ցույց է տալիս չընթերցված կամ ձեզ սպասող նիստերի քանակը՝ նույնը, ինչ «Ծանոթանալ նորին» բաժնում։</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">Լռեցված նիստերը չեն հաշվվում։</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">Ծանուցումները պետք է միացված լինեն։</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">Նիստում մի հարց թողեք անպատասխան, ապա անցեք գլխավոր էկրան</string>
 

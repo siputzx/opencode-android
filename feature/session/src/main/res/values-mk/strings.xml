@@ -56,8 +56,6 @@
     <string name="session_pin">Закачи</string>
     <string name="session_pinned">Закачена</string>
     <string name="session_unread">Непрочитана</string>
-    <string name="session_mute">Исклучи известувања</string>
-    <string name="session_muted">Без известувања</string>
     <string name="session_compact">Компактен</string>
     <string name="session_fork">Разграни</string>
     <string name="session_toggle_on_description">Вклучено</string>
@@ -129,7 +127,6 @@
     <string name="session_copy_session_id">Копирај ID на сесијата</string>
     <string name="session_mark_as_read">Означи како прочитано</string>
     <string name="session_mark_as_unread">Означи како непрочитано</string>
-    <string name="session_unmute">Вклучи известувања</string>
     <string name="session_menu_export_expanded_description">Проширено</string>
     <string name="session_menu_export_collapsed_description">Склопено</string>
     <string name="session_info">Информации за сесијата</string>

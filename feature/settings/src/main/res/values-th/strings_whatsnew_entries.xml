@@ -18,10 +18,6 @@
     <string name="settings_whatsnew_entry_voice_webrtc_weak_connection_summary">เมื่อสัญญาณไม่ดี เสียงจะสะดุดเพียงชั่วครู่ แทนที่จะเงียบไปหลายวินาที</string>
 
     <!-- 2026-10-08-02-mute-sessions -->
-    <string name="settings_whatsnew_entry_mute_sessions_title">ปิดการแจ้งเตือนเซสชัน</string>
-    <string name="settings_whatsnew_entry_mute_sessions_summary">เซสชันที่ปิดการแจ้งเตือนยังอยู่ในรายการ แต่จะไม่รวมในติดตามอัปเดตหรือแสดงจุดยังไม่อ่าน</string>
-    <string name="settings_whatsnew_entry_mute_sessions_detail_1">กดติดตามอัปเดตค้างเพื่อทำเครื่องหมายว่าอ่านทั้งหมดแล้ว เซสชันที่รอคุณอยู่จะยังคงอยู่</string>
-    <string name="settings_whatsnew_entry_mute_sessions_example">กดเซสชันในแถบด้านข้างค้าง แล้วแตะปิดการแจ้งเตือน</string>
 
     <!-- 2026-10-08-03-pair-from-anywhere -->
     <string name="settings_whatsnew_entry_pair_from_anywhere_title">จับคู่ได้จากทุกที่</string>
@@ -175,7 +171,6 @@
     <!-- 2026-10-12-08-app-icon-badge -->
     <string name="settings_whatsnew_entry_app_icon_badge_title">ตัวเลขบนไอคอนแอป</string>
     <string name="settings_whatsnew_entry_app_icon_badge_summary">ไอคอนแอปแสดงจำนวนเซสชันที่ยังไม่อ่านหรือรอคุณอยู่ เป็นจำนวนเดียวกับในติดตามอัปเดต</string>
-    <string name="settings_whatsnew_entry_app_icon_badge_detail_1">ไม่นับเซสชันที่ปิดเสียงแล้ว</string>
     <string name="settings_whatsnew_entry_app_icon_badge_detail_2">ต้องเปิดการแจ้งเตือนก่อน</string>
     <string name="settings_whatsnew_entry_app_icon_badge_example">ปล่อยให้เซสชันรอคำตอบจากคุณ แล้วไปที่หน้าจอหลัก</string>
 

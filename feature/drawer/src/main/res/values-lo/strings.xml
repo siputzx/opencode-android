@@ -35,8 +35,6 @@
     <string name="drawer_unpin">ຖອນໝຸດ</string>
     <string name="drawer_mark_as_read">ໝາຍວ່າອ່ານແລ້ວ</string>
     <string name="drawer_mark_as_unread">ໝາຍວ່າຍັງບໍ່ອ່ານ</string>
-    <string name="drawer_mute">ປິດສຽງ</string>
-    <string name="drawer_unmute">ເປີດສຽງ</string>
     <string name="drawer_hide">ຫລົບຊ່ອນ</string>
     <string name="drawer_unhide">ຍົກເລີກການເຊື່ອງ</string>
     <string name="drawer_move_up">ຍ້າຍຂຶ້ນ</string>
@@ -118,7 +116,6 @@
 
     <!-- Session row state for TalkBack -->
     <string name="drawer_row_pinned_state">ປັກໝຸດໄວ້</string>
-    <string name="drawer_row_muted_state">ປິດສຽງໄວ້</string>
     <string name="drawer_row_hidden_state">ຫລົບຊ່ອນແລ້ວ</string>
     <string name="drawer_row_needs_input_state">ຕ້ອງການຄຳຕອບຈາກເຈົ້າ</string>
     <string name="drawer_row_working_state">ເຮັດວຽກ</string>

@@ -113,7 +113,6 @@ class VoiceSessionToolsTests {
             base.copy(sessionDetail = detail.copy(session = math)),
             base.copy(sessionReadDates = emptyMap()),
             base.copy(manuallyUnreadSessionKeys = setOf(key)),
-            base.copy(mutedSessionKeys = setOf("${server.persistenceID}|${waiting.id}")),
             base.copy(pinnedSessionKeys = listOf(key)),
             base.copy(sessions = listOf(waiting)),
             base.copy(connection = base.connection.copy(connectionStatus = HomeConnectionFeature.State.ConnectionStatus.disconnected)),

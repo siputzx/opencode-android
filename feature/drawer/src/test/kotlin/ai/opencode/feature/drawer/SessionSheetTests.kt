@@ -52,9 +52,6 @@ class SessionSheetTests {
         store.send(delegate(SessionFeature.Delegate.ToggleRead(open.id)))
         store.receive({ it is HomeFeature.Action.MarkUnread }, "markUnread")
         assertTrue(store.state.isUnread(open))
-        store.send(delegate(SessionFeature.Delegate.ToggleMute(open.id)))
-        store.receive({ it is HomeFeature.Action.ToggleMute }, "toggleMute")
-        assertTrue(store.state.isMuted(open.id))
 
         store.send(delegate(SessionFeature.Delegate.OpenSession(forked)))
         store.receive({ it is HomeFeature.Action.SessionTapped }, "sessionTapped")
