@@ -75,6 +75,9 @@
 
     <!-- Session notifications -->
     <string name="system_notification_placeholder_body">New activity</string>
+    <string name="system_local_session_title">OpenCode</string>
+    <string name="system_local_session_done_body">Tap to open the session.</string>
+    <string name="system_local_session_needs_input_body">Tap to answer.</string>
 
     <!-- Notification channels -->
     <string name="system_channel_voice_calls">Voice Calls</string>

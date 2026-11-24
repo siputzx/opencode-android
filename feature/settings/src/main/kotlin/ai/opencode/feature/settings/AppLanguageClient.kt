@@ -5,8 +5,11 @@ import ai.opencode.core.dependencies.DependencyKey
 import ai.opencode.core.dependencies.dependency
 import android.app.LocaleConfig
 import android.app.LocaleManager
+import android.content.Context
 import android.icu.util.ULocale
+import android.os.Build
 import android.os.LocaleList
+import androidx.annotation.RequiresApi
 import java.text.Normalizer
 import java.util.Locale
 
@@ -27,34 +30,44 @@ class AppLanguageClient(
     companion object Key : DependencyKey<AppLanguageClient> {
         override val liveValue: AppLanguageClient by lazy {
             val context = dependency(AppContext)
-            val manager = context.getSystemService(LocaleManager::class.java)
-            AppLanguageClient(
-                supported = {
-                    val locales = LocaleConfig(context).supportedLocales
-                    val list = mutableListOf<Locale>()
-                    if (locales != null) {
-                        for (index in 0 until locales.size()) list.add(locales.get(index))
-                    }
-                    list
-                },
-                current = {
-                    val locales = manager.applicationLocales
-                    if (locales.isEmpty) null else locales.get(0)
-                },
-                systemLocales = {
-                    val locales = manager.systemLocales
-                    val list = mutableListOf<Locale>()
-                    for (index in 0 until locales.size()) list.add(locales.get(index))
-                    if (list.isEmpty()) list.add(Locale.getDefault())
-                    list
-                },
-                set = { locale ->
-                    manager.applicationLocales = if (locale == null) LocaleList.getEmptyLocaleList() else LocaleList(locale)
-                },
-            )
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+                // Android 12 has no per-app LocaleManager: follow the system language.
+                AppLanguageClient(systemLocales = { listOf(Locale.getDefault()) })
+            } else {
+                api33Client(context)
+            }
         }
         override val testValue: AppLanguageClient = AppLanguageClient()
     }
+}
+
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
+private fun api33Client(context: Context): AppLanguageClient {
+    val manager = context.getSystemService(LocaleManager::class.java)
+    return AppLanguageClient(
+        supported = {
+            val locales = LocaleConfig(context).supportedLocales
+            val list = mutableListOf<Locale>()
+            if (locales != null) {
+                for (index in 0 until locales.size()) list.add(locales.get(index))
+            }
+            list
+        },
+        current = {
+            val locales = manager.applicationLocales
+            if (locales.isEmpty) null else locales.get(0)
+        },
+        systemLocales = {
+            val locales = manager.systemLocales
+            val list = mutableListOf<Locale>()
+            for (index in 0 until locales.size()) list.add(locales.get(index))
+            if (list.isEmpty()) list.add(Locale.getDefault())
+            list
+        },
+        set = { locale ->
+            manager.applicationLocales = if (locale == null) LocaleList.getEmptyLocaleList() else LocaleList(locale)
+        },
+    )
 }
 
 /** The language's name in itself (“Deutsch”, “日本語”, “简体中文”). */

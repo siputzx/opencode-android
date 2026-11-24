@@ -48,10 +48,12 @@ import ai.opencode.feature.transcript.user.TranscriptMessageRow
 import ai.opencode.feature.transcript.user.TranscriptUserMessage
 import ai.opencode.feature.transcript.user.UserMessageRun
 import ai.opencode.feature.transcript.user.findActivity
+import android.os.Build
 import android.os.SystemClock
 import android.view.accessibility.AccessibilityManager
 import android.window.OnBackInvokedCallback
 import android.window.OnBackInvokedDispatcher
+import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.FastOutLinearInEasing
 import androidx.compose.animation.core.MutableTransitionState
@@ -163,6 +165,10 @@ private class TranscriptListPosition(val state: LazyListState, anchor: Pair<Stri
 @Composable
 private fun ReplySelectionBackHandler(selection: TranscriptReplySelection) {
     if (!selection.isSelected || WindowInsets.isImeVisible) return
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+        BackHandler { selection.clear(byReader = true) }
+        return
+    }
     val activity = LocalContext.current.findActivity() ?: return
     DisposableEffect(activity, selection) {
         val callback = OnBackInvokedCallback { selection.clear(byReader = true) }

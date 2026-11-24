@@ -89,7 +89,7 @@ data class SystemAction(
 
         /** Percent-decoding only, as `URLComponents`: a `+` stays a `+`. */
         private fun decode(value: String): String? =
-            runCatching { URLDecoder.decode(value.replace("+", "%2B"), Charsets.UTF_8) }.getOrNull()
+            runCatching { URLDecoder.decode(value.replace("+", "%2B"), "UTF-8") }.getOrNull()
     }
 }
 

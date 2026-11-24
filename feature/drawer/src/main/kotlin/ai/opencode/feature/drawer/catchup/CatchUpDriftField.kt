@@ -3,8 +3,11 @@ package ai.opencode.feature.drawer.catchup
 import ai.opencode.core.motion.rememberReduceMotion
 import ai.opencode.core.ui.OpenCodeTheme
 import android.graphics.RuntimeShader
+import android.os.Build
 import android.view.accessibility.AccessibilityManager
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.displayCutout
 import androidx.compose.foundation.layout.systemBars
@@ -38,6 +41,10 @@ import kotlin.math.min
  */
 @Composable
 fun CatchUpDriftFieldView(isFinished: Boolean, modifier: Modifier = Modifier) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+        Spacer(modifier)
+        return
+    }
     val isStill = rememberReduceMotion() || rememberTouchExplorationEnabled()
     val isDark = OpenCodeTheme.colors.isDark
     val lifecycle by LocalLifecycleOwner.current.lifecycle.currentStateAsState()
@@ -103,6 +110,7 @@ internal fun rememberTouchExplorationEnabled(): Boolean {
     return enabled
 }
 /** Owns the shader and its uniforms. */
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 internal class CatchUpDriftRenderer {
     private val shader = RuntimeShader(SHADER)
     private val startTime = clock()

@@ -7,6 +7,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.POST_PROMOTED_NOTIFICATIONS" />
+    <!-- Keeps the run's stream alive while the app is away, so the local completion notification works. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
     <!-- Ask OpenCode hides other apps' overlays while its Send shows (setHideOverlayWindows). -->
     <uses-permission android:name="android.permission.HIDE_OVERLAY_WINDOWS" />
 
@@ -112,6 +115,11 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+        <!-- The open-source build's local stand-in: holds the process while a run works. -->
+        <service
+            android:name=".notifications.SessionRunService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
         <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false" />
         <meta-data android:name="firebase_analytics_collection_enabled" android:value="false" />
 

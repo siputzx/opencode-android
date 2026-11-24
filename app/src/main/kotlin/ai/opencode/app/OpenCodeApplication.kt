@@ -23,6 +23,7 @@ import ai.opencode.feature.settings.AppVersion
 import ai.opencode.feature.system.liveactivity.DictationLiveActivityClient
 import ai.opencode.feature.system.liveactivity.SessionLiveActivityClient
 import ai.opencode.feature.system.liveactivity.VoiceLiveActivityClient
+import ai.opencode.feature.system.notifications.SessionRunServiceClient
 import ai.opencode.feature.voice.VoiceCallLogClient
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -89,6 +90,8 @@ class OpenCodeApplication : Application(), Configuration.Provider {
         launchScope.launch { voiceActivity.endAll() }
         launchScope.launch { dictationActivity.endAll() }
         launchScope.launch { sessionActivity.endAll() }
+        // A run's foreground service can survive an app update; it restarts with the next run.
+        dependency(SessionRunServiceClient).stopNow()
         // A call log a previous process left in progress is saved as interrupted, off the main
         // thread. Resolved after AppDependencies so the recorder gets the installed uploader.
         val voiceCallLog = dependency(VoiceCallLogClient)

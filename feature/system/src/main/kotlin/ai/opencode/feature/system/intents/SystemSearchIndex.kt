@@ -177,5 +177,6 @@ internal object SystemSearchIndex {
         if (failures != 0) AppLog.app.debug { "System search $what failed count=$failures" }
     }
 
-    private fun encode(value: String): String = URLEncoder.encode(value, Charsets.UTF_8).replace("+", "%20")
+    @Suppress("DEPRECATION")
+    private fun encode(value: String): String = URLEncoder.encode(value, "UTF-8").replace("+", "%20")
 }

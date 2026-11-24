@@ -25,7 +25,8 @@ data class AppVersion(val version: String, val build: String, val commit: String
         private fun read(): AppVersion = runCatching {
             val context = dependency(AppContext)
             val pm = context.packageManager
-            val info = pm.getPackageInfo(context.packageName, PackageManager.PackageInfoFlags.of(PackageManager.GET_META_DATA.toLong()))
+            @Suppress("DEPRECATION")
+            val info = pm.getPackageInfo(context.packageName, PackageManager.GET_META_DATA)
             val commit = info.applicationInfo?.metaData?.getString("opencode.commit")?.takeIf { it.isNotEmpty() }
             AppVersion(info.versionName ?: "?", info.longVersionCode.toString(), commit)
         }.getOrElse { AppVersion("?", "?", null) }

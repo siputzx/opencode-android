@@ -6,6 +6,8 @@ import android.graphics.Bitmap
 import android.graphics.BitmapShader
 import android.graphics.RuntimeShader
 import android.graphics.Shader
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.Canvas
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -41,6 +43,7 @@ import kotlin.math.sqrt
  */
 @Composable
 fun ConnectionScopeView(monitor: ConnectionMonitor, isHidden: Boolean, modifier: Modifier = Modifier) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
     val reduceMotion = rememberReduceMotion()
     val lifecycle by LocalLifecycleOwner.current.lifecycle.currentStateAsState()
     val isPaused = isHidden || !lifecycle.isAtLeast(Lifecycle.State.RESUMED)
@@ -131,6 +134,7 @@ internal data class ScopePalette(val main: ScopeColor, val mainCore: ScopeColor,
  * Rasterises the trace on the CPU each frame and draws the lit grid. A plain object owned by the
  * view (per-frame motion lives here, not in a reducer).
  */
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 internal class ConnectionScopeRenderer {
     companion object {
         /**
@@ -246,6 +250,7 @@ internal class ConnectionScopeRenderer {
  * column is the trace at its moment, the pen at the newest with an erase gap ahead of it, older
  * beats dimmer, and per-dot afterglow.
  */
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 internal class ConnectionTraceRaster {
     private var grid: DotScopeGrid? = null
     private var light = FloatArray(0)

@@ -140,7 +140,18 @@ object ComposerUriStaging {
             throw error
         }
         val declared = resolver.getType(source)?.takeIf { it != "application/octet-stream" }
-        val head = runCatching { destination.inputStream().use { it.readNBytes(4096) } }.getOrDefault(ByteArray(0))
+        val head = runCatching {
+            destination.inputStream().use { stream ->
+                val buffer = ByteArray(4096)
+                var total = 0
+                while (total < buffer.size) {
+                    val count = stream.read(buffer, total, buffer.size - total)
+                    if (count < 0) break
+                    total += count
+                }
+                buffer.copyOf(total)
+            }
+        }.getOrDefault(ByteArray(0))
         return ComposerStagedFile(
             id = id,
             name = fileName,

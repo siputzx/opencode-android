@@ -158,6 +158,7 @@ fun LivingOrbView(config: LivingOrbConfig, modifier: Modifier = Modifier, isHidd
  *
  * Android: the cell kernel runs on the CPU and its cells reach the shader as a half-float bitmap.
  */
+@SuppressLint("NewApi") // API 33 shader; make() falls back to no orb below 33.
 class WispOrbRenderer private constructor() {
     private val shader = RuntimeShader(WispOrbShaders.wispOrbFragment)
     private val sim = WispOrbSim()

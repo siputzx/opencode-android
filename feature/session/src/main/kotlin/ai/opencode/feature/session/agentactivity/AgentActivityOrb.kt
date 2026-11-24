@@ -1,5 +1,8 @@
 package ai.opencode.feature.session.agentactivity
 
+import android.os.Build
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.translate
 import androidx.compose.ui.graphics.nativeCanvas
@@ -7,6 +10,7 @@ import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
 import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.math.pow
 import kotlin.math.roundToInt
 
 /**
@@ -196,6 +200,10 @@ object AgentActivityOrb {
      */
     fun DrawScope.drawOrb(field: GyroField?, cells: List<GyroCell> = GyroCell.seven, dark: Boolean) {
         field ?: return
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+            drawOrbCpu(field, cells, dark)
+            return
+        }
         val box = min(size.width, size.height)
         val sizeDp = box / density
         val m = margin(sizeDp) * density
@@ -212,6 +220,43 @@ object AgentActivityOrb {
         shader.setFloatUniform("cells", packed.cells)
         translate((size.width - box) / 2 - m, (size.height - box) / 2 - m) {
             drawIntoCanvas { it.nativeCanvas.drawRect(0f, 0f, side, side, AgentActivityShaders.orbPaint) }
+        }
+    }
+
+    /** API 31/32: the same dots without AGSL, drawn as plain circles. */
+    private fun DrawScope.drawOrbCpu(field: GyroField, cells: List<GyroCell>, dark: Boolean) {
+        val box = min(size.width, size.height)
+        val m = margin(box / density) * density
+        val side = box + 2 * m
+        val pitch = side / 7.0
+        val left = (size.width - box) / 2 - m
+        val top = (size.height - box) / 2 - m
+        val palette = if (dark) this@AgentActivityOrb.dark else this@AgentActivityOrb.light
+        var accent = RGB.zero
+        var sum = 0.0
+        for ((key, weight) in field.weights) {
+            if (weight <= 1e-3) continue
+            val pair = palette.accents[key] ?: continue
+            sum += weight
+            accent += pair.first * weight
+        }
+        val accentColor = if (sum >= 1e-3) accent / sum else palette.base
+        val count = min(field.dots.size, cells.size)
+        for (i in 0 until count) {
+            val dot = field.dots[i]
+            if (dot.size <= 0.0) continue
+            val cell = cells[i]
+            val light = dot.light.coerceIn(0.0, 1.0)
+            val color = mix(palette.base, accentColor, dot.accent.coerceIn(0.0, 1.0))
+            val radius = (0.25 + 0.17 * light.coerceAtLeast(1e-5).pow(0.6)) * pitch * dot.size * DOT_SCALE
+            drawCircle(
+                color = Color(color.x.toFloat(), color.y.toFloat(), color.z.toFloat(), alpha = (0.075 + 0.925 * light).toFloat()),
+                radius = radius.toFloat(),
+                center = Offset(
+                    (left + (cell.column + 0.5) * pitch).toFloat(),
+                    (top + (cell.row + 0.5) * pitch).toFloat(),
+                ),
+            )
         }
     }
 }

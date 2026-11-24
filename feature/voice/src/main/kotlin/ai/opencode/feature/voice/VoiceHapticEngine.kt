@@ -3,6 +3,7 @@ package ai.opencode.feature.voice
 import ai.opencode.core.dependencies.*
 import ai.opencode.core.log.AppLog
 import android.content.Context
+import android.os.Build
 import android.os.VibrationAttributes
 import android.os.VibrationEffect
 import android.os.Vibrator
@@ -73,8 +74,13 @@ class VoiceHapticEngine(private val context: Context, private val clock: Clock =
         }
         if (amplitudes.all { it == 0 }) { vibrator.cancel(); return }
         val (timings, levels) = waveformSteps(amplitudes)
-        vibrator.vibrate(VibrationEffect.createWaveform(timings, levels, -1),
-            VibrationAttributes.Builder().setUsage(VibrationAttributes.USAGE_TOUCH).build())
+        val effect = VibrationEffect.createWaveform(timings, levels, -1)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            vibrator.vibrate(effect, VibrationAttributes.Builder().setUsage(VibrationAttributes.USAGE_TOUCH).build())
+        } else {
+            @Suppress("DEPRECATION")
+            vibrator.vibrate(effect)
+        }
     }
     override fun cancel(kind: Kind) = synchronized(lock) {
         val now = clock.now()

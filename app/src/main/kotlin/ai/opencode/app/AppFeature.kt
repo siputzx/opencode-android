@@ -31,13 +31,18 @@ import ai.opencode.feature.drawer.keepingSettings
 import ai.opencode.feature.drawer.persistingSnapshot
 import ai.opencode.feature.media.BrowserFeature
 import ai.opencode.feature.session.SessionFeature
+import ai.opencode.feature.session.WorkingRun
 import ai.opencode.feature.settings.onboarding.WelcomeFeature
 import ai.opencode.feature.system.NotificationDestination
 import ai.opencode.feature.system.SessionDirectory
+import ai.opencode.feature.system.notifications.LocalSessionNotifier
+import ai.opencode.feature.system.notifications.SessionRunServiceClient
 import ai.opencode.feature.system.SystemAction
 import ai.opencode.feature.system.SystemIntegrationClient
 import ai.opencode.feature.system.clienttools.ClientToolsFeature
 import ai.opencode.feature.system.liveactivity.DictationLiveActivityClient
+import ai.opencode.feature.system.liveactivity.SessionActivityAttributes
+import ai.opencode.feature.system.liveactivity.SessionLiveActivity
 import ai.opencode.feature.system.liveactivity.SessionLiveActivityClient
 import ai.opencode.feature.system.liveactivity.VoiceLiveActivityClient
 import ai.opencode.feature.system.share.ReceivedShare
@@ -59,6 +64,7 @@ import ai.opencode.server.ServerSharedKeys
 import ai.opencode.server.friendlyName
 import ai.opencode.server.model.OpenCodeHomeSnapshot
 import ai.opencode.server.model.OpenCodeSession
+import ai.opencode.server.model.OpenCodeTranscriptItem
 import ai.opencode.server.model.keepingFirstPrompts
 import ai.opencode.server.remember
 import kotlinx.coroutines.async
@@ -538,6 +544,17 @@ class AppFeature : Reducer<AppFeature.State, AppFeature.Action> {
         welcomeRequests,
     )
 
+    /** What a local run-finished notification watches: only these change make one. */
+    private data class LocalRunKey(
+        val server: String,
+        val active: Set<String>,
+        val attention: Set<String>,
+        val openSession: String?,
+        val openAwaitingReply: Boolean,
+        val connected: Boolean,
+        val foreground: Boolean,
+    )
+
     /**
      * Leaving Home cancels a call or a recording without Home seeing it end, so their ongoing
      * notifications are ended, and the call's log saved, here. Android's call notification is
@@ -578,6 +595,75 @@ class AppFeature : Reducer<AppFeature.State, AppFeature.Action> {
         .onChange({ it.callIsOutOfSight }) { _, _, state ->
             if (state.home?.sessionDetail?.voice == null) return@onChange Reduced(state)
             Reduced(state, Effect.send(voiceAction(VoiceFeature.Action.AppVisibilityChanged(state.isInForeground))))
+        }
+        // No push channel in the open-source build: while the app is away, a run that ends (or
+        // starts needing an answer) posts a local notification on the Session Updates channel.
+        .onChange({ state ->
+            state.home?.let { home ->
+                LocalRunKey(
+                    server = home.server.persistenceID,
+                    active = home.activeSessionIDs,
+                    attention = home.attentionSessionIDs,
+                    openSession = home.sessionDetail?.session?.id,
+                    openAwaitingReply = home.sessionDetail?.isAwaitingReply == true,
+                    connected = home.connection.isConnected,
+                    foreground = state.isInForeground,
+                )
+            }
+        }) { old, new, state ->
+            if (old == null || new == null || old.server != new.server) return@onChange Reduced(state)
+            val home = state.home ?: return@onChange Reduced(state)
+            fun known(id: String): Boolean =
+                home.sessions.any { it.id == id } || home.sessionDetail?.session?.id == id
+            fun title(id: String): String? =
+                home.sessions.firstOrNull { it.id == id }?.title
+                    ?: home.sessionDetail?.session?.takeIf { it.id == id }?.title
+            val serverKey = SessionDirectory.serverKey(home.server.persistenceID)
+            val service = dependency(SessionRunServiceClient)
+            // Only the open session's run holds the service: the snapshot also lists runs started
+            // elsewhere (another device, this agent's own session), which must not keep it up.
+            val live = new.connected && new.openAwaitingReply
+            if (live) {
+                // Started while still on screen, where Android admits a foreground service; it then
+                // keeps the stream (and this process) alive behind the Home screen.
+                if (new.foreground) {
+                    val id = new.openSession ?: new.active.firstOrNull()
+                    service.start(
+                        title = id?.let(::title),
+                        url = id?.let { SessionActivityAttributes(serverKey, it).url },
+                    )
+                }
+            } else {
+                service.stop()
+            }
+            if (new.foreground || !new.connected) return@onChange Reduced(state)
+            fun items(id: String): List<OpenCodeTranscriptItem>? =
+                home.sessionDetail?.takeIf { it.session?.id == id }?.items ?: home.transcriptCache[id]
+            fun preview(id: String): String? = items(id)?.let {
+                SessionLiveActivity.preview(it, proseLines = { markdown ->
+                    markdown.lineSequence()
+                        .map { line -> line.trim().trimStart('#', '-', '*', '>').trim() }
+                        .filter { line -> line.isNotEmpty() && !line.startsWith("```") && !line.startsWith("|") }
+                })
+            }
+            val notifier = dependency(LocalSessionNotifier)
+            val needsInput = new.attention - old.attention
+            val ended = old.active - new.active
+            fun notifyEnded(id: String) = when (WorkingRun.outcome(items(id).orEmpty())) {
+                // Stopped from the app: the person already knows.
+                WorkingRun.Outcome.interrupted -> Unit
+                WorkingRun.Outcome.failed -> notifier.failed(serverKey, id, title(id), preview(id))
+                else -> notifier.done(serverKey, id, title(id), preview(id))
+            }
+            for (id in needsInput) if (known(id)) notifier.needsInput(serverKey, id, title(id))
+            for (id in ended) if (id !in needsInput && known(id)) notifyEnded(id)
+            val open = new.openSession
+            if (open != null && old.openSession == open && old.openAwaitingReply && !new.openAwaitingReply &&
+                open !in needsInput && open !in ended
+            ) {
+                notifyEnded(open)
+            }
+            Reduced(state)
         }
 
     override fun reduce(state: State, action: Action): Reduced<State, Action> {

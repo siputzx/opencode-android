@@ -14,6 +14,7 @@ import android.Manifest
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.os.Build
 import android.provider.Settings
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
@@ -263,15 +264,16 @@ class SessionNotifications internal constructor(private val tokens: PushTokenPro
 
     fun permissionStatus(): NotificationPermission {
         val context = dependency(AppContext)
-        if (NotificationManagerCompat.from(context).areNotificationsEnabled() &&
+        val permissionGranted = Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU ||
             ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
-        ) return NotificationPermission.Enabled
+        if (NotificationManagerCompat.from(context).areNotificationsEnabled() && permissionGranted) return NotificationPermission.Enabled
         val asked = context.getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE).getBoolean(ASKED, false)
         return if (asked) NotificationPermission.Disabled else NotificationPermission.NotDetermined
     }
 
     /** Asks once (Android's dialog, from a see-through activity), then registers for pushes when allowed. */
     suspend fun requestPermission(): NotificationPermission {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return permissionStatus()
         if (permissionStatus() == NotificationPermission.NotDetermined) {
             val request = synchronized(lock) {
                 permissionRequest ?: CompletableDeferred<Boolean>().also { created ->

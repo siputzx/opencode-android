@@ -28,8 +28,11 @@ import ai.opencode.server.model.SessionLink
 import android.app.Activity
 import android.content.Context
 import android.content.ContextWrapper
+import android.annotation.SuppressLint
+import android.os.Build
 import android.window.OnBackInvokedCallback
 import android.window.OnBackInvokedDispatcher
+import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.ui.layout.LayoutCoordinates
@@ -573,6 +576,10 @@ private class UserBubbleSelectionToolbar(private val platform: TextToolbar, priv
 /** Back ends the selection (iOS: tapping elsewhere), ahead of the screen's own Back while it's up. */
 @Composable
 private fun SelectionBackHandler(onBack: () -> Unit) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+        BackHandler(onBack = onBack)
+        return
+    }
     val activity = LocalContext.current.findActivity() ?: return
     val current by rememberUpdatedState(onBack)
     DisposableEffect(activity) {
@@ -606,6 +613,7 @@ enum class VoiceMessageStyle {
 }
 
 /** iOS `VoiceMessageBackground`: the bubble's fill (or outline) and the reveal's light, one layer. */
+@SuppressLint("NewApi") // The reveal-light shader is API 33; every draw of it is guarded below.
 @Composable
 internal fun Modifier.voiceMessageBackground(
     style: VoiceMessageStyle,
@@ -638,7 +646,9 @@ internal fun Modifier.voiceMessageBackground(
                     canvas.saveLayer(Rect(0f, 0f, size.width, size.height), Paint().apply { alpha = body })
                     drawOutline(outline, colors.userBubble.copy(alpha = colors.userBubble.alpha * fillAlpha))
                     // Clipped to the bubble's shape, as iOS clips the light (`clipShape`).
-                    clipPath(Path().apply { addOutline(outline) }) { with(glow.value) { draw(reveal.light, corners, colors.isDark) } }
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                        clipPath(Path().apply { addOutline(outline) }) { with(glow.value) { draw(reveal.light, corners, colors.isDark) } }
+                    }
                     canvas.restore()
                 }
             }
@@ -646,7 +656,9 @@ internal fun Modifier.voiceMessageBackground(
                 if (!resting) {
                     drawIntoCanvas { canvas ->
                         canvas.saveLayer(Rect(0f, 0f, size.width, size.height), Paint().apply { alpha = body })
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                         clipPath(Path().apply { addOutline(outline) }) { with(glow.value) { draw(reveal.light, corners, colors.isDark) } }
+                    }
                         canvas.restore()
                     }
                 }

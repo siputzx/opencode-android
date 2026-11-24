@@ -423,6 +423,12 @@ private class SpeechSetup(private val context: Context) {
     private val mutex = Mutex()
 
     private data class Language(val tag: String, val onDevice: Boolean, val isInstallFallback: Boolean)
+    private data class SpeechSupport(
+        val installedOnDeviceLanguages: List<String>,
+        val pendingOnDeviceLanguages: List<String>,
+        val supportedOnDeviceLanguages: List<String>,
+        val onlineLanguages: List<String>,
+    )
     private var resolved: Language? = null
 
     /**
@@ -433,7 +439,7 @@ private class SpeechSetup(private val context: Context) {
     suspend fun loadedModel(install: Boolean): LoadedSpeech {
         val (language, onDevice, isInstallFallback) = setup(install)
         return withContext(Dispatchers.Main) {
-            val recognizer = if (onDevice) {
+            val recognizer = if (onDevice && Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 SpeechRecognizer.createOnDeviceSpeechRecognizer(context)
             } else {
                 SpeechRecognizer.createSpeechRecognizer(context)
@@ -448,7 +454,8 @@ private class SpeechSetup(private val context: Context) {
      */
     private suspend fun setup(install: Boolean): Language = mutex.withLock {
         resolved?.let { return it }
-        val onDevice = withContext(Dispatchers.Main) { SpeechRecognizer.isOnDeviceRecognitionAvailable(context) }
+        val onDevice = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+            withContext(Dispatchers.Main) { SpeechRecognizer.isOnDeviceRecognitionAvailable(context) }
         val available = withContext(Dispatchers.Main) { SpeechRecognizer.isRecognitionAvailable(context) }
         if (!onDevice && !available) throw DictationError.LocaleUnsupported()
         val support = withTimeoutOrNull(INSTALL_WAIT) { support(onDevice) }
@@ -471,8 +478,20 @@ private class SpeechSetup(private val context: Context) {
         result
     }
 
-    /** What the recognizer supports, or nil when it can't say (dictation then tries the current language). */
-    private suspend fun support(onDevice: Boolean): RecognitionSupport? = withContext(Dispatchers.Main) {
+    /** What the recognizer supports, or null when it can't say (dictation then tries the current language). */
+    private suspend fun support(onDevice: Boolean): SpeechSupport? {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return null
+        val support = supportApi33(onDevice) ?: return null
+        return SpeechSupport(
+            installedOnDeviceLanguages = support.installedOnDeviceLanguages,
+            pendingOnDeviceLanguages = support.pendingOnDeviceLanguages,
+            supportedOnDeviceLanguages = support.supportedOnDeviceLanguages,
+            onlineLanguages = support.onlineLanguages,
+        )
+    }
+
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
+    private suspend fun supportApi33(onDevice: Boolean): RecognitionSupport? = withContext(Dispatchers.Main) {
         val recognizer = if (onDevice) SpeechRecognizer.createOnDeviceSpeechRecognizer(context) else SpeechRecognizer.createSpeechRecognizer(context)
         try {
             suspendCancellableCoroutine { continuation ->
@@ -497,6 +516,7 @@ private class SpeechSetup(private val context: Context) {
 
     /** Downloads the on-device model for [language]: true installed, null scheduled, false when it won't be there. */
     private suspend fun install(language: String): Boolean? = withContext(Dispatchers.Main) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return@withContext false
         val recognizer = SpeechRecognizer.createOnDeviceSpeechRecognizer(context)
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).putExtra(RecognizerIntent.EXTRA_LANGUAGE, language)
         try {

@@ -2,6 +2,8 @@ package ai.opencode.feature.session.agentactivity
 
 import android.graphics.Paint
 import android.graphics.RuntimeShader
+import android.os.Build
+import androidx.annotation.RequiresApi
 
 /**
  * Single-pass analytical fragment shader for [AgentActivityOrb] (the activity glyph and the shell
@@ -22,6 +24,7 @@ import android.graphics.RuntimeShader
  * - `glowRGB`, `neutral`, `neutralCore`, `accent`, `accentCore`
  * - `cells[49]`: (light, fresh, accent, dotSize); dotSize 0 marks a cell outside the disc mask.
  */
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 object AgentActivityShaders {
     const val ACTIVITY_ORB_FIELD = """
 uniform float4 header0;

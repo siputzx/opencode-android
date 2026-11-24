@@ -165,6 +165,7 @@ object DotScopePalette {
  * packing run on Default. The mutex covers both, so frames never advance the simulation or reuse
  * its buffer concurrently.
  */
+@SuppressLint("NewApi") // API 33 shader; make() falls back to no scope below 33.
 class DotScopeRenderer private constructor() {
     private var simulation = DotScopeSimulation()
     private var lastFrame: Double? = null

@@ -15,9 +15,11 @@ import ai.opencode.feature.composer.modelpicker.OnePickerChipRoll
 import ai.opencode.feature.composer.plusmenu.findActivity
 import ai.opencode.server.model.AgentDisplayName
 import ai.opencode.server.model.OpenCodeAutocompleteAgent
+import android.os.Build
 import android.os.SystemClock
 import android.window.OnBackInvokedCallback
 import android.window.OnBackInvokedDispatcher
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -224,6 +226,10 @@ private fun AgentMenuRow(
 // The menu's popup doesn't take focus, so back goes to the activity; overlay priority runs it before the keyboard's.
 @Composable
 private fun AgentMenuBackHandler(enabled: Boolean, onBack: () -> Unit) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+        BackHandler(enabled = enabled, onBack = onBack)
+        return
+    }
     val activity = LocalContext.current.findActivity() ?: return
     val currentOnBack by rememberUpdatedState(onBack)
     DisposableEffect(activity, enabled) {

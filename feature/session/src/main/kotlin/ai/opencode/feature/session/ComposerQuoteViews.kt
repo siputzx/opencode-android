@@ -21,8 +21,10 @@ import ai.opencode.feature.transcript.R as TranscriptR
 import android.app.Activity
 import android.content.Context
 import android.content.ContextWrapper
+import android.os.Build
 import android.window.OnBackInvokedCallback
 import android.window.OnBackInvokedDispatcher
+import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.MutableTransitionState
 import androidx.compose.animation.fadeIn
@@ -293,6 +295,10 @@ private fun CommentField(field: TextFieldState, saved: String, onSave: () -> Uni
 // In the composer's window the keys hear back first; overlay priority takes it before them.
 @Composable
 private fun CommentPanelBackHandler(enabled: Boolean, onBack: () -> Unit) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+        BackHandler(enabled = enabled, onBack = onBack)
+        return
+    }
     val activity = LocalContext.current.findActivity() ?: return
     val currentOnBack by rememberUpdatedState(onBack)
     DisposableEffect(activity, enabled) {

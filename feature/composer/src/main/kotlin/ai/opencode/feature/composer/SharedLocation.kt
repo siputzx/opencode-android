@@ -31,6 +31,7 @@ import android.location.LocationListener
 import android.location.LocationManager
 import android.location.LocationRequest
 import android.net.Uri
+import android.os.Build
 import android.provider.Settings
 import androidx.annotation.StringRes
 import androidx.compose.animation.AnimatedVisibility
@@ -419,6 +420,14 @@ private object LiveLocation {
 
     private suspend fun reverseGeocode(context: Context, fix: Location): Address? {
         if (!Geocoder.isPresent()) return null
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+            return withTimeoutOrNull(geocodeTimeout) {
+                withContext(Dispatchers.IO) {
+                    @Suppress("DEPRECATION")
+                    runCatching { Geocoder(context).getFromLocation(fix.latitude, fix.longitude, 1)?.firstOrNull() }.getOrNull()
+                }
+            }
+        }
         return withTimeoutOrNull(geocodeTimeout) {
             suspendCancellableCoroutine { continuation ->
                 runCatching {

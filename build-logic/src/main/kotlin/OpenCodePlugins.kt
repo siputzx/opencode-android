@@ -15,7 +15,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
 object OpenCodeBuild {
     const val COMPILE_SDK = 37
     const val COMPILE_SDK_MINOR = 1
-    const val MIN_SDK = 33
+    const val MIN_SDK = 31
     const val TARGET_SDK = 37
 }
 
