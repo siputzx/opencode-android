@@ -83,7 +83,7 @@ internal fun SessionLifecycle(store: StoreOf<State, Action>) {
     val notifications = remember { dependency(SessionNotificationsClient) }
     val lifecycleState by lifecycleOwner.lifecycle.currentStateAsState()
     val sceneActive = lifecycleState.isAtLeast(Lifecycle.State.RESUMED)
-    val sessionID by store.observe { it.session?.id }
+    val sessionID by store.observe { it.familyRootID ?: it.session?.id }
     val isVisible by store.observe { it.isVisible }
     val isCovered by store.observe { it.isCovered }
     val latestSessionID by rememberUpdatedState(sessionID)

@@ -16,6 +16,7 @@ import ai.opencode.feature.settings.whatsnew.canTryWhatsNew
 import ai.opencode.feature.settings.whatsnew.whatsNewVoiceAvailable
 import ai.opencode.core.sharing.shared
 import ai.opencode.feature.system.notifications.NotificationPermission
+import ai.opencode.feature.system.notifications.PushChoice
 import ai.opencode.feature.voice.VoiceCallLog
 import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.ServerSharedKeys
@@ -97,6 +98,8 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
         val notificationSetupError: String? = null,
         /** A push control the server didn't take. */
         val pushFailure: PushSettingsFeature.Failure? = null,
+        /** A server choice on screen while the server takes it. */
+        val pushPendingChoice: PushChoice? = null,
         /** What the push shows, fixed as it opens: Settings, or What's New from the drawer's row. */
         val root: Root = Root.settings,
         /** Pages pushed above the root, innermost last. */
@@ -178,8 +181,6 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
         data class RemoveServer(val server: OpenCodeServer) : SettingsDelegate
         data object EnableNotificationsTapped : SettingsDelegate
         data object NotificationSettingsRequested : SettingsDelegate
-        /** The phone's choice for the server changed: register again with it. */
-        data object PushSyncRequested : SettingsDelegate
         /** What's New's action that leaves Settings for a session (`HomeFeature.tryWhatsNew`). */
         data class TryWhatsNew(val destination: WhatsNewEntry.Destination, val entryID: String) : SettingsDelegate
     }
@@ -197,8 +198,8 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
             child = HomeSettingsFeature(),
         ),
         scope(
-            state = { PushSettingsFeature.State(server = it.server, failure = it.pushFailure) },
-            setState = { s, c -> s.copy(pushFailure = c.failure) },
+            state = { PushSettingsFeature.State(server = it.server, failure = it.pushFailure, pendingChoice = it.pushPendingChoice) },
+            setState = { s, c -> s.copy(pushFailure = c.failure, pushPendingChoice = c.pendingChoice) },
             action = { (it as? Action.Push)?.action },
             embed = { Action.Push(it) },
             child = PushSettingsFeature(),
@@ -300,11 +301,7 @@ class SettingsFeature : Reducer<SettingsFeature.State, SettingsFeature.Action> {
                 Reduced(state.copy(onboardingPlayground = OnboardingPlaygroundFeature.State()))
             else -> Reduced(state)
         }
-        is Action.Push -> if (action.action == PushSettingsFeature.Action.ChoiceSaved) {
-            Reduced(state, Effect.send(Action.Delegate(SettingsDelegate.PushSyncRequested)))
-        } else {
-            Reduced(state)
-        }
+        is Action.Push -> Reduced(state)
         is Action.WhatsNew -> whatsNew(state, action.action)
         is Action.ServerDetails, is Action.ModelVisibility, is Action.Voice -> Reduced(state)
         is Action.OnboardingPlayground -> Reduced(state)

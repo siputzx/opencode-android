@@ -62,6 +62,7 @@ import org.junit.Test
 import java.io.File
 import java.time.Instant
 import kotlin.time.Duration.Companion.milliseconds
+import ai.opencode.core.testing.eventually
 
 /**
  * `contextFractionUsesTheReplyModelsWindow`'s compact `"32% of 400K"` line runs under Robolectric
@@ -725,11 +726,12 @@ class SessionSheetTests {
         return PushServer(PushStatus.Ready, OpenCodePushLevel.entries, "ref-1", OpenCodePushState(devices = listOf(device)))
     }
 
-    @Test fun bellShowsTheChoiceAtOnceAndPutsItBackWhenTheServerRefuses() = sessionTest { h ->
+    @Test fun bellShowsTheChoiceAtOnceAndTakesTheServersCopyWhenRefused() = sessionTest { h ->
         val servers = h.sharedStore.reference(PushSharedKeys.servers)
         servers.set(mapOf(testServer.persistenceID to pushServer()))
         val written = LockIsolated(listOf<OpenCodePushBell?>())
         val refuse = LockIsolated(false)
+        val muted = OpenCodePushBell(OpenCodePushLevel.none, until = 3_600_000L)
         val store = h.sheetStore {
             client {
                 copy(
@@ -739,22 +741,23 @@ class SessionSheetTests {
                         if (refuse.value) throw OpenCodeClientError("Server error", statusCode = 500)
                         written.append(bell)
                     },
+                    pushState = { _ -> pushServer(mapOf("ses_sheet" to muted)).state!! },
                 )
             }
         }
         openSheet(store)
 
         store.send(sheet(SessionSheetFeature.Action.BellChosen(OpenCodePushLevel.none, PushDuration.hour)))
-        val muted = OpenCodePushBell(OpenCodePushLevel.none, until = 3_600_000L)
         assertEquals(muted, servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
-        store.receive(sheet(SessionSheetFeature.Action.BellFinished(null, null)))
-        assertEquals(listOf<OpenCodePushBell?>(muted), written.value)
+        assertTrue(eventually { written.value == listOf<OpenCodePushBell?>(muted) })
 
         refuse.setValue(true)
         store.send(sheet(SessionSheetFeature.Action.BellChosen(null, PushDuration.forever)))
         assertNull(servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
-        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.BellFinished>()) {
-            it.updatingSheet { copy(failure = SessionSheetFeature.Failure(title = "Couldn’t Change Notifications", message = "Server error")) }
+        store.receive(SessionSheetActionMatcher<SessionSheetFeature.Action.BellRefused>()) {
+            it.updatingSheet {
+                copy(failure = SessionSheetFeature.Failure(title = "Couldn’t Change Notifications", message = "The server didn’t take the change."))
+            }
         }
         assertEquals(muted, servers.value[testServer.persistenceID]?.device?.sessions?.get("ses_sheet"))
         store.finish()
@@ -784,9 +787,8 @@ class SessionSheetTests {
         openSheet(store)
 
         store.send(sheet(SessionSheetFeature.Action.BellChosen(OpenCodePushLevel.attention, PushDuration.forever)))
-        store.receive(sheet(SessionSheetFeature.Action.BellFinished(null, null)))
+        assertTrue(eventually { calls.value == 2 })
         assertEquals(listOf(OpenCodePushLevel.all), registered.value)
-        assertEquals(2, calls.value)
         store.finish()
     }
 

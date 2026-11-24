@@ -398,8 +398,8 @@ fun SettingsButtonRow(
     }
 }
 
-/** One option of a [SettingsMenuRow]: its value, title and optional caption. */
-data class SettingsMenuOption<T>(val value: T, val title: String, val caption: String? = null)
+/** One option of a [SettingsMenuRow]: its value, title, optional caption, and red when [destructive]. */
+data class SettingsMenuOption<T>(val value: T, val title: String, val caption: String? = null, val destructive: Boolean = false)
 
 /**
  * A choice in a Settings list: the title, then the value at the row's end in the secondary colour.
@@ -443,7 +443,7 @@ fun <T> SettingsMenuRow(
                     DropdownMenuItem(
                         text = {
                             Column {
-                                Text(option.title)
+                                Text(option.title, color = if (option.destructive) OpenCodeTheme.colors.destructive else Color.Unspecified)
                                 if (option.caption != null) {
                                     Text(option.caption, style = MaterialTheme.typography.bodySmall, color = OpenCodeTheme.colors.secondaryText)
                                 }

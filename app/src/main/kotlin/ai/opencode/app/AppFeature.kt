@@ -981,9 +981,9 @@ class AppFeature : Reducer<AppFeature.State, AppFeature.Action> {
             // remembering this one drops it whatever the sessions' read does.
             val superseded = next.knownServers
                 .filter { server.supersedes(it) && it.persistenceID != server.persistenceID }
-                .map { it.persistenceID }.toSet().sorted()
-            superseded.forEach { id ->
-                val reduced = forgetIdentity(id, next)
+                .distinctBy { it.persistenceID }.sortedBy { it.persistenceID }
+            superseded.forEach { old ->
+                val reduced = forgetIdentity(old.persistenceID, next, removedServer = old)
                 next = reduced.state
                 forgotten += reduced.effect
             }
@@ -1041,7 +1041,7 @@ class AppFeature : Reducer<AppFeature.State, AppFeature.Action> {
         var forgotten: Effect<Action> = Effect.cancel(CancelID.SwitchTimeout)
         next.editingSavedServer?.let { original ->
             if (original.persistenceID != server.persistenceID) {
-                val reduced = forgetIdentity(original.persistenceID, next)
+                val reduced = forgetIdentity(original.persistenceID, next, removedServer = original)
                 next = reduced.state
                 forgotten = Effect.merge(forgotten, reduced.effect)
             }

@@ -117,7 +117,7 @@ class HomeChildFeatureTests {
             )
             this[OpenCodeClient] = this[OpenCodeClient].copy(
                 pushCapability = {
-                    OpenCodePushCapability(1, listOf("https://relay.example/"), listOf(OpenCodePushLevel.all, OpenCodePushLevel.none))
+                    OpenCodePushCapability(1, listOf("https://relay.example"), listOf(OpenCodePushLevel.all, OpenCodePushLevel.none))
                 },
                 pushState = {
                     fetches += 1

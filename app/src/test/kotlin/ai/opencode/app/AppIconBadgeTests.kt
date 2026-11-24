@@ -39,8 +39,10 @@ class AppIconBadgeTests {
         val notifications = SessionNotificationsClient.testValue
         this[SessionNotificationsClient] = SessionNotificationsClient(
             isAvailable = notifications.isAvailable,
-            unregister = { server -> forgotten.unregistered.update { it + server.persistenceID } },
-            forget = { id -> forgotten.notifications.update { it + id } },
+            forget = { id, server ->
+                forgotten.notifications.update { it + id }
+                if (server != null) forgotten.unregistered.update { it + server.persistenceID }
+            },
         )
         val system = SystemIntegrationClient.testValue
         this[SystemIntegrationClient] = SystemIntegrationClient(
@@ -87,7 +89,7 @@ class AppIconBadgeTests {
         assertEquals(listOf(repaired), savedServers)
         assertEquals(listOf(old.persistenceID), forgotten.badges.value)
         assertEquals(listOf(old.persistenceID), forgotten.notifications.value)
-        assertTrue(forgotten.unregistered.value.isEmpty())
+        assertEquals(listOf(old.persistenceID), forgotten.unregistered.value)
         assertEquals(listOf(ShareConversation.serverKey(old.persistenceID)), forgotten.system.value)
     }
 
@@ -122,6 +124,7 @@ class AppIconBadgeTests {
         assertNotEquals(original.persistenceID, savedServer?.persistenceID)
         assertEquals(listOf(original.persistenceID), forgotten.badges.value)
         assertEquals(listOf(original.persistenceID), forgotten.notifications.value)
+        assertEquals(listOf(original.persistenceID), forgotten.unregistered.value)
     }
 
     @Test

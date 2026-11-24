@@ -15,6 +15,7 @@ import ai.opencode.server.model.OpenCodePushLevel
 import ai.opencode.server.model.OpenCodePushRegistration
 import ai.opencode.server.model.OpenCodePushState
 import ai.opencode.server.retry.RequestIdempotency
+import ai.opencode.server.retry.RetryPolicy
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
@@ -72,13 +73,13 @@ internal suspend fun requestRegisterPushDevice(server: OpenCodeServer, id: Strin
     )
     val reply = request<DeviceReply>(
         "$PUSH/device/$id", method = "PUT", body = encodedBody(body),
-        idempotency = RequestIdempotency.Idempotent, server = server,
+        idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server,
     )
     return reply.publicKey
 }
 
 internal suspend fun requestRemovePushDevice(server: OpenCodeServer, id: String) {
-    perform("$PUSH/device/$id", method = "DELETE", idempotency = RequestIdempotency.Idempotent, server = server)
+    perform("$PUSH/device/$id", method = "DELETE", idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server)
 }
 
 internal suspend fun requestPushState(server: OpenCodeServer): OpenCodePushState {
@@ -92,7 +93,7 @@ private data class DevicePauseBody(val paused: Boolean)
 internal suspend fun requestSetPushDevicePaused(server: OpenCodeServer, id: String, paused: Boolean) {
     perform(
         "$PUSH/device/$id", method = "PATCH", body = encodedBody(DevicePauseBody(paused)),
-        idempotency = RequestIdempotency.Idempotent, server = server,
+        idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server,
     )
 }
 
@@ -100,10 +101,10 @@ internal suspend fun requestSetPushDevicePaused(server: OpenCodeServer, id: Stri
 internal suspend fun requestSetPushSessionBell(server: OpenCodeServer, id: String, sessionID: String, bell: OpenCodePushBell?) {
     val path = "$PUSH/device/$id/session/$sessionID"
     if (bell == null) {
-        perform(path, method = "DELETE", idempotency = RequestIdempotency.Idempotent, server = server)
+        perform(path, method = "DELETE", idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server)
         return
     }
-    perform(path, method = "PUT", body = encodedBody(bell), idempotency = RequestIdempotency.Idempotent, server = server)
+    perform(path, method = "PUT", body = encodedBody(bell), idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server)
 }
 
 @Serializable
@@ -112,7 +113,7 @@ private data class PauseBody(val paused: Boolean, val until: Long? = null)
 internal suspend fun requestSetPushPaused(server: OpenCodeServer, paused: Boolean, until: Long?) {
     perform(
         "$PUSH/settings", method = "PUT", body = encodedBody(PauseBody(paused, until)),
-        idempotency = RequestIdempotency.Idempotent, server = server,
+        idempotency = RequestIdempotency.Idempotent, retry = RetryPolicy.once, server = server,
     )
 }
 

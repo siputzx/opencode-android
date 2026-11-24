@@ -14,6 +14,7 @@ import ai.opencode.feature.system.notifications.PushMode
 import ai.opencode.feature.system.notifications.PushServer
 import ai.opencode.feature.system.notifications.PushSharedKeys
 import ai.opencode.feature.system.notifications.PushStatus
+import ai.opencode.feature.system.notifications.rememberPushNow
 import ai.opencode.server.model.OpenCodePushDevice
 import ai.opencode.server.model.OpenCodePushLevel
 import android.text.format.DateUtils
@@ -40,6 +41,7 @@ fun NotificationSettingsView(store: SettingsStore) {
     val setupError by store.observe { it.notificationSetupError }
     val server by store.observe { it.server }
     val failure by store.observe { it.pushFailure }
+    val pendingChoice by store.observe { it.pushPendingChoice }
     val noticeMode by remember { shared(InAppNoticeMode.key).flow }.collectAsState()
     val choices by remember { shared(PushSharedKeys.choices).flow }.collectAsState(initial = shared(PushSharedKeys.choices).value)
     val servers by remember { shared(PushSharedKeys.servers).flow }.collectAsState(initial = shared(PushSharedKeys.servers).value)
@@ -48,7 +50,7 @@ fun NotificationSettingsView(store: SettingsStore) {
     }
     val enabled = permission == NotificationPermission.Enabled
     val serverID = server?.persistenceID
-    val choice = serverID?.let { choices[it] } ?: PushChoice()
+    val choice = pendingChoice ?: serverID?.let { choices[it] } ?: PushChoice()
     val push = serverID?.let { servers[it] } ?: PushServer()
     val pushState = push.state
     val isReady = choice.enabled && push.status == PushStatus.Ready && pushState != null
@@ -96,7 +98,7 @@ fun NotificationSettingsView(store: SettingsStore) {
             settingsSection(
                 key = "server",
                 header = serverHeader,
-                footer = if (choice.enabled && serverFooter != null) footerText(serverFooter) else null,
+                footer = serverFooter?.let { footerText(it) },
             ) {
                 val canTurnOn = push.status != PushStatus.Outdated && push.status != PushStatus.RelayNotAllowed
                 SettingsToggleRow(
@@ -120,8 +122,8 @@ fun NotificationSettingsView(store: SettingsStore) {
         }
         if (isReady && pushState != null) {
             settingsSection(key = "pause", footer = footerText(pauseFooter)) {
-                val now = System.currentTimeMillis()
                 val until = pushState.pausedUntil
+                val now = rememberPushNow(listOf(until))
                 val isPaused = pushState.paused && (until == null || until > now)
                 val value = when {
                     !isPaused -> stringResource(R.string.settings_value_off)
@@ -132,16 +134,11 @@ fun NotificationSettingsView(store: SettingsStore) {
                 if (isPaused) options.add(SettingsMenuOption(null, stringResource(R.string.settings_notifications_resume)))
                 options.add(SettingsMenuOption(PushDuration.hour, stringResource(R.string.settings_notifications_pause_hour)))
                 options.add(SettingsMenuOption(PushDuration.tomorrowMorning, stringResource(R.string.settings_notifications_pause_tomorrow)))
-                options.add(SettingsMenuOption(PushDuration.forever, stringResource(R.string.settings_notifications_pause_forever)))
+                options.add(SettingsMenuOption(PushDuration.forever, stringResource(R.string.settings_notifications_pause_on)))
                 SettingsMenuRow(
                     title = stringResource(R.string.settings_notifications_pause),
                     value = value,
-                    selection = when {
-                        !isPaused -> null
-                        until == null -> PushDuration.forever
-                        until - now <= 60 * 60 * 1000 -> PushDuration.hour
-                        else -> PushDuration.tomorrowMorning
-                    },
+                    selection = if (isPaused && until == null) PushDuration.forever else null,
                     options = options,
                     onSelect = { send(PushSettingsFeature.Action.PauseChosen(it)) },
                 )
@@ -190,7 +187,7 @@ private fun DeviceRow(device: OpenCodePushDevice, isThisPhone: Boolean, send: (P
     val sections = mutableListOf<Pair<String?, List<SettingsMenuOption<DeviceChoice>>>>()
     sections.add(null to listOf(SettingsMenuOption(DeviceChoice.on, onTitle), SettingsMenuOption(DeviceChoice.paused, pausedTitle)))
     if (!isThisPhone) {
-        sections.add(null to listOf(SettingsMenuOption(DeviceChoice.remove, stringResource(R.string.settings_notifications_device_remove))))
+        sections.add(null to listOf(SettingsMenuOption(DeviceChoice.remove, stringResource(R.string.settings_notifications_device_remove), destructive = true)))
     }
     val title = if (isThisPhone) stringResource(R.string.settings_notifications_device_this, device.name) else device.name
     SettingsMenuRow(

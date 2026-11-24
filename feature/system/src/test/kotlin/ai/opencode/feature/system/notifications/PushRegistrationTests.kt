@@ -4,6 +4,7 @@ import ai.opencode.core.dependencies.AppContext
 import ai.opencode.core.dependencies.DateClient
 import ai.opencode.core.dependencies.withDependenciesSuspending
 import ai.opencode.core.sharing.SharedStore
+import ai.opencode.core.sharing.shared
 import ai.opencode.core.testing.TestIsolationRule
 import ai.opencode.server.OpenCodeClient
 import ai.opencode.server.OpenCodeServer
@@ -165,5 +166,45 @@ class PushBellTests {
     fun nothingIsShownUntilTheServerKnowsThisPhone() {
         val state = OpenCodePushState(devices = listOf(device.copy(id = "ref-other")))
         assertEquals(null, PushBells.effective(server(state), "ses_a", 0))
+    }
+
+    @Test
+    fun theRelayIsMatchedByItsOrigin() {
+        val relays = listOf("https://relay.example", "http://localhost:8787")
+        assertTrue(PushSync.isListed("https://relay.example/", relays))
+        assertTrue(PushSync.isListed("https://relay.example:443", relays))
+        assertTrue(PushSync.isListed("http://localhost:8787", relays))
+        assertFalse(PushSync.isListed("https://relay.example:8443", relays))
+        assertFalse(PushSync.isListed("https://other.example", relays))
+    }
+
+    @Test
+    fun aSendTurnsThisPhonesBellOnUnlessItHasOneThatStillHolds() = runBlocking {
+        val testServer = OpenCodeServer(url = "https://unused.invalid", username = "", password = "")
+        val sessions = mapOf(
+            "ses_own" to OpenCodePushBell(OpenCodePushLevel.none),
+            "ses_ended" to OpenCodePushBell(OpenCodePushLevel.none, until = 500),
+        )
+        val written = mutableListOf<String>()
+        withDependenciesSuspending({
+            this[SharedStore] = SharedStore.inMemory()
+            this[DateClient] = DateClient { Instant.ofEpochMilli(1_000) }
+            this[SessionNotificationsClient] = SessionNotificationsClient(isAvailable = true, ref = { "ref-1" })
+            this[OpenCodeClient] = OpenCodeClient.testValue.copy(
+                pushState = { OpenCodePushState(devices = listOf(device.copy(sessions = sessions))) },
+                setPushSessionBell = { _, _, sessionID, bell ->
+                    assertEquals(OpenCodePushBell(OpenCodePushLevel.all), bell)
+                    written += sessionID
+                },
+            )
+        }) {
+            PushSync.bellAfterSend(testServer, "ses_new")
+            assertEquals(emptyList<String>(), written)
+
+            val choices = shared(PushSharedKeys.choices)
+            choices.set(mapOf(testServer.persistenceID to PushChoice(mode = PushMode.fromThisPhone)))
+            for (sessionID in listOf("ses_new", "ses_own", "ses_ended")) PushSync.bellAfterSend(testServer, sessionID)
+            assertEquals(listOf("ses_new", "ses_ended"), written)
+        }
     }
 }

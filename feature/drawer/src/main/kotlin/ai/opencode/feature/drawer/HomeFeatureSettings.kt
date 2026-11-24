@@ -162,7 +162,6 @@ internal fun HomeFeature.reduceSettingsScreen(state: State, action: Presentation
                 Reduced(state, Effect.send(Action.Delegate(DelegateAction.ServerRemovalConfirmed(delegate.server))))
             SettingsDelegate.EnableNotificationsTapped -> Reduced(state, Effect.send(Action.EnableNotificationsTapped))
             SettingsDelegate.NotificationSettingsRequested -> Reduced(state, Effect.send(Action.NotificationSettingsRequested))
-            SettingsDelegate.PushSyncRequested -> Reduced(state, Effect.send(Action.PushSyncRequested))
             is SettingsDelegate.TryWhatsNew -> tryWhatsNew(delegate.destination, delegate.entryID, state)
         }
         else -> Reduced(state)

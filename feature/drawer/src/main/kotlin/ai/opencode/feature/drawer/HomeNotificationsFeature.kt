@@ -43,7 +43,7 @@ class HomeNotificationsFeature : Reducer<HomeNotificationsFeature.State, HomeNot
         data object EnableNotificationsTapped : Action
         data class NotificationPermissionRequested(val permission: NotificationPermission) : Action
         data class NotificationSettingsOpened(val opened: Boolean) : Action
-        /** Home started: registers again whenever the push token changes. */
+        /** Home started: renews every saved server's registration that is close to running out. */
         data object Task : Action
         /** Registers this phone with the current server (or removes it) and fetches the server's copy. */
         data object PushSyncRequested : Action
@@ -53,7 +53,7 @@ class HomeNotificationsFeature : Reducer<HomeNotificationsFeature.State, HomeNot
         data class PushFetched(val serverID: String, val state: OpenCodePushState?) : Action
     }
 
-    private enum class CancelID { tokenChanges, sync, fetch }
+    private enum class CancelID { sync, fetch }
 
     override fun reduce(state: State, action: Action): Reduced<State, Action> {
         val status = state.status
@@ -108,12 +108,7 @@ class HomeNotificationsFeature : Reducer<HomeNotificationsFeature.State, HomeNot
             Action.Task -> {
                 val sessionNotifications = dependency(SessionNotificationsClient)
                 if (!sessionNotifications.isAvailable) return Reduced(state)
-                Reduced(
-                    state,
-                    Effect.run<Action> { send ->
-                        sessionNotifications.tokenChanges.collect { send(Action.PushSyncRequested) }
-                    }.cancellable(CancelID.tokenChanges, cancelInFlight = true),
-                )
+                Reduced(state, Effect.run { sessionNotifications.renew() })
             }
 
             Action.PushSyncRequested -> {
@@ -129,7 +124,10 @@ class HomeNotificationsFeature : Reducer<HomeNotificationsFeature.State, HomeNot
 
             is Action.PushSynced -> {
                 val servers = shared(PushSharedKeys.servers)
-                if (servers.value[action.serverID] != action.result) {
+                val current = servers.value[action.serverID]
+                // A reconnect that couldn't reach push keeps the last copy the server gave.
+                if (action.result.status == PushStatus.Failed && current?.status == PushStatus.Ready) return Reduced(state)
+                if (current != action.result) {
                     servers.update { it + (action.serverID to action.result) }
                 }
                 Reduced(state)

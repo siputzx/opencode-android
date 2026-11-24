@@ -29,6 +29,7 @@ import ai.opencode.core.sharing.shared
 import ai.opencode.feature.system.notifications.PushBellSource
 import ai.opencode.feature.system.notifications.PushBellState
 import ai.opencode.feature.system.notifications.PushBells
+import ai.opencode.feature.system.notifications.rememberPushNow
 import ai.opencode.feature.system.notifications.PushDuration
 import ai.opencode.feature.system.notifications.PushSharedKeys
 import ai.opencode.feature.system.notifications.PushStatus
@@ -289,7 +290,8 @@ private fun SessionSheetContent(
         DetailsCard(details, onModelTapped, providerIcon)
         MediaCard(onMediaTapped)
         if (push != null && push.status == PushStatus.Ready && details.session?.parentID == null) {
-            val bell = PushBells.effective(push, state.sessionID, System.currentTimeMillis())
+            val untils = listOf(push.state?.pausedUntil, push.device?.sessions?.get(state.sessionID)?.until, push.state?.sessions?.get(state.sessionID)?.until)
+            val bell = PushBells.effective(push, state.sessionID, rememberPushNow(untils))
             if (bell != null) {
                 BellCard(bell, push.levels) { level, duration -> sheet.send(SessionSheetFeature.Action.BellChosen(level, duration)) }
             }
@@ -871,6 +873,7 @@ private fun MediaCard(onClick: () -> Unit) {
 private fun BellCard(bell: PushBellState, levels: List<OpenCodePushLevel>, onChoose: (OpenCodePushLevel?, PushDuration) -> Unit) {
     var expanded by remember { mutableStateOf(false) }
     val isOwn = bell.source == PushBellSource.ThisPhone
+    val isPaused = bell.source == PushBellSource.ServerPaused || bell.source == PushBellSource.PhonePaused
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Box {
             Row(
@@ -881,7 +884,7 @@ private fun BellCard(bell: PushBellState, levels: List<OpenCodePushLevel>, onCho
                     .background(cardFill(), cardShape)
                     .openCodeHairline(cardShape)
                     .clip(cardShape)
-                    .clickable(role = Role.Button) { expanded = true }
+                    .clickable(enabled = !isPaused, role = Role.Button) { expanded = true }
                     .padding(horizontal = 16.dp, vertical = if (isAccessibilitySize) 10.dp else 0.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),

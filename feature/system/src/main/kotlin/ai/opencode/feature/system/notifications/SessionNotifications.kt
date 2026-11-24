@@ -13,6 +13,7 @@ import ai.opencode.feature.system.BuildConfig
 import ai.opencode.server.OpenCodeClient
 import ai.opencode.server.OpenCodeClientError
 import ai.opencode.server.OpenCodeServer
+import ai.opencode.server.ServerSharedKeys
 import ai.opencode.server.model.OpenCodePushLevel
 import ai.opencode.server.model.OpenCodePushRegistration
 import android.Manifest
@@ -28,13 +29,11 @@ import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.emptyFlow
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.serialization.Serializable
@@ -129,14 +128,14 @@ class SessionNotificationsClient(
     val relay: String = SessionNotifications.RELAY_URL,
     /** Registers this phone with the server, hearing [OpenCodePushLevel] by default; false when a step fails. */
     val register: suspend (OpenCodeServer, OpenCodePushLevel) -> Boolean = { _, _ -> false },
-    /** Removes this phone from the server, when it was ever registered there. */
-    val unregister: suspend (OpenCodeServer) -> Unit = {},
-    /** Drops a removed server's ref, callback and key (by persistence ID). */
-    val forget: suspend (String) -> Unit = {},
+    /** Removes this phone from the server, when it was ever registered there; false when the server didn't answer. */
+    val unregister: suspend (OpenCodeServer) -> Boolean = { true },
+    /** Drops a removed server's ref, callback and key (by persistence ID), then asks [OpenCodeServer] to forget this phone. */
+    val forget: suspend (String, OpenCodeServer?) -> Unit = { _, _ -> },
     /** The random `ref` a server's pushes carry, made and saved the first time it's asked for. It is also this phone's device ID there. */
     val ref: (String) -> String = { "" },
-    /** Emits when the push channel hands this phone a new token. */
-    val tokenChanges: Flow<Unit> = emptyFlow(),
+    /** Registers again with every saved server whose callback is old or near its end. */
+    val renew: suspend () -> Unit = {},
     /** Android grants the badge count with notifications. */
     val includeBadges: suspend () -> Unit = {},
     /** Tells notifications which session is on screen so its own don't show. */
@@ -155,9 +154,9 @@ class SessionNotificationsClient(
                 isAvailable = SessionNotifications.isAvailable,
                 register = { server, level -> SessionNotifications.shared.register(server, level) },
                 unregister = { SessionNotifications.shared.unregister(it) },
-                forget = { SessionNotifications.shared.forget(it) },
+                forget = { key, server -> SessionNotifications.shared.forget(key, server) },
                 ref = { SessionNotifications.shared.ref(it) },
-                tokenChanges = SessionNotifications.shared.tokenChanges,
+                renew = { SessionNotifications.shared.renew() },
                 includeBadges = {},
                 setVisibleSession = { shown, sessionID ->
                     val id = if (shown) sessionID else null
@@ -232,8 +231,6 @@ class SessionNotifications internal constructor(
     private val saved get() = shared(savedKey)
     private var permissionRequest: CompletableDeferred<Boolean>? = null
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
-    private val tokenChangeEvents = MutableSharedFlow<Unit>(extraBufferCapacity = 1)
-    val tokenChanges: Flow<Unit> get() = tokenChangeEvents
 
     @Serializable
     data class Saved(
@@ -366,36 +363,62 @@ class SessionNotifications internal constructor(
     }
 
     /** `DELETE device/<ref>` on [server]; its ref and key stay, so turning it back on keeps the same device. */
-    suspend fun unregister(server: OpenCodeServer) {
-        val ref = saved.value.refs[server.persistenceID] ?: return
-        try {
-            dependency(OpenCodeClient).removePushDevice(server, ref)
-        } catch (cancellation: CancellationException) {
-            throw cancellation
-        } catch (error: Exception) {
-            AppLog.app.error { "Push device not removed: ${describe(error)}" }
-        }
+    suspend fun unregister(server: OpenCodeServer): Boolean {
+        val ref = saved.value.refs[server.persistenceID] ?: return true
+        return removeDevice(server, ref)
     }
 
-    /** Forgets a removed server's ref, callback and notification key. */
-    suspend fun forget(serverKey: String) {
+    /** Forgets a removed server's ref, callback and notification key, then asks [server] to drop this phone. */
+    suspend fun forget(serverKey: String, server: OpenCodeServer?) {
         val ref = saved.value.refs[serverKey]
         saved.update { it.copy(refs = it.refs - serverKey, callbacks = it.callbacks - serverKey) }
         val choices = shared(PushSharedKeys.choices)
         if (serverKey in choices.value) choices.update { it - serverKey }
         val servers = shared(PushSharedKeys.servers)
         if (serverKey in servers.value) servers.update { it - serverKey }
-        if (ref != null) runCatching { keys.remove(ref) }
+        if (ref == null) return
+        runCatching { keys.remove(ref) }
+        if (server != null) removeDevice(server, ref)
+    }
+
+    /**
+     * Registers again with each saved server this phone is registered with whose callback is for
+     * an old token or has three days or less left. Servers not reachable now wait for their next connect.
+     */
+    suspend fun renew() {
+        if (permissionStatus() != NotificationPermission.Enabled) return
+        val token = token() ?: return
+        val now = dependency(DateClient).now().toEpochMilli()
+        val choices = shared(PushSharedKeys.choices).value
+        for (server in shared(ServerSharedKeys.savedServers).value) {
+            val key = server.persistenceID
+            val callback = saved.value.callbacks[key] ?: continue
+            val choice = choices[key] ?: PushChoice()
+            if (!choice.enabled) continue
+            val fresh = callback.token == token && callback.expiresAt.toEpochMilli() - now > 3.days.inWholeMilliseconds
+            if (fresh) continue
+            register(server, choice.defaultLevel)
+        }
+    }
+
+    private suspend fun removeDevice(server: OpenCodeServer, ref: String): Boolean = try {
+        dependency(OpenCodeClient).removePushDevice(server, ref)
+        true
+    } catch (cancellation: CancellationException) {
+        throw cancellation
+    } catch (error: Exception) {
+        AppLog.app.error { "Push device not removed: ${describe(error)}" }
+        false
     }
 
     /** The authenticated payload of a push envelope. */
     suspend fun verify(envelope: NotificationContent.Envelope): NotificationContent.Verified? = keys.verify(envelope)
 
-    /** FCM handed out a new token: servers hear of it when they register again. */
+    /** FCM handed out a new token: every saved server hears of it now. */
     fun didChangeToken(token: String) {
         if (token.isEmpty() || token == confirmedToken) return
         confirmedToken = token
-        tokenChangeEvents.tryEmit(Unit)
+        scope.launch { renew() }
     }
 
     /** The saved server a tapped notification's `ref` was minted for, with its session; null when unknown or invalid. */

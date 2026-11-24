@@ -2,6 +2,7 @@ package ai.opencode.feature.system.notifications
 
 import ai.opencode.core.dependencies.DependencyValues
 import ai.opencode.core.dependencies.asContextElement
+import ai.opencode.core.dependencies.DateClient
 import ai.opencode.core.dependencies.dependency
 import ai.opencode.core.log.AppLog
 import ai.opencode.core.sharing.SharedKey
@@ -22,6 +23,8 @@ import kotlinx.coroutines.launch
 import java.time.Instant
 import java.time.ZoneId
 import kotlinx.serialization.Serializable
+import okhttp3.HttpUrl
+import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
 /** What this phone asks of a server when a session has no bell. */
 @Serializable
@@ -161,7 +164,7 @@ object PushBells {
         return PushBellState(device.defaultLevel, null, PushBellSource.PhoneDefault)
     }
 
-    private fun isActive(until: Long?, now: Long): Boolean = until == null || until > now
+    fun isActive(until: Long?, now: Long): Boolean = until == null || until > now
 }
 
 /** Registration and the server's copy, as the drawer runs them on every connect. */
@@ -188,7 +191,7 @@ object PushSync {
         }
         val levels = capability.levels
         if (!choice.enabled) {
-            notifications.unregister(server)
+            if (!notifications.unregister(server)) return PushServer(PushStatus.Failed, levels)
             return PushServer(PushStatus.Off, levels)
         }
         if (dependency(NotificationPermissionClient).status() != NotificationPermission.Enabled) {
@@ -224,14 +227,18 @@ object PushSync {
     suspend fun bellAfterSend(server: OpenCodeServer, sessionID: String) {
         val choice = shared(PushSharedKeys.choices).value[server.persistenceID] ?: PushChoice()
         if (!choice.enabled || choice.mode != PushMode.fromThisPhone) return
-        val current = shared(PushSharedKeys.servers).value[server.persistenceID] ?: return
-        if (current.status != PushStatus.Ready) return
-        val device = current.device ?: return
-        if (device.sessions[sessionID] != null) return
-        val client = dependency(OpenCodeClient)
+        val state = fetchState(server) ?: return
+        val deviceID = dependency(SessionNotificationsClient).ref(server.persistenceID)
+        var device: OpenCodePushDevice? = null
+        for (candidate in state.devices) {
+            if (candidate.id == deviceID) device = candidate
+        }
+        if (device == null) return
+        val own = device.sessions[sessionID]
+        if (own != null && PushBells.isActive(own.until, dependency(DateClient).now().toEpochMilli())) return
         for (attempt in 1..3) {
             try {
-                client.setPushSessionBell(server, device.id, sessionID, OpenCodePushBell(OpenCodePushLevel.all))
+                setOwnBell(server, deviceID, sessionID, OpenCodePushBell(OpenCodePushLevel.all))
                 return
             } catch (cancellation: CancellationException) {
                 throw cancellation
@@ -272,6 +279,16 @@ object PushSync {
         return dependency(SessionNotificationsClient).register(server, choice.defaultLevel)
     }
 
+    /**
+     * The copy after the server refused a change shown as [after]: the server's own when it could
+     * be read again ([fetched]), otherwise [before] unless something else has changed it since.
+     */
+    fun afterRefusal(current: PushServer, before: PushServer, after: PushServer, fetched: OpenCodePushState?): PushServer {
+        if (fetched != null) return current.copy(state = fetched)
+        if (current == after) return before
+        return current
+    }
+
     /** A 404 on a device call: the server doesn't know this phone. */
     fun isUnregistered(error: Throwable): Boolean = (error as? OpenCodeClientError)?.statusCode == 404
 
@@ -280,11 +297,11 @@ object PushSync {
         return status?.toString() ?: error::class.java.simpleName
     }
 
-    private fun isListed(relay: String, relays: List<String>): Boolean {
-        val ours = relay.trimEnd('/')
-        for (listed in relays) {
-            if (listed.trimEnd('/').equals(ours, ignoreCase = true)) return true
-        }
-        return false
+    /** The server lists relays as exact origins (`https://host` or `https://host:port`). */
+    fun isListed(relay: String, relays: List<String>): Boolean {
+        val url = relay.toHttpUrlOrNull() ?: return false
+        var ours = url.scheme + "://" + url.host
+        if (url.port != HttpUrl.defaultPort(url.scheme)) ours += ":" + url.port
+        return ours in relays
     }
 }

@@ -329,14 +329,15 @@
     <string name="session_bell_level_none">Nothing</string>
     <string name="session_bell_mute_hour">Nothing for an Hour</string>
     <string name="session_bell_mute_tomorrow">Nothing Until Tomorrow Morning</string>
-    <string name="session_bell_use_default">Use This Phone’s Choice</string>
-    <string name="session_bell_source_own">Set for this phone only.</string>
-    <string name="session_bell_source_own_until">Set for this phone only, until %1$s.</string>
-    <string name="session_bell_source_default">This phone’s choice for the server. Pick one to change it for this session.</string>
-    <string name="session_bell_source_shared">Set from another device. Pick one to change it for this phone.</string>
-    <string name="session_bell_source_shared_until">Set from another device until %1$s. Pick one to change it for this phone.</string>
-    <string name="session_bell_source_phone_paused">This phone is paused in Settings.</string>
+    <string name="session_bell_use_default">Remove This Device’s Setting</string>
+    <string name="session_bell_source_own">Set for this device only.</string>
+    <string name="session_bell_source_own_until">Set for this device only, until %1$s.</string>
+    <string name="session_bell_source_default">This device’s choice for the server. Pick one to change it for this session.</string>
+    <string name="session_bell_source_shared">Set from another device. Pick one to change it for this device.</string>
+    <string name="session_bell_source_shared_until">Set from another device until %1$s. Pick one to change it for this device.</string>
+    <string name="session_bell_source_phone_paused">This device is paused in Settings.</string>
     <string name="session_bell_source_server_paused">All notifications from this server are paused.</string>
     <string name="session_bell_source_server_paused_until">All notifications from this server are paused until %1$s.</string>
     <string name="session_sheet_bell_failed_title">Couldn’t Change Notifications</string>
+    <string name="session_sheet_bell_failed_message">The server didn’t take the change.</string>
 </resources>

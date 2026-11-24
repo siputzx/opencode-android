@@ -17,6 +17,7 @@ import ai.opencode.feature.session.sheet.asClientError
 import ai.opencode.feature.session.sheet.clientError
 import ai.opencode.feature.session.sheet.clientResult
 import ai.opencode.feature.system.notifications.PushDuration
+import ai.opencode.feature.system.notifications.PushServer
 import ai.opencode.feature.system.notifications.PushSharedKeys
 import ai.opencode.feature.system.notifications.PushSync
 import ai.opencode.server.OpenCodeClient
@@ -25,6 +26,7 @@ import ai.opencode.server.OpenCodeServer
 import ai.opencode.server.model.OpenCodeExportFormat
 import ai.opencode.server.model.OpenCodeModelRef
 import ai.opencode.server.model.OpenCodePushBell
+import ai.opencode.server.model.OpenCodePushState
 import ai.opencode.server.model.OpenCodePushLevel
 import ai.opencode.server.model.OpenCodeSession
 import ai.opencode.server.model.SessionTitle
@@ -99,7 +101,8 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         data object MuteTapped : Action
         /** This phone's own bell: a level for a while, or null to follow the phone's choice. */
         data class BellChosen(val level: OpenCodePushLevel?, val duration: PushDuration) : Action
-        data class BellFinished(val previous: OpenCodePushBell?, val error: OpenCodeClientError?) : Action
+        /** The server refused the bell shown as [after]; [fetched] is its copy, read again. */
+        data class BellRefused(val before: PushServer, val after: PushServer, val fetched: OpenCodePushState?) : Action
         data object DeleteTapped : Action
         data object DeleteConfirmed : Action
         data object FailureDismissed : Action
@@ -117,7 +120,7 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
         data object DeleteSession : Delegate
     }
 
-    private enum class CancelID { AutoRenameFailure }
+    private enum class CancelID { AutoRenameFailure, Bell }
 
     override fun reduce(state: State, action: Action): Reduced<State, Action> {
         val haptics = dependency(HapticsClient)
@@ -300,25 +303,29 @@ class SessionSheetFeature : Reducer<SessionSheetFeature.State, SessionSheetFeatu
                     bell = OpenCodePushBell(action.level, until)
                 }
                 if (bell == previous) return Reduced(state)
-                servers.update { it + (serverID to current.withOwnBell(state.sessionID, bell)) }
+                val after = current.withOwnBell(state.sessionID, bell)
+                servers.update { it + (serverID to after) }
                 val (server, sessionID) = state.server to state.sessionID
                 Reduced(
                     state,
-                    Effect.run { send ->
+                    Effect.run<Action> { send ->
                         val error = clientError { PushSync.setOwnBell(server, device.id, sessionID, bell) }
-                        send(Action.BellFinished(previous, error))
-                    },
+                        if (error != null) send(Action.BellRefused(current, after, PushSync.fetchState(server)))
+                    }.cancellable(CancelID.Bell, cancelInFlight = true),
                 )
             }
 
-            is Action.BellFinished -> {
-                val error = action.error ?: return Reduced(state)
+            is Action.BellRefused -> {
                 val servers = shared(PushSharedKeys.servers)
                 val serverID = state.server.persistenceID
                 val current = servers.value[serverID]
-                if (current != null) servers.update { it + (serverID to current.withOwnBell(state.sessionID, action.previous)) }
+                if (current != null) {
+                    val restored = PushSync.afterRefusal(current, action.before, action.after, action.fetched)
+                    if (restored != current) servers.update { it + (serverID to restored) }
+                }
                 haptics.play(Haptic.error)
-                Reduced(state.copy(failure = Failure(localized(R.string.session_sheet_bell_failed_title), error.message)))
+                val failure = Failure(localized(R.string.session_sheet_bell_failed_title), localized(R.string.session_sheet_bell_failed_message))
+                Reduced(state.copy(failure = failure))
             }
 
             Action.DeleteTapped -> Reduced(state.copy(confirmsDeletion = true))

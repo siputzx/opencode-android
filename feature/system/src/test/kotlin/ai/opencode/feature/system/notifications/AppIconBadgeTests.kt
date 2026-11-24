@@ -324,6 +324,14 @@ class AppIconBadgeTests {
         assertEquals(SystemNotificationChannels.SESSION_QUESTIONS, SystemNotificationChannels.forType("question"))
         assertEquals(SystemNotificationChannels.SESSION_PERMISSIONS, SystemNotificationChannels.forType("permission"))
         assertEquals(SystemNotificationChannels.SESSION_FINISHED, SystemNotificationChannels.forType("session.idle"))
+
+        // A box that opens but isn't a message shows the generic notification.
+        val key = notificationKey()
+        val garbled = Base64.getEncoder().encodeToString(seal("not json", key, encryptedRef))
+        val data = envelope(encryptedRef, garbled)
+        val opened = NotificationContent.verifiedPayload(data) { key }
+        assertNull(opened)
+        assertEquals("New activity", NotificationContent.content(data, opened)?.body)
     }
 
     @Test

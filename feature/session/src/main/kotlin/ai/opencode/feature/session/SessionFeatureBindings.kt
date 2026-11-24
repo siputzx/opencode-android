@@ -1,5 +1,6 @@
 package ai.opencode.feature.session
 
+import ai.opencode.feature.system.notifications.PushSync
 import ai.opencode.feature.composer.DraftState
 import ai.opencode.feature.composer.ComposerQuote
 import ai.opencode.feature.composer.ComposerCommandOutcome
@@ -165,6 +166,7 @@ internal fun SessionFeature.reduceCallAndBindings(state: State, action: Action):
                     restored.effect,
                     fetchQueuedInputs(restored.state.server, action.sessionID),
                     Effect.send(Action.RefreshRequested(RefreshReason.Invalidation)),
+                    Effect.run { _ -> PushSync.sentFromPhone(restored.state.server, action.sessionID) },
                 ),
             )
         }

@@ -23,9 +23,8 @@ import ai.opencode.feature.session.SessionTestSupport.testServer
 import ai.opencode.feature.session.SessionTestSupport.testSession
 import ai.opencode.feature.system.notifications.PushChoice
 import ai.opencode.feature.system.notifications.PushMode
-import ai.opencode.feature.system.notifications.PushServer
 import ai.opencode.feature.system.notifications.PushSharedKeys
-import ai.opencode.feature.system.notifications.PushStatus
+import ai.opencode.feature.system.notifications.SessionNotificationsClient
 import ai.opencode.feature.transcript.TranscriptEntry
 import ai.opencode.feature.transcript.TranscriptRowIdentityPlan
 import ai.opencode.feature.transcript.rows.ToolGroupLabel
@@ -785,14 +784,13 @@ class SessionFeatureTestsInbox {
             defaultLevel = OpenCodePushLevel.none, paused = false, sessions = emptyMap(),
         )
         h.sharedStore.reference(PushSharedKeys.choices).set(mapOf(testServer.persistenceID to PushChoice(mode = PushMode.fromThisPhone)))
-        h.sharedStore.reference(PushSharedKeys.servers).set(
-            mapOf(testServer.persistenceID to PushServer(PushStatus.Ready, OpenCodePushLevel.entries, "ref-1", OpenCodePushState(devices = listOf(device)))),
-        )
         val bells = LockIsolated(listOf<Pair<String, OpenCodePushBell?>>())
         val failures = LockIsolated(1)
         val store = h.store(state) {
             this[UuidClient] = UuidClient.incrementing()
+            this[SessionNotificationsClient] = SessionNotificationsClient(isAvailable = true, ref = { "ref-1" })
             this[OpenCodeClient] = this[OpenCodeClient].copy(
+                pushState = { OpenCodePushState(devices = listOf(device)) },
                 sendPrompt = { _, _, _, _, _, _, _ -> },
                 pendingInputs = { _, _ -> emptyList() },
                 waitForIdle = { _, _ -> awaitCancellation() },

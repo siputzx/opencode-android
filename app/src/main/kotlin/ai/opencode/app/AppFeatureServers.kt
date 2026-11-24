@@ -130,7 +130,7 @@ internal fun serverDeleted(state: AppFeature.State, server: OpenCodeServer): Red
 
 /**
  * Forgets what the system, notifications, the icon's badge and the composer keep for a server
- * identity that is no longer saved. A [removedServer] also stops sending this phone notifications.
+ * identity that is no longer saved. A [removedServer] is also asked to stop sending this phone notifications.
  */
 internal fun forgetIdentity(
     persistenceID: String,
@@ -146,9 +146,8 @@ internal fun forgetIdentity(
     return Reduced(
         state,
         Effect.run {
-            if (removedServer != null) sessionNotifications.unregister(removedServer)
-            sessionNotifications.forget(persistenceID)
             appIconBadge.forget(persistenceID)
+            sessionNotifications.forget(persistenceID, removedServer)
         },
     )
 }

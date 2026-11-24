@@ -1,5 +1,6 @@
 package ai.opencode.feature.session
 
+import ai.opencode.feature.system.notifications.PushSync
 import ai.opencode.core.strings.localized
 import ai.opencode.core.sharing.SharedKeys
 import ai.opencode.core.sharing.shared
@@ -386,6 +387,7 @@ internal fun SessionFeature.sendComposer(
                             return@run
                         }
                         client.sendCommand(server, sessionID, command.name, command.argumentsText, command.mentions, delivery)
+                        PushSync.sentFromPhone(server, sessionID)
                         send(Action.Autocomplete(ComposerAutocompleteAction.CommandFinished(ComposerCommandResult.Success(sessionID))))
                     } catch (error: OpenCodeClientError) {
                         send(Action.Autocomplete(ComposerAutocompleteAction.CommandFinished(ComposerCommandResult.Failure(ComposerCommandFailure(error, savedDraft)))))
