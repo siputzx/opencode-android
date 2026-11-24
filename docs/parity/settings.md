@@ -60,7 +60,7 @@ Status values: `todo`, `partial: <what is missing>`, `done`, `n/a: <reason and w
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-09-01-working-orb.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-01-working-orb.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-09-02-shell-glyph.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-02-shell-glyph.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-09-03-math-and-diagrams.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-03-math-and-diagrams.kt` | done |  |
-| `OpenCode/Settings/WhatsNew/Entries/2026-10-09-04-always-notify.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-04-always-notify.kt` | done |  |
+| `OpenCode/Settings/WhatsNew/Entries/2026-10-09-04-always-notify.swift` | 3 | — | n/a | Android differs on purpose: Always Notify is removed and the Notifications bell replaces it. |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-09-05-server-switcher.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-09-05-server-switcher.kt` | done | Android copy: “this phone” |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-10-01-share-opened-files.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-10-01-share-opened-files.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-10-02-call-voice.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-10-02-call-voice.kt` | done | Android copy: the call’s notification (on the Lock Screen too) for the Lock Screen and Dynamic Island |
@@ -193,7 +193,7 @@ Status values: `todo`, `partial: <what is missing>`, `done`, `n/a: <reason and w
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-30-03-wisp-orb.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-30-03-wisp-orb.kt` | done | Sync e5c22780: no Try It (the experiment graduated). |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-31-01-encrypted-notification-previews.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-31-01-encrypted-notification-previews.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-10-31-02-move-session-folder-gone.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-31-02-move-session-folder-gone.kt` | done |  |
-| `OpenCode/Settings/WhatsNew/Entries/2026-10-31-03-notification-plugin-setup.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-10-31-03-notification-plugin-setup.kt` | done |  |
+| `OpenCode/Settings/WhatsNew/Entries/2026-10-31-03-notification-plugin-setup.swift` | 3 | — | n/a | Android differs on purpose: the notify plugin is retired; the app uses the server's push contract. |
 | `OpenCode/Settings/WhatsNew/Entries/2026-11-01-01-call-card-takes-over.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-11-01-01-call-card-takes-over.kt` | done | Sync e5c22780: no Try It (the experiment graduated). |
 | `OpenCode/Settings/WhatsNew/Entries/2026-11-01-01-screenshot-shutter.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-11-01-01-screenshot-shutter.kt` | done |  |
 | `OpenCode/Settings/WhatsNew/Entries/2026-11-01-01-voice-says-whats-running.swift` | 3 | `feature/settings/.../whatsnew/entries/2026-11-01-01-voice-says-whats-running.kt` | done |  |
